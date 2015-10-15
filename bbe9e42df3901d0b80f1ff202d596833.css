@@ -13,7 +13,7 @@ table{border-collapse:collapse;border-spacing:0}
 .header_standard{background:#bdbdbd;min-height:5.997rem;display:flex;justify-content:space-between;padding:0 1.618rem}
 .header_standard--branding{background:#212121;flex:1 0 auto;display:flex;justify-content:flex-start;align-items:center}
 .header_standard--logo{width:2.618rem;height:2.618rem}
-.header_standard--title{font-size:2.291rem;font-weight:700;margin-left:.618rem;opacity:.87;color:#000}.header_standard--title a{text-decoration:none;color:#000}
+.header_standard--title{font-size:2.291rem;font-weight:600;margin-left:.618rem;opacity:.87;color:#000}.header_standard--title a{text-decoration:none;color:#000}
 .header_standard--toggle{flex-basis:3.706rem;border-radius:50%;height:3.706rem;align-self:center;display:flex;align-content:center;justify-content:center;border:1px solid #ff9800;cursor:pointer}
 .header_standard--toggle img{height:1.416rem;align-self:center}
 .header_standard--outside{margin:2.618rem 1.618rem;background:#eee;justify-content:center;flex-direction:column;border-radius:.334rem;box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);border:solid 1px #e0e0e0}
