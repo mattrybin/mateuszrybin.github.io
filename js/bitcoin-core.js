@@ -1,16 +1,6 @@
----
-# This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
-
-# This file depends on JQuery and JQuery UI, so it should be separate
-# from the base and main JS files which don't depend on those libraries
----
 "use strict";
 
-{% comment %}
-// Display modal pop-up on button clicks
-// When using this, make sure each .popup element has a parameter
-{% endcomment %}
+
 $(".popup").each(function() {
   var this_id = "#" + $(this).attr('data-container');
   $(this).on('click', function(clicked) {
@@ -35,10 +25,7 @@ $(".popup").each(function() {
   });
 });
 
-{% comment %}
-// Used on en/bitcoin-core/privacy to show/hide columns based on button
-// clicks
-{% endcomment %}
+
 $('.showcolumn').each(function() {
   $(this).on('click', function() {
     var class_name = $(this).attr('id');
@@ -51,10 +38,7 @@ $('.showcolumn').each(function() {
   });
 });
 
-{% comment %}
-// Used on en/bitcoin-core/features/validation to create an accordion-style
-// effect within a table
-{% endcomment %}
+
 $(function() {
   $(".validation tr.details").hide();
 
@@ -64,10 +48,7 @@ $(function() {
   });
 });
 
-{% comment %}
-// Used on the en/bitcoin-core/features/user-interface page to show wallets
-// that support dedicated connections to Bitcoin Core.
-{% endcomment %}
+
 $(function() {
   $( ".wallet_accordion" ).accordion({
     active: -1,
@@ -75,9 +56,7 @@ $(function() {
   });
 });
 
-{% comment %}
-// Function to expand part of a section when clicked
-{% endcomment %}
+
 $(function() {
   $(".show_more").hide();
   $(".toggle_show_more_less").show();
@@ -88,7 +67,7 @@ $(function() {
   });
 });
 
-{% comment %}// Used on bitcoin-core/feature/requirements{% endcomment %}
+
 $(function() {
   $( "#system-requirements-accordion" ).accordion({
     active: -1,
@@ -97,15 +76,9 @@ $(function() {
 });
 
 
-{% comment %}
-// Begin: slideshow JS, used on en/bitcoin-core/features/
-// Some JS adapted from JQuery reference, MIT license
-{% endcomment %}
 
-  {% comment %}
-  // start_slideshow:
-  //   - container: jquery object containing the slideshow data
-  {% endcomment %}
+
+  
   function start_slideshow(container) {
     var group  = container.find('.slide-group');
     var slides = container.find('.slide');
@@ -113,28 +86,18 @@ $(function() {
     var button_array  = [];
     var current_index = 0;
     var timeout;
-    {% comment %}
-    // short_period: time between slide changes
-    // long_period: time to change to the next slide after a slide has
-    //              been manually selected
-    {% endcomment %}
+    
     var short_period = 3000;
     var long_period = short_period * 3;
 
-    {% comment %}
-    // move:
-    //   - new_index: slide to move to
-    //   - period: time to wait before moving to the next slide
-    {% endcomment %}
+    
     function move(new_index, period) {
       var animate_left;
       var slide_left;
 
       advance(period);
 
-      {% comment %}
-      // If we're already on the desired slide, don't do anything
-      {% endcomment %}
+      
       if (group.is(':animated') || current_index === new_index) {
         return;
       }
@@ -142,9 +105,7 @@ $(function() {
       button_array[current_index].removeClass('active');
       button_array[new_index].addClass('active');
 
-      {% comment %}
-      // Slide left or right
-      {% endcomment %}
+      
       if (new_index > current_index) {
         slide_left = '100%';
         animate_left = '-100%';
@@ -158,9 +119,7 @@ $(function() {
         display: 'block'
       });
 
-      {% comment %}
-      // Perform the animation
-      {% endcomment %}
+      
       group.animate({left: animate_left}, function() {
         slides.eq(current_index).css({
           display: 'none'
@@ -175,9 +134,7 @@ $(function() {
       });
     }
 
-    {% comment %}
-    // Set timer to automatically advance to next slide
-    {% endcomment %}
+    
     function advance(period) {
       clearTimeout(timeout);
       timeout = setTimeout(function() {
@@ -189,10 +146,7 @@ $(function() {
       }, period);
     }
 
-    {% comment %}
-    // For each slide, find its corresponding button and set an event
-    // handler
-    {% endcomment %}
+    
     $.each(slides, function(index) {
       var button = $(buttons[index]);
 
@@ -210,18 +164,12 @@ $(function() {
     advance(short_period);
   }
 
-  {% comment %}
-  // Change height of slider box to match scaled image size
-  {% endcomment %}
+  
   function change_slider_height() {
-      {% comment %}
-      // 125 is minimal height
-      {% endcomment %}
+      
       var revised_size = 125;
 
-      {% comment %}
-      // Look through each image since all but one will be hidden (0px)
-      {% endcomment %}
+      
       $(".slide img").each(function() {
         var img_height = $(this).height();
         if (img_height > revised_size) {
@@ -232,13 +180,7 @@ $(function() {
       $(".slide-viewer").css('height', revised_size + "px");
   }
 
-  {% comment %}
-  // This only runs after all images have been loaded, which is required so
-  // that the browser can autoscale them. However, that means the slidebox
-  // will have its default height (as set by CSS) until everything is
-  // loaded---which may make the slidebox a bad choice for pages with
-  // slow-loading resources.
-  {% endcomment %}
+  
   $(document).load(function() {
     change_slider_height();
   });
@@ -247,6 +189,4 @@ $(function() {
     change_slider_height();
   });
 
-{% comment %}
-// End: slideshow JS
-{% endcomment %}
+
