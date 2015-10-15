@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+
+
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Issues - Contribute to Bitcoin Core</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+
+
+
+
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+  <div class="banner-message alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>English</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/" class="active">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+    
+
+<a class="logo" href="/en/bitcoin-core/"><img src="/img/bitcoin-core/bitcoin-core.svg" alt="Bitcoin"></a>
+
+    
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/" selected="selected">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+    
+
+<ul id="menusimple" class="menusimple menucore" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Features</a>
+    <ul>
+      <li><a href="/en/bitcoin-core/features/">Overview</a></li>
+      <li><a href="/en/bitcoin-core/features/validation">Validation</a></li>
+      <li><a href="/en/bitcoin-core/features/privacy">Privacy</a></li>
+      <li><a href="/en/bitcoin-core/features/requirements">Requirements</a></li>
+      <li><a href="/en/bitcoin-core/features/user-interface">User Interface</a></li>
+      <li><a href="/en/bitcoin-core/features/network-support">Network Support</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/bitcoin-core/help">Get Help</a></li>
+  <li><a>Contribute</a>
+    <ul>
+      <li class="active"><a href="/en/bitcoin-core/contribute/issues">Bug reports</a></li>
+      <li><a href="/en/development">Code</a></li>
+      <li><a href="/en/bitcoin-core/contribute/documentation">Documentation</a></li>
+      <li><a href="/en/bitcoin-core/contribute/translations">Translations</a></li>
+      <li><a href="/en/bitcoin-core/contribute/support">Tech Support</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/version-history">News</a></li>
+  <li><a href="/en/download">Download</a></li>
+</ul>
+
+  
+</div></div>
+
+<div class="body">
+  
+    
+
+<div class="breadcrumbs">
+  
+    
+      <a href="/en/">Bitcoin</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/en/bitcoin-core/">Core</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/en/bitcoin-core/contribute/">Contribute</a>
+        
+      &gt;
+    
+  
+    
+      Issues
+      
+    
+  
+</div>
+
+  
+  
+
+<div id="content" class="content">
+<div class="one-column">
+  <h1 id="contribute-bug-reports">Contribute Bug Reports</h1>
+
+<p>If you discover a bug or other problem with Bitcoin Core, please report
+it.  The are two different processes, <a href="#disclosure">responsible disclosure</a> for
+security bugs and <a href="#public-issue-tracking">public issue tracking</a> for all other bugs.</p>
+
+<p><span class="fa fa-exclamation-triangle"></span> <strong>Please don’t open an
+issue to ask for support.</strong> See the <a href="/en/bitcoin-core/help">Get Help</a> page instead.</p>
+
+<h2 id="disclosure">Responsible disclosure</h2>
+<p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
+<p>If you find a vulnerability related to Bitcoin, non-critical vulnerabilities can be emailed in English to any of the core developers or sent to the private bitcoin-security mailing list listed above. An example of a non-critical vulnerability would be an expensive-to-carry-out denial of service attack. Critical vulnerabilities that are too sensitive for unencrypted email should be sent to one or more of the core developers, encrypted with their PGP key(s).</p>
+
+<div class="listtable coredevtable">
+  <div><div>Wladimir J. van der Laan</div><div><a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a></div><div><a href="/laanwj.asc">PGP</a></div></div>
+  <div><div>Gavin Andresen</div><div><a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a></div><div><a href="/gavinandresen.asc">PGP</a></div></div>
+  <div><div>Jeff Garzik</div><div><a href="mailto:jgarzik@pobox.com">jgarzik@pobox.com</a></div><div><a href="/jgarzik-pobox.asc">PGP</a></div></div>
+  <div><div>Gregory Maxwell</div><div><a href="mailto:greg@xiph.org">greg@xiph.org</a></div><div><a href="/gmaxwell.asc">PGP</a></div></div>
+  <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
+</div>
+
+<h2 id="public-issue-tracking">Public Issue Tracking</h2>
+
+<p>For non-security problems with Bitcoin Core, please <a href="https://github.com/bitcoin/bitcoin/issues">search for similar
+issues</a> and, if you don’t find any, <a href="https://github.com/bitcoin/bitcoin/issues/new">open a new issue</a> providing the information listed below.</p>
+
+<ol>
+  <li>
+    <p>A clear description of the problem. If possible, please describe how
+to reproduce the problem.  (For general guidelines on writing steps
+to reproduce, see <a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines#Writing_precise_steps_to_reproduce">Mozilla’s bug reporting documentation</a>.)</p>
+  </li>
+  <li>
+    <p>What version of Bitcoin Core you use (if you downloaded from
+Bitcoin.org) or what commit you built using (<code>git log -1</code>) plus any
+extra patches you applied.</p>
+  </li>
+  <li>
+    <p>Any relevant entries from your <code>debug.log</code> file. Note, this file can
+contain private information, so review it before posting or ask in
+the issue to email it directly to a developer rather than posting
+publicly. You can publicly post logs on a <a href="http://0bin.net/">0bin service</a>. By
+default, the <code>debug.log</code> can be found at the following locations:</p>
+
+    <ul>
+      <li>
+        <p>Windows: <code>%APPDATA%\Bitcoin\debug.log</code></p>
+      </li>
+      <li>
+        <p>OS X: <code>$HOME/Library/Application Support/Bitcoin/debug.log</code></p>
+      </li>
+      <li>
+        <p>Linux: <code>$HOME/.bitcoin/debug.log</code></p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<p>The best strategy to get your issue fixed quickly is to make it as easy
+as possible for the development team to track down the problem and
+write a fix.  Providing more information and organizing it well helps
+significantly.</p>
+
+<p><br class="clear big" /></p>
+<div class="prevnext">
+<span><strong>Previous</strong><br /><a href="/en/bitcoin-core/contribute/">Contribute overview</a></span>
+<span><strong>Next</strong><br /><a href="/en/development">Code</a></span>
+</div>
+<p><br class="clear" /></p>
+
+
+</div>
+</div>
+
+  <div class="footer">
+    
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+
+
+  <script src="/js/bitcoin-core.js"></script>
+
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+
+</body>
+
+</html>

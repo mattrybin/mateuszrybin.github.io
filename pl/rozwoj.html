@@ -1,0 +1,2343 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+
+
+<head>
+
+
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Rozwój - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+
+
+
+
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+  <div class="banner-message alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Polski</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/pengembangan">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/udvikling">Dansk</a></li>
+        
+        
+          <li><a href="/de/entwicklung">Deutsch</a></li>
+        
+        
+          <li><a href="/en/development">English</a></li>
+        
+        
+          <li><a href="/es/desarrollo">Español</a></li>
+        
+        
+          <li><a href="/fr/developpement">Français</a></li>
+        
+        
+          <li><a href="/it/sviluppo">Italiano</a></li>
+        
+        
+          <li><a href="/hu/fejlesztes">Magyar</a></li>
+        
+        
+          <li><a href="/nl/ontwikkeling">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/rozwoj" class="active">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/desenvolvimento">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/dezvoltare">Română</a></li>
+        
+        
+          <li><a href="/sl/razvoj">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/utveckling">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/gelistirme">Türkçe</a></li>
+        
+        
+          <li><a href="/el/development">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/development">български</a></li>
+        
+        
+          <li><a href="/ru/development">Русский</a></li>
+        
+        
+          <li><a href="/uk/development">Українська</a></li>
+        
+        
+          <li><a href="/ar/development">العربية</a></li>
+        
+        
+          <li><a href="/fa/development">فارسی</a></li>
+        
+        
+          <li><a href="/hi/development">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/development">한국의</a></li>
+        
+        
+          <li><a href="/ja/development">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/development">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/development">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+    
+
+<a class="logo" href="/pl/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+    
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/pengembangan">Bahasa Indonesia</option>
+    
+          <option value="/da/udvikling">Dansk</option>
+    
+          <option value="/de/entwicklung">Deutsch</option>
+    
+          <option value="/en/development">English</option>
+    
+          <option value="/es/desarrollo">Español</option>
+    
+          <option value="/fr/developpement">Français</option>
+    
+          <option value="/it/sviluppo">Italiano</option>
+    
+          <option value="/hu/fejlesztes">Magyar</option>
+    
+          <option value="/nl/ontwikkeling">Nederlands</option>
+    
+          <option value="/pl/rozwoj" selected="selected">Polski</option>
+    
+          <option value="/pt_BR/desenvolvimento">Português Brasil</option>
+    
+          <option value="/ro/dezvoltare">Română</option>
+    
+          <option value="/sl/razvoj">Slovenščina</option>
+    
+          <option value="/sv/utveckling">Svenska</option>
+    
+          <option value="/tr/gelistirme">Türkçe</option>
+    
+          <option value="/el/development">Ελληνικά</option>
+    
+          <option value="/bg/development">български</option>
+    
+          <option value="/ru/development">Русский</option>
+    
+          <option value="/uk/development">Українська</option>
+    
+          <option value="/ar/development">العربية</option>
+    
+          <option value="/fa/development">فارسی</option>
+    
+          <option value="/hi/development">हिन्दी</option>
+    
+          <option value="/ko/development">한국의</option>
+    
+          <option value="/ja/development">日本語</option>
+    
+          <option value="/zh_CN/development">简体中文</option>
+    
+          <option value="/zh_TW/development">繁體中文</option>
+    
+</select></div>
+
+    
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Wprowadzenie</a>
+    <ul>
+      <li><a href="/pl/bitcoin-dla-osob-fizycznych">Osób fizycznych</a></li>
+      <li><a href="/pl/bitcoin-dla-biznesu">Firm</a></li>
+      <li><a href="/pl/bitcoin-dla-deweloperow">Deweloperów</a></li>
+      <li><a href="/pl/pierwsze-kroki">Pierwsze kroki</a></li>
+      <li><a href="/pl/jak-to-dziala">Jak to działa</a></li>
+      <li><a href="/pl/co-potrzebujesz-wiedziec">Musisz to wiedzieć</a></li>
+    </ul>
+  </li>
+  <li><a>Zasoby</a>
+    <ul>
+      <li><a href="/pl/zasoby">Zasoby</a></li>
+      <li><a href="/pl/spolecznosc">Społeczność</a></li>
+      
+      <li><a href="/pl/slownik">Słownik</a></li>
+      <li><a href="/pl/wydarzenia">Wydarzenia</a></li>
+      
+        <li><a href="/pl/pobieranie">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/pl/innowacje">Innowacje</a></li>
+  <li><a>Weź udział</a>
+    <ul>
+      <li><a href="/pl/wesprzyj-bitcoin">Wesprzyj Bitcoin</a>
+      
+      <li class="active"><a href="/pl/rozwoj">Rozwój</a></li>
+    </ul>
+  </li>
+  <li><a href="/pl/faq">FAQ</a></li>
+</ul>
+
+  
+</div></div>
+
+<div class="body">
+  
+  
+
+<div id="content" class="content">
+<div >
+  <!-- Note: this file is built non-deterministically -->
+<h1>Rozwój Bitcoin</h1>
+<p class="summary">Znajdź więcej informacji o aktualnej specyfikacji, oprogramowaniu i programistach.</p>
+
+<p>Bitcoin jest wolnym oprogramowaniem i każdy może przyczynić się do jego rozwoju. Wszystko, czego potrzebujesz, zawarte jest w <a href="https://github.com/bitcoin/bitcoin">repozytorium GitHub</a>. Jest bardzo istotne, abyś przeczytał plik README oraz postępował zgodnie z procesem w nim opisanym, a także byś tworzył kod dobrej jakości, respektując wszystkie wytyczne.</p>
+<p>Dyskusja o rozwoju ma miejsce na GitHub oraz na liście mailingowej <a href="https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev">bitcoin-dev</a> zamieszczonej na sourceforge. Mniej formalna dyskusja ma miejsce na irc.freenode.net na kanale #bitcoin-dev (<a href="#" onclick="freenodeShow(event);">interfejs sieciowy</a>; <a href="http://bitcoinstats.com">logi</a>).</p>
+<div id="chatbox" class="chatbox"></div>
+
+
+
+
+
+<h2 id="spec">Dokumentacja</h2>
+<p>Jeśli chciałbyś dowiedzieć się więcej o technicznych szczegółach Bitcoin i o tym, jak używać istniejących narzędzi oraz API, zalecamy, byś zaczął od zapoznania się z <a href="/en/developer-documentation">dokumentacją deweloperską</a>.</p>
+
+
+  <h2 id="coredev">Główni programiści</h2>
+
+  <p>System Bitcoin był oryginalnie zaprojektowany przez Satoshi Nakamoto. Jego oryginalny kod źródłowy jest obecnie utrzymywany jako Bitcoin Core przez następujących deweloperów oraz społeczność wolontariuszy.</p>
+
+  
+
+<div class="listtable coredevtable">
+  <div><div>Wladimir J. van der Laan</div><div><a href="mailto:laanwj@gmail.com">laanwj@gmail.com</a></div><div><a href="/laanwj.asc">PGP</a></div></div>
+  <div><div>Gavin Andresen</div><div><a href="mailto:gavinandresen@gmail.com">gavinandresen@gmail.com</a></div><div><a href="/gavinandresen.asc">PGP</a></div></div>
+  <div><div>Jeff Garzik</div><div><a href="mailto:jgarzik@pobox.com">jgarzik@pobox.com</a></div><div><a href="/jgarzik-pobox.asc">PGP</a></div></div>
+  <div><div>Gregory Maxwell</div><div><a href="mailto:greg@xiph.org">greg@xiph.org</a></div><div><a href="/gmaxwell.asc">PGP</a></div></div>
+  <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
+</div>
+
+
+  <h2 id="disclosure">Odpowiedzialne ujawnianie informacji</h2>
+  <p><a href="mailto:bitcoin-security@lists.sourceforge.net">bitcoin-security@lists.sourceforge.net</a></p>
+  <p>Jeśli natkniesz się na niebezpieczeństwo związane z Bitcoin, to, o ile nie jest ono krytyczne, informację o nim możesz wysłać e-mailem w języku angielskim do któregokolwiek z głównych programistów lub przesłać na wspomnianą powyżej prywatną listę mailingową poświęconą bezpieczeństwu bitcoinów. Przykładem niekrytycznego niebezpieczeństwa może być kosztowny do przeprowadzenia atak odmowy dostępu. Krytyczne niebezpieczeństwa, które są zbyt poufne, aby przesyłać je nieszyfrowanym e-mailem, powinny zostać wysłane do jednego lub kilku głównych programistów, zaszyfrowane przy pomocy ich kluczy PGP.</p>
+
+
+<section id="devcommunities">
+  <h2 id="dev-communities">Społeczności deweloperów</h2>
+  <p>Na poniższych witrynach i chatroomach odbywają się dyskusje na temat rozwoju Bitcoin. Przed wzięciem udziału w dyskusji prosimy o zapoznanie się z ich zasadami.</p>
+
+  <ul>
+    <li><a href="https://webchat.freenode.net/?channels=bitcoin-dev">Kanał IRC #bitcoin-dev</a> na freenode.</li>
+    <li><a href="https://bitcoin.stackexchange.com/">Bitcoin StackExchange</a></li>
+    <li><a href="https://bitcointalk.org/index.php?board=6.0">Forum dyskusyjne o rozwoju i kwestiach technicznych BitcoinTalk</a></li>
+  </ul>
+</section>
+
+<section id="contributors">
+  <h2 id="bitcoin-core-contributors">Współautorzy Bitcoin Core</h2>
+  <p>(W kolejności liczby poprawek)</p>
+  <div class="contributors">
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/126646?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/laanwj">Wladimir J. van der Laan</a></div>
+      <div>(3037)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/331997?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gavinandresen">Gavin Andresen</a></div>
+      <div>(1100)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/548488?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sipa">Pieter Wuille</a></div>
+      <div>(922)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1419649?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Diapolo">Diapolo</a></div>
+      <div>(633)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/417043?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/theuni">Cory Fields</a></div>
+      <div>(315)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/649246?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/TheBlueMatt">TheBlueMatt</a></div>
+      <div>(258)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/195668?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/saracen">Satoshi Nakamoto</a></div>
+      <div>(245)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/858454?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gmaxwell">Gregory Maxwell</a></div>
+      <div>(209)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1095675?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/luke-jr">Luke-Jr</a></div>
+      <div>(188)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/178464?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jonasschnelli">jonasschnelli</a></div>
+      <div>(185)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/863730?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/fanquake">fanquake</a></div>
+      <div>(99)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1008458?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jtimon">jtimon</a></div>
+      <div>(96)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2814559?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/cozz">cozz</a></div>
+      <div>(70)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7042?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/petertodd">Peter Todd</a></div>
+      <div>(67)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6848764?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/paveljanik">paveljanik</a></div>
+      <div>(43)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7463573?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sdaftuar">sdaftuar</a></div>
+      <div>(38)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/484066?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/muggenhor">muggenhor</a></div>
+      <div>(34)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/894059?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/CodeShark">Eric Lombrozo</a></div>
+      <div>(29)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1530283?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rebroad">rebroad</a></div>
+      <div>(28)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2559390?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Michagogo">Michagogo</a></div>
+      <div>(23)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6399679?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/MarcoFalke">MarcoFalke</a></div>
+      <div>(22)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4943644?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/domob1812">domob1812</a></div>
+      <div>(22)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/573356?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dooglus">dooglus</a></div>
+      <div>(20)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/620611?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/pstratem">pstratem</a></div>
+      <div>(19)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4360349?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/morcos">morcos</a></div>
+      <div>(18)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4284124?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dgenr8">dgenr8</a></div>
+      <div>(16)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/60975?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/super3">super3</a></div>
+      <div>(16)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/993296?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kdomanski">kdomanski</a></div>
+      <div>(15)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/821344?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/xanatos">xanatos</a></div>
+      <div>(14)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1945?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/casey">casey</a></div>
+      <div>(14)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5836089?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dexX7">dexX7</a></div>
+      <div>(14)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1750155?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ENikS">ENikS</a></div>
+      <div>(13)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/93665?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/wtogami">wtogami</a></div>
+      <div>(12)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/102052?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/codler">codler</a></div>
+      <div>(10)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/168610?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/wizeman">wizeman</a></div>
+      <div>(10)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/430315?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ajweiss">ajweiss</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/523218?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/roques">roques</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1492956?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jmcorgan">jmcorgan</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/43821?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jordanlewis">jordanlewis</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/162737?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/joshtriplett">joshtriplett</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/107096?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/devrandom">devrandom</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3513077?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rnicoll">rnicoll</a></div>
+      <div>(8)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/8286077?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/21E14">21E14</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/345092?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tcatm">Nils Schneider</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/59872?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/forrestv">forrestv</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/666706?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rat4">rat4</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5908875?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sinetek">sinetek</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/69154?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/maaku">maaku</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/214252?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sje397">sje397</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/303819?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/celil-kj">celil-kj</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6118832?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sandakersmann">sandakersmann</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1069247?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/runeksvendsen">runeksvendsen</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/716621?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/freewil">freewil</a></div>
+      <div>(7)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/283533?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/OttoAllmendinger">OttoAllmendinger</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/228433?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mgiuca">mgiuca</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/959667?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Matoking">Matoking</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/24173?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vegard">vegard</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/263299?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/zw">zw</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7504522?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mrbandrews">mrbandrews</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/116037?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/p2k">p2k</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/743306?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/schildbach">Andreas Schildbach</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/48147?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jrmithdobbs">jrmithdobbs</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/877549?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/JoelKatz">JoelKatz</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1295883?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dertin">dertin</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/549484?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ashleyholman">ashleyholman</a></div>
+      <div>(6)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1581858?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/robbak">robbak</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2118167?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/r000n">r000n</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5601854?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/roybadami">roybadami</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1503976?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vinniefalco">vinniefalco</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6721742?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/whitj00">Whit Jack</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1221786?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/fcicq">fcicq</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/43997?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mndrix">mndrix</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/287189?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/maraoz">maraoz</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1192483?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rdponticelli">rdponticelli</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/339369?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/alexanderkjeldaas">alexanderkjeldaas</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7275704?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/btcdrak">btcdrak</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/138426?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/federicobond">federicobond</a></div>
+      <div>(5)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6998367?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/DomT4">DomT4</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1155895?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/brandondahler">brandondahler</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/171419?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/EricJ2190">EricJ2190</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/921325?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/paraipan">paraipan</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/73197?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jamesob">jamesob</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/475017?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jayschwa">jayschwa</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/573529?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mibe">mibe</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2784123?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vsrinivas">vsrinivas</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4289847?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/fsb4000">fsb4000</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/505366?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/globalcitizen">globalcitizen</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/934782?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/grimd34th">grimd34th</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/163977?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gubatron">gubatron</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6440430?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mruddy">mruddy</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/637706?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/randy-waterhouse">randy-waterhouse</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/882771?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/4tar">4tar</a></div>
+      <div>(4)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2115102?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/davecgh">davecgh</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1037893?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ers35">ers35</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4563817?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Krellan">Krellan</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1603?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ldenman">ldenman</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/971089?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mikehearn">Mike Hearn</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/544777?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/braydonf">braydonf</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1752347?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/SergioDemianLerner">SergioDemianLerner</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4781551?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/shaulkf">shaulkf</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4568264?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tholenst">tholenst</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6462722?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lpescher">lpescher</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/12862928?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ptschip">ptschip</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7483782?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/imharrywu">imharrywu</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/8813974?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ericshawlinux">ericshawlinux</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/933873?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/al42and">al42and</a></div>
+      <div>(3)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1606235?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/cardpuncher">cardpuncher</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/101238?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kanzure">kanzure</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/408018?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/CAFxX">CAFxX</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/301810?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/cbeams">cbeams</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/354641?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/cdhowie">cdhowie</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5353155?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sudosurootdev">sudosurootdev</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/197224?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/colindean">colindean</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/347290?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/bytemaster">bytemaster</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/61096?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/harding">David Harding</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/33329?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/davout">davout</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3308193?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dajohi">dajohi</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/852698?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/enmaku">enmaku</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/673912?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/spiechu">spiechu</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/127552?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/xslidian">xslidian</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/99377?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dlitz">dlitz</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/29161?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/nobled">nobled</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3773981?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/negedzuregal">negedzuregal</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/365690?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Mischi">Mischi</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/296540?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Flavien">Flavien</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7117866?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gdm85">gdm85</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/80253?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/haakonn">haakonn</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7895696?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/welshjf">welshjf</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/288011?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jlopp">jlopp</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/451660?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kostaz">kostaz</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7669610?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/LongShao007">LongShao007</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/697159?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lucayepa">lucayepa</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/168449?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mhanne">mhanne</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7476289?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/nbenoit">nbenoit</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/429961?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/PRabahy">PRabahy</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/42201?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/prusnak">prusnak</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3511318?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/robvanmieghem">robvanmieghem</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/424153?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/maqifrnswa">maqifrnswa</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/216917?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sime">sime</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/858993?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sgimenez">sgimenez</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/211316?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/drizzt">drizzt</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5055041?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/thofmann">thofmann</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/44281?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/pirapira">pirapira</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/141983?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/bencxr">bencxr</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2200?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/account-settings">account-settings</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1137500?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/constantined">constantined</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/541066?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/arowser">arowser</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5143604?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/imwuzhh">imwuzhh</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1008330?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/alexwaters">alexwaters</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1047859?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kazcw">kazcw</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2716236?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/phelixbtc">phelixbtc</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7548960?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/shshshsh">shshshsh</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/13134193?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/unsystemizer">unsystemizer</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/716797?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ditto-b">ditto-b</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4289351?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tamasblummer">tamasblummer</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/500869?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ayeowch">ayeowch</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/24714?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/xHire">xHire</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/222581?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/posita">posita</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/120117?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/cdecker">cdecker</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4144334?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/benhc123">benhc123</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1351933?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/apoelstra">apoelstra</a></div>
+      <div>(2)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6504097?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Altoidnerd1">Altoidnerd1</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/105565?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/amiryal">amiryal</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/689872?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/anddam">anddam</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5143993?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Altoidnerd">Altoidnerd</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6206931?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/s3erios">s3erios</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4391003?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/aalness">aalness</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/663217?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/iongchun">iongchun</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1096010?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Arnavion">Arnavion</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/179920?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/arnuschky">arnuschky</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1073681?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/bardiharborow">bardiharborow</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/651970?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ali1234">ali1234</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/11800478?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/BitcoinPRReadingGroup">BitcoinPRReadingGroup</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/427450?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/blakejakopovic">blakejakopovic</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2568217?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jcalvinowens">jcalvinowens</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1711792?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/calvintam">calvintam</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/178091?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kR105">kR105</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5756743?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/carnesen">carnesen</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/12446?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kleetus">kleetus</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4458931?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/AlexJeng">AlexJeng</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4928176?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sarchar">sarchar</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/23334?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/celeduc">celeduc</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/570513?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Ciemon">Ciemon</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/253664?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/pygeek">pygeek</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/8827165?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/CohibAA">CohibAA</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/643204?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/daira">daira</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/17146?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/witten">witten</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/38447?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dlo">dlo</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/426803?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dholbert">dholbert</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/42459?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/djpnewton">djpnewton</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1289035?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/DavidGriffith">DavidGriffith</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1629444?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dserrano5">dserrano5</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/8400096?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Derek701">Derek701</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4371?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/diegoviola">diegoviola</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1061236?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/onlyjob">onlyjob</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5931802?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/droark">droark</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/371222?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Earlz">Earlz</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1138625?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/esbullington">esbullington</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/347481?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lachesis">lachesis</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1150253?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/erkmos">erkmos</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/42750?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/eordano">eordano</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/23868?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/eth0">eth0</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2388024?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/heyrhett">heyrhett</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/801033?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Unreal89">Unreal89</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/432385?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Flowdalic">Flowdalic</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/338601?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/codeboost">codeboost</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/9443601?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/francis16">francis16</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/458997?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gwillen">gwillen</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1774230?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/haltingstate">haltingstate</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/36502?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/heath">heath</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2427959?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/hectorj">hectorj</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/644416?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/HostFat">HostFat</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1280719?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/iangcarroll">iangcarroll</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/54232?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ian-kelling">ian-kelling</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/13575280?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ChainQuery">ChainQuery</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/335173?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/irvingruan">irvingruan</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1006078?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/isghe">isghe</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/8126617?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ivanpustogarov">ivanpustogarov</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1638010?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jl2035">jl2035</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/811907?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gandaro">gandaro</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/863232?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jburkle">jburkle</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/979643?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/malleor">malleor</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/148059?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jaromil">jaromil</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2465418?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jasonlewicki">jasonlewicki</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/529626?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ius">ius</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/197274?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jhenninger">jhenninger</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/161566?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/drupalnomad">drupalnomad</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3534524?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/promag">promag</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/862007?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/haight6716">haight6716</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6937?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lian">lian</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/710537?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/jyap808">jyap808</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/729047?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/khalahan">khalahan</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/106988?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/L2G">L2G</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/182024?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/larsr">larsr</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2834976?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lukem512">lukem512</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6393603?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/MathyV">MathyV</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2569494?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Alex-van-der-Peet">Alex-van-der-Peet</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1071365?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mquinn">mquinn</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2133212?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/meeh420">meeh420</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/754478?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/TripleSpeeder">TripleSpeeder</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2015196?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/aitorpazos">aitorpazos</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/607777?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/midnightmagic">midnightmagic</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2073030?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mcassano">mcassano</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/268102?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/msva">msva</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5922310?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ibno2">ibno2</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/884931?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/TierNolan">TierNolan</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4829131?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/lano1106">lano1106</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4147775?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ptrckbrwn">ptrckbrwn</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1490362?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/patvarilly">patvarilly</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3521837?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/veqtrus">veqtrus</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/731031?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/petterreinholdtsen">petterreinholdtsen</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1081724?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/khorben">khorben</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1094027?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Rav3nPL">Rav3nPL</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/313138?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/94m3k1n9">94m3k1n9</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3694534?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Nothing4You">Nothing4You</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/293393?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rktoomey">rktoomey</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/649160?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rubensayshi">rubensayshi</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/14541?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ryan52">ryan52</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/63740?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ryanxcharles">ryanxcharles</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3578089?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/saivann">Saïvann Carignan</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/213716?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/activescott">activescott</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/524492?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/nvmd">nvmd</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/714836?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/shanew">shanew</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/716965?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/simondlr">simondlr</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2139630?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Need4Video">Need4Video</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/677510?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/glondu">glondu</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4519249?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/scmorse">scmorse</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1141947?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/itoffshore">itoffshore</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1581154?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Subo1978">Subo1978</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/452157?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/AbrahamJewowich">AbrahamJewowich</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1892654?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tkembo">tkembo</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7188141?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/Telepatheic">Telepatheic</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4624114?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/teran-mckinney">teran-mckinney</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/559823?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/trapp">trapp</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/871220?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/torstehu">torstehu</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1935069?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/UdjinM6">UdjinM6</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/408196?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vobornik">vobornik</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/3994645?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vlajos">vlajos</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1045374?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vleschuk">vleschuk</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/505201?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/hsoft">hsoft</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5735415?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dvitas">dvitas</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5253850?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/wilbown">wilbown</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/780134?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/wyager">wyager</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/768843?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/blackymetal">blackymetal</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7999704?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/azeteki">azeteki</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6531420?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/b6393ce9-d324-4fe1-996b-acf82dbc3d53">b6393ce9-d324-4fe1-996b-acf82dbc3d53</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/10789532?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/bikinibabe">bikinibabe</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1719626?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/burger2">burger2</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/11053284?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/centaur1">centaur1</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4009487?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/charlescharles">charlescharles</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/999927?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/coblee">coblee</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/801658?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dabaopku">dabaopku</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1981364?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/APerson241">APerson241</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1716156?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/dllud">dllud</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/159372?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/duanemoody">duanemoody</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2167860?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/elichai">elichai</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7466834?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/elkingtowa">elkingtowa</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/876844?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/flower1024">flower1024</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/705268?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gjs278">gjs278</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4408323?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/gladoscc">gladoscc</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/413772?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/graingert">graingert</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/368492?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/himynameismartin">himynameismartin</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/699993?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/joshrabinowitz">joshrabinowitz</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/53233?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/justmoon">justmoon</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/514951?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/bitkevin">bitkevin</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1127491?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/kwaaak">kwaaak</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1869901?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/mb300sd">mb300sd</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1503969?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/nomnombtc">nomnombtc</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/153388?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ojab">ojab</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/416585?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/olalonde">olalonde</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6033231?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/stevenwagner">stevenwagner</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/946846?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/ovdeathiam">ovdeathiam</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1390304?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/philsong">philsong</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4420584?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/pryds">pryds</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/321631?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/redshark1802">redshark1802</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5571478?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/richierichrawr">richierichrawr</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/4305?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/rion">rion</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/994646?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/shea256">shea256</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/1531155?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/sje1">sje1</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/6769910?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/svost">svost</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/13171342?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tailsjoin">tailsjoin</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/7243547?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tm314159">tm314159</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/853786?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/tucenaber">tucenaber</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/2022803?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/vhf">vhf</a></div>
+      <div>(1)</div>
+    </div>
+    
+    <div>
+      <div><img src="https://avatars.githubusercontent.com/u/5633351?v=3&amp;size=16" alt="icon" /></div>
+      <div><a href="https://github.com/zathras-crypto">zathras-crypto</a></div>
+      <div>(1)</div>
+    </div>
+    
+  </div>
+</section>
+
+<h2 id="more">Więcej projektów otwartego oprogramowania</h2>
+
+<p>
+
+
+Możesz wybrać projekt, przy którym chciałbyś współpracować, poprzez odpowiedź na kilka<a href="http://whatcanidoforbitcoin.xyz/">pytań o Twoje umiejętności</a>.</p>
+
+<ul class="devprojectlist">
+  <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A wallet with enhanced security features.</li>
+  <li><a href="http://bfgminer.com">BFGMiner</a> - A modular miner.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Explorer">Bitcoin Explorer</a> - A command line tool, built on libbitcoin.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Server">Bitcoin Server</a> - A full node and query server, built on libbitcoin.</li>
+  <li><a href="https://github.com/schildbach/bitcoin-wallet">Bitcoin Wallet</a> - A SPV wallet for Android and Blackberry.</li>
+  <li><a href="https://bitcoinj.github.io">bitcoinj</a> - A library for SPV wallets, written in Java.</li>
+  <li><a href="https://github.com/btcsuite/btcd">btcd</a> - A full node, written in Go.</li>
+  <li><a href="https://github.com/btcsuite/btcwallet">btcwallet</a> - A hierarchical deterministic wallet daemon, written in Go.</li>
+  <li><a href="https://electrum.org">Electrum</a> - A fast server-trusting wallet.</li>
+  <li><a href="https://github.com/luke-jr/eloipool">Eloipool</a> - A fast mining pool server application, written in Python.</li>
+  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV wallet.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Libbitcoin">Libbitcoin</a> - A cross-platform development toolkit, written in C++.</li>
+  <li><a href="https://gitlab.com/bitcoin/libblkmaker">Libblkmaker</a> - A client library for the getblocktemplate mining protocol, written in C.</li>
+  <li><a href="https://multibit.org">MultiBit HD</a> - An international SPV wallet for desktops.</li>
+  <li><a href="https://github.com/NicolasDorier/NBitcoin">NBitcoin</a> - A cross-platform library, written in C#.</li>
+  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny library with lightweight client and utilities, written in C.</li>
+  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A library for structures and protocols, written in Python.</li>
+  <li><a href="https://gitlab.com/bitcoin/python-blkmaker">Python Blkmaker</a> - A client library for the getblocktemplate mining protocol, written in Python.</li>
+  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js"><span class="fa fa-caret-down"></span> Pokaż więcej...</a></li>
+</ul>
+
+
+
+</div>
+</div>
+
+  <div class="footer">
+    
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/pl/informacje-prawne">Informacje prawne</a>
+  
+  <a href="/pl/prywatnosc">Prywatność</a>
+  
+  <a href="/pl/prasa">Prasa</a>
+  <a href="/pl/o-nas">O bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2015 Dostępny w ramach <a href="http://opensource.org/licenses/mit-license.php" target="_blank">licencji MIT</a></div>
+
+  </div>
+</div>
+
+
+
+
+
+  <script src="/js/bitcoin-core.js"></script>
+
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+
+</body>
+
+</html>
