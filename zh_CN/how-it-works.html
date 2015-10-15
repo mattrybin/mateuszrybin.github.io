@@ -1,0 +1,430 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN">
+
+<head>
+  
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>比特币的工作原理 － 比特币</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+<link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+<div class="top">
+  <div class="top_main">
+    
+
+
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
+
+  </div>
+</div>
+<div class="site">
+  <div class="site_main">
+
+    <div class="site_header">
+      
+
+<div class="header_standard">
+	<div class="header_standard--branding">
+		<div class="header_standard--logo">
+			<a href="/zh_CN/"><img src="/img/components/header_standard--logo.svg"></a>
+		</div>
+		<div class="header_standard--title">
+			<h2><a href="/zh_CN/">Bitcoin</a></h2>
+		</div>
+	</div>
+	<div class="header_standard--toggle">
+		<img src="/img/components/header_standard--toggle.svg">
+	</div>
+
+	<div class="header_standard--navigation">
+		<ul class="header_standard--menu">
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--introduction" href="#"><span aria-expanded="false">介绍</span></a>
+			</li>
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--resources" href="#"><span aria-expanded="false">资源</span></a>
+			</li>
+			<li><a href="/zh_CN/innovation">创新</a></li>
+			<li class="header_standard--menu--child">
+				<a  class="header_standard--menu--toggle--participate" href="#"><span aria-expanded="false">参与</span></a>
+			</li>
+			<li><a href="/zh_CN/faq">常见问题</a></li>
+		</ul>
+
+		<div class="header_standard--flags">
+			<ul class='header_standard--flags--selector'>
+			  <li>
+    			  	<a class="header_standard--menu--toggle--flags" href='#'>
+    			  		<div class="header_standard--flags--primary">
+    			  			<img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
+    			  		</div>
+    			  	</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header_standard--menu--dropdown-wrap">
+	<div class="header_standard--menu--dropdown">
+		<ul class="header_standard--menu--dropdown--introduction">
+			<li><a href="/zh_CN/bitcoin-for-individuals">个人</a></li>
+			<li><a href="/zh_CN/bitcoin-for-businesses">商家</a></li>
+			<li><a href="/zh_CN/bitcoin-for-developers">开发者</a></li>
+			<li><a href="/zh_CN/getting-started">入门指南</a></li>
+			<li><a href="/zh_CN/how-it-works">工作原理</a></li>
+			<li><a href="/zh_CN/you-need-to-know">注意事项</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--resources">
+			<li><a href="/zh_CN/resources">资源</a></li>
+			<li><a href="/zh_CN/community">社区</a></li>
+			<li><a href="/en/developer-documentation">Documentation</a></li>
+			<li><a href="/zh_CN/vocabulary">词汇表</a></li>
+			<li><a href="/zh_CN/events">活动</a></li>
+			
+			  <li><a href="/zh_CN/download">Bitcoin Core</a></li>
+			
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--participate">
+			<li><a href="/zh_CN/support-bitcoin">支持比特币</a></li>
+            
+			<li><a href="/zh_CN/development">开发</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--flags">
+        
+        
+              <li><a href="/id/cara-kerja"><img src="/img/flags/id.png"><span>Bahasa Indonesia</span></a></li>
+        
+        
+              <li><a href="/da/hvordan-det-fungerer"><img src="/img/flags/da.png"><span>Dansk</span></a></li>
+        
+        
+              <li><a href="/de/wie-es-funktioniert"><img src="/img/flags/de.png"><span>Deutsch</span></a></li>
+        
+        
+              <li><a href="/en/how-it-works"><img src="/img/flags/en.png"><span>English</span></a></li>
+        
+        
+              <li><a href="/es/como-funciona"><img src="/img/flags/es.png"><span>Español</span></a></li>
+        
+        
+              <li><a href="/fr/comment-ca-marche"><img src="/img/flags/fr.png"><span>Français</span></a></li>
+        
+        
+              <li><a href="/it/come-funziona"><img src="/img/flags/it.png"><span>Italiano</span></a></li>
+        
+        
+              <li><a href="/hu/hogyan-mukodik"><img src="/img/flags/hu.png"><span>Magyar</span></a></li>
+        
+        
+              <li><a href="/nl/hoe-het-werkt"><img src="/img/flags/nl.png"><span>Nederlands</span></a></li>
+        
+        
+              <li><a href="/pl/jak-to-dziala"><img src="/img/flags/pl.png"><span>Polski</span></a></li>
+        
+        
+              <li><a href="/pt_BR/como-funciona"><img src="/img/flags/pt_BR.png"><span>Português Brasil</span></a></li>
+        
+        
+              <li><a href="/ro/cum-functioneaza"><img src="/img/flags/ro.png"><span>Română</span></a></li>
+        
+        
+              <li><a href="/sl/kako-deluje"><img src="/img/flags/sl.png"><span>Slovenščina</span></a></li>
+        
+        
+              <li><a href="/sv/hur-det-fungerar"><img src="/img/flags/sv.png"><span>Svenska</span></a></li>
+        
+        
+              <li><a href="/tr/nasil-calisir"><img src="/img/flags/tr.png"><span>Türkçe</span></a></li>
+        
+        
+              <li><a href="/el/how-it-works"><img src="/img/flags/el.png"><span>Ελληνικά</span></a></li>
+        
+        
+              <li><a href="/bg/how-it-works"><img src="/img/flags/bg.png"><span>български</span></a></li>
+        
+        
+              <li><a href="/ru/how-it-works"><img src="/img/flags/ru.png"><span>Русский</span></a></li>
+        
+        
+              <li><a href="/uk/how-it-works"><img src="/img/flags/uk.png"><span>Українська</span></a></li>
+        
+        
+              <li><a href="/ar/how-it-works"><img src="/img/flags/ar.png"><span>العربية</span></a></li>
+        
+        
+              <li><a href="/fa/how-it-works"><img src="/img/flags/fa.png"><span>فارسی</span></a></li>
+        
+        
+              <li><a href="/hi/how-it-works"><img src="/img/flags/hi.png"><span>हिन्दी</span></a></li>
+        
+        
+              <li><a href="/ko/how-it-works"><img src="/img/flags/ko.png"><span>한국의</span></a></li>
+        
+        
+              <li><a href="/ja/how-it-works"><img src="/img/flags/ja.png"><span>日本語</span></a></li>
+        
+        
+        
+              <li><a href="/zh_CN/how-it-works"><img src="/img/flags/zh_CN.png"><span>简体中文</span></a></li>
+        
+        
+              <li><a href="/zh_TW/how-it-works"><img src="/img/flags/zh_TW.png"><span>繁體中文</span></a></li>
+        
+		</ul>
+	</div>
+</div>
+<div class="header_standard--outside" aria-toggle="start">
+	<div class="header_standard--outside--flags">
+		<div class="header_standard--outside--button">
+			<span class="header_standard--outside--changelang">Change Language</span>
+			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
+				<div>
+                    <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
+				</div>
+			</a>
+		</div>
+		<ul class="header_standard--outside--sub-menu">
+		
+               
+                     <li><a href="/id/cara-kerja"><img src="/img/flags/id.png">Bahasa Indonesia</a></li>
+               
+               
+                     <li><a href="/da/hvordan-det-fungerer"><img src="/img/flags/da.png">Dansk</a></li>
+               
+               
+                     <li><a href="/de/wie-es-funktioniert"><img src="/img/flags/de.png">Deutsch</a></li>
+               
+               
+                     <li><a href="/en/how-it-works"><img src="/img/flags/en.png">English</a></li>
+               
+               
+                     <li><a href="/es/como-funciona"><img src="/img/flags/es.png">Español</a></li>
+               
+               
+                     <li><a href="/fr/comment-ca-marche"><img src="/img/flags/fr.png">Français</a></li>
+               
+               
+                     <li><a href="/it/come-funziona"><img src="/img/flags/it.png">Italiano</a></li>
+               
+               
+                     <li><a href="/hu/hogyan-mukodik"><img src="/img/flags/hu.png">Magyar</a></li>
+               
+               
+                     <li><a href="/nl/hoe-het-werkt"><img src="/img/flags/nl.png">Nederlands</a></li>
+               
+               
+                     <li><a href="/pl/jak-to-dziala"><img src="/img/flags/pl.png">Polski</a></li>
+               
+               
+                     <li><a href="/pt_BR/como-funciona"><img src="/img/flags/pt_BR.png">Português Brasil</a></li>
+               
+               
+                     <li><a href="/ro/cum-functioneaza"><img src="/img/flags/ro.png">Română</a></li>
+               
+               
+                     <li><a href="/sl/kako-deluje"><img src="/img/flags/sl.png">Slovenščina</a></li>
+               
+               
+                     <li><a href="/sv/hur-det-fungerar"><img src="/img/flags/sv.png">Svenska</a></li>
+               
+               
+                     <li><a href="/tr/nasil-calisir"><img src="/img/flags/tr.png">Türkçe</a></li>
+               
+               
+                     <li><a href="/el/how-it-works"><img src="/img/flags/el.png">Ελληνικά</a></li>
+               
+               
+                     <li><a href="/bg/how-it-works"><img src="/img/flags/bg.png">български</a></li>
+               
+               
+                     <li><a href="/ru/how-it-works"><img src="/img/flags/ru.png">Русский</a></li>
+               
+               
+                     <li><a href="/uk/how-it-works"><img src="/img/flags/uk.png">Українська</a></li>
+               
+               
+                     <li><a href="/ar/how-it-works"><img src="/img/flags/ar.png">العربية</a></li>
+               
+               
+                     <li><a href="/fa/how-it-works"><img src="/img/flags/fa.png">فارسی</a></li>
+               
+               
+                     <li><a href="/hi/how-it-works"><img src="/img/flags/hi.png">हिन्दी</a></li>
+               
+               
+                     <li><a href="/ko/how-it-works"><img src="/img/flags/ko.png">한국의</a></li>
+               
+               
+                     <li><a href="/ja/how-it-works"><img src="/img/flags/ja.png">日本語</a></li>
+               
+               
+               
+                     <li><a href="/zh_CN/how-it-works"><img src="/img/flags/zh_CN.png">简体中文</a></li>
+               
+               
+                     <li><a href="/zh_TW/how-it-works"><img src="/img/flags/zh_TW.png">繁體中文</a></li>
+               
+		</ul>
+	</div>
+	<ul class="header_standard--outside--menu">
+		<div class="header_standard--outside--menu--title">
+		Menu
+		</div>
+		<li>
+			<span>介绍</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/zh_CN/bitcoin-for-individuals">个人</a></li>
+                <li><a href="/zh_CN/bitcoin-for-businesses">商家</a></li>
+                <li><a href="/zh_CN/bitcoin-for-developers">开发者</a></li>
+                <li><a href="/zh_CN/getting-started">入门指南</a></li>
+                <li><a href="/zh_CN/how-it-works">工作原理</a></li>
+                <li><a href="/zh_CN/you-need-to-know">注意事项</a></li>
+			</ul>
+		</li>
+		<li><span>资源</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/zh_CN/resources">资源</a></li>
+                <li><a href="/zh_CN/community">社区</a></li>
+                <li><a href="/en/developer-documentation">Documentation</a></li>
+                <li><a href="/zh_CN/vocabulary">词汇表</a></li>
+                <li><a href="/zh_CN/events">活动</a></li>
+                
+                  <li><a href="/zh_CN/download">Bitcoin Core</a></li>
+                
+			</ul>
+		</li>
+		<li><a href="#">创新</a></li>
+		<li><span>参与</span>
+			<ul class="header_standard--outside--menu_list">
+                <li><a href="/zh_CN/support-bitcoin">支持比特币</a></li>
+                
+                <li><a href="/zh_CN/development">开发</a></li>
+			</ul>
+		</li>
+		<li><a href="#">常见问题</a></li>
+	</ul>
+</div>
+    </div>
+
+    <div class="site_body">
+      <div class="body_standard">
+        <h1>比特币的工作原理</h1>
+<p class="summary">这是个经常引起混淆的问题，下面是个简明扼要的解释！</p>
+
+<h2 id="basics">新用户所需了解的基本知识</h2>
+<p>作为新用户，你可以<a href="/zh_CN/getting-started">开始使用</a>比特币，而不需要理解其中的技术细节。一旦你在电脑或手机上安装一个比特币钱包，它会生成你的第一个比特币地址，并且在你需要的任何时候都可以生成更多的地址。你可以将你的地址告诉你的朋友们，他们便能够通过这个地址向你支付比特币，反之亦然。事实上，这跟电子邮件的运作方式是非常相似的，除了比特币地址应该只被使用一次。</p>
+
+<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+
+<h2 id="balances">余额<span class="titlelight"> - 块链 </span></h2>
+<p>比特币块链是整个比特币网络所倚靠的<b>公共共享总帐</b>。所有确认的交易均包含在块链中。如此一来，比特币钱包可以计算出可用余额，并核实新的交易中消费方花费的确实是自己的比特币。块链的完整性以及时间顺序是由<a href="/zh_CN/vocabulary#cryptography">密码学</a>来确保的。</p>
+
+<h2 id="transactions">交易<span class="titlelight"> - 私钥</span></h2>
+<p>一笔交易是指包含在块链里的<b>比特币钱包之间的价值转移</b>。 比特币钱包保存着一份称作<a href="/zh_CN/vocabulary#private-key"><i>私钥</i></a>或种子的保密数据用来为交易签名，即提供数学证据证明这些交易来自钱包的拥有者。这个 <a href="/zh_CN/vocabulary#signature"><i>签名</i></a>也确保交易发生后不会被任何人修改。所有的交易在用户之间广播，通常在接下来的10分钟内通过一个称作 <a href="/zh_CN/vocabulary#mining"><i>挖矿</i></a>的处理过程开始被比特币网络所确认。</p>
+
+<h2 id="processing">处理<span class="titlelight"> - 挖矿</span></h2>
+<p>挖矿是个将待确认的交易数据包含到块链中，从而完成对这些交易进行<a href="/zh_CN/vocabulary#confirmation"><i>确认</i></a>的<b>分布式共识系统</b>。通过挖矿，可以强制性保证块链中的数据按时间顺序存储，保持比特币网络的中立性，且允许比特币网络上不同的计算机对系统状态达成一致。交易要获得确认，必须要被打包到一个符合非常严格的密码学规则的<a href="/zh_CN/vocabulary#block"><i>块</i></a>中，并通过比特币网络进行验证。这些规则可以防止对已有块的修改，因为一旦有改动，之后所有的块都将失效。挖矿的难度和中彩票相当，没人可以轻易地、连续地将新块加入到块链中。因此，没人可以控制块链中包含什么样的内容或者替换掉块链中的部分内容以达到减少他们的花费的目的。</p>
+
+<h2 id="readmore">深入探究</h2>
+<p>这只是一个非常简要的关于这个系统的概要。如果你想了解细节，你可以<a href="/bitcoin.pdf">阅读原始论文</a>，这篇论文描述了这个系统的设计，你也可以阅读 <a href="/en/developer-documentation">开发者文档记录</a>, 和了解 <a href="https://en.bitcoin.it/wiki/Main_Page">比特币维基</a>。</p>
+
+      </div>
+    </div>
+
+    <div class="site_footer">
+    	
+
+<div class="footer_standard">
+	<div class="footer_standard--leftbox">
+		<ul>
+			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/zh_CN/legal">法律</a></li>
+			
+			<li><a href="/zh_CN/privacy">隐私</a></li>
+			
+			<li><a href="/zh_CN/press">新闻媒体</a></li>
+			<li><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
+			<li><a href="/en/blog">Blog</a></li>
+		</ul>
+	</div>
+	<div class="footer_standard--rightbox">
+		© Bitcoin Project 2009-2015 基于<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT协议</a>授权发布
+	</div>
+	<div class="footer_standard--sponsor">
+	  <!--<div><span>社区网站主办方：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+	</div>
+</div>	
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer_main">
+    
+
+<div class="footer_developer">
+	<div class="footer_developer--header">
+		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
+		<h2>Bitcoin<span>Core</span></h2>
+	</div>
+	<div class="footer_developer--body">
+		<div class="footer_developer--info">
+			<p>Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
+		</div>
+		<div class="footer_developer--action">
+			<div class="footer_developer--action--text">
+				<h2>Developers Resources</h2>
+			</div>
+			<div class="footer_developer--action--buttonarea">
+				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
+					Documentation
+				</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+
+</body>
+
+</html>

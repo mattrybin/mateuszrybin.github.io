@@ -1,0 +1,2992 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ウォレットを選ぶ - ビットコイン</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+<div class="top">
+  <div class="top_main">
+    
+
+
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
+
+  </div>
+</div>
+<div class="site">
+  <div class="site_main">
+
+    <div class="site_header">
+      
+
+<div class="header_standard">
+	<div class="header_standard--branding">
+		<div class="header_standard--logo">
+			<a href="/ja/"><img src="/img/components/header_standard--logo.svg"></a>
+		</div>
+		<div class="header_standard--title">
+			<h2><a href="/ja/">Bitcoin</a></h2>
+		</div>
+	</div>
+	<div class="header_standard--toggle">
+		<img src="/img/components/header_standard--toggle.svg">
+	</div>
+
+	<div class="header_standard--navigation">
+		<ul class="header_standard--menu">
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--introduction" href="#"><span aria-expanded="false">紹介</span></a>
+			</li>
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--resources" href="#"><span aria-expanded="false">リソース</span></a>
+			</li>
+			<li><a href="/ja/innovation">革新</a></li>
+			<li class="header_standard--menu--child">
+				<a  class="header_standard--menu--toggle--participate" href="#"><span aria-expanded="false">参加する</span></a>
+			</li>
+			<li><a href="/ja/faq">よくある質問</a></li>
+		</ul>
+
+		<div class="header_standard--flags">
+			<ul class='header_standard--flags--selector'>
+			  <li>
+    			  	<a class="header_standard--menu--toggle--flags" href='#'>
+    			  		<div class="header_standard--flags--primary">
+    			  			<img src="/img/flags/ja.png"><strong>日本語</strong>
+    			  		</div>
+    			  	</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header_standard--menu--dropdown-wrap">
+	<div class="header_standard--menu--dropdown">
+		<ul class="header_standard--menu--dropdown--introduction">
+			<li><a href="/ja/bitcoin-for-individuals">個人</a></li>
+			<li><a href="/ja/bitcoin-for-businesses">ビジネス</a></li>
+			<li><a href="/ja/bitcoin-for-developers">開発者</a></li>
+			<li><a href="/ja/getting-started">開始する</a></li>
+			<li><a href="/ja/how-it-works">ビットコインの仕組み</a></li>
+			<li><a href="/ja/you-need-to-know">知っておくべきこと</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--resources">
+			<li><a href="/ja/resources">リソース</a></li>
+			<li><a href="/ja/community">ビットコインコミュニティ</a></li>
+			<li><a href="/en/developer-documentation">Documentation</a></li>
+			<li><a href="/ja/vocabulary">用語</a></li>
+			<li><a href="/ja/events">イベント</a></li>
+			
+			  <li><a href="/ja/download">Bitcoin Core</a></li>
+			
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--participate">
+			<li><a href="/ja/support-bitcoin">ビットコインを支援する</a></li>
+            
+			<li><a href="/ja/development">開発</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--flags">
+        
+        
+              <li><a href="/id/pilih-dompet-anda"><img src="/img/flags/id.png"><span>Bahasa Indonesia</span></a></li>
+        
+        
+              <li><a href="/da/vaelg-din-tegnebog"><img src="/img/flags/da.png"><span>Dansk</span></a></li>
+        
+        
+              <li><a href="/de/waehlen-sie-ihre-wallet"><img src="/img/flags/de.png"><span>Deutsch</span></a></li>
+        
+        
+              <li><a href="/en/choose-your-wallet"><img src="/img/flags/en.png"><span>English</span></a></li>
+        
+        
+              <li><a href="/es/elige-tu-monedero"><img src="/img/flags/es.png"><span>Español</span></a></li>
+        
+        
+              <li><a href="/fr/choisir-votre-porte-monnaie"><img src="/img/flags/fr.png"><span>Français</span></a></li>
+        
+        
+              <li><a href="/it/scegli-il-tuo-portafoglio"><img src="/img/flags/it.png"><span>Italiano</span></a></li>
+        
+        
+              <li><a href="/hu/valasszon-penztarcat"><img src="/img/flags/hu.png"><span>Magyar</span></a></li>
+        
+        
+              <li><a href="/nl/kies-uw-portemonnee"><img src="/img/flags/nl.png"><span>Nederlands</span></a></li>
+        
+        
+              <li><a href="/pl/wybierz-swoj-portfel"><img src="/img/flags/pl.png"><span>Polski</span></a></li>
+        
+        
+              <li><a href="/pt_BR/escolha-sua-carteira"><img src="/img/flags/pt_BR.png"><span>Português Brasil</span></a></li>
+        
+        
+              <li><a href="/ro/alege-portofelul"><img src="/img/flags/ro.png"><span>Română</span></a></li>
+        
+        
+              <li><a href="/sl/izberite-denarnico"><img src="/img/flags/sl.png"><span>Slovenščina</span></a></li>
+        
+        
+              <li><a href="/sv/valj-din-planbok"><img src="/img/flags/sv.png"><span>Svenska</span></a></li>
+        
+        
+              <li><a href="/tr/cuzdaninizi-secin"><img src="/img/flags/tr.png"><span>Türkçe</span></a></li>
+        
+        
+              <li><a href="/el/choose-your-wallet"><img src="/img/flags/el.png"><span>Ελληνικά</span></a></li>
+        
+        
+              <li><a href="/bg/choose-your-wallet"><img src="/img/flags/bg.png"><span>български</span></a></li>
+        
+        
+              <li><a href="/ru/choose-your-wallet"><img src="/img/flags/ru.png"><span>Русский</span></a></li>
+        
+        
+              <li><a href="/uk/choose-your-wallet"><img src="/img/flags/uk.png"><span>Українська</span></a></li>
+        
+        
+              <li><a href="/ar/choose-your-wallet"><img src="/img/flags/ar.png"><span>العربية</span></a></li>
+        
+        
+              <li><a href="/fa/choose-your-wallet"><img src="/img/flags/fa.png"><span>فارسی</span></a></li>
+        
+        
+              <li><a href="/hi/choose-your-wallet"><img src="/img/flags/hi.png"><span>हिन्दी</span></a></li>
+        
+        
+              <li><a href="/ko/choose-your-wallet"><img src="/img/flags/ko.png"><span>한국의</span></a></li>
+        
+        
+        
+              <li><a href="/ja/choose-your-wallet"><img src="/img/flags/ja.png"><span>日本語</span></a></li>
+        
+        
+              <li><a href="/zh_CN/choose-your-wallet"><img src="/img/flags/zh_CN.png"><span>简体中文</span></a></li>
+        
+        
+              <li><a href="/zh_TW/choose-your-wallet"><img src="/img/flags/zh_TW.png"><span>繁體中文</span></a></li>
+        
+		</ul>
+	</div>
+</div>
+<div class="header_standard--outside" aria-toggle="start">
+	<div class="header_standard--outside--flags">
+		<div class="header_standard--outside--button">
+			<span class="header_standard--outside--changelang">Change Language</span>
+			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
+				<div>
+                    <img src="/img/flags/ja.png"><strong>日本語</strong>
+				</div>
+			</a>
+		</div>
+		<ul class="header_standard--outside--sub-menu">
+		
+               
+                     <li><a href="/id/pilih-dompet-anda"><img src="/img/flags/id.png">Bahasa Indonesia</a></li>
+               
+               
+                     <li><a href="/da/vaelg-din-tegnebog"><img src="/img/flags/da.png">Dansk</a></li>
+               
+               
+                     <li><a href="/de/waehlen-sie-ihre-wallet"><img src="/img/flags/de.png">Deutsch</a></li>
+               
+               
+                     <li><a href="/en/choose-your-wallet"><img src="/img/flags/en.png">English</a></li>
+               
+               
+                     <li><a href="/es/elige-tu-monedero"><img src="/img/flags/es.png">Español</a></li>
+               
+               
+                     <li><a href="/fr/choisir-votre-porte-monnaie"><img src="/img/flags/fr.png">Français</a></li>
+               
+               
+                     <li><a href="/it/scegli-il-tuo-portafoglio"><img src="/img/flags/it.png">Italiano</a></li>
+               
+               
+                     <li><a href="/hu/valasszon-penztarcat"><img src="/img/flags/hu.png">Magyar</a></li>
+               
+               
+                     <li><a href="/nl/kies-uw-portemonnee"><img src="/img/flags/nl.png">Nederlands</a></li>
+               
+               
+                     <li><a href="/pl/wybierz-swoj-portfel"><img src="/img/flags/pl.png">Polski</a></li>
+               
+               
+                     <li><a href="/pt_BR/escolha-sua-carteira"><img src="/img/flags/pt_BR.png">Português Brasil</a></li>
+               
+               
+                     <li><a href="/ro/alege-portofelul"><img src="/img/flags/ro.png">Română</a></li>
+               
+               
+                     <li><a href="/sl/izberite-denarnico"><img src="/img/flags/sl.png">Slovenščina</a></li>
+               
+               
+                     <li><a href="/sv/valj-din-planbok"><img src="/img/flags/sv.png">Svenska</a></li>
+               
+               
+                     <li><a href="/tr/cuzdaninizi-secin"><img src="/img/flags/tr.png">Türkçe</a></li>
+               
+               
+                     <li><a href="/el/choose-your-wallet"><img src="/img/flags/el.png">Ελληνικά</a></li>
+               
+               
+                     <li><a href="/bg/choose-your-wallet"><img src="/img/flags/bg.png">български</a></li>
+               
+               
+                     <li><a href="/ru/choose-your-wallet"><img src="/img/flags/ru.png">Русский</a></li>
+               
+               
+                     <li><a href="/uk/choose-your-wallet"><img src="/img/flags/uk.png">Українська</a></li>
+               
+               
+                     <li><a href="/ar/choose-your-wallet"><img src="/img/flags/ar.png">العربية</a></li>
+               
+               
+                     <li><a href="/fa/choose-your-wallet"><img src="/img/flags/fa.png">فارسی</a></li>
+               
+               
+                     <li><a href="/hi/choose-your-wallet"><img src="/img/flags/hi.png">हिन्दी</a></li>
+               
+               
+                     <li><a href="/ko/choose-your-wallet"><img src="/img/flags/ko.png">한국의</a></li>
+               
+               
+               
+                     <li><a href="/ja/choose-your-wallet"><img src="/img/flags/ja.png">日本語</a></li>
+               
+               
+                     <li><a href="/zh_CN/choose-your-wallet"><img src="/img/flags/zh_CN.png">简体中文</a></li>
+               
+               
+                     <li><a href="/zh_TW/choose-your-wallet"><img src="/img/flags/zh_TW.png">繁體中文</a></li>
+               
+		</ul>
+	</div>
+	<ul class="header_standard--outside--menu">
+		<div class="header_standard--outside--menu--title">
+		Menu
+		</div>
+		<li>
+			<span>紹介</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/ja/bitcoin-for-individuals">個人</a></li>
+                <li><a href="/ja/bitcoin-for-businesses">ビジネス</a></li>
+                <li><a href="/ja/bitcoin-for-developers">開発者</a></li>
+                <li><a href="/ja/getting-started">開始する</a></li>
+                <li><a href="/ja/how-it-works">ビットコインの仕組み</a></li>
+                <li><a href="/ja/you-need-to-know">知っておくべきこと</a></li>
+			</ul>
+		</li>
+		<li><span>リソース</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/ja/resources">リソース</a></li>
+                <li><a href="/ja/community">ビットコインコミュニティ</a></li>
+                <li><a href="/en/developer-documentation">Documentation</a></li>
+                <li><a href="/ja/vocabulary">用語</a></li>
+                <li><a href="/ja/events">イベント</a></li>
+                
+                  <li><a href="/ja/download">Bitcoin Core</a></li>
+                
+			</ul>
+		</li>
+		<li><a href="#">革新</a></li>
+		<li><span>参加する</span>
+			<ul class="header_standard--outside--menu_list">
+                <li><a href="/ja/support-bitcoin">ビットコインを支援する</a></li>
+                
+                <li><a href="/ja/development">開発</a></li>
+			</ul>
+		</li>
+		<li><a href="#">よくある質問</a></li>
+	</ul>
+</div>
+    </div>
+
+    <div class="site_body">
+      <div class="body_standard">
+        <!-- Note: this file exempt from check-for-subheading-anchors check -->
+
+<h1>ビットコイン・ウォレットを選ぶ</h1>
+<p class="summary">自分に合うウォレットを見つけて、業者やユーザに支払いをしてみよう</p>
+
+<div class="walletmenu" id="walletmenu" onclick="walletMenuListener(event);" ontouchstart="walletMenuListener(event);">
+  <ul>
+    <li class="wallet-mobile">
+    <a id="mobile" data-walletcompat="mobile">モバイル</a>
+    <ul>
+      <li class="wallet-android"><a id="android" data-walletcompat="android">Android</a></li>
+      <li class="wallet-ios"><a id="ios" data-walletcompat="ios">iOS</a></li>
+      <li class="wallet-windowsphone"><a id="windowsphone" data-walletcompat="windowsphone">Windows Phone</a></li>
+      <li class="wallet-blackberry"><a id="blackberry" data-walletcompat="blackberry">BlackBerry</a></li>
+    </ul>
+    </li>
+    <li class="wallet-desktop">
+    <a id="desktop" data-walletcompat="desktop">デスクトップ</a>
+    <ul>
+      <li class="wallet-windows"><a id="windows" data-walletcompat="windows">WIndows</a></li>
+      <li class="wallet-mac"><a id="mac" data-walletcompat="mac">Mac</a></li>
+      <li class="wallet-linux"><a id="linux" data-walletcompat="linux">Linux</a></li>
+    </ul>
+    </li>
+    <li class="wallet-hardware"><a id="hardware" data-walletcompat="hardware">ハードウェア</a></li>
+    <li class="wallet-web"><a id="web" data-walletcompat="web">ウェブ</a></li>
+  </ul>
+</div>
+
+<div class="wallets" id="wallets" onclick="walletListener(event);" ontouchstart="walletListener(event);">
+
+<div id="wallet-bitcoincore" data-walletcompat="desktop windows mac linux" data-walletlevel="1">
+  <span></span>
+  <div>
+    <h2>Bitcoin Core</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="/ja/download">インストール</a><a href="https://github.com/bitcoin/bitcoin">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上での取引を検証し、中継する完全ノードです。つまり、支払いを検証する際に、第三者を信頼する必要はありません。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間が必要となります。</p><span></span></div></div>
+      
+      <div class="checktransparency checkgood">完全透明性<div><p>このウォレットはオープンソースで確定的に作られています。つまり、世界中のデベロッパー誰でもが、コードを監査し、最終的なソフトウェアが秘密を隠していないことを確認できます。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコイン・コアは完全なビットコイン・クライアントであり、ネットワークのバックボーンを構築します。最高レベルの安全性、匿名性、安定性を提供しますが、機能が少なく、多くのディスク容量とメモリが必要となります。</p>
+    <div><img src="/img/screenshots/bitcoincore.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoincore.png" alt="Bitcoin Core" />Bitcoin<br>Core<span></span></a>
+</div>
+
+<div id="wallet-multibithd" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>MultiBit HD</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://multibit.org">Webサイトへ</a><a href="https://github.com/bitcoin-solutions/multibit-hd">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>MultiBit HD is a lightweight client that is fast and easy to use. With integrated Trezor and Tor support, it synchronizes directly with the Bitcoin network. The extensive help makes it an excellent choice for non-technical users.</p>
+    <div><img src="/img/screenshots/multibithd.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/multibithd.png" alt="MultiBit HD" />MultiBit HD<span></span></a>
+</div>
+
+<div id="wallet-armory" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Armory</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://bitcoinarmory.com">Webサイトへ</a><a href="https://github.com/etotheipi/BitcoinArmory">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上でトランザクションを検証・中継する完全ノード型のソフトウェアのインストールを必要とします。これは、支払いを検証する際に第三者を信頼する必要がないことを意味します。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間を必要とします。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>アーモリー（Armory）は、ビットコイン・パワーユーザーのための機能を拡張できる高度なビットコイン・クライアントです。数多くのバックアップと暗号化機能を提供し、オフライン・コンピューターのコールド・ストレージを安全に保管します。</p>
+    <div><img src="/img/screenshots/armory.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/armory.png" alt="Armory" />Armory<span></span></a>
+</div>
+
+<div id="wallet-electrum" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Electrum</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://electrum.org">Webサイトへ</a><a href="https://github.com/spesmilo/electrum">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットは、ＳＰＶとリストからのランダムなサーバーを使います。つまり、支払いを検証する際に、第三者を信頼する必要はわずかしかありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>エレクトラム（Electrum）は、少ないリソースの使用で、高速度と単純性を達成することにフォーカスをあてています。ビットコインシステムの最も複雑な部分を扱うリモート・サーバを使用しており、秘密のフレーズを使って、あなたのビットコイン・ウォレットを回収することができます。</p>
+    <div><img src="/img/screenshots/electrum.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/electrum.png" alt="Electrum" />Electrum<span></span></a>
+</div>
+
+<div id="wallet-msigna" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>mSIGNA</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://ciphrex.com/redirect/?referer=bitcoin.org">Webサイトへ</a><a href="https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上でトランザクションを検証・中継する完全ノード型のソフトウェアのインストールを必要とします。これは、支払いを検証する際に第三者を信頼する必要がないことを意味します。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間を必要とします。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>mSIGNAは、高度ですが、容易に使えるウォレットでスピードと容易性、企業レベルの拡張可能性があり、セキュリティーが強いという特徴があります。これは、多重署名取引、オフラインストレージ、マルチデバイス間の同期と暗号化された電子的および紙面によるバックアップを行なうBIP32をサポートします。</p>
+    <div><img src="/img/screenshots/msigna.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/msigna.png" alt="mSIGNA" />mSIGNA<span></span></a>
+</div>
+
+<div id="wallet-bitcoinwallet" data-walletcompat="mobile android blackberry" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry" title="BlackBerry" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">インストール</a><a href="https://github.com/schildbach/bitcoin-wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコインウォレットは、安全で早いと同時に簡単に使え、信頼性があります。そのビジョンは、脱中央集権化とゼロの信頼、つまりビットコイン関連の操作に中央サービスは必要ないと言うことです。このアプリは技術に詳しくない人にとってよい選択肢です。</p>
+    <div><img src="/img/screenshots/bitcoinwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />Bitcoin<br>Wallet<span></span></a>
+</div>
+
+<div id="wallet-copay" data-walletcompat="mobile desktop web android ios windowsphone windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Copay</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /><img src="/img/os/windowsphone.png" alt="Windows Phone" title="Windows Phone" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://copay.io">Webサイトへ</a><a href="https://github.com/bitpay/copay">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Copay is the HD-multisignature wallet originally built to secure BitPay's funds. Copay supports multiple personal and shared wallets, testnet, and the full Payment Protocol. A private <a href="https://github.com/bitpay/bitcore-wallet-service">BWS</a> node can be used for enhanced security and privacy.</p>
+    <div><img src="/img/screenshots/copay.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/copay.png" alt="Copay" />Copay<span></span></a>
+</div>
+
+<div id="wallet-airbitzwallet" data-walletcompat="mobile android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Airbitz Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://airbitz.co/bitcoin-wallet/">Webサイトへ</a><a href="https://github.com/Airbitz">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対するホスト型コントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたがコントロールできます。しかし、このサービスは暗号化されたあなたのウォレットのコピーを保管します。つまり、サービスが不正にアクセスされて、強力なパスワードを使っていなければ、あなたのビットコインが盗まれる可能性があります。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Airbitz is a mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Airbitz wallets are always automatically encrypted, backed up, and even function when Airbitz servers go down.</p>
+    <div><img src="/img/screenshots/airbitzwalletios.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />Airbitz<span></span></a>
+</div>
+
+<div id="wallet-breadwallet" data-walletcompat="mobile ios" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>breadwallet</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/app/breadwallet/id885251393">インストール</a><a href="https://github.com/voisine/breadwallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>シンプルであることは、ブレッド・ウォレットのデザインコンセプトの中枢です。単独型のビットコイン・クライアントとして、ハッキングされたりダウンするサーバがなく、iOSの強力なセキュリティーの上に作られたブレッドウォレットは、あなたをマルウェア、ブラウザのセキュリティホールや物理的な盗難からさえも守るようにデザインされています。</p>
+    <div><img src="/img/screenshots/breadwallet.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/breadwallet.png" alt="breadwallet" />breadwallet<span></span></a>
+</div>
+
+<div id="wallet-trezor" data-walletcompat="hardware" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Trezor</h2>
+    <div></div>
+    <div><a href="https://www.bitcointrezor.com/">Webサイトへ</a><a href="https://github.com/trezor/">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkneutral">変動検証<div><p>支払いの検証機能は、このデバイスであなたがお使いになるソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットの検証スコアをご覧下さい。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkgood">非常に安全な環境<div><p>このウォレットはデバイスが提供する安全で特殊な環境から読み込まれます。この環境でソフトウエアをインストールすることはできませんので、コンピュータの脆弱性やマルウェアを非常に効果的に防止します。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkneutral">変動プライバシー<div><p>プライバシー機能は、このデバイスであなたがお使いのソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットのプライバシー・スコアをご覧下さい。</p><span></span></div></div>
+      
+    </div>
+    <p>TREZOR は、便利さを犠牲にせず、高レベルのセキュリティーを提供するハードウエア・ウォレットです。コールドストレージとは違い、TREZOR はオンラインデバイスに繋がっている際にも取引に署名ができます。つまり、マルウエアに感染した安全対策が施されていないコンピューターを使っていても、ビットコインを安全に使うことができるのです。</p>
+    <div><img src="/img/screenshots/trezor.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/trezor.png" alt="Trezor" />Trezor<span></span></a>
+</div>
+
+<div id="wallet-ledgernano" data-walletcompat="hardware" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Ledger Nano</h2>
+    <div></div>
+    <div><a href="https://www.ledgerwallet.com/">Webサイトへ</a><a href="https://github.com/LedgerHQ/">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkneutral">変動検証<div><p>支払いの検証機能は、このデバイスであなたがお使いになるソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットの検証スコアをご覧下さい。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkgood">非常に安全な環境<div><p>このウォレットはデバイスが提供する安全で特殊な環境から読み込まれます。この環境でソフトウエアをインストールすることはできませんので、コンピュータの脆弱性やマルウェアを非常に効果的に防止します。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkneutral">変動プライバシー<div><p>プライバシー機能は、このデバイスであなたがお使いのソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットのプライバシー・スコアをご覧下さい。</p><span></span></div></div>
+      
+    </div>
+    <p>Ledger Nano は、ST23YT66バンク・スマートカード・プラットフォームに基いて作られたハードウェアウォレットです。これは、ユーザーの秘密鍵を安全に保管し、トランザクションを検証し、安全なプリペイド・カードあるいは多重署名の参加者として使うことが出来ます。オープンソースではないものの、確定的に検証されることができます。</p>
+    <div><img src="/img/screenshots/ledger.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ledgernano.png" alt="Ledger Nano" />Ledger<br>Nano<span></span></a>
+</div>
+
+<div id="wallet-bither" data-walletcompat="mobile ios android desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bither</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/bither/id899478936">インストール</a><a href="https://github.com/bither/bither-ios">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkfail">弱いプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkfail">
+          <p>あなたの支払いに対するスパイ活動を許許可する</p>
+          <p>このウォレットは、同じアドレスを何度も使いますので、あなたの残高や支払いに対するスパイ活動を容易にします。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security.</p>
+    <div><img src="/img/screenshots/bithermobile.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bither.png" alt="Bither" />Bither<span></span></a>
+</div>
+
+<div id="wallet-mycelium" data-walletcompat="mobile android" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Mycelium</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.mycelium.wallet">インストール</a><a href="https://github.com/mycelium-com/wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Myceliumビットコイン・ウォレットは安全性、スピードと使いやすさを求めたオープンソースのアンドロイド用ウォレットです。あなたの鍵を管理する独自の機能や、あなたのビットコインを安全に守るコールド・ストレージがあります。</p>
+    <div><img src="/img/screenshots/mycelium.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/mycelium.png" alt="Mycelium" />Mycelium<span></span></a>
+</div>
+
+<div id="wallet-bitgo" data-walletcompat="web desktop windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>BitGo</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://chrome.google.com/webstore/detail/bitgo/jlgeogaipkoajobchncghcojanffjfhl">インストール</a><a href="https://github.com/BitGo/bitgo-chrome">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>BitGoは、高レベルのセキュリティーを提供する多重署名ウォレットです。マルウェアやサーバーへの攻撃からあなたのビットコインを守るために、各取引には2つの署名が必要となります。秘密鍵は、ユーザが持っていますので、BitGoはあなたのビットコインにアクセスできません。技術に詳しくないユーザにとって、良い選択肢です。</p>
+    <div><img src="/img/screenshots/bitgo.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitgo.png" alt="BitGo" />BitGo<span></span></a>
+</div>
+
+<div id="wallet-greenaddress" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=it.greenaddress.cordova">インストール</a><a href="https://github.com/greenaddress/WalletCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">分散的検証<div><p>このウォレットは、リストからのランダムなサーバーに繋がります。つまり、支払いを検証する際には、第三者をいくらか信頼する必要性があります。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-coinomi" data-walletcompat="mobile android" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Coinomi Universal Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet">インストール</a><a href="https://github.com/Coinomi">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!</p>
+    <div><img src="/img/screenshots/coinomiwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinomi.png" alt="Coinomi Universal Wallet" />Coinomi<span></span></a>
+</div>
+
+<div id="wallet-coinbase" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinbase</h2>
+    <div></div>
+    <div><a href="https://coinbase.com">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>コインベース（Coinbase）は、使い易さを目指したウェブ・ウォレット・サービスです。アンドロイド用のウエブ・ウォレット・アプリ、商業用ツール、そしてビットコイン売買のためのアメリカの銀行との統合なども提供しています。</p>
+    <div><img src="/img/screenshots/coinbase.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinbase.png" alt="Coinbase" />Coinbase<span></span></a>
+</div>
+
+<div id="wallet-coinkite" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinkite</h2>
+    <div></div>
+    <div><a href="https://coinkite.com">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>コインカイト（CoinKite）は、使いやすさを目指したウエブ・ウォレットとデビットカード・サービスです。モバイル・ブラウザでも動作し、業者向けツールやPOSの支払い端末もあります。また、ハイブリッドなウォレットで予備金庫にもなります。</p>
+    <div><img src="/img/screenshots/coinkite.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinkite.png" alt="Coinkite" />Coinkite<span></span></a>
+</div>
+
+<div id="wallet-xapo" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Xapo</h2>
+    <div></div>
+    <div><a href="https://xapo.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によってコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが凍結したり、あなたの資金の処理を誤ることがないと信頼する必要があります。このサービスは、彼ら側の誤りに対して保証を提供すると主張しますが、あなたのウォレットを安全に守るのはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Xapoは、毎日使うビットコインウォレット便利さと、コールドストレージ保管庫の安全性を組み合わせたものです。Xapoデビットカードは、あなたのXapoウォレットとリンクし、世界中の何百万件もの業者にビットコインを使うことが出来ます。</p>
+    <div><img src="/img/screenshots/xapo.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/xapo.png" alt="Xapo" />Xapo<span></span></a>
+</div>
+
+<div id="wallet-coinapult" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinapult</h2>
+    <div></div>
+    <div><a href="https://coinapult.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!</p>
+    <div><img src="/img/screenshots/coinapult.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinapult.png" alt="Coinapult" />Coinapult<span></span></a>
+</div>
+
+<div id="wallet-circle" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Circle</h2>
+    <div></div>
+    <div><a href="https://circle.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によってコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが凍結したり、あなたの資金の処理を誤ることがないと信頼する必要があります。このサービスは、彼ら側の誤りに対して保証を提供すると主張しますが、あなたのウォレットを安全に守るのはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Circle is a web wallet service that aims to be easy to use. It provides the ability to instantly purchase and sell bitcoins using either a credit card or a U.S. bank account. It also provides an Android and an iOS web wallet app.</p>
+    <div><img src="/img/screenshots/circle.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/circle.png" alt="Circle" />Circle<span></span></a>
+</div>
+
+<div id="wallet-ninki" data-walletcompat="mobile desktop windows mac linux android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Ninki Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en">インストール</a><a href="https://github.com/Ninkip2p/NinkiCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>An advanced wallet for experienced Bitcoin users. Ninki is a multi-signature wallet with a beautiful user interface. You have full control of your bitcoins at all times.</p>
+    <div><img src="/img/screenshots/ninki.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ninki.png" alt="Ninki Wallet" />Ninki<span></span></a>
+</div>
+
+</div>
+
+<div class="wallets walletsswitch" id="walletsswitch">
+
+<div id="wallet-bitcoincore-desktop" data-walletcompat="desktop windows mac linux" data-walletlevel="1">
+  <span></span>
+  <div>
+    <h2>Bitcoin Core</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="/ja/download">インストール</a><a href="https://github.com/bitcoin/bitcoin">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上での取引を検証し、中継する完全ノードです。つまり、支払いを検証する際に、第三者を信頼する必要はありません。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間が必要となります。</p><span></span></div></div>
+      
+      <div class="checktransparency checkgood">完全透明性<div><p>このウォレットはオープンソースで確定的に作られています。つまり、世界中のデベロッパー誰でもが、コードを監査し、最終的なソフトウェアが秘密を隠していないことを確認できます。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコイン・コアは完全なビットコイン・クライアントであり、ネットワークのバックボーンを構築します。最高レベルの安全性、匿名性、安定性を提供しますが、機能が少なく、多くのディスク容量とメモリが必要となります。</p>
+    <div><img src="/img/screenshots/bitcoincore.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoincore.png" alt="Bitcoin Core" />Bitcoin<br>Core<span></span></a>
+</div>
+
+<div id="wallet-multibithd-desktop" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>MultiBit HD</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://multibit.org">Webサイトへ</a><a href="https://github.com/bitcoin-solutions/multibit-hd">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>MultiBit HD is a lightweight client that is fast and easy to use. With integrated Trezor and Tor support, it synchronizes directly with the Bitcoin network. The extensive help makes it an excellent choice for non-technical users.</p>
+    <div><img src="/img/screenshots/multibithd.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/multibithd.png" alt="MultiBit HD" />MultiBit HD<span></span></a>
+</div>
+
+<div id="wallet-armory-desktop" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Armory</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://bitcoinarmory.com">Webサイトへ</a><a href="https://github.com/etotheipi/BitcoinArmory">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上でトランザクションを検証・中継する完全ノード型のソフトウェアのインストールを必要とします。これは、支払いを検証する際に第三者を信頼する必要がないことを意味します。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間を必要とします。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>アーモリー（Armory）は、ビットコイン・パワーユーザーのための機能を拡張できる高度なビットコイン・クライアントです。数多くのバックアップと暗号化機能を提供し、オフライン・コンピューターのコールド・ストレージを安全に保管します。</p>
+    <div><img src="/img/screenshots/armory.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/armory.png" alt="Armory" />Armory<span></span></a>
+</div>
+
+<div id="wallet-electrum-desktop" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Electrum</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://electrum.org">Webサイトへ</a><a href="https://github.com/spesmilo/electrum">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットは、ＳＰＶとリストからのランダムなサーバーを使います。つまり、支払いを検証する際に、第三者を信頼する必要はわずかしかありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>エレクトラム（Electrum）は、少ないリソースの使用で、高速度と単純性を達成することにフォーカスをあてています。ビットコインシステムの最も複雑な部分を扱うリモート・サーバを使用しており、秘密のフレーズを使って、あなたのビットコイン・ウォレットを回収することができます。</p>
+    <div><img src="/img/screenshots/electrum.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/electrum.png" alt="Electrum" />Electrum<span></span></a>
+</div>
+
+<div id="wallet-msigna-desktop" data-walletcompat="desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>mSIGNA</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://ciphrex.com/redirect/?referer=bitcoin.org">Webサイトへ</a><a href="https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkgood">完全検証<div><p>このウォレットは、ビットコインネットワーク上でトランザクションを検証・中継する完全ノード型のソフトウェアのインストールを必要とします。これは、支払いを検証する際に第三者を信頼する必要がないことを意味します。完全ノードは、最高レベルのセキュリティーを提供し、ネットワークを保護するのに不可欠です。しかし、より多くのディスク容量(20ＧＢ以上)と帯域幅、およびより長い初期同期時間を必要とします。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkgood">改善されたプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkpass">
+          <p>情報開示の回避</p>
+          <p>このウォレットは、支払いの送受の際に、ネットワークの仲間に情報を開示しません。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>mSIGNAは、高度ですが、容易に使えるウォレットでスピードと容易性、企業レベルの拡張可能性があり、セキュリティーが強いという特徴があります。これは、多重署名取引、オフラインストレージ、マルチデバイス間の同期と暗号化された電子的および紙面によるバックアップを行なうBIP32をサポートします。</p>
+    <div><img src="/img/screenshots/msigna.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/msigna.png" alt="mSIGNA" />mSIGNA<span></span></a>
+</div>
+
+<div id="wallet-bitcoinwallet-mobile" data-walletcompat="mobile android blackberry" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry" title="BlackBerry" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">インストール</a><a href="https://github.com/schildbach/bitcoin-wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコインウォレットは、安全で早いと同時に簡単に使え、信頼性があります。そのビジョンは、脱中央集権化とゼロの信頼、つまりビットコイン関連の操作に中央サービスは必要ないと言うことです。このアプリは技術に詳しくない人にとってよい選択肢です。</p>
+    <div><img src="/img/screenshots/bitcoinwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />Bitcoin<br>Wallet<span></span></a>
+</div>
+
+<div id="wallet-bitcoinwallet-android" data-walletcompat="mobile android blackberry" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry" title="BlackBerry" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=de.schildbach.wallet">インストール</a><a href="https://github.com/schildbach/bitcoin-wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコインウォレットは、安全で早いと同時に簡単に使え、信頼性があります。そのビジョンは、脱中央集権化とゼロの信頼、つまりビットコイン関連の操作に中央サービスは必要ないと言うことです。このアプリは技術に詳しくない人にとってよい選択肢です。</p>
+    <div><img src="/img/screenshots/bitcoinwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />Bitcoin<br>Wallet<span></span></a>
+</div>
+
+<div id="wallet-bitcoinwallet-blackberry" data-walletcompat="mobile android blackberry" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/blackberry.png" alt="BlackBerry" title="BlackBerry" /></div>
+    <div><a href="http://appworld.blackberry.com/webstore/content/23952882/">Webサイトへ</a><a href="https://github.com/schildbach/bitcoin-wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>ビットコインウォレットは、安全で早いと同時に簡単に使え、信頼性があります。そのビジョンは、脱中央集権化とゼロの信頼、つまりビットコイン関連の操作に中央サービスは必要ないと言うことです。このアプリは技術に詳しくない人にとってよい選択肢です。</p>
+    <div><img src="/img/screenshots/bitcoinwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />Bitcoin<br>Wallet<span></span></a>
+</div>
+
+<div id="wallet-copay-mobile" data-walletcompat="mobile desktop web android ios windowsphone windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Copay</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /><img src="/img/os/windowsphone.png" alt="Windows Phone" title="Windows Phone" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://copay.io">Webサイトへ</a><a href="https://github.com/bitpay/copay">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Copay is the HD-multisignature wallet originally built to secure BitPay's funds. Copay supports multiple personal and shared wallets, testnet, and the full Payment Protocol. A private <a href="https://github.com/bitpay/bitcore-wallet-service">BWS</a> node can be used for enhanced security and privacy.</p>
+    <div><img src="/img/screenshots/copay.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/copay.png" alt="Copay" />Copay<span></span></a>
+</div>
+
+<div id="wallet-copay-desktop" data-walletcompat="mobile desktop web android ios windowsphone windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Copay</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://copay.io/">Webサイトへ</a><a href="https://github.com/bitpay/copay">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Copay is the HD-multisignature wallet originally built to secure BitPay's funds. Copay supports multiple personal and shared wallets, testnet, and the full Payment Protocol. A private <a href="https://github.com/bitpay/bitcore-wallet-service">BWS</a> node can be used for enhanced security and privacy.</p>
+    <div><img src="/img/screenshots/copay.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/copay.png" alt="Copay" />Copay<span></span></a>
+</div>
+
+<div id="wallet-airbitzwallet-mobile" data-walletcompat="mobile android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Airbitz Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://airbitz.co/bitcoin-wallet/">Webサイトへ</a><a href="https://github.com/Airbitz">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対するホスト型コントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたがコントロールできます。しかし、このサービスは暗号化されたあなたのウォレットのコピーを保管します。つまり、サービスが不正にアクセスされて、強力なパスワードを使っていなければ、あなたのビットコインが盗まれる可能性があります。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Airbitz is a mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Airbitz wallets are always automatically encrypted, backed up, and even function when Airbitz servers go down.</p>
+    <div><img src="/img/screenshots/airbitzwalletios.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />Airbitz<span></span></a>
+</div>
+
+<div id="wallet-airbitzwallet-android" data-walletcompat="mobile android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Airbitz Bitcoin Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.airbitz">インストール</a><a href="https://github.com/Airbitz">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対するホスト型コントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたがコントロールできます。しかし、このサービスは暗号化されたあなたのウォレットのコピーを保管します。つまり、サービスが不正にアクセスされて、強力なパスワードを使っていなければ、あなたのビットコインが盗まれる可能性があります。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Airbitz is a mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Airbitz wallets are always automatically encrypted, backed up, and even function when Airbitz servers go down.</p>
+    <div><img src="/img/screenshots/airbitzwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />Airbitz<span></span></a>
+</div>
+
+<div id="wallet-airbitzwallet-ios" data-walletcompat="mobile android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Airbitz Bitcoin Wallet</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/bitcoin-wallet-map-directory/id843536046?mt=8">インストール</a><a href="https://github.com/Airbitz">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対するホスト型コントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたがコントロールできます。しかし、このサービスは暗号化されたあなたのウォレットのコピーを保管します。つまり、サービスが不正にアクセスされて、強力なパスワードを使っていなければ、あなたのビットコインが盗まれる可能性があります。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Airbitz is a mobile Bitcoin Wallet making high levels of privacy, security, and decentralization very familiar and usable to the masses. Airbitz wallets are always automatically encrypted, backed up, and even function when Airbitz servers go down.</p>
+    <div><img src="/img/screenshots/airbitzwalletios.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />Airbitz<span></span></a>
+</div>
+
+<div id="wallet-breadwallet-mobile" data-walletcompat="mobile ios" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>breadwallet</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/app/breadwallet/id885251393">インストール</a><a href="https://github.com/voisine/breadwallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>シンプルであることは、ブレッド・ウォレットのデザインコンセプトの中枢です。単独型のビットコイン・クライアントとして、ハッキングされたりダウンするサーバがなく、iOSの強力なセキュリティーの上に作られたブレッドウォレットは、あなたをマルウェア、ブラウザのセキュリティホールや物理的な盗難からさえも守るようにデザインされています。</p>
+    <div><img src="/img/screenshots/breadwallet.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/breadwallet.png" alt="breadwallet" />breadwallet<span></span></a>
+</div>
+
+<div id="wallet-breadwallet-ios" data-walletcompat="mobile ios" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>breadwallet</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/app/breadwallet/id885251393">インストール</a><a href="https://github.com/voisine/breadwallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>シンプルであることは、ブレッド・ウォレットのデザインコンセプトの中枢です。単独型のビットコイン・クライアントとして、ハッキングされたりダウンするサーバがなく、iOSの強力なセキュリティーの上に作られたブレッドウォレットは、あなたをマルウェア、ブラウザのセキュリティホールや物理的な盗難からさえも守るようにデザインされています。</p>
+    <div><img src="/img/screenshots/breadwallet.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/breadwallet.png" alt="breadwallet" />breadwallet<span></span></a>
+</div>
+
+<div id="wallet-trezor-hardware" data-walletcompat="hardware" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Trezor</h2>
+    <div></div>
+    <div><a href="https://www.bitcointrezor.com/">Webサイトへ</a><a href="https://github.com/trezor/">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkneutral">変動検証<div><p>支払いの検証機能は、このデバイスであなたがお使いになるソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットの検証スコアをご覧下さい。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkgood">非常に安全な環境<div><p>このウォレットはデバイスが提供する安全で特殊な環境から読み込まれます。この環境でソフトウエアをインストールすることはできませんので、コンピュータの脆弱性やマルウェアを非常に効果的に防止します。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkneutral">変動プライバシー<div><p>プライバシー機能は、このデバイスであなたがお使いのソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットのプライバシー・スコアをご覧下さい。</p><span></span></div></div>
+      
+    </div>
+    <p>TREZOR は、便利さを犠牲にせず、高レベルのセキュリティーを提供するハードウエア・ウォレットです。コールドストレージとは違い、TREZOR はオンラインデバイスに繋がっている際にも取引に署名ができます。つまり、マルウエアに感染した安全対策が施されていないコンピューターを使っていても、ビットコインを安全に使うことができるのです。</p>
+    <div><img src="/img/screenshots/trezor.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/trezor.png" alt="Trezor" />Trezor<span></span></a>
+</div>
+
+<div id="wallet-ledgernano-hardware" data-walletcompat="hardware" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Ledger Nano</h2>
+    <div></div>
+    <div><a href="https://www.ledgerwallet.com/">Webサイトへ</a><a href="https://github.com/LedgerHQ/">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkneutral">変動検証<div><p>支払いの検証機能は、このデバイスであなたがお使いになるソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットの検証スコアをご覧下さい。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkgood">非常に安全な環境<div><p>このウォレットはデバイスが提供する安全で特殊な環境から読み込まれます。この環境でソフトウエアをインストールすることはできませんので、コンピュータの脆弱性やマルウェアを非常に効果的に防止します。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkneutral">変動プライバシー<div><p>プライバシー機能は、このデバイスであなたがお使いのソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットのプライバシー・スコアをご覧下さい。</p><span></span></div></div>
+      
+    </div>
+    <p>Ledger Nano は、ST23YT66バンク・スマートカード・プラットフォームに基いて作られたハードウェアウォレットです。これは、ユーザーの秘密鍵を安全に保管し、トランザクションを検証し、安全なプリペイド・カードあるいは多重署名の参加者として使うことが出来ます。オープンソースではないものの、確定的に検証されることができます。</p>
+    <div><img src="/img/screenshots/ledger.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ledgernano.png" alt="Ledger Nano" />Ledger<br>Nano<span></span></a>
+</div>
+
+<div id="wallet-bither-mobile" data-walletcompat="mobile ios android desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bither</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/bither/id899478936">インストール</a><a href="https://github.com/bither/bither-ios">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkfail">弱いプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkfail">
+          <p>あなたの支払いに対するスパイ活動を許許可する</p>
+          <p>このウォレットは、同じアドレスを何度も使いますので、あなたの残高や支払いに対するスパイ活動を容易にします。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security.</p>
+    <div><img src="/img/screenshots/bithermobile.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bither.png" alt="Bither" />Bither<span></span></a>
+</div>
+
+<div id="wallet-bither-ios" data-walletcompat="mobile ios android desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bither</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/bither/id899478936">インストール</a><a href="https://github.com/bither/bither-ios">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkfail">弱いプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkfail">
+          <p>あなたの支払いに対するスパイ活動を許許可する</p>
+          <p>このウォレットは、同じアドレスを何度も使いますので、あなたの残高や支払いに対するスパイ活動を容易にします。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security.</p>
+    <div><img src="/img/screenshots/bithermobile.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bither.png" alt="Bither" />Bither<span></span></a>
+</div>
+
+<div id="wallet-bither-android" data-walletcompat="mobile ios android desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bither</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=net.bither">インストール</a><a href="https://github.com/bither/bither-android">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkfail">弱いプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkfail">
+          <p>あなたの支払いに対するスパイ活動を許許可する</p>
+          <p>このウォレットは、同じアドレスを何度も使いますので、あなたの残高や支払いに対するスパイ活動を容易にします。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security.</p>
+    <div><img src="/img/screenshots/bithermobile.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bither.png" alt="Bither" />Bither<span></span></a>
+</div>
+
+<div id="wallet-bither-desktop" data-walletcompat="mobile ios android desktop windows mac linux" data-walletlevel="2">
+  <span></span>
+  <div>
+    <h2>Bither</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="http://bither.net">Webサイトへ</a><a href="https://github.com/bither/bither-desktop-java">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">簡易化検証<div><p>このウォレットはＳＰＶとビットコイン・ネットワークを使います。つまり、支払いを検証する際に、第三者を信頼する必要はほとんどありません。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkfail">弱いプライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkfail">
+          <p>あなたの支払いに対するスパイ活動を許許可する</p>
+          <p>このウォレットは、同じアドレスを何度も使いますので、あなたの残高や支払いに対するスパイ活動を容易にします。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>仲間への限定情報の開示</p>
+          <p>支払い送受の際に、ネットワーク上の仲間があなたのＩＰアドレスを記録し、あなたの支払いと繋げることができます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Bither is a simple and secure wallet on many platforms. With special designed Cold/Hot modes, user can easily get both safety and simplicity. Bither's XRANDOM uses different entropy sources to generate true random number for users. Also with HDM, users can have HD's advantages and Multisig's security.</p>
+    <div><img src="/img/screenshots/bitherdesktop.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bither.png" alt="Bither" />Bither<span></span></a>
+</div>
+
+<div id="wallet-mycelium-mobile" data-walletcompat="mobile android" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Mycelium</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.mycelium.wallet">インストール</a><a href="https://github.com/mycelium-com/wallet">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Myceliumビットコイン・ウォレットは安全性、スピードと使いやすさを求めたオープンソースのアンドロイド用ウォレットです。あなたの鍵を管理する独自の機能や、あなたのビットコインを安全に守るコールド・ストレージがあります。</p>
+    <div><img src="/img/screenshots/mycelium.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/mycelium.png" alt="Mycelium" />Mycelium<span></span></a>
+</div>
+
+<div id="wallet-bitgo-desktop" data-walletcompat="web desktop windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>BitGo</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://chrome.google.com/webstore/detail/bitgo/jlgeogaipkoajobchncghcojanffjfhl">インストール</a><a href="https://github.com/BitGo/bitgo-chrome">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>BitGoは、高レベルのセキュリティーを提供する多重署名ウォレットです。マルウェアやサーバーへの攻撃からあなたのビットコインを守るために、各取引には2つの署名が必要となります。秘密鍵は、ユーザが持っていますので、BitGoはあなたのビットコインにアクセスできません。技術に詳しくないユーザにとって、良い選択肢です。</p>
+    <div><img src="/img/screenshots/bitgo.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitgo.png" alt="BitGo" />BitGo<span></span></a>
+</div>
+
+<div id="wallet-bitgo-web" data-walletcompat="web desktop windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>BitGo</h2>
+    <div></div>
+    <div><a href="https://www.bitgo.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>BitGoは、高レベルのセキュリティーを提供する多重署名ウォレットです。マルウェアやサーバーへの攻撃からあなたのビットコインを守るために、各取引には2つの署名が必要となります。秘密鍵は、ユーザが持っていますので、BitGoはあなたのビットコインにアクセスできません。技術に詳しくないユーザにとって、良い選択肢です。</p>
+    <div><img src="/img/screenshots/bitgo.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/bitgo.png" alt="BitGo" />BitGo<span></span></a>
+</div>
+
+<div id="wallet-greenaddress-mobile" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=it.greenaddress.cordova">インストール</a><a href="https://github.com/greenaddress/WalletCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">分散的検証<div><p>このウォレットは、リストからのランダムなサーバーに繋がります。つまり、支払いを検証する際には、第三者をいくらか信頼する必要性があります。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-greenaddress-desktop" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp">インストール</a><a href="https://github.com/greenaddress/WalletCrx">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressdesktop.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-greenaddress-web" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div></div>
+    <div><a href="https://chrome.google.com/webstore/detail/greenaddressit/dgbimgjoijjemhdamicmljbncacfndmp">インストール</a><a href="https://github.com/greenaddress/WalletCrx">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressdesktop.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-greenaddress-ios" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/greenaddress/id889740745?ls=1&amp;mt=8">インストール</a><a href="https://github.com/greenaddress/WalletCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">分散的検証<div><p>このウォレットは、リストからのランダムなサーバーに繋がります。つまり、支払いを検証する際には、第三者をいくらか信頼する必要性があります。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-greenaddress-android" data-walletcompat="mobile desktop web android ios windows mac linux" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>GreenAddress</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=it.greenaddress.cordova">インストール</a><a href="https://github.com/greenaddress/WalletCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkpass">分散的検証<div><p>このウォレットは、リストからのランダムなサーバーに繋がります。つまり、支払いを検証する際には、第三者をいくらか信頼する必要性があります。しかし、<a href="/ja/download">Bitcoin Core</a>のような完全ノードほど安全ではありません。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>グリーンアドレス（GreenAddress）は、安全性とプライバシー面で優れた使いやすい多重署名ウォレットです。あなたの鍵は、暗号化されものでさえサーバー・サイドに保管されることは決してありません。安全性の理由から、常に2FAとブラウザ・エクステンション、またはアンドロイド・アプリを使ってください。</p>
+    <div><img src="/img/screenshots/greenaddressandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/greenaddress.png" alt="GreenAddress" />Green<br>Address<span></span></a>
+</div>
+
+<div id="wallet-coinomi-mobile" data-walletcompat="mobile android" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Coinomi Universal Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet">インストール</a><a href="https://github.com/Coinomi">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!</p>
+    <div><img src="/img/screenshots/coinomiwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinomi.png" alt="Coinomi Universal Wallet" />Coinomi<span></span></a>
+</div>
+
+<div id="wallet-coinomi-android" data-walletcompat="mobile android" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Coinomi Universal Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet">インストール</a><a href="https://github.com/Coinomi/coinomi-android">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkgood">あなたのお金に対するコントロール<div><p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkpass">基本透明性<div><p>このウォレットのデベロッパーは、クライアントのソースコードを公表します。つまり、世界中のデベロッパー誰でもが、コードを監査できます。しかし、<a href="/ja/download">Bitcoin Core</a>のように確定的に作られたものではないため、最終的なソフトウエアをインストールしたりアップデートする際には、このウォレットのデベロッパーを信頼する必要があります。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">安全な環境<div><p>このウォレットは、通常、アプリが隔離されている携帯電話に読み込まれます。一般に、携帯電話は盗まれたり、失ったりすることがよくありますが、このウォレットは、マルウエアからの良い保護となります。あなたの携帯電話を暗号化したり、あなたのウォレットをバックアップすると、リスクを減少することができます。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このウォレットは、あなたの支払いを関連させ、あなたのＩＰアドレスを記録することができる中央サービスを使います。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Coinomi is a lightweight, secure, open-source, universal, HD Wallet. Apart from Bitcoin it also supports many altcoins so you can keep all your funds in a single wallet. Your private keys never leave your device and you only need to back it up just once!</p>
+    <div><img src="/img/screenshots/coinomiwalletandroid.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinomi.png" alt="Coinomi Universal Wallet" />Coinomi<span></span></a>
+</div>
+
+<div id="wallet-coinbase-web" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinbase</h2>
+    <div></div>
+    <div><a href="https://coinbase.com">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>コインベース（Coinbase）は、使い易さを目指したウェブ・ウォレット・サービスです。アンドロイド用のウエブ・ウォレット・アプリ、商業用ツール、そしてビットコイン売買のためのアメリカの銀行との統合なども提供しています。</p>
+    <div><img src="/img/screenshots/coinbase.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinbase.png" alt="Coinbase" />Coinbase<span></span></a>
+</div>
+
+<div id="wallet-coinkite-web" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinkite</h2>
+    <div></div>
+    <div><a href="https://coinkite.com">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>コインカイト（CoinKite）は、使いやすさを目指したウエブ・ウォレットとデビットカード・サービスです。モバイル・ブラウザでも動作し、業者向けツールやPOSの支払い端末もあります。また、ハイブリッドなウォレットで予備金庫にもなります。</p>
+    <div><img src="/img/screenshots/coinkite.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinkite.png" alt="Coinkite" />Coinkite<span></span></a>
+</div>
+
+<div id="wallet-xapo-web" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Xapo</h2>
+    <div></div>
+    <div><a href="https://xapo.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によってコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが凍結したり、あなたの資金の処理を誤ることがないと信頼する必要があります。このサービスは、彼ら側の誤りに対して保証を提供すると主張しますが、あなたのウォレットを安全に守るのはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Xapoは、毎日使うビットコインウォレット便利さと、コールドストレージ保管庫の安全性を組み合わせたものです。Xapoデビットカードは、あなたのXapoウォレットとリンクし、世界中の何百万件もの業者にビットコインを使うことが出来ます。</p>
+    <div><img src="/img/screenshots/xapo.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/xapo.png" alt="Xapo" />Xapo<span></span></a>
+</div>
+
+<div id="wallet-coinapult-web" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Coinapult</h2>
+    <div></div>
+    <div><a href="https://coinapult.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によりコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが彼ら側の偶発的な出来事によりあなたの資金を失くさないことを信頼する必要があります。今日までに、ウエブウォレットのほとんどは、銀行のように預金を保証しておらず、こうしたサービスの多くは過去にセキュリティー侵害を受けています。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkfail">脆弱な環境<div><p>このウォレットは、マルウエアに脆弱なコンピューターに読み込まれます。あなたのコンピューターを安全に保ち、強力なパスフレーズを用い、あなたの資金のほとんどをコールドストレージに移動したり、2要素認証を用いると、あなたのビットコインを盗むことがより困難になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Coinapult's wallet is designed with Bitcoin newcomers in mind. It allows sending bitcoins via email and SMS, and a handy tool called Locks helps protecting your balance from Bitcoin price swings. Users can Lock bitcoins to Gold, Euros, and more!</p>
+    <div><img src="/img/screenshots/coinapult.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/coinapult.png" alt="Coinapult" />Coinapult<span></span></a>
+</div>
+
+<div id="wallet-circle-web" data-walletcompat="web" data-walletlevel="4">
+  <span></span>
+  <div>
+    <h2>Circle</h2>
+    <div></div>
+    <div><a href="https://circle.com/">Webサイトへ</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkfail">第三者によってコントロールされるお金<div><p>このサービスは、あなたのビットコインを完全にコントロールします。つまり、あなたは、このサービスが凍結したり、あなたの資金の処理を誤ることがないと信頼する必要があります。このサービスは、彼ら側の誤りに対して保証を提供すると主張しますが、あなたのウォレットを安全に守るのはあなたの責任です。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">リモート・アプリ<div><p>このウォレットは、遠隔地から読み込まれます。つまり、あなたがご自分のウォレットを使うたびに、デベロッパーのサイト上での偶発的な出来事で、彼らがあなたのビットコインを盗んだり失くしたりしないということを信じる必要があります。できればブラウザ・エクステンションや携帯電話アプリを使うと、こうしたリスクが減少します。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkpass">
+          <p>Torを使用することが出来ます</p>
+          <p>このウォレットを使うと、攻撃者やインターネット・サービスプロバイダがあなたのIPアドレスを使用して支払いを関連付けることを阻止するプロキシとして<a href="https://www.torproject.org/">Tor</a> を設定し使うことができます。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>Circle is a web wallet service that aims to be easy to use. It provides the ability to instantly purchase and sell bitcoins using either a credit card or a U.S. bank account. It also provides an Android and an iOS web wallet app.</p>
+    <div><img src="/img/screenshots/circle.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/circle.png" alt="Circle" />Circle<span></span></a>
+</div>
+
+<div id="wallet-ninki-desktop" data-walletcompat="mobile desktop windows mac linux android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Ninki Wallet</h2>
+    <div><img src="/img/os/windows.png" alt="WIndows" title="WIndows" /><img src="/img/os/mac.png" alt="Mac" title="Mac" /><img src="/img/os/linux.png" alt="Linux" title="Linux" /></div>
+    <div><a href="https://chrome.google.com/webstore/detail/ninki-wallet/ojjnofoknpfkbbamkfililnkoeoiohih">インストール</a><a href="https://github.com/Ninkip2p/NinkiWalletCRX">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>An advanced wallet for experienced Bitcoin users. Ninki is a multi-signature wallet with a beautiful user interface. You have full control of your bitcoins at all times.</p>
+    <div><img src="/img/screenshots/ninki.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ninki.png" alt="Ninki Wallet" />Ninki<span></span></a>
+</div>
+
+<div id="wallet-ninki-mobile" data-walletcompat="mobile desktop windows mac linux android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Ninki Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en">インストール</a><a href="https://github.com/Ninkip2p/NinkiCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>An advanced wallet for experienced Bitcoin users. Ninki is a multi-signature wallet with a beautiful user interface. You have full control of your bitcoins at all times.</p>
+    <div><img src="/img/screenshots/ninki.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ninki.png" alt="Ninki Wallet" />Ninki<span></span></a>
+</div>
+
+<div id="wallet-ninki-ios" data-walletcompat="mobile desktop windows mac linux android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Ninki Wallet</h2>
+    <div><img src="/img/os/ios.png" alt="iOS" title="iOS" /></div>
+    <div><a href="https://itunes.apple.com/us/app/ninki-wallet/id965528267?mt=8">インストール</a><a href="https://github.com/Ninkip2p/NinkiCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>An advanced wallet for experienced Bitcoin users. Ninki is a multi-signature wallet with a beautiful user interface. You have full control of your bitcoins at all times.</p>
+    <div><img src="/img/screenshots/ninki.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ninki.png" alt="Ninki Wallet" />Ninki<span></span></a>
+</div>
+
+<div id="wallet-ninki-android" data-walletcompat="mobile desktop windows mac linux android ios" data-walletlevel="3">
+  <span></span>
+  <div>
+    <h2>Ninki Wallet</h2>
+    <div><img src="/img/os/android.png" alt="Android" title="Android" /></div>
+    <div><a href="https://play.google.com/store/apps/details?id=com.ninki.wallet&amp;hl=en">インストール</a><a href="https://github.com/Ninkip2p/NinkiCordova">ソースコード</a></div>
+    <div ontouchstart="walletScoreListener(event);" onclick="walletScoreListener(event);">
+      
+      <div class="checkcontrol checkpass">あなたのお金に対する共有型コントロール<div><p>このウォレットは、すべての取引においてあなたと第三者の承認を必要とします。通常は、最初のバックアップやＥメールで送られてきた事前署名取引を用いることで、あなたのビットコインをあなたが完全にコントロールできます。</p><span></span></div></div>
+      
+      <div class="checkvalidation checkfail">集中型検証<div><p>このウォレットは、初期設定で中央サービスに依存しています。つまり、第三者が支払いを非表示にしたり、シミュレートしたりしないと信じることが必要です。</p><span></span></div></div>
+      
+      <div class="checktransparency checkfail">新しいアプリ<div><p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p><span></span></div></div>
+      
+      <div class="checkenvironment checkpass">2要素認証<div><p>このウォレットは、安全でない環境で使うことが出来ます。しかし、このサービスには2要素認証が必要です。つまり、あなたのビットコインを盗むには、複数のデバイスや口座が必要になります。</p><span></span></div></div>
+      
+      <div class="checkprivacy checkpass">基本プライバシー<div><div>
+        
+        <div class="checkprivacyaddressreuse checkpass">
+          <p>あなたの支払いに対するスパイ活動防止</p>
+          <p>このウォレットは、アドレスを循環することであなたの残高や支払いに対するスパイ活動を困難にしますが、支払いを請求する度に、新しいビットコインアドレスを使うように心がけてください。</p>
+        </div>
+        
+        <div class="checkprivacydisclosure checkfail">
+          <p>第三者への情報の開示</p>
+          <p>このサービスは、あなたの支払いを関連付け、あなたのＩＰアドレスを記録し、あなたがＥメールや名前あるいは銀行口座といった個人情報を提供していればあなたの本当の身元を知ることが出来ます。</p>
+        </div>
+        
+        <div class="checkprivacynetwork checkfail">
+          <p>Torは、サポートされていません</p>
+          <p>このウォレットは、攻撃者やインターネットプロバイダがあなたのＩＰアドレスを用いて支払いと関連付けることを阻止するためにTorを使用させてくれません。</p>
+        </div>
+        
+      </div><span></span></div></div>
+      
+    </div>
+    <p>An advanced wallet for experienced Bitcoin users. Ninki is a multi-signature wallet with a beautiful user interface. You have full control of your bitcoins at all times.</p>
+    <div><img src="/img/screenshots/ninki.png" alt="screenshot"></div>
+  </div>
+  <a><img src="/img/wallet/ninki.png" alt="Ninki Wallet" />Ninki<span></span></a>
+</div>
+
+</div>
+
+<div class="wallets walletsmobile" id="walletsmobile"></div>
+
+<script>if (isMobile()) walletShowPlatform('mobile'); else walletShowPlatform('default');</script>
+
+<div class="walletsdisclaimer">
+<h2><img src="/img/icons/warning.svg" class="warningicon" alt="warning">時間をかけて学びましょう</h2>
+<p>ビットコインは、あなたが知っていて毎日使うものとは異なります。ビットコインを大きな取引に使い始める前に、必ず <a href="/ja/you-need-to-know"><b>知っておくべきこと</b></a> をお読みになって <a href="/ja/secure-your-wallet"><b>あなたのウォレットを安全に保つ</b></a>ための適切なステップを踏んでください。あなたのウォレットを注意深く選び、あなたのお金を守るために良い習慣を適応することは、あなたの責任であることを常に覚えておいてください。</p>
+</div>
+
+      </div>
+    </div>
+
+    <div class="site_footer">
+    	
+
+<div class="footer_standard">
+	<div class="footer_standard--leftbox">
+		<ul>
+			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/ja/legal">法律</a></li>
+			
+			<li><a href="/ja/privacy">プライバシー</a></li>
+			
+			<li><a href="/ja/press">プレス</a></li>
+			<li><a href="/ja/about-us">bitcoin.org について</a></li>
+			<li><a href="/en/blog">Blog</a></li>
+		</ul>
+	</div>
+	<div class="footer_standard--rightbox">
+		© Bitcoin Project 2009-2015 <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MITライセンス</a>のもとでのリリース
+	</div>
+	<div class="footer_standard--sponsor">
+	  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+	</div>
+</div>	
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer_main">
+    
+
+<div class="footer_developer">
+	<div class="footer_developer--header">
+		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
+		<h2>Bitcoin<span>Core</span></h2>
+	</div>
+	<div class="footer_developer--body">
+		<div class="footer_developer--info">
+			<p>Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
+		</div>
+		<div class="footer_developer--action">
+			<div class="footer_developer--action--text">
+				<h2>Developers Resources</h2>
+			</div>
+			<div class="footer_developer--action--buttonarea">
+				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
+					Documentation
+				</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+
+</body>
+
+</html>

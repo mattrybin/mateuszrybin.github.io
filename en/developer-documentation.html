@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Developer Documentation - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+<div class="top">
+  <div class="top_main">
+    
+
+
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
+
+  </div>
+</div>
+<div class="site">
+  <div class="site_main">
+
+    <div class="site_header">
+      
+
+<div class="header_standard">
+	<div class="header_standard--branding">
+		<div class="header_standard--logo">
+			<a href="/en/"><img src="/img/components/header_standard--logo.svg"></a>
+		</div>
+		<div class="header_standard--title">
+			<h2><a href="/en/">Bitcoin</a></h2>
+		</div>
+	</div>
+	<div class="header_standard--toggle">
+		<img src="/img/components/header_standard--toggle.svg">
+	</div>
+
+	<div class="header_standard--navigation">
+		<ul class="header_standard--menu">
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--introduction" href="#"><span aria-expanded="false">Introduction</span></a>
+			</li>
+			<li class="header_standard--menu--child">
+				<a class="header_standard--menu--toggle--resources" href="#"><span aria-expanded="false">Resources</span></a>
+			</li>
+			<li><a href="/en/innovation">Innovation</a></li>
+			<li class="header_standard--menu--child">
+				<a  class="header_standard--menu--toggle--participate" href="#"><span aria-expanded="false">Participate</span></a>
+			</li>
+			<li><a href="/en/faq">FAQ</a></li>
+		</ul>
+
+		<div class="header_standard--flags">
+			<ul class='header_standard--flags--selector'>
+			  <li>
+    			  	<a class="header_standard--menu--toggle--flags" href='#'>
+    			  		<div class="header_standard--flags--primary">
+    			  			<img src="/img/flags/en.png"><strong>English</strong>
+    			  		</div>
+    			  	</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header_standard--menu--dropdown-wrap">
+	<div class="header_standard--menu--dropdown">
+		<ul class="header_standard--menu--dropdown--introduction">
+			<li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+			<li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+			<li><a href="/en/bitcoin-for-developers">Developers</a></li>
+			<li><a href="/en/getting-started">Getting started</a></li>
+			<li><a href="/en/how-it-works">How it works</a></li>
+			<li><a href="/en/you-need-to-know">You need to know</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--resources">
+			<li><a href="/en/resources">Resources</a></li>
+			<li><a href="/en/community">Community</a></li>
+			<li><a href="/en/developer-documentation">Documentation</a></li>
+			<li><a href="/en/vocabulary">Vocabulary</a></li>
+			<li><a href="/en/events">Events</a></li>
+			
+			  <li><a href="/en/bitcoin-core/">Bitcoin Core</a></li>
+			
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--participate">
+			<li><a href="/en/support-bitcoin">Support Bitcoin</a></li>
+            
+			<li><a href="/en/full-node">Running a full node</a></li>
+            
+			<li><a href="/en/development">Development</a></li>
+		</ul>
+
+		<ul class="header_standard--menu--dropdown--flags">
+        
+        
+              <li><a href="/id/"><img src="/img/flags/id.png"><span>Bahasa Indonesia</span></a></li>
+        
+        
+              <li><a href="/da/"><img src="/img/flags/da.png"><span>Dansk</span></a></li>
+        
+        
+              <li><a href="/de/"><img src="/img/flags/de.png"><span>Deutsch</span></a></li>
+        
+        
+        
+              <li><a href="/en/"><img src="/img/flags/en.png"><span>English</span></a></li>
+        
+        
+              <li><a href="/es/"><img src="/img/flags/es.png"><span>Español</span></a></li>
+        
+        
+              <li><a href="/fr/"><img src="/img/flags/fr.png"><span>Français</span></a></li>
+        
+        
+              <li><a href="/it/"><img src="/img/flags/it.png"><span>Italiano</span></a></li>
+        
+        
+              <li><a href="/hu/"><img src="/img/flags/hu.png"><span>Magyar</span></a></li>
+        
+        
+              <li><a href="/nl/"><img src="/img/flags/nl.png"><span>Nederlands</span></a></li>
+        
+        
+              <li><a href="/pl/"><img src="/img/flags/pl.png"><span>Polski</span></a></li>
+        
+        
+              <li><a href="/pt_BR/"><img src="/img/flags/pt_BR.png"><span>Português Brasil</span></a></li>
+        
+        
+              <li><a href="/ro/"><img src="/img/flags/ro.png"><span>Română</span></a></li>
+        
+        
+              <li><a href="/sl/"><img src="/img/flags/sl.png"><span>Slovenščina</span></a></li>
+        
+        
+              <li><a href="/sv/"><img src="/img/flags/sv.png"><span>Svenska</span></a></li>
+        
+        
+              <li><a href="/tr/"><img src="/img/flags/tr.png"><span>Türkçe</span></a></li>
+        
+        
+              <li><a href="/el/"><img src="/img/flags/el.png"><span>Ελληνικά</span></a></li>
+        
+        
+              <li><a href="/bg/"><img src="/img/flags/bg.png"><span>български</span></a></li>
+        
+        
+              <li><a href="/ru/"><img src="/img/flags/ru.png"><span>Русский</span></a></li>
+        
+        
+              <li><a href="/uk/"><img src="/img/flags/uk.png"><span>Українська</span></a></li>
+        
+        
+              <li><a href="/ar/"><img src="/img/flags/ar.png"><span>العربية</span></a></li>
+        
+        
+              <li><a href="/fa/"><img src="/img/flags/fa.png"><span>فارسی</span></a></li>
+        
+        
+              <li><a href="/hi/"><img src="/img/flags/hi.png"><span>हिन्दी</span></a></li>
+        
+        
+              <li><a href="/ko/"><img src="/img/flags/ko.png"><span>한국의</span></a></li>
+        
+        
+              <li><a href="/ja/"><img src="/img/flags/ja.png"><span>日本語</span></a></li>
+        
+        
+              <li><a href="/zh_CN/"><img src="/img/flags/zh_CN.png"><span>简体中文</span></a></li>
+        
+        
+              <li><a href="/zh_TW/"><img src="/img/flags/zh_TW.png"><span>繁體中文</span></a></li>
+        
+		</ul>
+	</div>
+</div>
+<div class="header_standard--outside" aria-toggle="start">
+	<div class="header_standard--outside--flags">
+		<div class="header_standard--outside--button">
+			<span class="header_standard--outside--changelang">Change Language</span>
+			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
+				<div>
+                    <img src="/img/flags/en.png"><strong>English</strong>
+				</div>
+			</a>
+		</div>
+		<ul class="header_standard--outside--sub-menu">
+		
+               
+                     <li><a href="/id/"><img src="/img/flags/id.png">Bahasa Indonesia</a></li>
+               
+               
+                     <li><a href="/da/"><img src="/img/flags/da.png">Dansk</a></li>
+               
+               
+                     <li><a href="/de/"><img src="/img/flags/de.png">Deutsch</a></li>
+               
+               
+               
+                     <li><a href="/en/"><img src="/img/flags/en.png">English</a></li>
+               
+               
+                     <li><a href="/es/"><img src="/img/flags/es.png">Español</a></li>
+               
+               
+                     <li><a href="/fr/"><img src="/img/flags/fr.png">Français</a></li>
+               
+               
+                     <li><a href="/it/"><img src="/img/flags/it.png">Italiano</a></li>
+               
+               
+                     <li><a href="/hu/"><img src="/img/flags/hu.png">Magyar</a></li>
+               
+               
+                     <li><a href="/nl/"><img src="/img/flags/nl.png">Nederlands</a></li>
+               
+               
+                     <li><a href="/pl/"><img src="/img/flags/pl.png">Polski</a></li>
+               
+               
+                     <li><a href="/pt_BR/"><img src="/img/flags/pt_BR.png">Português Brasil</a></li>
+               
+               
+                     <li><a href="/ro/"><img src="/img/flags/ro.png">Română</a></li>
+               
+               
+                     <li><a href="/sl/"><img src="/img/flags/sl.png">Slovenščina</a></li>
+               
+               
+                     <li><a href="/sv/"><img src="/img/flags/sv.png">Svenska</a></li>
+               
+               
+                     <li><a href="/tr/"><img src="/img/flags/tr.png">Türkçe</a></li>
+               
+               
+                     <li><a href="/el/"><img src="/img/flags/el.png">Ελληνικά</a></li>
+               
+               
+                     <li><a href="/bg/"><img src="/img/flags/bg.png">български</a></li>
+               
+               
+                     <li><a href="/ru/"><img src="/img/flags/ru.png">Русский</a></li>
+               
+               
+                     <li><a href="/uk/"><img src="/img/flags/uk.png">Українська</a></li>
+               
+               
+                     <li><a href="/ar/"><img src="/img/flags/ar.png">العربية</a></li>
+               
+               
+                     <li><a href="/fa/"><img src="/img/flags/fa.png">فارسی</a></li>
+               
+               
+                     <li><a href="/hi/"><img src="/img/flags/hi.png">हिन्दी</a></li>
+               
+               
+                     <li><a href="/ko/"><img src="/img/flags/ko.png">한국의</a></li>
+               
+               
+                     <li><a href="/ja/"><img src="/img/flags/ja.png">日本語</a></li>
+               
+               
+                     <li><a href="/zh_CN/"><img src="/img/flags/zh_CN.png">简体中文</a></li>
+               
+               
+                     <li><a href="/zh_TW/"><img src="/img/flags/zh_TW.png">繁體中文</a></li>
+               
+		</ul>
+	</div>
+	<ul class="header_standard--outside--menu">
+		<div class="header_standard--outside--menu--title">
+		Menu
+		</div>
+		<li>
+			<span>Introduction</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/en/bitcoin-for-individuals">Individuals</a></li>
+                <li><a href="/en/bitcoin-for-businesses">Businesses</a></li>
+                <li><a href="/en/bitcoin-for-developers">Developers</a></li>
+                <li><a href="/en/getting-started">Getting started</a></li>
+                <li><a href="/en/how-it-works">How it works</a></li>
+                <li><a href="/en/you-need-to-know">You need to know</a></li>
+			</ul>
+		</li>
+		<li><span>Resources</span>
+			<ul class="header_standard--outside--menu_list">
+				<li><a href="/en/resources">Resources</a></li>
+                <li><a href="/en/community">Community</a></li>
+                <li><a href="/en/developer-documentation">Documentation</a></li>
+                <li><a href="/en/vocabulary">Vocabulary</a></li>
+                <li><a href="/en/events">Events</a></li>
+                
+                  <li><a href="/en/bitcoin-core/">Bitcoin Core</a></li>
+                
+			</ul>
+		</li>
+		<li><a href="#">Innovation</a></li>
+		<li><span>Participate</span>
+			<ul class="header_standard--outside--menu_list">
+                <li><a href="/en/support-bitcoin">Support Bitcoin</a></li>
+                
+                <li><a href="/en/full-node">Running a full node</a></li>
+                
+                <li><a href="/en/development">Development</a></li>
+			</ul>
+		</li>
+		<li><a href="#">FAQ</a></li>
+	</ul>
+</div>
+    </div>
+
+    <div class="site_body">
+      <div class="body_standard">
+        <link rel="stylesheet" href="/css/jquery-ui.min.css" />
+
+<h1 id="developer-documentation">Developer Documentation</h1>
+
+<p class="summary">Find useful resources, guides and reference material for developers.</p>
+
+<p><input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more" /></p>
+
+<div class="docreference">
+<a href="/en/developer-guide"><span class="fa fa-info-circle fa-2x"></span><span>Guide</span></a>
+<a href="/en/developer-reference"><span class="fa fa-book fa-2x"></span><span>Reference</span></a>
+<a href="/en/developer-examples"><span class="fa fa-code fa-2x"></span><span>Examples</span></a>
+<a href="/en/developer-glossary"><span class="fa fa-font fa-2x"></span><span>Glossary</span></a>
+</div>
+
+<div class="resources">
+  <div><div>
+      <h2 id="block_chain"><span class="fa fa-cube fa-lg"></span> Block Chain</h2>
+      <p><a href="/en/developer-guide#block-chain">Block Chain Guide</a></p>
+      <p><a href="/en/developer-reference#block-chain">Block Chain Reference</a></p>
+    </div><div>
+      <h2 id="transactions"><span class="fa fa-exchange fa-lg"></span> Transactions</h2>
+      <p><a href="/en/developer-guide#transactions">Transactions Guide</a></p>
+      <p><a href="/en/developer-reference#transactions">Transactions Reference</a></p>
+      <p><a href="/en/developer-examples#transactions">Transaction Examples</a></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="contracts"><span class="fa fa-sitemap fa-lg fa-rotate-270"></span> Contracts</h2>
+      <p><a href="/en/developer-guide#contracts">Contracts Guide</a></p>
+      <p><a href="https://en.bitcoin.it/wiki/Contracts"><span class="fa fa-external-link"></span> More Contracts</a> - Wiki</p>
+      <p><a href="https://bitcoinj.github.io/working-with-micropayments"><span class="fa fa-external-link"></span> Micropayment Channel Example</a> - bitcoinj</p>
+    </div><div>
+      <h2 id="wallets"><span class="fa fa-btc fa-lg"></span> Wallets</h2>
+      <p><a href="/en/developer-guide#wallets">Wallets Guide</a></p>
+      <p><a href="/en/developer-reference#wallets">Wallets Reference</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"><span class="fa fa-external-link"></span> HD Wallets</a> - BIP32</p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"><span class="fa fa-external-link"></span> Mnemonic Code</a> - BIP39</p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="payment-processing"><span class="fa fa-cart-plus fa-lg"></span> Payment Processing</h2>
+      <p><a href="/en/developer-guide#payment-processing">Payment Processing Guide</a></p>
+      <p><a href="/en/developer-examples#payment-processing">Payment Processing Examples</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki"><span class="fa fa-external-link"></span> Payment Protocol</a> - BIP70</p>
+    </div><div>
+      <h2 id="operating_modes"><span class="fa fa-cogs fa-lg"></span> Operating Modes</h2>
+      <p><a href="/en/developer-guide#operating-modes">Operating Modes Guide</a></p>
+    </div>
+  </div>
+  <div>
+    <div>
+      <h2 id="p2p-network"><span class="fa fa-share-alt fa-lg"></span> P2P Network</h2>
+      <p><a href="/en/developer-guide#p2p-network">P2P Network Guide</a></p>
+      <p><a href="/en/developer-reference#p2p-network">P2P Network Reference</a></p>
+      <p><a href="/en/developer-examples#p2p-network">P2P Network Examples</a></p>
+      <p><a href="https://en.bitcoin.it/wiki/Protocol_specification"><span class="fa fa-external-link"></span> Full Protocol Specification</a> - Wiki</p>
+    </div><div>
+      <h2 id="mining"><span class="fa fa-puzzle-piece fa-lg"></span> Mining</h2>
+      <p><a href="/en/developer-guide#mining">Mining Guide</a></p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0022.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Fundamentals</a> - BIP22</p>
+      <p><a href="https://github.com/bitcoin/bips/blob/master/bip-0023.mediawiki"><span class="fa fa-external-link"></span> getblocktemplate Pooled Mining</a> - BIP23</p>
+    </div>
+  </div>
+</div>
+
+<div class="resourcesmore"><div>
+  <h2 id="additional-resources"><span class="fa fa-link fa-lg"></span> Additional resources</h2>
+  <p><a href="/en/bitcoin-paper"><span class="fa fa-external-link"></span> Bitcoin: A Peer-to-Peer Electronic Cash System</a> - Satoshi Nakamoto</p>
+  <p><a href="https://github.com/bitcoin/bips#readme"><span class="fa fa-external-link"></span> Bitcoin Improvement Proposals</a> - GitHub</p>
+  <p><a href="https://github.com/minium/Bitcoin-Spec"><span class="fa fa-external-link"></span> Bitcoin Developer Reference (working paper)</a> - Krzysztof Okupski</p>
+  <p><a href="https://bitcoinj.github.io/#documentation"><span class="fa fa-external-link"></span> Bitcoinj Developer Documentation</a> - bitcoinj.org</p>
+  <p><a href="https://en.bitcoin.it/wiki/Category:Technical"><span class="fa fa-external-link"></span> Technical Pages</a> - Wiki</p>
+</div></div>
+
+      </div>
+    </div>
+
+    <div class="site_footer">
+    	
+
+<div class="footer_standard">
+	<div class="footer_standard--leftbox">
+		<ul>
+			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/legal">Legal</a></li>
+			
+			<li><a href="/en/privacy">Privacy</a></li>
+			
+			<li><a href="/en/press">Press</a></li>
+			<li><a href="/en/about-us">About bitcoin.org</a></li>
+			<li><a href="/en/blog">Blog</a></li>
+		</ul>
+	</div>
+	<div class="footer_standard--rightbox">
+		© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>
+	</div>
+	<div class="footer_standard--sponsor">
+	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+	</div>
+</div>	
+    </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer_main">
+    
+
+<div class="footer_developer">
+	<div class="footer_developer--header">
+		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
+		<h2>Bitcoin<span>Core</span></h2>
+	</div>
+	<div class="footer_developer--body">
+		<div class="footer_developer--info">
+			<p>Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
+		</div>
+		<div class="footer_developer--action">
+			<div class="footer_developer--action--text">
+				<h2>Developers Resources</h2>
+			</div>
+			<div class="footer_developer--action--buttonarea">
+				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
+					Documentation
+				</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>
+
+
+
+</body>
+
+</html>
