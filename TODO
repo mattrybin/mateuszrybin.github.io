@@ -1,5 +1,50 @@
 Redesign
 
+18) Refactor en > developer-guide.md
+	fix html
+	add css
+
+
+17) Refactor en > developer-documentation.md
+	fix html
+	add css
+
+
+16) Refactor _templates > community.html
+	fix html
+	add css
+
+15) Refactor _templates > resources.html
+	fix html
+	add css
+
+14) Refactor _templates > you-need-to-know.html
+	fix html
+	add css
+
+13) REfactor _templates > how-it-works.html
+	fix html
+	add css
+
+
+12) REfactor _templates > getting-started
+	fix html
+	add css
+
+11) refactor _templates > bitcoin-for-developers
+	Fix the html
+	add less
+
+10) refactor _templates > bitcoin-for-businesses
+	Fix the html
+	add less
+
+
+9) refactor _templates > bitcoin-for-indivuduals
+	Fix the html
+	add less
+
+
 8) Add Font
 	Add files
 	add less
@@ -90,5 +135,10 @@ _components
 
 
 BUGS
+
+
+CREDIT
+
+Icon /nonprofit.svg - nonprofit by Martha Ormiston from the Noun Project
 
 

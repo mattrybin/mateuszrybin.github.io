@@ -10,7 +10,7 @@
 <title>Jak Działa Bitcoin? - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Jak Działa Bitcoin?</h1>
-<p class="summary">To pytanie często rodzi nieporozumienia. Oto szybkie wyjaśnienie!</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Podstawy dla nowego użytkownika</h2>
-<p>Jako nowy użytkownik możesz <a href="/pl/pierwsze-kroki">zacząć korzystać</a> z Bitcoin bez rozumienia szczegółów technicznych. Kiedy zainstalujesz portfel Bitcoin na swoim komputerze lub telefonie, zostanie wygenerowany Twój pierwszy adres Bitcoin. Możesz zawsze wygenerować kolejne adresy, jeśli będziesz ich potrzebował. Możesz ujawnić swój adres znajomym, aby mogli Ci płacić i vice versa. Jest to bardzo podobne do tego, jak działają emaile, z taką różnicą, że adres Bitcoin powinien być wykorzystany tylko raz.</p>
+<h1 class="content_how-it-works--title">Jak Działa Bitcoin?</h1>
+<h2 class="content_how-it-works--subtitle">To pytanie często rodzi nieporozumienia. Oto szybkie wyjaśnienie!</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Saldo<span class="titlelight"> - łańcuch bloków</span></h2>
-<p>Łańcuch bloków jest <b>współdzielonym zapisem transakcji</b>, na którym opiera się cała sieć Bitcoin. Wszystkie potwierdzone transakcje są w nim zapisane bez żadnych wyjątków. W ten sposób portfele Bitcoin mogą obliczyć saldo, dzięki czemu transakcje mogą być weryfikowane tak, aby mieć pewność, że wydawane bitcoiny są faktycznie posiadane przez wydającego. Integralność oraz porządek chronologiczny łańcucha bloków są wymuszone przez <a href="/pl/slownik#kryptografia">kryptografię</a>.</p>
+	<h2>Podstawy dla nowego użytkownika</h2>
+	<p>Jako nowy użytkownik możesz <a href="/pl/pierwsze-kroki">zacząć korzystać</a> z Bitcoin bez rozumienia szczegółów technicznych. Kiedy zainstalujesz portfel Bitcoin na swoim komputerze lub telefonie, zostanie wygenerowany Twój pierwszy adres Bitcoin. Możesz zawsze wygenerować kolejne adresy, jeśli będziesz ich potrzebował. Możesz ujawnić swój adres znajomym, aby mogli Ci płacić i vice versa. Jest to bardzo podobne do tego, jak działają emaile, z taką różnicą, że adres Bitcoin powinien być wykorzystany tylko raz.</p>
 
-<h2 id="transactions">Transakcje<span class="titlelight"> - klucze prywatne</span></h2>
-<p>Transakcja jest to <b>transfer dowolnej kwoty pomiędzy portfelami Bitcoin</b>, który zostaje uwzględniony w łańcuchu bloków. Portfele Bitcoin zawierają porcje tajnych danych, zwanych <a href="/pl/slownik#klucz-prywatny"><i>kluczami prywatnymi</i></a> lub seedami. Są one używane do podpisywania transakcji, gdyż zawierają matematyczny dowód, iż pochodzą od właściciela portfela. <a href="/pl/slownik#podpis"><i>Podpis</i></a> zapobiega też modyfikacjom transakcji przez osoby trzecie już od momentu jego wydania. Wszystkie transakcje są rozpowszechniane pomiędzy użytkownikami i zazwyczaj zaczynają być potwierdzane przez sieć w ciągu kolejnych 10 minutach w procesie zwanym <a href="/pl/slownik#wydobycie"><i>wydobywaniem</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Przetwarzanie<span class="titlelight"> - wydobywanie</span></h2>
-<p>Wydobycie jest <b>rozproszonym systemem konsensu</b>, używanym do <a href="/pl/slownik#potwierdzenie"><i>potwierdzania</i></a> oczekujących transakcji poprzez włączanie ich do łańcucha bloków. Proces ten zapewnia chronologiczność zdarzeń w łańcuchu, chroni neutralności sieci oraz pozwala różnym komputerom na wzajemnie uzgadnianie stanu systemu. Aby zostały potwierdzone, transakcje muszą być ułożone w <a href="/pl/slownik#blok"><i>blok</i></a> spełniający bardzo ścisłe zasady kryptografii, które zostaną zweryfikowane przez sieć. Zasady te zapobiegają modyfikacji poprzednio zapisanych bloków, gdyż wiązałoby się to z unieważnieniem wszystkich kolejnych bloków. Wydobywanie (kopanie) tworzy również odpowiednik opartej na rywalizacji loterii, która zapobiega prostemu dodawaniu nowych bloków kolejno w łańcuchu bloków przez dowolną jedną osobę. Dzięki temu żadna osoba nie może kontrolować tego, co zostaje zapisane w łańcuchu bloków, ani też zastępować części łańcucha bloków, by cofnąć własne wydatki.</p>
+	<h2>Saldo<span class="titlelight"> - łańcuch bloków</span></h2>
+	<p>Łańcuch bloków jest <b>współdzielonym zapisem transakcji</b>, na którym opiera się cała sieć Bitcoin. Wszystkie potwierdzone transakcje są w nim zapisane bez żadnych wyjątków. W ten sposób portfele Bitcoin mogą obliczyć saldo, dzięki czemu transakcje mogą być weryfikowane tak, aby mieć pewność, że wydawane bitcoiny są faktycznie posiadane przez wydającego. Integralność oraz porządek chronologiczny łańcucha bloków są wymuszone przez <a href="/pl/slownik#kryptografia">kryptografię</a>.</p>
 
-<h2 id="readmore">W głąb króliczej nory</h2>
-<p>Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href="/bitcoin.pdf">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href="/en/developer-documentation">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>.</p>
+	<h2>Transakcje<span class="titlelight"> - klucze prywatne</span></h2>
+	<p>Transakcja jest to <b>transfer dowolnej kwoty pomiędzy portfelami Bitcoin</b>, który zostaje uwzględniony w łańcuchu bloków. Portfele Bitcoin zawierają porcje tajnych danych, zwanych <a href="/pl/slownik#klucz-prywatny"><i>kluczami prywatnymi</i></a> lub seedami. Są one używane do podpisywania transakcji, gdyż zawierają matematyczny dowód, iż pochodzą od właściciela portfela. <a href="/pl/slownik#podpis"><i>Podpis</i></a> zapobiega też modyfikacjom transakcji przez osoby trzecie już od momentu jego wydania. Wszystkie transakcje są rozpowszechniane pomiędzy użytkownikami i zazwyczaj zaczynają być potwierdzane przez sieć w ciągu kolejnych 10 minutach w procesie zwanym <a href="/pl/slownik#wydobycie"><i>wydobywaniem</i></a>.</p>
 
+	<h2>Przetwarzanie<span class="titlelight"> - wydobywanie</span></h2>
+	<p>Wydobycie jest <b>rozproszonym systemem konsensu</b>, używanym do <a href="/pl/slownik#potwierdzenie"><i>potwierdzania</i></a> oczekujących transakcji poprzez włączanie ich do łańcucha bloków. Proces ten zapewnia chronologiczność zdarzeń w łańcuchu, chroni neutralności sieci oraz pozwala różnym komputerom na wzajemnie uzgadnianie stanu systemu. Aby zostały potwierdzone, transakcje muszą być ułożone w <a href="/pl/slownik#blok"><i>blok</i></a> spełniający bardzo ścisłe zasady kryptografii, które zostaną zweryfikowane przez sieć. Zasady te zapobiegają modyfikacji poprzednio zapisanych bloków, gdyż wiązałoby się to z unieważnieniem wszystkich kolejnych bloków. Wydobywanie (kopanie) tworzy również odpowiednik opartej na rywalizacji loterii, która zapobiega prostemu dodawaniu nowych bloków kolejno w łańcuchu bloków przez dowolną jedną osobę. Dzięki temu żadna osoba nie może kontrolować tego, co zostaje zapisane w łańcuchu bloków, ani też zastępować części łańcucha bloków, by cofnąć własne wydatki.</p>
+
+	<h2>W głąb króliczej nory</h2>
+	<p>Prezentujemy tu jedynie krótkie i zwięzłe podsumowanie systemu. Jeśli chcesz poznać detale, możesz <a href="/bitcoin.pdf">przeczytać oryginalną pracę</a> opisującą projekt systemu, przeczytać <a href="/en/developer-documentation">dokumentację dla programistów</a> oraz zagłebić się w lekturę <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>.</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
 			<li><a href="/pl/prywatnosc">Prywatność</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

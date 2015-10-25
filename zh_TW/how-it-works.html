@@ -10,7 +10,7 @@
 <title>Bitcoin 運作原理 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Bitcoin 運作原理</h1>
-<p class="summary">這是個常令人感到困惑的問題。以下是一個快速的解釋！</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">給新手的基礎知識</h2>
-<p>作為一位新的用戶，您不需要明白技術細節就可以<a href="/zh_TW/getting-started">開始</a>使用 Bitcoin。一旦您在電腦或行動上安裝了 Bitcoin 錢包，它就會產生您的第一個 Bitcoin 地址，您可以在任何需要的時候創建更多的地址。您可以把您的地址披露給朋友們，以便他們可以給您付款或者反過來您給他們付款。實際上，這很像電子信箱。不過，一個 Bitcoin 地址應當只能用一次。</p>
+<h1 class="content_how-it-works--title">Bitcoin 運作原理</h1>
+<h2 class="content_how-it-works--subtitle">這是個常令人感到困惑的問題。以下是一個快速的解釋！</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">餘額<span class="titlelight"> - 區塊鏈</span></h2>
-<p>區塊鏈是整個 Bitcoin 網路所依賴的<b>共享的公開分類帳</b>。所有經確認的交易都會存放在區塊鏈上。這樣的話，Bitcoin 錢包可以計算它們的可用餘額和核實新的交易中將被使用的比特幣確實屬花費者所有。區塊鏈的完整性及時間順序是由<a href="/zh_TW/vocabulary#cryptography">密碼學</a>來實現的。</p>
+	<h2>給新手的基礎知識</h2>
+	<p>作為一位新的用戶，您不需要明白技術細節就可以<a href="/zh_TW/getting-started">開始</a>使用 Bitcoin。一旦您在電腦或行動上安裝了 Bitcoin 錢包，它就會產生您的第一個 Bitcoin 地址，您可以在任何需要的時候創建更多的地址。您可以把您的地址披露給朋友們，以便他們可以給您付款或者反過來您給他們付款。實際上，這很像電子信箱。不過，一個 Bitcoin 地址應當只能用一次。</p>
 
-<h2 id="transactions">交易<span class="titlelight"> - 私密金鑰</span></h2>
-<p>一筆交易即是被包含在區塊鏈中的<b> Bitcoin 錢包之間價值的一次轉移</b>。Bitcoin 錢包保留一個被稱為<a href="/zh_TW/vocabulary#private-key"><i>私密金鑰</i></a>或種子的秘密的數據片段。私密金鑰或種子可用來簽署交易、提供一個交易確實是由該錢包的擁有者發出的數學證明。<a href="/zh_TW/vocabulary#signature"><i>簽章</i></a>能夠防止其他人竄改過去公佈的交易。所有的交易都會在用戶之間公佈，並且通常會在接下來的10分鐘內由這個網路通過一個被稱為<a href="/zh_TW/vocabulary#mining"><i>;挖礦</i></a>的進程開始進行確認。</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">處理<span class="titlelight"> - 挖礦</span></h2>
-<p>挖礦是一種<b>分散式的共識系統</b>，用於<a href="/zh_TW/vocabulary#confirmation"><i>確認</i></a>交易並把交易加入區塊鏈之中。挖礦能確保區塊鏈的時間順序、保護網路的中立性，並且讓不同的電腦就系統的狀態取得共識。待確認的交易將會打包到某個<a href="/zh_TW/vocabulary#block"><i>區塊</i></a>之中，而區塊必須滿足非常嚴格的密碼學規則。這些規則防止區塊被篡改，因為這樣做會導致被篡改區塊之後的區塊都變得無效。挖礦創造了一個競爭性的隨機系統，可防止任何人輕易地將連續的區塊加到區塊鏈中。藉由這個系統，沒有人能控制區塊鏈中能包含哪些交易，或是更動區塊鏈的某一部份來取消他們自己的支付。</p>
+	<h2>餘額<span class="titlelight"> - 區塊鏈</span></h2>
+	<p>區塊鏈是整個 Bitcoin 網路所依賴的<b>共享的公開分類帳</b>。所有經確認的交易都會存放在區塊鏈上。這樣的話，Bitcoin 錢包可以計算它們的可用餘額和核實新的交易中將被使用的比特幣確實屬花費者所有。區塊鏈的完整性及時間順序是由<a href="/zh_TW/vocabulary#cryptography">密碼學</a>來實現的。</p>
 
-<h2 id="readmore">探索未知的世界</h2>
-<p>這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href="/bitcoin.pdf">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href="/en/developer-documentation">開發人員文檔</a>，您還可以探索一下<a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>。</p>
+	<h2>交易<span class="titlelight"> - 私密金鑰</span></h2>
+	<p>一筆交易即是被包含在區塊鏈中的<b> Bitcoin 錢包之間價值的一次轉移</b>。Bitcoin 錢包保留一個被稱為<a href="/zh_TW/vocabulary#private-key"><i>私密金鑰</i></a>或種子的秘密的數據片段。私密金鑰或種子可用來簽署交易、提供一個交易確實是由該錢包的擁有者發出的數學證明。<a href="/zh_TW/vocabulary#signature"><i>簽章</i></a>能夠防止其他人竄改過去公佈的交易。所有的交易都會在用戶之間公佈，並且通常會在接下來的10分鐘內由這個網路通過一個被稱為<a href="/zh_TW/vocabulary#mining"><i>;挖礦</i></a>的進程開始進行確認。</p>
 
+	<h2>處理<span class="titlelight"> - 挖礦</span></h2>
+	<p>挖礦是一種<b>分散式的共識系統</b>，用於<a href="/zh_TW/vocabulary#confirmation"><i>確認</i></a>交易並把交易加入區塊鏈之中。挖礦能確保區塊鏈的時間順序、保護網路的中立性，並且讓不同的電腦就系統的狀態取得共識。待確認的交易將會打包到某個<a href="/zh_TW/vocabulary#block"><i>區塊</i></a>之中，而區塊必須滿足非常嚴格的密碼學規則。這些規則防止區塊被篡改，因為這樣做會導致被篡改區塊之後的區塊都變得無效。挖礦創造了一個競爭性的隨機系統，可防止任何人輕易地將連續的區塊加到區塊鏈中。藉由這個系統，沒有人能控制區塊鏈中能包含哪些交易，或是更動區塊鏈的某一部份來取消他們自己的支付。</p>
+
+	<h2>探索未知的世界</h2>
+	<p>這僅僅是 Bitcoin 系統的簡要說明，如果想瞭解更多細節，您可以<a href="/bitcoin.pdf">閱讀原始論文</a>，其中描述了系統的設計，您也可以閱讀<a href="/en/developer-documentation">開發人員文檔</a>，您還可以探索一下<a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>。</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/zh_TW/legal">合法</a></li>
 			
 			<li><a href="/zh_TW/privacy">隱私性</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

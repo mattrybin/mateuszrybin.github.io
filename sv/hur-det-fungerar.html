@@ -10,7 +10,7 @@
 <title>Hur fungerar Bitcoin? - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Hur fungerar Bitcoin?</h1>
-<p class="summary">Det är en fråga som ofta orsakar förvirring. Här kommer en snabb förklaring!</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Grunderna för en ny användare</h2>
-<p>Som en ny användare så kan du  <a href="/sv/kom-igang">komma igång</a> med Bitcoin utan att förstå de tekniska detaljerna. Så fort du installerat en Bitcoin-plånbok på din dator eller mobiltelefon, kommer din första Bitcoin adress genereras och du kan skapa fler så fort du behöver en. Du kan ge din adress till dina vänner så dom kan betala dig och vice versa. Det är faktiskt ganska likt i hur email fungerar, förutom att Bitcoin adresser bara ska användas en gång.</p>
+<h1 class="content_how-it-works--title">Hur fungerar Bitcoin?</h1>
+<h2 class="content_how-it-works--subtitle">Det är en fråga som ofta orsakar förvirring. Här kommer en snabb förklaring!</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Saldo <span class="titlelight"> - blockkedjan</span></h2>
-<p>Blockkedjan är en <b>delad publik logg</b> som hela Bitcoin-nätverket är beroende av. Alla konfirmerade transaktioner finns inkluderade i blockkedjan. På det sättet kan Bitcoin-plånböcker räkna ut deras saldo och nya transaktioner kan bli verifierade så att spenderade bitcoins faktiskt tillhör spenderaren. Integriteten och den kronologiska ordningen i blocket är verifierat <a href="/sv/ordlista#kryptografi">kryptografiskt</a>.</p>
+	<h2>Grunderna för en ny användare</h2>
+	<p>Som en ny användare så kan du  <a href="/sv/kom-igang">komma igång</a> med Bitcoin utan att förstå de tekniska detaljerna. Så fort du installerat en Bitcoin-plånbok på din dator eller mobiltelefon, kommer din första Bitcoin adress genereras och du kan skapa fler så fort du behöver en. Du kan ge din adress till dina vänner så dom kan betala dig och vice versa. Det är faktiskt ganska likt i hur email fungerar, förutom att Bitcoin adresser bara ska användas en gång.</p>
 
-<h2 id="transactions">Transaktioner <span class="titlelight"> - privata nycklar</span></h2>
-<p>En transaktion är <b>en överföring av pengar mellan två Bitcoin-plånböcker</b> som är inkluderade i blockkedjan. Bitcoin-plånböcker håller en hemlig del data kallad <a href="/sv/ordlista#privat-nyckel"><i>privat nyckel</i></a>, som används för att signera transaktioner. Signeringen görs med ett matematiskt bevis, som bevisar att ursprunget, är ägaren av plånboken. <a href="/sv/ordlista#signatur"><i>Signaturen</i></a> förhindrar också transaktionen från att bli manipulerad av någon annan så fort den utförts. Alla transaktioner är förmedlade mellan användare och börjar oftast bli konfirmerat av nätverket de efterföljande 10 minuterna i en process kallad  <a href="/sv/ordlista#utvinning"><i>utvinning</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Processering <span class="titlelight"> - utvinning</span></h2>
-<p>Utvinning är ett <b>distribuerat konsensus system</b> som används för att <a href="/sv/ordlista#konfirmation"><i>bekräfta</i></a> väntande transaktioner genom att inkludera dom i blockkedjan. Den påtvingar kronologisk ordning i blockkedjan, skyddar neutraliteten av nätverket och tillåter olika datorer att komma överens systemets tillstånd. För att bli konfirmerad måste en transaktion bli packeterat i ett <a href="/sv/ordlista#block"><i>block</i></a> som följer väldigt strikta kryptografiska regler och verifieras av nätverket. Dessa regler förhindrar tidigare block från att bli modifierade eftersom det skulle medföra invalidering av tidigare block. Utvinning skapar också motsvarigheten till ett konkurrensutsatt lotteri som förhindrar individer från att enkelt kunna addera nya block konsekutivt i blockkedjan. På det här sättet kan ingen individ enskilt styra vad som är inkluderat i blockkedjan eller ersätta delar av blockkedjan för att backa deras egna transaktioner.</p>
+	<h2>Saldo <span class="titlelight"> - blockkedjan</span></h2>
+	<p>Blockkedjan är en <b>delad publik logg</b> som hela Bitcoin-nätverket är beroende av. Alla konfirmerade transaktioner finns inkluderade i blockkedjan. På det sättet kan Bitcoin-plånböcker räkna ut deras saldo och nya transaktioner kan bli verifierade så att spenderade bitcoins faktiskt tillhör spenderaren. Integriteten och den kronologiska ordningen i blocket är verifierat <a href="/sv/ordlista#kryptografi">kryptografiskt</a>.</p>
 
-<h2 id="readmore">Lär dig mer om Bitcoin</h2>
-<p>Det här är bara en kort och enkel sammanfattning av systemet. Om du vill lära dig detaljerna så kan du <a href="/sv/bitcoin-rapport">läsa original rapporten</a> som beskriver systemets design, och utforska <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin-wikin</a>.</p>
+	<h2>Transaktioner <span class="titlelight"> - privata nycklar</span></h2>
+	<p>En transaktion är <b>en överföring av pengar mellan två Bitcoin-plånböcker</b> som är inkluderade i blockkedjan. Bitcoin-plånböcker håller en hemlig del data kallad <a href="/sv/ordlista#privat-nyckel"><i>privat nyckel</i></a>, som används för att signera transaktioner. Signeringen görs med ett matematiskt bevis, som bevisar att ursprunget, är ägaren av plånboken. <a href="/sv/ordlista#signatur"><i>Signaturen</i></a> förhindrar också transaktionen från att bli manipulerad av någon annan så fort den utförts. Alla transaktioner är förmedlade mellan användare och börjar oftast bli konfirmerat av nätverket de efterföljande 10 minuterna i en process kallad  <a href="/sv/ordlista#utvinning"><i>utvinning</i></a>.</p>
 
+	<h2>Processering <span class="titlelight"> - utvinning</span></h2>
+	<p>Utvinning är ett <b>distribuerat konsensus system</b> som används för att <a href="/sv/ordlista#konfirmation"><i>bekräfta</i></a> väntande transaktioner genom att inkludera dom i blockkedjan. Den påtvingar kronologisk ordning i blockkedjan, skyddar neutraliteten av nätverket och tillåter olika datorer att komma överens systemets tillstånd. För att bli konfirmerad måste en transaktion bli packeterat i ett <a href="/sv/ordlista#block"><i>block</i></a> som följer väldigt strikta kryptografiska regler och verifieras av nätverket. Dessa regler förhindrar tidigare block från att bli modifierade eftersom det skulle medföra invalidering av tidigare block. Utvinning skapar också motsvarigheten till ett konkurrensutsatt lotteri som förhindrar individer från att enkelt kunna addera nya block konsekutivt i blockkedjan. På det här sättet kan ingen individ enskilt styra vad som är inkluderat i blockkedjan eller ersätta delar av blockkedjan för att backa deras egna transaktioner.</p>
+
+	<h2>Lär dig mer om Bitcoin</h2>
+	<p>Det här är bara en kort och enkel sammanfattning av systemet. Om du vill lära dig detaljerna så kan du <a href="/sv/bitcoin-rapport">läsa original rapporten</a> som beskriver systemets design, och utforska <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin-wikin</a>.</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/sv/juridiskt">Juridiskt</a></li>
 			
 			<li><a href="/sv/integritet">Integritet</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

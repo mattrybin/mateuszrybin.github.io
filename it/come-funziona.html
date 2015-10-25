@@ -10,7 +10,7 @@
 <title>Come funziona Bitcoin? - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Come funziona Bitcoin?</h1>
-<p class="summary">Questa è una domanda che spesso causa confusione. Qui c'è una spiegazione veloce!</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Le nozioni di base per un nuovo utente</h2>
-<p>Come nuovo utente, puoi <a href="/it/come-iniziare">iniziare ad usare Bitcoin</a> senza comprendere i dettagli tecnici. Una volta installato sul tuo computer o sul tuo cellulare, il portafoglio Bitcoin genererà il tuo primo indirizzo Bitcoin e potrai crearne degli altri ogni volta ne avrai bisogno. Puoi rivelare uno dei tuoi indirizzi Bitcoin ai tuoi amici, cosicché possano pagarti o viceversa. Il funzionamento è molto simile a quello delle e-mail, eccetto il fatto che un indirizzo Bitcoin andrebbe usato solo una volta.</p>
+<h1 class="content_how-it-works--title">Come funziona Bitcoin?</h1>
+<h2 class="content_how-it-works--subtitle">Questa è una domanda che spesso causa confusione. Qui c'è una spiegazione veloce!</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Bilanci<span class="titlelight"> - catena di blocchi</span></h2>
-<p>La blockchain è un <b>registro publico e condiviso</b> sul quale si basa l'intera rete Bitcoin. Tutte le transazioni confermate sono incluse nella blockchain. In questo modo, i portafogli Bitcoin possono calcolare il loro bilancio spendibile e nuove transazioni possono essere verificate, per poter spendere Bitcoin che sono effettivamente nelle mani di chi li spende. L'integrità e l'ordine cronologico della blockchain sono protetti attraverso <a href="/it/glossario#crittografia">crittografia</a>.</p>
+	<h2>Le nozioni di base per un nuovo utente</h2>
+	<p>Come nuovo utente, puoi <a href="/it/come-iniziare">iniziare ad usare Bitcoin</a> senza comprendere i dettagli tecnici. Una volta installato sul tuo computer o sul tuo cellulare, il portafoglio Bitcoin genererà il tuo primo indirizzo Bitcoin e potrai crearne degli altri ogni volta ne avrai bisogno. Puoi rivelare uno dei tuoi indirizzi Bitcoin ai tuoi amici, cosicché possano pagarti o viceversa. Il funzionamento è molto simile a quello delle e-mail, eccetto il fatto che un indirizzo Bitcoin andrebbe usato solo una volta.</p>
 
-<h2 id="transactions">Transazioni<span class="titlelight"> - chiavi private</span></h2>
-<p>Una transazione è <b>un trasferimento di valori tra portafogli Bitcoin</b> che viene incluso nel block chain. I portafogli di Bitcoin contengono un insieme segreto di dati chiamati a <a href="/it/glossario#chiave-privata"><i>chiave privata </i></a> o seme, che viene utilizzato per firmare le transazioni fornendo una prova matematica che provengono dal proprietario del portafoglio. La <a href="/it/glossario#firma"><i>firma</i></a> impedisce anche che la transazione venga alterata da chiunque, una volta che viene eseguita.  Tutte le transazioni avvengono tra utenti e in genere iniziano ad essere confermate dalla rete nei 10 minuti successivi, attraverso un processo chiamato <a href="/it/glossario#mining"><i>estrazione dei dati</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Elaborazioni<span class="titlelight"> - estrazione</span></h2>
-<p>Il mining (letteralmente: processo minerario) è un <b>sistema di consenso distribuito</b> utilizzato per <a href="/it/glossario#conferma"><i>confermare</i></a> le transazioni in attesa includendole nella block chain. Questo mantiene un ordine cronologico nella block chain, protegge la neutralità della rete e consente a diversi computer di concordare sullo stato del sistema. Per essere confermate, le transazioni devono essere impacchettate in un <a href="/it/glossario#blocco"><i>blocco</i></a> che rispetti regole crittografiche molto rigide, che verranno verificate dalla rete. Queste regole impediscono che qualunque blocco precedente venga modificato, perché ciò invaliderebbe tutti i blocchi successivi. Il mining crea inoltre l'equivalente di una lotteria competitiva che impedisce a chiunque di aggiungere facilmente nuovi blocchi consecutivamente nella block chain. In questo modo nessuno può controllare cosa è incluso nella blockchain o sostituire parti della block chain in modo da riottenere quanto speso.</p>
+	<h2>Bilanci<span class="titlelight"> - catena di blocchi</span></h2>
+	<p>La blockchain è un <b>registro publico e condiviso</b> sul quale si basa l'intera rete Bitcoin. Tutte le transazioni confermate sono incluse nella blockchain. In questo modo, i portafogli Bitcoin possono calcolare il loro bilancio spendibile e nuove transazioni possono essere verificate, per poter spendere Bitcoin che sono effettivamente nelle mani di chi li spende. L'integrità e l'ordine cronologico della blockchain sono protetti attraverso <a href="/it/glossario#crittografia">crittografia</a>.</p>
 
-<h2 id="readmore">Scendendo nella tana del coniglio</h2>
-<p>Questo è solo un sommario breve e conciso. Se vuoi entrare nei dettagli, puoi <a href="/bitcoin.pdf">leggere il documento originale</a> che descrive il design del sistema, leggere la <a href="/en/developer-documentation">documentazione dello sviluppatore</a>, ed esplorare la <a href="https://en.bitcoin.it/wiki/Main_Page">wiki di Bitcoin</a>.</p>
+	<h2>Transazioni<span class="titlelight"> - chiavi private</span></h2>
+	<p>Una transazione è <b>un trasferimento di valori tra portafogli Bitcoin</b> che viene incluso nel block chain. I portafogli di Bitcoin contengono un insieme segreto di dati chiamati a <a href="/it/glossario#chiave-privata"><i>chiave privata </i></a> o seme, che viene utilizzato per firmare le transazioni fornendo una prova matematica che provengono dal proprietario del portafoglio. La <a href="/it/glossario#firma"><i>firma</i></a> impedisce anche che la transazione venga alterata da chiunque, una volta che viene eseguita.  Tutte le transazioni avvengono tra utenti e in genere iniziano ad essere confermate dalla rete nei 10 minuti successivi, attraverso un processo chiamato <a href="/it/glossario#mining"><i>estrazione dei dati</i></a>.</p>
 
+	<h2>Elaborazioni<span class="titlelight"> - estrazione</span></h2>
+	<p>Il mining (letteralmente: processo minerario) è un <b>sistema di consenso distribuito</b> utilizzato per <a href="/it/glossario#conferma"><i>confermare</i></a> le transazioni in attesa includendole nella block chain. Questo mantiene un ordine cronologico nella block chain, protegge la neutralità della rete e consente a diversi computer di concordare sullo stato del sistema. Per essere confermate, le transazioni devono essere impacchettate in un <a href="/it/glossario#blocco"><i>blocco</i></a> che rispetti regole crittografiche molto rigide, che verranno verificate dalla rete. Queste regole impediscono che qualunque blocco precedente venga modificato, perché ciò invaliderebbe tutti i blocchi successivi. Il mining crea inoltre l'equivalente di una lotteria competitiva che impedisce a chiunque di aggiungere facilmente nuovi blocchi consecutivamente nella block chain. In questo modo nessuno può controllare cosa è incluso nella blockchain o sostituire parti della block chain in modo da riottenere quanto speso.</p>
+
+	<h2>Scendendo nella tana del coniglio</h2>
+	<p>Questo è solo un sommario breve e conciso. Se vuoi entrare nei dettagli, puoi <a href="/bitcoin.pdf">leggere il documento originale</a> che descrive il design del sistema, leggere la <a href="/en/developer-documentation">documentazione dello sviluppatore</a>, ed esplorare la <a href="https://en.bitcoin.it/wiki/Main_Page">wiki di Bitcoin</a>.</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/it/note-legali">Note legali</a></li>
 			
 			<li><a href="/it/privacy">Privacy</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

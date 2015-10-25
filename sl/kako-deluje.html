@@ -10,7 +10,7 @@
 <title>Kako bitcoin deluje? - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,28 +327,34 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Kako bitcoin deluje?</h1>
-<p class="summary">To je vprašanje, ki velikokrat povzroča zmedo. Tukaj je enostavna razlaga!</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Osnove za novega uporabnika</h2>
-<p>Za to, da <a href="/sl/prvi-koraki">pričnete z uporabo bitcoina</a>, vam ni treba razumeti njegovih tehničnih podrobnosti. Po namestitvi bitcoin denarnice na svoj računalnik ali mobilni telefon bo ta ustvarila bitcoin naslov. Ta naslov lahko posredujete prijateljem, ki vam nanj lahko nakažejo sredstva iz svojih denarnic, podobno, kot lahko posredujete elektronski naslov prijateljem, na katerega vam nato pošljejo pošto. Razlika je le v tem, da je priporočeno vsak bitcoin naslov uporabiti le enkrat.</p>
+<h1 class="content_how-it-works--title">Kako bitcoin deluje?</h1>
+<h2 class="content_how-it-works--subtitle">To je vprašanje, ki velikokrat povzroča zmedo. Tukaj je enostavna razlaga!</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Stanje<span class="titlelight"> - veriga blokov</span></h2>
-<p>Veriga blokov je <b>javna in skupna knjiga nakazil</b>, na kateri temelji celotno omrežje bitcoin. Veriga blokov vsebuje vsa potrjena nakazila. Na ta način lahko denarnice izračunajo svoje stanje novcev; prav tako se na podlagi verige blokov preverja, da vsako nakazilo troši le bitcoine, ki so dejansko v lasti plačnika. Celovitost in časovno sosledje nakazil v verigi blokov zagotavlja <a href="/sl/besednjak#kriptografija">kriptografija</a>.</p>
+	<h2>Osnove za novega uporabnika</h2>
+	<p>Za to, da <a href="/sl/prvi-koraki">pričnete z uporabo bitcoina</a>, vam ni treba razumeti njegovih tehničnih podrobnosti. Po namestitvi bitcoin denarnice na svoj računalnik ali mobilni telefon bo ta ustvarila bitcoin naslov. Ta naslov lahko posredujete prijateljem, ki vam nanj lahko nakažejo sredstva iz svojih denarnic, podobno, kot lahko posredujete elektronski naslov prijateljem, na katerega vam nato pošljejo pošto. Razlika je le v tem, da je priporočeno vsak bitcoin naslov uporabiti le enkrat.</p>
 
-<h2 id="transactions">Nakazila<span class="titlelight"> - zasebni ključi</span></h2>
-<p>Nakazilo je <b>prenos vrednosti iz ene bitcoin denarnice v drugo</b>. Nakazila se združujejo v bloke, ki so povezani v verigo blokov. Bitcoin denarnice hranijo skriven podatek, ki se imenuje <a href="/sl/besednjak#zasebni-kljuc"><i>zasebni ključ</i></a> ali seme in se uporablja za podpisovanje nakazil. <a href="/sl/besednjak#podpis"><i>Podpis</i></a> predstavlja matematičen dokaz, da je nakazilo izdal lastnik denarnice. Podpis tudi zagotavlja, da nakazila, ki je vedno javno, ne more kasneje spremeniti nihče. Informacija o vsakem nakazilu se pošlje po omrežju in doseže vse zainteresirane uporabnike omrežja. Nakazilo običajno po približno 10 minutah prične prejemati potrditve iz omrežja; temu procesu potrjevanja pravimo <a href="/sl/besednjak#rudarjenje"><i>rudarjenje</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Obdelava<span class="titlelight"> - rudarjenje</span></h2>
-<p>Rudarjenje je <b>razpršen sistem doseganja soglasja.</b> Uporablja se za <a href="/sl/besednjak#potrditev"><i>potrjevanje</i></a> nakazil, ki čakajo na vključitev v verigo blokov. Na ta način se v verigi blokov doseže kronološka razvrstitev nakazil, zaščiti se nevtralnost omrežja in se različnim računalnikom omogoči potrjevanje stanja sistema.
+	<h2>Stanje<span class="titlelight"> - veriga blokov</span></h2>
+	<p>Veriga blokov je <b>javna in skupna knjiga nakazil</b>, na kateri temelji celotno omrežje bitcoin. Veriga blokov vsebuje vsa potrjena nakazila. Na ta način lahko denarnice izračunajo svoje stanje novcev; prav tako se na podlagi verige blokov preverja, da vsako nakazilo troši le bitcoine, ki so dejansko v lasti plačnika. Celovitost in časovno sosledje nakazil v verigi blokov zagotavlja <a href="/sl/besednjak#kriptografija">kriptografija</a>.</p>
+
+	<h2>Nakazila<span class="titlelight"> - zasebni ključi</span></h2>
+	<p>Nakazilo je <b>prenos vrednosti iz ene bitcoin denarnice v drugo</b>. Nakazila se združujejo v bloke, ki so povezani v verigo blokov. Bitcoin denarnice hranijo skriven podatek, ki se imenuje <a href="/sl/besednjak#zasebni-kljuc"><i>zasebni ključ</i></a> ali seme in se uporablja za podpisovanje nakazil. <a href="/sl/besednjak#podpis"><i>Podpis</i></a> predstavlja matematičen dokaz, da je nakazilo izdal lastnik denarnice. Podpis tudi zagotavlja, da nakazila, ki je vedno javno, ne more kasneje spremeniti nihče. Informacija o vsakem nakazilu se pošlje po omrežju in doseže vse zainteresirane uporabnike omrežja. Nakazilo običajno po približno 10 minutah prične prejemati potrditve iz omrežja; temu procesu potrjevanja pravimo <a href="/sl/besednjak#rudarjenje"><i>rudarjenje</i></a>.</p>
+
+	<h2>Obdelava<span class="titlelight"> - rudarjenje</span></h2>
+	<p>Rudarjenje je <b>razpršen sistem doseganja soglasja.</b> Uporablja se za <a href="/sl/besednjak#potrditev"><i>potrjevanje</i></a> nakazil, ki čakajo na vključitev v verigo blokov. Na ta način se v verigi blokov doseže kronološka razvrstitev nakazil, zaščiti se nevtralnost omrežja in se različnim računalnikom omogoči potrjevanje stanja sistema.
 Za potrditev mora biti nakazilo zapakirano v <a href="/sl/besednjak#blok"><i>blok</i></a>, blok pa mora zadoščati zelo strogim pravilom šifriranja, ki jih preveri omrežje. Ta pravila onemogočajo kakršnokoli spreminjanje blokov, saj bi s tem posledično razveljavili vse nadaljnje bloke nakazil.
 Rudarjenje ustvarja tudi okolje "tekmovalne loterije", kar posameznikom onemogoča zaporedno dodajanje novih blokov v verigo. Tako noben posameznik ne more vplivati na vključene bloke v verigi in tudi ne more zamenjati delov verige z namenom spreminjanja ali razveljavljanja lastnih nakazil.</p>
 
-<h2 id="readmore">Nadaljnje branje</h2>
-<p>To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href="/bitcoin.pdf">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href="/en/developer-documentation">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href="https://en.bitcoin.it/wiki/Main_Page">wikiju</a>.</p>
+	<h2>Nadaljnje branje</h2>
+	<p>To je le zelo kratek in zgoščen opis sistema. Če vas zanimajo podrobnosti, lahko preberete <a href="/bitcoin.pdf">izvirni članek</a>, ki opisuje zasnovo sistema (v angleščini), si ogledate <a href="/en/developer-documentation">dokumentacijo za razvijalce</a> ali pa pobrskate po <a href="https://en.bitcoin.it/wiki/Main_Page">wikiju</a>.</p>
 
+</div>
+</div>
       </div>
     </div>
 
@@ -364,7 +364,7 @@ Rudarjenje ustvarja tudi okolje "tekmovalne loterije", kar posameznikom onemogo�
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/sl/pravno">Pravno</a></li>
 			
 			<li><a href="/en/privacy">Privacy</a></li>
@@ -388,9 +388,7 @@ Rudarjenje ustvarja tudi okolje "tekmovalne loterije", kar posameznikom onemogo�
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

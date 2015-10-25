@@ -10,7 +10,7 @@
 <title>Comment fonctionne Bitcoin ? - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Comment fonctionne Bitcoin ?</h1>
-<p class="summary">C'est une question souvent sujette à confusion. Voici une explication rapide !</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Les bases pour un nouvel utilisateur</h2>
-<p>Comme nouvel utilisateur, vous pouvez <a href="/fr/debuter">débuter</a> avec Bitcoin sans comprendre les détails techniques. Une fois que vous avez installé un portefeuille Bitcoin sur votre ordinateur ou votre téléphone portable, il générera votre première adresse Bitcoin et vous pourrez en créer de nouvelles chaque fois que vous en avez besoin. Vous pouvez divulguer vos adresses à vos amis pour qu'ils puissent vous payer et vice versa. En fait, utiliser Bitcoin est assez comparable à échanger des courriels, à l'exception que les adresses Bitcoin ne devraient être utilisées qu'une seule fois.</p>
+<h1 class="content_how-it-works--title">Comment fonctionne Bitcoin ?</h1>
+<h2 class="content_how-it-works--subtitle">C'est une question souvent sujette à confusion. Voici une explication rapide !</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Soldes<span class="titlelight"> - chaine de blocs</span></h2>
-<p>La chaine de blocs est un <b>grand livre comptable partagé et public</b> sur lequel repose le réseau Bitcoin en entier. Toutes les transactions confirmées sont incluses dans la chaine de blocs. De cette façon, les portefeuilles Bitcoin peuvent calculer leurs soldes et il est possible de vérifier que les nouvelles transactions dépensent des bitcoins appartenant effectivement à l'émetteur du paiement. L'intégrité et l'ordre chronologique de la chaine de blocs sont assurés par des moyens <a href="/fr/vocabulaire#cryptographie">cryptographiques</a>.</p>
+	<h2>Les bases pour un nouvel utilisateur</h2>
+	<p>Comme nouvel utilisateur, vous pouvez <a href="/fr/debuter">débuter</a> avec Bitcoin sans comprendre les détails techniques. Une fois que vous avez installé un portefeuille Bitcoin sur votre ordinateur ou votre téléphone portable, il générera votre première adresse Bitcoin et vous pourrez en créer de nouvelles chaque fois que vous en avez besoin. Vous pouvez divulguer vos adresses à vos amis pour qu'ils puissent vous payer et vice versa. En fait, utiliser Bitcoin est assez comparable à échanger des courriels, à l'exception que les adresses Bitcoin ne devraient être utilisées qu'une seule fois.</p>
 
-<h2 id="transactions">Transactions<span class="titlelight"> - clés privées</span></h2>
-<p>Une transaction est <b>un transfert de valeur entre portefeuilles Bitcoin</b> qui est incluse dans la chaine de blocs. Les portefeuilles Bitcoin conservent une information secrète appelée <a href="/fr/vocabulaire#cle-privee"><i>clé privée</i></a> ou <i>graine</i> qui est utilisée pour signer les transactions, fournissant une preuve mathématique qu'elles proviennent du propriétaire de chaque portefeuille. La <a href="/fr/vocabulaire#signature"><i>signature</i></a> empêche également toute modification de la transaction après son émission. Toutes les transactions sont diffusées entre les utilisateurs et commencent habituellement à être confirmées par le réseau dans les 10 minutes suivantes par un procédé nommé <a href="/fr/vocabulaire#minage"><i>minage</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Traitement<span class="titlelight"> - minage</span></h2>
-<p>Le minage est un <b>système de consensus distribué</b> qui est utilisé pour <a href="/fr/vocabulaire#confirmation"><i>confirmer</i></a> les transactions en attente en les incluant dans la chaine de blocs. Il impose un ordre chronologique dans la chaine de blocs, protège la neutralité du réseau et permet à différents ordinateurs d'être en accord sur l'état du système. Pour être confirmées, les transactions doivent être incluses dans un <a href="/fr/vocabulaire#bloc"><i>bloc</i></a> qui doit correspondre à des règles cryptographiques très strictes qui seront vérifiées par le réseau. Ces règles empêchent la modification d'un bloc antérieur car cela invaliderait tous les blocs suivants. Le minage induit également l'équivalent d'une loterie compétitive qui empêche à tout individu d'ajouter facilement des blocs consécutivement dans la chaine de blocs. De cette façon, aucun individu ne peut contrôler ce qui est inclus dans la chaine de blocs ni en remplacer des parties pour annuler ses propres dépenses.</p>
+	<h2>Soldes<span class="titlelight"> - chaine de blocs</span></h2>
+	<p>La chaine de blocs est un <b>grand livre comptable partagé et public</b> sur lequel repose le réseau Bitcoin en entier. Toutes les transactions confirmées sont incluses dans la chaine de blocs. De cette façon, les portefeuilles Bitcoin peuvent calculer leurs soldes et il est possible de vérifier que les nouvelles transactions dépensent des bitcoins appartenant effectivement à l'émetteur du paiement. L'intégrité et l'ordre chronologique de la chaine de blocs sont assurés par des moyens <a href="/fr/vocabulaire#cryptographie">cryptographiques</a>.</p>
 
-<h2 id="readmore">Aller plus loin dans l'aventure</h2>
-<p>Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire <a href="/bitcoin.pdf">le document original</a> (en anglais) qui décrit le fonctionnement du système, lire la <a href="/en/developer-documentation">documentation pour les développeurs</a> (en anglais également), et explorer le <a href="https://en.bitcoin.it/wiki/Main_Page">wiki Bitcoin</a>.</p>
+	<h2>Transactions<span class="titlelight"> - clés privées</span></h2>
+	<p>Une transaction est <b>un transfert de valeur entre portefeuilles Bitcoin</b> qui est incluse dans la chaine de blocs. Les portefeuilles Bitcoin conservent une information secrète appelée <a href="/fr/vocabulaire#cle-privee"><i>clé privée</i></a> ou <i>graine</i> qui est utilisée pour signer les transactions, fournissant une preuve mathématique qu'elles proviennent du propriétaire de chaque portefeuille. La <a href="/fr/vocabulaire#signature"><i>signature</i></a> empêche également toute modification de la transaction après son émission. Toutes les transactions sont diffusées entre les utilisateurs et commencent habituellement à être confirmées par le réseau dans les 10 minutes suivantes par un procédé nommé <a href="/fr/vocabulaire#minage"><i>minage</i></a>.</p>
 
+	<h2>Traitement<span class="titlelight"> - minage</span></h2>
+	<p>Le minage est un <b>système de consensus distribué</b> qui est utilisé pour <a href="/fr/vocabulaire#confirmation"><i>confirmer</i></a> les transactions en attente en les incluant dans la chaine de blocs. Il impose un ordre chronologique dans la chaine de blocs, protège la neutralité du réseau et permet à différents ordinateurs d'être en accord sur l'état du système. Pour être confirmées, les transactions doivent être incluses dans un <a href="/fr/vocabulaire#bloc"><i>bloc</i></a> qui doit correspondre à des règles cryptographiques très strictes qui seront vérifiées par le réseau. Ces règles empêchent la modification d'un bloc antérieur car cela invaliderait tous les blocs suivants. Le minage induit également l'équivalent d'une loterie compétitive qui empêche à tout individu d'ajouter facilement des blocs consécutivement dans la chaine de blocs. De cette façon, aucun individu ne peut contrôler ce qui est inclus dans la chaine de blocs ni en remplacer des parties pour annuler ses propres dépenses.</p>
+
+	<h2>Aller plus loin dans l'aventure</h2>
+	<p>Ceci est un cours résumé du système. Si vous voulez rentrer dans les détails, vous pouvez lire <a href="/bitcoin.pdf">le document original</a> (en anglais) qui décrit le fonctionnement du système, lire la <a href="/en/developer-documentation">documentation pour les développeurs</a> (en anglais également), et explorer le <a href="https://en.bitcoin.it/wiki/Main_Page">wiki Bitcoin</a>.</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/fr/legal">Légal</a></li>
 			
 			<li><a href="/fr/confidentialite">Confidentialité</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

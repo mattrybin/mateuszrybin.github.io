@@ -10,7 +10,7 @@
 <title>ビットコインの仕組み - ビットコイン</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>ビットコインの仕組み</h1>
-<p class="summary">これは、よく混乱の原因となる質問で、その簡単な説明をここに挙げます。</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">新規ユーザーの方へのべーシック</h2>
-<p>新規ユーザーは、技術的な詳細を理解することなく、ビットコインを<a href="/ja/getting-started">開始する</a>ことができます。お使いのコンピューターや携帯電話にビットコイン・ウォレットをインストールしたら、あなたの最初のビットコイン・アドレスが作られ、必要に応じて他のアドレスを作ることができます。あなたのアドレスを友達に伝えれば、彼らがあなたにお金を支払うことができます。また逆も考えられます。事実、ビットコインアドレスは一度しか使えないことを除けば、これはＥメールと同じようなものです。</p>
+<h1 class="content_how-it-works--title">ビットコインの仕組み</h1>
+<h2 class="content_how-it-works--subtitle">これは、よく混乱の原因となる質問で、その簡単な説明をここに挙げます。</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">残高<span class="titlelight"> - ブロックチェーン</span></h2>
-<p>ブロックチェーンは、ビットコイン・ネットワーク全体が頼る<b>公開取引簿</b>です。確認済みのトランスアクション全てが、このブロックチェーンに記録されています。これにより、ビットコイン・ウォレットは支出できる残高を算出し、新しい取引に、コイン使用者が所有するビットコインが使われたと確認できるのです。ブロックチェーンのこの全体性と発生順は <a href="/ja/vocabulary#cryptography">暗号手法</a>でさらに強化されています。</p>
+	<h2>新規ユーザーの方へのべーシック</h2>
+	<p>新規ユーザーは、技術的な詳細を理解することなく、ビットコインを<a href="/ja/getting-started">開始する</a>ことができます。お使いのコンピューターや携帯電話にビットコイン・ウォレットをインストールしたら、あなたの最初のビットコイン・アドレスが作られ、必要に応じて他のアドレスを作ることができます。あなたのアドレスを友達に伝えれば、彼らがあなたにお金を支払うことができます。また逆も考えられます。事実、ビットコインアドレスは一度しか使えないことを除けば、これはＥメールと同じようなものです。</p>
 
-<h2 id="transactions">取引<span class="titlelight"> - 秘密鍵</span></h2>
-<p>取引とは、ブロックチェーンに書き込まれる<b>ビットコイン・ウォレット間での価値の移動</b> です。ビットコイン・ウォレットは <a href="/ja/vocabulary#private-key"><i>秘密鍵</i></a>あるいはシードと呼ばれる秘密のデータの一部を保管しており、それが取引の署名として使われ、ウォレットの所有者から来たという数学的な証拠となります。この <a href="/ja/vocabulary#signature"><i>署名</i></a>は、それが発行されると、誰かがその取引を変更することを防ぎます。すべての取引は、<a href="/ja/vocabulary#mining"><i>採掘</i></a>と呼ばれるプロセスを通して、ユーザー間でブロードキャストされ、10分後にネットワークからの承認が始まります。</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">処理<span class="titlelight"> - マイニング</span></h2>
-<p>採掘は、<b>分散型合意システム</b>でありブロックチェーンへの取り込み待機中の取引を<a href="/ja/vocabulary#confirmation"><i>承認</i></a>するために使用されます。採掘は、ブロックチェーンの時系列を強化し、ネットワーク中立性を保護し、最先端のシステムでコンピュータ同士の合意を可能にします。承認されるためには、取引は、ネットワークによって確認される厳密な暗号学的ルールに適合した一つの<a href="/ja/vocabulary#block"><i>ブロック</i></a>に詰められなければなりません。こうした規則は、以前のブロックが変更されることを防ぎます。なぜなら、以前のブロックを変更すると以降のブロックをも無効にするからです。また、採掘は公平な宝くじのようなもので、誰か一人が、ブロックチェーンに容易に新しいブロックを続けて追加することを防ぎます。これにより、個人がブロックチェーンへの取り込みをコントロールしたり、自身の費用を削減するためにブロックチェーンの一部を置き換えることは出来ません。</p>
+	<h2>残高<span class="titlelight"> - ブロックチェーン</span></h2>
+	<p>ブロックチェーンは、ビットコイン・ネットワーク全体が頼る<b>公開取引簿</b>です。確認済みのトランスアクション全てが、このブロックチェーンに記録されています。これにより、ビットコイン・ウォレットは支出できる残高を算出し、新しい取引に、コイン使用者が所有するビットコインが使われたと確認できるのです。ブロックチェーンのこの全体性と発生順は <a href="/ja/vocabulary#cryptography">暗号手法</a>でさらに強化されています。</p>
 
-<h2 id="readmore">さらに詳しく</h2>
-<p>これは、システムの簡潔な概要にすぎません。詳細をお知りになりたい方は、システムの設計が書かれた<a href="/bitcoin.pdf">原論を読む</a>あるいは、<a href="/en/developer-documentation">デベッロッパー・ドキュメント</a>を読むか<a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>をご覧ください。</p>
+	<h2>取引<span class="titlelight"> - 秘密鍵</span></h2>
+	<p>取引とは、ブロックチェーンに書き込まれる<b>ビットコイン・ウォレット間での価値の移動</b> です。ビットコイン・ウォレットは <a href="/ja/vocabulary#private-key"><i>秘密鍵</i></a>あるいはシードと呼ばれる秘密のデータの一部を保管しており、それが取引の署名として使われ、ウォレットの所有者から来たという数学的な証拠となります。この <a href="/ja/vocabulary#signature"><i>署名</i></a>は、それが発行されると、誰かがその取引を変更することを防ぎます。すべての取引は、<a href="/ja/vocabulary#mining"><i>採掘</i></a>と呼ばれるプロセスを通して、ユーザー間でブロードキャストされ、10分後にネットワークからの承認が始まります。</p>
 
+	<h2>処理<span class="titlelight"> - マイニング</span></h2>
+	<p>採掘は、<b>分散型合意システム</b>でありブロックチェーンへの取り込み待機中の取引を<a href="/ja/vocabulary#confirmation"><i>承認</i></a>するために使用されます。採掘は、ブロックチェーンの時系列を強化し、ネットワーク中立性を保護し、最先端のシステムでコンピュータ同士の合意を可能にします。承認されるためには、取引は、ネットワークによって確認される厳密な暗号学的ルールに適合した一つの<a href="/ja/vocabulary#block"><i>ブロック</i></a>に詰められなければなりません。こうした規則は、以前のブロックが変更されることを防ぎます。なぜなら、以前のブロックを変更すると以降のブロックをも無効にするからです。また、採掘は公平な宝くじのようなもので、誰か一人が、ブロックチェーンに容易に新しいブロックを続けて追加することを防ぎます。これにより、個人がブロックチェーンへの取り込みをコントロールしたり、自身の費用を削減するためにブロックチェーンの一部を置き換えることは出来ません。</p>
+
+	<h2>さらに詳しく</h2>
+	<p>これは、システムの簡潔な概要にすぎません。詳細をお知りになりたい方は、システムの設計が書かれた<a href="/bitcoin.pdf">原論を読む</a>あるいは、<a href="/en/developer-documentation">デベッロッパー・ドキュメント</a>を読むか<a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin wiki</a>をご覧ください。</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/ja/legal">法律</a></li>
 			
 			<li><a href="/ja/privacy">プライバシー</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>

@@ -10,7 +10,7 @@
 <title>Hvordan fungerer Bitcoin? – Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -30,12 +30,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
-  <div class="alert_standard alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
-
 
   </div>
 </div>
@@ -333,26 +327,32 @@
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Hvordan fungerer Bitcoin?</h1>
-<p class="summary">Dette er et spørgsmål, der ofte skaber forvirring. Her er en hurtig forklaring!</p>
+        <div class="content_how-it-works">
 
-<h2 id="basics">Det elementære for nye brugere</h2>
-<p>Som ny bruger kan du <a href="/da/kom-i-gang">komme i gang</a> med Bitcoin uden at forstå de tekniske detaljer. Når du har installeret en Bitcoin-tegnebog på din computer eller mobiltelefon, vil den generere din første Bitcoin-adresse, og du kan oprette flere, når du behøver dem. Du kan vise dine adresser til venner, så de kan betale dig, og vice versa. Dette ligner faktisk ret godt, hvordan email virker, bortset fra, at Bitcoin-adresser bør kun bruges én gang.</p>
+<h1 class="content_how-it-works--title">Hvordan fungerer Bitcoin?</h1>
+<h2 class="content_how-it-works--subtitle">Dette er et spørgsmål, der ofte skaber forvirring. Her er en hurtig forklaring!</h2>
 
-<p><br><img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" /></p>
+<div class="content_how-it-works--content">
 
-<h2 id="balances">Saldi<span class="titlelight"> – blokkæde</span></h2>
-<p>Blokkæden er en <b>delt offentlig regnskabsbog</b>, som hele Bitcoin-netværket afhænger af. Alle bekræftede transaktioner gemmes i blokkæden. På denne måde kan Bitcoin-tegnebøger beregne deres saldo, og nye transaktioner kan verificeres som brugbare bitcoins, som faktisk ejes af afsenderen. Integriteren og den kronologiske rækkefølge af blokkæden håndhæves ved hjælp af <a href="/da/ordliste#kryptografi">kryptografi</a>.</p>
+	<h2>Det elementære for nye brugere</h2>
+	<p>Som ny bruger kan du <a href="/da/kom-i-gang">komme i gang</a> med Bitcoin uden at forstå de tekniske detaljer. Når du har installeret en Bitcoin-tegnebog på din computer eller mobiltelefon, vil den generere din første Bitcoin-adresse, og du kan oprette flere, når du behøver dem. Du kan vise dine adresser til venner, så de kan betale dig, og vice versa. Dette ligner faktisk ret godt, hvordan email virker, bortset fra, at Bitcoin-adresser bør kun bruges én gang.</p>
 
-<h2 id="transactions">Transaktioner<span class="titlelight"> – private nøgler</span></h2>
-<p>En transaktion er <b>en overførsel af værdier mellem Bitcoin-tegnebøger</b>, som inkluderes i blokkæden. Bitcoin-tegnebøger har et stykke hemmelig data, der kaldes en <a href="/da/ordliste#privat-noegle"><i>privat nøgle</i></a> eller sæd, som bruges til at signere transaktioner, hvilket giver matematisk bevis for, at de kommer fra ejeren af tegnebogen. <a href="/da/ordliste#signatur"><i>Signaturen</i></a> forhindrer også, at transaktionen bliver ændret af nogen, efter den er afsendt. Alle transaktioner rundsendes imellem brugerne og begynder normalt at modtage bekræftelser i de følgende 10 minutter, gennem en proces, der kaldes <a href="/da/ordliste#mining"><i>mining</i></a>.</p>
+	<img src="/img/icons/bitcoin-how-it-works.svg" alt="Bitcoin" />
 
-<h2 id="processing">Håndtering<span class="titlelight"> – mining</span></h2>
-<p>Mining er et <b>distribueret konsensussystem</b>, som bruges til at <a href="/da/ordliste#bekraeftelse"><i>bekræfte</i></a> ventende transaktioner, ved at inkludere dem i blokkæden. Det opretholder en kronologisk rækkefølge i blokkæden, beskytter netværkets neutralitet og tillader forskellige computere at være enige om systemets tilstand. For at blive bekræftet skal transaktioner pakkes i en <a href="/da/ordliste#blok"><i>blok</i></a>, som passer ind i meget strikte kryptografiske regler, som verificeres af netværket. Disse regler forhindrer tidligere blokke at blive ændret, fordi hvis det skete, ville alle efterfølgende blokke blive ugyldige. Mining skaber også det der svarer til et konkurrencepræget lotteri, som forhindrer enhver enkeltperson i let at tilføje nye blokke fortløbende i blokkæden. På denne måde kan ingen enkeltpersoner styre, hvad der inkluderes i blokkæden eller erstatte dele af blokkæden for at annullere egne overførsler.</p>
+	<h2>Saldi<span class="titlelight"> – blokkæde</span></h2>
+	<p>Blokkæden er en <b>delt offentlig regnskabsbog</b>, som hele Bitcoin-netværket afhænger af. Alle bekræftede transaktioner gemmes i blokkæden. På denne måde kan Bitcoin-tegnebøger beregne deres saldo, og nye transaktioner kan verificeres som brugbare bitcoins, som faktisk ejes af afsenderen. Integriteren og den kronologiske rækkefølge af blokkæden håndhæves ved hjælp af <a href="/da/ordliste#kryptografi">kryptografi</a>.</p>
 
-<h2 id="readmore">I flere detaljer</h2>
-<p>Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href="/bitcoin.pdf">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href="/en/developer-documentation">udviklerdokumentationen</a> og udforske <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin-wikien</a>.</p>
+	<h2>Transaktioner<span class="titlelight"> – private nøgler</span></h2>
+	<p>En transaktion er <b>en overførsel af værdier mellem Bitcoin-tegnebøger</b>, som inkluderes i blokkæden. Bitcoin-tegnebøger har et stykke hemmelig data, der kaldes en <a href="/da/ordliste#privat-noegle"><i>privat nøgle</i></a> eller sæd, som bruges til at signere transaktioner, hvilket giver matematisk bevis for, at de kommer fra ejeren af tegnebogen. <a href="/da/ordliste#signatur"><i>Signaturen</i></a> forhindrer også, at transaktionen bliver ændret af nogen, efter den er afsendt. Alle transaktioner rundsendes imellem brugerne og begynder normalt at modtage bekræftelser i de følgende 10 minutter, gennem en proces, der kaldes <a href="/da/ordliste#mining"><i>mining</i></a>.</p>
 
+	<h2>Håndtering<span class="titlelight"> – mining</span></h2>
+	<p>Mining er et <b>distribueret konsensussystem</b>, som bruges til at <a href="/da/ordliste#bekraeftelse"><i>bekræfte</i></a> ventende transaktioner, ved at inkludere dem i blokkæden. Det opretholder en kronologisk rækkefølge i blokkæden, beskytter netværkets neutralitet og tillader forskellige computere at være enige om systemets tilstand. For at blive bekræftet skal transaktioner pakkes i en <a href="/da/ordliste#blok"><i>blok</i></a>, som passer ind i meget strikte kryptografiske regler, som verificeres af netværket. Disse regler forhindrer tidligere blokke at blive ændret, fordi hvis det skete, ville alle efterfølgende blokke blive ugyldige. Mining skaber også det der svarer til et konkurrencepræget lotteri, som forhindrer enhver enkeltperson i let at tilføje nye blokke fortløbende i blokkæden. På denne måde kan ingen enkeltpersoner styre, hvad der inkluderes i blokkæden eller erstatte dele af blokkæden for at annullere egne overførsler.</p>
+
+	<h2>I flere detaljer</h2>
+	<p>Dette er kun en meget kortfattet opsummering af systemet. Hvis du vil vide mere om detaljerne, kan du <a href="/bitcoin.pdf">læse den oprindelige videnskabelige artikel</a>, som beskriver systemets design, læse <a href="/en/developer-documentation">udviklerdokumentationen</a> og udforske <a href="https://en.bitcoin.it/wiki/Main_Page">Bitcoin-wikien</a>.</p>
+
+</div>
+</div>
       </div>
     </div>
 
@@ -362,7 +362,7 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
+			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
 			<li><a href="/da/juridisk">Juridisk</a></li>
 			
 			<li><a href="/da/privatliv">Privatliv</a></li>
@@ -386,9 +386,7 @@
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>
