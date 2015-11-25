@@ -10,15 +10,29 @@
 <title>Skydda din integritet - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sv.png"><strong>Svenska</strong>
+          <img src="/img/flags/sv.png"><strong>Svenska</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Skydda din integritet</h1>
-<p class="summarytxt">Bitcoin är ofta uppfattat som ett anonymt betalningsnätverk. Men i verkligheten är Bitcoin antagligen den mest transparenta betalningsnätverket i världen. Samtidigt kan Bitcoin tillhandahålla en accepterbar nivå av integritet, om korrekt använt. <b>Kom alltid ihåg att det är ditt ansvar att adoptera bra rutiner för att säkra din integritet</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Skydda din integritet</h1>
+	<h2 class="content_standard--subtitle">Bitcoin är ofta uppfattat som ett anonymt betalningsnätverk. Men i verkligheten är Bitcoin antagligen den mest transparenta betalningsnätverket i världen. Samtidigt kan Bitcoin tillhandahålla en accepterbar nivå av integritet, om korrekt använt. <b>Kom alltid ihåg att det är ditt ansvar att adoptera bra rutiner för att säkra din integritet</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Förstå Bitcoins spårbarhet</h3>
+      <p>Bitcoin fungerar med en nivå av transparens som tidigare inte har funnits och de flesta är inte vana att hantera det. Alla Bitcoin transaktioner är publika, spårbara och permanent sparade i Bitcoin nätverket. Bitcoin adresser är den enda information som används för att definera var bitcoins finns och var det är skickade. Dessa adresser är skapade privat av varje användares plånbok. Så fort adressen används blir de spårbara tillsammans med historiken av alla transaktioner de är involverade med. Alla kan se <a href="https://www.biteasy.com">saldot och alla transaktioner</a> för alla adresserna. Eftersom användare i vanliga fall avslöjar sin identitet för att kunna ta emot tjänster och varor kan Bitcoin adresser inte vara fullständigt anonyma. Av dessa skäl ska Bitcoin adresser bara användas en gång och användare måste vara noggranna med att inte avslöja sina adresser.</p>
+    </li>
 
-<h2 id="traceable">Förstå Bitcoins spårbarhet</h2>
-<p>Bitcoin fungerar med en nivå av transparens som tidigare inte har funnits och de flesta är inte vana att hantera det. Alla Bitcoin transaktioner är publika, spårbara och permanent sparade i Bitcoin nätverket. Bitcoin adresser är den enda information som används för att definera var bitcoins finns och var det är skickade. Dessa adresser är skapade privat av varje användares plånbok. Så fort adressen används blir de spårbara tillsammans med historiken av alla transaktioner de är involverade med. Alla kan se <a href="https://www.biteasy.com">saldot och alla transaktioner</a> för alla adresserna. Eftersom användare i vanliga fall avslöjar sin identitet för att kunna ta emot tjänster och varor kan Bitcoin adresser inte vara fullständigt anonyma. Av dessa skäl ska Bitcoin adresser bara användas en gång och användare måste vara noggranna med att inte avslöja sina adresser.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Använd nya adresser för att ta emot betalningar</h3>
+      <p>För att skydda din integritet, borde du använda en ny Bitcoin-adress varje gång du tar emot en betalning. Du kan dessutom använda olika plånböcker för olika ändamål. På så sätt kan du isolera dina transaktioner så att det inte är möjligt att associera dem. Personer som skickar dig pengar kan inte se vilka andra Bitcoin adresser du äger och vad du gör med dem. Det är antagligen det viktigaste att tänka på.</p>
+    </li>
 
-<h2 id="receive">Använd nya adresser för att ta emot betalningar</h2>
-<p>För att skydda din integritet, borde du använda en ny Bitcoin-adress varje gång du tar emot en betalning. Du kan dessutom använda olika plånböcker för olika ändamål. På så sätt kan du isolera dina transaktioner så att det inte är möjligt att associera dem. Personer som skickar dig pengar kan inte se vilka andra Bitcoin adresser du äger och vad du gör med dem. Det är antagligen det viktigaste att tänka på.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Var försiktigt på offentliga platser</h3>
+      <p>Så länge din intentioner är att ta emot publika donationer eller betalningar med full transparens så är publiceringen av en Bitcoin-adress på någon offentlig plats, hemsida eller socialt nätverk är det inte en bra idé när det gäller integritet. Om du väljer att göra så, kom alltid ihåg att ifall du flyttar pengar från den adressen till någon av dina andra adresser blir de i sin tur märkta av historiken för den första publika adressen. Du ska också vara försiktig att inte publicera någon information om dina transaktioner eller betalningar som möjliggör någon att identifiera dina Bitcoin-adresser.</p>
+    </li>
 
-<h2 id="public">Var försiktigt på offentliga platser</h2>
-<p>Så länge din intentioner är att ta emot publika donationer eller betalningar med full transparens så är publiceringen av en Bitcoin-adress på någon offentlig plats, hemsida eller socialt nätverk är det inte en bra idé när det gäller integritet. Om du väljer att göra så, kom alltid ihåg att ifall du flyttar pengar från den adressen till någon av dina andra adresser blir de i sin tur märkta av historiken för den första publika adressen. Du ska också vara försiktig att inte publicera någon information om dina transaktioner eller betalningar som möjliggör någon att identifiera dina Bitcoin-adresser.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Din IP adress kan bli loggad</h3>
+      <p>Eftersom Bitcoin-nätverket är ett peer-to-peer nätverk, så är det möjligt att lyssna efter transaktioner och logga deras IP adresser.  Fullnodklienter vidarebefordrar alla användares transaktioner precis som deras egna. Det innebär att hitta källan för en specifik transaktion kan vara svårt och vilken Bitcoin-nod som helst kan misstas som källan för en transaktion även fast de inte är det. Du kanske bör överväga att gömma din IP adress med ett verktyg som <a href="https://www.torproject.org/">Tor</a> så att det inte kan bli loggat. </p>
+    </li>
 
-<h2 id="iplog">Din IP adress kan bli loggad</h2>
-<p>Eftersom Bitcoin-nätverket är ett peer-to-peer nätverk, så är det möjligt att lyssna efter transaktioner och logga deras IP adresser.  Fullnodklienter vidarebefordrar alla användares transaktioner precis som deras egna. Det innebär att hitta källan för en specifik transaktion kan vara svårt och vilken Bitcoin-nod som helst kan misstas som källan för en transaktion även fast de inte är det. Du kanske bör överväga att gömma din IP adress med ett verktyg som <a href="https://www.torproject.org/">Tor</a> så att det inte kan bli loggat. </p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Begränsningar med att blanda tjänster</h3>
+      <p>Vissa nättjänster kallade mixer tjänster gör det möjligt att mixa spårbarheten mellan användare genom att ta emot och skicka tillbaka samma summa pengar till olika Bitcoin-adresser. Det är viktigt att notera att legaliteten av sådana tjänster kan variera och de kan råda olika lagar på olika platser. Sådana tjänster kräver också att du litar på personerna som driver tjänsten att inte stjäla dina pengar och inte hålla en logg av dina transaktioner. Även fast mixing tjänster kan bryta historiken för mindre summor, blir det väsentligen mycket svårare att göra samma sak för större transaktioner.</p>
+    </li>
 
-<h2 id="mixing">Begränsningar med att blanda tjänster</h2>
-<p>Vissa nättjänster kallade mixer tjänster gör det möjligt att mixa spårbarheten mellan användare genom att ta emot och skicka tillbaka samma summa pengar till olika Bitcoin-adresser. Det är viktigt att notera att legaliteten av sådana tjänster kan variera och de kan råda olika lagar på olika platser. Sådana tjänster kräver också att du litar på personerna som driver tjänsten att inte stjäla dina pengar och inte hålla en logg av dina transaktioner. Även fast mixing tjänster kan bryta historiken för mindre summor, blir det väsentligen mycket svårare att göra samma sak för större transaktioner.</p>
-
-<h2 id="future">Framtida förbättringar</h2>
-<p>Många förbättringar kan väntas i framtiden för att förbättra integriteten. Till exempel arbetas det med att uppdatera betalnings API:t för att undvika att blanda historik mellan adresser under en betalning. Bitcoin Core bytadresser kanske blir implementerat direkt i plånböckerna över tid. Grafiska gränssnitt kanske kan förbättra användarvänligheten för betalningsförfrågningar och uppmuntra användare att bara använda en adress en gång. Olika projekt och forskning fortsätter att förbättra integritetsfunktioner, för att till exempel kunna slå ihop slumpmässiga användares transaktioner.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Framtida förbättringar</h3>
+      <p>Många förbättringar kan väntas i framtiden för att förbättra integriteten. Till exempel arbetas det med att uppdatera betalnings API:t för att undvika att blanda historik mellan adresser under en betalning. Bitcoin Core bytadresser kanske blir implementerat direkt i plånböckerna över tid. Grafiska gränssnitt kanske kan förbättra användarvänligheten för betalningsförfrågningar och uppmuntra användare att bara använda en adress en gång. Olika projekt och forskning fortsätter att förbättra integritetsfunktioner, för att till exempel kunna slå ihop slumpmässiga användares transaktioner.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sv/juridiskt">Juridiskt</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/juridiskt">Juridiskt</a></li>
 			
-			<li><a href="/sv/integritet">Integritet</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/integritet">Integritet</a></li>
 			
-			<li><a href="/sv/press">Press</a></li>
-			<li><a href="/sv/om-oss">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/om-oss">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En community hemsida sponsrat av</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

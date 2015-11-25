@@ -10,15 +10,29 @@
 <title>Întrebări frecvente - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ro.png"><strong>Română</strong>
+          <img src="/img/flags/ro.png"><strong>Română</strong>
 				</div>
 			</a>
 		</div>
@@ -323,284 +341,553 @@
 		<li><a href="#">Întrebări Frecvente</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Întrebări frecvente</h1>
-<p class="summary">Găseşte răspunsuri la întrebări frecvente şi mituri despre Bitcoin.</p>
+        <div class="content_faq">
+  <h1 class="content_faq--title">Întrebări frecvente</h1>
+  <h2 class="content_faq--subtitle">Găseşte răspunsuri la întrebări frecvente şi mituri despre Bitcoin.</h2>
 
-<h2 id="table-of-contents">Cuprins</h2>
+  <div class="content_faq--faq">
+    <div class="content_fag--faq--title">
+      <h2>FAQ</h2>
+    </div>
 
-<div class="index">
-<ul>
-<li><a href="#general">General</a></li>
-<ul>
-  <li><a href="#ce-este-bitcoin">Ce este Bitcoin?</a></li>
-  <li><a href="#cine-a-creat-bitcoin">Cine a creat Bitcoin?</a></li>
-  <li><a href="#cine-controleaza-reteaua-bitcoin">Cine controlează rețeaua Bitcoin?</a></li>
-  <li><a href="#cum-functioneaza-bitcoin">Cum funcționează Bitcoin?</a></li>
-  <li><a href="#foloseste-lumea-bitcoin">Foloseşte lumea Bitcoin?</a></li>
-  <li><a href="#cum-achizitionam-bitcoin">Cum achiziționăm bitcoini?</a></li>
-  <li><a href="#cat-de-dificil-este-sa-facem-plati-cu-bitcoin">Cât de dificil este să facem plăţi cu Bitcoin ?</a></li>
-  <li><a href="#care-sunt-avantajele-bitcoin">Care sunt avantajele Bitcoin?</a></li>
-  <li><a href="#care-sunt-dezavantajele-bitcoin">Care sunt dezavantajele Bitcoin?</a></li>
-  <li><a href="#de-ce-au-oamenii-incredere-in-bitcoin">De ce au oamenii încredere în Bitcoin?</a></li>
-  <li><a href="#pot-face-bani-cu-bitcoin">Pot face bani cu Bitcoin?</a></li>
-  <li><a href="#este-bitcoin-intr-adevar-virtual-si-imaterial">Este Bitcoin într-adevar virtual și imaterial?</a></li>
-  <li><a href="#este-bitcoin-anonim">Este Bitcoin anonim?</a></li>
-  <li><a href="#ce-se-intampla-cand-se-pierd-bitcoini">Ce se întâmplă atunci când bitcoinii sunt pierduţi?</a></li>
-  <li><a href="#poate-bitcoin-sa-devina-o-retea-de-plati-importanta">Poate Bitcoin să devină o reţea de plăţi importantă?</a></li>
-</ul>
-<li><a href="#legal">Legal</a></li>
-<ul>
-  <li><a href="#este-legal-bitcoinul">Este legal Bitcoinul?</a></li>
-  <li><a href="#este-bitcoin-util-pentru-activitati-ilegale">Este Bitcoin util pentru activități ilegale?</a></li>
-  <li><a href="#poate-fi-bitcoin-reglementat">Poate fi Bitcoin reglementat?</a></li>
-  <li><a href="#dar-despre-bitcoin-si-taxe-si-impozite">Dar despre Bitcoin şi taxe şi impozite?</a></li>
-  <li><a href="#dar-despre-bitcoin-si-protectia-consumatorului">Dar despre Bitcoin şi protecţia consumatorului?</a></li>
-</ul>
-<li><a href="#economie">Economie</a></li>
-<ul>
-  <li><a href="#cum-sunt-creati-bitcoinii">Cum sunt creaţi bitcoinii?</a></li>
-  <li><a href="#de-ce-au-bitcoinii-valoare">De ce au bitcoinii valoare?</a></li>
-  <li><a href="#ce-determina-pretul-unui-bitcoin">Ce determină prețul unui bitcoin?</a></li>
-  <li><a href="#pot-bitcoinii-sa-si-piarda-valoarea">Pot bitcoinii să-şi piardă valoarea?</a></li>
-  <li><a href="#este-bitcoin-o-bula-speculativa">Este Bitcoin o bulă speculativă?</a></li>
-  <li><a href="#este-bitcoin-o-schema-ponzi">Este Bitcoin o schemă Ponzi?</a></li>
-  <li><a href="#nu-cumva-bitcoin-ii-favoritizeaza-pe-cei-ce-au-investit-la-inceput">Nu cumva Bitcoin îi favoritizează pe cei ce au investit la început?</a></li>
-  <li><a href="#numarul-finit-de-bitcoini-nu-este-o-limitare">Numărul finit de bicoini nu este o limitare?</a></li>
-  <li><a href="#nu-va-cadea-bitcoin-intr-o-spirala-deflationara">Nu va cădea Bitcoin într-o spirală deflaţionară?</a></li>
-  <li><a href="#nu-este-specula-si-volatilitatea-o-problema-pentru-bitcoin">Specula şi volatilitatea nu este o problemă pentru Bitcoin?</a></li>
-  <li><a href="#daca-cineva-cumpara-toti-bitcoinii-existenti">Dacă cineva cumpără toţi bitcoinii existenţi?</a></li>
-  <li><a href="#daca-cineva-creeaza-o-moneda-digitala-mai-buna">Dacă cineva creează o monedă digitală mai bună?</a></li>
-</ul>
-<li><a href="#tranzactii">Tranzacţii</a></li>
-<ul>
-  <li><a href="#de-ce-trebuie-sa-astept-10-minute">De ce trebuie să aștept 10 minute?</a></li>
-  <li><a href="#cat-va-costa-taxa-de-tranzactie">Cât va costa taxa de tranzacţie?</a></li>
-  <li><a href="#ce-se-intampla-daca-primesc-bitcoini-cand-calculatorul-este-oprit">Ce se întâmplă dacă primesc bitcoini când calculatorul este oprit?</a></li>
-  <li><a href="#la-ce-se-refera-sincronizarea-si-de-ce-dureaza-atat-de-mult">La ce se referă "sincronizarea" şi de ce durează atât de mult?</a></li>
-</ul>
-<li><a href="#minerit">Minerit</a></li>
-<ul>
-  <li><a href="#ce-este-mineritul-de-bitcoin">Ce este mineritul de Bitcoin?</a></li>
-  <li><a href="#cum-functioneaza-mineritul-de-bitcoin">Cum funcţionează mineritul de Bitcoin?</a></li>
-  <li><a href="#mineritul-de-bitcoin-nu-este-o-risipa-de-energie">Mineritul de Bitcoin nu este o risipă de energie?</a></li>
-  <li><a href="#cum-ajuta-mineritul-ca-bitcoin-sa-fie-sigur">Cum ajută mineritul ca Bitcoin să fie sigur?</a></li>
-  <li><a href="#de-ce-am-nevoie-pentru-a-incepe-sa-minez">De ce am nevoie pentru a mă apuca de minerit?</a></li>
-</ul>
-<li><a href="#securitate">Securitate</a></li>
-<ul>
-  <li><a href="#este-bitcoin-sigur">Este Bitcoin sigur?</a></li>
-  <li><a href="#nu-a-fost-bitcoin-hackuit-in-trecut">Nu a fost Bitcoin hackuit în trecut?</a></li>
-  <li><a href="#pot-utilizatorii-sa-comploteze-impotriva-bitcoin">Pot utilizatorii să comploteze împotriva Bitcoin?</a></li>
-  <li><a href="#este-bitcoin-vulnerabil-in-fata-calculatoarelor-cuantice">Este Bitcoin vulnerabil în faţa calculatoarelor cuantice?</a></li>
-</ul>
-<li><a href="#ajutor">Ajutor</a></li>
-<ul>
-  <li><a href="#mai-mult-ajutor">Mi-ar plăcea să aflu mai multe. Unde pot să primesc ajutor?</a></li>
-</ul>
-</ul>
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="general" href="#general">General</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="ce-este-bitcoin" href="#ce-este-bitcoin">Ce este Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin este o reţea consensuală ce oferă un nou sistem de plată şi bani complet digitali. Este primul sistem de plată peer-to-peer descentralizat susţinut de utilizatorii săi fără o autoritate centrală sau intermediari. Din perspectiva unui utilizator, Bitcoin reprezintă în mare bani cash pentru Internet. Bitcoin poate fi văzut de asemenea şi ca cel mai proeminent <a href="http://financialcryptography.com/mt/archives/001325.html">sistem de contabilitate triple entry</a> existent.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cine-a-creat-bitcoin" href="#cine-a-creat-bitcoin">Cine a creat Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin este prima implementare a unui concept numit "cripto-valută", care a fost pentru prima oară enunţat în 1998 de către Wei Dai în lista de mail cypherpunks, sugerând ideea unei noi forme de bani ce foloseşte criptografia pentru a controla emiterea lor şi tranzacţiile, spre deosebire de a se baza pe o autoritate centrală. Primele specificaţii şi validarea conceptului au fost publicate în 2009 într-o listă de mail dedicată criptografiei de către Satoshi Nakamoto. Satoshi a părăsit proiectul la sfârşitul anului 2010 fără să spună foarte multe lucruri despre persoana sa. De atunci, comunitatea a crescut exponenţial, cu <a href="/ro/dezvoltare">mulţi programatori</a> lucrând la Bitcoin.</p>
+            <p>Anonimitatea lui Satoshi a ridicat deseori îngrijorări nejustificate, multe dintre ele legate de neînţelegerea naturii open source a Bitcoin. Protocolul şi software-ul Bitcoin sunt publicate liber şi orice programator din lume poate vedea codul sau să-şi facă propria versiune modificată a software-ului Bitcoin. Ca şi programatorii actuali, influenţa lui Satoshi a fost limitată de faptul că schimbările făcute de el trebuiesc să fie adoptate de ceilalţi şi din cauza asta el nu a avut control asupra Bitcoin. Ca atare, identitatea inventatorului Bitcoin este probabil la fel de relevantă astăzi ca identitatea persoanei care a inventat hârtia.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="cine-controleaza-reteaua-bitcoin" href="#cine-controleaza-reteaua-bitcoin">Cine controlează rețeaua Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Nimeni nu controlează reţeaua Bitcoin aşa cum nimeni nu deţine tehnologia din spatele emailului. Bitcoin este controlat de către toţi utilizatorii Bitcoin din toată lumea. În timp ce programatorii îmbunătăţesc software-ul, ei nu pot forta o schimbare în protocolul Bitcoin pentru că toţi utilizatorii sunt liberi să aleagă ce software şi ce versiune să folosească. Pentru a rămâne compatibili unii cu alţii, toţi utilizatorii trebuie să folosească software ce respectă aceleaşi reguli. Bitcoin poate lucra corect doar atunci când există un consens între toţi utilizatorii. Aşa că, toţi utilizatorii şi programatorii au o motivaţie puternică pentru a proteja acest consens.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="cum-functioneaza-bitcoin" href="#cum-functioneaza-bitcoin">Cum funcționează Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Din perspectiva unui utilizator obişnuit, Bitcoin nu este nimic mai mult decât o aplicaţie pe telefon sau un program pe calculator ce oferă un portofel personal Bitcoin şi permite unui utilizator să trimită şi să primească bitcoini prin el. Acesta este modul în care funcţionează Bitcoin pentru majoritatea utilizatorilor.</p>
+            <p>În culise, reţeaua Bitcoin distribuie un registru public denumit "lanţul de blocuri". Acest registru conţine fiecare tranzacţie procesată vreodată, permiţând calculatorului unui utilizator să verifice validitatea fiecărei tranzacţii. Autenticitatea fiecarei tranzacţii este protejată de semnăturile digitale ce corespund cu adresele de unde au fost trimişi bitcoinii, permiţând tuturor utilizatorilor să aibă control total asupra trimiterii de bitcoini din adresele lor Bitcoin personale. Adiţional, oricine poate procesa tranzacţii folosind puterea computaţională a hardware-ului specializat şi să fie răsplătiţi cu bitcoini pentru acest serviciu. Acest lucru este adesea denumit "minat". Pentru a afla mai multe despre Bitcoin, poţi consulta <a href="/ro/cum-functioneaza">pagina dedicată</a> şi <a href="/bitcoin.pdf">lucrarea originală</a>.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="foloseste-lumea-bitcoin" href="#foloseste-lumea-bitcoin">Foloseşte lumea Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Da. Este folosit de <a href="http://usebitcoins.info/">un număr tot mai mare de afaceri</a> şi persoane. Acestea includ afaceri fizice, cum ar fi restaurante, firme de avocatură, săli de fitness şi servicii online populare cum ar fi Namecheap, WordPress, Reddit şi Flattr. În timp ce Bitcoin rămâne un fenomen relativ nou, acesta creşte rapid. În luna Martie 2014, <a href="https://bitcoincharts.com/bitcoin/">valorarea tuturor bitcoinilor aflaţi în circulaţie</a> depăşea suma de 8 miliarde de dolari şi bitcoini în valorare de milioane de dolari fiind schimbaţi zilnic.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="cum-achizitionam-bitcoin" href="#cum-achizitionam-bitcoin">Cum achiziționăm bitcoini?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li>Ca plată pentru bunuri şi servicii.</li>
+              <li>Cumpără bitcoini de la un <a href="http://howtobuybitcoins.info">exchange de Bitcoin</a>.</li>
+              <li>Schimbă bitcoini cu cineva <a href="https://localbitcoins.com/">din apropierea ta</a>.</li>
+              <li>Câştigă bitcoini intr-un mod competitiv prin <a href="http://www.bitcoinmining.com/">minerit</a>.</li>
+            </ul>
+            <p>În timp ce este posibil să găseşti persoane ce doresc să vândă bitcoini plătind prin card de credit sau PayPal, majoritatea exchange-urilor nu oferă finanţare prin aceste mijloace de plată. Acest lucru se întâmplă din cauza cazurilor în care cineva cumpără bitcoini folosind PayPal, doar ca mai târziu să-şi recupereze jumătatea lor din tranzacţie. Acest procedeu este denumit în general chargeback.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cat-de-dificil-este-sa-facem-plati-cu-bitcoin" href="#cat-de-dificil-este-sa-facem-plati-cu-bitcoin">Cât de dificil este să facem plăţi cu Bitcoin ?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Este mai uşor să faci tranzacţii cu Bitcoin decât să faci cumpărături cu un card de debit sau de credit, acestea putând fi primite fără un cont de comerciant. Plăţile sunt făcute direct dintr-o aplicaţie portofel, fie de pe calculatorul sau mobilul tău, introducând adresa recipientului, suma, şi apăsarea butonului Trimite. Pentru a face şi mai uşoară introducerea adresei recipientului, multe portofele pot obţine adresa prin scanarea unui cod QR sau alăturarea a două telefoane ce beneficiază de tehnologia NFC.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="care-sunt-avantajele-bitcoin" href="#care-sunt-avantajele-bitcoin">Care sunt avantajele Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li><em><b>Libertatea plăţilor</b></em> - Este posibil să trimiţi şi să primeşti orice sumă de bani instant oriunde în lume la orice oră. Fără zile în care băncile sunt închise. Fără limite impuse. Bitcoin permite utilizatorilor săi să aibă control deplin asupra banilor lor.</li>
+              <li><em><b>Taxe foarte mici</b></em> - Plăţile Bitcoin sunt în momentul de faţă procesate fie fără taxe sau cu taxe extrem de mici. Utilizatorii pot include opţional o taxă pentru a beneficia de prioritate în procesarea tranzacţiei, ce rezultă într-o confirmare mai rapidă a tranzacţiilor de către reţea. Adiţional, există procesatori comerciali ce asistă comercianţii în procesarea tranzacţiilor, schimbând bitcoinii în monedă fiat şi depozitând zilnic fondurile direct în contul bancar al comerciantului. Aceste servicii fiind bazate pe Bitcoin, ele pot fi oferite cu taxe mult mai mici decât PayPal sau reţele de carduri de credit.</li>
+              <li><em><b>Mai puţine riscuri pentru comercianţi</b></em> - Tranzacţiile Bitcoin sunt sigure, ireversibile şi nu conţin informaţii personale ale clientului. Acest lucru protejează comercianţii de pagube cauzate de fraudă sau chargeback-uri fraudulente şi nu este necesară conformarea PCI. Comercianţii pot să se extindă cu uşurinţă către noi pieţe unde ori nu sunt disponibile cardurile de credit ori ratele de fraudă sunt inacceptabil de înalte. Rezultatele nete sunt taxe mai mici, pieţe mai extinse şi costuri administrative mai mici.</li>
+              <li><em><b>Securitate şi control</b></em> - Utilizatorii Bitcoin au un control total asupra tranzacţiilor; este imposibil pentru comercianţi să forţeze taxe sau plăţi nedorite sau ascunse aşa cum se poate întâmpla prin alte metode de plată. Plăţile Bitcoin pot fi făcute fără că informaţii personale să fie legate de tranzacţie. Acest lucru oferă protecţie crescută împotriva furtului de identitate. Cei ce folosesc Bitcoin pot de asemenea să-şi protejeze banii prin backup şi criptare.</li>
+              <li><em><b>Transparent şi neutru</b></em> - <a href="https://www.biteasy.com/">Toate informaţiile</a> despre masa monetară a Bitcoin sunt disponibile oricând în lanţul de blocuri putând fi verificate de oricine şi folosite în timp real. Nici un individ sau organizaţie nu poate controla sau manipula protocolul Bitcoin deoarece este sigur din punct de vedere criptografic. Asta permite ca Bitcoin să fie complet neutru, transparent şi previzibil.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="care-sunt-dezavantajele-bitcoin" href="#care-sunt-dezavantajele-bitcoin">Care sunt dezavantajele Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <ul>
+             <li><em><b>Gradul de acceptare</b></em> - Mulţi oameni încă nu au auzit de Bitcoin. În fiecare zi, din ce în ce mai multe firme acceptă bitcoini pentru că îşi doresc avantajele asociate cu aceasta, dar lista este încă mică şi trebuie să mai crească pentru a beneficia de <a href="https://en.wikipedia.org/wiki/Network_effect">efectul de reţea</a>.</li>
+             <li><em><b>Volatilitatea</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Totalul valorii</a> bitcoinilor în circulaţie şi numărul de firme ce folosesc Bitcoin este încă foarte mic faţă de ce ar putea fi. Aşa că, evenimente relativ mici, specule, sau activităţile anumitor firme pot influenţa major preţul. În teorie, această volatilitate se va micşora pe măsură ce pieţele Bitcoin şi tehnologia se va matura. Nu a mai existat niciodată o astfel de monedă, aşa că este destul de dificil(şi palpitant) să ne imaginăm ce se va întâmpla.</li>
+             <li><em><b>Dezvoltare continuă</b></em> - Software-ul Bitcoin este încă într-un stadiu beta cu multe opţiuni încă incomplete aflate în dezvoltare activă. Noi unelte, opţiuni şi servicii sunt în curs de dezvoltare pentru a face Bitcoin mai sigur şi mai accesibil pentru mase. Unele dintre ele încă nu sunt gata pentru toată lumea. Majoritatea afacerilor ce au la bază Bitcoin sunt la început şi nu oferă încă vreo asigurare. În general, Bitcoin este încă în faza de maturare.</li>
+           </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="de-ce-au-oamenii-incredere-in-bitcoin" href="#de-ce-au-oamenii-incredere-in-bitcoin">De ce au oamenii încredere în Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Majoritatea încrederii pe care oamenii o au în Bitcoin vine din faptul că nu necesită încredere deloc. Bitcoin este în întregime open-source şi descentralizat. Asta înseamnă că oricine are acces la întregul cod sursă oricând. Orice programator din lume poate deci să verifice exact cum funcţionează Bitcoin. Toţi bitcoinii aflaţi în existenţă şi toate tranzacţiile pot fi consultaţi în timp real de către toată lumea. Toate plăţile pot fi făcute fără implicarea unei părţi terţe şi tot sistemul este protejat de către algoritmi criptografici foarte puternici verificaţi de comunitate asemănători cu cei folosiţi în banking-ul online. Nici o organizaţie sau individ nu poate controla Bitcoin, iar reţeaua rămâne securizată chiar dacă nu toţi utilizatorii sunt de încredere.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="pot-face-bani-cu-bitcoin" href="#pot-face-bani-cu-bitcoin">Pot face bani cu Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Nu ar trebui niciodată să te aştepţi că te vei îmbogăţi prin Bitcoin sau prin orice tehnologie emergentă. Este întotdeauna important să oferi o atenţie crescută la orice lucru ce sună prea bine pentru a fi adevărat sau care nu ţine cont de reguli economice de bază.</p>
+            <p>Bitcoin este un ecosistem plin de inovaţie aflat într-o continuă expansiune şi sunt oportunităţi de afaceri ce includ şi riscuri. Nu există nici o garanţie că Bitcoin va continua să crească deşi s-a dezvoltat într-un ritm foarte rapid până acum. Investirea de timp şi resurse în Bitcoin necesită totuşi o înclinaţie antrepenorială. Există diverse metode de a face bani cu Bitcoin cum ar fi mineritul, speculatul sau pornirea de noi afaceri. Toate aceste metode sunt competitive şi nu există nici o garanţie a profitului. Este datoria fiecăruia de a evalua costurile şi riscurile unui astfel de proiect.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-bitcoin-intr-adevar-virtual-si-imaterial" href="#este-bitcoin-intr-adevar-virtual-si-imaterial">Este Bitcoin într-adevar virtual și imaterial?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin este la fel de virtual ca şi cardurile de credit sau soluţiile de online banking folosite de oameni zi de zi. Bitcoin poate fi folosit pentru a efectua plăţi online sau în magazine ca orice altă formă de bani. Bitcoinii de asemenea pot fi tranzacţionaţi în forme fizice, cum ar fi <a href="https://www.casascius.com/">monezile Casascius</a>, dar a plăti folosind telefonul mobil este de obicei mai convenabil. Balanţele Bitcoin sunt stocate într-o enormă reţea distribuită de date şi nu pot fi modificate fraudulent de nimeni. Cu alte cuvinte, utilizatorii Bitcoin au control exclusiv asupra propriilor fonduri şi bitcoinii nu pot dispărea pur şi simplu doar pentru că sunt virtuali.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-bitcoin-anonim" href="#este-bitcoin-anonim">Este Bitcoin anonim?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin este construit pentru a permite utilizatorilor săi să trimită şi să primească plăţi cu un nivel acceptabil de confidenţialitate ca orice altă formă de bani. Însă, Bitcoin nu este la fel de anonim şi nu poate oferi acelaşi nivel de confidenţialitate ca şi banii cash. Folosirea de Bitcoin lasă destule urme în registrul public. Există <a href="/ro/protejeaza-ti-intimitatea">diverse metode</a> pentru a proteja confidenţialitatea utilizatorilor, cu mai multe aflate în stadiu de dezvoltare. Cu toate acestea, mai este destulă muncă de făcut înainte ca aceste metode să fie folosite în mod corect de utilizatorii Bitcoin.</p>
+            <p>Există controverse legate de tranzacţiile private care ar putea fi folosite în scopuri ilegale. Însă, merită notat că Bitcoin în cele din urmă va fi supus unor reglementări existente deja în sistemele financiare. Bitcoin nu poate fi mai anonim decât banii cash şi nu poate pune piedici în investigaţii oficiale ale autorităţilor. În plus, Bitcoin este construit în aşa fel încât să prevină o gamă largă de ilegalităţi financiare.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="ce-se-intampla-cand-se-pierd-bitcoini" href="#ce-se-intampla-cand-se-pierd-bitcoini">Ce se întâmplă atunci când bitcoinii sunt pierduţi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Când un utilizator îşi pierde portofelul, practic acele monezi sunt scoase din circulaţie. Bitcoinii pierduţi vor rămâne în lanţul de blocuri ca orice alţi bitcoini. Însă, bitcoinii pierduţi rămân inactivi pentru totdeauna deoarece este imposibil ca cineva să găsească cheia(cheile) private ce ar permite să fie cheltuiţi din nou. Datorită legii cererii şi a ofertei, atunci când puţini bitcoini sunt disponibili, cei rămaşi vor avea o cerere mai mare şi vor avea o avea o valoare crescută pentru a compensa.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="poate-bitcoin-sa-devina-o-retea-de-plati-importanta" href="#poate-bitcoin-sa-devina-o-retea-de-plati-importanta">Poate Bitcoin să devină o reţea de plăţi importantă?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Reţeaua Bitcoin poate procesa deja un număr mult mai mare de tranzacţii pe secundă decât o face astăzi. Pe de altă parte, nu este încă gata să fie comparată cu reţele importante de carduri de credit. Momentan, se lucrează la ridicarea acestor limitări şi viitoarele cerinţe sunt deja bine cunoscute. Încă de la început, fiecare aspect al reţelei Bitcoin s-a aflat într-un proces continuu de maturare, optimizare şi specializare fiind de aşteptat să se întâmple la fel şi în anii ce vor urma. Pe măsură ce traficul creşte, mai mulţi utilizatori Bitcoin folosesc clienţi uşori şi nodurile întregi de reţea s-ar putea să devină un serviciu mai degrabă specializat. Pentru mai multe detalii, se poate consulta pagina de <a href="https://en.bitcoin.it/wiki/Scalability">Scalabilitate</a> de pe Wiki.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="legal" href="#legal">Legal</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-legal-bitcoinul" href="#este-legal-bitcoinul">Este legal Bitcoinul?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Din datele pe care le deţinem, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin nu a fost declarat ilegal</a> în majoritatea legislaţiilor diferitelor jurisdicţii. Dar, unele jurisdicţii(cum ar fi Argentina sau Rusia) restricţionează sau interzic valutele străine. Alte jurisdicţii(ca Tailanda) pot limita licenţierea anumitor entităţi cum ar fi exchange-urile Bitcoin.</p>
+            <p>Regulatori din diverse jurisdicţii fac paşi pentru a oferi indivizilor şi firmelor reguli pentru cum ar trebui să integreze această nouă tehnologie cu sistemul financiar formal şi regulat. De exemplu, Reţeaua de Combatere a Ilegalităţilor Financiare(FinCEN), o instituţie a Departamentului de Trezorerie al Statelor Unite, a emis o ghidare neimpusa de lege privind încadrarea anumitor activităţi în care sunt implicate valutele digitale.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-bitcoin-util-pentru-activitati-ilegale" href="#este-bitcoin-util-pentru-activitati-ilegale">Este Bitcoin util pentru activități ilegale?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin reprezintă bani, iar banii au fost dintotdeauna folosiţi pentru scopuri legale dar şi ilegale. Banii cash, cardurile de credit şi sistemul bancar actual depăşesc cu mult Bitcoin prin gradul de folosinţă în finanţarea activităţilor ilegale. Bitcoin poate aduce o inovaţie semnificativă în sistemele de plăţi şi beneficiile unei asemenea inovaţii sunt adesea considerate ca fiind cu mult peste potenţialele dezavantaje.</p>
+           <p>Bitcoin este făcut pentru a fi un uriaş pas în faţă în drumul de a face banii mai siguri şi poate funcţiona de asemenea ca o protecţie semnificativă împotriva multor forme de ilegalităţi financiare. De exemplu, bitcoinii sunt complet imposibil de falsificat. Utilizatorii au control total asupra tranzacţiilor lor şi nu pot fi afectaţi de plăţi neautorizate ca în cazul fraudării cardurilor de credit. Tranzacţiile Bitcoin sunt ireversibile şi imune împotriva chargeback-urilor fraudulente. Bitcoin permite banilor să fie securizati împotriva furtului sau a pierderii folosind mecanisme foarte puternice şi folositoare cum ar fi backup-uri, criptare şi semnături multiple.</p>
+           <p>Există controverse legate de faptul că Bitcoin poate fi atractiv de folosit de către cei ce fac lucruri ilegale din cauză că permite efectuarea de plăţi ireversibile şi private. Însă, banii cash şi transferurile wire au deja aceste caracteristici, ambele fiind folosite pe scară largă şi deja consacrate. Folosirea Bitcoin va fi fără îndoială subiectul unor reglementări similare ce deja există în cadrul sistemelor financiare existente, iar Bitcoin este improbabil să prevină conducerea investigaţiilor oficiale. În general, este ceva comun că descoperirile importante să fie percepute că fiind controversate înainte că beneficiile sale să fie bine înţelese. Internetul este un bun exemplu alături de multe altele pentru a ilustra acest lucru.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="poate-fi-bitcoin-reglementat" href="#poate-fi-bitcoin-reglementat">Poate fi Bitcoin reglementat?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Protocolul Bitcoin însuşi nu poate fi modificat fără cooperarea a aproximativ tuturor utilizatorilor, care aleg ce software să folosească. Încercarea de a atribui drepturi speciale unei autorităţi locale în cadrul regulilor reţelei globale Bitcoin nu este o posibilitate practică. Orice organizaţie cu destule resurse poate alege să investească în hardware de minat pentru a controla jumătate din puterea computaţională a reţelei şi să poată bloca sau inversa tranzacţiile recente. Însă, nu există nici o garanţie că această va putea să deţină această putere din moment ce asta înseamnă să investească aproape cât toţi minerii din lume la un loc.</p>
+           <p>Pe de altă parte este posibilă reglementarea folosirii de Bitcoin într-un mod similar ca orice alt instrument economic. Ca şi Dolarul, Bitcoin poate fi folosit pentru o gama largă de scopuri, unele dintre ele putând fi considerate legitime sau nu depinzând de legile din jurisdicţia respectivă. În acest caz, Bitcoin nu este cu nimic diferit faţă de orice altă unealtă sau resursă şi poate fi subiectul diferitelor reglementări în fiecare ţară în parte. Folosirea de Bitcoin poate fi făcută dificilă de către reglementări restrictive, în acest caz este greu de determinat ce procentaj de utilizatori vor continua să folosească această tehnologie. Un guvern ce alege să interzică Bitcoin nu va face decât să prevină afacerile şi pieţele domestice să se dezvolte, mutând inovaţia către alte ţări. Provocarea instituţiilor reglementatoare este, ca de obicei, de a dezvolta soluţii eficiente fără să afecteze dezvoltarea de noi pieţe şi afaceri.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="dar-despre-bitcoin-si-taxe-si-impozite" href="#dar-despre-bitcoin-si-taxe-si-impozite">Dar despre Bitcoin şi taxe şi impozite?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin nu este o monedă fiat cu statut legal în nici o jurisdicţie, dar deseori responsabilitatea financiară vis a vis de taxe şi impozite va creşte indiferent de mediumul folosit. Există o gama variată de legi în diferite jurisdicţii ce pot face ca venitul, vânzările, salariile, profiturile din vânzări, sau orice altă responsabilitate fiscală să crească cu Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="dar-despre-bitcoin-si-protectia-consumatorului" href="#dar-despre-bitcoin-si-protectia-consumatorului">Dar despre Bitcoin şi protecţia consumatorului?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin eliberează oamenii, permiţându-le să facă tranzacţii după propriile lor condiţii. Fiecare utilizator poate trimite şi primi plăţi într-o manieră similară cu banii cash dar pot de asemenea să ia parte în contracte mai complexe. Semnăturile multiple permit unei tranzacţii să fie acceptate de reţea doar dacă un anumit număr al un grup bine definit de persoane cad de comun acord să semneze tranzacţia. Asta permite dezvoltarea de servicii inovatoare de mediere a disputelor pe viitor. Asemenea servicii ar putea permite unei părţi terţe să aprobe sau să respingă o tranzacţie în cazul unei dispute între celelalte părţi, dar fără să aibă control asupra banilor. Spre deosebire de banii cash şi alte metode de plată, Bitcoin permite lăsarea unei dovezi publice că tranzacţia într-adevăr a luat loc, fapt ce poate fi potenţial folosit într-un recurs împotriva companiilor cu practici fraudulente.</p>
+           <p>Merită de asemenea menţionat faptul că în timp ce comercianţii depind de obicei de reputaţia lor publică pentru a rămâne în afaceri şi pentru a-şi plăti angajaţii, ei nu au acces la acelaşi nivel de informaţii atunci când au de-a face cu noi clienţi. Felul în care funcţionează Bitcoin permite atât clienţilor cât şi companiilor să fie protejaţi împotriva chargeback-urilor fraudulente în timp ce oferă alegerea clientului de a cere mai multe protecţie atunci când nu sunt dispuşi să aibă încredere într-un anume comerciant.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="economie" href="#economie">Economie</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cum-sunt-creati-bitcoinii" href="#cum-sunt-creati-bitcoinii">Cum sunt creaţi bitcoinii?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoini noi sunt generaţi printr-un proces competitiv şi descentralizat numit "minerit". Acest proces implică şi o răsplată pentru acele persoane ce oferă acest serviciu. Minerii Bitcoin procesează tranzacţii şi securizează reţeaua folosind hardware specializat şi colectează bitcoini nou creaţi în schimbul muncii depuse.</p>
+           <p>Protocolul Bitcoin este creat în aşa fel încât noi bitcoini sunt creaţi la o rată fixă. Aceasta face ca mineritul de Bitcoin să fie o afacere foarte competitivă. Când mai mulţi mineri se alătură reţelei, devine surprinzător de dificil pentru a face un profit şi minerii trebuie să devină mai eficienţi pentru a-şi micşora costurile de operare. Nici o autoritate centrală sau programator nu are puterea necesară pentru a controla sau manipula sistemul pentru a-şi mări profitul personal. Fiecare nod Bitcoin din lume va respinge orice se abate de la regulile pe care se aşteaptă sistemul să le urmeze.</p>
+           <p>Bitcoinii sunt creaţi într-o rată descrescătoare şi previzibilă. Numărul de noi bitcoini creaţi în fiecare an este înjumătăţit periodic până când generarea de bitcoini se opreşte complet în momentul în care vor exista 21 de milioane de bitcoini. În acest punct, minerii Bitcoin vor fi răsplătiţi probabil exclusiv din numeroasele mici taxe de tranzacţie.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="de-ce-au-bitcoinii-valoare" href="#de-ce-au-bitcoinii-valoare">De ce au bitcoinii valoare?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoinii au valoare pentru că sunt utili ca formă de bani. Bitcoin are caracteristicile unui ban(durabilitate, portabilitate, fungibilitate, raritate, divizibilitate şi este uşor de recunoscut) bazat mai mult pe proprietăţi matematice decât pe proprietăţi fizice(ca aurul şi argintul) sau pe încredere în autorităţi centrale(ca valutele fiat obişnuite). Pe scurt, Bitcoin este asigurat de matematică. Având aceste atribute, tot ce mai are nevoie o formă de bani pentru a avea valoare este încredere şi adopţie. În cazul Bitcoin, acest lucru poate fi măsurat prin numărul de utilizatori, comercianţi şi firme aflat în continuă creştere. Ca în cazul tuturor valutelor, valoarea unui bitcoin vine doar din partea persoanelor dispuse să-l accepte ca plată.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="ce-determina-pretul-unui-bitcoin" href="#ce-determina-pretul-unui-bitcoin">Ce determină prețul unui bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Preţul unui Bitcoin este dictat de cerere şi ofertă. Când cererea de bitcoini creşte, creşte şi preţul, iar când cererea scade, scade şi preţul. Există un număr limitat de bitcoini aflaţi în circulaţie şi bitcoini noi sunt creaţi într-un ritm constant şi descrescător, ceea ce înseamnă că cererea trebuie să urmeze acest model de inflaţie pentru a menţine preţul stabil. Pentru că Bitcoin este încă o piaţă relativ mică comparativ cu ce ar putea deveni, nu este nevoie de sume enorme de bani pentru a mişca preţul pieţei într-o direcţie sau altă, preţul unui bitcoin fiind încă foarte volatil.</p>
+            <p>Preţul bitcoinului, din 2013 până în 2015:</p>
+            <img src="/img/faq/price_chart.png" alt="chart">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="pot-bitcoinii-sa-si-piarda-valoarea" href="#pot-bitcoinii-sa-si-piarda-valoarea">Pot bitcoinii să-şi piardă valoarea?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Da. Istoria este plină de valute ce au eşuat şi nu mai sunt folosite, cum ar fi <a href="https://en.wikipedia.org/wiki/German_gold_mark">Marca Germană</a> în timpul Republicii de la Weimar şi, mai recent, <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">dolarul Zimbabwean</a>. Deşi în trecut eşecurile valutelor se datorau în general hiperinflaţiei de care Bitcoin nu poate să aibă parte, întotdeauna există potenţialul unor eşecuri tehnice, monezi cu care se află în competiţie, chestiuni legale şi aşa mai departe. Ca o lege nescrisă, nicio valută nu ar trebui să fie considerată imună eşecului sau timpurilor de răstrişte. Bitcoin s-a dovedit a fi sigur încă de la început şi există un potenţial uriaş ca Bitcoin să se dezvolte în continuare. Pe de altă parte, nimeni nu este în măsură să prezică ce va rezerva viitorul pentru Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-bitcoin-o-bula-speculativa" href="#este-bitcoin-o-bula-speculativa">Este Bitcoin o bulă speculativă?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>O creştere rapidă a preţului nu înseamnă neapărat o bulă. O supraapreciere artificială ce duce la o corecţie bruscă în minus a preţului constituie o bulă. Alegerile bazate pe acţiunea umană individuală a sutelor de mii de participanţi în piaţă este cauza fluctuatilor de preţ al bitcoinilor în timp ce piaţa caută descoperirea preţului. Motivele pentru o schimbare în sentiment pot include pierderea încrederii în Bitcoin, o diferenţă mare între valoare şi preţ ce nu este bazată pe fundamentele economiei Bitcoin, mediatizare ce stimulează cererea speculativă, teama de incertitudine şi obişnuita exuberanţă iraţională şi lăcomie.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="este-bitcoin-o-schema-ponzi" href="#este-bitcoin-o-schema-ponzi">Este Bitcoin o schemă Ponzi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>O schemă Ponzi este o operaţiune de investiţie fraudulentă ce returnează banii investitorilor săi din proprii lor bani, sau din banii investitorilor precedenţi, în loc să o facă din profitul generat de către persoanele ce conduc afacerea. Schemele Ponzi sunt menite să se prăbuşească pe cheltuiala ultimilor investitori atunci când nu mai sunt destui participanţi noi.</p>
+            <p>Bitcoin este o program gratis fără autoritate centrală. În consecinţă, nimeni nu este în măsură să facă promisiuni fraudulente despre rentabilitatea investiţiilor. Ca în cazul altor valute majore cum ar fi aurul, dolarul american, euro, yen, etc. nu există o putere de cumpărare garantată şi preţul este liber. Aceasta duce la volatilitate, situaţie în care deţinătorii de bitcoini pot câştiga sau pierde bani într-un mod imprevizibil. Dincolo de speculă, Bitcoin este de asemenea un sistem de plată util cu proprietăţi competitive ce este folosit de mii de utilizatori şi companii.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="nu-cumva-bitcoin-ii-favoritizeaza-pe-cei-ce-au-investit-la-inceput" href="#nu-cumva-bitcoin-ii-favoritizeaza-pe-cei-ce-au-investit-la-inceput">Nu cumva Bitcoin îi favoritizează pe cei ce au investit la început?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Unii investitori iniţiali au un număr mare de bitcoini pentru că au riscat mai mult şi au investit timp şi resurse într-o tehnologie nouă ce nu era încă folosită de nimeni şi care era mult mai greu de securizat corespunzător. Mulţi investitori iniţiali au cheltuit sume mari de bitcoini de mai multe ori înainte ca aceştia să devină valoroşi sau au cumpărat doar sume mici de bitcoini şi nu au făcut un profit uriaş. Nu este nici o garanţie că preţul unui bitcoin va creşte sau scădea. Acest lucru este foarte similar cu a investi într-o companie aflată la început care poate ulterior să crească în valoare şi popularitate, sau nu. Bitcoin este încă în faza incipientă şi a fost proiectat să fie un proiect pe termen lung; este greu de imaginat cum ar putea fi făcut să fie mai puţin profitabil pentru investitorii iniţiali şi utilizatorii de azi pot sau nu să devină investitorii iniţiali de mâine.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="numarul-finit-de-bitcoini-nu-este-o-limitare" href="#numarul-finit-de-bitcoini-nu-este-o-limitare">Numărul finit de bicoini nu este o limitare?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin este unic prin faptul că doar 21 de milioane de bitcoini vor fi creaţi vreodată. Însă, asta nu va fi niciodată o limitare pentru că bitcoinii pot fi divizaţi în subunităţi ale unui bitcoin, cum ar fi biţi - sunt 1.000.000 de biţi în 1 bitcoin. Bitcoinii pot fi divizaţi până la 8 zecimale(0,000 000 01) şi chiar şi în unităţi mai mici dacă va fi vreodată nevoie în viitor pe măsură ce mărimea medie a unei tranzacţii scade.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="nu-va-cadea-bitcoin-intr-o-spirala-deflationara" href="#nu-va-cadea-bitcoin-intr-o-spirala-deflationara">Nu va cădea Bitcoin într-o spirală deflaţionară?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Teoria spiralei deflaţionare spune că dacă preţurile sunt de aşteptat să scadă, oamenii vor amâna plăţile pentru un moment viitor pentru a beneficia de preţurile mai scăzute. Acea scădere în cerere va face comercianţii să coboare preţurile pentru a încerca să stimuleze cererea, făcând problema şi mai mare şi ducând la o depresie economică.</p>
+            <p>Deşi această teorie este o cale populară de a justifica inflaţia dintre băncile centrale, aparent nu este întotdeauna adevărată şi este considerată controversată între economişti. Electronicele sunt un exemplu de piaţă unde preţurile sunt în continuă scădere dar care nu este într-o depresie economică. Similar, valoarea bitcoinilor a crescut în timp şi de asemenea şi mărimea economiei Bitcoin a crescut dramatic alături de ea. Deoarece atât valorea monezii cât şi mărimea economiei asociate cu ea au început de la 0 în anul 2009, Bitcoin, este un contraexemplu al acestei teorii arătând că pot există excepţii de la regulă.</p>
+            <p>Totuşi, Bitcoin nu este făcut pentru a fi o valută deflationară. Este mai corect spus că Bitcoin este construit să permită inflaţie în anii de început, apoi devenind stabil în anii ce vor urma. Singurul moment în care cantitatea de bitcoini aflaţi în circulaţie ar putea să scadă ar fi în cazul în care lumea începe să-şi piardă portofelele Bitcoin fără să-şi facă backup. Cu o bază monetară stabilă şi o economie stabilă, valoarea valutei ar trebui să rămână aceeaşi.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="nu-este-specula-si-volatilitatea-o-problema-pentru-bitcoin" href="#nu-este-specula-si-volatilitatea-o-problema-pentru-bitcoin">Specula şi volatilitatea nu este o problemă pentru Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Aceasta este o situaţie similară cu cine a venit primul, oul sau găina. Pentru ca preţul unui bitcoin să se stabilizeze, trebuie să se dezvolte o mare economie de scară cu mai multe companii şi utilizatori. Pentru ca o mare economie de scară să se dezvolte, companiile şi utilizatorii vor dori ca preţul să se stabilizeze.</p>
+            <p>Din fericire, volatilitatea nu afectează principalele beneficii ale Bitcoin ca şi sistem de plată pentru a transfera bani din punctul A în punctul B. Este posibil ca firmele să schimbe plăţile Bitcoin în valuta lor locală instant, permiţându-le să profite de avantajele Bitcoin fără să fie subiectul fluctuaţiilor de preţ. Pentru că Bitcoin oferă multe opţiuni şi proprietăţi utile şi unice, mulţi aleg să folosească Bitcoin. Cu aşa soluţii şi motivaţii, este posibil ca Bitcoin să se matureze şi să se dezvolte până la punctul în care volatilitatea preţului să devină limitată.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="daca-cineva-cumpara-toti-bitcoinii-existenti" href="#daca-cineva-cumpara-toti-bitcoinii-existenti">Dacă cineva cumpără toţi bitcoinii existenţi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Doar o fracţiune din bitcoinii aflaţi în circulaţie până acum sunt disponibili pentru vânzare pe siteurile de exchange. Pieţele Bitcoin sunt competitive, însemnând că preţul unui bitcoin va creşte sau va scădea depinzând de cerere şi ofertă. Adiţional, noi bitcoini vor fi emişi în continuare în următoarele decenii. Aşa că nici măcar cel mai determinat cumpărător nu ar putea să cumpere toţi bitcoinii existenţi. Asta nu înseamnă totuşi că pieţele de schimb nu sunt vulnerabile manipulării preţului; încă nu este nevoie de sume semnificative de bani pentru a muta preţul în sus sau în jos, aşa că Bitcoin rămâne încă un bun volatil.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="daca-cineva-creeaza-o-moneda-digitala-mai-buna" href="#daca-cineva-creeaza-o-moneda-digitala-mai-buna">Dacă cineva creează o monedă digitală mai bună?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Acest lucru se poate întâmpla. Deocamdată, Bitcoin este de departe cea mai populară monedă digitală descentralizată, dar nu este nici o garanţie că îşi va menţine poziţia pentru totdeauna. Există deja un număr de monezi alternative inspirate de Bitcoin. Totuşi este corect de asumat că sunt necesare îmbunătăţiri semnificative pentru ca o nouă monedă să depăşească Bitcoin în piaţă, deşi acest lucru este imprevizibil. Bitcoin de asemenea poate adopta îmbunătăţiri aduse de o altă monedă atâta timp cât nu schimbă părţi fundamentale ale protocolului.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="daca-cineva-creeaza-o-moneda-digitala-mai-buna" href="#daca-cineva-creeaza-o-moneda-digitala-mai-buna">Dacă cineva creează o monedă digitală mai bună?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Acest lucru se poate întâmpla. Deocamdată, Bitcoin este de departe cea mai populară monedă digitală descentralizată, dar nu este nici o garanţie că îşi va menţine poziţia pentru totdeauna. Există deja un număr de monezi alternative inspirate de Bitcoin. Totuşi este corect de asumat că sunt necesare îmbunătăţiri semnificative pentru ca o nouă monedă să depăşească Bitcoin în piaţă, deşi acest lucru este imprevizibil. Bitcoin de asemenea poate adopta îmbunătăţiri aduse de o altă monedă atâta timp cât nu schimbă părţi fundamentale ale protocolului.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="tranzactii" href="#tranzactii">Tranzacţii</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="de-ce-trebuie-sa-astept-10-minute" href="#de-ce-trebuie-sa-astept-10-minute">De ce trebuie să aștept 10 minute?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Primirea unei plăţi este aproape instantă folosind Bitcoin. Însă, există o aşteptare în medie de 10 minute înainte că reţeaua să înceapă să confirme tranzacţia prin includerea ei într-un bloc şi înainte să poţi cheltui bitcoinii primiţi. O confirmare înseamnă că există un acord în intreaga reţea că bitcoinii primiţi de tine nu au fost trimişi altcuiva şi sunt consideraţi acum ai tăi. Odată ce tranzacţia a fost inclusă într-un bloc, va continua să fie îngropată sub fiecare bloc de după acela, ceea ce va consolida exponenţial acest acord şi va descreşte riscul unei tranzacţii inversate. Fiecare utilizator este liber să determine atunci când consideră o tranzacţie confirmată, dar în general 6 confirmări sunt adesea considerate ca fiind la fel de sigur ca şi cum ai aştepta 6 luni după o tranzacţie cu cardul de credit.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cat-va-costa-taxa-de-tranzactie" href="#cat-va-costa-taxa-de-tranzactie">Cât va costa taxa de tranzacţie?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Majoritatea tranzacţiilor pot fi procesate fără taxe, dar utilizatorii sunt încurajaţi să plătească o mică taxă voluntară pentru o confirmare mai rapidă a tranzacţiei şi pentru a remunera minerii. Atunci când taxele sunt necesare, ele în general nu depăşesc câţiva cenţi. Clientul tău Bitcoin va încerca de regulă să estimeze o taxă aproximativă atunci când aceasta este necesară.</p>
+            <p>Taxele de tranzacţie sunt folosite ca o protecţie împotriva utilizatorilor ce trimit tranzacţii în încercarea de a supraîncărca reţeaua. Modul exact în care funcţionează taxele este încă în lucru şi se va schimba în timp. Pentru că taxa nu este legată de suma de bitcoini trimişi, aceasta ar putea să pară fie extrem de mică(0.0005 BTC pentru un transfer de 1,000 BTC) sau nedrept de mare(0.004 BTC pentru o plata de 0.02 BTC). Taxa este definită de atribute cum ar fi datele din tranzacţie şi recurenţa tranzacţiei. De exemplu, dacă primeşti un număr mare de tranzacţii de mică valoare, atunci taxele pentru a trimite vor fi mai mari. Asemenea plăţi sunt comparabile cu plata notei de la restaurant în monezi de 50 de bani. Cheltuirea rapidă a unor sume mici de bitcoini s-ar putea să necesite de asemenea o taxă. Dacă activitatea ta urmăreşte un şablon de tranzacţii obişnuite, atunci taxele vor rămâne foarte mici.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="ce-se-intampla-daca-primesc-bitcoini-cand-calculatorul-este-oprit" href="#ce-se-intampla-daca-primesc-bitcoini-cand-calculatorul-este-oprit">Ce se întâmplă dacă primesc bitcoini când calculatorul este oprit?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Totul va fi bine. Bitcoinii vor apărea atunci când vei deschide aplicaţia ta portofel. Bitcoinii de fapt nu sunt primiţi de către portofelul de pe calculatorul tău, ei sunt anexaţi într-un registru public ce este distribuit de către toate calculatoarele conectate la reţea. Dacă primeşti bitcoini atunci când clientul tău portofel este oprit şi mai târziu îl porneşti, acesta va începe să descarce blocuri şi să prindă din urmă orice tranzacţie de care nu ştia până acum, iar bitcoinii tăi vor apărea eventual ca şi cum abia i-ai primit. Portofelul tău este necesar doar atunci când vrei să cheltui bitcoini.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="la-ce-se-refera-sincronizarea-si-de-ce-dureaza-atat-de-mult" href="#la-ce-se-refera-sincronizarea-si-de-ce-dureaza-atat-de-mult">La ce se referă "sincronizarea" şi de ce durează atât de mult?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Un timp îndelungat de sincronizare este necesar doar atunci când foloseşti clienţi de tip nod întreg cum ar fi Bitcoin Core. Tehnic vorbind, sincronizarea este acel proces de descărcare şi verificare al tuturor tranzacţiilor anterioare din reţeaua Bitcoin. Pentru ca unii clienţi Bitcoin să calculeze balanţa portofelului tău Bitcoin şi să permită noi tranzacţii, trebuie să ştie toate tranzacţiile anterioare făcute vreodată. Acest pas poate fi intensiv din punct de vedere al puterii de calcul şi necesită lăţime de bandă suficientă şi destul spaţiu pe disc pentru a acomoda întreaga mărime a lanţului de blocuri. Pentru ca Bitcoin să rămână sigur, suficienţi oameni trebuie să continue să folosească clienţi nod întreg deoarece ei au sarcina de a valida şi emite tranzacţiile.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="minerit" href="#minerit">Minerit</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="ce-este-mineritul-de-bitcoin" href="#ce-este-mineritul-de-bitcoin">Ce este mineritul de Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Minatul este procedeul prin care se consumă putere de calcul pentru a procesa tranzacţii, securiza reţeaua, dar şi pentru a menţine toată lumea din reţea sincronizată. Poate fi privit ca un fel de data center Bitcoin cu excepţia că este construit să fie complet descentralizat, minerii operând în toate ţările şi niciun individ nu are control asupra reţelei. Acest proces este numit "minerit" ca o analogie a mineritului aurului deoarece este de asemenea un mecanism temporar folosit pentru a emite noi bitcoini. Spre deosebire de mineritul de aur, mineritul de Bitcoin oferă o recompensă în schimbul unor servicii utile necesare pentru a opera o reţea de plăţi securizată. Minatul va fi necesar şi după ce ultimul bitcoin este emis.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cum-functioneaza-mineritul-de-bitcoin" href="#cum-functioneaza-mineritul-de-bitcoin">Cum funcţionează mineritul de Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Oricine poate deveni un miner de Bitcoin prin rularea unui program de minerit folosind hardware specializat. Software-ul de minerit ascultă după tranzacţii emise prin reţeaua peer-to-peer şi face calcule necesare pentru a procesa şi confirma aceste tranzacţii. Minerii de Bitcoin fac această muncă deoarece sunt răsplătiţi prin taxele de tranzacţie plătite de utilizatori pentru procesări mai rapide ale tranzacţiilor, plus bitcoini nou creaţi conform unei rate fixe.</p>
+            <p>Pentru ca noi tranzacţii să fie confirmate, acestea trebuiesc să fie incluse într-un bloc alături de o dovadă matematică a muncii depuse. Aceste dovezi sunt foarte greu de generat pentru că nu este nici o cale de a le genera decât prin a încerca efectuând miliarde de calcule pe secundă. Aceste dovezi sunt calculate de mineri înainte ca blocurile lor să fie acceptate de reţea şi înainte ca ei să fie recompensaţi. Cu cât mai mulţi oameni minează, dificultatea de a găsi blocuri valide este mărită automat de către reţea pentru a se asigura că timpul mediu de găsire a unui bloc este egal cu 10 minute. Ca rezultat, mineritul este o afacere foarte competitivă unde niciun miner individual nu are control asupra ce este inclus în lanţul de blocuri.</p>
+            <p>Dovada muncii depuse este de asemenea făcută în aşa fel încât depinde de blocul anterior pentru a forţa o ordine cronologică în lanţul de blocuri. Acest lucru face inversarea tranzacţiilor anterioare exponenţial mai dificilă pentru că necesită recalcularea dovezilor de muncă pentru toate blocurile următoare. Când două blocuri sunt găsite în acelaşi timp, minerii lucrează în primul bloc pe care îl primesc şi trec pe cel mai lung lanţ de blocuri imediat ce următorul bloc este găsit. Asta face ca mineritul să fie sigur şi să menţină un consens global bazat pe puterea de procesare.</p>
+            <p>Minerii de Bitcoin nu sunt capabili de a trişa prin mărirea recompensei proprii sau prin procesarea de tranzacţii fraudulente ce ar putea corupe reţeaua Bitcoin pentru că toate nodurile Bitcoin vor refuza orice bloc ce conţine date invalide conforum regulilor protocolului Bitcoin. În consecinţă, reţeaua rămâne sigură chiar dacă nu toţi minerii de Bitcoin sunt de încredere.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="mineritul-de-bitcoin-nu-este-o-risipa-de-energie" href="#mineritul-de-bitcoin-nu-este-o-risipa-de-energie">Mineritul de Bitcoin nu este o risipă de energie?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Consumarea de energie pentru a securiza şi a opera un sistem de plăţi nu se poate numi chiar risipă. Ca orice alt serviciu de plăţi, folosirea de Bitcoin necesită costuri de procesare. Servicii necesare pentru operarea celor mai folosite sistemelor monetare actuale, precum băncile, cardurile de credit şi vehiculele blindate folosite pentru transportul banilor consumă de asemenea foarte multă energie. Deşi spre deosebire de Bitcoin, totalul de energie pe care acestea îl consumă nu este transparent şi nu poate fi măsurat cu uşurinţă.</p>
+            <p>Mineritul de Bitcoin este făcut să devină din ce în ce mai optimizat în timp prin hardware specializat ce consumă tot mai puţină energie, iar costurile operaţionale ale mineritului ar trebui să continue să fie proporţionale cu cererea. Când mineritul de Bitcoin devine prea competitiv şi mai puţin profitabil, unii mineri aleg să îşi oprească activitatea. Mai mult, toată energia consumată minerind este eventual transformată în căldură, iar cei mai profitabili mineri vor fi aceia ce transformă acea căldură în ceva util. O reţea de minerit cu o eficienţă optimă este una care nu consumă niciun pic de energie în plus. Deşi acest lucru este un ideal, ştiinţă economică din spatele mineritului face ca fiecare miner individual să tindă către acest lucru.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="cum-ajuta-mineritul-ca-bitcoin-sa-fie-sigur" href="#cum-ajuta-mineritul-ca-bitcoin-sa-fie-sigur">Cum ajută mineritul ca Bitcoin să fie sigur?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Mineritul creează echivalentul unei loterii competitive în care este extrem de dificil ca cineva să adauge consecutiv noi blocuri de tranzacţii în lanţul de blocuri. Acest lucru protejează neutralitatea reţelei prin prevenirea unui individ să aibă destulă putere să blocheze anumite tranzacţii. De asemenea previne situaţia în care cineva încearcă să înlocuiască părţi ale lanţului de blocuri pentru a inversa propriile cheltuieli, ce ar putea fi folosit pentru a frauda alte persoane. Mineritul face inversarea unei tranzacţii anterioare exponenţial mai grea prin faptul că necesită rescrierea tuturor blocurilor ce urmează după acea tranzacţie.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="de-ce-am-nevoie-pentru-a-incepe-sa-minez" href="#de-ce-am-nevoie-pentru-a-incepe-sa-minez">De ce am nevoie pentru a mă apuca de minerit?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>În zilele timpurii ale Bitcoin, oricine putea găsi un nou bloc folosind procesorul calculatorului personal. Pe măsură ce tot mai mulţi oameni au început să minerească, dificultatea de a găsi noi blocuri a crescut foarte mult până în punctul în care astăzi singura metodă eficientă de minerit este folosind hardware specializat. Poţi vizita <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> pentru mai multe informaţii.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="securitate" href="#securitate">Securitate</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="este-bitcoin-sigur" href="#este-bitcoin-sigur">Este Bitcoin sigur?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Tehnologia Bitcoin - protocolul şi criptografia - au un palmares de securitate impresionant, iar reţeaua Bitcoin este probabil cel mai mare proiect de calcul distribuit din lume. Cea mai comună vulnerabilitate a Bitcoin este eroarea umană din partea utilizatorului. Fişierele portofofelului Bitcoin ce păstrează cheile private necesare pot fi şterse din greşeală, pierdute sau furate. Acest lucru este similar cu banii cash păstraţi într-o formă digitală. Din fericire, utilizatorii pot respecta <a href="/ro/securizeaza-portofelul">practici de securitate</a> pentru a-şi proteja banii sau să folosească furnizori de servicii ce oferă niveluri bune de securitate şi asigurare împotriva furtului sau pierderii.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="este-bitcoin-sigur" href="#este-bitcoin-sigur">Este Bitcoin sigur?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Tehnologia Bitcoin - protocolul şi criptografia - au un palmares de securitate impresionant, iar reţeaua Bitcoin este probabil cel mai mare proiect de calcul distribuit din lume. Cea mai comună vulnerabilitate a Bitcoin este eroarea umană din partea utilizatorului. Fişierele portofofelului Bitcoin ce păstrează cheile private necesare pot fi şterse din greşeală, pierdute sau furate. Acest lucru este similar cu banii cash păstraţi într-o formă digitală. Din fericire, utilizatorii pot respecta <a href="/ro/securizeaza-portofelul">practici de securitate</a> pentru a-şi proteja banii sau să folosească furnizori de servicii ce oferă niveluri bune de securitate şi asigurare împotriva furtului sau pierderii.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="nu-a-fost-bitcoin-hackuit-in-trecut" href="#nu-a-fost-bitcoin-hackuit-in-trecut">Nu a fost Bitcoin hackuit în trecut?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Regulile protocolului şi ale criptografiei folosite de Bitcoin au deja ani de zile de când au apărut, ceea ce indică un concept bine proiectat şi construit. Dar, <a href="/en/alerts">erori de securitate</a> au fost găsite şi remediate în timp în diverse implementări software. Ca orice altă formă de software, securitatea software-ului Bitcoin depinde de viteza cu care problemele sunt găsite şi rezolvate. Cu cât mai multe astfel de probleme sunt descoperite, cu atât Bitcoin se apropie de maturitate.</p>
+            <p>Adesea există concepţii greşite despre furturi şi breşe de securitate ce s-au întâmplat pe diverse exchange-uri şi companii care se ocupă cu Bitcoin. Deşi aceste evenimente sunt nefericite, niciuna nu implică Bitcoin însuşi fiind hackuit, nici nu implică greşeli în felul în care Bitcoin este construit; aşa cum spargerea unei bănci nu înseamnă că leul românesc este compromis. Pe de altă parte, este corect să spunem că un set complet de bune practici şi soluţii intuitive de securitate sunt necesare pentru a oferi utilizatorilor o protecţie mai bună a banilor lor şi pentru a reduce riscul general de furt sau pierdere. Pe parcursul ultimilor ani, asemenea atribute de securitate au fost rapid dezvoltate, cum ar fi criptarea portofelului, portofele offline, portofele hardware şi tranzacţii multi-semnătură.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="pot-utilizatorii-sa-comploteze-impotriva-bitcoin" href="#pot-utilizatorii-sa-comploteze-impotriva-bitcoin">Pot utilizatorii să comploteze împotriva Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Protocolul Bitcoin este imposibil de schimbat aşa uşor. Orice client Bitcoin ce nu respectă aceleaşi reguli nu poate impune propriile sale reguli în faţa altor utilizatori. Conform specificaţiilor actuale, cheltuirea dublă nu este posibilă pe acelaşi lanţ de blocuri, nici cheltuirea de bitcoini fără o semnătură validă. Aşa că, nu este posibil să se creeze sume necontrolate de bitcoini pur şi simplu, să se cheltuie bitcoinii altei persoane, sa fie coruptă reţeaua, sau altceva similar.</p>
+            <p>Pe de altă parte, o majoritate de mineri poate alege în mod arbitrar să blocheze sau să inverseze tranzacţii recente. O majoritate de utilizatori pot de asemenea să facă presiuni pentru ca nişte schimbări să fie făcute. Pentru că Bitcoin funcţionează corect doar atunci când există un consens complet între toţi utilizatorii, schimbarea protocolului poate fi foarte dificilă şi necesită o majoritate copleşitoare de utilizatori să adopte schimbările în aşa fel încât restul utilizatorilor să nu aibă altă opţiune decât să se alăture. Ca o regulă generală, este greu de imaginat de ce un utilizator de Bitcoin ar alege să adopte orice schimbare ce ar putea să-i compromită proprii bani.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="este-bitcoin-vulnerabil-in-fata-calculatoarelor-cuantice" href="#este-bitcoin-vulnerabil-in-fata-calculatoarelor-cuantice">Este Bitcoin vulnerabil în faţa calculatoarelor cuantice?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Da, majoritatea sistemelor ce se bazează pe criptografie în general sunt vulnerabile, incluzând sistemele bancare tradiţionale. Dar, calculatoarele cuantice nu există încă şi probabil nici nu vor exista pentru o perioadă bună de timp. În cazul în care calculatoarele cuantice ar deveni o ameninţare iminentă pentru Bitcoin, protoculul poate fi actualizat pentru a folosi algoritmi post-cuantici. Dată importanţa pe care această schimbare ar avea-o, poate fi asumat cu siguranţă că va fi revăzută aprofundat de către programatori şi adoptată de toţi utilizatorii Bitcoin.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="content_fag--faq--footer">
+      <p>Poţi găsi mai multe informaţii şi ajutor pe paginile de <a href="/ro/resurse">resurse</a> şi <a href="/ro/comunitate">comunitate</a> de pe <a href="https://en.bitcoin.it/wiki/FAQ">FAQ-ul din Wiki</a>.</p>
+    </div>
+  </div>
 </div>
-
-<h2 id="general">General</h2>
-
-<h3 id="ce-este-bitcoin">Ce este Bitcoin?</h3>
-<p>Bitcoin este o reţea consensuală ce oferă un nou sistem de plată şi bani complet digitali. Este primul sistem de plată peer-to-peer descentralizat susţinut de utilizatorii săi fără o autoritate centrală sau intermediari. Din perspectiva unui utilizator, Bitcoin reprezintă în mare bani cash pentru Internet. Bitcoin poate fi văzut de asemenea şi ca cel mai proeminent <a href="http://financialcryptography.com/mt/archives/001325.html">sistem de contabilitate triple entry</a> existent.</p>
-
-<h3 id="cine-a-creat-bitcoin">Cine a creat Bitcoin?</h3>
-<p>Bitcoin este prima implementare a unui concept numit "cripto-valută", care a fost pentru prima oară enunţat în 1998 de către Wei Dai în lista de mail cypherpunks, sugerând ideea unei noi forme de bani ce foloseşte criptografia pentru a controla emiterea lor şi tranzacţiile, spre deosebire de a se baza pe o autoritate centrală. Primele specificaţii şi validarea conceptului au fost publicate în 2009 într-o listă de mail dedicată criptografiei de către Satoshi Nakamoto. Satoshi a părăsit proiectul la sfârşitul anului 2010 fără să spună foarte multe lucruri despre persoana sa. De atunci, comunitatea a crescut exponenţial, cu <a href="/ro/dezvoltare">mulţi programatori</a> lucrând la Bitcoin.</p>
-<p>Anonimitatea lui Satoshi a ridicat deseori îngrijorări nejustificate, multe dintre ele legate de neînţelegerea naturii open source a Bitcoin. Protocolul şi software-ul Bitcoin sunt publicate liber şi orice programator din lume poate vedea codul sau să-şi facă propria versiune modificată a software-ului Bitcoin. Ca şi programatorii actuali, influenţa lui Satoshi a fost limitată de faptul că schimbările făcute de el trebuiesc să fie adoptate de ceilalţi şi din cauza asta el nu a avut control asupra Bitcoin. Ca atare, identitatea inventatorului Bitcoin este probabil la fel de relevantă astăzi ca identitatea persoanei care a inventat hârtia.</p>
-
-<h3 id="cine-controleaza-reteaua-bitcoin">Cine controlează rețeaua Bitcoin?</h3>
-<p>Nimeni nu controlează reţeaua Bitcoin aşa cum nimeni nu deţine tehnologia din spatele emailului. Bitcoin este controlat de către toţi utilizatorii Bitcoin din toată lumea. În timp ce programatorii îmbunătăţesc software-ul, ei nu pot forta o schimbare în protocolul Bitcoin pentru că toţi utilizatorii sunt liberi să aleagă ce software şi ce versiune să folosească. Pentru a rămâne compatibili unii cu alţii, toţi utilizatorii trebuie să folosească software ce respectă aceleaşi reguli. Bitcoin poate lucra corect doar atunci când există un consens între toţi utilizatorii. Aşa că, toţi utilizatorii şi programatorii au o motivaţie puternică pentru a proteja acest consens.</p>
-
-<h3 id="cum-functioneaza-bitcoin">Cum funcționează Bitcoin?</h3>
-<p>Din perspectiva unui utilizator obişnuit, Bitcoin nu este nimic mai mult decât o aplicaţie pe telefon sau un program pe calculator ce oferă un portofel personal Bitcoin şi permite unui utilizator să trimită şi să primească bitcoini prin el. Acesta este modul în care funcţionează Bitcoin pentru majoritatea utilizatorilor.</p>
-<p>În culise, reţeaua Bitcoin distribuie un registru public denumit "lanţul de blocuri". Acest registru conţine fiecare tranzacţie procesată vreodată, permiţând calculatorului unui utilizator să verifice validitatea fiecărei tranzacţii. Autenticitatea fiecarei tranzacţii este protejată de semnăturile digitale ce corespund cu adresele de unde au fost trimişi bitcoinii, permiţând tuturor utilizatorilor să aibă control total asupra trimiterii de bitcoini din adresele lor Bitcoin personale. Adiţional, oricine poate procesa tranzacţii folosind puterea computaţională a hardware-ului specializat şi să fie răsplătiţi cu bitcoini pentru acest serviciu. Acest lucru este adesea denumit "minat". Pentru a afla mai multe despre Bitcoin, poţi consulta <a href="/ro/cum-functioneaza">pagina dedicată</a> şi <a href="/bitcoin.pdf">lucrarea originală</a>.</p>
-
-<h3 id="foloseste-lumea-bitcoin">Foloseşte lumea Bitcoin?</h3>
-<p>Da. Este folosit de <a href="http://usebitcoins.info/">un număr tot mai mare de afaceri</a> şi persoane. Acestea includ afaceri fizice, cum ar fi restaurante, firme de avocatură, săli de fitness şi servicii online populare cum ar fi Namecheap, WordPress, Reddit şi Flattr. În timp ce Bitcoin rămâne un fenomen relativ nou, acesta creşte rapid. În luna Martie 2014, <a href="https://bitcoincharts.com/bitcoin/">valorarea tuturor bitcoinilor aflaţi în circulaţie</a> depăşea suma de 8 miliarde de dolari şi bitcoini în valorare de milioane de dolari fiind schimbaţi zilnic.</p>
-<p>
-<img src="/img/faq/merchants_map.png" alt="Screenshot">
-</p>
-
-<h3 id="cum-achizitionam-bitcoin">Cum achiziționăm bitcoini?</h3>
-<ul>
-  <li>Ca plată pentru bunuri şi servicii.</li>
-  <li>Cumpără bitcoini de la un <a href="http://howtobuybitcoins.info">exchange de Bitcoin</a>.</li>
-  <li>Schimbă bitcoini cu cineva <a href="https://localbitcoins.com/">din apropierea ta</a>.</li>
-  <li>Câştigă bitcoini intr-un mod competitiv prin <a href="http://www.bitcoinmining.com/">minerit</a>.</li>
-</ul>
-<p>În timp ce este posibil să găseşti persoane ce doresc să vândă bitcoini plătind prin card de credit sau PayPal, majoritatea exchange-urilor nu oferă finanţare prin aceste mijloace de plată. Acest lucru se întâmplă din cauza cazurilor în care cineva cumpără bitcoini folosind PayPal, doar ca mai târziu să-şi recupereze jumătatea lor din tranzacţie. Acest procedeu este denumit în general chargeback.</p>
-
-<h3 id="cat-de-dificil-este-sa-facem-plati-cu-bitcoin">Cât de dificil este să facem plăţi cu Bitcoin ?</h3>
-<p>Este mai uşor să faci tranzacţii cu Bitcoin decât să faci cumpărături cu un card de debit sau de credit, acestea putând fi primite fără un cont de comerciant. Plăţile sunt făcute direct dintr-o aplicaţie portofel, fie de pe calculatorul sau mobilul tău, introducând adresa recipientului, suma, şi apăsarea butonului Trimite. Pentru a face şi mai uşoară introducerea adresei recipientului, multe portofele pot obţine adresa prin scanarea unui cod QR sau alăturarea a două telefoane ce beneficiază de tehnologia NFC.</p>
-<p>
-<img src="/img/faq/mobile_send.png" alt="Screenshot">
-<img src="/img/faq/mobile_receive.png" alt="Screenshot">
-</p>
-
-<h3 id="care-sunt-avantajele-bitcoin">Care sunt avantajele Bitcoin?</h3>
-<ul>
-  <li><em><b>Libertatea plăţilor</b></em> - Este posibil să trimiţi şi să primeşti orice sumă de bani instant oriunde în lume la orice oră. Fără zile în care băncile sunt închise. Fără limite impuse. Bitcoin permite utilizatorilor săi să aibă control deplin asupra banilor lor.</li>
-  <li><em><b>Taxe foarte mici</b></em> - Plăţile Bitcoin sunt în momentul de faţă procesate fie fără taxe sau cu taxe extrem de mici. Utilizatorii pot include opţional o taxă pentru a beneficia de prioritate în procesarea tranzacţiei, ce rezultă într-o confirmare mai rapidă a tranzacţiilor de către reţea. Adiţional, există procesatori comerciali ce asistă comercianţii în procesarea tranzacţiilor, schimbând bitcoinii în monedă fiat şi depozitând zilnic fondurile direct în contul bancar al comerciantului. Aceste servicii fiind bazate pe Bitcoin, ele pot fi oferite cu taxe mult mai mici decât PayPal sau reţele de carduri de credit.</li>
-  <li><em><b>Mai puţine riscuri pentru comercianţi</b></em> - Tranzacţiile Bitcoin sunt sigure, ireversibile şi nu conţin informaţii personale ale clientului. Acest lucru protejează comercianţii de pagube cauzate de fraudă sau chargeback-uri fraudulente şi nu este necesară conformarea PCI. Comercianţii pot să se extindă cu uşurinţă către noi pieţe unde ori nu sunt disponibile cardurile de credit ori ratele de fraudă sunt inacceptabil de înalte. Rezultatele nete sunt taxe mai mici, pieţe mai extinse şi costuri administrative mai mici.</li>
-  <li><em><b>Securitate şi control</b></em> - Utilizatorii Bitcoin au un control total asupra tranzacţiilor; este imposibil pentru comercianţi să forţeze taxe sau plăţi nedorite sau ascunse aşa cum se poate întâmpla prin alte metode de plată. Plăţile Bitcoin pot fi făcute fără că informaţii personale să fie legate de tranzacţie. Acest lucru oferă protecţie crescută împotriva furtului de identitate. Cei ce folosesc Bitcoin pot de asemenea să-şi protejeze banii prin backup şi criptare.</li>
-  <li><em><b>Transparent şi neutru</b></em> - <a href="https://www.biteasy.com/">Toate informaţiile</a> despre masa monetară a Bitcoin sunt disponibile oricând în lanţul de blocuri putând fi verificate de oricine şi folosite în timp real. Nici un individ sau organizaţie nu poate controla sau manipula protocolul Bitcoin deoarece este sigur din punct de vedere criptografic. Asta permite ca Bitcoin să fie complet neutru, transparent şi previzibil.</li>
-</ul>
-
-<h3 id="care-sunt-dezavantajele-bitcoin">Care sunt dezavantajele Bitcoin?</h3>
-<ul>
-  <li><em><b>Gradul de acceptare</b></em> - Mulţi oameni încă nu au auzit de Bitcoin. În fiecare zi, din ce în ce mai multe firme acceptă bitcoini pentru că îşi doresc avantajele asociate cu aceasta, dar lista este încă mică şi trebuie să mai crească pentru a beneficia de <a href="https://en.wikipedia.org/wiki/Network_effect">efectul de reţea</a>.</li>
-  <li><em><b>Volatilitatea</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Totalul valorii</a> bitcoinilor în circulaţie şi numărul de firme ce folosesc Bitcoin este încă foarte mic faţă de ce ar putea fi. Aşa că, evenimente relativ mici, specule, sau activităţile anumitor firme pot influenţa major preţul. În teorie, această volatilitate se va micşora pe măsură ce pieţele Bitcoin şi tehnologia se va matura. Nu a mai existat niciodată o astfel de monedă, aşa că este destul de dificil(şi palpitant) să ne imaginăm ce se va întâmpla.</li>
-  <li><em><b>Dezvoltare continuă</b></em> - Software-ul Bitcoin este încă într-un stadiu beta cu multe opţiuni încă incomplete aflate în dezvoltare activă. Noi unelte, opţiuni şi servicii sunt în curs de dezvoltare pentru a face Bitcoin mai sigur şi mai accesibil pentru mase. Unele dintre ele încă nu sunt gata pentru toată lumea. Majoritatea afacerilor ce au la bază Bitcoin sunt la început şi nu oferă încă vreo asigurare. În general, Bitcoin este încă în faza de maturare.</li>
-</ul>
-
-<h3 id="de-ce-au-oamenii-incredere-in-bitcoin">De ce au oamenii încredere în Bitcoin?</h3>
-<p>Majoritatea încrederii pe care oamenii o au în Bitcoin vine din faptul că nu necesită încredere deloc. Bitcoin este în întregime open-source şi descentralizat. Asta înseamnă că oricine are acces la întregul cod sursă oricând. Orice programator din lume poate deci să verifice exact cum funcţionează Bitcoin. Toţi bitcoinii aflaţi în existenţă şi toate tranzacţiile pot fi consultaţi în timp real de către toată lumea. Toate plăţile pot fi făcute fără implicarea unei părţi terţe şi tot sistemul este protejat de către algoritmi criptografici foarte puternici verificaţi de comunitate asemănători cu cei folosiţi în banking-ul online. Nici o organizaţie sau individ nu poate controla Bitcoin, iar reţeaua rămâne securizată chiar dacă nu toţi utilizatorii sunt de încredere.</p>
-
-<h3 id="pot-face-bani-cu-bitcoin">Pot face bani cu Bitcoin?</h3>
-<p>Nu ar trebui niciodată să te aştepţi că te vei îmbogăţi prin Bitcoin sau prin orice tehnologie emergentă. Este întotdeauna important să oferi o atenţie crescută la orice lucru ce sună prea bine pentru a fi adevărat sau care nu ţine cont de reguli economice de bază.</p>
-<p>Bitcoin este un ecosistem plin de inovaţie aflat într-o continuă expansiune şi sunt oportunităţi de afaceri ce includ şi riscuri. Nu există nici o garanţie că Bitcoin va continua să crească deşi s-a dezvoltat într-un ritm foarte rapid până acum. Investirea de timp şi resurse în Bitcoin necesită totuşi o înclinaţie antrepenorială. Există diverse metode de a face bani cu Bitcoin cum ar fi mineritul, speculatul sau pornirea de noi afaceri. Toate aceste metode sunt competitive şi nu există nici o garanţie a profitului. Este datoria fiecăruia de a evalua costurile şi riscurile unui astfel de proiect.</p>
-
-<h3 id="este-bitcoin-intr-adevar-virtual-si-imaterial">Este Bitcoin într-adevar virtual și imaterial?</h3>
-<p>Bitcoin este la fel de virtual ca şi cardurile de credit sau soluţiile de online banking folosite de oameni zi de zi. Bitcoin poate fi folosit pentru a efectua plăţi online sau în magazine ca orice altă formă de bani. Bitcoinii de asemenea pot fi tranzacţionaţi în forme fizice, cum ar fi <a href="https://www.casascius.com/">monezile Casascius</a>, dar a plăti folosind telefonul mobil este de obicei mai convenabil. Balanţele Bitcoin sunt stocate într-o enormă reţea distribuită de date şi nu pot fi modificate fraudulent de nimeni. Cu alte cuvinte, utilizatorii Bitcoin au control exclusiv asupra propriilor fonduri şi bitcoinii nu pot dispărea pur şi simplu doar pentru că sunt virtuali.</p>
-
-<h3 id="este-bitcoin-anonim">Este Bitcoin anonim?</h3>
-<p>Bitcoin este construit pentru a permite utilizatorilor săi să trimită şi să primească plăţi cu un nivel acceptabil de confidenţialitate ca orice altă formă de bani. Însă, Bitcoin nu este la fel de anonim şi nu poate oferi acelaşi nivel de confidenţialitate ca şi banii cash. Folosirea de Bitcoin lasă destule urme în registrul public. Există <a href="/ro/protejeaza-ti-intimitatea">diverse metode</a> pentru a proteja confidenţialitatea utilizatorilor, cu mai multe aflate în stadiu de dezvoltare. Cu toate acestea, mai este destulă muncă de făcut înainte ca aceste metode să fie folosite în mod corect de utilizatorii Bitcoin.</p>
-<p>Există controverse legate de tranzacţiile private care ar putea fi folosite în scopuri ilegale. Însă, merită notat că Bitcoin în cele din urmă va fi supus unor reglementări existente deja în sistemele financiare. Bitcoin nu poate fi mai anonim decât banii cash şi nu poate pune piedici în investigaţii oficiale ale autorităţilor. În plus, Bitcoin este construit în aşa fel încât să prevină o gamă largă de ilegalităţi financiare.</p>
-
-<h3 id="ce-se-intampla-cand-se-pierd-bitcoini">Ce se întâmplă atunci când bitcoinii sunt pierduţi?</h3>
-<p>Când un utilizator îşi pierde portofelul, practic acele monezi sunt scoase din circulaţie. Bitcoinii pierduţi vor rămâne în lanţul de blocuri ca orice alţi bitcoini. Însă, bitcoinii pierduţi rămân inactivi pentru totdeauna deoarece este imposibil ca cineva să găsească cheia(cheile) private ce ar permite să fie cheltuiţi din nou. Datorită legii cererii şi a ofertei, atunci când puţini bitcoini sunt disponibili, cei rămaşi vor avea o cerere mai mare şi vor avea o avea o valoare crescută pentru a compensa.</p>
-
-<h3 id="poate-bitcoin-sa-devina-o-retea-de-plati-importanta">Poate Bitcoin să devină o reţea de plăţi importantă?</h3>
-<p>Reţeaua Bitcoin poate procesa deja un număr mult mai mare de tranzacţii pe secundă decât o face astăzi. Pe de altă parte, nu este încă gata să fie comparată cu reţele importante de carduri de credit. Momentan, se lucrează la ridicarea acestor limitări şi viitoarele cerinţe sunt deja bine cunoscute. Încă de la început, fiecare aspect al reţelei Bitcoin s-a aflat într-un proces continuu de maturare, optimizare şi specializare fiind de aşteptat să se întâmple la fel şi în anii ce vor urma. Pe măsură ce traficul creşte, mai mulţi utilizatori Bitcoin folosesc clienţi uşori şi nodurile întregi de reţea s-ar putea să devină un serviciu mai degrabă specializat. Pentru mai multe detalii, se poate consulta pagina de <a href="https://en.bitcoin.it/wiki/Scalability">Scalabilitate</a> de pe Wiki.</p>
-
-<h2 id="legal">Legal</h2>
-
-<h3 id="este-legal-bitcoinul">Este legal Bitcoinul?</h3>
-<p>Din datele pe care le deţinem, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin nu a fost declarat ilegal</a> în majoritatea legislaţiilor diferitelor jurisdicţii. Dar, unele jurisdicţii(cum ar fi Argentina sau Rusia) restricţionează sau interzic valutele străine. Alte jurisdicţii(ca Tailanda) pot limita licenţierea anumitor entităţi cum ar fi exchange-urile Bitcoin.</p>
-<p>Regulatori din diverse jurisdicţii fac paşi pentru a oferi indivizilor şi firmelor reguli pentru cum ar trebui să integreze această nouă tehnologie cu sistemul financiar formal şi regulat. De exemplu, Reţeaua de Combatere a Ilegalităţilor Financiare(FinCEN), o instituţie a Departamentului de Trezorerie al Statelor Unite, a emis o ghidare neimpusa de lege privind încadrarea anumitor activităţi în care sunt implicate valutele digitale.</p>
-
-<h3 id="este-bitcoin-util-pentru-activitati-ilegale">Este Bitcoin util pentru activități ilegale?</h3>
-<p>Bitcoin reprezintă bani, iar banii au fost dintotdeauna folosiţi pentru scopuri legale dar şi ilegale. Banii cash, cardurile de credit şi sistemul bancar actual depăşesc cu mult Bitcoin prin gradul de folosinţă în finanţarea activităţilor ilegale. Bitcoin poate aduce o inovaţie semnificativă în sistemele de plăţi şi beneficiile unei asemenea inovaţii sunt adesea considerate ca fiind cu mult peste potenţialele dezavantaje.</p>
-<p>Bitcoin este făcut pentru a fi un uriaş pas în faţă în drumul de a face banii mai siguri şi poate funcţiona de asemenea ca o protecţie semnificativă împotriva multor forme de ilegalităţi financiare. De exemplu, bitcoinii sunt complet imposibil de falsificat. Utilizatorii au control total asupra tranzacţiilor lor şi nu pot fi afectaţi de plăţi neautorizate ca în cazul fraudării cardurilor de credit. Tranzacţiile Bitcoin sunt ireversibile şi imune împotriva chargeback-urilor fraudulente. Bitcoin permite banilor să fie securizati împotriva furtului sau a pierderii folosind mecanisme foarte puternice şi folositoare cum ar fi backup-uri, criptare şi semnături multiple.</p>
-<p>Există controverse legate de faptul că Bitcoin poate fi atractiv de folosit de către cei ce fac lucruri ilegale din cauză că permite efectuarea de plăţi ireversibile şi private. Însă, banii cash şi transferurile wire au deja aceste caracteristici, ambele fiind folosite pe scară largă şi deja consacrate. Folosirea Bitcoin va fi fără îndoială subiectul unor reglementări similare ce deja există în cadrul sistemelor financiare existente, iar Bitcoin este improbabil să prevină conducerea investigaţiilor oficiale. În general, este ceva comun că descoperirile importante să fie percepute că fiind controversate înainte că beneficiile sale să fie bine înţelese. Internetul este un bun exemplu alături de multe altele pentru a ilustra acest lucru.</p>
-
-<h3 id="poate-fi-bitcoin-reglementat">Poate fi Bitcoin reglementat?</h3>
-<p>Protocolul Bitcoin însuşi nu poate fi modificat fără cooperarea a aproximativ tuturor utilizatorilor, care aleg ce software să folosească. Încercarea de a atribui drepturi speciale unei autorităţi locale în cadrul regulilor reţelei globale Bitcoin nu este o posibilitate practică. Orice organizaţie cu destule resurse poate alege să investească în hardware de minat pentru a controla jumătate din puterea computaţională a reţelei şi să poată bloca sau inversa tranzacţiile recente. Însă, nu există nici o garanţie că această va putea să deţină această putere din moment ce asta înseamnă să investească aproape cât toţi minerii din lume la un loc.</p>
-<p>Pe de altă parte este posibilă reglementarea folosirii de Bitcoin într-un mod similar ca orice alt instrument economic. Ca şi Dolarul, Bitcoin poate fi folosit pentru o gama largă de scopuri, unele dintre ele putând fi considerate legitime sau nu depinzând de legile din jurisdicţia respectivă. În acest caz, Bitcoin nu este cu nimic diferit faţă de orice altă unealtă sau resursă şi poate fi subiectul diferitelor reglementări în fiecare ţară în parte. Folosirea de Bitcoin poate fi făcută dificilă de către reglementări restrictive, în acest caz este greu de determinat ce procentaj de utilizatori vor continua să folosească această tehnologie. Un guvern ce alege să interzică Bitcoin nu va face decât să prevină afacerile şi pieţele domestice să se dezvolte, mutând inovaţia către alte ţări. Provocarea instituţiilor reglementatoare este, ca de obicei, de a dezvolta soluţii eficiente fără să afecteze dezvoltarea de noi pieţe şi afaceri.</p>
-
-<h3 id="dar-despre-bitcoin-si-taxe-si-impozite">Dar despre Bitcoin şi taxe şi impozite?</h3>
-<p>Bitcoin nu este o monedă fiat cu statut legal în nici o jurisdicţie, dar deseori responsabilitatea financiară vis a vis de taxe şi impozite va creşte indiferent de mediumul folosit. Există o gama variată de legi în diferite jurisdicţii ce pot face ca venitul, vânzările, salariile, profiturile din vânzări, sau orice altă responsabilitate fiscală să crească cu Bitcoin.</p>
-
-<h3 id="dar-despre-bitcoin-si-protectia-consumatorului">Dar despre Bitcoin şi protecţia consumatorului?</h3>
-<p>Bitcoin eliberează oamenii, permiţându-le să facă tranzacţii după propriile lor condiţii. Fiecare utilizator poate trimite şi primi plăţi într-o manieră similară cu banii cash dar pot de asemenea să ia parte în contracte mai complexe. Semnăturile multiple permit unei tranzacţii să fie acceptate de reţea doar dacă un anumit număr al un grup bine definit de persoane cad de comun acord să semneze tranzacţia. Asta permite dezvoltarea de servicii inovatoare de mediere a disputelor pe viitor. Asemenea servicii ar putea permite unei părţi terţe să aprobe sau să respingă o tranzacţie în cazul unei dispute între celelalte părţi, dar fără să aibă control asupra banilor. Spre deosebire de banii cash şi alte metode de plată, Bitcoin permite lăsarea unei dovezi publice că tranzacţia într-adevăr a luat loc, fapt ce poate fi potenţial folosit într-un recurs împotriva companiilor cu practici fraudulente.</p>
-<p>Merită de asemenea menţionat faptul că în timp ce comercianţii depind de obicei de reputaţia lor publică pentru a rămâne în afaceri şi pentru a-şi plăti angajaţii, ei nu au acces la acelaşi nivel de informaţii atunci când au de-a face cu noi clienţi. Felul în care funcţionează Bitcoin permite atât clienţilor cât şi companiilor să fie protejaţi împotriva chargeback-urilor fraudulente în timp ce oferă alegerea clientului de a cere mai multe protecţie atunci când nu sunt dispuşi să aibă încredere într-un anume comerciant.</p>
-
-<h2 id="economie">Economie</h2>
-
-<h3 id="cum-sunt-creati-bitcoinii">Cum sunt creaţi bitcoinii?</h3>
-<p>Bitcoini noi sunt generaţi printr-un proces competitiv şi descentralizat numit "minerit". Acest proces implică şi o răsplată pentru acele persoane ce oferă acest serviciu. Minerii Bitcoin procesează tranzacţii şi securizează reţeaua folosind hardware specializat şi colectează bitcoini nou creaţi în schimbul muncii depuse.</p>
-<p>Protocolul Bitcoin este creat în aşa fel încât noi bitcoini sunt creaţi la o rată fixă. Aceasta face ca mineritul de Bitcoin să fie o afacere foarte competitivă. Când mai mulţi mineri se alătură reţelei, devine surprinzător de dificil pentru a face un profit şi minerii trebuie să devină mai eficienţi pentru a-şi micşora costurile de operare. Nici o autoritate centrală sau programator nu are puterea necesară pentru a controla sau manipula sistemul pentru a-şi mări profitul personal. Fiecare nod Bitcoin din lume va respinge orice se abate de la regulile pe care se aşteaptă sistemul să le urmeze.</p>
-<p>Bitcoinii sunt creaţi într-o rată descrescătoare şi previzibilă. Numărul de noi bitcoini creaţi în fiecare an este înjumătăţit periodic până când generarea de bitcoini se opreşte complet în momentul în care vor exista 21 de milioane de bitcoini. În acest punct, minerii Bitcoin vor fi răsplătiţi probabil exclusiv din numeroasele mici taxe de tranzacţie.</p>
-
-<h3 id="de-ce-au-bitcoinii-valoare">De ce au bitcoinii valoare?</h3>
-<p>Bitcoinii au valoare pentru că sunt utili ca formă de bani. Bitcoin are caracteristicile unui ban(durabilitate, portabilitate, fungibilitate, raritate, divizibilitate şi este uşor de recunoscut) bazat mai mult pe proprietăţi matematice decât pe proprietăţi fizice(ca aurul şi argintul) sau pe încredere în autorităţi centrale(ca valutele fiat obişnuite). Pe scurt, Bitcoin este asigurat de matematică. Având aceste atribute, tot ce mai are nevoie o formă de bani pentru a avea valoare este încredere şi adopţie. În cazul Bitcoin, acest lucru poate fi măsurat prin numărul de utilizatori, comercianţi şi firme aflat în continuă creştere. Ca în cazul tuturor valutelor, valoarea unui bitcoin vine doar din partea persoanelor dispuse să-l accepte ca plată.</p>
-
-<h3 id="ce-determina-pretul-unui-bitcoin">Ce determină prețul unui bitcoin?</h3>
-<p>Preţul unui Bitcoin este dictat de cerere şi ofertă. Când cererea de bitcoini creşte, creşte şi preţul, iar când cererea scade, scade şi preţul. Există un număr limitat de bitcoini aflaţi în circulaţie şi bitcoini noi sunt creaţi într-un ritm constant şi descrescător, ceea ce înseamnă că cererea trebuie să urmeze acest model de inflaţie pentru a menţine preţul stabil. Pentru că Bitcoin este încă o piaţă relativ mică comparativ cu ce ar putea deveni, nu este nevoie de sume enorme de bani pentru a mişca preţul pieţei într-o direcţie sau altă, preţul unui bitcoin fiind încă foarte volatil.</p>
-<p>Preţul bitcoinului, din 2013 până în 2015:<br><img src="/img/faq/price_chart.png" alt="chart"></p>
-
-<h3 id="pot-bitcoinii-sa-si-piarda-valoarea">Pot bitcoinii să-şi piardă valoarea?</h3>
-<p>Da. Istoria este plină de valute ce au eşuat şi nu mai sunt folosite, cum ar fi <a href="https://en.wikipedia.org/wiki/German_gold_mark">Marca Germană</a> în timpul Republicii de la Weimar şi, mai recent, <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">dolarul Zimbabwean</a>. Deşi în trecut eşecurile valutelor se datorau în general hiperinflaţiei de care Bitcoin nu poate să aibă parte, întotdeauna există potenţialul unor eşecuri tehnice, monezi cu care se află în competiţie, chestiuni legale şi aşa mai departe. Ca o lege nescrisă, nicio valută nu ar trebui să fie considerată imună eşecului sau timpurilor de răstrişte. Bitcoin s-a dovedit a fi sigur încă de la început şi există un potenţial uriaş ca Bitcoin să se dezvolte în continuare. Pe de altă parte, nimeni nu este în măsură să prezică ce va rezerva viitorul pentru Bitcoin.</p>
-
-<h3 id="este-bitcoin-o-bula-speculativa">Este Bitcoin o bulă speculativă?</h3>
-<p>O creştere rapidă a preţului nu înseamnă neapărat o bulă. O supraapreciere artificială ce duce la o corecţie bruscă în minus a preţului constituie o bulă. Alegerile bazate pe acţiunea umană individuală a sutelor de mii de participanţi în piaţă este cauza fluctuatilor de preţ al bitcoinilor în timp ce piaţa caută descoperirea preţului. Motivele pentru o schimbare în sentiment pot include pierderea încrederii în Bitcoin, o diferenţă mare între valoare şi preţ ce nu este bazată pe fundamentele economiei Bitcoin, mediatizare ce stimulează cererea speculativă, teama de incertitudine şi obişnuita exuberanţă iraţională şi lăcomie.</p>
-
-<h3 id="este-bitcoin-o-schema-ponzi">Este Bitcoin o schemă Ponzi?</h3>
-<p>O schemă Ponzi este o operaţiune de investiţie fraudulentă ce returnează banii investitorilor săi din proprii lor bani, sau din banii investitorilor precedenţi, în loc să o facă din profitul generat de către persoanele ce conduc afacerea. Schemele Ponzi sunt menite să se prăbuşească pe cheltuiala ultimilor investitori atunci când nu mai sunt destui participanţi noi.</p>
-<p>Bitcoin este o program gratis fără autoritate centrală. În consecinţă, nimeni nu este în măsură să facă promisiuni fraudulente despre rentabilitatea investiţiilor. Ca în cazul altor valute majore cum ar fi aurul, dolarul american, euro, yen, etc. nu există o putere de cumpărare garantată şi preţul este liber. Aceasta duce la volatilitate, situaţie în care deţinătorii de bitcoini pot câştiga sau pierde bani într-un mod imprevizibil. Dincolo de speculă, Bitcoin este de asemenea un sistem de plată util cu proprietăţi competitive ce este folosit de mii de utilizatori şi companii.</p>
-
-<h3 id="nu-cumva-bitcoin-ii-favoritizeaza-pe-cei-ce-au-investit-la-inceput">Nu cumva Bitcoin îi favoritizează pe cei ce au investit la început?</h3>
-<p>Unii investitori iniţiali au un număr mare de bitcoini pentru că au riscat mai mult şi au investit timp şi resurse într-o tehnologie nouă ce nu era încă folosită de nimeni şi care era mult mai greu de securizat corespunzător. Mulţi investitori iniţiali au cheltuit sume mari de bitcoini de mai multe ori înainte ca aceştia să devină valoroşi sau au cumpărat doar sume mici de bitcoini şi nu au făcut un profit uriaş. Nu este nici o garanţie că preţul unui bitcoin va creşte sau scădea. Acest lucru este foarte similar cu a investi într-o companie aflată la început care poate ulterior să crească în valoare şi popularitate, sau nu. Bitcoin este încă în faza incipientă şi a fost proiectat să fie un proiect pe termen lung; este greu de imaginat cum ar putea fi făcut să fie mai puţin profitabil pentru investitorii iniţiali şi utilizatorii de azi pot sau nu să devină investitorii iniţiali de mâine.</p>
-
-<h3 id="numarul-finit-de-bitcoini-nu-este-o-limitare">Numărul finit de bicoini nu este o limitare?</h3>
-<p>Bitcoin este unic prin faptul că doar 21 de milioane de bitcoini vor fi creaţi vreodată. Însă, asta nu va fi niciodată o limitare pentru că bitcoinii pot fi divizaţi în subunităţi ale unui bitcoin, cum ar fi biţi - sunt 1.000.000 de biţi în 1 bitcoin. Bitcoinii pot fi divizaţi până la 8 zecimale(0,000 000 01) şi chiar şi în unităţi mai mici dacă va fi vreodată nevoie în viitor pe măsură ce mărimea medie a unei tranzacţii scade.</p>
-
-<h3 id="nu-va-cadea-bitcoin-intr-o-spirala-deflationara">Nu va cădea Bitcoin într-o spirală deflaţionară?</h3>
-<p>Teoria spiralei deflaţionare spune că dacă preţurile sunt de aşteptat să scadă, oamenii vor amâna plăţile pentru un moment viitor pentru a beneficia de preţurile mai scăzute. Acea scădere în cerere va face comercianţii să coboare preţurile pentru a încerca să stimuleze cererea, făcând problema şi mai mare şi ducând la o depresie economică.</p>
-<p>Deşi această teorie este o cale populară de a justifica inflaţia dintre băncile centrale, aparent nu este întotdeauna adevărată şi este considerată controversată între economişti. Electronicele sunt un exemplu de piaţă unde preţurile sunt în continuă scădere dar care nu este într-o depresie economică. Similar, valoarea bitcoinilor a crescut în timp şi de asemenea şi mărimea economiei Bitcoin a crescut dramatic alături de ea. Deoarece atât valorea monezii cât şi mărimea economiei asociate cu ea au început de la 0 în anul 2009, Bitcoin, este un contraexemplu al acestei teorii arătând că pot există excepţii de la regulă.</p>
-<p>Totuşi, Bitcoin nu este făcut pentru a fi o valută deflationară. Este mai corect spus că Bitcoin este construit să permită inflaţie în anii de început, apoi devenind stabil în anii ce vor urma. Singurul moment în care cantitatea de bitcoini aflaţi în circulaţie ar putea să scadă ar fi în cazul în care lumea începe să-şi piardă portofelele Bitcoin fără să-şi facă backup. Cu o bază monetară stabilă şi o economie stabilă, valoarea valutei ar trebui să rămână aceeaşi.</p>
-
-<h3 id="nu-este-specula-si-volatilitatea-o-problema-pentru-bitcoin">Specula şi volatilitatea nu este o problemă pentru Bitcoin?</h3>
-<p>Aceasta este o situaţie similară cu cine a venit primul, oul sau găina. Pentru ca preţul unui bitcoin să se stabilizeze, trebuie să se dezvolte o mare economie de scară cu mai multe companii şi utilizatori. Pentru ca o mare economie de scară să se dezvolte, companiile şi utilizatorii vor dori ca preţul să se stabilizeze.</p>
-<p>Din fericire, volatilitatea nu afectează principalele beneficii ale Bitcoin ca şi sistem de plată pentru a transfera bani din punctul A în punctul B. Este posibil ca firmele să schimbe plăţile Bitcoin în valuta lor locală instant, permiţându-le să profite de avantajele Bitcoin fără să fie subiectul fluctuaţiilor de preţ. Pentru că Bitcoin oferă multe opţiuni şi proprietăţi utile şi unice, mulţi aleg să folosească Bitcoin. Cu aşa soluţii şi motivaţii, este posibil ca Bitcoin să se matureze şi să se dezvolte până la punctul în care volatilitatea preţului să devină limitată.</p>
-
-<h3 id="daca-cineva-cumpara-toti-bitcoinii-existenti">Dacă cineva cumpără toţi bitcoinii existenţi?</h3>
-<p>Doar o fracţiune din bitcoinii aflaţi în circulaţie până acum sunt disponibili pentru vânzare pe siteurile de exchange. Pieţele Bitcoin sunt competitive, însemnând că preţul unui bitcoin va creşte sau va scădea depinzând de cerere şi ofertă. Adiţional, noi bitcoini vor fi emişi în continuare în următoarele decenii. Aşa că nici măcar cel mai determinat cumpărător nu ar putea să cumpere toţi bitcoinii existenţi. Asta nu înseamnă totuşi că pieţele de schimb nu sunt vulnerabile manipulării preţului; încă nu este nevoie de sume semnificative de bani pentru a muta preţul în sus sau în jos, aşa că Bitcoin rămâne încă un bun volatil.</p>
-
-<h3 id="daca-cineva-creeaza-o-moneda-digitala-mai-buna">Dacă cineva creează o monedă digitală mai bună?</h3>
-<p>Acest lucru se poate întâmpla. Deocamdată, Bitcoin este de departe cea mai populară monedă digitală descentralizată, dar nu este nici o garanţie că îşi va menţine poziţia pentru totdeauna. Există deja un număr de monezi alternative inspirate de Bitcoin. Totuşi este corect de asumat că sunt necesare îmbunătăţiri semnificative pentru ca o nouă monedă să depăşească Bitcoin în piaţă, deşi acest lucru este imprevizibil. Bitcoin de asemenea poate adopta îmbunătăţiri aduse de o altă monedă atâta timp cât nu schimbă părţi fundamentale ale protocolului.</p>
-
-<h2 id="tranzactii">Tranzacţii</h2>
-
-<h3 id="de-ce-trebuie-sa-astept-10-minute">De ce trebuie să aștept 10 minute?</h3>
-<p>Primirea unei plăţi este aproape instantă folosind Bitcoin. Însă, există o aşteptare în medie de 10 minute înainte că reţeaua să înceapă să confirme tranzacţia prin includerea ei într-un bloc şi înainte să poţi cheltui bitcoinii primiţi. O confirmare înseamnă că există un acord în intreaga reţea că bitcoinii primiţi de tine nu au fost trimişi altcuiva şi sunt consideraţi acum ai tăi. Odată ce tranzacţia a fost inclusă într-un bloc, va continua să fie îngropată sub fiecare bloc de după acela, ceea ce va consolida exponenţial acest acord şi va descreşte riscul unei tranzacţii inversate. Fiecare utilizator este liber să determine atunci când consideră o tranzacţie confirmată, dar în general 6 confirmări sunt adesea considerate ca fiind la fel de sigur ca şi cum ai aştepta 6 luni după o tranzacţie cu cardul de credit.</p>
-
-<h3 id="cat-va-costa-taxa-de-tranzactie">Cât va costa taxa de tranzacţie?</h3>
-<p>Majoritatea tranzacţiilor pot fi procesate fără taxe, dar utilizatorii sunt încurajaţi să plătească o mică taxă voluntară pentru o confirmare mai rapidă a tranzacţiei şi pentru a remunera minerii. Atunci când taxele sunt necesare, ele în general nu depăşesc câţiva cenţi. Clientul tău Bitcoin va încerca de regulă să estimeze o taxă aproximativă atunci când aceasta este necesară.</p>
-<p>Taxele de tranzacţie sunt folosite ca o protecţie împotriva utilizatorilor ce trimit tranzacţii în încercarea de a supraîncărca reţeaua. Modul exact în care funcţionează taxele este încă în lucru şi se va schimba în timp. Pentru că taxa nu este legată de suma de bitcoini trimişi, aceasta ar putea să pară fie extrem de mică(0.0005 BTC pentru un transfer de 1,000 BTC) sau nedrept de mare(0.004 BTC pentru o plata de 0.02 BTC). Taxa este definită de atribute cum ar fi datele din tranzacţie şi recurenţa tranzacţiei. De exemplu, dacă primeşti un număr mare de tranzacţii de mică valoare, atunci taxele pentru a trimite vor fi mai mari. Asemenea plăţi sunt comparabile cu plata notei de la restaurant în monezi de 50 de bani. Cheltuirea rapidă a unor sume mici de bitcoini s-ar putea să necesite de asemenea o taxă. Dacă activitatea ta urmăreşte un şablon de tranzacţii obişnuite, atunci taxele vor rămâne foarte mici.</p>
-
-<h3 id="ce-se-intampla-daca-primesc-bitcoini-cand-calculatorul-este-oprit">Ce se întâmplă dacă primesc bitcoini când calculatorul este oprit?</h3>
-<p>Totul va fi bine. Bitcoinii vor apărea atunci când vei deschide aplicaţia ta portofel. Bitcoinii de fapt nu sunt primiţi de către portofelul de pe calculatorul tău, ei sunt anexaţi într-un registru public ce este distribuit de către toate calculatoarele conectate la reţea. Dacă primeşti bitcoini atunci când clientul tău portofel este oprit şi mai târziu îl porneşti, acesta va începe să descarce blocuri şi să prindă din urmă orice tranzacţie de care nu ştia până acum, iar bitcoinii tăi vor apărea eventual ca şi cum abia i-ai primit. Portofelul tău este necesar doar atunci când vrei să cheltui bitcoini.</p>
-
-<h3 id="la-ce-se-refera-sincronizarea-si-de-ce-dureaza-atat-de-mult">La ce se referă "sincronizarea" şi de ce durează atât de mult?</h3>
-<p>Un timp îndelungat de sincronizare este necesar doar atunci când foloseşti clienţi de tip nod întreg cum ar fi Bitcoin Core. Tehnic vorbind, sincronizarea este acel proces de descărcare şi verificare al tuturor tranzacţiilor anterioare din reţeaua Bitcoin. Pentru ca unii clienţi Bitcoin să calculeze balanţa portofelului tău Bitcoin şi să permită noi tranzacţii, trebuie să ştie toate tranzacţiile anterioare făcute vreodată. Acest pas poate fi intensiv din punct de vedere al puterii de calcul şi necesită lăţime de bandă suficientă şi destul spaţiu pe disc pentru a acomoda întreaga mărime a lanţului de blocuri. Pentru ca Bitcoin să rămână sigur, suficienţi oameni trebuie să continue să folosească clienţi nod întreg deoarece ei au sarcina de a valida şi emite tranzacţiile.</p>
-
-<h2 id="minerit">Minerit</h2>
-
-<h3 id="ce-este-mineritul-de-bitcoin">Ce este mineritul de Bitcoin?</h3>
-<p>Minatul este procedeul prin care se consumă putere de calcul pentru a procesa tranzacţii, securiza reţeaua, dar şi pentru a menţine toată lumea din reţea sincronizată. Poate fi privit ca un fel de data center Bitcoin cu excepţia că este construit să fie complet descentralizat, minerii operând în toate ţările şi niciun individ nu are control asupra reţelei. Acest proces este numit "minerit" ca o analogie a mineritului aurului deoarece este de asemenea un mecanism temporar folosit pentru a emite noi bitcoini. Spre deosebire de mineritul de aur, mineritul de Bitcoin oferă o recompensă în schimbul unor servicii utile necesare pentru a opera o reţea de plăţi securizată. Minatul va fi necesar şi după ce ultimul bitcoin este emis.</p>
-
-<h3 id="cum-functioneaza-mineritul-de-bitcoin">Cum funcţionează mineritul de Bitcoin?</h3>
-<p>Oricine poate deveni un miner de Bitcoin prin rularea unui program de minerit folosind hardware specializat. Software-ul de minerit ascultă după tranzacţii emise prin reţeaua peer-to-peer şi face calcule necesare pentru a procesa şi confirma aceste tranzacţii. Minerii de Bitcoin fac această muncă deoarece sunt răsplătiţi prin taxele de tranzacţie plătite de utilizatori pentru procesări mai rapide ale tranzacţiilor, plus bitcoini nou creaţi conform unei rate fixe.</p>
-<p>Pentru ca noi tranzacţii să fie confirmate, acestea trebuiesc să fie incluse într-un bloc alături de o dovadă matematică a muncii depuse. Aceste dovezi sunt foarte greu de generat pentru că nu este nici o cale de a le genera decât prin a încerca efectuând miliarde de calcule pe secundă. Aceste dovezi sunt calculate de mineri înainte ca blocurile lor să fie acceptate de reţea şi înainte ca ei să fie recompensaţi. Cu cât mai mulţi oameni minează, dificultatea de a găsi blocuri valide este mărită automat de către reţea pentru a se asigura că timpul mediu de găsire a unui bloc este egal cu 10 minute. Ca rezultat, mineritul este o afacere foarte competitivă unde niciun miner individual nu are control asupra ce este inclus în lanţul de blocuri.</p>
-<p>Dovada muncii depuse este de asemenea făcută în aşa fel încât depinde de blocul anterior pentru a forţa o ordine cronologică în lanţul de blocuri. Acest lucru face inversarea tranzacţiilor anterioare exponenţial mai dificilă pentru că necesită recalcularea dovezilor de muncă pentru toate blocurile următoare. Când două blocuri sunt găsite în acelaşi timp, minerii lucrează în primul bloc pe care îl primesc şi trec pe cel mai lung lanţ de blocuri imediat ce următorul bloc este găsit. Asta face ca mineritul să fie sigur şi să menţină un consens global bazat pe puterea de procesare.</p>
-<p>Minerii de Bitcoin nu sunt capabili de a trişa prin mărirea recompensei proprii sau prin procesarea de tranzacţii fraudulente ce ar putea corupe reţeaua Bitcoin pentru că toate nodurile Bitcoin vor refuza orice bloc ce conţine date invalide conforum regulilor protocolului Bitcoin. În consecinţă, reţeaua rămâne sigură chiar dacă nu toţi minerii de Bitcoin sunt de încredere.</p>
-
-<h3 id="mineritul-de-bitcoin-nu-este-o-risipa-de-energie">Mineritul de Bitcoin nu este o risipă de energie?</h3>
-<p>Consumarea de energie pentru a securiza şi a opera un sistem de plăţi nu se poate numi chiar risipă. Ca orice alt serviciu de plăţi, folosirea de Bitcoin necesită costuri de procesare. Servicii necesare pentru operarea celor mai folosite sistemelor monetare actuale, precum băncile, cardurile de credit şi vehiculele blindate folosite pentru transportul banilor consumă de asemenea foarte multă energie. Deşi spre deosebire de Bitcoin, totalul de energie pe care acestea îl consumă nu este transparent şi nu poate fi măsurat cu uşurinţă.</p>
-<p>Mineritul de Bitcoin este făcut să devină din ce în ce mai optimizat în timp prin hardware specializat ce consumă tot mai puţină energie, iar costurile operaţionale ale mineritului ar trebui să continue să fie proporţionale cu cererea. Când mineritul de Bitcoin devine prea competitiv şi mai puţin profitabil, unii mineri aleg să îşi oprească activitatea. Mai mult, toată energia consumată minerind este eventual transformată în căldură, iar cei mai profitabili mineri vor fi aceia ce transformă acea căldură în ceva util. O reţea de minerit cu o eficienţă optimă este una care nu consumă niciun pic de energie în plus. Deşi acest lucru este un ideal, ştiinţă economică din spatele mineritului face ca fiecare miner individual să tindă către acest lucru.</p>
-
-<h3 id="cum-ajuta-mineritul-ca-bitcoin-sa-fie-sigur">Cum ajută mineritul ca Bitcoin să fie sigur?</h3>
-<p>Mineritul creează echivalentul unei loterii competitive în care este extrem de dificil ca cineva să adauge consecutiv noi blocuri de tranzacţii în lanţul de blocuri. Acest lucru protejează neutralitatea reţelei prin prevenirea unui individ să aibă destulă putere să blocheze anumite tranzacţii. De asemenea previne situaţia în care cineva încearcă să înlocuiască părţi ale lanţului de blocuri pentru a inversa propriile cheltuieli, ce ar putea fi folosit pentru a frauda alte persoane. Mineritul face inversarea unei tranzacţii anterioare exponenţial mai grea prin faptul că necesită rescrierea tuturor blocurilor ce urmează după acea tranzacţie.</p>
-
-<h3 id="de-ce-am-nevoie-pentru-a-incepe-sa-minez">De ce am nevoie pentru a mă apuca de minerit?</h3>
-<p>În zilele timpurii ale Bitcoin, oricine putea găsi un nou bloc folosind procesorul calculatorului personal. Pe măsură ce tot mai mulţi oameni au început să minerească, dificultatea de a găsi noi blocuri a crescut foarte mult până în punctul în care astăzi singura metodă eficientă de minerit este folosind hardware specializat. Poţi vizita <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> pentru mai multe informaţii.</p>
-
-<h2 id="securitate">Securitate</h2>
-
-<h3 id="este-bitcoin-sigur">Este Bitcoin sigur?</h3>
-<p>Tehnologia Bitcoin - protocolul şi criptografia - au un palmares de securitate impresionant, iar reţeaua Bitcoin este probabil cel mai mare proiect de calcul distribuit din lume. Cea mai comună vulnerabilitate a Bitcoin este eroarea umană din partea utilizatorului. Fişierele portofofelului Bitcoin ce păstrează cheile private necesare pot fi şterse din greşeală, pierdute sau furate. Acest lucru este similar cu banii cash păstraţi într-o formă digitală. Din fericire, utilizatorii pot respecta <a href="/ro/securizeaza-portofelul">practici de securitate</a> pentru a-şi proteja banii sau să folosească furnizori de servicii ce oferă niveluri bune de securitate şi asigurare împotriva furtului sau pierderii.</p>
-
-<h3 id="nu-a-fost-bitcoin-hackuit-in-trecut">Nu a fost Bitcoin hackuit în trecut?</h3>
-<p>Regulile protocolului şi ale criptografiei folosite de Bitcoin au deja ani de zile de când au apărut, ceea ce indică un concept bine proiectat şi construit. Dar, <a href="/en/alerts">erori de securitate</a> au fost găsite şi remediate în timp în diverse implementări software. Ca orice altă formă de software, securitatea software-ului Bitcoin depinde de viteza cu care problemele sunt găsite şi rezolvate. Cu cât mai multe astfel de probleme sunt descoperite, cu atât Bitcoin se apropie de maturitate.</p>
-<p>Adesea există concepţii greşite despre furturi şi breşe de securitate ce s-au întâmplat pe diverse exchange-uri şi companii care se ocupă cu Bitcoin. Deşi aceste evenimente sunt nefericite, niciuna nu implică Bitcoin însuşi fiind hackuit, nici nu implică greşeli în felul în care Bitcoin este construit; aşa cum spargerea unei bănci nu înseamnă că leul românesc este compromis. Pe de altă parte, este corect să spunem că un set complet de bune practici şi soluţii intuitive de securitate sunt necesare pentru a oferi utilizatorilor o protecţie mai bună a banilor lor şi pentru a reduce riscul general de furt sau pierdere. Pe parcursul ultimilor ani, asemenea atribute de securitate au fost rapid dezvoltate, cum ar fi criptarea portofelului, portofele offline, portofele hardware şi tranzacţii multi-semnătură.</p>
-
-<h3 id="pot-utilizatorii-sa-comploteze-impotriva-bitcoin">Pot utilizatorii să comploteze împotriva Bitcoin?</h3>
-<p>Protocolul Bitcoin este imposibil de schimbat aşa uşor. Orice client Bitcoin ce nu respectă aceleaşi reguli nu poate impune propriile sale reguli în faţa altor utilizatori. Conform specificaţiilor actuale, cheltuirea dublă nu este posibilă pe acelaşi lanţ de blocuri, nici cheltuirea de bitcoini fără o semnătură validă. Aşa că, nu este posibil să se creeze sume necontrolate de bitcoini pur şi simplu, să se cheltuie bitcoinii altei persoane, sa fie coruptă reţeaua, sau altceva similar.</p>
-<p>Pe de altă parte, o majoritate de mineri poate alege în mod arbitrar să blocheze sau să inverseze tranzacţii recente. O majoritate de utilizatori pot de asemenea să facă presiuni pentru ca nişte schimbări să fie făcute. Pentru că Bitcoin funcţionează corect doar atunci când există un consens complet între toţi utilizatorii, schimbarea protocolului poate fi foarte dificilă şi necesită o majoritate copleşitoare de utilizatori să adopte schimbările în aşa fel încât restul utilizatorilor să nu aibă altă opţiune decât să se alăture. Ca o regulă generală, este greu de imaginat de ce un utilizator de Bitcoin ar alege să adopte orice schimbare ce ar putea să-i compromită proprii bani.</p>
-
-<h3 id="este-bitcoin-vulnerabil-in-fata-calculatoarelor-cuantice">Este Bitcoin vulnerabil în faţa calculatoarelor cuantice?</h3>
-<p>Da, majoritatea sistemelor ce se bazează pe criptografie în general sunt vulnerabile, incluzând sistemele bancare tradiţionale. Dar, calculatoarele cuantice nu există încă şi probabil nici nu vor exista pentru o perioadă bună de timp. În cazul în care calculatoarele cuantice ar deveni o ameninţare iminentă pentru Bitcoin, protoculul poate fi actualizat pentru a folosi algoritmi post-cuantici. Dată importanţa pe care această schimbare ar avea-o, poate fi asumat cu siguranţă că va fi revăzută aprofundat de către programatori şi adoptată de toţi utilizatorii Bitcoin.</p>
-
-<h2 id="ajutor">Ajutor</h2>
-
-<h3 id="mai-mult-ajutor">Mi-ar plăcea să aflu mai multe. Unde pot să primesc ajutor?</h3>
-<p>Poţi găsi mai multe informaţii şi ajutor pe paginile de <a href="/ro/resurse">resurse</a> şi <a href="/ro/comunitate">comunitate</a> de pe <a href="https://en.bitcoin.it/wiki/FAQ">FAQ-ul din Wiki</a>.</p>
 
       </div>
     </div>
@@ -611,14 +898,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ro/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/legal">Legal</a></li>
 			
-			<li><a href="/ro/confidentialitate">Confidenţialitate</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/confidentialitate">Confidenţialitate</a></li>
 			
-			<li><a href="/ro/presa">Presă</a></li>
-			<li><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/presa">Presă</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -627,7 +914,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -649,13 +937,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -666,7 +956,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

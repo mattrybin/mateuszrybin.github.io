@@ -10,15 +10,29 @@
 <title>قائمة المفردات - البت كوين</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 <link rel="stylesheet" type="text/css" href="/86f92b3ae8d49243ee407f26ca495fd4.css" />
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ar.png"><strong>العربية</strong>
+          <img src="/img/flags/ar.png"><strong>العربية</strong>
 				</div>
 			</a>
 		</div>
@@ -323,89 +341,152 @@
 		<li><a href="#">الأسئلة الشائعة</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>بعض مصطلحات البت كوين التي قد تتعرض لها</h1>
-<p class="summarytxt">يوفر البت كوين طريقة جديدة للتعامل مع المدفوعات، وبناء على ذلك، هنالك العديد من المصطلحات الجديدة التي قد تصبح جزءاً من قائمة مفرداتك. لا تقلق! حتى التلفاز حين تم إختراعه قام بجلب العديد من المصطلحات معه!</p>
-<h2 id="table-of-contents">جدول المحتويات</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">بعض مصطلحات البت كوين التي قد تتعرض لها</h1>
+  <h2 class="content_vocalbulary--subtitle">يوفر البت كوين طريقة جديدة للتعامل مع المدفوعات، وبناء على ذلك، هنالك العديد من المصطلحات الجديدة التي قد تصبح جزءاً من قائمة مفرداتك. لا تقلق! حتى التلفاز حين تم إختراعه قام بجلب العديد من المصطلحات معه!</h2>
 
-<div class="index">
-
-<a href="#double-spend">الإنفاق المزدوج</a>
-
-<a href="#bitcoin">البت كوين</a>
-
-<a href="#block">البلوك</a>
-
-<a href="#confirmation">التأكيد</a>
-
-<a href="#cryptography">التشفير</a>
-
-<a href="#mining">التنقيب</a>
-
-<a href="#signature">التوقيع</a>
-
-<a href="#address">العنوان</a>
-
-<a href="#wallet">المحفظة</a>
-
-<a href="#private-key">المفتاح الخاص</a>
-
-<a href="#p2p">الند-للند "P2P"</a>
-
-<a href="#block-chain">سلسلة البلوكات</a>
-
-<a href="#hash-rate">معدل الهاش</a>
-
-<a href="#btc">BTC</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">الإنفاق المزدوج</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>إذا حاول مستخدم إحتيالي <b>إرسال عملات البت كوين الخاص به لـ 2 مستلمين في نفس الوقت</b>، فهذا ما يطلق عليه الإنفاق المزدوج أو ما يسمى بالإنجليزية "double spending". <a href="#mining">التنقيب</a> و <a href="#block-chain">سلسلة البلوكات</a> كلاهما موجود لخلق حالة من الإجماع في الشبكة حول أي المعاملتين سيتم تأكيدها وإعتبارها صحيحة.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">البت كوين</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - يتم إستخدامها بحروف كبيرة لتوصيف مبدأ البت كوين نفسه، أو شبكة البت كوين نفسها. على سبيل المثال: "كنت أتعلم اليوم عن بروتوكول الـ Bitcoin". <br>bitcoin  - بدون حروف كبيرة، يتم إستخدامها لتوصيف البت كوين كوحدة محاسبية. على سبيل المثال: "قمت اليوم بإرسال 10 bitcoins" وغالباً ما يتم إختصارها أيضاً لـ BTC أو XBT</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">البلوك</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>البلوك أو المجموعة أو كما يسمى بالإنجليزية "block" هو <b>سجل في سلسلة البلوكات يحتوي على العديد من المعاملات قيد التنفيذ يقوم بتأكيدها</b>. في المتوسط، كل 10 دقائق تقريباً، بلوك جديد يحتوي مجموعة من المعاملات يتم إضافته إلى <a href="#block-chain">سلسلة البلوكات</a> من خلال <a href="#mining">التنقيب</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">التأكيد</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>التأكيد أو ما يسمى بالإنجليزية "confirmation" يعني أن المعاملة قد تم <b>معالجتها بواسطة شبكة البت كوين وبشكل كبير لا يمكن عكسها</b>. جميع المعاملات يتم تأكيدها بعدما يتم تضمينها في <a href="/ar/vocabulary#block">بلوك</a> ومن قبل كل بلوك تالي. تأكيد من قبل بلوك واحد يمكن إعتباره آمن للمعاملات ذات القيم الصغيرة، أما في المعاملات الأكير كـ 1000 دولار أمريكي أو أكثر، فمن المنطقي الإنتظار حتى 6 تأكيدات أو أكثر. كل تأكيد إضافي يقلل <i>بشكل مضاعف</i> من خطورة عكس المعاملة.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">التشفير</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>التشفير أو ما يسمى بالإنجليزية "cryptography" هو أحد فروع الرياضيات يتيح لنا إنشاء <b>براهين رياضية ذات مستوى عالي من الأمان</b>. ويمكننا القول بشكل أكثر دقة أن الـ "cryptography" هو علم التشفير والتعمية معاً ويشار إليه إختصاراً في هذا الموقع بإسم "التشفير" فقط! التجارة الإلكترونية وأنظمة البنوك تقوم بالفعل بإستخدام التشفير. في حالة البت كوين، يتم إستخدام التشفير لجعل الأمر مستحيل لأي أحد يحاول إنفاق أي أموال من محفظة مستخدم آخر أو يقوم بمحاولة تخريب <a href="#block-chain">سلسلة البلوكات</a>. يمكن إستخدامه أيضاً لتشفير أي محفظة، حتى لا يمكن إستخدامها بدون كلمة مرور.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">التنقيب</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>التنقيب عن عملات البت كوين هو عبارة عن عملية <b>جعل الكمبيوتر يقوم بعمل حسابات رياضية لصالح شبكة البت كوين من أجل تأكيد المعاملات</b> وزيادة الأمان. كمكافئة على خدماتهم، يستطيع منقبي البت كوين الحصول على رسوم المعاملات التي يقومون بتأكيدها، بالإضافة إلى حصولهم على عملات البت كوين المولدة حديثاً. التنقيب هو سوق تنافسي ومتخصص حيث يتم توزيع المكافئات تبعاً لكمية الحسابات التي تم عملها. لا يقوم كل مستخدمي البت كوين بالتنقيب، والتنقيب ليس طريقة سهلة لكسب الأموال!</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">التوقيع</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>التوقيع <a href="#cryptography">المشفر</a> أو ما يسمى بالإنجليزية "signature" هو <b>آلية رياضية تسمح لشخص ما بإثبات الملكية</b>. وفي حالة البت كوين، فإن <a href="#wallet">محفظة البت كوين</a> و <a href="#private-key">مفتاحها/مفاتيحها الخاص(ة)</a>  يتم ربطهم معاً من خلال سحر الرياضيات! عندما يقوم برنامج البت كوين الخاص بك بتوقيع معاملة بالمفتاح الخاص المناسب، فإن الشبكة كلها يمكنها رؤية مطابقة التوقيع لعملات البت كوين التي تم إنفاقها. على أية حال،  لا يوجد أي طريقة لأي أحد بالعالم أن يقوم بتخمين المفتاح الخاص المملوك لك لكي يقوم بسرقة عملات البت كوين الخاصة بك.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">العنوان</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>عنوان البت كوين <b>مشابه لعنوانك البريدي أو البريد الإلكتروني</b>. هو المعلومة الوحيدة التي يتوجب عليك إعطائها لشخص ما لكي يقوم بالدفع لك بإستخدام البت كوين. ومع ذلك، فهنالك فارق هام، وهو أن كل عنوان بت كوين يتوجب إستخدامه مرة واحدة فقط من أجل معاملة واحدة.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">المحفظة</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>محفظة البت كوين أو ما تسمى بالإنجليزية "wallet" هي على نحو ما <b>المكافئ للمحفظة المادية/العادية ولكن في شبكة البت كوين</b>.  المحفظة تحتوي على <a href="#private-key">مفتاحك/مفاتيحك الخاص(ة)</a> والتي تسمج لك بإنفاق عملات البت كوين المرتبطة بها في <a href="#block-chain">سلسلة البلوكات</a>. كل محفظة بت كوين يمكنها أن تظهر لك الرصيد الكامل لكل عملات البت كوين التي تتحكم بها وتسمح لك بدفع قيمة محددة لشخص بعينه، تماماً كالمحفظة الحقيقية. وهذا يختلف عن بطاقات الإئتمان حيث يتم الخصم منك بواسطة التاجر.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">المفتاح الخاص</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>المفتاح الخاص أو ما يسمى بالإنجليزية "private key" هو <b>قطعة صغيرة سرية تؤكد أحقيتك في إنفاق عملات البت كوين من محفظة معينة</b> من خلال <a href="#signature">التوقيع</a> المشفر. المفتاح الخاص أو المفاتيح الخاصة المملوكة لك يتم تخزينها على جهاز الكمبيوتر الخاص بك إذا كنت تستخدم برنامج كمبيوتر كمحفظة؛ أو يتم تخزينه(م) على سيرفر خاص إذا كنت تستخدم محفظة إنترنت. لا يجب أبداً ان يتم الإفصاح عن المفاتيح الخاصة حيث أنهم يمنحوا الصلاحية بالإنفاق من محفظة/محافظ البت كوين المرتبطة بهم.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">الند-للند "P2P"</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>الند-للند أو ما يسمى بالإنجليزية "P2P" أو "peer-to-peer" مصطلح يشير إلى <b>الأنظمة التي تعمل كمجتمع منظم</b> عن طريق السماح لكل فرد بالتعامل مباشرة مع الآخرين. وفي حالة البت كوين، تم بناء الشبكة بحيث يقوم كل مستخدم بنشر معاملات المستخدمين الآخرين. وبشكل حاسم، لا يتطلب الأمر وجود بنك كطرف ثالث!</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block-chain">سلسلة البلوكات</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>سلسلة البلوكات أو كما تسمى بالإنجليزية "block chain" هي <b>سجل عام لجميع معاملات البت كوين</b> مرتبة زمنياً. سلسلة البلوكات يتم مشاركتها بين جميع مستخدمي البت كوين. يتم إستخدام السلسلة من أجل التأكد من إستمرارية معاملات البت كوين ولكي تمنع <a href="#double-spend">الإنفاق المزدوج</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">معدل الهاش</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>معدل الهاش أو ما يسمى بالإنجليزية "hash rate" هو <b>وحدة لقياس قدرة شبكة البت كوين على المعالجة</b>. يجب على شبكة البت كوين أن تقوم بعمل حسابات رياضية مكثفة لأغراض الأمان. عندما يصل معدل الهاش لشبكة البت كوين إلى 10 تيرا هاش/الثانية، فهذا يعني أن الشبكة يمكنها إجراء 10 تريليون عملية حسابية في الثانية الواحدة.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC هي الوحدة الشائعة لعملة البت كوين. يمكن إستخدامها بطريقة مشابهة للـ USD للدولار الأمريكي بديلاً عن B⃦  أو $.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="double-spend">الإنفاق المزدوج</h2>
-<p>إذا حاول مستخدم إحتيالي <b>إرسال عملات البت كوين الخاص به لـ 2 مستلمين في نفس الوقت</b>، فهذا ما يطلق عليه الإنفاق المزدوج أو ما يسمى بالإنجليزية "double spending". <a href="#mining">التنقيب</a> و <a href="#block-chain">سلسلة البلوكات</a> كلاهما موجود لخلق حالة من الإجماع في الشبكة حول أي المعاملتين سيتم تأكيدها وإعتبارها صحيحة.</p>
-
-<h2 id="bitcoin">البت كوين</h2>
-<p>Bitcoin - يتم إستخدامها بحروف كبيرة لتوصيف مبدأ البت كوين نفسه، أو شبكة البت كوين نفسها. على سبيل المثال: "كنت أتعلم اليوم عن بروتوكول الـ Bitcoin". <br>bitcoin  - بدون حروف كبيرة، يتم إستخدامها لتوصيف البت كوين كوحدة محاسبية. على سبيل المثال: "قمت اليوم بإرسال 10 bitcoins" وغالباً ما يتم إختصارها أيضاً لـ BTC أو XBT</p>
-
-<h2 id="block">البلوك</h2>
-<p>البلوك أو المجموعة أو كما يسمى بالإنجليزية "block" هو <b>سجل في سلسلة البلوكات يحتوي على العديد من المعاملات قيد التنفيذ يقوم بتأكيدها</b>. في المتوسط، كل 10 دقائق تقريباً، بلوك جديد يحتوي مجموعة من المعاملات يتم إضافته إلى <a href="#block-chain">سلسلة البلوكات</a> من خلال <a href="#mining">التنقيب</a>.</p>
-
-<h2 id="confirmation">التأكيد</h2>
-<p>التأكيد أو ما يسمى بالإنجليزية "confirmation" يعني أن المعاملة قد تم <b>معالجتها بواسطة شبكة البت كوين وبشكل كبير لا يمكن عكسها</b>. جميع المعاملات يتم تأكيدها بعدما يتم تضمينها في <a href="/ar/vocabulary#block">بلوك</a> ومن قبل كل بلوك تالي. تأكيد من قبل بلوك واحد يمكن إعتباره آمن للمعاملات ذات القيم الصغيرة، أما في المعاملات الأكير كـ 1000 دولار أمريكي أو أكثر، فمن المنطقي الإنتظار حتى 6 تأكيدات أو أكثر. كل تأكيد إضافي يقلل <i>بشكل مضاعف</i> من خطورة عكس المعاملة.</p>
-
-<h2 id="cryptography">التشفير</h2>
-<p>التشفير أو ما يسمى بالإنجليزية "cryptography" هو أحد فروع الرياضيات يتيح لنا إنشاء <b>براهين رياضية ذات مستوى عالي من الأمان</b>. ويمكننا القول بشكل أكثر دقة أن الـ "cryptography" هو علم التشفير والتعمية معاً ويشار إليه إختصاراً في هذا الموقع بإسم "التشفير" فقط! التجارة الإلكترونية وأنظمة البنوك تقوم بالفعل بإستخدام التشفير. في حالة البت كوين، يتم إستخدام التشفير لجعل الأمر مستحيل لأي أحد يحاول إنفاق أي أموال من محفظة مستخدم آخر أو يقوم بمحاولة تخريب <a href="#block-chain">سلسلة البلوكات</a>. يمكن إستخدامه أيضاً لتشفير أي محفظة، حتى لا يمكن إستخدامها بدون كلمة مرور.</p>
-
-<h2 id="mining">التنقيب</h2>
-<p>التنقيب عن عملات البت كوين هو عبارة عن عملية <b>جعل الكمبيوتر يقوم بعمل حسابات رياضية لصالح شبكة البت كوين من أجل تأكيد المعاملات</b> وزيادة الأمان. كمكافئة على خدماتهم، يستطيع منقبي البت كوين الحصول على رسوم المعاملات التي يقومون بتأكيدها، بالإضافة إلى حصولهم على عملات البت كوين المولدة حديثاً. التنقيب هو سوق تنافسي ومتخصص حيث يتم توزيع المكافئات تبعاً لكمية الحسابات التي تم عملها. لا يقوم كل مستخدمي البت كوين بالتنقيب، والتنقيب ليس طريقة سهلة لكسب الأموال!</p>
-
-<h2 id="signature">التوقيع</h2>
-<p>التوقيع <a href="#cryptography">المشفر</a> أو ما يسمى بالإنجليزية "signature" هو <b>آلية رياضية تسمح لشخص ما بإثبات الملكية</b>. وفي حالة البت كوين، فإن <a href="#wallet">محفظة البت كوين</a> و <a href="#private-key">مفتاحها/مفاتيحها الخاص(ة)</a>  يتم ربطهم معاً من خلال سحر الرياضيات! عندما يقوم برنامج البت كوين الخاص بك بتوقيع معاملة بالمفتاح الخاص المناسب، فإن الشبكة كلها يمكنها رؤية مطابقة التوقيع لعملات البت كوين التي تم إنفاقها. على أية حال،  لا يوجد أي طريقة لأي أحد بالعالم أن يقوم بتخمين المفتاح الخاص المملوك لك لكي يقوم بسرقة عملات البت كوين الخاصة بك.</p>
-
-<h2 id="address">العنوان</h2>
-<p>عنوان البت كوين <b>مشابه لعنوانك البريدي أو البريد الإلكتروني</b>. هو المعلومة الوحيدة التي يتوجب عليك إعطائها لشخص ما لكي يقوم بالدفع لك بإستخدام البت كوين. ومع ذلك، فهنالك فارق هام، وهو أن كل عنوان بت كوين يتوجب إستخدامه مرة واحدة فقط من أجل معاملة واحدة.</p>
-
-<h2 id="wallet">المحفظة</h2>
-<p>محفظة البت كوين أو ما تسمى بالإنجليزية "wallet" هي على نحو ما <b>المكافئ للمحفظة المادية/العادية ولكن في شبكة البت كوين</b>.  المحفظة تحتوي على <a href="#private-key">مفتاحك/مفاتيحك الخاص(ة)</a> والتي تسمج لك بإنفاق عملات البت كوين المرتبطة بها في <a href="#block-chain">سلسلة البلوكات</a>. كل محفظة بت كوين يمكنها أن تظهر لك الرصيد الكامل لكل عملات البت كوين التي تتحكم بها وتسمح لك بدفع قيمة محددة لشخص بعينه، تماماً كالمحفظة الحقيقية. وهذا يختلف عن بطاقات الإئتمان حيث يتم الخصم منك بواسطة التاجر.</p>
-
-<h2 id="private-key">المفتاح الخاص</h2>
-<p>المفتاح الخاص أو ما يسمى بالإنجليزية "private key" هو <b>قطعة صغيرة سرية تؤكد أحقيتك في إنفاق عملات البت كوين من محفظة معينة</b> من خلال <a href="#signature">التوقيع</a> المشفر. المفتاح الخاص أو المفاتيح الخاصة المملوكة لك يتم تخزينها على جهاز الكمبيوتر الخاص بك إذا كنت تستخدم برنامج كمبيوتر كمحفظة؛ أو يتم تخزينه(م) على سيرفر خاص إذا كنت تستخدم محفظة إنترنت. لا يجب أبداً ان يتم الإفصاح عن المفاتيح الخاصة حيث أنهم يمنحوا الصلاحية بالإنفاق من محفظة/محافظ البت كوين المرتبطة بهم.</p>
-
-<h2 id="p2p">الند-للند "P2P"</h2>
-<p>الند-للند أو ما يسمى بالإنجليزية "P2P" أو "peer-to-peer" مصطلح يشير إلى <b>الأنظمة التي تعمل كمجتمع منظم</b> عن طريق السماح لكل فرد بالتعامل مباشرة مع الآخرين. وفي حالة البت كوين، تم بناء الشبكة بحيث يقوم كل مستخدم بنشر معاملات المستخدمين الآخرين. وبشكل حاسم، لا يتطلب الأمر وجود بنك كطرف ثالث!</p>
-
-<h2 id="block-chain">سلسلة البلوكات</h2>
-<p>سلسلة البلوكات أو كما تسمى بالإنجليزية "block chain" هي <b>سجل عام لجميع معاملات البت كوين</b> مرتبة زمنياً. سلسلة البلوكات يتم مشاركتها بين جميع مستخدمي البت كوين. يتم إستخدام السلسلة من أجل التأكد من إستمرارية معاملات البت كوين ولكي تمنع <a href="#double-spend">الإنفاق المزدوج</a>.</p>
-
-<h2 id="hash-rate">معدل الهاش</h2>
-<p>معدل الهاش أو ما يسمى بالإنجليزية "hash rate" هو <b>وحدة لقياس قدرة شبكة البت كوين على المعالجة</b>. يجب على شبكة البت كوين أن تقوم بعمل حسابات رياضية مكثفة لأغراض الأمان. عندما يصل معدل الهاش لشبكة البت كوين إلى 10 تيرا هاش/الثانية، فهذا يعني أن الشبكة يمكنها إجراء 10 تريليون عملية حسابية في الثانية الواحدة.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC هي الوحدة الشائعة لعملة البت كوين. يمكن إستخدامها بطريقة مشابهة للـ USD للدولار الأمريكي بديلاً عن B⃦  أو $.</p>
-
 
       </div>
     </div>
@@ -416,14 +497,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ar/legal">المسائل القانونية</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ar/legal">المسائل القانونية</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/ar/press">صحافة</a></li>
-			<li><a href="/ar/about-us">حول موقع bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ar/press">صحافة</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ar/about-us">حول موقع bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -432,7 +513,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>موقع إلكتروني خاص بمجتمع البت كوين مدعم من قبل</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -454,13 +536,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -471,7 +555,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Υποστηρίξτε το Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
+          <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">Συχνές ερωτήσεις</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Υποστηρίξτε το Bitcoin</h1>
-<p class="summarytxt">To Bitcoin είναι ένα πρωτόκολλο το οποίο γεννήθηκε από μια μικρή κοινότητα και έκτοτε έχει μεγαλώσει γρήγορα. Υπάρχουν πολλά πράγματα που μπορείτε να κάνετε για να βοηθήσετε το Bitcoin να εξαπλωθεί και να βελτιωθεί με την πάροδο του χρόνου. </p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Υποστηρίξτε το Bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">To Bitcoin είναι ένα πρωτόκολλο το οποίο γεννήθηκε από μια μικρή κοινότητα και έκτοτε έχει μεγαλώσει γρήγορα. Υπάρχουν πολλά πράγματα που μπορείτε να κάνετε για να βοηθήσετε το Bitcoin να εξαπλωθεί και να βελτιωθεί με την πάροδο του χρόνου. </h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Χρησιμοποιώντας το Bitcoin</h2>
-<p><a href="/el/getting-started"> Η Χρήση του Bitcoin</a> είναι το πρώτο πράγμα που μπορείτε να κάνετε για να υποστηρίξετε το Bitcoin. Υπάρχουν πιθανόν πολλές περιπτώσεις όπου μπορείτε να κάνετε τη ζωή σας ευκολότερη. Μπορείτε να δέχεστε πληρωμές και να κάνετε αγορές με το Bitcoin.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Χρησιμοποιώντας το Bitcoin</h3>
+      <p><a href="/el/getting-started"> Η Χρήση του Bitcoin</a> είναι το πρώτο πράγμα που μπορείτε να κάνετε για να υποστηρίξετε το Bitcoin. Υπάρχουν πιθανόν πολλές περιπτώσεις όπου μπορείτε να κάνετε τη ζωή σας ευκολότερη. Μπορείτε να δέχεστε πληρωμές και να κάνετε αγορές με το Bitcoin.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Γίνετε εσείς το δίκτυο</h2>
-<p>Αν έχετε καλή σύνδεση στο Διαδίκτυο, μπορείτε να ενισχύσετε το δίκτυο Bitcoin διατηρώντας ένα <a href="/el/download">λογισμικό πλήρους κόμβου (full node)</a> να τρέχει στον υπολογιστή ή τον εξυπηρετητή σας με την θύρα 8333 ανοιχτή. Τα full nodes ασφαλίζουν και μεταδίδουν όλες τις συναλλαγές.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Γίνετε εσείς το δίκτυο</h3>
+      <p>Αν έχετε καλή σύνδεση στο Διαδίκτυο, μπορείτε να ενισχύσετε το δίκτυο Bitcoin διατηρώντας ένα <a href="/el/download">λογισμικό πλήρους κόμβου (full node)</a> να τρέχει στον υπολογιστή ή τον εξυπηρετητή σας με την θύρα 8333 ανοιχτή. Τα full nodes ασφαλίζουν και μεταδίδουν όλες τις συναλλαγές.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Εξόρυξη </h2>
-<p>Μπορείτε να ξεκινήσετε την <a href="http://www.bitcoinmining.com/">εξόρυξη bitcoins</a> ώστε να βοηθήσετε στην επεξεργασία συναλλαγών. Για να προστατεύσετε το δίκτυο, θα πρέπει να γίνετε μέλος σε <a href="http://mempool.info/pools">μικρότερες ομάδες εξόρυξης </a> και να προτιμήσετε αποκεντρωμένες ομάδες όπως <a href="http://p2pool.in/">P2Pool</a> ή <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">ομάδες</a> με υποστήριξη getblocktemplate (GBT)</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Εξόρυξη </h3>
+      <p>Μπορείτε να ξεκινήσετε την <a href="http://www.bitcoinmining.com/">εξόρυξη bitcoins</a> ώστε να βοηθήσετε στην επεξεργασία συναλλαγών. Για να προστατεύσετε το δίκτυο, θα πρέπει να γίνετε μέλος σε <a href="http://mempool.info/pools">μικρότερες ομάδες εξόρυξης </a> και να προτιμήσετε αποκεντρωμένες ομάδες όπως <a href="http://p2pool.in/">P2Pool</a> ή <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">ομάδες</a> με υποστήριξη getblocktemplate (GBT)</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Μετάφραση</h2>
-<p>Μπορείτε να βοηθήσετε να αυξηθεί η διαθεσιμότητα του Bitcoin μεταφράζοντας ή βελτιώνοντας τις μεταφράσεις στα σημαντικά τμήματα του οικοσυστήματος του Bitcoin. Απλά επιλέξτε ένα πρότζεκτ στο οποίο θα θέλατε να βοηθήσετε. </p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Ανάπτυξη</h2>
-<p>Το Bitcoin είναι λογισμικό ανοιχτού κώδικα. Έτσι λοιπόν, αν είστε προγραμματιστής, μπορείτε να χρησιμοποιήσετε τις υπερδυνάμεις σας για καλό σκοπό και να  <a href="/el/development">βελτιώσετε το Bitcoin</a>. Ή μπορείτε να φτιάξετε νέες καταπληκτικές υπηρεσίες ή λογισμικό που μπορεί να χρησιμοποιήσει το Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Μετάφραση</h3>
+      <p>Μπορείτε να βοηθήσετε να αυξηθεί η διαθεσιμότητα του Bitcoin μεταφράζοντας ή βελτιώνοντας τις μεταφράσεις στα σημαντικά τμήματα του οικοσυστήματος του Bitcoin. Απλά επιλέξτε ένα πρότζεκτ στο οποίο θα θέλατε να βοηθήσετε. </p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Δωρεές</h2>
-<p>Ο ευκολότερος τρόπος να βοηθήσετε είναι να <a href="https://bitcoinfoundation.org/about/donate/">κάνετε δωρεά</a> μερικά bitcoins στο Ίδρυμα Bitcoin. Ή μπορείτε να βοηθήσετε άμεσα χρηματοδοτώντας οποιοδήποτε έργο σχετίζεται με το Bitcoin και το οποίο πιστεύετε ότι θα είναι χρήσιμο στο μέλλον.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Ανάπτυξη</h3>
+      <p>Το Bitcoin είναι λογισμικό ανοιχτού κώδικα. Έτσι λοιπόν, αν είστε προγραμματιστής, μπορείτε να χρησιμοποιήσετε τις υπερδυνάμεις σας για καλό σκοπό και να  <a href="/el/development">βελτιώσετε το Bitcoin</a>. Ή μπορείτε να φτιάξετε νέες καταπληκτικές υπηρεσίες ή λογισμικό που μπορεί να χρησιμοποιήσει το Bitcoin.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Οργανισμοί</h2>
-<p>To <a href="https://bitcoinfoundation.org/">Ίδρυμα Bitcoin</a> και πολλοί άλλοι <a href="/el/community#non-profit">μη κερδοσκοπικοί οργανισμοί</a> είναι αφοσιωμένοι στην προστασία και προώθηση του Bitcoin. Μπορείτε να βοηθήσετε αυτές τις ομάδες με το να γίνετε μέλος και να συμμετέχετε στα ερευνητικά σχέδια τους, σε συζητήσεις και εκδηλώσεις.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Δωρεές</h3>
+      <p>Ο ευκολότερος τρόπος να βοηθήσετε είναι να <a href="https://bitcoinfoundation.org/about/donate/">κάνετε δωρεά</a> μερικά bitcoins στο Ίδρυμα Bitcoin. Ή μπορείτε να βοηθήσετε άμεσα χρηματοδοτώντας οποιοδήποτε έργο σχετίζεται με το Bitcoin και το οποίο πιστεύετε ότι θα είναι χρήσιμο στο μέλλον.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Διάδωση</h2>
-<p>Μιλήστε για το Bitcoin σε ανθρώπους που ενδιαφέρονται. Γράψτε για αυτό στο ιστολόγιο σας. Πείτε τα αγαπημένα σας καταστήματα που θα θέλατε να πληρώνετε με Bitcoin. Βοηθήστε να κρατήσουμε τους <a href="http://usebitcoins.info/">καταλόγους εμπόρων</a> ενημερωμένους. Ή γίνετε δημιουργικοί και φτιάξτε μόνοι σας ένα όμορφο μπλουζάκι Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Οργανισμοί</h3>
+      <p>To <a href="https://bitcoinfoundation.org/">Ίδρυμα Bitcoin</a> και πολλοί άλλοι <a href="/el/community#non-profit">μη κερδοσκοπικοί οργανισμοί</a> είναι αφοσιωμένοι στην προστασία και προώθηση του Bitcoin. Μπορείτε να βοηθήσετε αυτές τις ομάδες με το να γίνετε μέλος και να συμμετέχετε στα ερευνητικά σχέδια τους, σε συζητήσεις και εκδηλώσεις.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Τεκμηρίωση</h2>
-<p>Το <a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> και το <a href="https://en.bitcoin.it/">Bitcoin wiki</a> παρέχουν χρήσιμη τεκμηρίωση και βελτιώνουμε συνεχώς τις πληροφορίες που περιέχονται. Μπορείτε να βοηθήσετε να βελτιώσουμε αυτές τις πηγές και να τις κρατήσουμε ενημερωμένες.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Διάδωση</h3>
+      <p>Μιλήστε για το Bitcoin σε ανθρώπους που ενδιαφέρονται. Γράψτε για αυτό στο ιστολόγιο σας. Πείτε τα αγαπημένα σας καταστήματα που θα θέλατε να πληρώνετε με Bitcoin. Βοηθήστε να κρατήσουμε τους <a href="http://usebitcoins.info/">καταλόγους εμπόρων</a> ενημερωμένους. Ή γίνετε δημιουργικοί και φτιάξτε μόνοι σας ένα όμορφο μπλουζάκι Bitcoin.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Γνωρίστε τις κοινότητες</h2>
-<p>Μπορείτε να γίνετε μέλος σε  <a href="/el/community">κοινότητες</a> Bitcoin και να μιλήσετε με άλλους θαυμαστές του Bitcoin. Μπορείτε να μάθετε περισσότερα για το Bitcoin κάθε μέρα, να βοηθήσετε νέους χρήστες και να συμμετέχετε σε ενδιαφέροντα πρότζεκτ.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Τεκμηρίωση</h3>
+      <p>Το <a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> και το <a href="https://en.bitcoin.it/">Bitcoin wiki</a> παρέχουν χρήσιμη τεκμηρίωση και βελτιώνουμε συνεχώς τις πληροφορίες που περιέχονται. Μπορείτε να βοηθήσετε να βελτιώσουμε αυτές τις πηγές και να τις κρατήσουμε ενημερωμένες.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Γνωρίστε τις κοινότητες</h3>
+      <p>Μπορείτε να γίνετε μέλος σε  <a href="/el/community">κοινότητες</a> Bitcoin και να μιλήσετε με άλλους θαυμαστές του Bitcoin. Μπορείτε να μάθετε περισσότερα για το Bitcoin κάθε μέρα, να βοηθήσετε νέους χρήστες και να συμμετέχετε σε ενδιαφέροντα πρότζεκτ.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/el/legal">Νομικά</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/legal">Νομικά</a></li>
 			
-			<li><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
 			
-			<li><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
-			<li><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Μια κοινοτική ιστοσελίδα χρηματοδοτούμενη από</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

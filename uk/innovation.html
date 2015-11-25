@@ -10,15 +10,29 @@
 <title>Iнновації - Біткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/uk.png"><strong>Українська</strong>
+          <img src="/img/flags/uk.png"><strong>Українська</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">ЧаПи</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Інновації у платіжних системах</h1>
-<p class="summarytxt">Біткойн-протокол дозволяє не тільки переказувати гроші з пункту А в пункт Б. Він багатофункціональний і відкриває різноманітні можливості, які спільнота все ще досліджує. Тут представлені деякі технології, що на даний час досліджуються та у деяких випадках вже втілені в реальних продуктах та послугах. Найцікавіші способи використання Біткойн ще належить відкрити.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Інновації у платіжних системах</h1>
+  <h2 class="content_innovation--subtitle">Біткойн-протокол дозволяє не тільки переказувати гроші з пункту А в пункт Б. Він багатофункціональний і відкриває різноманітні можливості, які спільнота все ще досліджує. Тут представлені деякі технології, що на даний час досліджуються та у деяких випадках вже втілені в реальних продуктах та послугах. Найцікавіші способи використання Біткойн ще належить відкрити.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Захист від шахрайства</h3>
+	    <p>Біткойн дозволяє досягнути безпрецедентного рівня безпеки. Мережа надає користувачам захист від найпоширеніших видів шахрайства, таких як повернення платежів чи несанкціоноване списання коштів, а біткоїни неможливо підробити. Користувачі можуть шифрувати чи робити резервну копію свого гаманця, а пристрої для зберігання біткоїнів можуть у майбутньому набагато ускладнити крадіжку чи втрату грошей. Біткойн розроблений таким чином, щоб користувачі мали повний контроль над своїми грошима.  </p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Захист від шахрайства</h2>
-<p>Біткойн дозволяє досягнути безпрецедентного рівня безпеки. Мережа надає користувачам захист від найпоширеніших видів шахрайства, таких як повернення платежів чи несанкціоноване списання коштів, а біткоїни неможливо підробити. Користувачі можуть шифрувати чи робити резервну копію свого гаманця, а пристрої для зберігання біткоїнів можуть у майбутньому набагато ускладнити крадіжку чи втрату грошей. Біткойн розроблений таким чином, щоб користувачі мали повний контроль над своїми грошима.  </p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Глобальна доступність</h3>
+	    <p>Усі платежі у світі можуть бути повністю сумісні. Біткойн дозволяє будь-якому банку, компанії чи приватній особі безпечно надсилати та отримувати платежі будь-де та будь-коли, незалежно від наявності чи відсутності банківського рахунку. Біткойн доступний у багатьох країнах, які все ще знаходяться поза досяжністю більшості платіжних систем, внаслідок їх обмежень. Біткойн збільшує глобальну доступність торгівлі та може допомогти процвітанню міжнародної торгівлі.   </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Ефективність витрат</h3>
+	    <p>Завдяки використанню криптографії, здійснення безпечних платежів можливе без використання послуг повільних та дорогих посередників. Біткойн-транзакції можуть бути набагато дешевшими ніж його альтернативи і можуть бути здійснені протягом коротшого часу. Це означає, що у Біткойн закладений потенціал стати у майбутньому загальноприйнятим способом переказу будь-якої валюти. Біткойн також може відігравати свою роль у <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">подоланні бідності</a> у багатьох країнах, шляхом зменшення високих комісій на переказ зарплатні робітникам.   </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Чайові та пожертви</h3>
+	    <p>Біткойн продемонстрував особливу ефективність у випадку з чайовими та пожертвами. Надсилання платежу вимагає лише одного кліку, а отримання пожертв може бути настільки простим, як показ QR-коду. Пожертви можуть бути публічно доступні, що забезпечує більшу прозорість для неприбуткових організацій. У випадку надзвичайних ситуацій, наприклад стихійних лих, пожертви у біткоїнах можуть сприяти оперативнішій реакції міжнародної спільноти. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Спільнокошт</h3>
+	    <p>Хоча він усе ще не зовсім простий у використанні, за допомогою Біткойн можна реалізовувати колективне фінансування проектів (краудфандинг) у стилі Kickstarter. На фінансування цих проектів люди обіцяють гроші, які списуються тільки у випадку, якщо сума досягає запланованої позначки. Такі гарантійні контракти передбачені протоколом Біткойн, який запобігає проведенню транзакції доти, доки усі умови не виконані. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Дізнатись більше</a> про технологію, що стоїть за спільнокоштом.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Мікроплатежі</h3>
+	    <p>Біткойн може опрацьовувати платежі розміром у один долар, а згодом він зможе опрацьовувати й набагато менші суми. Такі платежі і сьогодні є усталеною практикою. Уявіть собі, що ви слухаєте інтернет радіо з оплатою за кожну секунду, переглядаєте веб-сторінки з невеликими чайовими за кожну не показану вам рекламу, чи купляєте пропускну здатність WiFi-точки по кілобайту. Біткойн достатньо ефективний, щоб усе це стало реальністю. <a href="https://bitcoinj.github.io/working-with-micropayments">Дізнайтесь більше</a> про технологію, що стоїть за мікроплатежами в біткоїнах.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Вирішення спорів</h3>
+	    <p>Біткойн можна використовувати для розвитку інноваційних послуг з посередництва у вирішенні спорів з використанням мультипідпису. Такі послуги дозволять сторонній організації підтвердити чи відкликати платіж, у випадку непорозумінь, що виникли між іншими сторонами, без отримання контролю над їх грошима. Оскільки ці послуги будуть доступні будь-яким користувачам чи компаніям, що використовують Біткойн, це, напевне, призведе до конкуренції та вищим стандартам якості. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Рахунки з мультипідписом</h3>
+	    <p>Декілька підписів дозволяють транзакції бути прийнятою мережею тільки якщо конкретна кількість з визначеної групи людей дасть свою згоду на підписання транзакції. Це може використовувати рада директорів з метою попередження витрачання спільних коштів будь-яким із її членів, без відома інших членів. Це також може використовуватись банками з метою запобігання крадіжкам, шляхом блокування платежів вище граничної величини у випадку ненадання користувачем додаткового мандату на це.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Довіра і чесність</h3>
+	    <p>Біткойн пропонує рішення для більшості проблем із довірою, пов'язаних здебільшого з банками. З вибірковою прозорістю обліку, цифровими контрактами та незворотністю транзакцій, Біткойн може використовуватись як фундамент для відновлення довіри та згоди. Нечесні банки не можуть ошукати систему і заробити у ній за рахунок інших банків чи людей. Майбутнє, де більшість банків буде підтримувати біткойн, може допомогти відновити цілісність та довіру до фінансових інституцій.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Життєздатність</h3>
+	    <p>Завдяки своєму високому рівню децентралізації Біткойн створив відмінну форму платіжної системи з підвищеним рівнем життєздатності та надлишковості. Біткойн може забезпечувати торгівлю на мільйони доларів, без необхідності військового захисту. У нього не існує вразливого центру, такого як центр опрацювання даних, а атакування усієї мережі є набагато складнішим проектом. Біткойн може стати важливим кроком вперед у забезпеченні безпеки місцевих та глобальних фінансових систем.  </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Гнучка прозорість</h3>
+	    <p>Усі біткойн-транзакції загальнодоступні та прозорі, а особа людей, що стоять за цими платежами, невідома за умовчанням. Це дозволяє людям та організаціям працювати за гнучкими правилами прозорості. Наприклад, компанія може за власним бажанням відкрити деякі транзакції і баланси для конкретних співробітників, так само як і неприбуткові організації вільно можуть дозволити людям бачити скільки пожертвувань вони отримують протягом дня чи місяця.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Автоматизовані рішення</h3>
+	    <p>Автоматизованим послугам зазвичай доводиться мати справу з вартістю та обмеженнями платежів готівкою чи кредитними картками. Це включає усі види торгових автоматів, від автоматів з продажу білетів на автобус, до кавових апаратів. Біткойн може використовуватися в автоматизованих послугах нового покоління, що також дозволить зменшити експлуатаційні витрати. Уявіть таксі без водія, чи крамницю, де ваш кошик дозволяє вам сплачувати за покупки без очікування у черзі. Можливим представляється безліч варіантів.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Глобальна доступність</h2>
-<p>Усі платежі у світі можуть бути повністю сумісні. Біткойн дозволяє будь-якому банку, компанії чи приватній особі безпечно надсилати та отримувати платежі будь-де та будь-коли, незалежно від наявності чи відсутності банківського рахунку. Біткойн доступний у багатьох країнах, які все ще знаходяться поза досяжністю більшості платіжних систем, внаслідок їх обмежень. Біткойн збільшує глобальну доступність торгівлі та може допомогти процвітанню міжнародної торгівлі.   </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Ефективність витрат</h2>
-<p>Завдяки використанню криптографії, здійснення безпечних платежів можливе без використання послуг повільних та дорогих посередників. Біткойн-транзакції можуть бути набагато дешевшими ніж його альтернативи і можуть бути здійснені протягом коротшого часу. Це означає, що у Біткойн закладений потенціал стати у майбутньому загальноприйнятим способом переказу будь-якої валюти. Біткойн також може відігравати свою роль у <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">подоланні бідності</a> у багатьох країнах, шляхом зменшення високих комісій на переказ зарплатні робітникам.   </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Чайові та пожертви</h2>
-<p>Біткойн продемонстрував особливу ефективність у випадку з чайовими та пожертвами. Надсилання платежу вимагає лише одного кліку, а отримання пожертв може бути настільки простим, як показ QR-коду. Пожертви можуть бути публічно доступні, що забезпечує більшу прозорість для неприбуткових організацій. У випадку надзвичайних ситуацій, наприклад стихійних лих, пожертви у біткоїнах можуть сприяти оперативнішій реакції міжнародної спільноти. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Спільнокошт</h2>
-<p>Хоча він усе ще не зовсім простий у використанні, за допомогою Біткойн можна реалізовувати колективне фінансування проектів (краудфандинг) у стилі Kickstarter. На фінансування цих проектів люди обіцяють гроші, які списуються тільки у випадку, якщо сума досягає запланованої позначки. Такі гарантійні контракти передбачені протоколом Біткойн, який запобігає проведенню транзакції доти, доки усі умови не виконані. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Дізнатись більше</a> про технологію, що стоїть за спільнокоштом.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Мікроплатежі</h2>
-<p>Біткойн може опрацьовувати платежі розміром у один долар, а згодом він зможе опрацьовувати й набагато менші суми. Такі платежі і сьогодні є усталеною практикою. Уявіть собі, що ви слухаєте інтернет радіо з оплатою за кожну секунду, переглядаєте веб-сторінки з невеликими чайовими за кожну не показану вам рекламу, чи купляєте пропускну здатність WiFi-точки по кілобайту. Біткойн достатньо ефективний, щоб усе це стало реальністю. <a href="https://bitcoinj.github.io/working-with-micropayments">Дізнайтесь більше</a> про технологію, що стоїть за мікроплатежами в біткоїнах.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Вирішення спорів</h2>
-<p>Біткойн можна використовувати для розвитку інноваційних послуг з посередництва у вирішенні спорів з використанням мультипідпису. Такі послуги дозволять сторонній організації підтвердити чи відкликати платіж, у випадку непорозумінь, що виникли між іншими сторонами, без отримання контролю над їх грошима. Оскільки ці послуги будуть доступні будь-яким користувачам чи компаніям, що використовують Біткойн, це, напевне, призведе до конкуренції та вищим стандартам якості. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Рахунки з мультипідписом</h2>
-<p>Декілька підписів дозволяють транзакції бути прийнятою мережею тільки якщо конкретна кількість з визначеної групи людей дасть свою згоду на підписання транзакції. Це може використовувати рада директорів з метою попередження витрачання спільних коштів будь-яким із її членів, без відома інших членів. Це також може використовуватись банками з метою запобігання крадіжкам, шляхом блокування платежів вище граничної величини у випадку ненадання користувачем додаткового мандату на це.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Довіра і чесність</h2>
-<p>Біткойн пропонує рішення для більшості проблем із довірою, пов'язаних здебільшого з банками. З вибірковою прозорістю обліку, цифровими контрактами та незворотністю транзакцій, Біткойн може використовуватись як фундамент для відновлення довіри та згоди. Нечесні банки не можуть ошукати систему і заробити у ній за рахунок інших банків чи людей. Майбутнє, де більшість банків буде підтримувати біткойн, може допомогти відновити цілісність та довіру до фінансових інституцій.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Життєздатність</h2>
-<p>Завдяки своєму високому рівню децентралізації Біткойн створив відмінну форму платіжної системи з підвищеним рівнем життєздатності та надлишковості. Біткойн може забезпечувати торгівлю на мільйони доларів, без необхідності військового захисту. У нього не існує вразливого центру, такого як центр опрацювання даних, а атакування усієї мережі є набагато складнішим проектом. Біткойн може стати важливим кроком вперед у забезпеченні безпеки місцевих та глобальних фінансових систем.  </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Гнучка прозорість</h2>
-<p>Усі біткойн-транзакції загальнодоступні та прозорі, а особа людей, що стоять за цими платежами, невідома за умовчанням. Це дозволяє людям та організаціям працювати за гнучкими правилами прозорості. Наприклад, компанія може за власним бажанням відкрити деякі транзакції і баланси для конкретних співробітників, так само як і неприбуткові організації вільно можуть дозволити людям бачити скільки пожертвувань вони отримують протягом дня чи місяця.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Автоматизовані рішення</h2>
-<p>Автоматизованим послугам зазвичай доводиться мати справу з вартістю та обмеженнями платежів готівкою чи кредитними картками. Це включає усі види торгових автоматів, від автоматів з продажу білетів на автобус, до кавових апаратів. Біткойн може використовуватися в автоматизованих послугах нового покоління, що також дозволить зменшити експлуатаційні витрати. Уявіть таксі без водія, чи крамницю, де ваш кошик дозволяє вам сплачувати за покупки без очікування у черзі. Можливим представляється безліч варіантів.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/uk/legal">Правові питання</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/legal">Правові питання</a></li>
 			
-			<li><a href="/uk/privacy">Конфіденційність</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/privacy">Конфіденційність</a></li>
 			
-			<li><a href="/uk/press">Преса</a></li>
-			<li><a href="/uk/about-us">Про bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/press">Преса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/about-us">Про bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Спонсор веб-сайту спільноти </span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

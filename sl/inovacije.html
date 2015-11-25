@@ -10,15 +10,29 @@
 <title>Inovacije - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Inovacije v svetu plačilnih sistemov</h1>
-<p class="summarytxt">Pri protokolu bitcoin ne gre le za pošiljanje denarja od točke A do točke B. Bitcoin odpira mnogo možnosti, ki jih skupnost šele raziskuje. Spodaj je predstavljenih nekaj tehnologij, ki se trenutno raziskujejo in iz katerih so v nekaterih primerih že nastali uporabni produkti in storitve. Najbolj zanimive načine uporabe bitcoina bomo verjetno šele odkrili v prihodnosti.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Inovacije v svetu plačilnih sistemov</h1>
+  <h2 class="content_innovation--subtitle">Pri protokolu bitcoin ne gre le za pošiljanje denarja od točke A do točke B. Bitcoin odpira mnogo možnosti, ki jih skupnost šele raziskuje. Spodaj je predstavljenih nekaj tehnologij, ki se trenutno raziskujejo in iz katerih so v nekaterih primerih že nastali uporabni produkti in storitve. Najbolj zanimive načine uporabe bitcoina bomo verjetno šele odkrili v prihodnosti.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Zaščita pred goljufijami</h3>
+	    <p>Stopnja varnosti, ki je mogoča z bitcoinom, je dobesedno brez primere. Omrežje omogoča zaščito pred goljufijami s stornacijami in neželenimi plačili, bitcoine pa je nemogoče ponarediti. Uporabniki lahko šifrirajo in rezervno kopirajo svoje denarnice, v prihodnosti pa bi lahko strojne denarnice učinkovito preprečevale kraje denarja. Bitcoin je zasnovan tako, da omogoča uporabnikom popoln nadzor nad svojim denarjem.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Zaščita pred goljufijami</h2>
-<p>Stopnja varnosti, ki je mogoča z bitcoinom, je dobesedno brez primere. Omrežje omogoča zaščito pred goljufijami s stornacijami in neželenimi plačili, bitcoine pa je nemogoče ponarediti. Uporabniki lahko šifrirajo in rezervno kopirajo svoje denarnice, v prihodnosti pa bi lahko strojne denarnice učinkovito preprečevale kraje denarja. Bitcoin je zasnovan tako, da omogoča uporabnikom popoln nadzor nad svojim denarjem.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Dostopnost po vsem svetu</h3>
+	    <p>Bitcoin omogoča katerikoli banki, podjetju ali posamezniku, da varno pošilja ali prejema plačila kjerkoli, kamorkoli in kadarkoli, z bančnim računom ali brez njega. Bitcoin je na voljo v mnogih deželah, ki jih drugi načini plačevanja zaradi lastnih omejitev še ne dosegajo. Bitcoin omogoča globalno dostopnost trgovine in lahko pomaga pri razcvetu mednarodnega trgovanja.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Cenovna učinkovitost</h3>
+	    <p>Uporaba kriptografije omogoča varna plačila brez dragih in počasnih posrednikov. Nakazilo s sistemom bitcoin je lahko mnogo cenejše in hitrejše od alternativ. Bitcoin ima zato potencial, da postane običajen način za prenos denarja v prihodnosti. Nadalje bi bitcoin lahko imel vlogo v <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">zmanjševanju revščine</a> z zmanjševanjem nakazilnih stroškov pri plačah.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Donacije in napitnina</h3>
+	    <p>Bitcoin se je že večkrat izkazal kot zelo primerno sredstvo za prejemanje in dajanje donacij. Za plačilo je dovolj en klik, za prejemanje donacij pa je potrebno prikazati le QR-kodo ali spletno povezavo. Donacije se lahko na izjemno enostaven način naredi javno vidne, kar povečuje preglednost neprofitnih organizacij. V primerih nujne pomoči, npr. pri naravnih ujmah, lahko donacije z bitcoinom pomagajo k hitrejšemu mednarodnemu odzivu.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Množično financiranje (crowdfunding)</h3>
+	    <p>Bitcoin omogoča kampanje množičnega financiranja, kjer posamezniki zastavijo denar za projekt, ta denar pa se prenese le, če je dosežen ciljni znesek. Takšen pogoj prenosa denarja se udejani na nivoju protokola bitcoin, ki nakazilo sprocesira le, če so izpolnjeni dani pogoji. To sicer še ni enostavno za uporabo.  <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Preberite si več</a> o tehnologiji, ki podpira množično financiranje.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Mikroplačila</h3>
+	    <p>Bitcoin lahko procesira nakazila velikosti dela evra, kmalu pa tudi mnogo manjše zneske. Takšna plačila so že danes rutinska. Predstavljajte si, da plačujete za internetni radio na sekundo, obiskujete spletne strani po nekaj centov za vsako neprikazano reklamo ali pa kupujete promet prek WiFi-vmesnika v tujini avtomatsko na kilobajt. Bitcoin je dovolj učinkovit za uresničitev vseh teh idej. <a href="https://bitcoinj.github.io/working-with-micropayments">Preberite več</a> o tehnologiji, ki omogoča mikroplačila.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Posredovanje pri sporih</h3>
+	    <p>Bitcoin omogoča inovativne storitve posredovanja pri sporih z uporabo večstranskega podpisovanja. Take storitve lahko omogočijo tretji osebi, da potrdi ali zavrne nakazilo v primeru spora med plačnikom in prejemnikom plačila, ne da bi ta tretja oseba imela dostop do sredstev v nakazilu. Ker to deluje na ravni protokola, bi bile te storitve združljive s katerimkoli uporabnikom in trgovcem, kar bi lahko vodilo do tekmovanja na trgu in višje kvalitete storitev.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Računi z večstranskim podpisovanjem</h3>
+	    <p>Večstransko podpisovanje pomeni, da bo omrežje sprejelo neko nakazilo le, če bo le-to podpisano s strani določenega števila oseb iz skupine vnaprej določenih oseb. Primer uporabe bi bil, da zaprta skupina prepreči trošenje skupnih sredstev vsakemu posameznemu članu skupine brez soglasja drugih. Drug primer bi lahko bil, da bi banke preprečile plačila nad določenim zneskom brez uporabe dodatnih poverilnic.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Zaupanje in celovitost</h3>
+	    <p>Bitcoin ponuja rešitve za mnoge težave zaupanja, s katerimi se javnost srečuje pri bankah. S pomočjo izbirne preglednosti knjigovodstva, digitalnih pogodb in dokončnih nakazil se bitcoin lahko uporabi kot osnova za ponovno vzpostavitev zaupanja in strinjanja. Pokvarjene banke se ne morejo z goljufanjem sistema okoristiti na račun drugih bank ali javnosti. Prihodnost, v kateri bi večje banke podpirale bitcoin, bi lahko pomagala ponovno vzpostaviti zaupanje in integriteto v finančne ustanove.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Odpornost in decentralizacija</h3>
+	    <p>Zaradi visoke stopnje decentralizacije je bitcoin ustvaril novo in drugačno plačilno omrežje z višjo stopnjo odpornosti in redundance. Bitcoin prenese trgovanje v obsegu milijonov dolarjev in več brez potrebe po vojaški zaščiti. Ker bitcoin kot sistem ne vsebuje nobene centralne točke z možnostjo odpovedi, je napad na sistem izjemno težaven. Bitcoin bi lahko predstavljal zanimiv korak naprej pri varnosti lokalnih in globalnih sistemov.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Prožna preglednost</h3>
+	    <p>Vsa nakazila bitcoinov so javna, identiteta pošiljatelja in prejemnika pa je privzeto skrita. To omogoča posameznikom in organizacijam prožno izbiro stopnje preglednosti. Podjetje lahko npr. razkrije samo določena nakazila in stanja računov samo določenim zaposlenim, medtem ko lahko npr. neprofitne organizacije javnosti zelo enostavno razkrijejo prejemke iz donacij.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Samodejne rešitve</h3>
+	    <p>Samodejne storitve, kot so prodajni avtomati za pijače, vozovnice ali kavo, imajo običajno težave s kreditnimi karticami ali pa se morajo ukvarjati z omejitvami gotovine. Bitcoin je praktičen za uporabo v novi generaciji samodejnih storitev, poleg tega pa jim lahko zniža stroške. Zamislite si taksije, ki vozijo sami, ali pa trgovine, kjer vam košarica omogoči plačilo brez čakanja v vrsti. Marsikaj je mogoče.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Dostopnost po vsem svetu</h2>
-<p>Bitcoin omogoča katerikoli banki, podjetju ali posamezniku, da varno pošilja ali prejema plačila kjerkoli, kamorkoli in kadarkoli, z bančnim računom ali brez njega. Bitcoin je na voljo v mnogih deželah, ki jih drugi načini plačevanja zaradi lastnih omejitev še ne dosegajo. Bitcoin omogoča globalno dostopnost trgovine in lahko pomaga pri razcvetu mednarodnega trgovanja.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Cenovna učinkovitost</h2>
-<p>Uporaba kriptografije omogoča varna plačila brez dragih in počasnih posrednikov. Nakazilo s sistemom bitcoin je lahko mnogo cenejše in hitrejše od alternativ. Bitcoin ima zato potencial, da postane običajen način za prenos denarja v prihodnosti. Nadalje bi bitcoin lahko imel vlogo v <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">zmanjševanju revščine</a> z zmanjševanjem nakazilnih stroškov pri plačah.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Donacije in napitnina</h2>
-<p>Bitcoin se je že večkrat izkazal kot zelo primerno sredstvo za prejemanje in dajanje donacij. Za plačilo je dovolj en klik, za prejemanje donacij pa je potrebno prikazati le QR-kodo ali spletno povezavo. Donacije se lahko na izjemno enostaven način naredi javno vidne, kar povečuje preglednost neprofitnih organizacij. V primerih nujne pomoči, npr. pri naravnih ujmah, lahko donacije z bitcoinom pomagajo k hitrejšemu mednarodnemu odzivu.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Množično financiranje (crowdfunding)</h2>
-<p>Bitcoin omogoča kampanje množičnega financiranja, kjer posamezniki zastavijo denar za projekt, ta denar pa se prenese le, če je dosežen ciljni znesek. Takšen pogoj prenosa denarja se udejani na nivoju protokola bitcoin, ki nakazilo sprocesira le, če so izpolnjeni dani pogoji. To sicer še ni enostavno za uporabo.  <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Preberite si več</a> o tehnologiji, ki podpira množično financiranje.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Mikroplačila</h2>
-<p>Bitcoin lahko procesira nakazila velikosti dela evra, kmalu pa tudi mnogo manjše zneske. Takšna plačila so že danes rutinska. Predstavljajte si, da plačujete za internetni radio na sekundo, obiskujete spletne strani po nekaj centov za vsako neprikazano reklamo ali pa kupujete promet prek WiFi-vmesnika v tujini avtomatsko na kilobajt. Bitcoin je dovolj učinkovit za uresničitev vseh teh idej. <a href="https://bitcoinj.github.io/working-with-micropayments">Preberite več</a> o tehnologiji, ki omogoča mikroplačila.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Posredovanje pri sporih</h2>
-<p>Bitcoin omogoča inovativne storitve posredovanja pri sporih z uporabo večstranskega podpisovanja. Take storitve lahko omogočijo tretji osebi, da potrdi ali zavrne nakazilo v primeru spora med plačnikom in prejemnikom plačila, ne da bi ta tretja oseba imela dostop do sredstev v nakazilu. Ker to deluje na ravni protokola, bi bile te storitve združljive s katerimkoli uporabnikom in trgovcem, kar bi lahko vodilo do tekmovanja na trgu in višje kvalitete storitev.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Računi z večstranskim podpisovanjem</h2>
-<p>Večstransko podpisovanje pomeni, da bo omrežje sprejelo neko nakazilo le, če bo le-to podpisano s strani določenega števila oseb iz skupine vnaprej določenih oseb. Primer uporabe bi bil, da zaprta skupina prepreči trošenje skupnih sredstev vsakemu posameznemu članu skupine brez soglasja drugih. Drug primer bi lahko bil, da bi banke preprečile plačila nad določenim zneskom brez uporabe dodatnih poverilnic.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Zaupanje in celovitost</h2>
-<p>Bitcoin ponuja rešitve za mnoge težave zaupanja, s katerimi se javnost srečuje pri bankah. S pomočjo izbirne preglednosti knjigovodstva, digitalnih pogodb in dokončnih nakazil se bitcoin lahko uporabi kot osnova za ponovno vzpostavitev zaupanja in strinjanja. Pokvarjene banke se ne morejo z goljufanjem sistema okoristiti na račun drugih bank ali javnosti. Prihodnost, v kateri bi večje banke podpirale bitcoin, bi lahko pomagala ponovno vzpostaviti zaupanje in integriteto v finančne ustanove.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Odpornost in decentralizacija</h2>
-<p>Zaradi visoke stopnje decentralizacije je bitcoin ustvaril novo in drugačno plačilno omrežje z višjo stopnjo odpornosti in redundance. Bitcoin prenese trgovanje v obsegu milijonov dolarjev in več brez potrebe po vojaški zaščiti. Ker bitcoin kot sistem ne vsebuje nobene centralne točke z možnostjo odpovedi, je napad na sistem izjemno težaven. Bitcoin bi lahko predstavljal zanimiv korak naprej pri varnosti lokalnih in globalnih sistemov.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Prožna preglednost</h2>
-<p>Vsa nakazila bitcoinov so javna, identiteta pošiljatelja in prejemnika pa je privzeto skrita. To omogoča posameznikom in organizacijam prožno izbiro stopnje preglednosti. Podjetje lahko npr. razkrije samo določena nakazila in stanja računov samo določenim zaposlenim, medtem ko lahko npr. neprofitne organizacije javnosti zelo enostavno razkrijejo prejemke iz donacij.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Samodejne rešitve</h2>
-<p>Samodejne storitve, kot so prodajni avtomati za pijače, vozovnice ali kavo, imajo običajno težave s kreditnimi karticami ali pa se morajo ukvarjati z omejitvami gotovine. Bitcoin je praktičen za uporabo v novi generaciji samodejnih storitev, poleg tega pa jim lahko zniža stroške. Zamislite si taksije, ki vozijo sami, ali pa trgovine, kjer vam košarica omogoči plačilo brez čakanja v vrsti. Marsikaj je mogoče.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

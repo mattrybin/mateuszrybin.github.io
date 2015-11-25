@@ -10,15 +10,29 @@
 <title>비트코인 기사</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ko.png"><strong>한국의</strong>
+          <img src="/img/flags/ko.png"><strong>한국의</strong>
 				</div>
 			</a>
 		</div>
@@ -323,187 +341,263 @@
 		<li><a href="#">질문과답변</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>기사 센터</h1>
-<p class="summary">면접대상자, 답변자, 고품질 언론을 찾아보세요.</p>
+        <div class="content_press">
+  <h1 class="content_press--title">기사 센터</h1>
+  <h2 class="content_press--subtitle">면접대상자, 답변자, 고품질 언론을 찾아보세요.</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">면접대상자</h2>
+    <p> <a href="https://bitcoinfoundation.org/contact/">비트코인 신설</a> 또는 지역<a href="/ko/community#non-profit">비영리 기관</a>과 의사소통하세요. 독립적인<a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>에서 더 많은 잠재적인 언론 연락처를 찾으세요</p>
+  </div>
 
-<h2 id="volunteer">면접대상자</h2>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">질문과답변</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 무엇인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 새로운 지불 시스템이자 완전한 디지털 화폐를 가능하게 하는 합의된 네트워크입니다. 중앙 권력이나 중간 상인이 없이 사용자에 의해 작동하는 최초의 분권화된 P2P 지불망입니다. 사용자 관점에서 볼 때, 비트코인은 인터넷 현금과 매우 유사합니다. 비트코인은 현존하는 가장 탁월한 <a href="http://financialcryptography.com/mt/archives/001325.html">삼식 부기 시스템</a>이기도 합니다.</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 어떻게 작동하나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>사용자 관점에서, Bitcoin은 개인 Bitcoin 지갑을 제공하고, 사용자가 그것을 이용하여 bitcoin을 주고 받을 수 있도록 하는 모바일 앱이나 컴퓨터 프로그램에 불과합니다. </p>
+            <p>비트코인 네트워크는 블럭 체인이라는 공공 회계원장을 공유하고 있습니다. 이 회계원장에는 여태까지 처리된 모든 거래가 포함되어 있어서, 사용자의 컴퓨터에서 모든 거래의 유효성을 검사할 수 있습니다. 각각의 거래는, 모든 사용자가 자신의 비트코인 주소에서 비트코인을 보내는 것을 완전히 제어할 수 있도록 하는, 보내는 주소에 상응하는 디지털 서명으로 보호됩니다. 또한, 누구나 특수 하드웨어의 연산력을 사용하여 거래를 처리하고 이 서비스에 대한 댓가를 비트코인으로 벌어들일 수 있습니다. 이것을 "채굴"이라고도 합니다. 비트코인에 대한 자세한 정보는 <a href="/ko/how-it-works">전용 페이지</a>와 <a href="/bitcoin.pdf">비트코인 원본</a>을 참고하세요.</p>
+          </div>
+        </li>
 
-<p> <a href="https://bitcoinfoundation.org/contact/">비트코인 신설</a> 또는 지역<a href="/ko/community#non-profit">비영리 기관</a>과 의사소통하세요.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인 채굴은 무엇인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>채굴은 거래를 처리하고, 네트워크를 안전하게 보호하며, 시스템내에 있는 모두의 일체 동기화를 유지하기 위해 컴퓨터의 연산능력을 사용하는 과정입니다. 이는 비트코인 데이터 센터와 같이 이해할 수 있습니다. 다만, 모든 국가에서 활동하는 채굴자들과 그 누구도 네트워크에 대한 지배권을 가지고 있지 않도록 하여 완전히 분권화되도록 설계되었다는 점을 제외하고는 말입니다. 이 과정은 금 채굴에 빗대어 "채굴"이라고 불리는데 이는 이 과정이 새로운 비트코인을 발행하는 일시적인 메커니즘이기도 하기 때문입니다. 하지만, 금 채굴과는 다르게 비트코인 채굴은 안전한 지불 네트워크를 운영하기 위해 필요한 유용한 서비스에 대한 대가로 보상을 제공합니다.  채굴은 마지막 비트코인이 발행된 후에도 필요할 것입니다.</p>
+          </div>
+        </li>
 
-<p>독립적인<a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>에서 더 많은 잠재적인 언론 연락처를 찾으세요</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 어떻게 얻을 수 있나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>상품이나 서비스에 대한 대가로서</li>
+              <li><a href="http://howtobuybitcoins.info">비트코인 환전소</a>에서 비트코인을 구입하세요.</li>
+              <li><a href="https://localbitcoins.com/">당신 근처에 있는 누군가</a>와 비트코인을 교환하세요.</li>
+              <li>경쟁적인 <a href="http://www.bitcoinmining.com/">채굴</a>을 통해 비트코인을 벌어들이세요.</li>
+            </ul>
+            <p>아마 비트코인 거래소에서 신용카드나 Paypal같은 결제시스템으로 비트코인을 파는 개인들을 찾을 수 있을 것입니다. 그러나 거래소 자체에서는 이러한 결제방법을 허용하지 않습니다. 이는 누군가가 Paypal로 비트코인을 사놓고서는, 거래값의 반을 철회한 일들이 있었기 때문입니다. 이를 일반적으로 지불거부라고 부릅니다.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">사람들이 정말 비트코인을 사용하나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>네. 비트코인을 사용하는 개인과 <a href="http://usebitcoins.info/">사업자의 수가 증가</a>하고 있습니다. 여기에는 식당, 아파트, 법률사무소 그리고 Namecheap, WordPress, Reddit, Flattr 같은 인기 온라인 서비스를 비롯한 소매상들이 포함됩니다. 비트코인은 아직 새로운 사회 현상이나, 아주 빠르게 성장하고 있습니다. 2013년 8월말 현재, <a href="https://bitcoincharts.com/bitcoin/">유통 중인 모든 비트코인의 가치</a>는 미화 15억 달러를 뛰어 넘었고, 매일 수백만 달러의 비트코인이 교환되고 있습니다.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인으로 지불하는 것은 얼마나 어렵나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인 지불은 직불카드나 신용카드를 이용한 구매보다 쉽습니다. 또한 은행계좌가 없어도 됩니다. 지불은 당신의 컴퓨터나 스마트콘에 있는 지갑 앱에 상대방의 비트코인 주소, 지불 금액, 그리고 보내기 버튼을 누름으로 하는 것입니다. 상대방의 비트코인 주소를 입력하는 것을 더욱 쉽게 하기 위해서 많은 지갑들이 QR 코드 기능이나 스마트폰을 서로 맞대기만 하면 되는 NFC 기술들을 도입했습니다.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">질문과답변</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인의 장점은 무엇인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>지불의 자유</b></em> -  세계 언제 어디서나 즉시 어떤 금액이라도 보내고 받는 것이 가능합니다. 은행 휴일 없습니다. 국경도 없습니다. 제한 한도도 없습니다. 비트코인은 사용자들이 그들의 돈에 대한 모든 통제권을 갖게 합니다.</li>
+              <li><em><b>매우 낮은 수수료</b></em> - 비트코인 결제는 현재 무료이거나 아주 적은 소액 거래에만 수수료가 붙습니다. 사용자들은 더 빠른 승인을 가져다 주는 처리 우선권을 얻기위해 거래에 수수료를 포함시킬 수 있습니다. 추가적으로, 상인들의 거래 처리, 비트코인의 불환화폐로의 환전, 그리고 매일 상인들의 은행계좌로 자금을 직접 예금하는 것을 돕기 위해 상인 처리기들이 따로 존재합니다. 이 서비스들은 비트코인에 기초해 있기에 PayPal이나 신용카드 네트워크보다 훨씬 더 낮은 가격에 제공될 수 있습니다.</li>
+              <li><em><b>상인들에게 적은 위험요소</b></em> - 비트코인 거래들은 안전하고, 철회불가하며, 고객의 민감한 또는 개인 정보를 포함하고 있지 않습니다. 상인들은 이로인해 PCI를 준수하지 않아도 되며, 사기 또는 사기성 지불거부의 피해를 덜 받습니다. 이는 신용카드가 없거나, 사기율이 너무나 높은 시장으로도 사업을 확장할 수 있는 가능성이 열린다는 것입니다. 어찌됐든 결과는 더 낮은 수수료, 더 큰 시장, 그리고 관리비용절약입니다.</li>
+              <li><em><b>보안과 통제</b></em> - 비트코인 사용자들은 자신들의 거래에 대한 완전한 통제권을 갖습니다. 다른 결제시스템처럼 상인들이 은근슬쩍 요금을 물리거나, 고객이 원치않은 요금을 물릴 수가 없습니다. 비트코인 거래는 또한 개인정보를 공개하지 않아도 됩니다. 이는 신분도용에 대한 강한 보안이 되며 비트코인 사용자들은 또한 자신들의 돈을 백업과 인크립션으로 보호할 수 있습니다.</li>
+              <li><em><b>투명성 및 중립성</b></em> - 비트코인 통화 공급에 관련된<a href="https://www.biteasy.com/">모든 정보</a>는 블럭 체인에서 누구나 손쉽게 실시간으로 확인하고 사용할 수 있습니다. 어떤 개인이나 단체도 비트코인 프로토콜을 통제하거나 조작할 수 없는데 이는 그것이 암호 작성적으로 안전하기 때문입니다. 이로 인해, 비트코인의 코어는 완전히 중립적이고, 투명하며, 예측될 수 있음을 신뢰할 수 있습니다.</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인의 단점은 무엇인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>대중의 수용도</b></em> - 많은 사람들이 아직 비트코인에 대해 모릅니다. 매일 더 많은 사업들이 비트코인을 받아들이고 있으나 아직은 그 수가 작고 비트코인이 <a href="https://en.wikipedia.org/wiki/Network_effect">네트워크효과</a>를 보려면 아직 성장이 필요합니다.</li>
+              <li><em><b>변동성</b></em> - 현재 유통되고 있는 비트코인의 <a href="https://bitcoincharts.com/bitcoin/">시가총액</a>과 비트코인을 사용하는 사업의 수가 아직 가능한 정도에 비해 많이 적습니다. 그렇기 때문에, 비교적 작은 이벤트, 거래, 또는 사업활동들이 비트코인 가격에 큰 영향을 끼칩니다. 이론적으로는, 비트코인 기술과 시장이 성숙함에 따라 가격의 변동성이 줄어들어야 합니다. 그렇지만 세계는 이런 창업적인 화폐를 아직 본적이 없습니다. 비트코인이 어떻게 될지는 두고봐야 할 것입니다. (흥미진진하지 않습니까?)</li>
+              <li><em><b>진행중인 개발</b></em> - 비트코인 소프트웨어는 아직 베타 버전이며 많은 미완성의 기능들이 활발한 개발중에 있습니다. 더 안전하고 대중들이 쉽게 접근할 수 있는 비트코인을 만들기 위해 새로운 툴, 기능, 서비스가 개발중에 있습니다. 이중 일부는 아직 모든 사람이 사용하기에는 이릅니다. 대부분의 비트코인 사업은 최근에 생겼으며 아직 어떠한 보험도 제공하지 않습니다. 전반적으로, 비트코인은 아직도 성숙하는 과정에 있습니다.</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 무엇인가요?</a>
-  <div>
-  <p>비트코인은 새로운 지불 시스템이자 완전한 디지털 화폐를 가능하게 하는 합의된 네트워크입니다. 중앙 권력이나 중간 상인이 없이 사용자에 의해 작동하는 최초의 분권화된 P2P 지불망입니다. 사용자 관점에서 볼 때, 비트코인은 인터넷 현금과 매우 유사합니다. 비트코인은 현존하는 가장 탁월한 <a href="http://financialcryptography.com/mt/archives/001325.html">삼식 부기 시스템</a>이기도 합니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 어떻게 작동하나요?</a>
-  <div>
-  <p>사용자 관점에서, Bitcoin은 개인 Bitcoin 지갑을 제공하고, 사용자가 그것을 이용하여 bitcoin을 주고 받을 수 있도록 하는 모바일 앱이나 컴퓨터 프로그램에 불과합니다. </p>
-  <p>비트코인 네트워크는 블럭 체인이라는 공공 회계원장을 공유하고 있습니다. 이 회계원장에는 여태까지 처리된 모든 거래가 포함되어 있어서, 사용자의 컴퓨터에서 모든 거래의 유효성을 검사할 수 있습니다. 각각의 거래는, 모든 사용자가 자신의 비트코인 주소에서 비트코인을 보내는 것을 완전히 제어할 수 있도록 하는, 보내는 주소에 상응하는 디지털 서명으로 보호됩니다. 또한, 누구나 특수 하드웨어의 연산력을 사용하여 거래를 처리하고 이 서비스에 대한 댓가를 비트코인으로 벌어들일 수 있습니다. 이것을 "채굴"이라고도 합니다. 비트코인에 대한 자세한 정보는 <a href="/ko/how-it-works">전용 페이지</a>와 <a href="/bitcoin.pdf">비트코인 원본</a>을 참고하세요.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인 채굴은 무엇인가요?</a>
-  <div>
-  <p>채굴은 거래를 처리하고, 네트워크를 안전하게 보호하며, 시스템내에 있는 모두의 일체 동기화를 유지하기 위해 컴퓨터의 연산능력을 사용하는 과정입니다. 이는 비트코인 데이터 센터와 같이 이해할 수 있습니다. 다만, 모든 국가에서 활동하는 채굴자들과 그 누구도 네트워크에 대한 지배권을 가지고 있지 않도록 하여 완전히 분권화되도록 설계되었다는 점을 제외하고는 말입니다. 이 과정은 금 채굴에 빗대어 "채굴"이라고 불리는데 이는 이 과정이 새로운 비트코인을 발행하는 일시적인 메커니즘이기도 하기 때문입니다. 하지만, 금 채굴과는 다르게 비트코인 채굴은 안전한 지불 네트워크를 운영하기 위해 필요한 유용한 서비스에 대한 대가로 보상을 제공합니다.  채굴은 마지막 비트코인이 발행된 후에도 필요할 것입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 어떻게 얻을 수 있나요?</a>
-  <div>
-  <ul>
-    <li>상품이나 서비스에 대한 대가로서</li>
-    <li><a href="http://howtobuybitcoins.info">비트코인 환전소</a>에서 비트코인을 구입하세요.</li>
-    <li><a href="https://localbitcoins.com/">당신 근처에 있는 누군가</a>와 비트코인을 교환하세요.</li>
-    <li>경쟁적인 <a href="http://www.bitcoinmining.com/">채굴</a>을 통해 비트코인을 벌어들이세요.</li>
-  </ul>
-  <p>아마 비트코인 거래소에서 신용카드나 Paypal같은 결제시스템으로 비트코인을 파는 개인들을 찾을 수 있을 것입니다. 그러나 거래소 자체에서는 이러한 결제방법을 허용하지 않습니다. 이는 누군가가 Paypal로 비트코인을 사놓고서는, 거래값의 반을 철회한 일들이 있었기 때문입니다. 이를 일반적으로 지불거부라고 부릅니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">사람들이 정말 비트코인을 사용하나요?</a>
-  <div>
-  <p>네. 비트코인을 사용하는 개인과 <a href="http://usebitcoins.info/">사업자의 수가 증가</a>하고 있습니다. 여기에는 식당, 아파트, 법률사무소 그리고 Namecheap, WordPress, Reddit, Flattr 같은 인기 온라인 서비스를 비롯한 소매상들이 포함됩니다. 비트코인은 아직 새로운 사회 현상이나, 아주 빠르게 성장하고 있습니다. 2013년 8월말 현재, <a href="https://bitcoincharts.com/bitcoin/">유통 중인 모든 비트코인의 가치</a>는 미화 15억 달러를 뛰어 넘었고, 매일 수백만 달러의 비트코인이 교환되고 있습니다.</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인으로 지불하는 것은 얼마나 어렵나요?</a>
-  <div>
-  <p>비트코인 지불은 직불카드나 신용카드를 이용한 구매보다 쉽습니다. 또한 은행계좌가 없어도 됩니다. 지불은 당신의 컴퓨터나 스마트콘에 있는 지갑 앱에 상대방의 비트코인 주소, 지불 금액, 그리고 보내기 버튼을 누름으로 하는 것입니다. 상대방의 비트코인 주소를 입력하는 것을 더욱 쉽게 하기 위해서 많은 지갑들이 QR 코드 기능이나 스마트폰을 서로 맞대기만 하면 되는 NFC 기술들을 도입했습니다.</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인의 장점은 무엇인가요?</a>
-  <div>
-  <ul>
-    <li><em><b>지불의 자유</b></em> -  세계 언제 어디서나 즉시 어떤 금액이라도 보내고 받는 것이 가능합니다. 은행 휴일 없습니다. 국경도 없습니다. 제한 한도도 없습니다. 비트코인은 사용자들이 그들의 돈에 대한 모든 통제권을 갖게 합니다.</li>
-    <li><em><b>매우 낮은 수수료</b></em> - 비트코인 결제는 현재 무료이거나 아주 적은 소액 거래에만 수수료가 붙습니다. 사용자들은 더 빠른 승인을 가져다 주는 처리 우선권을 얻기위해 거래에 수수료를 포함시킬 수 있습니다. 추가적으로, 상인들의 거래 처리, 비트코인의 불환화폐로의 환전, 그리고 매일 상인들의 은행계좌로 자금을 직접 예금하는 것을 돕기 위해 상인 처리기들이 따로 존재합니다. 이 서비스들은 비트코인에 기초해 있기에 PayPal이나 신용카드 네트워크보다 훨씬 더 낮은 가격에 제공될 수 있습니다.</li>
-    <li><em><b>상인들에게 적은 위험요소</b></em> - 비트코인 거래들은 안전하고, 철회불가하며, 고객의 민감한 또는 개인 정보를 포함하고 있지 않습니다. 상인들은 이로인해 PCI를 준수하지 않아도 되며, 사기 또는 사기성 지불거부의 피해를 덜 받습니다. 이는 신용카드가 없거나, 사기율이 너무나 높은 시장으로도 사업을 확장할 수 있는 가능성이 열린다는 것입니다. 어찌됐든 결과는 더 낮은 수수료, 더 큰 시장, 그리고 관리비용절약입니다.</li>
-    <li><em><b>보안과 통제</b></em> - 비트코인 사용자들은 자신들의 거래에 대한 완전한 통제권을 갖습니다. 다른 결제시스템처럼 상인들이 은근슬쩍 요금을 물리거나, 고객이 원치않은 요금을 물릴 수가 없습니다. 비트코인 거래는 또한 개인정보를 공개하지 않아도 됩니다. 이는 신분도용에 대한 강한 보안이 되며 비트코인 사용자들은 또한 자신들의 돈을 백업과 인크립션으로 보호할 수 있습니다.</li>
-    <li><em><b>투명성 및 중립성</b></em> - 비트코인 통화 공급에 관련된<a href="https://www.biteasy.com/">모든 정보</a>는 블럭 체인에서 누구나 손쉽게 실시간으로 확인하고 사용할 수 있습니다. 어떤 개인이나 단체도 비트코인 프로토콜을 통제하거나 조작할 수 없는데 이는 그것이 암호 작성적으로 안전하기 때문입니다. 이로 인해, 비트코인의 코어는 완전히 중립적이고, 투명하며, 예측될 수 있음을 신뢰할 수 있습니다.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인의 단점은 무엇인가요?</a>
-  <div>
-  <ul>
-    <li><em><b>대중의 수용도</b></em> - 많은 사람들이 아직 비트코인에 대해 모릅니다. 매일 더 많은 사업들이 비트코인을 받아들이고 있으나 아직은 그 수가 작고 비트코인이 <a href="https://en.wikipedia.org/wiki/Network_effect">네트워크효과</a>를 보려면 아직 성장이 필요합니다.</li>
-    <li><em><b>변동성</b></em> - 현재 유통되고 있는 비트코인의 <a href="https://bitcoincharts.com/bitcoin/">시가총액</a>과 비트코인을 사용하는 사업의 수가 아직 가능한 정도에 비해 많이 적습니다. 그렇기 때문에, 비교적 작은 이벤트, 거래, 또는 사업활동들이 비트코인 가격에 큰 영향을 끼칩니다. 이론적으로는, 비트코인 기술과 시장이 성숙함에 따라 가격의 변동성이 줄어들어야 합니다. 그렇지만 세계는 이런 창업적인 화폐를 아직 본적이 없습니다. 비트코인이 어떻게 될지는 두고봐야 할 것입니다. (흥미진진하지 않습니까?)</li>
-    <li><em><b>진행중인 개발</b></em> - 비트코인 소프트웨어는 아직 베타 버전이며 많은 미완성의 기능들이 활발한 개발중에 있습니다. 더 안전하고 대중들이 쉽게 접근할 수 있는 비트코인을 만들기 위해 새로운 툴, 기능, 서비스가 개발중에 있습니다. 이중 일부는 아직 모든 사람이 사용하기에는 이릅니다. 대부분의 비트코인 사업은 최근에 생겼으며 아직 어떠한 보험도 제공하지 않습니다. 전반적으로, 비트코인은 아직도 성숙하는 과정에 있습니다.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 안전한가요?</a>
-  <div>
-  <p>비트코인 기술 - 프로토콜과 암호 작성술 -은 강력한 보안성에 있어 든든한 성과를 보여왔습니다. 비트코인 네트워크는 아마 세계에서 가장 널리 유통된 컴퓨터 프로젝트일 것입니다. 비트코인의 가장 큰 취약점은 사용자의 실수일 것입니다. 비트코인 지갑에 저장되어 있는 필수적인 개인 키들을 실수로 잃어버리거나 삭제할 수 있기 때문입니다. 이는 전자로 저장된 물리적인 현찰과도 비슷합니다. 다행이도 사용자들은 자신들의 돈을 보호하기 위해서 <a href="/ko/secure-your-wallet">안전한 사용법</a>들을 실천하거나, 충분한 보안과 보험을 제공하는 좋은 서비스를 사용할 수 있습니다. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 합법인가요?</a>
-  <div>
-  <p>저희가 아는 최선의 한도에서 비트코인은 <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">아직까지 대부분의 사법권에서 불법으로</a> 정의되지 않았습니다. 아르헨티나나 러시아와 같은 어떤 사법권들은 외화에 대한 통제나 금지가 심하긴 합니다. 태국과 같은 사법권에서는 비트코인 거래소와 같은 법적실체들이 법적 허가를 받아야만 하도록 하기도 합니다.</p>
-  <p>여러 사법권의 규제기관들이 개인과 사업들이 사용하는 새로운 기술들을 공식적으로 규제되는 재정제도의 테두리안에서 이해할 수 있도록 하는 법적인 단계들을 제공하려는 노력들을 시작하고 있습니다. 예를 들어, 미국재무성 산하의 금융범죄단속네트워크 (FinCEN)는 가상화폐에 관련된 특정 활동들에 대한 비구속적인 안내서를 발행했습니다.</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인과 세금은 어떤가요?</a>
-  <div>
-  <p>비트코인은 통화화폐가 아니면서 어떤 사법관할의 법정통화 또한 아닙니다. 그러나 납세의 의무는 자본의 종류에 연연하지 않습니다. 비트코인으로 인한 소득, 매출, 지불 급여, 자본 이익, 등의 여러가지 대해서 조세채무를 지게하는 여러 종류의 관할들과 사법들이 있습니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 불법적인 활동에 유용한가요?</a>
-  <div>
-  <p>비트코인은 돈입니다. 돈은 언제나 합법적 그리고 불법적 활동들에 유용했습니다. 현찰, 신용카드, 그리고 현재의 은행시스템들만 봐도 그 금융범죄적인 사용량이 비트코인의 그것을 훨씬 상회합니다. 비트코인은 결제시스템의 엄청난 혁신을 가져올 수 있습니다. 그리고 그러한 혁신들은 그 결점보다는 이득을 더욱 고려해야 합니다.</p>
-  <p>비트코인은 돈을 더욱 안전하게 하고 금융범죄에 대한 보호와 방지를 개선하도록 설계되었습니다. 예를 들어서, 비트코인은 위조가 불가능합니다. 사용자들은 자신의 지불들에 대한 완전한 통제권을 갖으며 신용카드범죄로 인한 요금청구를 받지 않습니다. 비트코인 거래들은 철회가 불가능하며 사기성 입금취소 또한 불가능합니다. 비트코인은 백업, 인크립션, 다중서명, 등과 같은 유용한 메카니즘들을 통해 돈을 절도로부터 보호합니다.</p>
-  <p>비트코인이 은밀하고 철회 불가능한 지불이 가능하기 때문에 범죄자들에게 매력적인 도구일 것이라는 우려가 제기되곤 합니다. 그러나 이러한 것들은 이미 현찰과 전신 송금으로도 충분히 이루어지고 있습니다. 비트코인의 사용도 기존의 금융시스템의 그것과 비슷한 규제와 통제를 받을 것이라는 것에는 의심이 없습니다. 또한 비트코인은 금융기관의 범죄수사를 받지 않을수가 없을 것입니다. 일반적으로, 중요한 혁신의 돌파구들이 인정받기 전에는 그 혜택이 제대로 이해되기 이전에 논란이 많은 법입니다. 이에 대한 가장 좋은 예는 아마도 인터넷일 것입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 버블인가요?</a>
-  <div>
-  <p>가격의 급속한 상승을 버블이라고 할 수는 없습니다. 갑작스럽게 하향세의 가격정정을 겪게 될 인위적으로 과대평가된 가격이 버블인 것입니다. 비트코인의 가격변동은 수백수천의 시장참가자들의 인간적인 선택들이 복합적으로 비트코인 가격을 발견해가면서 일어나는 것입니다. 비트코인에 대한 시장정서의 변화는 비트코인에 대한 자신감 저하, 비트코인 경제의 기본을 벗어난 가격과 가치의 차이, 투기를 돋구는 언론매체의 활동, 불확신한 미래에 대한 두려움, 그리고 항상 존재하는 무지한 욕망과 과열을 포함합니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">왜 비트코인은 가치를 가지고 있죠?</a>
-  <div>
-  <p>비트코인은 돈의 한 형태로서 유용하기 때문에 가치가 있습니다. 비트코인은 돈의 특징들을 가지고 있습니다 (내구성, 휴대성, 대체가능성, 희소성, 가분성, 그리고 공인성). 비트코인의 이러한 특징들은 법정통화(통화화폐)라든지 다른 자본(금이나 은)과 같이 물리적인 특성에 의존하기보다 수학적인 특성에 의존합니다. 그러니까 비트코인은 수학을 토대로 한다는 것입니다. 이러한 특징들을 토대로한 돈이 가치를 가지기 위해 필요한 것은 오로지 신뢰와 수용입니다. 비트코인의 경우에는, 이미 비트코인을 수용하는 사용자, 사업가, 창업가들의 증가가 측정가능합니다. 다른 모든 화폐와 같이 비트코인의 가치는 비트코인을 지불수단으로서 받아들이는 사람들에서부터 직접적으로 오는 것입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 폰지 사기인가요?</a>
-  <div>
-  <p>폰지 사기란 투자자들의 투자금액을 사업들에 투자하여 나온 이윤으로 투자자들을 보상하지 않고 투자자들의 투자원금으로 보상하는 사기투자활동입니다. 폰지 사기는 더 이상 활동에 참여하는 이들이 없을 때, 가장 나중에 참여한 투자자들의 투자금액을 희생으로 무너지도록 설계되었습니다. </p>
-  <p>비트코인은 중앙행정위가 존재하지 않는 자유 소프트웨어 프로젝트입니다. 고로 누구도 투자회수금에 대한 사기적인 정보유출 또는 주장을 할 수 있는 권리가 없습니다. 미화, 유로, 엔화와 같은 다른 주요 화폐들과 같이 환율을 자유롭게 변동하며 구매력이 보장되지 않습니다. 이는 비트코인 소유주들이 예측할 수 없이 돈을 잃거나 버는 변동성을 낳습니다. 투기를 넘어서, 비트코인은 수천의 사용자들과 사업자들이 사용하고 있고 경쟁적인 특징들을 가진 유용한 결제시스템입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">누가 비트코인을 만들었나요?</a>
-  <div>
-  <p>비트코인은 "비밀-화폐"라는 개념의 최초의 구현입니다. 이 개념은 1998년 웨이 다이가 사이버펑크들의 메일링 리스트 상에서 최초로 묘사했으며 중앙 권력보다는 암호작성술을 사용해 발행과 거래를 통제하는 새로운 형태의 통화에 대한 아이디어를 제시하였습니다. 최초의 비트코인 설계서와 개념 증명은 2009년 사토시 나카모토에 의해 암호작성술 메일링 리스트 내에 출판되었고, 사토시는 2010년 말 자신에 대해 거의 밝히지 않은 채 프로젝트를 떠났습니다. 그 이후로 커뮤니티는 기하급수적으로 증가하여 비트코인을 위해 애쓰는 <a href="/ko/development">많은 개발자들</a>과 함께 하게 되었습니다.</p>
-  <p>사토시의 익명성은 자주 정당성이 없는 이의를 일으켜왔습니다. 이는 대부분 비트코인의 오픈소스로서의 본질을 잘못 이해하는데서 비롯되는 것입니다. 비트코인 프로토콜과 소프트웨어는 공개적으로 발표되었고 세계 어느 개발자나 그 코드를 검토하고 자신들만의 비트코인 소프트웨어로 수정할 수 있는 것입니다. 현재의 개발자들과 마찬가지로 사토시의 영향력 또한 다른 이들이 비트코인을 받아들임으로 인해 한정되었고 그래서 그는 비트코인을 조종하지 않았습니다. 오늘날 우리에게 있어 비트코인을 발명한 사람의 신원은 종이를 발명한 사람의 신원만큼의 의의만이 있을 것입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인이 전혀 쓸모없어질 수도 있나요?</a>
-  <div>
-  <p>네. 역사는 실패하여 사용이 중지된 화폐들 예로 가득차 있습니다. 바이마르 공화국의 <a href="https://en.wikipedia.org/wiki/German_gold_mark">독일 마크</a>가 그러했고, 더 근래에는 <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">짐바브웨 달러</a>가 있습니다. 이전의 화폐들은 주로 초인플레이션에 의해 망했습니다. 비트코인은 초인플레이션을 겪는 것이 불가능합니다. 그러나 언제나 기술적인 실패, 경쟁 화폐들, 그리고 정치적인 요인에 의해 망할 수 있을 것입니다. 기본적으로, 어떠한 화폐도 어려운 시기와 실패에서 완전히 자유로울 수 없는 것입니다. 태생 이래 지난 몇년간 비트코인은 지속적인 성장의 가능성을 보여왔으며 믿을만한 것이라는 것을 증명해 왔습니다. 그러나 그 누구도 비트코인의 미래를 장담할 수는 없는 것입니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 완전히 가상적이고 비물적인가요?</a>
-  <div>
-  <p>비트코인은 신용카드만큼 가상적이고 사람들은 온라인 뱅킹 네트워크를 매일 사용합니다. 비트코인은 여타 형식의 돈과 같이 온라인에서 또는 가게에서 돈을 지불하는데 사용될 수 있습니다. 또한 비트코인은 <a href="https://www.casascius.com/">Casascius 동전</a>과 같이 물리적인 형태로도 환전될 수 있습니다. 그러나 모바일폰으로 지불을 하는 것이 더 편리할 것입니다. 비트코인 잔액은 광범위한 분산 네트워크에 저장되며, 이는 누구에 의해서도 부정하게 변경될 수 없습니다. 다르게 말하면, 비트코인 사용자들은 자신들의 펀드에 대한 독점적인 통제권을 가지며, 비트코인이 가상적이라고 해서 없어질 수는 없습니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">사람들은 왜 비트코인을 신뢰하나요?</a>
-  <div>
-  <p>비트코인에 대한 대부분의 신뢰는 그것이 신뢰가 필요없다는 데에서 나옵니다. 비트코인은 완전히 오픈소스이며 분권화되어 있습니다. 이는 누구나 언제 어디서나 전체 소스코드를 볼 수 있다는 뜻입니다. 고로 세계 어느 개발자든지 비트코인이 어떻게 작동하는지를 확인할 수 있습니다. 현재까지 발생된 모든 비트코인과 거래들을 누구나 투명하게 실시간으로 조사할 수 있습니다. 모든 지불이 제삼자의 존재여부와 상관없이 이루어질 수 있으며, 시스템 전체가 힘껏 상호 심시된 온라인 뱅킹에서 사용하는 것과 비슷한 암호 작성 알고리즘에 의해 보호됩니다. 어떤 개인이나 단체가 비트코인을 독점통제할 수 없으며, 구성원들 전부가 신뢰할 수 없더라도 네트워크는 안전하게 유지됩니다.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">비트코인은 익명성을 보장하나요?</a>
-  <div>
-  <p>다른 종류의 돈과 같이 비트코인은 적절한 수준의 프라이버시를 제공하는 상태에서 유저들이 지불을 하고 받을 수 있도록 설계되었습니다. 그러나, 이는 현찰과 같은 수준의 프라이버시를 제공하지 않으며 익명성을 제공하지 않습니다. 비트코인의 사용은 광범위하게 공개된 정보기록들을 남김니다. <a href="/ko/protect-your-privacy">여러 메카니즘</a>들이 사용자의 신원을 보호하기 위해 존재하나, 아직은 개발중에 있습니다. 나아가 이러한 기능들이 사용자들에 의해 올바로 사용되려면 아직 해야할 일들이 많습니다.</p>
-  <p>비트코인을 이용한 사적인 거래들이 불법적인 목적으로 사용될 수 있다는 우려들이 제기되어왔습니다. 하지만 비트코인 또한 다른 재정시스템과 같이 법적인 규제와 단속을 받을 것이라는 것은 의심의 여지가 없습니다. 비트코인은 현찰보다 더 나은 익명성을 가질 수 없고 범죄 수사에서 제외될 것이라고 기대할 수도 없습니다. 또한 비트코인이 다양한 범위의 금융범죄를 방지하도록 설계되었다는 것도 기억해야 합니다.</p>
-  </div>
-</div>
-<p>Bitcoin에 대해 더 많은 것을 배우시려면, <a href="/en/faq">질문과답변</a> 또는 <a href="https://en.bitcoin.it/wiki/FAQ">비트코인 위키</a>를 방문해주세요.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 안전한가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인 기술 - 프로토콜과 암호 작성술 -은 강력한 보안성에 있어 든든한 성과를 보여왔습니다. 비트코인 네트워크는 아마 세계에서 가장 널리 유통된 컴퓨터 프로젝트일 것입니다. 비트코인의 가장 큰 취약점은 사용자의 실수일 것입니다. 비트코인 지갑에 저장되어 있는 필수적인 개인 키들을 실수로 잃어버리거나 삭제할 수 있기 때문입니다. 이는 전자로 저장된 물리적인 현찰과도 비슷합니다. 다행이도 사용자들은 자신들의 돈을 보호하기 위해서 <a href="/ko/secure-your-wallet">안전한 사용법</a>들을 실천하거나, 충분한 보안과 보험을 제공하는 좋은 서비스를 사용할 수 있습니다. </p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 합법인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>저희가 아는 최선의 한도에서 비트코인은 <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">아직까지 대부분의 사법권에서 불법으로</a> 정의되지 않았습니다. 아르헨티나나 러시아와 같은 어떤 사법권들은 외화에 대한 통제나 금지가 심하긴 합니다. 태국과 같은 사법권에서는 비트코인 거래소와 같은 법적실체들이 법적 허가를 받아야만 하도록 하기도 합니다.</p>
+            <p>여러 사법권의 규제기관들이 개인과 사업들이 사용하는 새로운 기술들을 공식적으로 규제되는 재정제도의 테두리안에서 이해할 수 있도록 하는 법적인 단계들을 제공하려는 노력들을 시작하고 있습니다. 예를 들어, 미국재무성 산하의 금융범죄단속네트워크 (FinCEN)는 가상화폐에 관련된 특정 활동들에 대한 비구속적인 안내서를 발행했습니다.</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인과 세금은 어떤가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 통화화폐가 아니면서 어떤 사법관할의 법정통화 또한 아닙니다. 그러나 납세의 의무는 자본의 종류에 연연하지 않습니다. 비트코인으로 인한 소득, 매출, 지불 급여, 자본 이익, 등의 여러가지 대해서 조세채무를 지게하는 여러 종류의 관할들과 사법들이 있습니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 불법적인 활동에 유용한가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 돈입니다. 돈은 언제나 합법적 그리고 불법적 활동들에 유용했습니다. 현찰, 신용카드, 그리고 현재의 은행시스템들만 봐도 그 금융범죄적인 사용량이 비트코인의 그것을 훨씬 상회합니다. 비트코인은 결제시스템의 엄청난 혁신을 가져올 수 있습니다. 그리고 그러한 혁신들은 그 결점보다는 이득을 더욱 고려해야 합니다.</p>
+            <p>비트코인은 돈을 더욱 안전하게 하고 금융범죄에 대한 보호와 방지를 개선하도록 설계되었습니다. 예를 들어서, 비트코인은 위조가 불가능합니다. 사용자들은 자신의 지불들에 대한 완전한 통제권을 갖으며 신용카드범죄로 인한 요금청구를 받지 않습니다. 비트코인 거래들은 철회가 불가능하며 사기성 입금취소 또한 불가능합니다. 비트코인은 백업, 인크립션, 다중서명, 등과 같은 유용한 메카니즘들을 통해 돈을 절도로부터 보호합니다.</p>
+            <p>비트코인이 은밀하고 철회 불가능한 지불이 가능하기 때문에 범죄자들에게 매력적인 도구일 것이라는 우려가 제기되곤 합니다. 그러나 이러한 것들은 이미 현찰과 전신 송금으로도 충분히 이루어지고 있습니다. 비트코인의 사용도 기존의 금융시스템의 그것과 비슷한 규제와 통제를 받을 것이라는 것에는 의심이 없습니다. 또한 비트코인은 금융기관의 범죄수사를 받지 않을수가 없을 것입니다. 일반적으로, 중요한 혁신의 돌파구들이 인정받기 전에는 그 혜택이 제대로 이해되기 이전에 논란이 많은 법입니다. 이에 대한 가장 좋은 예는 아마도 인터넷일 것입니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 버블인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>가격의 급속한 상승을 버블이라고 할 수는 없습니다. 갑작스럽게 하향세의 가격정정을 겪게 될 인위적으로 과대평가된 가격이 버블인 것입니다. 비트코인의 가격변동은 수백수천의 시장참가자들의 인간적인 선택들이 복합적으로 비트코인 가격을 발견해가면서 일어나는 것입니다. 비트코인에 대한 시장정서의 변화는 비트코인에 대한 자신감 저하, 비트코인 경제의 기본을 벗어난 가격과 가치의 차이, 투기를 돋구는 언론매체의 활동, 불확신한 미래에 대한 두려움, 그리고 항상 존재하는 무지한 욕망과 과열을 포함합니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">왜 비트코인은 가치를 가지고 있죠?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 돈의 한 형태로서 유용하기 때문에 가치가 있습니다. 비트코인은 돈의 특징들을 가지고 있습니다 (내구성, 휴대성, 대체가능성, 희소성, 가분성, 그리고 공인성). 비트코인의 이러한 특징들은 법정통화(통화화폐)라든지 다른 자본(금이나 은)과 같이 물리적인 특성에 의존하기보다 수학적인 특성에 의존합니다. 그러니까 비트코인은 수학을 토대로 한다는 것입니다. 이러한 특징들을 토대로한 돈이 가치를 가지기 위해 필요한 것은 오로지 신뢰와 수용입니다. 비트코인의 경우에는, 이미 비트코인을 수용하는 사용자, 사업가, 창업가들의 증가가 측정가능합니다. 다른 모든 화폐와 같이 비트코인의 가치는 비트코인을 지불수단으로서 받아들이는 사람들에서부터 직접적으로 오는 것입니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 폰지 사기인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>폰지 사기란 투자자들의 투자금액을 사업들에 투자하여 나온 이윤으로 투자자들을 보상하지 않고 투자자들의 투자원금으로 보상하는 사기투자활동입니다. 폰지 사기는 더 이상 활동에 참여하는 이들이 없을 때, 가장 나중에 참여한 투자자들의 투자금액을 희생으로 무너지도록 설계되었습니다. </p>
+            <p>비트코인은 중앙행정위가 존재하지 않는 자유 소프트웨어 프로젝트입니다. 고로 누구도 투자회수금에 대한 사기적인 정보유출 또는 주장을 할 수 있는 권리가 없습니다. 미화, 유로, 엔화와 같은 다른 주요 화폐들과 같이 환율을 자유롭게 변동하며 구매력이 보장되지 않습니다. 이는 비트코인 소유주들이 예측할 수 없이 돈을 잃거나 버는 변동성을 낳습니다. 투기를 넘어서, 비트코인은 수천의 사용자들과 사업자들이 사용하고 있고 경쟁적인 특징들을 가진 유용한 결제시스템입니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">누가 비트코인을 만들었나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 "비밀-화폐"라는 개념의 최초의 구현입니다. 이 개념은 1998년 웨이 다이가 사이버펑크들의 메일링 리스트 상에서 최초로 묘사했으며 중앙 권력보다는 암호작성술을 사용해 발행과 거래를 통제하는 새로운 형태의 통화에 대한 아이디어를 제시하였습니다. 최초의 비트코인 설계서와 개념 증명은 2009년 사토시 나카모토에 의해 암호작성술 메일링 리스트 내에 출판되었고, 사토시는 2010년 말 자신에 대해 거의 밝히지 않은 채 프로젝트를 떠났습니다. 그 이후로 커뮤니티는 기하급수적으로 증가하여 비트코인을 위해 애쓰는 <a href="/ko/development">많은 개발자들</a>과 함께 하게 되었습니다.</p>
+            <p>사토시의 익명성은 자주 정당성이 없는 이의를 일으켜왔습니다. 이는 대부분 비트코인의 오픈소스로서의 본질을 잘못 이해하는데서 비롯되는 것입니다. 비트코인 프로토콜과 소프트웨어는 공개적으로 발표되었고 세계 어느 개발자나 그 코드를 검토하고 자신들만의 비트코인 소프트웨어로 수정할 수 있는 것입니다. 현재의 개발자들과 마찬가지로 사토시의 영향력 또한 다른 이들이 비트코인을 받아들임으로 인해 한정되었고 그래서 그는 비트코인을 조종하지 않았습니다. 오늘날 우리에게 있어 비트코인을 발명한 사람의 신원은 종이를 발명한 사람의 신원만큼의 의의만이 있을 것입니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인이 전혀 쓸모없어질 수도 있나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>네. 역사는 실패하여 사용이 중지된 화폐들 예로 가득차 있습니다. 바이마르 공화국의 <a href="https://en.wikipedia.org/wiki/German_gold_mark">독일 마크</a>가 그러했고, 더 근래에는 <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">짐바브웨 달러</a>가 있습니다. 이전의 화폐들은 주로 초인플레이션에 의해 망했습니다. 비트코인은 초인플레이션을 겪는 것이 불가능합니다. 그러나 언제나 기술적인 실패, 경쟁 화폐들, 그리고 정치적인 요인에 의해 망할 수 있을 것입니다. 기본적으로, 어떠한 화폐도 어려운 시기와 실패에서 완전히 자유로울 수 없는 것입니다. 태생 이래 지난 몇년간 비트코인은 지속적인 성장의 가능성을 보여왔으며 믿을만한 것이라는 것을 증명해 왔습니다. 그러나 그 누구도 비트코인의 미래를 장담할 수는 없는 것입니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 완전히 가상적이고 비물적인가요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인은 신용카드만큼 가상적이고 사람들은 온라인 뱅킹 네트워크를 매일 사용합니다. 비트코인은 여타 형식의 돈과 같이 온라인에서 또는 가게에서 돈을 지불하는데 사용될 수 있습니다. 또한 비트코인은 <a href="https://www.casascius.com/">Casascius 동전</a>과 같이 물리적인 형태로도 환전될 수 있습니다. 그러나 모바일폰으로 지불을 하는 것이 더 편리할 것입니다. 비트코인 잔액은 광범위한 분산 네트워크에 저장되며, 이는 누구에 의해서도 부정하게 변경될 수 없습니다. 다르게 말하면, 비트코인 사용자들은 자신들의 펀드에 대한 독점적인 통제권을 가지며, 비트코인이 가상적이라고 해서 없어질 수는 없습니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">사람들은 왜 비트코인을 신뢰하나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>비트코인에 대한 대부분의 신뢰는 그것이 신뢰가 필요없다는 데에서 나옵니다. 비트코인은 완전히 오픈소스이며 분권화되어 있습니다. 이는 누구나 언제 어디서나 전체 소스코드를 볼 수 있다는 뜻입니다. 고로 세계 어느 개발자든지 비트코인이 어떻게 작동하는지를 확인할 수 있습니다. 현재까지 발생된 모든 비트코인과 거래들을 누구나 투명하게 실시간으로 조사할 수 있습니다. 모든 지불이 제삼자의 존재여부와 상관없이 이루어질 수 있으며, 시스템 전체가 힘껏 상호 심시된 온라인 뱅킹에서 사용하는 것과 비슷한 암호 작성 알고리즘에 의해 보호됩니다. 어떤 개인이나 단체가 비트코인을 독점통제할 수 없으며, 구성원들 전부가 신뢰할 수 없더라도 네트워크는 안전하게 유지됩니다.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">비트코인은 익명성을 보장하나요?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>다른 종류의 돈과 같이 비트코인은 적절한 수준의 프라이버시를 제공하는 상태에서 유저들이 지불을 하고 받을 수 있도록 설계되었습니다. 그러나, 이는 현찰과 같은 수준의 프라이버시를 제공하지 않으며 익명성을 제공하지 않습니다. 비트코인의 사용은 광범위하게 공개된 정보기록들을 남김니다. <a href="/ko/protect-your-privacy">여러 메카니즘</a>들이 사용자의 신원을 보호하기 위해 존재하나, 아직은 개발중에 있습니다. 나아가 이러한 기능들이 사용자들에 의해 올바로 사용되려면 아직 해야할 일들이 많습니다.</p>
+            <p>비트코인을 이용한 사적인 거래들이 불법적인 목적으로 사용될 수 있다는 우려들이 제기되어왔습니다. 하지만 비트코인 또한 다른 재정시스템과 같이 법적인 규제와 단속을 받을 것이라는 것은 의심의 여지가 없습니다. 비트코인은 현찰보다 더 나은 익명성을 가질 수 없고 범죄 수사에서 제외될 것이라고 기대할 수도 없습니다. 또한 비트코인이 다양한 범위의 금융범죄를 방지하도록 설계되었다는 것도 기억해야 합니다.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>Bitcoin에 대해 더 많은 것을 배우시려면, <a href="/en/faq">질문과답변</a> 또는 <a href="https://en.bitcoin.it/wiki/FAQ">비트코인 위키</a>를 방문해주세요.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -514,14 +608,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ko/legal">법적 고지</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/legal">법적 고지</a></li>
 			
-			<li><a href="/ko/privacy">개인 정보 보호</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/privacy">개인 정보 보호</a></li>
 			
-			<li><a href="/ko/press">기사</a></li>
-			<li><a href="/ko/about-us">bitcoin.org 소개</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/press">기사</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/about-us">bitcoin.org 소개</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -530,7 +624,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -552,13 +647,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -569,7 +666,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

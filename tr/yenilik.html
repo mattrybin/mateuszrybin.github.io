@@ -10,15 +10,29 @@
 <title>Yenilik - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/tr.png"><strong>Türkçe</strong>
+          <img src="/img/flags/tr.png"><strong>Türkçe</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">SSS</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Ödeme yöntemlerinde yenilik</h1>
-<p class="summarytxt">Bitcoin'in protokolü A'dan B'ye para yollanmasından ibaret değildir. Bunun yanında birçok özelliği ve henüz keşfedilmeyi bekleyen imkanları vardır. İşte burada şimdiden araştırılmış bazı teknolojiler var ve bunlar bazı durumlarda gerçek ürünlere ve servislere dönüşebilir. Bitcoin'i en iyi şekilde kullanabilecek yöntem henüz muhtemelen keşfedilmeyi bekliyor.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Ödeme yöntemlerinde yenilik</h1>
+  <h2 class="content_innovation--subtitle">Bitcoin'in protokolü A'dan B'ye para yollanmasından ibaret değildir. Bunun yanında birçok özelliği ve henüz keşfedilmeyi bekleyen imkanları vardır. İşte burada şimdiden araştırılmış bazı teknolojiler var ve bunlar bazı durumlarda gerçek ürünlere ve servislere dönüşebilir. Bitcoin'i en iyi şekilde kullanabilecek yöntem henüz muhtemelen keşfedilmeyi bekliyor.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Dolandırıcılığa karşı kontrol</h3>
+	    <p>Bitcoin ile eşi görülmemiş bir güvenliğe sahip olmak mümkün. Ağ kullanıcılarına geri ödeme ya da istenmeyen ödemeler gibi en yaygın dolandırıcılıklara karşı koruma sağlar ve sahtesinin yapılması mümkün değildir. Kullanıcılar kendi cüzdanlarının yedeğini alabilir ya da şifreleyebilir ve donanımsal cüzdan gelecekte para kaybını ya da çalınmasını çok zor hale getirecektir. Bitcoin kullanıcılarına paraları üzerinde tam bir hakimiyet sağlayacak şekilde tasarlanmıştır.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Dolandırıcılığa karşı kontrol</h2>
-<p>Bitcoin ile eşi görülmemiş bir güvenliğe sahip olmak mümkün. Ağ kullanıcılarına geri ödeme ya da istenmeyen ödemeler gibi en yaygın dolandırıcılıklara karşı koruma sağlar ve sahtesinin yapılması mümkün değildir. Kullanıcılar kendi cüzdanlarının yedeğini alabilir ya da şifreleyebilir ve donanımsal cüzdan gelecekte para kaybını ya da çalınmasını çok zor hale getirecektir. Bitcoin kullanıcılarına paraları üzerinde tam bir hakimiyet sağlayacak şekilde tasarlanmıştır.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Küresel erişebilirlik</h3>
+	    <p>Dünyadaki bütün ödemeler birlikte işlem görebilir. Bitcoin, her hangi bir bankanın, iş yerinin ya da bireyin istediği zaman ve istediği yere, bir banka hesabına ihtiyacı olmadan güvenle para göndermeyi sağlar. Bitcoin henüz sahip olduğu kısıtlamalarından dolayı kendi ödeme sistemini çok iyi oluşturamamış bir çok ülkede kullanılabiliyor. Bitcoin ticari olarak dünya çapında etkisini arttırıyor ve bu uluslararası ticaretin gelişmesine yardımcı olabilir.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Uygun maliyet</h3>
+	    <p>Kriptografinin kullanımı ile yavaş ve masraflı aracılar olmadan güvenli ödemeler mümkün olur . Bir Bitcoin işlemi rakipleri ile karşılaştırıldığında çok daha ucuzdur ve tamamlanması daha kısa sürer. Bu da Bitcoin'in gelecekte yaygın bir ödeme yöntemi olabilecek potansiyeli taşıdığını gösterir. Bitcoin ayrıca bir çok ülkede işçi ödemelerindeki yüksek işlem ücretlerini keserek, <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">açlığın azalmasında</a> rol oynar.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Bahşiş ve bağışlar</h3>
+	    <p>Bitcoin bir çok durumda bahşiş ve bağış ödemelerine etkili çözümler sunar. Para yollamak bir tık kadar ve bağış toplamak bir QR kodunun gösterilmesi kadar kolaydır. Bağışlar halka görünür olabilir, kar amacı gütmeyen şirketlere muazzam bir şeffaflık sunar. Doğal felaketler gibi acil durumlarda Bitcoin bağışları hızlı cevap verebilmesi nedeni ile katkı sağlayabilir.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Topluluk destekli</h3>
+	    <p>Her ne kadar kullanılması henüz kolay olmasa da, Bitcoin Kickstarter tarzı kitle fonlaması kampanyalarında yani belli bir grup katılımcının paralarını rehin bıraktıkları ve sadece belirlenen hedefe ulaşılanca gönderilen bir sistemde kullanılabilir. Bu tarz güvence kontratları, bir işlemi tüm şartlar karşılanana kadar gerçekleştirmeyen Bitcoin protokolünde yerini alır. Kitle fonlaması hakkında <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">daha fazla bilgi</a>.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Mikro ödemeler</h3>
+	    <p>Bitcoin bir dolar değerinde ödemeleri ve yakında çok daha düşük miktarda olan işlemleri yapabilirsiniz. Bu gibi ödemeler bugün bile rutin haldedir. Saniyeye göre ödeme yaptığınız bir internet radyosu dinlediğinizi düşünün ya da reklam görünmemesi için bir web sitesine çok düşük miktarda ödeme yaptığınızı, ya da kilobayt başı WiFi hizmeti satın aldığınızı düşünün. Bitcoin tüm bu ödemeleri yapabilecek yeteneğe sahiptir. Bitcoin mikro ödemeler hakkında <a href="https://bitcoinj.github.io/working-with-micropayments">daha fazla</a> bilgi edinin.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Anlaşmazlık tartışmaları</h3>
+	    <p>Bitcoin çoklu imzayı kullanan yaratıcı aracılık anlaşmazlık sistemleri geliştirmek için kullanılabilir. Bu gibi bir ödeme yöntemi ile üçüncü bir kişi bir ödemeyi paraları üzerinde tam yetkiye sahip olmayan diğer kişilerin anlaşmasını haklı bulmayarak onaylayabilir ve ret edebilir. Bu servisler kullanıcılar ve Bitcoin kullanan mağazalar için rekabetçi olduğundan, büyük ihtimalle bedava bir rekabet ve yüksek kalite standartlarına liderlik edecek.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Çoklu imza hesapları</h3>
+	    <p>Çoklu imza, bir işlemin gerçekleşmesi için onay vermesi belirlenmiş bazı grup ya da kişilerden tamamı onay verdiğinde bu işleme izin verir. Bir yönetim kurulu bunu, bir üyenin diğer üyelerin onayını almadan harcama yapmasını engelleyebilir. Bu ayrıca bankalar tarafından kullanıcı farklı bir bilgi sağlamadıkça, belli bir eşiğin üzerindeki ödemeleri bloklayarak hırsızlığı önlemek amacıyla kullanılabilir. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Güven ve dürüstlük</h3>
+	    <p>Bitcoin'in, bankaların başına bela olmuş bir çok sorun için bir çözümü vardır. Seçkin hesaplama şeffaflığı, dijital kontratlar ve geri dönüşümsüz işlemleri ile Bitcoin, güven ve mutabakat sağlama amacı ile kullanılabilir. Yolsuz bankalar bu sistemde, diğer bankaların ve kişilerin harcamalarından hileli kar elde edemezler. İleride oluşacak dev bankalar Bitcoin'i destekleyerek eski dürüstlüğü geri getirebilir ve finansal dünyayı güvenilir hale getirebilirler.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Esneklik ve merkezsizleşme</h3>
+	    <p>Sahip olduğu aşırı merkezsizliği ile, Bitcoin yüksek oranda esnek ve yedekli değişik bir ödeme formu yarattı. Bitcoin ile milyonlarca dolarlık ödemelerin altından askeri korumaya ihtiyaç duymadan kalkabilirsiniz. Bir bilgi merkezi gibi merkezi bir hata noktası olmadığından, sisteme saldırmak çok zor olur. Bitcoin güvenli bir yerel ve küresel finansal yöntem için önemli bir adımı temsil eder.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Esnek şeffaflık</h3>
+	    <p>Bütün Bitcoin işlemleri halka açık ve şeffaf olmasına rağmen, değiştirilmediği taktirde bu işlemleri yapan kişilerin kimlikleri gizlidir. Bu da kişilere ve şirketlere şeffaf bir çalışma ortamı hazırlar. Mesela kar amacı gütmeyen şirketler gibi bir şirket belli bir işlemi ya da bakiyeyi sadece istediği çalışanlarına göstermeyi seçebilir ve bu şekilde herkes onların aldığı günlük ve aylık bağışlarının miktarını görebilir.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Otomatik çözümler</h3>
+	    <p>Otomatikleştirilmiş servisler genelde nakit ve kredi kartı ödemelerindeki limitlerle ve ek ücretlerle baş etmelidir. Bu, otobüs biletinden kahve makinasına her türden satış makinesini içerir. Bitcoin yeni nesil için her türlü ödeme yöntemini kesintisiz olarak karşılayabilecek şekilde tasarlanmıştır.  Kendisini sürebilen taksilerin var olduğnu hayal edin, ya da alış veriş çantanızın sıra beklemeden sizden ödeme aldığını. Pek çok fikir mümkündür.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Küresel erişebilirlik</h2>
-<p>Dünyadaki bütün ödemeler birlikte işlem görebilir. Bitcoin, her hangi bir bankanın, iş yerinin ya da bireyin istediği zaman ve istediği yere, bir banka hesabına ihtiyacı olmadan güvenle para göndermeyi sağlar. Bitcoin henüz sahip olduğu kısıtlamalarından dolayı kendi ödeme sistemini çok iyi oluşturamamış bir çok ülkede kullanılabiliyor. Bitcoin ticari olarak dünya çapında etkisini arttırıyor ve bu uluslararası ticaretin gelişmesine yardımcı olabilir.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Uygun maliyet</h2>
-<p>Kriptografinin kullanımı ile yavaş ve masraflı aracılar olmadan güvenli ödemeler mümkün olur . Bir Bitcoin işlemi rakipleri ile karşılaştırıldığında çok daha ucuzdur ve tamamlanması daha kısa sürer. Bu da Bitcoin'in gelecekte yaygın bir ödeme yöntemi olabilecek potansiyeli taşıdığını gösterir. Bitcoin ayrıca bir çok ülkede işçi ödemelerindeki yüksek işlem ücretlerini keserek, <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">açlığın azalmasında</a> rol oynar.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Bahşiş ve bağışlar</h2>
-<p>Bitcoin bir çok durumda bahşiş ve bağış ödemelerine etkili çözümler sunar. Para yollamak bir tık kadar ve bağış toplamak bir QR kodunun gösterilmesi kadar kolaydır. Bağışlar halka görünür olabilir, kar amacı gütmeyen şirketlere muazzam bir şeffaflık sunar. Doğal felaketler gibi acil durumlarda Bitcoin bağışları hızlı cevap verebilmesi nedeni ile katkı sağlayabilir.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Topluluk destekli</h2>
-<p>Her ne kadar kullanılması henüz kolay olmasa da, Bitcoin Kickstarter tarzı kitle fonlaması kampanyalarında yani belli bir grup katılımcının paralarını rehin bıraktıkları ve sadece belirlenen hedefe ulaşılanca gönderilen bir sistemde kullanılabilir. Bu tarz güvence kontratları, bir işlemi tüm şartlar karşılanana kadar gerçekleştirmeyen Bitcoin protokolünde yerini alır. Kitle fonlaması hakkında <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">daha fazla bilgi</a>.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Mikro ödemeler</h2>
-<p>Bitcoin bir dolar değerinde ödemeleri ve yakında çok daha düşük miktarda olan işlemleri yapabilirsiniz. Bu gibi ödemeler bugün bile rutin haldedir. Saniyeye göre ödeme yaptığınız bir internet radyosu dinlediğinizi düşünün ya da reklam görünmemesi için bir web sitesine çok düşük miktarda ödeme yaptığınızı, ya da kilobayt başı WiFi hizmeti satın aldığınızı düşünün. Bitcoin tüm bu ödemeleri yapabilecek yeteneğe sahiptir. Bitcoin mikro ödemeler hakkında <a href="https://bitcoinj.github.io/working-with-micropayments">daha fazla</a> bilgi edinin.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Anlaşmazlık tartışmaları</h2>
-<p>Bitcoin çoklu imzayı kullanan yaratıcı aracılık anlaşmazlık sistemleri geliştirmek için kullanılabilir. Bu gibi bir ödeme yöntemi ile üçüncü bir kişi bir ödemeyi paraları üzerinde tam yetkiye sahip olmayan diğer kişilerin anlaşmasını haklı bulmayarak onaylayabilir ve ret edebilir. Bu servisler kullanıcılar ve Bitcoin kullanan mağazalar için rekabetçi olduğundan, büyük ihtimalle bedava bir rekabet ve yüksek kalite standartlarına liderlik edecek.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Çoklu imza hesapları</h2>
-<p>Çoklu imza, bir işlemin gerçekleşmesi için onay vermesi belirlenmiş bazı grup ya da kişilerden tamamı onay verdiğinde bu işleme izin verir. Bir yönetim kurulu bunu, bir üyenin diğer üyelerin onayını almadan harcama yapmasını engelleyebilir. Bu ayrıca bankalar tarafından kullanıcı farklı bir bilgi sağlamadıkça, belli bir eşiğin üzerindeki ödemeleri bloklayarak hırsızlığı önlemek amacıyla kullanılabilir. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Güven ve dürüstlük</h2>
-<p>Bitcoin'in, bankaların başına bela olmuş bir çok sorun için bir çözümü vardır. Seçkin hesaplama şeffaflığı, dijital kontratlar ve geri dönüşümsüz işlemleri ile Bitcoin, güven ve mutabakat sağlama amacı ile kullanılabilir. Yolsuz bankalar bu sistemde, diğer bankaların ve kişilerin harcamalarından hileli kar elde edemezler. İleride oluşacak dev bankalar Bitcoin'i destekleyerek eski dürüstlüğü geri getirebilir ve finansal dünyayı güvenilir hale getirebilirler.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Esneklik ve merkezsizleşme</h2>
-<p>Sahip olduğu aşırı merkezsizliği ile, Bitcoin yüksek oranda esnek ve yedekli değişik bir ödeme formu yarattı. Bitcoin ile milyonlarca dolarlık ödemelerin altından askeri korumaya ihtiyaç duymadan kalkabilirsiniz. Bir bilgi merkezi gibi merkezi bir hata noktası olmadığından, sisteme saldırmak çok zor olur. Bitcoin güvenli bir yerel ve küresel finansal yöntem için önemli bir adımı temsil eder.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Esnek şeffaflık</h2>
-<p>Bütün Bitcoin işlemleri halka açık ve şeffaf olmasına rağmen, değiştirilmediği taktirde bu işlemleri yapan kişilerin kimlikleri gizlidir. Bu da kişilere ve şirketlere şeffaf bir çalışma ortamı hazırlar. Mesela kar amacı gütmeyen şirketler gibi bir şirket belli bir işlemi ya da bakiyeyi sadece istediği çalışanlarına göstermeyi seçebilir ve bu şekilde herkes onların aldığı günlük ve aylık bağışlarının miktarını görebilir.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Otomatik çözümler</h2>
-<p>Otomatikleştirilmiş servisler genelde nakit ve kredi kartı ödemelerindeki limitlerle ve ek ücretlerle baş etmelidir. Bu, otobüs biletinden kahve makinasına her türden satış makinesini içerir. Bitcoin yeni nesil için her türlü ödeme yöntemini kesintisiz olarak karşılayabilecek şekilde tasarlanmıştır.  Kendisini sürebilen taksilerin var olduğnu hayal edin, ya da alış veriş çantanızın sıra beklemeden sizden ödeme aldığını. Pek çok fikir mümkündür.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/tr/yasal">Yasal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/yasal">Yasal</a></li>
 			
-			<li><a href="/tr/gizlilik">Gizlilik</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/gizlilik">Gizlilik</a></li>
 			
-			<li><a href="/tr/basin">Basın</a></li>
-			<li><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/basin">Basın</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sponsor bir topluluğun web sitesi</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

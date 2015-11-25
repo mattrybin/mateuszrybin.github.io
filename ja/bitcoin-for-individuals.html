@@ -10,15 +10,29 @@
 <title>個人のためのビットコイン - ビットコイン</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ja.png"><strong>日本語</strong>
+          <img src="/img/flags/ja.png"><strong>日本語</strong>
 				</div>
 			</a>
 		</div>
@@ -323,58 +341,62 @@
 		<li><a href="#">よくある質問</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_individuals">
-  <h1 class="content_individuals--title">個人にとってのビットコイン</h1>
-  <h2 class="content_individuals--subtitle">ビットコインは、低コストで送金ができる最もシンプルな方法です。</h2>
+        <div class="content_standard">
+  <h1 class="content_standard--title">個人にとってのビットコイン</h1>
+  <h2 class="content_standard--subtitle">ビットコインは、低コストで送金ができる最もシンプルな方法です。</h2>
 
-  <ul class="content_individuals--list">
-    <li class="content_individuals--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_mobile.svg" alt="Icon"/>
       <h3>モバイル決済を容易に</h3>
       <p>携帯電話のビットコインは、スキャンして支払うというというわずか2ステップで支払いが完了します。登録したり、カードを通したり、PINを入力したり、サインする必要がありません。支払いを受けるには、ビットコイン・ウォレット・アプリでQRコードを表示して、友人にスキャンしてもらうか、(NFCを使う場合は) 2つの携帯を合わせるだけです。</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lock.svg" alt="Icon"/>
       <h3>セキュリティおよびお金に対するコントロール</h3>
       <p>ビットコイン取引は軍が使用するような暗号で保護されています。手数料を課したり、誰かがあなたの代わりに支払いを行ったりする事は不可能です。 <a href="/ja/secure-your-wallet">ウォレットを保護する</a>必要なステップさえとれば、自分の通貨のコントロールができ、色々な詐欺行為を避ける事ができます。</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_simple.svg" alt="Icon"/>
       <h3>いつでもどこでも利用可能</h3>
       <p>Eメール同様、家族に自分と同じビットコイン・ソフトウェアやサービス・プロバイダを使ってもらう必要はなく、好きなものを使用しても問題はありません。オープン・テクノロジーですので、すべてに互換性があります。ビットコインネットワークは、休むことなく休日も稼働しています。</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>高速国際決済</h3>
       <p>ビットコインは、アフリカからカナダに10分以内で送金できます。処理を遅らせ、高額な手数料を取り、送金を中断する銀行は要りません。近くにいる人にも、外国にいる家族にも同じ方法で送金できます。.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>無料あるいは安価な手数料</h3>
       <p>ビットコインは、非常に低い手数料で、支払いや受け取りができます。非常に小額の決済を除いては、手数料を強いられる事はありませんが、取引の承認の早く受け、ビットコインネットワークを運用している人々に報酬を与えるために、自主的に多めの手数料を支払うことが推奨されています。</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
       <h3>身元の保護</h3>
       <p>ビットコインを使えば、クレジットカード番号の必要がなく、悪意のあるものがそれを得て、あなたになりすますようなことはありません。事実、お金のように、あなたの身元をあかすことなく支払いを送ることも可能です。ただし、<a href="/ja/protect-your-privacy">あなたの個人情報保護</a>の努力をすることが必要であることも頭に入れておいてください。</p>
     </li>
-    
-    <div class="content_individuals--action">
-      <a class="content_individuals--action--text" href="/ja/getting-started">
-        ビットコインを始めよう
-      </a>
+
+    <div class="content_standard--action">
+      <div class="content_standard--action--wrap">
+        <a class="content_standard--action--text" href="/ja/getting-started">
+          ビットコインを始めよう
+        </a>
+      </div>
     </div>
   </ul>
 </div>
+
       </div>
     </div>
 
@@ -384,14 +406,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ja/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/legal">法律</a></li>
 			
-			<li><a href="/ja/privacy">プライバシー</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/privacy">プライバシー</a></li>
 			
-			<li><a href="/ja/press">プレス</a></li>
-			<li><a href="/ja/about-us">bitcoin.org について</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/press">プレス</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/about-us">bitcoin.org について</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -400,7 +422,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -422,13 +445,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -439,7 +464,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

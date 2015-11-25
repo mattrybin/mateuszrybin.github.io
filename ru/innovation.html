@@ -10,15 +10,29 @@
 <title>Инновации</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ru.png"><strong>Русский</strong>
+          <img src="/img/flags/ru.png"><strong>Русский</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Инновационная платежная система</h1>
-<p class="summarytxt">Биткойн-протокол позволяет не только пересылку денег из пункта А в пункт Б. У него много функций и он открывает различные возможности, которые сообщество все еще изучает. Здесь представлены некоторые технологии, на данный момент изученные и в некоторых случаях внедренные в реальные продукты и услуги. Самые интересные способы использования Биткойна, возможно, еще предстоит открыть.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Инновационная платежная система</h1>
+  <h2 class="content_innovation--subtitle">Биткойн-протокол позволяет не только пересылку денег из пункта А в пункт Б. У него много функций и он открывает различные возможности, которые сообщество все еще изучает. Здесь представлены некоторые технологии, на данный момент изученные и в некоторых случаях внедренные в реальные продукты и услуги. Самые интересные способы использования Биткойна, возможно, еще предстоит открыть.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Защита от мошеничества</h3>
+	    <p>Биткойн позволяет достигнуть беспрецедентного уровня безопасности. Сеть защищает пользователей от наиболее распространенных мошенничеств, таких как возврат платежей или неавторизованные списания средств, а биткойны невозможно подделать. Пользователи могут создать резервную копию или зашифровать свои кошельки, а устройства для хранения биткойнов могут в будущем сделать очень маловероятной  кражу или утерю ваших денег. Биткойн разработан, чтобы позволить пользователям осуществлять полный контроль за своими деньгами.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Защита от мошеничества</h2>
-<p>Биткойн позволяет достигнуть беспрецедентного уровня безопасности. Сеть защищает пользователей от наиболее распространенных мошенничеств, таких как возврат платежей или неавторизованные списания средств, а биткойны невозможно подделать. Пользователи могут создать резервную копию или зашифровать свои кошельки, а устройства для хранения биткойнов могут в будущем сделать очень маловероятной  кражу или утерю ваших денег. Биткойн разработан, чтобы позволить пользователям осуществлять полный контроль за своими деньгами.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Глобальная доступность</h3>
+	    <p>Все платежи в мире могут быть полностью совместимы. Биткойн позволяет любому банку, компании или частному лицу безопасно отправлять и получать платежи куда угодно и когда угодно, с наличием банковского счета или без него. Биткойн доступен в странах, которые все еще находятся вне досягаемости от большинства платежных систем, в связи с их ограничениями. Биткойн увеличивает глобальную доступность торговли, и может помочь расцвету международной торговли.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Эффективность затрат</h3>
+	    <p>С помощью криптографии, безопасные платежи возможны без медленного и дорогого посредника. Биткойн-транзакции намного дешевле чем альтернативы и может быть выполнена в кратчайшие сроки. Это значит, что Биткойн обладает потенциалом стать стандартным способом перевода средств в будущем. Биткойн может так же сыграть роль в <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">уменьшении бедности</a> во многих странах, снижая высокие комиссии по переводам зарплаты работниками.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Чаевые и пожертвования</h3>
+	    <p>Биткойн показал особую эффективность для чаевых и пожертвований. Отправка платежа требует лишь одного клика, а получение может быть таким же простым, как показ QR кода. Пожертвования будут видны пользователям, обеспечивая большую прозрачность для некоммерческих организаций. В случае чрезвычайных ситуаций, пожертвования в биткойнах могут способствовать более быстрой международной реакции. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Краудфандинг</h3>
+	    <p>При помощи Биткойна можно также проводить подобные Кикстартеру кампании по сбору средств. При этом, люди обещают проекту средства, которые у них спишутся только в случае, если будет достигнута цель по сбору средств. Такого рода контракты поддерживаются биткойн-протоколом через механизм, предотвращающий перевод до тех пор, пока не выполнены все условия. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Узнайте больше</a> о технологии по сбору средств и попробуйте <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Микроплатежи</h3>
+	    <p>Биткойн может обрабатывать платежи величиной в доллар и менее, такие платежи и сегодня обычное дело. Представьте себе, что вы слушаете интернет радио, оплачиваемое посекундно, смотрите веб страницы, с маленькими чаевыми за каждую непоказанную вам рекламу, или покупаете пропускную способность WiFi точки по килобайту. Биткойн достаточно эффективен, чтобы все это стало реальностью. <a href="https://bitcoinj.github.io/working-with-micropayments">Узнайте больше</a> о технологии, позволяющей совершать микроплатежи в биткойнах.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Разрешение споров</h3>
+	    <p>На основе Биткойна можно развивать арбитражно-посреднические услуги, используя множественные подписи. Такие услуги позволят сторонней организации подтвердить или отозвать платеж, в случае несогласия двух других сторон, без получения контроля над их деньгами. Поскольку эти услуги будут доступными любым пользователям или компаниям использующим Биткойн, это, вероятно, приведет к конкуренции и к высоким стандартам качества. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Много-пользовательские аккаунты</h3>
+	    <p>Множественные подписи, позволяют транзакции быть принятой сетью, только если конкретное количество из определенной группы людей согласятся подписать транзакцию. Это может использовать совет директоров, предотвращая растрату любым из ее членов общих средств, без ведома остальных членов. Это так же может быть использовано банками, чтобы предотвратить воровство, блокируя платежи выше определенного порога, если пользователь не предоставляет дополнительные полномочия.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Доверие и честность</h3>
+	    <p>Биткойн предлагает решения для большинства проблем доверия, которые обычно связаны с банками. С избирательной прозрачностью учета и необратимостью транзакций, Биткойн может быть использован как фундамент для восстановления доверия и согласия. Нечестные банки не могут обмануть систему и заработать в ней за счет других банков или людей. Будущее, где большинство банков будет поддерживать Биткойн, может помочь восстановить целостность и доверие в финансовые институты.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Устойчивость и децентрализация</h3>
+	    <p>Благодаря высокой степени децентрализации, Биткойн создал альтернативную форму платежной системы с большей устойчивостью и потенциалом. Биткойн может обеспечивать торговлю на миллионы долларов, без необходимости военной защиты. У него нет уязвимого центра, такого как центр обработки данных, потребуется атака на целую сеть, что является гораздо более сложным проектом. Биткойн может стать важным шагом вперед в обеспечении безопасности локальных и глобальных финансовых систем.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Гибкая прозрачность</h3>
+	    <p>Все биткойн-транзакции общедоступны и прозрачны, а вот личность людей стоящих за этими платежами по умолчанию неизвестна. Это позволяет людям и организациям работать по гибким правилам прозрачности. Например, компания может по своему усмотрению открыть некоторые транзакции и балансы для конкретных сотрудников, так же как некоммерческие организации свободно могут позволить публике видеть сколько пожертвований они получают в день или месяц.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Автоматизированные решения</h3>
+	    <p>Автоматическим сервисам обычно приходится иметь дело со стоимостью и ограничениями платежей наличными или по кредитным картам. Это включает в себя все виды торговых механизмов, от аппаратов по продаже билетов на автобус, до кофе машин. Биткойн может быть использован в автоматических услугах нового поколения, позволяя уменьшить их операционные расходы. Представьте себе такси без водителя, или магазин, где ваша корзина позволяет вам оплатить покупки без ожидания в очереди. Возможно множество вариантов.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Глобальная доступность</h2>
-<p>Все платежи в мире могут быть полностью совместимы. Биткойн позволяет любому банку, компании или частному лицу безопасно отправлять и получать платежи куда угодно и когда угодно, с наличием банковского счета или без него. Биткойн доступен в странах, которые все еще находятся вне досягаемости от большинства платежных систем, в связи с их ограничениями. Биткойн увеличивает глобальную доступность торговли, и может помочь расцвету международной торговли.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Эффективность затрат</h2>
-<p>С помощью криптографии, безопасные платежи возможны без медленного и дорогого посредника. Биткойн-транзакции намного дешевле чем альтернативы и может быть выполнена в кратчайшие сроки. Это значит, что Биткойн обладает потенциалом стать стандартным способом перевода средств в будущем. Биткойн может так же сыграть роль в <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">уменьшении бедности</a> во многих странах, снижая высокие комиссии по переводам зарплаты работниками.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Чаевые и пожертвования</h2>
-<p>Биткойн показал особую эффективность для чаевых и пожертвований. Отправка платежа требует лишь одного клика, а получение может быть таким же простым, как показ QR кода. Пожертвования будут видны пользователям, обеспечивая большую прозрачность для некоммерческих организаций. В случае чрезвычайных ситуаций, пожертвования в биткойнах могут способствовать более быстрой международной реакции. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Краудфандинг</h2>
-<p>При помощи Биткойна можно также проводить подобные Кикстартеру кампании по сбору средств. При этом, люди обещают проекту средства, которые у них спишутся только в случае, если будет достигнута цель по сбору средств. Такого рода контракты поддерживаются биткойн-протоколом через механизм, предотвращающий перевод до тех пор, пока не выполнены все условия. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Узнайте больше</a> о технологии по сбору средств и попробуйте <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Микроплатежи</h2>
-<p>Биткойн может обрабатывать платежи величиной в доллар и менее, такие платежи и сегодня обычное дело. Представьте себе, что вы слушаете интернет радио, оплачиваемое посекундно, смотрите веб страницы, с маленькими чаевыми за каждую непоказанную вам рекламу, или покупаете пропускную способность WiFi точки по килобайту. Биткойн достаточно эффективен, чтобы все это стало реальностью. <a href="https://bitcoinj.github.io/working-with-micropayments">Узнайте больше</a> о технологии, позволяющей совершать микроплатежи в биткойнах.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Разрешение споров</h2>
-<p>На основе Биткойна можно развивать арбитражно-посреднические услуги, используя множественные подписи. Такие услуги позволят сторонней организации подтвердить или отозвать платеж, в случае несогласия двух других сторон, без получения контроля над их деньгами. Поскольку эти услуги будут доступными любым пользователям или компаниям использующим Биткойн, это, вероятно, приведет к конкуренции и к высоким стандартам качества. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Много-пользовательские аккаунты</h2>
-<p>Множественные подписи, позволяют транзакции быть принятой сетью, только если конкретное количество из определенной группы людей согласятся подписать транзакцию. Это может использовать совет директоров, предотвращая растрату любым из ее членов общих средств, без ведома остальных членов. Это так же может быть использовано банками, чтобы предотвратить воровство, блокируя платежи выше определенного порога, если пользователь не предоставляет дополнительные полномочия.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Доверие и честность</h2>
-<p>Биткойн предлагает решения для большинства проблем доверия, которые обычно связаны с банками. С избирательной прозрачностью учета и необратимостью транзакций, Биткойн может быть использован как фундамент для восстановления доверия и согласия. Нечестные банки не могут обмануть систему и заработать в ней за счет других банков или людей. Будущее, где большинство банков будет поддерживать Биткойн, может помочь восстановить целостность и доверие в финансовые институты.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Устойчивость и децентрализация</h2>
-<p>Благодаря высокой степени децентрализации, Биткойн создал альтернативную форму платежной системы с большей устойчивостью и потенциалом. Биткойн может обеспечивать торговлю на миллионы долларов, без необходимости военной защиты. У него нет уязвимого центра, такого как центр обработки данных, потребуется атака на целую сеть, что является гораздо более сложным проектом. Биткойн может стать важным шагом вперед в обеспечении безопасности локальных и глобальных финансовых систем.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Гибкая прозрачность</h2>
-<p>Все биткойн-транзакции общедоступны и прозрачны, а вот личность людей стоящих за этими платежами по умолчанию неизвестна. Это позволяет людям и организациям работать по гибким правилам прозрачности. Например, компания может по своему усмотрению открыть некоторые транзакции и балансы для конкретных сотрудников, так же как некоммерческие организации свободно могут позволить публике видеть сколько пожертвований они получают в день или месяц.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Автоматизированные решения</h2>
-<p>Автоматическим сервисам обычно приходится иметь дело со стоимостью и ограничениями платежей наличными или по кредитным картам. Это включает в себя все виды торговых механизмов, от аппаратов по продаже билетов на автобус, до кофе машин. Биткойн может быть использован в автоматических услугах нового поколения, позволяя уменьшить их операционные расходы. Представьте себе такси без водителя, или магазин, где ваша корзина позволяет вам оплатить покупки без ожидания в очереди. Возможно множество вариантов.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ru/legal">Юридическое</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/legal">Юридическое</a></li>
 			
-			<li><a href="/ru/privacy">Конфиденциальность</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/privacy">Конфиденциальность</a></li>
 			
-			<li><a href="/ru/press">Пресса</a></li>
-			<li><a href="/ru/about-us">О bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/press">Пресса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/about-us">О bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Веб-сайт сообщества спонсируется</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

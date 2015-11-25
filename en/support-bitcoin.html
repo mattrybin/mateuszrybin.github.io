@@ -10,15 +10,29 @@
 <title>Support Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -200,7 +218,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/en.png"><strong>English</strong>
+          <img src="/img/flags/en.png"><strong>English</strong>
 				</div>
 			</a>
 		</div>
@@ -327,42 +345,86 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Support Bitcoin</h1>
-<p class="summarytxt">Bitcoin is a protocol that was born from a small community and has grown fast since. There are a lot of things you can do to help Bitcoin to spread and improve over time.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Support Bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin is a protocol that was born from a small community and has grown fast since. There are a lot of things you can do to help Bitcoin to spread and improve over time.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Using Bitcoin</h2>
-<p><a href="/en/getting-started">Using Bitcoin</a> is the first thing you can do to support Bitcoin. There are probably many cases where it can make your life easier. You can accept payments and make purchases with Bitcoin.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Using Bitcoin</h3>
+      <p><a href="/en/getting-started">Using Bitcoin</a> is the first thing you can do to support Bitcoin. There are probably many cases where it can make your life easier. You can accept payments and make purchases with Bitcoin.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Be the network</h2>
-<p>If you have a good Internet connection, you can strengthen the Bitcoin network by keeping <a href="/en/full-node">full node software</a> running on your computer or server with port 8333 open. Full nodes are securing and relaying all transactions.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Be the network</h3>
+      <p>If you have a good Internet connection, you can strengthen the Bitcoin network by keeping <a href="/en/full-node">full node software</a> running on your computer or server with port 8333 open. Full nodes are securing and relaying all transactions.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Mining</h2>
-<p>You can start <a href="http://www.bitcoinmining.com/">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join <a href="http://mempool.info/pools">smaller mining pools</a> and prefer decentralized pools like <a href="http://p2pool.in/">P2Pool</a> or <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pools</a> with getblocktemplate (GBT) support.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Mining</h3>
+      <p>You can start <a href="http://www.bitcoinmining.com/">mining bitcoins</a> to help processing transactions. In order to protect the network, you should join <a href="http://mempool.info/pools">smaller mining pools</a> and prefer decentralized pools like <a href="http://p2pool.in/">P2Pool</a> or <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pools</a> with getblocktemplate (GBT) support.</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Translate</h2>
-<p>You can help to increase Bitcoin availability by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Development</h2>
-<p>Bitcoin is free software. So if you are a developer, you can use your super-powers to do good and <a href="/en/development">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Translate</h3>
+      <p>You can help to increase Bitcoin availability by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Donation</h2>
-<p>The easiest way to help is to <a href="https://bitcoinfoundation.org/about/donate/">donate</a> a few bitcoins to the Bitcoin Foundation. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Development</h3>
+      <p>Bitcoin is free software. So if you are a developer, you can use your super-powers to do good and <a href="/en/development">improve Bitcoin</a>. Or you can build amazing new services or software that can use Bitcoin.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organizations</h2>
-<p>The <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> and many other <a href="/en/community#non-profit">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Donation</h3>
+      <p>The easiest way to help is to <a href="https://bitcoinfoundation.org/about/donate/">donate</a> a few bitcoins to the Bitcoin Foundation. Or you can help directly fund any project related to Bitcoin that you believe will be helpful in the future.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Spread</h2>
-<p>Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href="http://usebitcoins.info/">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organizations</h3>
+      <p>The <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> and many other <a href="/en/community#non-profit">non-profit organizations</a> are dedicated to protecting and promoting Bitcoin. You can help these groups by joining them and taking part in their projects, discussions and events.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Documentation</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> and the <a href="https://en.bitcoin.it/">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Spread</h3>
+      <p>Speak about Bitcoin to interested people. Write about it on your blog. Tell your favorite shops you would like to pay with Bitcoin. Help keeping <a href="http://usebitcoins.info/">merchant directories</a> up to date. Or be creative and make yourself a nice Bitcoin T-shirt.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Meet the communities</h2>
-<p>You can join Bitcoin <a href="/en/community">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Documentation</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> and the <a href="https://en.bitcoin.it/">Bitcoin wiki</a> provide useful documentation and we are constantly improving the information they contain. You can help to improve these resources and keep them up to date.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Meet the communities</h3>
+      <p>You can join Bitcoin <a href="/en/community">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -373,14 +435,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/en/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy Policy</a></li>
 			
-			<li><a href="/en/press">Press</a></li>
-			<li><a href="/en/about-us">About bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/about-us">About bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -389,7 +451,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -411,13 +474,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -428,7 +493,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

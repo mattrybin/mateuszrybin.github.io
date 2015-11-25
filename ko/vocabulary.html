@@ -10,15 +10,29 @@
 <title>용어 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ko.png"><strong>한국의</strong>
+          <img src="/img/flags/ko.png"><strong>한국의</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">질문과답변</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>당신이 접할법한 비트코인 용어들</h1>
-<p class="summarytxt">비트코인은 지불에 대한 새로운 접근법을 제공하기 때문에 당신의 어휘의 일부가 될지 모를 새로운 용어들이 몇 있습니다. 걱정하지 마세요. 저 변변치 않아 보이는 텔레비전조차도 새로운 용어들을 만들어냈습니다.</p>
-<h2 id="table-of-contents">목차</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">당신이 접할법한 비트코인 용어들</h1>
+  <h2 class="content_vocalbulary--subtitle">비트코인은 지불에 대한 새로운 접근법을 제공하기 때문에 당신의 어휘의 일부가 될지 모를 새로운 용어들이 몇 있습니다. 걱정하지 마세요. 저 변변치 않아 보이는 텔레비전조차도 새로운 용어들을 만들어냈습니다.</h2>
 
-<div class="index">
-
-<a href="#private-key">개인 키</a>
-
-<a href="#block">블럭</a>
-
-<a href="#block-chain">블럭 체인</a>
-
-<a href="#bit">비트</a>
-
-<a href="#bitcoin">비트코인</a>
-
-<a href="#signature">서명</a>
-
-<a href="#confirmation">승인</a>
-
-<a href="#cryptography">암호 작성술</a>
-
-<a href="#double-spend">이중 지불</a>
-
-<a href="#address">주소</a>
-
-<a href="#wallet">지갑</a>
-
-<a href="#mining">채굴</a>
-
-<a href="#hash-rate">해시 속도</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#p2p">P2P</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">개인 키</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>개인 키(들은)는 <b><a href="#signature">암호 작성화된 서명</a>을 통해 당신이 특정한 비트코인 지갑의 비트코인을 소비할 권리가 있음을 증명하는 비밀정보조각</b>입니다. 소프트웨어 지갑을 사용한다면, 개인 키는 당신의 컴퓨터에 저장되어 있을 것입니다. 웹 지갑을 사용한다면, 원격 서버에 저장되어 있을 것입니다. 개인 키는 당신이 당신의 비트코인 지갑의 비트코인들을 사용할 수 있도록 허가해주는 정보이기 때문에 절대 알려져서는 안되는 정보입니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">블럭</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>블럭이란 <b>수많은 대기 거래를 보관하고 승인하는 블럭 체인 내의 기록</b>입니다. 평균적으로 대략 10분마다 거래를 포함하는 새 블럭이 <a href="#mining">채굴</a>을 통해 <a href="#block-chain">블럭 체인</a> 에 더해집니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block-chain">블럭 체인</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>블럭 체인은 연대순으로 나열된 <b>비트코인 거래들의 공공 내역서</b>입니다. 블럭 체인은 모든 사용자들간에 공유되며, 비트코인 거래의 영속성 검증과 <a href="#double-spend">이중 사용</a>의 방지를 위해 사용됩니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">비트</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>비트는 비트코인의 하부단위를 지정하기위해 사용된 공통 단위 입니다.  1,000,000 비트는 1 비트코인 (BTC 또는 B)와 동일합니다. 이 단위는 일반적으로 팁, 상품, 서비스의 가격을 지정하는데 더 편리합니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">비트코인</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - 비트코인의 개념 또는 비트코인 네트워크 자체를 부를 때 사용하는 단어입니다. 예를 들어, "오늘은 비트코인 프로토콜에 대해서 배웠다." <br>bitcoin - 비트코인 액수의 단위를 의미합니다. 예를 들어, "오늘 10 비트코인을 사용했어." 약칭으로는 BTC나 XBT가 있습니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">서명</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#cryptography">암호 작성화</a>된 서명은 <b>누군가가 소유권을 증명할 수 있도록 하는 메커니즘입니다</b>. 비트코인의 경우, <a href="#wallet">비트코인 지갑</a>과 그 <a href="#private-key">개인 키(들)</a>는 어떤 수학적인 마법으로 연결되어 있습니다. 당신의 비트코인 소프트웨어가 거래를 적절한 개인 키로 서명하면, 전체 네트워크가 사용된 비트코인과 그 서명이 매치한다는 것을 볼 수 있습니다. 하지만, 전 세계의 그 누구도 당신이 힘들게 번 비트코인을 훔치기 위해 당신의 개인 키를 유추할 방도는 없습니다.. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">승인</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>승인은 비트코인 거래가 <b>네트워크에 의해 처리되었고 그 거래의 철회 가능성이 매우 낮아졌다는 뜻입니다</b>. 비트코인 거래들은 하나의 <a href="/ko/vocabulary#block">블럭</a>에 포함될 때마다 하나의 승인을 받게되어 있습니다. 소액 거래에 있어서는 하나의 승인 정도가 거래가 안전하게 이루어졌다는 뜻이 될 수 있습니다. 그러나 1000 USD 이상의 거래에서는 6개 이상의 승인을 기다리는 것이 좋습니다. 매 승인마다 거래 철회의 위험이 <i>기하급수적으로</i> 줄어듭니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">암호 작성술</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>암호 작성술은 <b>고급 수준의 보안을 제공하는 수학적 증명</b>을 생성할 수 있도록 해 주는 수학의 한 부류입니다. 온라인 상거래와 은행업무에서는 암호 작성술이 이미 사용되고 있습니다. 비트코인의 경우, 다른 사용자의 지갑에 있는 돈을 사용하거나 <a href="#block-chain">블럭 체인</a>에 오류를 일으키지 못하도록 하기 위해서 암호 작성술이 사용됩니다. 암호 없이는 사용할 수 없도록 지갑을 인크립트할 때도 사용될 수 있습니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">이중 지불</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>만일 악의를 가진 유저가 <b>다른 두 받는 이들에게 같은 비트코인을 한번에 사용</b>하려고 한다면, 이는 이중 지불입니다. 비트코인 <a href="#mining">체굴</a>과 <a href="#block-chain">블럭체인</a>은 네트워크가 어떠한 비트코인 거래들이 유효한 거래인지 아닌지에 대해서 확인하고 합의를 할 수 있게하기 위해 존재하는 것입니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">주소</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>비트코인 주소는 <b>집 주소나 이메일 주소와 유사합니다</b>. 누군가가 당신에게 비트코인을 지불하는데 필요한 유일한 정보입니다. 한 가지 중요한 차이점은, 각각의 거래마다 새로운 비트코인 주소가 발행, 사용되어야 한다는 것입니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">지갑</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>비트코인 지갑은 쉽게 말해 <b>비트코인 네트워크안에서 사용되는 지갑과 같은 것</b>입니다. 사실 이 지갑은 <a href="#block-chain">블럭 체인</a>안에서 당신이 비트코인을 소비할 수 있도록 허락해주는 <a href="#private-key">개인 키(들을)</a>를 저장하고 있는 것입니다. 각각의 비트코인 지갑은 통제하는 모든 비트코인의 잔액을 당신에게 보여주며, 당신이 특정한 사람에게 특정액의 비트코인을 지불할 수 있도록 해줍니다. 신용카드와 같이 상인이 당신에게 요금을 무는 형태와는 다른 것입니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">채굴</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>비트코인 채굴은 <b>컴퓨터 하드웨어가 비트코인 네트워크의 거래 승인</b> 및 보안 강화를 위한 수학적 계산을 하도록 하는 처리과정입니다. 비트코인 광부들은 제공하는 서비스의 댓가로 그들이 승인하는 거래의 거래 수수료 및 새롭게 생성된 비트코인을 받습니다. 비트코인 채굴 시장은 얼마만큼의 계산을 했느냐에 따라 보상이 배분되는 전문적이고 경쟁적인 시장입니다. 모든 비트코인 사용자가 채굴을 하는 것은 아니며, 채굴은 쉽게 돈을 벌 수 있는 방법이 아닙니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">해시 속도</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>해시 속도는 <b>비트코인 네트워크의 처리능력을 측정하는 단위입니다</b>. 비트코인 네트워크는 보안상의 이유로 고강도의 수학 연산을 처리해야 합니다. 네트워크가 10 Th/s의 해시 속도에 달했다는 말은 1초에 10조개의 계산을 할 수 있음을 의미합니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC(비트)는 하나의 비트코인 (B)을 지정하기위해 사용되는 공통단위 입니다.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>피어투피어는 개개인이 서로 다른 이들과 상호 작용하도록 함으로써 <b>조직화된 집단과 같이 작동하는 시스템</b>을 가리킵니다. 비트코인의 경우, 각 사용자가 다른 사용자들의 거래를 송신하도록 네트워크가 설계되어 있습니다. 그리고 무엇보다 어떤 은행도 제3자로서 필요하지 않습니다.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="private-key">개인 키</h2>
-<p>개인 키(들은)는 <b><a href="#signature">암호 작성화된 서명</a>을 통해 당신이 특정한 비트코인 지갑의 비트코인을 소비할 권리가 있음을 증명하는 비밀정보조각</b>입니다. 소프트웨어 지갑을 사용한다면, 개인 키는 당신의 컴퓨터에 저장되어 있을 것입니다. 웹 지갑을 사용한다면, 원격 서버에 저장되어 있을 것입니다. 개인 키는 당신이 당신의 비트코인 지갑의 비트코인들을 사용할 수 있도록 허가해주는 정보이기 때문에 절대 알려져서는 안되는 정보입니다.</p>
-
-<h2 id="block">블럭</h2>
-<p>블럭이란 <b>수많은 대기 거래를 보관하고 승인하는 블럭 체인 내의 기록</b>입니다. 평균적으로 대략 10분마다 거래를 포함하는 새 블럭이 <a href="#mining">채굴</a>을 통해 <a href="#block-chain">블럭 체인</a> 에 더해집니다.</p>
-
-<h2 id="block-chain">블럭 체인</h2>
-<p>블럭 체인은 연대순으로 나열된 <b>비트코인 거래들의 공공 내역서</b>입니다. 블럭 체인은 모든 사용자들간에 공유되며, 비트코인 거래의 영속성 검증과 <a href="#double-spend">이중 사용</a>의 방지를 위해 사용됩니다.</p>
-
-<h2 id="bit">비트</h2>
-<p>비트는 비트코인의 하부단위를 지정하기위해 사용된 공통 단위 입니다.  1,000,000 비트는 1 비트코인 (BTC 또는 B)와 동일합니다. 이 단위는 일반적으로 팁, 상품, 서비스의 가격을 지정하는데 더 편리합니다.</p>
-
-<h2 id="bitcoin">비트코인</h2>
-<p>Bitcoin - 비트코인의 개념 또는 비트코인 네트워크 자체를 부를 때 사용하는 단어입니다. 예를 들어, "오늘은 비트코인 프로토콜에 대해서 배웠다." <br>bitcoin - 비트코인 액수의 단위를 의미합니다. 예를 들어, "오늘 10 비트코인을 사용했어." 약칭으로는 BTC나 XBT가 있습니다.</p>
-
-<h2 id="signature">서명</h2>
-<p><a href="#cryptography">암호 작성화</a>된 서명은 <b>누군가가 소유권을 증명할 수 있도록 하는 메커니즘입니다</b>. 비트코인의 경우, <a href="#wallet">비트코인 지갑</a>과 그 <a href="#private-key">개인 키(들)</a>는 어떤 수학적인 마법으로 연결되어 있습니다. 당신의 비트코인 소프트웨어가 거래를 적절한 개인 키로 서명하면, 전체 네트워크가 사용된 비트코인과 그 서명이 매치한다는 것을 볼 수 있습니다. 하지만, 전 세계의 그 누구도 당신이 힘들게 번 비트코인을 훔치기 위해 당신의 개인 키를 유추할 방도는 없습니다.. </p>
-
-<h2 id="confirmation">승인</h2>
-<p>승인은 비트코인 거래가 <b>네트워크에 의해 처리되었고 그 거래의 철회 가능성이 매우 낮아졌다는 뜻입니다</b>. 비트코인 거래들은 하나의 <a href="/ko/vocabulary#block">블럭</a>에 포함될 때마다 하나의 승인을 받게되어 있습니다. 소액 거래에 있어서는 하나의 승인 정도가 거래가 안전하게 이루어졌다는 뜻이 될 수 있습니다. 그러나 1000 USD 이상의 거래에서는 6개 이상의 승인을 기다리는 것이 좋습니다. 매 승인마다 거래 철회의 위험이 <i>기하급수적으로</i> 줄어듭니다.</p>
-
-<h2 id="cryptography">암호 작성술</h2>
-<p>암호 작성술은 <b>고급 수준의 보안을 제공하는 수학적 증명</b>을 생성할 수 있도록 해 주는 수학의 한 부류입니다. 온라인 상거래와 은행업무에서는 암호 작성술이 이미 사용되고 있습니다. 비트코인의 경우, 다른 사용자의 지갑에 있는 돈을 사용하거나 <a href="#block-chain">블럭 체인</a>에 오류를 일으키지 못하도록 하기 위해서 암호 작성술이 사용됩니다. 암호 없이는 사용할 수 없도록 지갑을 인크립트할 때도 사용될 수 있습니다.</p>
-
-<h2 id="double-spend">이중 지불</h2>
-<p>만일 악의를 가진 유저가 <b>다른 두 받는 이들에게 같은 비트코인을 한번에 사용</b>하려고 한다면, 이는 이중 지불입니다. 비트코인 <a href="#mining">체굴</a>과 <a href="#block-chain">블럭체인</a>은 네트워크가 어떠한 비트코인 거래들이 유효한 거래인지 아닌지에 대해서 확인하고 합의를 할 수 있게하기 위해 존재하는 것입니다.</p>
-
-<h2 id="address">주소</h2>
-<p>비트코인 주소는 <b>집 주소나 이메일 주소와 유사합니다</b>. 누군가가 당신에게 비트코인을 지불하는데 필요한 유일한 정보입니다. 한 가지 중요한 차이점은, 각각의 거래마다 새로운 비트코인 주소가 발행, 사용되어야 한다는 것입니다.</p>
-
-<h2 id="wallet">지갑</h2>
-<p>비트코인 지갑은 쉽게 말해 <b>비트코인 네트워크안에서 사용되는 지갑과 같은 것</b>입니다. 사실 이 지갑은 <a href="#block-chain">블럭 체인</a>안에서 당신이 비트코인을 소비할 수 있도록 허락해주는 <a href="#private-key">개인 키(들을)</a>를 저장하고 있는 것입니다. 각각의 비트코인 지갑은 통제하는 모든 비트코인의 잔액을 당신에게 보여주며, 당신이 특정한 사람에게 특정액의 비트코인을 지불할 수 있도록 해줍니다. 신용카드와 같이 상인이 당신에게 요금을 무는 형태와는 다른 것입니다.</p>
-
-<h2 id="mining">채굴</h2>
-<p>비트코인 채굴은 <b>컴퓨터 하드웨어가 비트코인 네트워크의 거래 승인</b> 및 보안 강화를 위한 수학적 계산을 하도록 하는 처리과정입니다. 비트코인 광부들은 제공하는 서비스의 댓가로 그들이 승인하는 거래의 거래 수수료 및 새롭게 생성된 비트코인을 받습니다. 비트코인 채굴 시장은 얼마만큼의 계산을 했느냐에 따라 보상이 배분되는 전문적이고 경쟁적인 시장입니다. 모든 비트코인 사용자가 채굴을 하는 것은 아니며, 채굴은 쉽게 돈을 벌 수 있는 방법이 아닙니다.</p>
-
-<h2 id="hash-rate">해시 속도</h2>
-<p>해시 속도는 <b>비트코인 네트워크의 처리능력을 측정하는 단위입니다</b>. 비트코인 네트워크는 보안상의 이유로 고강도의 수학 연산을 처리해야 합니다. 네트워크가 10 Th/s의 해시 속도에 달했다는 말은 1초에 10조개의 계산을 할 수 있음을 의미합니다.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC(비트)는 하나의 비트코인 (B)을 지정하기위해 사용되는 공통단위 입니다.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>피어투피어는 개개인이 서로 다른 이들과 상호 작용하도록 함으로써 <b>조직화된 집단과 같이 작동하는 시스템</b>을 가리킵니다. 비트코인의 경우, 각 사용자가 다른 사용자들의 거래를 송신하도록 네트워크가 설계되어 있습니다. 그리고 무엇보다 어떤 은행도 제3자로서 필요하지 않습니다.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ko/legal">법적 고지</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/legal">법적 고지</a></li>
 			
-			<li><a href="/ko/privacy">개인 정보 보호</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/privacy">개인 정보 보호</a></li>
 			
-			<li><a href="/ko/press">기사</a></li>
-			<li><a href="/ko/about-us">bitcoin.org 소개</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/press">기사</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/about-us">bitcoin.org 소개</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

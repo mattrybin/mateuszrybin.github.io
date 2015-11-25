@@ -10,15 +10,29 @@
 <title>プライバシーの保護 - ビットコイン</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ja.png"><strong>日本語</strong>
+          <img src="/img/flags/ja.png"><strong>日本語</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">よくある質問</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>プライバシーの保護</h1>
-<p class="summarytxt">ビットコインはしばしば匿名の決済ネットワークと思われていますが、実際にはビットコインは、世界で最も透明性の高い決済ネットワークだと言えるでしょう。同時に、ビットコインは、正しく使えば許容レベルのプライバシーを提供することもできます。<b>あなたのプライバシーを保護するために優れた実践を行うことは、あなたの責任であることは、常に覚えておいてください。</b></p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">プライバシーの保護</h1>
+	<h2 class="content_standard--subtitle">ビットコインはしばしば匿名の決済ネットワークと思われていますが、実際にはビットコインは、世界で最も透明性の高い決済ネットワークだと言えるでしょう。同時に、ビットコインは、正しく使えば許容レベルのプライバシーを提供することもできます。<b>あなたのプライバシーを保護するために優れた実践を行うことは、あなたの責任であることは、常に覚えておいてください。</b></h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">ビットコインのトレーサビリティを理解する</h3>
+      <p>ビットコインは、ほとんどの人が今まで取り組んだことがないほどの透明度で作動しています。ビットコイン取引のすべては、公共で、追跡可能で、永久的にビットコインネットワークに保管されます。ビットコインがどこに割り当てられ、どこに送られたかを定義するのに使われる情報が、ビットコイン・アドレスです。これらのアドレスは、各ユーザーのウォレットで私的に作られています。しかし、アドレスが使われると、それが自己のすべての取引歴と関連付けられ、誰でもが、これらのアドレスの <a href="https://www.biteasy.com">残高とすべての取引</a> を見ることができます。ユーザーが、サービスや商品を受け取るには、身元を明かさなければならないので、ビットコイン・アドレスは完全に匿名であり続けることはできません。こうした理由により、各ビットコイン・アドレスの使用は一度限りとし、ユーザーは自分のアドレスを明かさないように注意しなければなりません。</p>
+    </li>
 
-<h2 id="traceable">ビットコインのトレーサビリティを理解する</h2>
-<p>ビットコインは、ほとんどの人が今まで取り組んだことがないほどの透明度で作動しています。ビットコイン取引のすべては、公共で、追跡可能で、永久的にビットコインネットワークに保管されます。ビットコインがどこに割り当てられ、どこに送られたかを定義するのに使われる情報が、ビットコイン・アドレスです。これらのアドレスは、各ユーザーのウォレットで私的に作られています。しかし、アドレスが使われると、それが自己のすべての取引歴と関連付けられ、誰でもが、これらのアドレスの <a href="https://www.biteasy.com">残高とすべての取引</a> を見ることができます。ユーザーが、サービスや商品を受け取るには、身元を明かさなければならないので、ビットコイン・アドレスは完全に匿名であり続けることはできません。こうした理由により、各ビットコイン・アドレスの使用は一度限りとし、ユーザーは自分のアドレスを明かさないように注意しなければなりません。</p>
+    <li class="content_standard--items">
+      <h3 id="receive">支払いを受け取るために新しいアドレスを使いましょう</h3>
+      <p>あなたの個人情報を守るため、支払いを受け取る度に、新しいビットコイン・アドレスを使うべきです。また、目的に合わせて、多数のウォレットを使い分ける事もできます。これによって、すべての取引を関連付けることができないように、それぞれの取引を孤立させることができます。あなたがお金を送る相手は、あなたが所有する他のビットコインアドレスを見たり、それを使ってあなたが何をしているかを見ることはできません。これは、あなたが頭に入れておくべき最も重要な忠告でしょう。</p>
+    </li>
 
-<h2 id="receive">支払いを受け取るために新しいアドレスを使いましょう</h2>
-<p>あなたの個人情報を守るため、支払いを受け取る度に、新しいビットコイン・アドレスを使うべきです。また、目的に合わせて、多数のウォレットを使い分ける事もできます。これによって、すべての取引を関連付けることができないように、それぞれの取引を孤立させることができます。あなたがお金を送る相手は、あなたが所有する他のビットコインアドレスを見たり、それを使ってあなたが何をしているかを見ることはできません。これは、あなたが頭に入れておくべき最も重要な忠告でしょう。</p>
+    <li class="content_standard--items">
+      <h3 id="public">パブリックスペースでは気をつけること</h3>
+      <p>あなたの意図が、寄付を集めることや、完全な透明度で支払いを受け取ることでなければ、ビットコイン・アドレスをウエブサイトやソーシャルネットワークといった公共スペースに公表することは、プライバシー面上、良いアイデアではありません。もし、それをするなら、そのアドレスからあなたの他のアドレスに資金を動かす際には、公表されたアドレスの歴史と繋がって、その他のアドレスも公になることを覚えておいてください。また、誰かがあなたのビットコイン・アドレスを確認できるような取引や購入に関する情報も公表しないように注意するべきです。</p>
+    </li>
 
-<h2 id="public">パブリックスペースでは気をつけること</h2>
-<p>あなたの意図が、寄付を集めることや、完全な透明度で支払いを受け取ることでなければ、ビットコイン・アドレスをウエブサイトやソーシャルネットワークといった公共スペースに公表することは、プライバシー面上、良いアイデアではありません。もし、それをするなら、そのアドレスからあなたの他のアドレスに資金を動かす際には、公表されたアドレスの歴史と繋がって、その他のアドレスも公になることを覚えておいてください。また、誰かがあなたのビットコイン・アドレスを確認できるような取引や購入に関する情報も公表しないように注意するべきです。</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">あなたのIPアドレスは、記録される可能性があります。</h3>
+      <p>ビットコイン・ネットワークはピアツーピアネットワークですので、取引の中継に聞き耳を立て、それらのIPアドレスをログに記録することが可能です。フルノード・クライアントは、すべてのユーザーの取引を、まるで自分の取引のように中継することができます。つまり、特定の取引の源を見つけることは難しく、間違ったビットコイン・ノードが、取引の源のように見えることがあります。<a href="https://www.torproject.org/">Tor</a> のようなツールを使って、ログに記録させることを防ぎ、コンピューターのIPアドレスを隠すことを考慮するとよいかもしれません。</p>
+    </li>
 
-<h2 id="iplog">あなたのIPアドレスは、記録される可能性があります。</h2>
-<p>ビットコイン・ネットワークはピアツーピアネットワークですので、取引の中継に聞き耳を立て、それらのIPアドレスをログに記録することが可能です。フルノード・クライアントは、すべてのユーザーの取引を、まるで自分の取引のように中継することができます。つまり、特定の取引の源を見つけることは難しく、間違ったビットコイン・ノードが、取引の源のように見えることがあります。<a href="https://www.torproject.org/">Tor</a> のようなツールを使って、ログに記録させることを防ぎ、コンピューターのIPアドレスを隠すことを考慮するとよいかもしれません。</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">ミクシング・サービスの限界</h3>
+      <p>ミクシング・サービスと呼ばれるオンラインサービスは、独立したビットコイン・アドレスを使って、決済額と同じ金額を受け取ったり、送ったりすることで、ユーザー間の追跡可能性を混乱させるサービスを提供します。こうしたサービスを使うことの合法性は、様々で、各所轄で規則が異なることを頭においておくことが重要です。また、こうしたサービスを使う際には、それを運営する個人に対し、彼らがあなたの資金を失くしたり、盗んだり、あなたの要請のログを記録しておかないと信頼できる必要があります。ミクシング・サービスが小額の追跡可能性を無くすことができても、多額取引に対しては、それが難しくなってきています。</p>
+    </li>
 
-<h2 id="mixing">ミクシング・サービスの限界</h2>
-<p>ミクシング・サービスと呼ばれるオンラインサービスは、独立したビットコイン・アドレスを使って、決済額と同じ金額を受け取ったり、送ったりすることで、ユーザー間の追跡可能性を混乱させるサービスを提供します。こうしたサービスを使うことの合法性は、様々で、各所轄で規則が異なることを頭においておくことが重要です。また、こうしたサービスを使う際には、それを運営する個人に対し、彼らがあなたの資金を失くしたり、盗んだり、あなたの要請のログを記録しておかないと信頼できる必要があります。ミクシング・サービスが小額の追跡可能性を無くすことができても、多額取引に対しては、それが難しくなってきています。</p>
-
-<h2 id="future">将来の改善</h2>
-<p>将来は、プライバシー面に対する多くの改善が期待されています。例えば、決済の際に、複数のアドレスが関連することを避ける決済メッセージAPIの開発が進んでいます。ビットコイン・コアの変更アドレスは、時間が経てば、他のウォレットの中で実践されるようになるかもしれません。グラフィカル・ユーザ・インタフェースは、ユーザ・フレンドリーな支払要請機能を提供し、同じアドレスの再使用を妨げるように改良されるかもしれません。また、ランダムなユーザーの取引に加われるような、さらなるプライバシー保護機能を開発するための様々な作業や調査も行われています。</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">将来の改善</h3>
+      <p>将来は、プライバシー面に対する多くの改善が期待されています。例えば、決済の際に、複数のアドレスが関連することを避ける決済メッセージAPIの開発が進んでいます。ビットコイン・コアの変更アドレスは、時間が経てば、他のウォレットの中で実践されるようになるかもしれません。グラフィカル・ユーザ・インタフェースは、ユーザ・フレンドリーな支払要請機能を提供し、同じアドレスの再使用を妨げるように改良されるかもしれません。また、ランダムなユーザーの取引に加われるような、さらなるプライバシー保護機能を開発するための様々な作業や調査も行われています。</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ja/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/legal">法律</a></li>
 			
-			<li><a href="/ja/privacy">プライバシー</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/privacy">プライバシー</a></li>
 			
-			<li><a href="/ja/press">プレス</a></li>
-			<li><a href="/ja/about-us">bitcoin.org について</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/press">プレス</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/about-us">bitcoin.org について</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

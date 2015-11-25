@@ -10,15 +10,29 @@
 <title>創新 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
+          <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">常見問題</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>支付系統的創新</h1>
-<p class="summarytxt">Bitcoin 協議并不僅僅是關於從 A 匯款到 B。它有很多功能，這個社群正在努力讓很多事情都成為可能。這裡是一些最近正在研究的技術，其中有些已經轉換成了真實的產品和服務。Bitcoin 最有趣的部份可能還有待發現。</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">支付系統的創新</h1>
+  <h2 class="content_innovation--subtitle">Bitcoin 協議并不僅僅是關於從 A 匯款到 B。它有很多功能，這個社群正在努力讓很多事情都成為可能。這裡是一些最近正在研究的技術，其中有些已經轉換成了真實的產品和服務。Bitcoin 最有趣的部份可能還有待發現。</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">反詐騙掌控權</h3>
+	    <p>一個前所未有的安全水準對 Bitcoin 來說是可能的。這個網路為用戶防範最常見的詐騙如拒付或不想要的收費，而且比特幣是不可能偽造的。用戶可以備份或加密他們的錢包，且硬體錢包在將來會讓盜竊或丟失錢變得難上加難。Bitcoin 的設計讓它的用戶對他們的錢有完全的掌控權。</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />反詐騙掌控權</h2>
-<p>一個前所未有的安全水準對 Bitcoin 來說是可能的。這個網路為用戶防範最常見的詐騙如拒付或不想要的收費，而且比特幣是不可能偽造的。用戶可以備份或加密他們的錢包，且硬體錢包在將來會讓盜竊或丟失錢變得難上加難。Bitcoin 的設計讓它的用戶對他們的錢有完全的掌控權。</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">全球可接入性</h3>
+	    <p>世界上所有的支付都能完全共同操作。不管有沒有一個銀行帳戶，Bitcoin 讓任何銀行、企業或個人安全地在任何地方任何時候匯款和收款。Bitcoin 在很多國家都可以使用，哪怕在這些國家大部份支付系統因本身的限制而不能使用。 Bitcoin 提升了全球貿易的可接入度，並且它能促使國際貿易繁榮。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">成本效率</h3>
+	    <p>通過使用密碼技術，不需要通過又慢又貴的中介來保障支付安全成為可能。一個 Bitcoin 交易比起其他方式要便宜得多而且能在短時間完成。這意味著 Bitcoin 有機會在將來成為一種常用的匯兌任何貨幣的方式。 Bitcoin 也可以通過削減昂貴的工人工資交易手續費，幫助很多國家 <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">減少貧困</a>。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">小費與捐贈</h3>
+	    <p>Bitcoin 在很多情況下成為了支付小費和募捐的一種特別有效的方式。傳送一筆款項只需要輕輕點擊一下，而接受捐款也簡單得像顯示一個 QP 碼。捐款情況可以有選擇地給公眾公開，這讓非牟利組織具有更高的透明度。在緊急情況例如自然災害發生時，Bitcoin 募捐可以實現一個更快的國際反饋。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">眾籌集資</h3>
+	    <p>雖然還不是很方便使用，Bitcoin 可以用於進行 Kickstarter-style 的眾籌活動，個人把錢集资給一個項目，這個項目只有在收到足夠的可以實現目標的錢時，個人集資的錢才會被收走。這樣的保險合約由 Bitcoin 協議處理能保障一個交易只有符合所有的條件的時候才會實現。 <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">瞭解更多</a> 關於眾籌背後的技術。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">小額支付</h3>
+	    <p>Bitcoin 能處理小至一美元的支付款項，很快就可以處理更小的數額的支付。這樣的支付在今天是稀鬆平常的。想像一樣，按秒來支付收聽國際網路收音，通過小額小費在瀏覽網頁時不顯示廣告，從一個 WiFi 熱點按每千字節購買寬頻，Bitcoin 足夠有效來讓所有這些想法成為可能。<a href="https://bitcoinj.github.io/working-with-micropayments">瞭解更多</a>關於Bitcoin微支付背後的技術的資訊。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">調解紛爭</h3>
+	    <p>Bitcoin 可以用通過多重簽署來開發新型的糾紛調解服務。這個服務讓第三方能在其他兩方沒有取得一致協議的情況下通過或反對一個交易，而且他不需要對他們的錢具有掌控權。因為這些服務會與使用 Bitcoin 的所有的用戶和商家兼容，這很可能會促進自由競爭和實現更高的質量標準。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">多重簽署帳戶</h3>
+	    <p>多重簽署讓一個交易只有在一個群體中一定數量的成員同意這個交易之後它才會被這個網路接受。這可以被用于董事會來防止任何成員在沒有得到其他成員的同意的情況下花費他們的部份財富。銀行也可以利用它，如果用戶不能提供另外的一個憑證，銀行就可以阻止高於一個閾值的支付，以此防止盜賊。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">信任和正直</h3>
+	    <p>Bitcoin 針對某些持續困擾銀行的信任問題提供了解決方案，通過選擇性的會計透明度、數位合約和不可取消的交易，Bitcoin 可以用作一個存儲信任和協議的平臺。不誠實的銀行不能欺騙這個系統，通過由其他銀行或公眾來負擔費用的方式來牟取利益。在將來如果主要的銀行支持 Bitcoin 的話，它就能幫助恢復人們對金融機構的正直信任。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">還原能力與去中心化</h3>
+	    <p>Bitcoin 通過高度去中心化創建了一個不一樣的具有更高水準的還原能力和冗餘度的支付網路。Bitcoin 不需要軍事保護就可以應付數百萬美元的交易。因為沒有像一個數據中心一樣的中心點，攻擊這個網路就難上加難。Bitcoin 象徵著保障本地和全球金融系統安全的進程又向前邁進了有趣的一步。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">彈性透明度</h3>
+	    <p>所有的 Bitcoin 交易都是公開透明的，款項參與人的身份默認是隱私的。這讓個人和組織可以實行有彈性的透明規則。例如，一個企業可以選擇向一些特定的雇員公開特定的交易和餘額，而一個非牟利組織則可以自由地讓公眾瞭解它們每天和每月接收了多少的善款。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">自動化的解決方案</h3>
+	    <p>自動服務通常要處理開支和鈔票或信用卡支付的額度限制。這包括巴士售票機、售咖啡機等所有的自動售貨機。Bitcoin 適合用於新一代自動服務并幫他們削減成本。想像一下無人駕駛的計程車或者一個可以有自動收费篮子不需排隊的商店，許多這樣的設想都是可能的。</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />全球可接入性</h2>
-<p>世界上所有的支付都能完全共同操作。不管有沒有一個銀行帳戶，Bitcoin 讓任何銀行、企業或個人安全地在任何地方任何時候匯款和收款。Bitcoin 在很多國家都可以使用，哪怕在這些國家大部份支付系統因本身的限制而不能使用。 Bitcoin 提升了全球貿易的可接入度，並且它能促使國際貿易繁榮。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />成本效率</h2>
-<p>通過使用密碼技術，不需要通過又慢又貴的中介來保障支付安全成為可能。一個 Bitcoin 交易比起其他方式要便宜得多而且能在短時間完成。這意味著 Bitcoin 有機會在將來成為一種常用的匯兌任何貨幣的方式。 Bitcoin 也可以通過削減昂貴的工人工資交易手續費，幫助很多國家 <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">減少貧困</a>。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />小費與捐贈</h2>
-<p>Bitcoin 在很多情況下成為了支付小費和募捐的一種特別有效的方式。傳送一筆款項只需要輕輕點擊一下，而接受捐款也簡單得像顯示一個 QP 碼。捐款情況可以有選擇地給公眾公開，這讓非牟利組織具有更高的透明度。在緊急情況例如自然災害發生時，Bitcoin 募捐可以實現一個更快的國際反饋。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />眾籌集資</h2>
-<p>雖然還不是很方便使用，Bitcoin 可以用於進行 Kickstarter-style 的眾籌活動，個人把錢集资給一個項目，這個項目只有在收到足夠的可以實現目標的錢時，個人集資的錢才會被收走。這樣的保險合約由 Bitcoin 協議處理能保障一個交易只有符合所有的條件的時候才會實現。 <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">瞭解更多</a> 關於眾籌背後的技術。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />小額支付</h2>
-<p>Bitcoin 能處理小至一美元的支付款項，很快就可以處理更小的數額的支付。這樣的支付在今天是稀鬆平常的。想像一樣，按秒來支付收聽國際網路收音，通過小額小費在瀏覽網頁時不顯示廣告，從一個 WiFi 熱點按每千字節購買寬頻，Bitcoin 足夠有效來讓所有這些想法成為可能。<a href="https://bitcoinj.github.io/working-with-micropayments">瞭解更多</a>關於Bitcoin微支付背後的技術的資訊。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />調解紛爭</h2>
-<p>Bitcoin 可以用通過多重簽署來開發新型的糾紛調解服務。這個服務讓第三方能在其他兩方沒有取得一致協議的情況下通過或反對一個交易，而且他不需要對他們的錢具有掌控權。因為這些服務會與使用 Bitcoin 的所有的用戶和商家兼容，這很可能會促進自由競爭和實現更高的質量標準。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />多重簽署帳戶</h2>
-<p>多重簽署讓一個交易只有在一個群體中一定數量的成員同意這個交易之後它才會被這個網路接受。這可以被用于董事會來防止任何成員在沒有得到其他成員的同意的情況下花費他們的部份財富。銀行也可以利用它，如果用戶不能提供另外的一個憑證，銀行就可以阻止高於一個閾值的支付，以此防止盜賊。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />信任和正直</h2>
-<p>Bitcoin 針對某些持續困擾銀行的信任問題提供了解決方案，通過選擇性的會計透明度、數位合約和不可取消的交易，Bitcoin 可以用作一個存儲信任和協議的平臺。不誠實的銀行不能欺騙這個系統，通過由其他銀行或公眾來負擔費用的方式來牟取利益。在將來如果主要的銀行支持 Bitcoin 的話，它就能幫助恢復人們對金融機構的正直信任。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />還原能力與去中心化</h2>
-<p>Bitcoin 通過高度去中心化創建了一個不一樣的具有更高水準的還原能力和冗餘度的支付網路。Bitcoin 不需要軍事保護就可以應付數百萬美元的交易。因為沒有像一個數據中心一樣的中心點，攻擊這個網路就難上加難。Bitcoin 象徵著保障本地和全球金融系統安全的進程又向前邁進了有趣的一步。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />彈性透明度</h2>
-<p>所有的 Bitcoin 交易都是公開透明的，款項參與人的身份默認是隱私的。這讓個人和組織可以實行有彈性的透明規則。例如，一個企業可以選擇向一些特定的雇員公開特定的交易和餘額，而一個非牟利組織則可以自由地讓公眾瞭解它們每天和每月接收了多少的善款。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />自動化的解決方案</h2>
-<p>自動服務通常要處理開支和鈔票或信用卡支付的額度限制。這包括巴士售票機、售咖啡機等所有的自動售貨機。Bitcoin 適合用於新一代自動服務并幫他們削減成本。想像一下無人駕駛的計程車或者一個可以有自動收费篮子不需排隊的商店，許多這樣的設想都是可能的。</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_TW/legal">合法</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/legal">合法</a></li>
 			
-			<li><a href="/zh_TW/privacy">隱私性</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/privacy">隱私性</a></li>
 			
-			<li><a href="/zh_TW/press">新聞媒體</a></li>
-			<li><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/press">新聞媒體</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>一個由其贊助的社群網站</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

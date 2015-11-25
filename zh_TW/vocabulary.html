@@ -10,15 +10,29 @@
 <title>詞彙 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
+          <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">常見問題</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>你也許聽過這些 Bitcoin 用語</h1>
-<p class="summarytxt">Bitcoin 提供了新的支付方法，你可能會學到一些新的詞彙。不過別擔心，即使是粗糙的電視劇也會創造新詞彙！</p>
-<h2 id="table-of-contents">目錄</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">你也許聽過這些 Bitcoin 用語</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin 提供了新的支付方法，你可能會學到一些新的詞彙。不過別擔心，即使是粗糙的電視劇也會創造新詞彙！</h2>
 
-<div class="index">
-
-<a href="#address">地址</a>
-
-<a href="#private-key">私密金鑰</a>
-
-<a href="#mining">挖礦</a>
-
-<a href="#block">區塊</a>
-
-<a href="#blockchain">區塊鏈</a>
-
-<a href="#cryptography">密碼學</a>
-
-<a href="#confirmation">確認</a>
-
-<a href="#wallet">錢包</a>
-
-<a href="#p2p">點對點</a>
-
-<a href="#double-spend">雙重支付</a>
-
-<a href="#hash-rate">雜湊率</a>
-
-<a href="#signature">簽章</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#btc">BTC</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">地址</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin 的地址就像<b>真實地址或 Email</b>，這是您收款時唯一需要提供的資訊。然而，一個重要的差別是，一個地址只能用於一筆交易。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">私密金鑰</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>私密金鑰是一串<b>證明你有從一個特定的錢包使用比特幣的權力的秘密數據</b>，私密金鑰讓您可以通過加密的<a href="#signature">簽章</a>來使用比特幣。如果您使用軟體錢包，您的私密金鑰(s)存儲在您的電腦中。千萬不要公開您的私密金鑰，因為通過金鑰可以使用相對應的 Bitcoin 錢包中的比特幣。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">挖礦</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin 挖礦是一種令電腦硬體進行數學運算的程序，用於確認交易和增加網路的安全。Bitcoin 挖礦者可以獲得交易手續費和新產生的比特幣作為回報。挖礦的回報是依據計算量的多寡來分配的，這使得挖礦成為一個專業且競爭的市場。因為挖礦並非容易賺錢的方法，所以不是所有的 Bitcoin 使用者都在挖礦。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">區塊</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>區塊是<b>區塊鏈中的一筆紀錄，其包含與確認了等待中的交易</b>。平均大約每十分鐘就會有一個新的區塊經由<a href="#mining">挖礦</a>被加到區塊鏈中。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blockchain">區塊鏈</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>區塊鏈是一個按照時間排序的<b>公開的 Bitcoin 交易紀錄</b>。所有的 Bitcoin 用戶分享區塊鏈，它可用於驗證 Bitcoin 交易的持久性并避免<a href="#double-spend">雙重支付</a>的情況。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">密碼學</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>密碼學是<b>數學的一個分支，能提供數學證明以確保高層次安全性</b>。線上貿易和銀行早已使用密碼學。在 Bitcoin 方面，密碼學用於避免有人使用其他人的錢包，或是破壞<a href="#blockchain">區塊鏈</a>。密碼學也可以用來加密錢包，讓持有密碼的人才能使用此錢包。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">確認</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>“確認”意味著一筆交易已經<b>由網路所驗證，並且極不可能取消</b>。交易在被包含在一個<a href="/zh_TW/vocabulary#block">區塊</a> 后就會接收到一個確認并不斷收到之後的區塊的確認。對於小額交易，單單一個確認就已經很安全，然而當轉移大量金錢如 1000 美元時，等待超過6個確認是有意義的。每個新的確認都使得風險<i>以指數程度</i>下降。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">錢包</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin 錢包大致上<b>可視為 Bitcoin 網路上的實體錢包</b>。錢包實際上包含您的<a href="#private-key">私密金鑰(keys) </a>，私密金鑰允許您花費在<a href="#blockchain">區塊鏈</a>上的比特幣。每個 Bitcoin 錢包都可以告訴您它所掌控的比特幣的總餘額，而且您可支付具體的金額給指定的人，就像使用一個真正的錢包一樣。這不同於信用卡，信用卡由商家向您收款。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">點對點</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>點對點是指<b>系統以有組織的方式運作</b>，其中每個參與者都能夠和其他人互動。Bitcoin 的網路設計讓每個使用者都會將交易廣播給其他使用者。最重要的是，此種運作方式不需要銀行作為交易的第三方。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">雙重支付</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>若一個惡意的用戶嘗試<b>同時把自己的比特幣付給兩個不同的收款人</b>，這就是雙重支付。Bitcoin <a href="#mining">挖礦</a> 和<a href="#blockchain">區塊鏈</a> 會在網路里產生一個共識來決定哪一個交易會被確認和被接受。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">雜湊率</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>雜湊速率是<b>用來測量 Bitcoin 網路計算能力的單位</b>。Bitcoin 網路必須進行大量密集的數學運算以維持安全。當網路的雜湊速率達到10 TH/s 時，這表示網路每秒可以進行10 兆個計算。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">簽章</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#cryptography">加密的</a> 簽章是<b>一種給某人證明所有權的數學機制</b>。對於 Bitcoin, 一個<a href="#wallet">Bitcoin 錢包</a> 和它的<a href="#private-key">私密金鑰(s)</a> 由某種數學魔法連結在一起。當您的 Bitcoin 軟體用正確的私密金鑰簽署交易時，整個網路都可以看到這個簽章與被花費的比特幣是相匹配的。然而，其他人根本沒有辦法破解您的私密金鑰來偷走你辛苦賺來的比特幣。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bit 是標明一個比特幣的次級單位的常用單位 -1,000,000 bits 等於1 比特幣 (BTC or B⃦).，通常這個單位對於標示小費、商品和服務價格更方便。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - 以大寫字母開頭，用於描述 Bitcoin 的概念或整個網路。譬如：“我今天瞭解了有關 Bitcoin 協議的內容。”<br>bitcoin - 以小寫字母開頭，用於描述作為一個計量單位來使用的比特幣，例如：“我今天轉出了 10 個比特幣。”它也常常縮寫為 BTC 或 XBT。</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC 是用於標明一個比特幣的常用單位(B⃦).</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="address">地址</h2>
-<p>Bitcoin 的地址就像<b>真實地址或 Email</b>，這是您收款時唯一需要提供的資訊。然而，一個重要的差別是，一個地址只能用於一筆交易。</p>
-
-<h2 id="private-key">私密金鑰</h2>
-<p>私密金鑰是一串<b>證明你有從一個特定的錢包使用比特幣的權力的秘密數據</b>，私密金鑰讓您可以通過加密的<a href="#signature">簽章</a>來使用比特幣。如果您使用軟體錢包，您的私密金鑰(s)存儲在您的電腦中。千萬不要公開您的私密金鑰，因為通過金鑰可以使用相對應的 Bitcoin 錢包中的比特幣。</p>
-
-<h2 id="mining">挖礦</h2>
-<p>Bitcoin 挖礦是一種令電腦硬體進行數學運算的程序，用於確認交易和增加網路的安全。Bitcoin 挖礦者可以獲得交易手續費和新產生的比特幣作為回報。挖礦的回報是依據計算量的多寡來分配的，這使得挖礦成為一個專業且競爭的市場。因為挖礦並非容易賺錢的方法，所以不是所有的 Bitcoin 使用者都在挖礦。</p>
-
-<h2 id="block">區塊</h2>
-<p>區塊是<b>區塊鏈中的一筆紀錄，其包含與確認了等待中的交易</b>。平均大約每十分鐘就會有一個新的區塊經由<a href="#mining">挖礦</a>被加到區塊鏈中。</p>
-
-<h2 id="blockchain">區塊鏈</h2>
-<p>區塊鏈是一個按照時間排序的<b>公開的 Bitcoin 交易紀錄</b>。所有的 Bitcoin 用戶分享區塊鏈，它可用於驗證 Bitcoin 交易的持久性并避免<a href="#double-spend">雙重支付</a>的情況。</p>
-
-<h2 id="cryptography">密碼學</h2>
-<p>密碼學是<b>數學的一個分支，能提供數學證明以確保高層次安全性</b>。線上貿易和銀行早已使用密碼學。在 Bitcoin 方面，密碼學用於避免有人使用其他人的錢包，或是破壞<a href="#blockchain">區塊鏈</a>。密碼學也可以用來加密錢包，讓持有密碼的人才能使用此錢包。</p>
-
-<h2 id="confirmation">確認</h2>
-<p>“確認”意味著一筆交易已經<b>由網路所驗證，並且極不可能取消</b>。交易在被包含在一個<a href="/zh_TW/vocabulary#block">區塊</a> 后就會接收到一個確認并不斷收到之後的區塊的確認。對於小額交易，單單一個確認就已經很安全，然而當轉移大量金錢如 1000 美元時，等待超過6個確認是有意義的。每個新的確認都使得風險<i>以指數程度</i>下降。</p>
-
-<h2 id="wallet">錢包</h2>
-<p>Bitcoin 錢包大致上<b>可視為 Bitcoin 網路上的實體錢包</b>。錢包實際上包含您的<a href="#private-key">私密金鑰(keys) </a>，私密金鑰允許您花費在<a href="#blockchain">區塊鏈</a>上的比特幣。每個 Bitcoin 錢包都可以告訴您它所掌控的比特幣的總餘額，而且您可支付具體的金額給指定的人，就像使用一個真正的錢包一樣。這不同於信用卡，信用卡由商家向您收款。</p>
-
-<h2 id="p2p">點對點</h2>
-<p>點對點是指<b>系統以有組織的方式運作</b>，其中每個參與者都能夠和其他人互動。Bitcoin 的網路設計讓每個使用者都會將交易廣播給其他使用者。最重要的是，此種運作方式不需要銀行作為交易的第三方。</p>
-
-<h2 id="double-spend">雙重支付</h2>
-<p>若一個惡意的用戶嘗試<b>同時把自己的比特幣付給兩個不同的收款人</b>，這就是雙重支付。Bitcoin <a href="#mining">挖礦</a> 和<a href="#blockchain">區塊鏈</a> 會在網路里產生一個共識來決定哪一個交易會被確認和被接受。</p>
-
-<h2 id="hash-rate">雜湊率</h2>
-<p>雜湊速率是<b>用來測量 Bitcoin 網路計算能力的單位</b>。Bitcoin 網路必須進行大量密集的數學運算以維持安全。當網路的雜湊速率達到10 TH/s 時，這表示網路每秒可以進行10 兆個計算。</p>
-
-<h2 id="signature">簽章</h2>
-<p><a href="#cryptography">加密的</a> 簽章是<b>一種給某人證明所有權的數學機制</b>。對於 Bitcoin, 一個<a href="#wallet">Bitcoin 錢包</a> 和它的<a href="#private-key">私密金鑰(s)</a> 由某種數學魔法連結在一起。當您的 Bitcoin 軟體用正確的私密金鑰簽署交易時，整個網路都可以看到這個簽章與被花費的比特幣是相匹配的。然而，其他人根本沒有辦法破解您的私密金鑰來偷走你辛苦賺來的比特幣。</p>
-
-<h2 id="bit">Bit</h2>
-<p>Bit 是標明一個比特幣的次級單位的常用單位 -1,000,000 bits 等於1 比特幣 (BTC or B⃦).，通常這個單位對於標示小費、商品和服務價格更方便。</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Bitcoin - 以大寫字母開頭，用於描述 Bitcoin 的概念或整個網路。譬如：“我今天瞭解了有關 Bitcoin 協議的內容。”<br>bitcoin - 以小寫字母開頭，用於描述作為一個計量單位來使用的比特幣，例如：“我今天轉出了 10 個比特幣。”它也常常縮寫為 BTC 或 XBT。</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC 是用於標明一個比特幣的常用單位(B⃦).</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_TW/legal">合法</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/legal">合法</a></li>
 			
-			<li><a href="/zh_TW/privacy">隱私性</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/privacy">隱私性</a></li>
 			
-			<li><a href="/zh_TW/press">新聞媒體</a></li>
-			<li><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/press">新聞媒體</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>一個由其贊助的社群網站</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

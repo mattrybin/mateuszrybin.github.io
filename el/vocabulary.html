@@ -10,15 +10,29 @@
 <title>Λεξιλόγιο - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
+          <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">Συχνές ερωτήσεις</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Μερικές λέξεις του Bitcoin που ίσως ακούσετε</h1>
-<p class="summarytxt">Το Bitcoin προσφέρει μια νέα προσέγγιση σε πληρωμές και ως εκ τούτου υπάρχουν μερικές λέξεις που μπορεί να γίνουν μέρος του λεξιλογίου σας. Μην ανησυχείτε, ακόμα και η ταπεινή τηλεόραση δημιούργησε νέες λέξεις!</p>
-<h2 id="table-of-contents">Πίνακας περιεχομένων</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Μερικές λέξεις του Bitcoin που ίσως ακούσετε</h1>
+  <h2 class="content_vocalbulary--subtitle">Το Bitcoin προσφέρει μια νέα προσέγγιση σε πληρωμές και ως εκ τούτου υπάρχουν μερικές λέξεις που μπορεί να γίνουν μέρος του λεξιλογίου σας. Μην ανησυχείτε, ακόμα και η ταπεινή τηλεόραση δημιούργησε νέες λέξεις!</h2>
 
-<div class="index">
-
-<a href="#block-chain">Αλυσίδα των Μπλοκ (Block Chain)</a>
-
-<a href="#address">Διεύθυνση</a>
-
-<a href="#double-spend">Διπλή Δαπάνη</a>
-
-<a href="#mining">Εξόρυξη</a>
-
-<a href="#confirmation">Επιβεβαίωση</a>
-
-<a href="#private-key">Ιδιωτικό Κλειδί</a>
-
-<a href="#cryptography">Κρυπτογραφία</a>
-
-<a href="#block">Μπλοκ (Βlock)</a>
-
-<a href="#wallet">Πορτοφόλι</a>
-
-<a href="#hash-rate">Ποσοστό κατακερματισμού (Hash Rate)</a>
-
-<a href="#signature">Υπογραφή</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#p2p">P2P</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block-chain">Αλυσίδα των Μπλοκ (Block Chain)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Η αλυσίδα των μπλοκ (block chain) είναι ένα <b>δημόσιο αρχείο συναλλαγών Bitcoin</b> με χρονολογική σειρά. Η αλυσίδα των μπλοκ διαμοιράζεται μεταξύ όλων των χρηστών Bitcoin. Χρησιμοποιείται για να επαληθεύσει την μονιμότητα των συναλλαγών Bitcoin και για να αποτρέψει <a href="#double-spend">διπλές δαπάνες (double spending)</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">Διεύθυνση</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Μια διεύθυνση Bitcoin είναι <b>παρόμοια με μια φυσική διεύθυνση ή ένα email</b>. Είναι η μόνη πληροφορία που χρειάζεται να δώσετε σε κάποιον για να σας πληρώσει με Bitcoin. Ωστόσο, μια σημαντική διαφορά είναι ότι η κάθε διεύθυνση θα πρέπει να χρησιμοποιείται για μία και μόνο συναλλαγή.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">Διπλή Δαπάνη</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Αν ένας κακόβουλος χρήστης προσπαθήσει να <b>ξοδέψει τα bitcoins του σε δύο διαφορετικούς παραλήπτες ταυτοχρόνως</b>, αυτό είναι διπλή δαπάνη. Η Bitcoin <a href="#mining">εξόρυξη</a> και η <a href="#block-chain">αλυσίδα των μπλοκ</a> είναι εκεί για να δημιουργήσουν μια γενική συναίνεση στο δίκτυο σχετικά με το ποια από τις δύο συναλλαγές θα επιβεβαιωθεί και θα θεωρείται έγκυρη.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">Εξόρυξη</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Το Bitcoin mining είναι η διεργασία που <b>δημιουργεί το υλισμικό υπολογιστή (computer hardware) για να κάνει μαθηματικούς υπολογισμούς ώστε το δίκτυο Bitcoin να επιβεβαιώσει τις συναλλαγές</b> και να αυξήσει την ασφάλεια. Ως αμοιβή για τις υπηρεσίες τους, οι Bitcoin miners μπορεί να συλλέγουν τα τέλη συναλλαγών για τις συναλλαγές που επιβεβαιώνουν, μαζί με τα πρόσφατα δημιουργημένα bitcoins. Το Mining είναι μια εξειδικευμένη και ανταγωνιστική αγορά όπου οι αμοιβές χωρίζονται ανάλογα με το πόσος υπολογισμός έχει γίνει. Δεν κάνουν όλοι οι χρήστες Bitcoin mining και δεν είναι εύκολος τρόπος να βγάλετε χρήματα.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">Επιβεβαίωση</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Επιβεβαίωση σημαίνει ότι μια συναλλαγή έχει <b>επεξεργαστεί από το δίκτυο και είναι εξαιρετικά απίθανο να αναιρεθεί</b>. Οι συναλλαγές λαμβάνουν επιβεβαίωση όταν συμπεριλαμβάνονται σε ένα <a href="/el/vocabulary#block">μπλοκ (block)</a> και για κάθε επακόλουθο μπλοκ. Ακόμα και μία επιβεβαίωση μπορεί να θεωρείται ασφαλής για συναλλαγές χαμηλής αξίας παρόλο που για μεγαλύτερα ποσά όπως 1000 US$, είναι λογικό να περιμένετε για 6 ή και περισσότερες επιβεβαιώσεις. Κάθε επικύρωση μειώνει <i>εκθετικά</i> τον κίνδυνο αντεστραμμένης συναλλαγής. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">Ιδιωτικό Κλειδί</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Ένα ιδιωτικό κλειδί είναι ένα <b>μυστικό κομμάτι δεδομένων που αποδεικνύει το δικαίωμά σας να ξοδέψετε bitcoins από ένα συγκεκριμένο πορτοφόλι</b> μέσο μιας κρυπτογραφικής <a href="#signature">υπογραφής</a>. Το(α) ιδιωτικό(ά) σας κλειδί(ά) είναι αποθηκευμένα στον υπολογιστή σας αν χρησιμοποιείτε ένα πορτοφόλι λογισμικού και αποθηκευμένα σε απομακρυσμένους διακομιστές αν χρησιμοποιείτε ένα διαδικτυακό πορτοφόλι. Τα ιδιωτικά κλειδιά δεν πρέπει ποτέ να αποκαλυφθούν καθώς σας  επιτρέπουν να ξοδέψετε bitcoins από το αντίστοιχο πορτοφόλι Bitcoin.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">Κρυπτογραφία</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Η κρυπτογραφία είναι ο κλάδος των μαθηματικών που μας επιτρέπει να δημιουργήσουμε  <b>μαθηματικές αποδείξεις οι οποίες παρέχουν υψηλά επίπεδα ασφαλείας</b>. Το online εμπόριο και το τραπεζικό σύστημα ήδη χρησιμοποιούν κρυπτογραφία. Στην περίπτωση του Bitcoin, η κρυπτογραφία χρησιμοποιείται για να είναι αδύνατο κάποιος να ξοδέψει τα κεφάλαια από το πορτοφόλι άλλου χρήστη ή να αλλοιώσει την <a href="#block-chain">αλυσίδα των μπλοκ</a>. Μπορεί να χρησιμοποιηθεί επίσης για την κρυπτογράφηση ενός πορτοφολιού έτσι ώστε αυτό να μην μπορεί να χρησιμοποιηθεί χωρίς κωδικό πρόσβασης.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">Μπλοκ (Βlock)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Ένα μπλοκ είναι ένα <b>αρχείο στην αλυσίδα των μπλοκ (block chain) το οποίο περιέχει και επικυρώνει πολλές συναλλαγές σε αναμονή</b>. Περίπου κάθε 10 λεπτά, κατά μέσο όρο, ένα νέο μπλοκ που συμπεριλαμβάνει συναλλαγές επισυνάπτεται στο <a href="#block-chain">αλυσίδα των μπλοκ</a> μέσω <a href="#mining">εξόρυξη</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">Πορτοφόλι</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Ένα Bitcoin πορτοφόλι είναι γενικώς <b>το ισοδύναμο ενός φυσικού πορτοφολιού στο δίκτυο Bitcoin</b>. Στην πραγματικότητα, το πορτοφόλι περιέχει τα δικά σας <a href="#private-key">ιδιωτικό(ά) κλειδί(ά)</a> τα οποία σας επιτρέπουν να ξοδεύετε τα bitcoins που κατενέμονται σε αυτή την <a href="#block-chain">αλυσίδα των μπλοκ (block chain)</a>. Το κάθε Bitcoin πορτοφόλι μπορεί να σας δείξει το συνολικό υπόλοιπο όλων των bitcoins που ελέγχει και σας αφήνει να πληρώσετε ένα συγκεκριμένο ποσό σε ένα συγκεκριμένο άτομο, όπως συμβαίνει και με ένα αληθινό πορτοφόλι. Αυτό διαφέρει από τις πιστωτικές κάρτες όπου χρεώνεστε από τον έμπορο.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">Ποσοστό κατακερματισμού (Hash Rate)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>O δείκτης κατακερματισμού (hash rate) είναι η <b>μονάδα μέτρησης της επεξεργαστικής ισχύος του δικτύου Bitcoin</b>. To δίκτυο Bitcoin πρέπει να κάνει εντατικές μαθηματικές λειτουργίες για λόγους ασφαλείας. Όταν το δίκτυο φτάσει σε δείκτη κατακερματισμού (hash rate) 10 Th/s, αυτό σημαίνει ότι θα μπορεί να κάνει 10 τρισεκατομμύρια υπολογισμούς το δευτερόλεπτο.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">Υπογραφή</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Μια <a href="#cryptography">κρυπτογραφική</a> υπογραφή είναι <b>ένας μαθηματικός μηχανισμός που επιτρέπει σε κάποιον να αποδείξει την κυριότητα</b>. Στην περίπτωση του Bitcoin, ένα <a href="#wallet">Bitcoin πορτοφόλι</a> και τα δικά του <a href="#private-key">ιδιωτικό(ά) κλειδί(ά)</a> συνδέονται με κάποια μαθηματική μαγεία. Όταν το λογισμικό σας Bitcoin υπογράψει μια συναλλαγή με το κατάλληλο ιδιωτικό κλειδί, όλο το δίκτυο μπορεί να δει ότι η υπογραφή συμπίπτει με τα bitcoins που ξοδεύονται. Ωστόσο, δεν υπάρχει τρόπος, που να χαλάσει ο κόσμος, κάποιος να μαντέψει το ιδιωτικό κλειδί σας για να κλέψει τα κερδισμένα με κόπο bitcoins σας.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Το Μπιτ (bit) είναι μια συνηθισμένη μονάδα που χρησιμοποιείται για να προσδιορίσει μια υπομονάδα ενός bitcoin. 1,000,000 bits ισούνται με 1 bitcoin  (BTC or B⃦). Η μονάδα αυτή είναι συνήθως περισσότερο πρακτική για τιμολόγηση φιλοδωρημάτων, αγαθών και υπηρεσιών.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Το Bitcoin - με κεφαλαίο, χρησιμοποιείται όταν περιγράφουμε την έννοια του Bitcoin, ή ολόκληρο το ίδιο το δίκτυο. π.χ "Μάθαινα για το πρωτόκολλο Bitcoin σήμερα."<br>Το bitcoin - χωρίς κεφαλαίο, χρησιμοποιείται για να περιγράψει τα bitcoins ως μονάδα ενός λογαριασμού. e.g. "Έστειλα δέκα bitcoins σήμερα." Συχνά χρησιμοποιείται η συντομογραφία BTC ή XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Το BTC είναι μια συνηθισμένη μονάδα που χρησιμοποιείται για να προσδιορίσει ένα bitcoin (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Η ομότιμη σύνδεση (peer-to-peer) αναφέρεται σε <b>συστήματα που λειτουργούν όπως μια οργανωμένη συλλογική </b> επιτρέποντας στο κάθε άτομο να αλληλεπιδρά άμεσα με τους άλλους. Στην περίπτωση του Bitcoin, το δίκτυο είναι φτιαγμένο με τέτοιο τρόπο ώστε ο κάθε χρήστης να εκπέμπει τις συναλλαγές των άλλων χρηστών. Και κύριως δεν απαιτείται καμιά τράπεζα ως τρίτος.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="block-chain">Αλυσίδα των Μπλοκ (Block Chain)</h2>
-<p>Η αλυσίδα των μπλοκ (block chain) είναι ένα <b>δημόσιο αρχείο συναλλαγών Bitcoin</b> με χρονολογική σειρά. Η αλυσίδα των μπλοκ διαμοιράζεται μεταξύ όλων των χρηστών Bitcoin. Χρησιμοποιείται για να επαληθεύσει την μονιμότητα των συναλλαγών Bitcoin και για να αποτρέψει <a href="#double-spend">διπλές δαπάνες (double spending)</a>.</p>
-
-<h2 id="address">Διεύθυνση</h2>
-<p>Μια διεύθυνση Bitcoin είναι <b>παρόμοια με μια φυσική διεύθυνση ή ένα email</b>. Είναι η μόνη πληροφορία που χρειάζεται να δώσετε σε κάποιον για να σας πληρώσει με Bitcoin. Ωστόσο, μια σημαντική διαφορά είναι ότι η κάθε διεύθυνση θα πρέπει να χρησιμοποιείται για μία και μόνο συναλλαγή.</p>
-
-<h2 id="double-spend">Διπλή Δαπάνη</h2>
-<p>Αν ένας κακόβουλος χρήστης προσπαθήσει να <b>ξοδέψει τα bitcoins του σε δύο διαφορετικούς παραλήπτες ταυτοχρόνως</b>, αυτό είναι διπλή δαπάνη. Η Bitcoin <a href="#mining">εξόρυξη</a> και η <a href="#block-chain">αλυσίδα των μπλοκ</a> είναι εκεί για να δημιουργήσουν μια γενική συναίνεση στο δίκτυο σχετικά με το ποια από τις δύο συναλλαγές θα επιβεβαιωθεί και θα θεωρείται έγκυρη.</p>
-
-<h2 id="mining">Εξόρυξη</h2>
-<p>Το Bitcoin mining είναι η διεργασία που <b>δημιουργεί το υλισμικό υπολογιστή (computer hardware) για να κάνει μαθηματικούς υπολογισμούς ώστε το δίκτυο Bitcoin να επιβεβαιώσει τις συναλλαγές</b> και να αυξήσει την ασφάλεια. Ως αμοιβή για τις υπηρεσίες τους, οι Bitcoin miners μπορεί να συλλέγουν τα τέλη συναλλαγών για τις συναλλαγές που επιβεβαιώνουν, μαζί με τα πρόσφατα δημιουργημένα bitcoins. Το Mining είναι μια εξειδικευμένη και ανταγωνιστική αγορά όπου οι αμοιβές χωρίζονται ανάλογα με το πόσος υπολογισμός έχει γίνει. Δεν κάνουν όλοι οι χρήστες Bitcoin mining και δεν είναι εύκολος τρόπος να βγάλετε χρήματα.</p>
-
-<h2 id="confirmation">Επιβεβαίωση</h2>
-<p>Επιβεβαίωση σημαίνει ότι μια συναλλαγή έχει <b>επεξεργαστεί από το δίκτυο και είναι εξαιρετικά απίθανο να αναιρεθεί</b>. Οι συναλλαγές λαμβάνουν επιβεβαίωση όταν συμπεριλαμβάνονται σε ένα <a href="/el/vocabulary#block">μπλοκ (block)</a> και για κάθε επακόλουθο μπλοκ. Ακόμα και μία επιβεβαίωση μπορεί να θεωρείται ασφαλής για συναλλαγές χαμηλής αξίας παρόλο που για μεγαλύτερα ποσά όπως 1000 US$, είναι λογικό να περιμένετε για 6 ή και περισσότερες επιβεβαιώσεις. Κάθε επικύρωση μειώνει <i>εκθετικά</i> τον κίνδυνο αντεστραμμένης συναλλαγής. </p>
-
-<h2 id="private-key">Ιδιωτικό Κλειδί</h2>
-<p>Ένα ιδιωτικό κλειδί είναι ένα <b>μυστικό κομμάτι δεδομένων που αποδεικνύει το δικαίωμά σας να ξοδέψετε bitcoins από ένα συγκεκριμένο πορτοφόλι</b> μέσο μιας κρυπτογραφικής <a href="#signature">υπογραφής</a>. Το(α) ιδιωτικό(ά) σας κλειδί(ά) είναι αποθηκευμένα στον υπολογιστή σας αν χρησιμοποιείτε ένα πορτοφόλι λογισμικού και αποθηκευμένα σε απομακρυσμένους διακομιστές αν χρησιμοποιείτε ένα διαδικτυακό πορτοφόλι. Τα ιδιωτικά κλειδιά δεν πρέπει ποτέ να αποκαλυφθούν καθώς σας  επιτρέπουν να ξοδέψετε bitcoins από το αντίστοιχο πορτοφόλι Bitcoin.</p>
-
-<h2 id="cryptography">Κρυπτογραφία</h2>
-<p>Η κρυπτογραφία είναι ο κλάδος των μαθηματικών που μας επιτρέπει να δημιουργήσουμε  <b>μαθηματικές αποδείξεις οι οποίες παρέχουν υψηλά επίπεδα ασφαλείας</b>. Το online εμπόριο και το τραπεζικό σύστημα ήδη χρησιμοποιούν κρυπτογραφία. Στην περίπτωση του Bitcoin, η κρυπτογραφία χρησιμοποιείται για να είναι αδύνατο κάποιος να ξοδέψει τα κεφάλαια από το πορτοφόλι άλλου χρήστη ή να αλλοιώσει την <a href="#block-chain">αλυσίδα των μπλοκ</a>. Μπορεί να χρησιμοποιηθεί επίσης για την κρυπτογράφηση ενός πορτοφολιού έτσι ώστε αυτό να μην μπορεί να χρησιμοποιηθεί χωρίς κωδικό πρόσβασης.</p>
-
-<h2 id="block">Μπλοκ (Βlock)</h2>
-<p>Ένα μπλοκ είναι ένα <b>αρχείο στην αλυσίδα των μπλοκ (block chain) το οποίο περιέχει και επικυρώνει πολλές συναλλαγές σε αναμονή</b>. Περίπου κάθε 10 λεπτά, κατά μέσο όρο, ένα νέο μπλοκ που συμπεριλαμβάνει συναλλαγές επισυνάπτεται στο <a href="#block-chain">αλυσίδα των μπλοκ</a> μέσω <a href="#mining">εξόρυξη</a>.</p>
-
-<h2 id="wallet">Πορτοφόλι</h2>
-<p>Ένα Bitcoin πορτοφόλι είναι γενικώς <b>το ισοδύναμο ενός φυσικού πορτοφολιού στο δίκτυο Bitcoin</b>. Στην πραγματικότητα, το πορτοφόλι περιέχει τα δικά σας <a href="#private-key">ιδιωτικό(ά) κλειδί(ά)</a> τα οποία σας επιτρέπουν να ξοδεύετε τα bitcoins που κατενέμονται σε αυτή την <a href="#block-chain">αλυσίδα των μπλοκ (block chain)</a>. Το κάθε Bitcoin πορτοφόλι μπορεί να σας δείξει το συνολικό υπόλοιπο όλων των bitcoins που ελέγχει και σας αφήνει να πληρώσετε ένα συγκεκριμένο ποσό σε ένα συγκεκριμένο άτομο, όπως συμβαίνει και με ένα αληθινό πορτοφόλι. Αυτό διαφέρει από τις πιστωτικές κάρτες όπου χρεώνεστε από τον έμπορο.</p>
-
-<h2 id="hash-rate">Ποσοστό κατακερματισμού (Hash Rate)</h2>
-<p>O δείκτης κατακερματισμού (hash rate) είναι η <b>μονάδα μέτρησης της επεξεργαστικής ισχύος του δικτύου Bitcoin</b>. To δίκτυο Bitcoin πρέπει να κάνει εντατικές μαθηματικές λειτουργίες για λόγους ασφαλείας. Όταν το δίκτυο φτάσει σε δείκτη κατακερματισμού (hash rate) 10 Th/s, αυτό σημαίνει ότι θα μπορεί να κάνει 10 τρισεκατομμύρια υπολογισμούς το δευτερόλεπτο.</p>
-
-<h2 id="signature">Υπογραφή</h2>
-<p>Μια <a href="#cryptography">κρυπτογραφική</a> υπογραφή είναι <b>ένας μαθηματικός μηχανισμός που επιτρέπει σε κάποιον να αποδείξει την κυριότητα</b>. Στην περίπτωση του Bitcoin, ένα <a href="#wallet">Bitcoin πορτοφόλι</a> και τα δικά του <a href="#private-key">ιδιωτικό(ά) κλειδί(ά)</a> συνδέονται με κάποια μαθηματική μαγεία. Όταν το λογισμικό σας Bitcoin υπογράψει μια συναλλαγή με το κατάλληλο ιδιωτικό κλειδί, όλο το δίκτυο μπορεί να δει ότι η υπογραφή συμπίπτει με τα bitcoins που ξοδεύονται. Ωστόσο, δεν υπάρχει τρόπος, που να χαλάσει ο κόσμος, κάποιος να μαντέψει το ιδιωτικό κλειδί σας για να κλέψει τα κερδισμένα με κόπο bitcoins σας.</p>
-
-<h2 id="bit">Bit</h2>
-<p>Το Μπιτ (bit) είναι μια συνηθισμένη μονάδα που χρησιμοποιείται για να προσδιορίσει μια υπομονάδα ενός bitcoin. 1,000,000 bits ισούνται με 1 bitcoin  (BTC or B⃦). Η μονάδα αυτή είναι συνήθως περισσότερο πρακτική για τιμολόγηση φιλοδωρημάτων, αγαθών και υπηρεσιών.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Το Bitcoin - με κεφαλαίο, χρησιμοποιείται όταν περιγράφουμε την έννοια του Bitcoin, ή ολόκληρο το ίδιο το δίκτυο. π.χ "Μάθαινα για το πρωτόκολλο Bitcoin σήμερα."<br>Το bitcoin - χωρίς κεφαλαίο, χρησιμοποιείται για να περιγράψει τα bitcoins ως μονάδα ενός λογαριασμού. e.g. "Έστειλα δέκα bitcoins σήμερα." Συχνά χρησιμοποιείται η συντομογραφία BTC ή XBT.</p>
-
-<h2 id="btc">BTC</h2>
-<p>Το BTC είναι μια συνηθισμένη μονάδα που χρησιμοποιείται για να προσδιορίσει ένα bitcoin (B⃦).</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Η ομότιμη σύνδεση (peer-to-peer) αναφέρεται σε <b>συστήματα που λειτουργούν όπως μια οργανωμένη συλλογική </b> επιτρέποντας στο κάθε άτομο να αλληλεπιδρά άμεσα με τους άλλους. Στην περίπτωση του Bitcoin, το δίκτυο είναι φτιαγμένο με τέτοιο τρόπο ώστε ο κάθε χρήστης να εκπέμπει τις συναλλαγές των άλλων χρηστών. Και κύριως δεν απαιτείται καμιά τράπεζα ως τρίτος.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/el/legal">Νομικά</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/legal">Νομικά</a></li>
 			
-			<li><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
 			
-			<li><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
-			<li><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Μια κοινοτική ιστοσελίδα χρηματοδοτούμενη από</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

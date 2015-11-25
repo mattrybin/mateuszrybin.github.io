@@ -10,15 +10,29 @@
 <title>Proteggi la tua privacy - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/it.png"><strong>Italiano</strong>
+          <img src="/img/flags/it.png"><strong>Italiano</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Proteggi la tua privacy</h1>
-<p class="summarytxt">Bitcoin è spesso percepito come un network per il pagamento anonimo. Ma in realtà, Bitcoin è probabilmente il network per i pagamenti più trasparente al mondo. Al contempo, Bitcoin può garantire accettabili livelli di privacy quando è utilizzato correttamente. <b> Ricorda sempre che è una tua responsabilità adottare delle buone pratiche per proteggere la tua privacy</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Proteggi la tua privacy</h1>
+	<h2 class="content_standard--subtitle">Bitcoin è spesso percepito come un network per il pagamento anonimo. Ma in realtà, Bitcoin è probabilmente il network per i pagamenti più trasparente al mondo. Al contempo, Bitcoin può garantire accettabili livelli di privacy quando è utilizzato correttamente. <b> Ricorda sempre che è una tua responsabilità adottare delle buone pratiche per proteggere la tua privacy</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Comprendere la tracciabilitá di Bitcoin</h3>
+      <p>Bitcoin opera ad un livello di trasparenza senza precedenti, a cui la maggior parte delle persone non è abituata. Tutte le transazioni di Bitcoin sono pubbliche, tracciabili e raccolte in maniera permanente nella rete di Bitcoin.  Gli indirizzi di Bitcoin sono le uniche informazioni utilizzate per definire dove si trovano i bitcoin, e dove sono inviati. Tali indirizzi sono creati privatamente dai portafogli di ciascun utente. Tuttavia, una volta che gli indirizzi vengono utilizzati, sono corrotti dalla storia di tutte le transazioni con cui sono coinvolti.  Tutti possono vedere il <a href="https://www.biteasy.com">bilancio e tutte le transazioni </a> di ogni indirizzo. Dato che gli utenti di solito devono rivelare la propria identità, per poter ricevere servizi o beni, gli indirizzi Bitcoin non possono restare totalmente anonimi.  Per queste ragioni, gli indirizzi Bitcoin dovrebbero essere utilizzati solo una volta e gli utenti devono prestare attenzione a non divulgare i loro indirizzi.  </p>
+    </li>
 
-<h2 id="traceable">Comprendere la tracciabilitá di Bitcoin</h2>
-<p>Bitcoin opera ad un livello di trasparenza senza precedenti, a cui la maggior parte delle persone non è abituata. Tutte le transazioni di Bitcoin sono pubbliche, tracciabili e raccolte in maniera permanente nella rete di Bitcoin.  Gli indirizzi di Bitcoin sono le uniche informazioni utilizzate per definire dove si trovano i bitcoin, e dove sono inviati. Tali indirizzi sono creati privatamente dai portafogli di ciascun utente. Tuttavia, una volta che gli indirizzi vengono utilizzati, sono corrotti dalla storia di tutte le transazioni con cui sono coinvolti.  Tutti possono vedere il <a href="https://www.biteasy.com">bilancio e tutte le transazioni </a> di ogni indirizzo. Dato che gli utenti di solito devono rivelare la propria identità, per poter ricevere servizi o beni, gli indirizzi Bitcoin non possono restare totalmente anonimi.  Per queste ragioni, gli indirizzi Bitcoin dovrebbero essere utilizzati solo una volta e gli utenti devono prestare attenzione a non divulgare i loro indirizzi.  </p>
+    <li class="content_standard--items">
+      <h3 id="receive">Usa nuovi indirizzi per ricevere pagamenti</h3>
+      <p>Per proteggere la tua privacy, dovresti utilizzare un nuovo indirizzo Bitcoin ogni volta che ricevi un nuovo pagamento. Inoltre, puoi utilizzare multipli portafogli per diversi scopi. Facendo così, puoi isolare ogni singola transazione, in modo tale da non rendere possibile la loro associazione globale. Le persone che ti inviano denaro, non possono vedere gli altri indirizzi Bitcoin che possiedi, e che cosa ne fai. Questo è probabilmente il consiglio più importante che dovresti tenere in mente. </p>
+    </li>
 
-<h2 id="receive">Usa nuovi indirizzi per ricevere pagamenti</h2>
-<p>Per proteggere la tua privacy, dovresti utilizzare un nuovo indirizzo Bitcoin ogni volta che ricevi un nuovo pagamento. Inoltre, puoi utilizzare multipli portafogli per diversi scopi. Facendo così, puoi isolare ogni singola transazione, in modo tale da non rendere possibile la loro associazione globale. Le persone che ti inviano denaro, non possono vedere gli altri indirizzi Bitcoin che possiedi, e che cosa ne fai. Questo è probabilmente il consiglio più importante che dovresti tenere in mente. </p>
+    <li class="content_standard--items">
+      <h3 id="public">Attenzione agli spazi pubblici</h3>
+      <p>A meno che la tua intenzione non sia quella di ricevere donazioni o pagamenti in completa trasparenza, pubblicare un indirizzo Bitcoin in spazi pubblici quali siti web o social network non è una buona idea in termini di privacy. Se scegli di farlo, ricorda sempre che se sposti fondi da questo indirizzo a un tuo altro indirizzo, anch'esso sarà facilmente rintracciabile. Oltretutto, sarebbe prudente non pubblicare informazioni su transazioni o acquisti che potrebbero permettere a qualcuno di identificare il tuo indirizzo Bitcoin.</p>
+    </li>
 
-<h2 id="public">Attenzione agli spazi pubblici</h2>
-<p>A meno che la tua intenzione non sia quella di ricevere donazioni o pagamenti in completa trasparenza, pubblicare un indirizzo Bitcoin in spazi pubblici quali siti web o social network non è una buona idea in termini di privacy. Se scegli di farlo, ricorda sempre che se sposti fondi da questo indirizzo a un tuo altro indirizzo, anch'esso sarà facilmente rintracciabile. Oltretutto, sarebbe prudente non pubblicare informazioni su transazioni o acquisti che potrebbero permettere a qualcuno di identificare il tuo indirizzo Bitcoin.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Il tuo indirizzo IP può essere registrato</h3>
+      <p>Dato che la rete di Bitocoin è un network peer-to-peer, è possibile ascoltare le informazioni relative alle transazioni e registrare i loro indirizzi IP.  I client full node  registrano tutte le transazioni degli utenti, così come le proprie. Ciò significa che trovare la fonte di qualsiasi particolare transazione può rilvelarsi difficile, e qualsiasi node di Bitcoin può essere scambiato per la fonte di una transazione, quando in realtà non lo è.  Potresti considerare di nascondere l'indirizzo IP del tuo computer con uno strumento come  <a href="https://www.torproject.org/">Tor</a> così che sia impossibile accedervi. </p>
+    </li>
 
-<h2 id="iplog">Il tuo indirizzo IP può essere registrato</h2>
-<p>Dato che la rete di Bitocoin è un network peer-to-peer, è possibile ascoltare le informazioni relative alle transazioni e registrare i loro indirizzi IP.  I client full node  registrano tutte le transazioni degli utenti, così come le proprie. Ciò significa che trovare la fonte di qualsiasi particolare transazione può rilvelarsi difficile, e qualsiasi node di Bitcoin può essere scambiato per la fonte di una transazione, quando in realtà non lo è.  Potresti considerare di nascondere l'indirizzo IP del tuo computer con uno strumento come  <a href="https://www.torproject.org/">Tor</a> così che sia impossibile accedervi. </p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Limitazioni nel mischiare servizi</h3>
+      <p>Alcuni servizi online chiamarti servizi misti offrono la possibilità di mescolare la tracciabilità tra utenti, ricevendo e inviando la stessa quantità utilizzando indirizzi Bitcoin indipendenti. E' importante notare che la legalità nell'utilizzare tali servizi può variare ed essere soggetta a diverse leggi in ogni giurisdizione. Questi servizi richiedono anche che tu abbia fiducia nei soggetti che li gestiscono, affinché non perdano o rubino i tuoi fondi, e non mantengano un registro delle tue richieste. Sebbene i servizi misti possano rompere la tracciabilità per piccole cifre, diventa molto difficile fare lo stesso per le transazioni maggiori.</p>
+    </li>
 
-<h2 id="mixing">Limitazioni nel mischiare servizi</h2>
-<p>Alcuni servizi online chiamarti servizi misti offrono la possibilità di mescolare la tracciabilità tra utenti, ricevendo e inviando la stessa quantità utilizzando indirizzi Bitcoin indipendenti. E' importante notare che la legalità nell'utilizzare tali servizi può variare ed essere soggetta a diverse leggi in ogni giurisdizione. Questi servizi richiedono anche che tu abbia fiducia nei soggetti che li gestiscono, affinché non perdano o rubino i tuoi fondi, e non mantengano un registro delle tue richieste. Sebbene i servizi misti possano rompere la tracciabilità per piccole cifre, diventa molto difficile fare lo stesso per le transazioni maggiori.</p>
-
-<h2 id="future">Futuri miglioramenti</h2>
-<p>Ci si aspetta molti miglioramenti in futuro, in ambito di privacy. Ad esempio, si stanno facendo sforzi con i messaggi di pagamento API, per evitare la contaminazione di indirizzi multipli, durante un pagamento. Il cambiamento degli indirizzi con Bitcoin Core potrà essere impiantato in altri portafogli nel tempo. Le interfacce grafiche degli utenti potranno essere migliorate per garantire dei metodi di pagamento a favore degli utenti, scoraggiando il riutilizzo degli indirizzi. Si stanno svolgendo anche dei lavori e delle ricerche per sviluppare altre funzionalità estese della privacy, come riunire insieme transazioni casuali degli utenti, </p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Futuri miglioramenti</h3>
+      <p>Ci si aspetta molti miglioramenti in futuro, in ambito di privacy. Ad esempio, si stanno facendo sforzi con i messaggi di pagamento API, per evitare la contaminazione di indirizzi multipli, durante un pagamento. Il cambiamento degli indirizzi con Bitcoin Core potrà essere impiantato in altri portafogli nel tempo. Le interfacce grafiche degli utenti potranno essere migliorate per garantire dei metodi di pagamento a favore degli utenti, scoraggiando il riutilizzo degli indirizzi. Si stanno svolgendo anche dei lavori e delle ricerche per sviluppare altre funzionalità estese della privacy, come riunire insieme transazioni casuali degli utenti, </p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/it/note-legali">Note legali</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/note-legali">Note legali</a></li>
 			
-			<li><a href="/it/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/privacy">Privacy</a></li>
 			
-			<li><a href="/it/stampa">Stampa</a></li>
-			<li><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/stampa">Stampa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un sito web della comunità sponsorizzato da</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

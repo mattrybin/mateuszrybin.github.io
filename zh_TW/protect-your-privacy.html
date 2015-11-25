@@ -10,15 +10,29 @@
 <title>保護您的隱私 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
+          <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">常見問題</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>保護您的隱私</h1>
-<p class="summarytxt">Bitcoin 常常被誤以為是一個匿名的支付網路。但實際上，Bitcoin 可能是世界上最透明的支付網路。同時，如果正確使用的話， Bitcoin 也可以提供可接受程度的隱私性。 <b>永遠記住，採取正確的做法來保護您的隱私，這是您的責任</b>。</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">保護您的隱私</h1>
+	<h2 class="content_standard--subtitle">Bitcoin 常常被誤以為是一個匿名的支付網路。但實際上，Bitcoin 可能是世界上最透明的支付網路。同時，如果正確使用的話， Bitcoin 也可以提供可接受程度的隱私性。 <b>永遠記住，採取正確的做法來保護您的隱私，這是您的責任</b>。</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">明白 Bitcoin 的可溯源性</h3>
+      <p>Bitcoin 有前所未有的透明度，大部份人都不太習慣它。所有的 Bitcoin 交易都是透明和可溯源的，它們會被永久地儲存在 Bitcoin 網路中。Bitcoin 地址是用來確定比特幣被分配在哪裡和傳送到哪裡去的唯一資訊。這些地址由每個用戶的錢包獨立創建。然而，一旦地址被使用后，它們就會被相關的交易歷史污染。所有人都可以檢視所有地址的 <a href="https://www.biteasy.com">餘額和所有交易</a>。因為用戶通常需要透露他們的身份來接收服務或商品，Bitcoin 地址就算不上完全匿名的。鑒於這些原因，Bitcoin 地址應是一次性的且用戶必須小心翼翼不隨便洩露他們的地址。</p>
+    </li>
 
-<h2 id="traceable">明白 Bitcoin 的可溯源性</h2>
-<p>Bitcoin 有前所未有的透明度，大部份人都不太習慣它。所有的 Bitcoin 交易都是透明和可溯源的，它們會被永久地儲存在 Bitcoin 網路中。Bitcoin 地址是用來確定比特幣被分配在哪裡和傳送到哪裡去的唯一資訊。這些地址由每個用戶的錢包獨立創建。然而，一旦地址被使用后，它們就會被相關的交易歷史污染。所有人都可以檢視所有地址的 <a href="https://www.biteasy.com">餘額和所有交易</a>。因為用戶通常需要透露他們的身份來接收服務或商品，Bitcoin 地址就算不上完全匿名的。鑒於這些原因，Bitcoin 地址應是一次性的且用戶必須小心翼翼不隨便洩露他們的地址。</p>
+    <li class="content_standard--items">
+      <h3 id="receive">使用新地址來收款</h3>
+      <p>爲了保護您的隱私，您應該每次收款的時候使用一個新的 Bitcoin 地址。另外，您可以用多個錢包做不同的事情。這樣做讓您可以把您的每個交易都分開，這也使得它們不可能被聯繫起來。給您匯款的人不能看到您擁有的其他地址也看不到您用它們來做了什麽。這可能是您最應該記住的建議。</p>
+    </li>
 
-<h2 id="receive">使用新地址來收款</h2>
-<p>爲了保護您的隱私，您應該每次收款的時候使用一個新的 Bitcoin 地址。另外，您可以用多個錢包做不同的事情。這樣做讓您可以把您的每個交易都分開，這也使得它們不可能被聯繫起來。給您匯款的人不能看到您擁有的其他地址也看不到您用它們來做了什麽。這可能是您最應該記住的建議。</p>
+    <li class="content_standard--items">
+      <h3 id="public">請多加留意公共空間</h3>
+      <p>在任何公共區域譬如一個網站或社交網路發佈一個 Bitcoin 地址對於保護隱私是不太好的，除非您想要完全透明地接受公眾捐款或付款。如果您決定這麼做，總是要記住如果您從這個地址轉移任何的資金到您的其他地址的話，您的其他地址都會被您的公開地址的歷史公開污染。另外，您也要小心翼翼不去發佈關於您的交易和購買的信息，否則有人就可以識別您的 Bitcoin 地址。</p>
+    </li>
 
-<h2 id="public">請多加留意公共空間</h2>
-<p>在任何公共區域譬如一個網站或社交網路發佈一個 Bitcoin 地址對於保護隱私是不太好的，除非您想要完全透明地接受公眾捐款或付款。如果您決定這麼做，總是要記住如果您從這個地址轉移任何的資金到您的其他地址的話，您的其他地址都會被您的公開地址的歷史公開污染。另外，您也要小心翼翼不去發佈關於您的交易和購買的信息，否則有人就可以識別您的 Bitcoin 地址。</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">您的 IP 地址可以被記錄</h3>
+      <p>因為 Bitcoin 網路是點對點網路，留意交易的中繼設備和記錄它們的 IP 地址是可能的。全節點客戶端轉送所有用戶的交易就像傳送它們自己的交易一樣。這意味著找到任何一個交易的源頭是很困難的，而且任何 Bitcoin 節點都可能被誤認為是源頭，實際上它們不是。您可能想要考慮使用一個像<a href="https://www.torproject.org/">Tor</a> 那樣的工具來隱藏您的計算器的 IP 地址，這樣它就不會被記錄。</p>
+    </li>
 
-<h2 id="iplog">您的 IP 地址可以被記錄</h2>
-<p>因為 Bitcoin 網路是點對點網路，留意交易的中繼設備和記錄它們的 IP 地址是可能的。全節點客戶端轉送所有用戶的交易就像傳送它們自己的交易一樣。這意味著找到任何一個交易的源頭是很困難的，而且任何 Bitcoin 節點都可能被誤認為是源頭，實際上它們不是。您可能想要考慮使用一個像<a href="https://www.torproject.org/">Tor</a> 那樣的工具來隱藏您的計算器的 IP 地址，這樣它就不會被記錄。</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">混合服務的局限性</h3>
+      <p>一些名為混合服務的線上服務可以通過使用獨立的 Bitcoin 地址接收和返回同樣的數額來混合用戶的可溯源性。要注意，使用這種服務的合法性在不同的行政區內可能是不一樣的。這樣的服務也要求您信任運營這些服務的個人不會丟失或盜竊您的資金，也不會記錄您的請求。雖然混合服務可以為小額交易打破可溯源性，但是對於大筆交易來說它越來越難做到這一點。</p>
+    </li>
 
-<h2 id="mixing">混合服務的局限性</h2>
-<p>一些名為混合服務的線上服務可以通過使用獨立的 Bitcoin 地址接收和返回同樣的數額來混合用戶的可溯源性。要注意，使用這種服務的合法性在不同的行政區內可能是不一樣的。這樣的服務也要求您信任運營這些服務的個人不會丟失或盜竊您的資金，也不會記錄您的請求。雖然混合服務可以為小額交易打破可溯源性，但是對於大筆交易來說它越來越難做到這一點。</p>
-
-<h2 id="future">將来的改進</h2>
-<p>在將來會有很多值得期待的保護隱私方面的改善。譬如，人們正在努力改善支付訊息 API 來避免在一個支付過程中污染多個地址。Bitcoin Core 找補地址可能會被應用在其他錢包中。用戶介面可能被改善以便提供更易操作的支付請求功能并杜絕地址的重複使用。多種工作正在研究和開發其他可能的保護隱私的功能，像能夠把隨機的用戶交易聯合在一起這樣的功能。</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">將来的改進</h3>
+      <p>在將來會有很多值得期待的保護隱私方面的改善。譬如，人們正在努力改善支付訊息 API 來避免在一個支付過程中污染多個地址。Bitcoin Core 找補地址可能會被應用在其他錢包中。用戶介面可能被改善以便提供更易操作的支付請求功能并杜絕地址的重複使用。多種工作正在研究和開發其他可能的保護隱私的功能，像能夠把隨機的用戶交易聯合在一起這樣的功能。</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_TW/legal">合法</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/legal">合法</a></li>
 			
-			<li><a href="/zh_TW/privacy">隱私性</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/privacy">隱私性</a></li>
 			
-			<li><a href="/zh_TW/press">新聞媒體</a></li>
-			<li><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/press">新聞媒體</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>一個由其贊助的社群網站</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

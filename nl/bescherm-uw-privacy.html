@@ -10,15 +10,29 @@
 <title>Bescherm uw privacy - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/nl.png"><strong>Nederlands</strong>
+          <img src="/img/flags/nl.png"><strong>Nederlands</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Bescherm uw privacy</h1>
-<p class="summarytxt">Bitcoin wordt vaak als een anoniem betalingsnetwerk beschouwd. Maar in de realiteit is Bitcoin waarschijnlijk het meest transparante betalingsnetwerk ter wereld. Tegelijkertijd kan Bitcoin ook acceptabele privacyniveaus bieden, mits dit op de juiste manier wordt gebruikt. <b>Onthoud dat het uw verantwoordelijkheid is om goede praktijken na te leven om uw privacy afdoende te beschermen</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Bescherm uw privacy</h1>
+	<h2 class="content_standard--subtitle">Bitcoin wordt vaak als een anoniem betalingsnetwerk beschouwd. Maar in de realiteit is Bitcoin waarschijnlijk het meest transparante betalingsnetwerk ter wereld. Tegelijkertijd kan Bitcoin ook acceptabele privacyniveaus bieden, mits dit op de juiste manier wordt gebruikt. <b>Onthoud dat het uw verantwoordelijkheid is om goede praktijken na te leven om uw privacy afdoende te beschermen</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">De traceerbaarheid van Bitcoin begrijpen</h3>
+      <p>Bitcoin werkt met een ongekend niveau van transparantie waar de meeste mensen niet gewend zijn om mee om te gaan. Alle Bitcoin-transacties zijn openbaar, traceerbaar, en permanent opgeslagen in het Bitcoin-netwerk. Bitcoin-adressen zijn de enige gegevens die worden gebruikt om te bepalen waar Bitcoins worden toegewezen en waarnaar ze worden verzonden. Deze adressen worden privé aangemaakt door de portemonnees van elke gebruiker. Echter, zodra adressen worden gebruikt, worden ze getekend door de geschiedenis van alle transacties die ermee gedaan zijn. Iedereen kan de <a href="https://www.biteasy.com"> balans en alle transacties </a> van een adres te zien. Omdat gebruikers meestal hun identiteit moeten prijsgeven om diensten of goederen te ontvangen, kunnen Bitcoin-adressen niet volledig anoniem blijven. Om deze redenen dienen Bitcoin-adressen slechts één keer te worden gebruikt en de gebruikers moeten oppassen om hun adressen niet bekend te maken.</p>
+    </li>
 
-<h2 id="traceable">De traceerbaarheid van Bitcoin begrijpen</h2>
-<p>Bitcoin werkt met een ongekend niveau van transparantie waar de meeste mensen niet gewend zijn om mee om te gaan. Alle Bitcoin-transacties zijn openbaar, traceerbaar, en permanent opgeslagen in het Bitcoin-netwerk. Bitcoin-adressen zijn de enige gegevens die worden gebruikt om te bepalen waar Bitcoins worden toegewezen en waarnaar ze worden verzonden. Deze adressen worden privé aangemaakt door de portemonnees van elke gebruiker. Echter, zodra adressen worden gebruikt, worden ze getekend door de geschiedenis van alle transacties die ermee gedaan zijn. Iedereen kan de <a href="https://www.biteasy.com"> balans en alle transacties </a> van een adres te zien. Omdat gebruikers meestal hun identiteit moeten prijsgeven om diensten of goederen te ontvangen, kunnen Bitcoin-adressen niet volledig anoniem blijven. Om deze redenen dienen Bitcoin-adressen slechts één keer te worden gebruikt en de gebruikers moeten oppassen om hun adressen niet bekend te maken.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Gebruik nieuwe adressen om betalingen te ontvangen</h3>
+      <p>Om uw privacy te beschermen, moet u elke keer dat u een nieuwe betaling ontvangt een nieuw Bitcoin-adres gebruiken. Daarnaast kunt u verschillende portemonnees voor verschillende doeleinden gebruiken. Op deze manier wordt elke transactie op een dusdanige manier geïsoleerd dat het niet mogelijk is om deze met elkaar te associëren. Mensen die u geld sturen, kunnen niet zien welke Bitcoin-adressen u hebt en wat u hiermee doet. Dit is een van de belangrijkste adviezen die u in acht zou moeten houden.</p>
+    </li>
 
-<h2 id="receive">Gebruik nieuwe adressen om betalingen te ontvangen</h2>
-<p>Om uw privacy te beschermen, moet u elke keer dat u een nieuwe betaling ontvangt een nieuw Bitcoin-adres gebruiken. Daarnaast kunt u verschillende portemonnees voor verschillende doeleinden gebruiken. Op deze manier wordt elke transactie op een dusdanige manier geïsoleerd dat het niet mogelijk is om deze met elkaar te associëren. Mensen die u geld sturen, kunnen niet zien welke Bitcoin-adressen u hebt en wat u hiermee doet. Dit is een van de belangrijkste adviezen die u in acht zou moeten houden.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Wees voorzichtig in openbare ruimten</h3>
+      <p>Tenzij het uw bedoeling is om de openbare donaties of betalingen met volledige transparantie te ontvangen, is het publiceren van een Bitcoin-adres op een openbare ruimte, zoals een website of sociaal netwerk geen goed idee als het gaat om privacy. Als u ervoor kiest om dit te doen, onthoud dan altijd dat als u geld met dit adres naar een van uw andere adressen overmaakt, dit publiekelijk leesbaar wordt door de geschiedenis van uw publieke adres. Daarnaast wilt u er wellicht ook voor zorgen dat u geen informatie over uw transacties en aankopen publiceert waarmee iemand uw Bitcoin-adressen kan identificeren.</p>
+    </li>
 
-<h2 id="public">Wees voorzichtig in openbare ruimten</h2>
-<p>Tenzij het uw bedoeling is om de openbare donaties of betalingen met volledige transparantie te ontvangen, is het publiceren van een Bitcoin-adres op een openbare ruimte, zoals een website of sociaal netwerk geen goed idee als het gaat om privacy. Als u ervoor kiest om dit te doen, onthoud dan altijd dat als u geld met dit adres naar een van uw andere adressen overmaakt, dit publiekelijk leesbaar wordt door de geschiedenis van uw publieke adres. Daarnaast wilt u er wellicht ook voor zorgen dat u geen informatie over uw transacties en aankopen publiceert waarmee iemand uw Bitcoin-adressen kan identificeren.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Uw IP-adres kan worden vastgelegd</h3>
+      <p>Omdat het Bitcoin-netwerk een peer-to-peer-netwerk is, is het mogelijk om te luisteren naar relais van transacties en hun IP-adressen te loggen. "Full node" clients sturen transacties van alle gebruikers door, net als hun eigen transacties. Dit betekent dat het vinden van de bron van een specifieke transactie moeilijk kan zijn en elke Bitcoin node per vergissing als de bron van een transactie gezien kan worden. U zou kunnen overwegen om het IP-adres van uw computer te verbergen met een tool als <a href="https://www.torproject.org/"> Tor </a>, zodat het niet gelogd kan worden.</p>
+    </li>
 
-<h2 id="iplog">Uw IP-adres kan worden vastgelegd</h2>
-<p>Omdat het Bitcoin-netwerk een peer-to-peer-netwerk is, is het mogelijk om te luisteren naar relais van transacties en hun IP-adressen te loggen. "Full node" clients sturen transacties van alle gebruikers door, net als hun eigen transacties. Dit betekent dat het vinden van de bron van een specifieke transactie moeilijk kan zijn en elke Bitcoin node per vergissing als de bron van een transactie gezien kan worden. U zou kunnen overwegen om het IP-adres van uw computer te verbergen met een tool als <a href="https://www.torproject.org/"> Tor </a>, zodat het niet gelogd kan worden.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Beperkingen van gemengde services</h3>
+      <p>Sommige online diensten, die "mixing services" worden genoemd, bieden aan om traceerbaarheid tussen gebruikers te mengen door het zelfde bedrag te ontvangen en te verzenden met behulp van onafhankelijke Bitcoin-adressen. Het is belangrijk op te merken dat de rechtmatigheid van het gebruik van dergelijke diensten kan variëren en wordt onderworpen aan verschillende regels in elk rechtsgebied. Dergelijke diensten vereisen ook uw vertrouwen dat de personen die ze aanbieden uw fondsen niet verliezen of stelen en geen logboek van uw verzoeken bijhouden. Hoewel "mixing services" de traceerbaarheid kunnen breken van kleine hoeveelheden, wordt het steeds moeilijker om hetzelfde te doen voor grotere transacties.</p>
+    </li>
 
-<h2 id="mixing">Beperkingen van gemengde services</h2>
-<p>Sommige online diensten, die "mixing services" worden genoemd, bieden aan om traceerbaarheid tussen gebruikers te mengen door het zelfde bedrag te ontvangen en te verzenden met behulp van onafhankelijke Bitcoin-adressen. Het is belangrijk op te merken dat de rechtmatigheid van het gebruik van dergelijke diensten kan variëren en wordt onderworpen aan verschillende regels in elk rechtsgebied. Dergelijke diensten vereisen ook uw vertrouwen dat de personen die ze aanbieden uw fondsen niet verliezen of stelen en geen logboek van uw verzoeken bijhouden. Hoewel "mixing services" de traceerbaarheid kunnen breken van kleine hoeveelheden, wordt het steeds moeilijker om hetzelfde te doen voor grotere transacties.</p>
-
-<h2 id="future">Toekomstige verbeteringen</h2>
-<p>Er worden in de toekomst veel verbeteringen verwacht die de privacy verbeteren. Zo wordt er momenteel gewerkt aan de API voor betalingsberichten om te voorkomen dat meerdere adressen tijdens een betaling worden gebruikt. Bitcoin Core-wijzigingsadressen kunnen over verloop van tijd in andere portemonnees worden geïmplementeerd. Grafische gebruikersinterfaces kunnen worden verbeterd om gebruiksvriendelijke functies voor betalingsverzoeken te bieden en hergebruik van adressen te ontmoedigen. Er wordt ook veel onderzoek gedaan om andere potentieel uitgebreidere privacyfuncties te ontwikkelen, zoals het mogelijk maken om willekeurige gebruikerstransacties samen te voegen.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Toekomstige verbeteringen</h3>
+      <p>Er worden in de toekomst veel verbeteringen verwacht die de privacy verbeteren. Zo wordt er momenteel gewerkt aan de API voor betalingsberichten om te voorkomen dat meerdere adressen tijdens een betaling worden gebruikt. Bitcoin Core-wijzigingsadressen kunnen over verloop van tijd in andere portemonnees worden geïmplementeerd. Grafische gebruikersinterfaces kunnen worden verbeterd om gebruiksvriendelijke functies voor betalingsverzoeken te bieden en hergebruik van adressen te ontmoedigen. Er wordt ook veel onderzoek gedaan om andere potentieel uitgebreidere privacyfuncties te ontwikkelen, zoals het mogelijk maken om willekeurige gebruikerstransacties samen te voegen.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/nl/juridisch">Juridisch</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/juridisch">Juridisch</a></li>
 			
-			<li><a href="/nl/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/privacy">Privacy</a></li>
 			
-			<li><a href="/nl/pers">Pers</a></li>
-			<li><a href="/nl/over-ons">Over bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/over-ons">Over bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

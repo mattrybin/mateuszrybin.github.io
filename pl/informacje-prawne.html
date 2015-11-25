@@ -10,15 +10,29 @@
 <title>Informacje prawne - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pl.png"><strong>Polski</strong>
+          <img src="/img/flags/pl.png"><strong>Polski</strong>
 				</div>
 			</a>
 		</div>
@@ -323,92 +341,138 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Informacje prawne</h1>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Informacje prawne</h1>
 
 
 
-<h3 id="information">1. Informacje publikowane na bitcoin.org</h3>
-<p>Witryna http://bitcoin.org/ (określana dalej jako "Witryna") dostarcza informacje i materiały o charakterze ogólnym. Użytkownik nie jest upoważniony do oraz nie powinien polegać na Witrynie jako źródle porad prawnych, porad biznesowych, ani też porad o jakimkolwiek innym charakterze. Powołując się na zawartość Witryny, działasz na własne ryzyko. Przed podjęciem decyzji o podjęciu lub zaniechaniu działania, powinieneś skontaktować się z prawnikiem licencjonowanym w jurysdykcji, w której chcesz lub potrzebujesz pomocy. Ani właściciele, ani współtwórcy Witryny nie są w żaden sposób odpowiedzialni za działania, decyzje lub inne zachowania podjęte lub zaniechane przez użytkownika w oparciu o treść Witryny.</p>
+	<ul class="content_standard--list">
+	  <li class="content_standard--items">
+	    <h3 id="information">1. Informacje publikowane na bitcoin.org</h3>
+	    <p>Witryna http://bitcoin.org/ (określana dalej jako "Witryna") dostarcza informacje i materiały o charakterze ogólnym. Użytkownik nie jest upoważniony do oraz nie powinien polegać na Witrynie jako źródle porad prawnych, porad biznesowych, ani też porad o jakimkolwiek innym charakterze. Powołując się na zawartość Witryny, działasz na własne ryzyko. Przed podjęciem decyzji o podjęciu lub zaniechaniu działania, powinieneś skontaktować się z prawnikiem licencjonowanym w jurysdykcji, w której chcesz lub potrzebujesz pomocy. Ani właściciele, ani współtwórcy Witryny nie są w żaden sposób odpowiedzialni za działania, decyzje lub inne zachowania podjęte lub zaniechane przez użytkownika w oparciu o treść Witryny.</p>
+	  </li>
 
-<h3 id="translations">2. Tłumaczenia</h3>
-<p>Witryna może zawierać tłumaczenia angielskiej wersji treści dostępnych na Witrynie. Tłumaczenia te służą wyłącznie jako udogodnienie. W wypadku konfliktu pomiędzy wersją angielską a wersją tłumaczoną, pierwszeństwo ma wersja angielska. Jeśli zauważysz jakąkolwiek niespójność, prosimy o zgłoszenie jej na <a href="https://github.com/bitcoin-dot-org/bitcoin.org">GitHub</a>.</p>
+	  <li class="content_standard--items">
+	    <h3 id="translations">2. Tłumaczenia</h3>
+	    <p>Witryna może zawierać tłumaczenia angielskiej wersji treści dostępnych na Witrynie. Tłumaczenia te służą wyłącznie jako udogodnienie. W wypadku konfliktu pomiędzy wersją angielską a wersją tłumaczoną, pierwszeństwo ma wersja angielska. Jeśli zauważysz jakąkolwiek niespójność, prosimy o zgłoszenie jej na <a href="https://github.com/bitcoin-dot-org/bitcoin.org">GitHub</a>.</p>
+	  </li>
 
-<h3 id="userisks">3. Ryzyka związane z użyciem Bitcoin</h3>
-<p>Witryna nie będzie odpowiedzialna za żadne straty, szkody lub roszczenia wynikające ze zdarzeń wchodzących zakres pięciu następujących kategorii:</p>
-<p>(1) Błędy popełniane przez użytkownika dowolnego oprogramowania lub usługi powiązanej z Bitcoin, np. zapomniane hasła, płatności wysłane do błędnych adresów Bitcoin i przypadkowe usunięcia portfeli.</p>
-<p>(2) Problemy z oprogramowaniem WItryny i/lub każdym powiązanym z Bitcoin oprogramowaniem lub usługą, np. uszkodzony plik portfela, niepoprawnie skonstruowane transakcje, niebezpieczne biblioteki kryptograficzne, szkodliwe oprogramowanie (malware) wpływające na Witrynę i/lub powiązane z Bitcoin oprogramowanie lub usługi.</p>
-<p>(3) Awarie techniczne sprzętu użytkownika dowolnego oprogramowania lub usługi powiązanej z Bitcoin, np. utrata danych spowodowana wadliwym lub uszkodzonym urządzeniem pamięci.</p>
-<p>(4) Problemy z bezpieczeństwem doświadczane przez użytkownika każdego powiązanego z Bitcoin oprogramowania lub usługi, np. nieautoryzowany dostęp do portfeli i/lub kont użytkownika.</p>
-<p>(5) Działania lub zaniechania osób trzecich i/lub zdarzenia doświadczane przez osoby trzecie, np. bankructwa usługodawców, ataki na dane o zabezpieczeniach usługodawców oraz oszustwa dokonywane przez strony trzecie.</p>
+	  <li class="content_standard--items">
+	    <h3 id="userisks">3. Ryzyka związane z użyciem Bitcoin</h3>
+	    <p>Witryna nie będzie odpowiedzialna za żadne straty, szkody lub roszczenia wynikające ze zdarzeń wchodzących zakres pięciu następujących kategorii:</p>
+	    <p>(1) Błędy popełniane przez użytkownika dowolnego oprogramowania lub usługi powiązanej z Bitcoin, np. zapomniane hasła, płatności wysłane do błędnych adresów Bitcoin i przypadkowe usunięcia portfeli.</p>
+	    <p>(2) Problemy z oprogramowaniem WItryny i/lub każdym powiązanym z Bitcoin oprogramowaniem lub usługą, np. uszkodzony plik portfela, niepoprawnie skonstruowane transakcje, niebezpieczne biblioteki kryptograficzne, szkodliwe oprogramowanie (malware) wpływające na Witrynę i/lub powiązane z Bitcoin oprogramowanie lub usługi.</p>
+	    <p>(3) Awarie techniczne sprzętu użytkownika dowolnego oprogramowania lub usługi powiązanej z Bitcoin, np. utrata danych spowodowana wadliwym lub uszkodzonym urządzeniem pamięci.</p>
+	    <p>(4) Problemy z bezpieczeństwem doświadczane przez użytkownika każdego powiązanego z Bitcoin oprogramowania lub usługi, np. nieautoryzowany dostęp do portfeli i/lub kont użytkownika.</p>
+	    <p>(5) Działania lub zaniechania osób trzecich i/lub zdarzenia doświadczane przez osoby trzecie, np. bankructwa usługodawców, ataki na dane o zabezpieczeniach usługodawców oraz oszustwa dokonywane przez strony trzecie.</p>
+	  </li>
 
-<h3 id="investmentrisks">4. Ryzyka inwestycyjne</h3>
-<p>Inwestowanie w Bitcoin może prowadzić do utraty pieniędzy w krótkich lub nawet długich okresach. Inwestorzy w Bitcoin powinni spodziewać się dużych wahań cen. Informacje publikowane na Witrynie nie mogą gwarantować, że inwestorzy w Bitcoin nie stracą pieniędzy.</p>
+	  <li class="content_standard--items">
+	    <h3 id="investmentrisks">4. Ryzyka inwestycyjne</h3>
+	    <p>Inwestowanie w Bitcoin może prowadzić do utraty pieniędzy w krótkich lub nawet długich okresach. Inwestorzy w Bitcoin powinni spodziewać się dużych wahań cen. Informacje publikowane na Witrynie nie mogą gwarantować, że inwestorzy w Bitcoin nie stracą pieniędzy.</p>
+	  </li>
 
-<h3 id="taxcompliance">5. Przestrzeganie obowiązków podatkowych</h3>
-<p>Użytkownicy Witryny są całkowicie odpowiedzialni za określenie, czy i jakie podatki mają zastosowanie do ich transakcji Bitcoin. Właściciele lub współtwórcy Witryny NIE są odpowiedzialni za określanie podatków, które stosuje się do transakcji Bitcoin.</p>
+	  <li class="content_standard--items">
+	    <h3 id="taxcompliance">5. Przestrzeganie obowiązków podatkowych</h3>
+	    <p>Użytkownicy Witryny są całkowicie odpowiedzialni za określenie, czy i jakie podatki mają zastosowanie do ich transakcji Bitcoin. Właściciele lub współtwórcy Witryny NIE są odpowiedzialni za określanie podatków, które stosuje się do transakcji Bitcoin.</p>
+	  </li>
 
-<h3 id="noissuer">6. Witryna nie przechowuje, nie wysyła ani nie otrzymuje bitcoinów.</h3>
-<p>Witryna nie przechowuje, nie wysyła, ani nie otrzymuje bitcoinów. Wynika to z faktu, że bitcoiny istnieją wyłącznie z racji utrzymywanej w sieci Bitcoin ewidencji własności. Każde przeniesienie własności bitcoinów ma miejsce w zdecentralizowanej sieci Bitcoin, a nie na Witrynie.</p>
+	  <li class="content_standard--items">
+	    <h3 id="noissuer">6. Witryna nie przechowuje, nie wysyła ani nie otrzymuje bitcoinów.</h3>
+	    <p>Witryna nie przechowuje, nie wysyła, ani nie otrzymuje bitcoinów. Wynika to z faktu, że bitcoiny istnieją wyłącznie z racji utrzymywanej w sieci Bitcoin ewidencji własności. Każde przeniesienie własności bitcoinów ma miejsce w zdecentralizowanej sieci Bitcoin, a nie na Witrynie.</p>
+	  </li>
 
-<h3 id="nowarranties">7. Brak gwarancji</h3>
-<p>Witryna jest dostarczana w stanie "tak, jak jest", bez jakichkolwiek gwarancji odnośnie Witryny i/lub wszelkich treści, danych, materiałów i/lub usług dostarczanych na Witrynie.</p>
+	  <li class="content_standard--items">
+	    <h3 id="nowarranties">7. Brak gwarancji</h3>
+	    <p>Witryna jest dostarczana w stanie "tak, jak jest", bez jakichkolwiek gwarancji odnośnie Witryny i/lub wszelkich treści, danych, materiałów i/lub usług dostarczanych na Witrynie.</p>
+	  </li>
 
-<h3 id="noliability">8. Wyłączenie odpowiedzialności</h3>
-<p>O ile prawo nie stanowi inaczej, właściciele ani współtwórcy Witryny w żadnym wypadku nie ponoszą odpowiedzialności za szkody jakiegokolwiek rodzaju, w tym (ale bez ograniczenia do), utratę możliwości użytkowania, utratę zysków lub utratę danych wynikające z lub w dowolny inny sposób związane z używaniem Witryny.</p>
+	  <li class="content_standard--items">
+	    <h3 id="noliability">8. Wyłączenie odpowiedzialności</h3>
+	    <p>O ile prawo nie stanowi inaczej, właściciele ani współtwórcy Witryny w żadnym wypadku nie ponoszą odpowiedzialności za szkody jakiegokolwiek rodzaju, w tym (ale bez ograniczenia do), utratę możliwości użytkowania, utratę zysków lub utratę danych wynikające z lub w dowolny inny sposób związane z używaniem Witryny.</p>
+	  </li>
 
-<h3 id="arbitration">9. Arbitraż</h3>
-<p>Użytkownik Witryny zgadza się rozstrzygać wszelkie spory wynikające z lub związane z Witryną lub niniejszym wyłączeniem odpowiedzialności, z wyjątkiem sporów dotyczących praw autorskich, logo, nazw handlowych, znaków handlowych, sekretów handlowych lub patentów.</p>
+	  <li class="content_standard--items">
+	    <h3 id="arbitration">9. Arbitraż</h3>
+	    <p>Użytkownik Witryny zgadza się rozstrzygać wszelkie spory wynikające z lub związane z Witryną lub niniejszym wyłączeniem odpowiedzialności, z wyjątkiem sporów dotyczących praw autorskich, logo, nazw handlowych, znaków handlowych, sekretów handlowych lub patentów.</p>
+	  </li>
 
-<h3 id="lastchange">10. Ostatnia zmiana</h3>
-<p>Niniejsze zastrzeżenie zostało ostatnio zmienione November 22th, 2014.</p>
-
-
-
-
-
-<h1 id="english-version">English version</h1>
-
-<h3 id="english-information">1. Information published on bitcoin.org</h3>
-<p>The website http://bitcoin.org/ (hereinafter, referred to as the "Website") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website.</p>
-
-<h3 id="english-translations">2. Translations</h3>
-<p>The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a href="https://github.com/bitcoin-dot-org/bitcoin.org">GitHub</a>.</p>
-
-<h3 id="english-userisks">3. Risks related to the use of Bitcoin</h3>
-<p>The Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:</p>
-<p>(1) Mistakes made by the user of any Bitcoin-related software or service, e.g., forgotten passwords, payments sent to wrong Bitcoin addresses, and accidental deletion of wallets.</p>
-<p>(2) Software problems of the Website and/or any Bitcoin-related software or service, e.g., corrupted wallet file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the Website and/or any Bitcoin-related software or service.</p>
-<p>(3) Technical failures in the hardware of the user of any Bitcoin-related software or service, e.g., data loss due to a faulty or damaged storage device.</p>
-<p>(4) Security problems experienced by the user of any Bitcoin-related software or service, e.g., unauthorized access to users' wallets and/or accounts.</p>
-<p>(5) Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties.</p>
-
-<h3 id="english-investmentrisks">4. Investment risks</h3>
-<p>The investment in Bitcoin can lead to loss of money over short or even long periods. The investors in Bitcoin should expect prices to have large range fluctuations. The information published on the Website cannot guarantee that the investors in Bitcoin would not lose money.</p>
-
-<h3 id="english-taxcompliance">5. Compliance with tax obligations</h3>
-<p>The users of the Website are solely responsible to determinate what, if any, taxes apply to their Bitcoin transactions. The owners of, or contributors to, the Website are NOT responsible for determining the taxes that apply to Bitcoin transactions.</p>
-
-<h3 id="english-noissuer">6. The Website does not store, send, or receive bitcoins</h3>
-<p>The Website does not store, send or receive bitcoins. This is because bitcoins exist only by virtue of the ownership record maintained in the Bitcoin network. Any transfer of title in bitcoins occurs within a decentralized Bitcoin network, and not on the Website.</p>
-
-<h3 id="english-nowarranties">7. No warranties</h3>
-<p>The Website is provided on an "as is" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website.</p>
-
-<h3 id="english-noliability">8. Limitation of liability </h3>
-<p>Unless otherwise required by law, in no event shall the owners of, or contributors to, the Website be liable for any damages of any kind, including, but not limited to, loss of use, loss of profits, or loss of data arising out of or in any way connected with the use of the Website.</p>
-
-<h3 id="english-arbitration">9. Arbitration</h3>
-<p>The user of the Website agrees to arbitrate any dispute arising from or in connection with the Website or this disclaimer, except for disputes related to copyrights, logos, trademarks, trade names, trade secrets or patents.</p>
-
-<h3 id="english-lastchange">10. Last amendment</h3>
-<p>This disclaimer was amended for the last time on November 22th, 2014.</p>
+	  <li class="content_standard--items">
+	    <h3 id="lastchange">10. Ostatnia zmiana</h3>
+	    <p>Niniejsze zastrzeżenie zostało ostatnio zmienione November 22th, 2014.</p>
+	  </li>
+	 </ul>
 
 
 
+
+
+	<h2 id="english-version" class="content_standard--subtitle">English version</h2>
+
+	<ul class="content_standard--list">
+		<li class="content_standard--items">
+			<h3 id="english-information">1. Information published on bitcoin.org</h3>
+			<p>The website http://bitcoin.org/ (hereinafter, referred to as the "Website") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-translations">2. Translations</h3>
+			<p>The Website may contain translations of the English version of the content available on the Website. These translations are provided only as a convenience. In the event of any conflict between the English language version and the translated version, the English language version shall take precedence. If you notice any inconsistency, please report them on <a href="https://github.com/bitcoin-dot-org/bitcoin.org">GitHub</a>.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-userisks">3. Risks related to the use of Bitcoin</h3>
+			<p>The Website will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:</p>
+			<p>(1) Mistakes made by the user of any Bitcoin-related software or service, e.g., forgotten passwords, payments sent to wrong Bitcoin addresses, and accidental deletion of wallets.</p>
+			<p>(2) Software problems of the Website and/or any Bitcoin-related software or service, e.g., corrupted wallet file, incorrectly constructed transactions, unsafe cryptographic libraries, malware affecting the Website and/or any Bitcoin-related software or service.</p>
+			<p>(3) Technical failures in the hardware of the user of any Bitcoin-related software or service, e.g., data loss due to a faulty or damaged storage device.</p>
+			<p>(4) Security problems experienced by the user of any Bitcoin-related software or service, e.g., unauthorized access to users' wallets and/or accounts.</p>
+			<p>(5) Actions or inactions of third parties and/or events experienced by third parties, e.g., bankruptcy of service providers, information security attacks on service providers, and fraud conducted by third parties.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-investmentrisks">4. Investment risks</h3>
+			<p>The investment in Bitcoin can lead to loss of money over short or even long periods. The investors in Bitcoin should expect prices to have large range fluctuations. The information published on the Website cannot guarantee that the investors in Bitcoin would not lose money.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-taxcompliance">5. Compliance with tax obligations</h3>
+			<p>The users of the Website are solely responsible to determinate what, if any, taxes apply to their Bitcoin transactions. The owners of, or contributors to, the Website are NOT responsible for determining the taxes that apply to Bitcoin transactions.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-noissuer">6. The Website does not store, send, or receive bitcoins</h3>
+			<p>The Website does not store, send or receive bitcoins. This is because bitcoins exist only by virtue of the ownership record maintained in the Bitcoin network. Any transfer of title in bitcoins occurs within a decentralized Bitcoin network, and not on the Website.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-nowarranties">7. No warranties</h3>
+			<p>The Website is provided on an "as is" basis without any warranties of any kind regarding the Website and/or any content, data, materials and/or services provided on the Website.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-noliability">8. Limitation of liability </h3>
+			<p>Unless otherwise required by law, in no event shall the owners of, or contributors to, the Website be liable for any damages of any kind, including, but not limited to, loss of use, loss of profits, or loss of data arising out of or in any way connected with the use of the Website.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-arbitration">9. Arbitration</h3>
+			<p>The user of the Website agrees to arbitrate any dispute arising from or in connection with the Website or this disclaimer, except for disputes related to copyrights, logos, trademarks, trade names, trade secrets or patents.</p>
+		</li>
+
+		<li class="content_standard--items">
+			<h3 id="english-lastchange">10. Last amendment</h3>
+			<p>This disclaimer was amended for the last time on November 22th, 2014.</p>
+		</li>
+	</ul>
+
+
+</div>
       </div>
     </div>
 
@@ -418,14 +482,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
-			<li><a href="/pl/prywatnosc">Prywatność</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prywatnosc">Prywatność</a></li>
 			
-			<li><a href="/pl/prasa">Prasa</a></li>
-			<li><a href="/pl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prasa">Prasa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -434,7 +498,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -456,13 +521,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -473,7 +540,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -16,7 +16,7 @@
 <title>Завантаження - Біткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -25,6 +25,19 @@
 
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 
 
@@ -40,6 +53,10 @@
 
 
 
+
+  <div class="banner-message alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
 
 
 
@@ -246,138 +263,14 @@
 <div id="content" class="content">
 <div >
   
-<!-- Note: this file exempt from check-for-subheading-anchors check -->
 
+<meta name="robots" content="noindex">
+<script>window.location.href='https://bitcoin.org/uk/download';</script>
 
-
-<link rel="alternate" type="application/rss+xml" href="/en/rss/releases.rss" title="Bitcoin Core releases">
-<div class="download">
-  <h1>Завантажити Bitcoin Core</h1>
-  <h2>Остання версія: <a type="application/rss+xml" href="/en/rss/releases.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h2>
-  <div class="mainbutton"><a id="downloadbutton" href="/bin/bitcoin-core-/bitcoin--win32-setup.exe"><img src="/img/os/but_windows.svg" alt="icon">Завантажити Bitcoin Core</a></div>
-  <div class="downloadbox">
-    <p>Або оберіть свою операційну систему</p>
-    <div>
-      <div>
-        <img src="/img/os/med_win.png" alt="windows">
-        <span>
-          <a href="/bin/bitcoin-core-/bitcoin--win64-setup.exe" id="downloadwinexe">Windows</a>
-          <span><a href="/bin/bitcoin-core-/bitcoin--win64-setup.exe" class="dl" id="win64exe">64 bit</a> -
-            <a href="/bin/bitcoin-core-/bitcoin--win32-setup.exe" class="dl" id="win32exe">32 bit</a></span>
-        </span>
-      </div>
-      <div>
-        <img src="/img/os/med_win.png" alt="windows">
-        <span>
-          <a href="/bin/bitcoin-core-/bitcoin--win64.zip" id="downloadwinzip">Windows (zip)</a>
-          <span><a href="/bin/bitcoin-core-/bitcoin--win64.zip" class="dl" id="win64zip">64 bit</a> -
-            <a href="/bin/bitcoin-core-/bitcoin--win32.zip" class="dl" id="win32zip">32 bit</a></span>
-        </span>
-      </div>
-      <div>
-        <img src="/img/os/med_osx.png" alt="osx">
-        <span>
-          <a href="/bin/bitcoin-core-/bitcoin--osx.dmg">Mac OS X</a>
-          <span><a href="/bin/bitcoin-core-/bitcoin--osx.dmg" class="dl" id="macdmg">dmg</a> -
-            <a href="/bin/bitcoin-core-/bitcoin--osx64.tar.gz" class="dl" id="mactar">tar.gz</a></span>
-        </span>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="/img/os/med_linux.png" alt="linux">
-        <span>
-          <a href="/bin/bitcoin-core-/bitcoin--linux64.tar.gz" id="downloadlin">Linux (tgz)</a>
-          <span><a href="/bin/bitcoin-core-/bitcoin--linux64.tar.gz" class="dl" id="lin64">64 bit</a> -
-            <a href="/bin/bitcoin-core-/bitcoin--linux32.tar.gz" class="dl" id="lin32">32 bit</a></span>
-        </span>
-      </div>
-      <div>
-        <img src="/img/os/med_ubuntu.svg" alt="ubuntu">
-        <span>
-          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
-        </span>
-      </div>
-      <div>
-        <img src="/img/os/med_opensource.svg" alt="source code">
-        <span>
-          <a href="/bin/bitcoin-core-/bitcoin-.tar.gz" class="dl">Source code</a>
-          <span><a href="https://github.com/bitcoin/bitcoin">GitHub</a></span>
-        </span>
-      </div>
-    </div>
-    <p class="downloadmore">
-      <a href="/bin/bitcoin-core-/SHA256SUMS.asc" class="dl">Перевірити підписи релізу</a><br>
-      <a href="/bin/bitcoin-core-/bitcoin-.torrent" class="dl">Download torrent</a>
-        <br>
-      <a href="/en/version-history">Показати історію версій</a>
-    </p>
-    <p class="downloadkeys">
-      <span>Bitcoin Core Release Signing Keys</span>
-      <a href="/gavinandresen.asc">v0.8.6 - 0.9.2.1</a>
-      <a href="/laanwj.asc">v0.9.3 - 0.10.2</a>
-      <a href="/laanwj-releases.asc">v0.11.0+</a>
-    </p>
-  </div>
-
-  <h2><img src="/img/icons/note.svg" class="warningicon" alt="note">Проявіть терпіння</h2>
-  <p>Початкова синхронізація Bitcoin Core може зайняти тривалий час. Переконайтесь, що у вас достатньо пропускної здатності та вільного місця для зберігання повного ланцюжка блоків (більше 20ГБ). Якщо ви вмієте завантажувати торрент-файли, ви можете пришвидшити цей процес додаванням файлу <a href="/bin/blockchain/bootstrap.dat.torrent">bootstrap.dat</a> (попередня копія ланцюжка блоків) до папки даних Bitcoin Core перед запуском програми. Read the <a href="/en/full-node">full node guide</a> for details.</p>
-  <p>Bitcoin Core - <a href="https://www.fsf.org/about/what-is-free-software">вільний проект з відкритим початковим кодом</a>, що розробляється колективно та розповсюджується згідно умов <a href="http://opensource.org/licenses/mit-license.php">ліцензії MIT</a>.</p>
+<div class="redirectmsg">
+<h1>This page has been moved</h1>
+<p><a href="https://bitcoin.org/uk/download">https://bitcoin.org/uk/download</a></p>
 </div>
-<script type="text/javascript">
-var os = 'windows32';
-if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
-else if (navigator.userAgent.indexOf('Linux') != -1) {
-	var os='linux32';
-	if (navigator.userAgent.indexOf('x86_64') != -1) var os = 'linux64';
-	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'ubuntu';
-}
-else if (navigator.userAgent.indexOf('WOW64') != -1 || navigator.userAgent.indexOf('Win64') != -1) var os='windows64';
-var but = document.getElementById('downloadbutton');
-var linkwinexe = document.getElementById('downloadwinexe');
-var linkwinzip = document.getElementById('downloadwinzip');
-var linklin = document.getElementById('downloadlin');
-var hrefwin64exe = document.getElementById('win64exe').href;
-var hrefwin32exe = document.getElementById('win32exe').href;
-var hrefwin64zip = document.getElementById('win64zip').href;
-var hrefwin32zip = document.getElementById('win32zip').href;
-var hrefmacdmg = document.getElementById('macdmg').href;
-var hrefmactar = document.getElementById('mactar').href;
-var hreflin64 = document.getElementById('lin64').href;
-var hreflin32 = document.getElementById('lin32').href;
-switch (os) {
-case 'windows64':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = hrefwin64exe;
-	linkwinexe.href = hrefwin64exe;
-	linkwinzip.href = hrefwin64zip;
-break;
-case 'windows32':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_windows.svg';
-	but.href = hrefwin32exe;
-	linkwinexe.href = hrefwin32exe;
-	linkwinzip.href = hrefwin32zip;
-break;
-case 'linux64':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = hreflin64;
-	linklin.href = hreflin64;
-break;
-case 'linux32':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_linux.png';
-	but.href = hreflin32;
-	linklin.href = hreflin32;
-break;
-case 'ubuntu':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_ubuntu.svg';
-	but.href = 'https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
-break;
-case 'mac':
-	but.getElementsByTagName('IMG')[0].src = '/img/os/but_mac.svg';
-	but.href = hrefmacdmg;
-break;
-}
-</script>
 
 
 </div>
@@ -387,10 +280,10 @@ break;
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
   <a href="/uk/legal">Правові питання</a>
   
-  <a href="/uk/privacy">Конфіденційність</a>
+  <a href="/en/privacy">Privacy Policy</a>
   
   <a href="/uk/press">Преса</a>
   <a href="/uk/about-us">Про bitcoin.org</a>
@@ -422,7 +315,6 @@ break;
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

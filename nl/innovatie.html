@@ -10,15 +10,29 @@
 <title>Innovatie - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/nl.png"><strong>Nederlands</strong>
+          <img src="/img/flags/nl.png"><strong>Nederlands</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Een innovatie binnen betaalsystemen</h1>
-<p class="summarytxt">Het Bitcoin-protocol draait niet alleen om het verzenden van geld van punt A naar punt B. Het telt vele functies en biedt vele mogelijkheden voor de gemeenschap. Hier volgen een aantal technologieën die momenteel worden onderzocht en, in sommige gevallen, worden omgezet in echte producten en services. De interessantste toepassingen van Bitcoin moeten wellicht nog steeds worden ontdekt.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Een innovatie binnen betaalsystemen</h1>
+  <h2 class="content_innovation--subtitle">Het Bitcoin-protocol draait niet alleen om het verzenden van geld van punt A naar punt B. Het telt vele functies en biedt vele mogelijkheden voor de gemeenschap. Hier volgen een aantal technologieën die momenteel worden onderzocht en, in sommige gevallen, worden omgezet in echte producten en services. De interessantste toepassingen van Bitcoin moeten wellicht nog steeds worden ontdekt.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Beveiliging tegen fraude</h3>
+	    <p>Een ongekend niveau van beveiliging is mogelijk met Bitcoin. Het netwerk biedt gebruikers bescherming tegen de meeste voorkomende fraude zoals terugboekingen of ongewenste kosten, en Bitcoins zijn onmogelijk te vervalsen. Gebruikers kunnen back-ups maken of hun portemonnee versleutelen en hardwareportemonnees kunnen het erg moeilijk maken om in de toekomst geld te stelen of te verliezen. Bitcoin is ontworpen om de gebruikers volledige controle over hun geld te geven.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Beveiliging tegen fraude</h2>
-<p>Een ongekend niveau van beveiliging is mogelijk met Bitcoin. Het netwerk biedt gebruikers bescherming tegen de meeste voorkomende fraude zoals terugboekingen of ongewenste kosten, en Bitcoins zijn onmogelijk te vervalsen. Gebruikers kunnen back-ups maken of hun portemonnee versleutelen en hardwareportemonnees kunnen het erg moeilijk maken om in de toekomst geld te stelen of te verliezen. Bitcoin is ontworpen om de gebruikers volledige controle over hun geld te geven.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Wereldwijde toegankelijkheid</h3>
+	    <p>Alle betalingen over de hele wereld kunnen volledig interoperabel zijn. Bitcoin staat elke bank, elk bedrijf en elke persoon toe om betalingen altijd en overal een veilige manier te kunnen verzenden en ontvangen, en dat met of zonder bankrekening. Bitcoin is beschikbaar in een groot aantal landen die vanwege hun eigen beperkingen nog steeds buiten het bereik liggen van de meeste betaalsystemen. Bitcoin verhoogt de internationale toegang tot commercie en kan internationale handel helpen groeien.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Kostenefficiëntie</h3>
+	    <p>Door het gebruik van cryptografie kunnen beveiligde betalingen verricht worden zonder trage en dure tussenpersonen. Een Bitcoin-transactie kan dus veel goedkoper en sneller verricht worden dan de alternatieven. Dit betekent dat Bitcoin de potentie heeft om in de toekomst een algemene manier te worden om valuta's te verzenden. Bitcoin kan ook een rol spelen om in veel landen de  <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">armoede te verlagen</a> door de hoge transactiekosten voor de salarissen van werknemers te verlagen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Fooien en giften</h3>
+	    <p>Bitcoin is een bijzonder efficiënte oplossing voor fooien en donaties geweest in een aantal gevallen. Het verzenden van een betaling vereist slechts een klik en het ontvangen van donaties kan zo simpel zijn als het weergeven van een QR-code. Donaties kunnen zichtbaar zijn voor het publiek, waardoor er een grotere transparantie is voor non-profit organisaties. In gevallen van noodsituaties zoals natuurrampen, konden Bitcoin-donaties bijdragen aan een snellere internationale respons.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Crowdfunding</h3>
+	    <p>Hoewel het nog niet eenvoudig te gebruiken is, kan Bitcoin worden gebruikt om crowdfunding-campagnes zoals Kickstarter op te zetten, waarin individuen geld toezeggen aan een project dat  alleen wordt aangenomen als er genoeg toezeggingen zijn ontvangen om de doelstelling uit te voeren. Dergelijke verzekeringsovereenkomsten worden verwerkt door het Bitcoin-protocol, dat verhindert dat een transactie zal plaatsvinden totdat aan alle voorwaarden is voldaan. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts"> Meer informatie </a> over de technologie achter crowdfunding.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Microbetalingen</h3>
+	    <p>Bitcoin kan betalingen ter grootte van één dollar verwerken, en binnenkort zelfs veel kleinere bedragen. Dergelijke betalingen zijn routine, zelfs vandaag. Stel uzelf voor dat u per seconde betaalt dat u naar internetradio luistert, webpagina's bekijkt met een kleine fooi voor iedere advertentie die niet wordt getoond, of het kopen van bandbreedte van een WiFi-hotspot per kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken. <a href="https://bitcoinj.github.io/working-with-micropayments"> Meer informatie </a> over de technologie achter Bitcoin-microbetalingen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Bemiddeling bij geschillen</h3>
+	    <p>Bitcoin kan worden gebruikt om innovatieve mediationdiensten te ontwikkelen met behulp van meerdere handtekeningen. Dergelijke diensten zouden het mogelijk maken voor een derde partij om in geval van onenigheid tussen de andere partijen een transactie goed te keuren of te af te keuren zonder controle over hun geld te hebben. Aangezien deze diensten compatibel zouden zijn met elke gebruiker en handelaar die Bitcoin gebruikt, zou dit waarschijnlijk leiden tot vrije concurrentie en hogere kwaliteitsnormen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Accounts met meervoudige ondertekening</h3>
+	    <p>Meerdere handtekeningen staan toe ​​dat een transactie alleen door het netwerk wordt geaccepteerd als een bepaald aantal van een bepaalde groep personen instemmen om de transactie te ondertekenen. Dit kan gebruikt worden door een raad van bestuur om een lid te weerhouden om een gedeelte van hun schatkist uit te geven zonder toestemming van andere leden. Dit kan ook worden gebruikt door banken om diefstal te voorkomen door betalingen boven een drempelwaarde te blokkeren indien de gebruiker geen aanvullende validatie verschaft.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Vertrouwen en integriteit</h3>
+	    <p>Bitcoin biedt oplossingen voor veel van de vertrouwensproblemen waar banken tegenwoordig mee te maken hebben. Met selectieve transparantie van de boekhouding, digitale contracten en onomkeerbare transacties kan Bitcoin worden gebruikt als basis om het vertrouwen en overeenkomsten te herstellen. Slechte banken kunnen het systeem niet om de tuin leiden om een slaatje te slaan ten koste van andere banken of het publiek. Een toekomst waarin grote banken Bitcoin ondersteunen kan helpen om de integriteit van en het vertrouwen in financiële instellingen te herstellen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Robuustheid en decentralisatie</h3>
+	    <p>Vanwege zijn hoge decentralisatie creëerde Bitcoin een andere vorm van betalingsnetwerk met een verhoogd niveau van veerkracht en redundantie. Bitcoin kan miljoenen dollars aan transacties verwerken zonder militaire bescherming nodig te hebben. Zonder een centraal punt dat kan falen zoals een gegevenscentrum, is het een moeilijker project om het netwerk aan te vallen. Bitcoin zou een interessante stap voorwaarts kunnen vertegenwoordigen in het beveiligen van lokale en mondiale financiële systemen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Flexibele transparantie</h3>
+	    <p>Alle Bitcoin-transacties zijn openbaar en transparant. De identiteit van de personen achter de betalingen is standaard privé. Hierdoor kunnen personen en organisaties met flexibele regels voor transparantie werken. Zo kan een bedrijf ervoor kiezen om bepaalde transacties en saldi alleen zichtbaar te maken voor bepaalde medewerkers, en is een non-profitorganisatie helemaal vrij om te laten zien hoeveel zij dagelijks en maandelijks aan giften ontvangen.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Geautomatiseerde oplossingen</h3>
+	    <p>Geautomatiseerde diensten hebben meestal te maken met de kosten en beperkingen van contant geld of creditcard betalingen. Dit omvat alle soorten automaten, van buskaartautomaten tot koffiemachines. Bitcoin is geschikt voor gebruik in een nieuwe generatie geautomatiseerde diensten en om hun exploitatiekosten te verminderen. Stel uzelf zelf rijdende taxi's voor, of een winkel waar uw mandje uw aankopen kan betalen zonder dat u hoeft te wachten in de wachtrij. Veel ideeën zijn mogelijk.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Wereldwijde toegankelijkheid</h2>
-<p>Alle betalingen over de hele wereld kunnen volledig interoperabel zijn. Bitcoin staat elke bank, elk bedrijf en elke persoon toe om betalingen altijd en overal een veilige manier te kunnen verzenden en ontvangen, en dat met of zonder bankrekening. Bitcoin is beschikbaar in een groot aantal landen die vanwege hun eigen beperkingen nog steeds buiten het bereik liggen van de meeste betaalsystemen. Bitcoin verhoogt de internationale toegang tot commercie en kan internationale handel helpen groeien.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Kostenefficiëntie</h2>
-<p>Door het gebruik van cryptografie kunnen beveiligde betalingen verricht worden zonder trage en dure tussenpersonen. Een Bitcoin-transactie kan dus veel goedkoper en sneller verricht worden dan de alternatieven. Dit betekent dat Bitcoin de potentie heeft om in de toekomst een algemene manier te worden om valuta's te verzenden. Bitcoin kan ook een rol spelen om in veel landen de  <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">armoede te verlagen</a> door de hoge transactiekosten voor de salarissen van werknemers te verlagen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Fooien en giften</h2>
-<p>Bitcoin is een bijzonder efficiënte oplossing voor fooien en donaties geweest in een aantal gevallen. Het verzenden van een betaling vereist slechts een klik en het ontvangen van donaties kan zo simpel zijn als het weergeven van een QR-code. Donaties kunnen zichtbaar zijn voor het publiek, waardoor er een grotere transparantie is voor non-profit organisaties. In gevallen van noodsituaties zoals natuurrampen, konden Bitcoin-donaties bijdragen aan een snellere internationale respons.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Crowdfunding</h2>
-<p>Hoewel het nog niet eenvoudig te gebruiken is, kan Bitcoin worden gebruikt om crowdfunding-campagnes zoals Kickstarter op te zetten, waarin individuen geld toezeggen aan een project dat  alleen wordt aangenomen als er genoeg toezeggingen zijn ontvangen om de doelstelling uit te voeren. Dergelijke verzekeringsovereenkomsten worden verwerkt door het Bitcoin-protocol, dat verhindert dat een transactie zal plaatsvinden totdat aan alle voorwaarden is voldaan. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts"> Meer informatie </a> over de technologie achter crowdfunding.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Microbetalingen</h2>
-<p>Bitcoin kan betalingen ter grootte van één dollar verwerken, en binnenkort zelfs veel kleinere bedragen. Dergelijke betalingen zijn routine, zelfs vandaag. Stel uzelf voor dat u per seconde betaalt dat u naar internetradio luistert, webpagina's bekijkt met een kleine fooi voor iedere advertentie die niet wordt getoond, of het kopen van bandbreedte van een WiFi-hotspot per kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken. <a href="https://bitcoinj.github.io/working-with-micropayments"> Meer informatie </a> over de technologie achter Bitcoin-microbetalingen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Bemiddeling bij geschillen</h2>
-<p>Bitcoin kan worden gebruikt om innovatieve mediationdiensten te ontwikkelen met behulp van meerdere handtekeningen. Dergelijke diensten zouden het mogelijk maken voor een derde partij om in geval van onenigheid tussen de andere partijen een transactie goed te keuren of te af te keuren zonder controle over hun geld te hebben. Aangezien deze diensten compatibel zouden zijn met elke gebruiker en handelaar die Bitcoin gebruikt, zou dit waarschijnlijk leiden tot vrije concurrentie en hogere kwaliteitsnormen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Accounts met meervoudige ondertekening</h2>
-<p>Meerdere handtekeningen staan toe ​​dat een transactie alleen door het netwerk wordt geaccepteerd als een bepaald aantal van een bepaalde groep personen instemmen om de transactie te ondertekenen. Dit kan gebruikt worden door een raad van bestuur om een lid te weerhouden om een gedeelte van hun schatkist uit te geven zonder toestemming van andere leden. Dit kan ook worden gebruikt door banken om diefstal te voorkomen door betalingen boven een drempelwaarde te blokkeren indien de gebruiker geen aanvullende validatie verschaft.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Vertrouwen en integriteit</h2>
-<p>Bitcoin biedt oplossingen voor veel van de vertrouwensproblemen waar banken tegenwoordig mee te maken hebben. Met selectieve transparantie van de boekhouding, digitale contracten en onomkeerbare transacties kan Bitcoin worden gebruikt als basis om het vertrouwen en overeenkomsten te herstellen. Slechte banken kunnen het systeem niet om de tuin leiden om een slaatje te slaan ten koste van andere banken of het publiek. Een toekomst waarin grote banken Bitcoin ondersteunen kan helpen om de integriteit van en het vertrouwen in financiële instellingen te herstellen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Robuustheid en decentralisatie</h2>
-<p>Vanwege zijn hoge decentralisatie creëerde Bitcoin een andere vorm van betalingsnetwerk met een verhoogd niveau van veerkracht en redundantie. Bitcoin kan miljoenen dollars aan transacties verwerken zonder militaire bescherming nodig te hebben. Zonder een centraal punt dat kan falen zoals een gegevenscentrum, is het een moeilijker project om het netwerk aan te vallen. Bitcoin zou een interessante stap voorwaarts kunnen vertegenwoordigen in het beveiligen van lokale en mondiale financiële systemen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Flexibele transparantie</h2>
-<p>Alle Bitcoin-transacties zijn openbaar en transparant. De identiteit van de personen achter de betalingen is standaard privé. Hierdoor kunnen personen en organisaties met flexibele regels voor transparantie werken. Zo kan een bedrijf ervoor kiezen om bepaalde transacties en saldi alleen zichtbaar te maken voor bepaalde medewerkers, en is een non-profitorganisatie helemaal vrij om te laten zien hoeveel zij dagelijks en maandelijks aan giften ontvangen.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Geautomatiseerde oplossingen</h2>
-<p>Geautomatiseerde diensten hebben meestal te maken met de kosten en beperkingen van contant geld of creditcard betalingen. Dit omvat alle soorten automaten, van buskaartautomaten tot koffiemachines. Bitcoin is geschikt voor gebruik in een nieuwe generatie geautomatiseerde diensten en om hun exploitatiekosten te verminderen. Stel uzelf zelf rijdende taxi's voor, of een winkel waar uw mandje uw aankopen kan betalen zonder dat u hoeft te wachten in de wachtrij. Veel ideeën zijn mogelijk.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/nl/juridisch">Juridisch</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/juridisch">Juridisch</a></li>
 			
-			<li><a href="/nl/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/privacy">Privacy</a></li>
 			
-			<li><a href="/nl/pers">Pers</a></li>
-			<li><a href="/nl/over-ons">Over bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/over-ons">Over bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

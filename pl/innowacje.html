@@ -10,15 +10,29 @@
 <title>Innowacje - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pl.png"><strong>Polski</strong>
+          <img src="/img/flags/pl.png"><strong>Polski</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Innowacja w procesach płatności</h1>
-<p class="summarytxt">Protokół Bitcoin nie polega jedynie na przesyłaniu pieniędzy z A do B. Posiada wiele funkcji i otwiera mnóstwo możliwości wciąż odkrywanych przez społeczność. Oto niektóre z obecnie opracowywanych technologii - w niektórych przypadkach zostały one wdrożone w życie jako prawdziwy produkt bądź usługa. Najbardziej interesujące zastosowania Bitcoin prawdopodobnie nie zostały jeszcze odkryte.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Innowacja w procesach płatności</h1>
+  <h2 class="content_innovation--subtitle">Protokół Bitcoin nie polega jedynie na przesyłaniu pieniędzy z A do B. Posiada wiele funkcji i otwiera mnóstwo możliwości wciąż odkrywanych przez społeczność. Oto niektóre z obecnie opracowywanych technologii - w niektórych przypadkach zostały one wdrożone w życie jako prawdziwy produkt bądź usługa. Najbardziej interesujące zastosowania Bitcoin prawdopodobnie nie zostały jeszcze odkryte.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Kontrola zapobiegająca oszustwom</h3>
+	    <p>Bitcoin umożliwia bezprecedensowy poziom bezpieczeństwa. Sieć zapewnia użytkownikom zabezpieczenia przed najbardziej rozpowszechnionymi oszustwami jak obciążenia zwrotne czy niepożądane opłaty, zaś same bitcoiny są niemożliwe do podrobienia. Uzytkownicy mogą też tworzyć kopie zapasowe swoich portfeli lub szyfrować je. Portfele sprzętowe mogą w przyszłości sprawić, że kradzież lub zgubienie pieniędzy będzie bardzo trudne. Bitcoin został zaprojektowany, aby umożliwić jego użytkownikom zupełną kontrolę nad ich pieniędzmi.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Kontrola zapobiegająca oszustwom</h2>
-<p>Bitcoin umożliwia bezprecedensowy poziom bezpieczeństwa. Sieć zapewnia użytkownikom zabezpieczenia przed najbardziej rozpowszechnionymi oszustwami jak obciążenia zwrotne czy niepożądane opłaty, zaś same bitcoiny są niemożliwe do podrobienia. Uzytkownicy mogą też tworzyć kopie zapasowe swoich portfeli lub szyfrować je. Portfele sprzętowe mogą w przyszłości sprawić, że kradzież lub zgubienie pieniędzy będzie bardzo trudne. Bitcoin został zaprojektowany, aby umożliwić jego użytkownikom zupełną kontrolę nad ich pieniędzmi.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Globalna dostępność</h3>
+	    <p>Wszystkie płatności na świecie mogą być w pełni interoperacyjne. Bitcoin umożliwia każdemu bankowi, firmie lub osobie prywatnej bezpieczne wysyłanie i otrzymywanie płatności gdziekolwiek i kiedykolwiek, z kontem bankowym albo bez niego. Bitcoin jest dostępny w wielu krajach, w których ze względu na ich własne ograniczenia wciąż niedostępnych jest większość systemów płatniczych. Bitcoin zwiększa globalny dostęp do handlu i może pomóc w rozwoju handlu międzynarodowego.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Ekonomiczność</h3>
+	    <p>Dzięki zastosowaniu kryptografii, bezpieczne płatności są możliwe bez powolnych i kosztownych pośredników. Transakcja Bitcoin może być dużo tańsza niż jej alternatywy. Może też zostać ukończona w krótkim czasie. Oznacza to, że Bitcoin ma pewien potencjał, aby w przyszłości stać się powszechną metodą przesyłania każdej waluty. Bitcoin może również odegrać rolę w <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">zwalczaniu ubóstwa</a> w wielu krajach poprzez eliminację wysokich prowizji za transakcje wynagrodzenia pracowników.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Napiwki i dotacje</h3>
+	    <p>Bitcoin jest w wielu przypadkach wydajnym rozwiązaniem zwłaszcza dla napiwków i darowizn. Wysłanie płatności wymaga jedynie jednego kliknięcia, a otrzymywanie donacji może być proste jak wyświetlenie kodu QR. Darowizny mogą być publicznie widoczne, co zwiększa przejrzystość i wiarygodność organizacji non-profit. W nagłych wypadkach, takich jak klęski żywiołowe, darowizny Bitcoin mogą umożliwić szybszą reakcję międzynarodową.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Crowdfunding</h3>
+	    <p>Choć nie jest jeszcze prosty w obsłudzie, Bitcoin może zostać użyty w celu przeprowadzania kampanii crowdfundingowych w stylu Kickstartera. W kampaniach takich pojedyncze osoby przekazują projektom pieniądze w zastaw. Są one pobrane tylko wówczas, gdy osiągnięta zostaje docelowa kwota. Takie umowy ubezpieczeniowe są przetwarzane przez protokół Bitcoin, który zapobiega dokonaniu transakcji przed spełnieniem wszystkich wymaganych warunków. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Dowiedz się więcej</a> o technologii związanej z crowdfundingiem i wypróbuj <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Mikropłatności</h3>
+	    <p>Bitcoin może przetwarzać płatności w skali jednego dolara, a wkrótce nawet mniejszych kwot. Takie płatności są powszechne nawet dzisiaj. Wyobraź sobie, że słuchasz radia internetowego płatnego za sekundę, wyświetlasz strony zostawiając drobne napiwki za każdą niewyświetloną reklamę lub kupujesz transfer z hotspotu WiFi rozliczając się co kilobajt. Bitcoin jest na tyle wydajny, że wszystko to staje się możliwe. <a href="https://bitcoinj.github.io/working-with-micropayments">Dowiedz się więcej</a> o technologii stojącej za mikropłatnościami Bitcoin.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Pośrednictwo w sporach</h3>
+	    <p>Bitcoin może zostać użyty do rozwinięcia innowacyjnych usług mediacji w sporach przy użyciu wielokrotnych podpisów. Serwisy takie mogłyby zezwalać osobom trzecim na zatwierdzanie lub odrzucanie transakcji w razie nieporozumienia pomiędzy podmiotami, nie dając im jednocześnie kontroli nad pieniędzmi. Ponieważ usługi tego typu byłyby dostępne dla każdego użytkownika i handlowca używającego Bitcoin, prawdopodobnie doprowadziłoby to do wolnej konkurencji i standardów o wyższej jakości.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Konta z multipodpisem</h3>
+	    <p>Wielokrotne podpisy zezwalają na akceptację transakcji przez sieć tylko wówczas, gdy określona liczba osób lub ich zdefiniowana grupa zgadza się podpisać transakcję. Może to być wykorzystane przez zarząd w celu zapobiegnięcia dokonywania wydatków przez poszczególnych członków bez dostatecznej zgody reszty członków. Również banki mogą zapobiegać w ten sposób kradzieżom, blokując płatności powyżej określonego progu, jeśli użytkownik nie dostarczy dodatkowych poświadczeń.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Zaufanie i spójność</h3>
+	    <p>Bitcoin oferuje rozwiązania wielu problemów związanych z zaufaniem, które są obecnie plagą banków. Dzięki przejrzystej księgowości, cyfrowym umowom i nieodwracalnym transakcjom, Bitcoin może być użyty jako fundament do przywrócenia zaufania i porozumienia. Nieuczciwe banki nie mogą oszukać systemu dla uzyskania zysku kosztem innych banków lub społeczeństwa. Przyszłość, w której wiodące banki wspierałyby Bitcoin, mogłaby pomóc przywrócić nieskazitelność i zaufanie instytucjom finansowym.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Odporność i decentralizacja</h3>
+	    <p>Poprzez swą wysoką decentralizację, Bitcoin stworzył odmienną formę sieci płatności o zwiększonym poziomie odporności i redundancji. Bitcoin może operować transakcjami o wartości milionów dolarów bez potrzeby ochrony militarnej. Bez centralnego ośrodka, który mógłby zawieść, jak na przykład centrum danych, atak na sieć staje się trudniejszym projektem. Bitcoin mógłby stanowić interesujący krok naprzód w zakresie zabezpieczania lokalnych i globalnych systemów finansowych.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Elastyczna przejrzystość</h3>
+	    <p>Wszystkie transakcje Bitcoin są publiczne i transparentne, zaś tożsamość ludzi dokonujących transakcji jest domyślnie prywatna. Pozwala to jednostkom i organizacjom na pracę przy elastycznych zasadach przejrzystości. Dla przykładu, firma może zdecydować, że udostępni niektóre transakcje i salda jedynie niektórym pracownikom, zaś organizacja non-profit może upublicznić kwoty, jakie otrzymuje z codziennych i miesięcznych darowizn.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Zautomatyzowane rozwiązania</h3>
+	    <p>Usługi zautomatyzowane muszą na ogół radzić sobie z kosztami i ograniczeniami płatności gotówką lub kartami kredytowymi. Dotyczy to wszystkich rodzajów automatów, od kas biletowych po maszyny z kawą. Bitcoin nadaje się do stosowania w nowej generacji zautomatyzowanych usług, może też obniżyć ich koszty operacyjne. Wyobraź sobie taksówki bez kierowcy, albo sklep, w którym koszyk na zakupy pozwala Ci równocześnie za nie zapłacić bez potrzeby stania w kolejce. Podobne przykłady można mnożyć.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Globalna dostępność</h2>
-<p>Wszystkie płatności na świecie mogą być w pełni interoperacyjne. Bitcoin umożliwia każdemu bankowi, firmie lub osobie prywatnej bezpieczne wysyłanie i otrzymywanie płatności gdziekolwiek i kiedykolwiek, z kontem bankowym albo bez niego. Bitcoin jest dostępny w wielu krajach, w których ze względu na ich własne ograniczenia wciąż niedostępnych jest większość systemów płatniczych. Bitcoin zwiększa globalny dostęp do handlu i może pomóc w rozwoju handlu międzynarodowego.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Ekonomiczność</h2>
-<p>Dzięki zastosowaniu kryptografii, bezpieczne płatności są możliwe bez powolnych i kosztownych pośredników. Transakcja Bitcoin może być dużo tańsza niż jej alternatywy. Może też zostać ukończona w krótkim czasie. Oznacza to, że Bitcoin ma pewien potencjał, aby w przyszłości stać się powszechną metodą przesyłania każdej waluty. Bitcoin może również odegrać rolę w <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">zwalczaniu ubóstwa</a> w wielu krajach poprzez eliminację wysokich prowizji za transakcje wynagrodzenia pracowników.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Napiwki i dotacje</h2>
-<p>Bitcoin jest w wielu przypadkach wydajnym rozwiązaniem zwłaszcza dla napiwków i darowizn. Wysłanie płatności wymaga jedynie jednego kliknięcia, a otrzymywanie donacji może być proste jak wyświetlenie kodu QR. Darowizny mogą być publicznie widoczne, co zwiększa przejrzystość i wiarygodność organizacji non-profit. W nagłych wypadkach, takich jak klęski żywiołowe, darowizny Bitcoin mogą umożliwić szybszą reakcję międzynarodową.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Crowdfunding</h2>
-<p>Choć nie jest jeszcze prosty w obsłudzie, Bitcoin może zostać użyty w celu przeprowadzania kampanii crowdfundingowych w stylu Kickstartera. W kampaniach takich pojedyncze osoby przekazują projektom pieniądze w zastaw. Są one pobrane tylko wówczas, gdy osiągnięta zostaje docelowa kwota. Takie umowy ubezpieczeniowe są przetwarzane przez protokół Bitcoin, który zapobiega dokonaniu transakcji przed spełnieniem wszystkich wymaganych warunków. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Dowiedz się więcej</a> o technologii związanej z crowdfundingiem i wypróbuj <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Mikropłatności</h2>
-<p>Bitcoin może przetwarzać płatności w skali jednego dolara, a wkrótce nawet mniejszych kwot. Takie płatności są powszechne nawet dzisiaj. Wyobraź sobie, że słuchasz radia internetowego płatnego za sekundę, wyświetlasz strony zostawiając drobne napiwki za każdą niewyświetloną reklamę lub kupujesz transfer z hotspotu WiFi rozliczając się co kilobajt. Bitcoin jest na tyle wydajny, że wszystko to staje się możliwe. <a href="https://bitcoinj.github.io/working-with-micropayments">Dowiedz się więcej</a> o technologii stojącej za mikropłatnościami Bitcoin.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Pośrednictwo w sporach</h2>
-<p>Bitcoin może zostać użyty do rozwinięcia innowacyjnych usług mediacji w sporach przy użyciu wielokrotnych podpisów. Serwisy takie mogłyby zezwalać osobom trzecim na zatwierdzanie lub odrzucanie transakcji w razie nieporozumienia pomiędzy podmiotami, nie dając im jednocześnie kontroli nad pieniędzmi. Ponieważ usługi tego typu byłyby dostępne dla każdego użytkownika i handlowca używającego Bitcoin, prawdopodobnie doprowadziłoby to do wolnej konkurencji i standardów o wyższej jakości.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Konta z multipodpisem</h2>
-<p>Wielokrotne podpisy zezwalają na akceptację transakcji przez sieć tylko wówczas, gdy określona liczba osób lub ich zdefiniowana grupa zgadza się podpisać transakcję. Może to być wykorzystane przez zarząd w celu zapobiegnięcia dokonywania wydatków przez poszczególnych członków bez dostatecznej zgody reszty członków. Również banki mogą zapobiegać w ten sposób kradzieżom, blokując płatności powyżej określonego progu, jeśli użytkownik nie dostarczy dodatkowych poświadczeń.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Zaufanie i spójność</h2>
-<p>Bitcoin oferuje rozwiązania wielu problemów związanych z zaufaniem, które są obecnie plagą banków. Dzięki przejrzystej księgowości, cyfrowym umowom i nieodwracalnym transakcjom, Bitcoin może być użyty jako fundament do przywrócenia zaufania i porozumienia. Nieuczciwe banki nie mogą oszukać systemu dla uzyskania zysku kosztem innych banków lub społeczeństwa. Przyszłość, w której wiodące banki wspierałyby Bitcoin, mogłaby pomóc przywrócić nieskazitelność i zaufanie instytucjom finansowym.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Odporność i decentralizacja</h2>
-<p>Poprzez swą wysoką decentralizację, Bitcoin stworzył odmienną formę sieci płatności o zwiększonym poziomie odporności i redundancji. Bitcoin może operować transakcjami o wartości milionów dolarów bez potrzeby ochrony militarnej. Bez centralnego ośrodka, który mógłby zawieść, jak na przykład centrum danych, atak na sieć staje się trudniejszym projektem. Bitcoin mógłby stanowić interesujący krok naprzód w zakresie zabezpieczania lokalnych i globalnych systemów finansowych.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Elastyczna przejrzystość</h2>
-<p>Wszystkie transakcje Bitcoin są publiczne i transparentne, zaś tożsamość ludzi dokonujących transakcji jest domyślnie prywatna. Pozwala to jednostkom i organizacjom na pracę przy elastycznych zasadach przejrzystości. Dla przykładu, firma może zdecydować, że udostępni niektóre transakcje i salda jedynie niektórym pracownikom, zaś organizacja non-profit może upublicznić kwoty, jakie otrzymuje z codziennych i miesięcznych darowizn.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Zautomatyzowane rozwiązania</h2>
-<p>Usługi zautomatyzowane muszą na ogół radzić sobie z kosztami i ograniczeniami płatności gotówką lub kartami kredytowymi. Dotyczy to wszystkich rodzajów automatów, od kas biletowych po maszyny z kawą. Bitcoin nadaje się do stosowania w nowej generacji zautomatyzowanych usług, może też obniżyć ich koszty operacyjne. Wyobraź sobie taksówki bez kierowcy, albo sklep, w którym koszyk na zakupy pozwala Ci równocześnie za nie zapłacić bez potrzeby stania w kolejce. Podobne przykłady można mnożyć.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
-			<li><a href="/pl/prywatnosc">Prywatność</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prywatnosc">Prywatność</a></li>
 			
-			<li><a href="/pl/prasa">Prasa</a></li>
-			<li><a href="/pl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prasa">Prasa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

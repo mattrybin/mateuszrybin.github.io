@@ -10,15 +10,29 @@
 <title>Słowniczek - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pl.png"><strong>Polski</strong>
+          <img src="/img/flags/pl.png"><strong>Polski</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Kilka terminów związanych z Bitcoin</h1>
-<p class="summarytxt">Bitcoin prezentuje nowe podejście do dokonywania płatności i z tego względu Twój słownik może poszerzyć się o parę słów. Nie przejmuj się nawet skromna telewizja stworzyła swego czasu nowe słowa!</p>
-<h2 id="table-of-contents">Spis treści</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Kilka terminów związanych z Bitcoin</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin prezentuje nowe podejście do dokonywania płatności i z tego względu Twój słownik może poszerzyć się o parę słów. Nie przejmuj się nawet skromna telewizja stworzyła swego czasu nowe słowa!</h2>
 
-<div class="index">
-
-<a href="#adres">Adres</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blok">Blok</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#klucz-prywatny">Klucz Prywatny</a>
-
-<a href="#kryptografia">Kryptografia</a>
-
-<a href="#lancuch-blokow">Łańcuch Bloków</a>
-
-<a href="#p2p">P2P</a>
-
-<a href="#podpis">Podpis</a>
-
-<a href="#podwojne-wydatkowanie">Podwójne wydatkowanie</a>
-
-<a href="#portfel">Portfel</a>
-
-<a href="#potwierdzenie">Potwierdzenie</a>
-
-<a href="#predkosc-hashowania">Prędkość Hashowania</a>
-
-<a href="#wydobycie">Wydobycie</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="adres">Adres</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Adres Bitcoin jest <b>podobny do adresu fizycznego lub e-mail</b>. Jest to jedyna informacja, którą musisz podać, by ktoś zapłacił Ci za pomocą Bitcoin. Istotną różnicą jest jednak to, że każdy adres powinien być używany tylko do jednej transakcji.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bit to powszechnie stosowana podjednostka bitcoina - 1,000,000 bitów równych jest 1 bitcoinowi (BTC lub B⃦). Jednostka ta jest na ogół wygodniejsza do wyceny napiwków, towarów i usług.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - z wielkiej litery - używa się w przypadku opisywania koncepcji Bitcoin lub też sieci jako całości, np. "Uczyłem się dziś o protokole Bitcoin".<br> bitcoin - z małej litery - używa się, by opisać bitcoiny jako jednostkę obrachunkową, np. "Wysłałem dziś dziesięć bitcoinów"; często skraca się do BTC lub XBT</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blok">Blok</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Blok jest <b>zapisem w łańcuchu bloków, który zawiera i potwierdza wiele oczekujących transakcji</b>. Nowy blok zawierający transakcje zostaje otwarty w przybliżeniu średnio co 10 minut w <a href="#lancuch-blokow">łańcuchu bloków</a> poprzez <a href="#wydobycie">wydobycie</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC jest powszechnie używaną jednostką oznaczającą jednego bitcoina (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="klucz-prywatny">Klucz Prywatny</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Klucz prywatny jest <b>tajną częścią danych, która potwierdza Twoje prawo do wydawania bitcoinów z danego portfela</b> poprzez <a href="#podpis">podpis</a> kryptograficzny. Twoje klucze prywatne są przechowywane na Twoim komputerze, jeśli używasz aplikacji portfela, lub na serwerze zdalnym, jeśli używasz portfela sieciowego. Klucze prywatne nigdy nie mogą zostać ujawnione, ponieważ pozwalają na wydawanie bitcoinów z danego portfela Bitcoin.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="kryptografia">Kryptografia</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Kryptografia jest działem matematyki, który pozwala nam tworzyć <b>dowody matematyczne o wysokim poziomie bezpieczeństwa i pewności</b>. Handel sieciowy oraz bankowość już używają kryptografii. W przypadku Bitcoin kryptografię stosuje się, aby uniemożliwić komukolwiek dysponowanie funduszami z portfela innego użytkownika, a także zakłamanie zapisów w <a href="#lancuch-blokow">łańcuchu bloków</a>. Może posłużyć również w celu zaszyfrowania portfela, by ten nie mógł zostać użyty bez hasła.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="lancuch-blokow">Łańcuch Bloków</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Łańcuch bloków jest <b>publicznym zapisem wszystkich transakcji Bitcoin</b> w kolejności chronologicznej. Łańcuch ten jest współdzielony pomiędzy wszystkimi użytkownikami Bitcoin. Jest używany do sprawdzenia trwałości transakcji Bitcoin oraz przeciwdziałania <a href="#podwojne-wydatkowanie">podwójnemu wydatkowaniu</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Peer-to-peer oznacza <b>system, który działa jako zorganizowana całość</b>, pozwalając każdemu, kto jest jego częścią, na bezpośrednią interakcję z innymi. W przypadku Bitcoin, sieć jest zbudowana tak, by każdy użytkownik obwieszczał swoje transakcje innym użytkownikom i, co najważniejsze, żaden bank nie jest potrzebny jako pośrednik.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="podpis">Podpis</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#kryptografia">Kryptograficzny</a> podpis to <b>matematyczny mechanizm, który pozwala na udowodnienie własności</b>. W przypadku Bitcoin, <a href="#portfel">portfel Bitcoin</a> i jego <a href="#klucz-prywatny">prywatne klucze</a> są połączone matematyczną magią. Kiedy Twoje oprogramowanie Bitcoin podpisuje transakcję przy użyciu odpowiedniego prywatnego klucza, cała sieć może zobaczyć, że podpis odpowiada wydanym bitcoinom. Jednak żadna siła na świecie nie będzie w stanie odgadnąć Twojego prywatnego klucza, aby ukraść Twoje ciężko zarobione bitcoiny.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="podwojne-wydatkowanie">Podwójne wydatkowanie</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Gdy użytkownik o złych zamiarach próbuje <b>przesłać swoje bitcoiny dwóm różnym odbiorcom jednocześnie</b>, działanie takie nazywamy podwójnym wydatkowaniem. <a href="#wydobycie">Wydobycie</a> Bitcoin oraz <a href="#lancuch-blokow">łańcuch bloków</a> istnieją, aby w sieci powstała zgodność co do tego, która z tych dwóch transakcji zostanie potwierdzona i uznana za ważną.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="portfel">Portfel</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Portfel Bitcoin jest w jakimś sensie <b>ekwiwalentem fizycznego portfela w sieci Bitcoin</b>. Portfel zawiera Twoje <a href="#klucz-prywatny">prywatne klucze</a>, które umożliwiają Ci wydawanie bitcoinów powiązanych z nimi w <a href="#lancuch-blokow">łańcuchu bloków</a>. Każdy portfel Bitcoin może pokazać Ci łączną sumę wszystkich bitcoinów, które kontroluje, oraz umożliwia przelanie określonej kwoty konkretnej osobie, zupełnie jak prawdziwy portfel. Różni się to od kart kredytowych - używając ich jesteś obciążany przez handlowca.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="potwierdzenie">Potwierdzenie</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Potwierdzenie oznacza, że transakcja została <b>przetworzona przez sieć i prawdopodobieństwo jej wycofania jest bardzo niskie</b>. Transakcje otrzymują potwierdzenie, gdy zostają uwzględnione w <a href="/pl/slownik#blok">bloku</a> i dla każdego kolejnego bloku. Nawet pojedyncze potwierdzenie może być uznane za bezpieczne dla transakcji o niskiej wartości, choć dla większych kwot, jak 1000 USD, sensownie jest poczekać na 6 lub więcej potwierdzeń. Każde potwierdzenie zmniejsza ryzyko wycofania transakcji <i>w postępie geometrycznym</i>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="predkosc-hashowania">Prędkość Hashowania</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Prędkość hashowania jest <b>jednostką pomiarową siły obliczeniowej sieci Bitcoin</b>. Sieć Bitcoin musi czynić wiele intensywnych obliczeń matematycznych ze względów bezpieczeństwa. Kiedy sieć osiągnie prędkość 10 TH/s, oznacza to, że może wykonać 10 bilionów operacji na sekundę.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wydobycie">Wydobycie</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Wydobywanie Bitcoin to proces <b>używania sprzętu komputerowego do wykonywania obliczeń matematycznych, aby potwierdzać transakcje w sieci Bitcoin</b> oraz zwiększać bezpieczeństwo. Jako wynagrodzenie za ich usługi, górnicy Bitcoin mogą pobierać opłaty za transakcje, które potwierdzą, jak również nowo tworzone bitcoiny. Wydobywanie to wyspecjalizowany oraz konkurencyjny rynek, gdzie nagrody są dzielone zgodnie z ilością wykonywanych obliczeń. Nie wszyscy użytkownicy Bitcoin dokonują wydobywania, nie jest to też łatwy sposób na zarabianie pieniędzy.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="adres">Adres</h2>
-<p>Adres Bitcoin jest <b>podobny do adresu fizycznego lub e-mail</b>. Jest to jedyna informacja, którą musisz podać, by ktoś zapłacił Ci za pomocą Bitcoin. Istotną różnicą jest jednak to, że każdy adres powinien być używany tylko do jednej transakcji.</p>
-
-<h2 id="bit">Bit</h2>
-<p>Bit to powszechnie stosowana podjednostka bitcoina - 1,000,000 bitów równych jest 1 bitcoinowi (BTC lub B⃦). Jednostka ta jest na ogół wygodniejsza do wyceny napiwków, towarów i usług.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Bitcoin - z wielkiej litery - używa się w przypadku opisywania koncepcji Bitcoin lub też sieci jako całości, np. "Uczyłem się dziś o protokole Bitcoin".<br> bitcoin - z małej litery - używa się, by opisać bitcoiny jako jednostkę obrachunkową, np. "Wysłałem dziś dziesięć bitcoinów"; często skraca się do BTC lub XBT</p>
-
-<h2 id="blok">Blok</h2>
-<p>Blok jest <b>zapisem w łańcuchu bloków, który zawiera i potwierdza wiele oczekujących transakcji</b>. Nowy blok zawierający transakcje zostaje otwarty w przybliżeniu średnio co 10 minut w <a href="#lancuch-blokow">łańcuchu bloków</a> poprzez <a href="#wydobycie">wydobycie</a>.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC jest powszechnie używaną jednostką oznaczającą jednego bitcoina (B⃦).</p>
-
-<h2 id="klucz-prywatny">Klucz Prywatny</h2>
-<p>Klucz prywatny jest <b>tajną częścią danych, która potwierdza Twoje prawo do wydawania bitcoinów z danego portfela</b> poprzez <a href="#podpis">podpis</a> kryptograficzny. Twoje klucze prywatne są przechowywane na Twoim komputerze, jeśli używasz aplikacji portfela, lub na serwerze zdalnym, jeśli używasz portfela sieciowego. Klucze prywatne nigdy nie mogą zostać ujawnione, ponieważ pozwalają na wydawanie bitcoinów z danego portfela Bitcoin.</p>
-
-<h2 id="kryptografia">Kryptografia</h2>
-<p>Kryptografia jest działem matematyki, który pozwala nam tworzyć <b>dowody matematyczne o wysokim poziomie bezpieczeństwa i pewności</b>. Handel sieciowy oraz bankowość już używają kryptografii. W przypadku Bitcoin kryptografię stosuje się, aby uniemożliwić komukolwiek dysponowanie funduszami z portfela innego użytkownika, a także zakłamanie zapisów w <a href="#lancuch-blokow">łańcuchu bloków</a>. Może posłużyć również w celu zaszyfrowania portfela, by ten nie mógł zostać użyty bez hasła.</p>
-
-<h2 id="lancuch-blokow">Łańcuch Bloków</h2>
-<p>Łańcuch bloków jest <b>publicznym zapisem wszystkich transakcji Bitcoin</b> w kolejności chronologicznej. Łańcuch ten jest współdzielony pomiędzy wszystkimi użytkownikami Bitcoin. Jest używany do sprawdzenia trwałości transakcji Bitcoin oraz przeciwdziałania <a href="#podwojne-wydatkowanie">podwójnemu wydatkowaniu</a>.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Peer-to-peer oznacza <b>system, który działa jako zorganizowana całość</b>, pozwalając każdemu, kto jest jego częścią, na bezpośrednią interakcję z innymi. W przypadku Bitcoin, sieć jest zbudowana tak, by każdy użytkownik obwieszczał swoje transakcje innym użytkownikom i, co najważniejsze, żaden bank nie jest potrzebny jako pośrednik.</p>
-
-<h2 id="podpis">Podpis</h2>
-<p><a href="#kryptografia">Kryptograficzny</a> podpis to <b>matematyczny mechanizm, który pozwala na udowodnienie własności</b>. W przypadku Bitcoin, <a href="#portfel">portfel Bitcoin</a> i jego <a href="#klucz-prywatny">prywatne klucze</a> są połączone matematyczną magią. Kiedy Twoje oprogramowanie Bitcoin podpisuje transakcję przy użyciu odpowiedniego prywatnego klucza, cała sieć może zobaczyć, że podpis odpowiada wydanym bitcoinom. Jednak żadna siła na świecie nie będzie w stanie odgadnąć Twojego prywatnego klucza, aby ukraść Twoje ciężko zarobione bitcoiny.</p>
-
-<h2 id="podwojne-wydatkowanie">Podwójne wydatkowanie</h2>
-<p>Gdy użytkownik o złych zamiarach próbuje <b>przesłać swoje bitcoiny dwóm różnym odbiorcom jednocześnie</b>, działanie takie nazywamy podwójnym wydatkowaniem. <a href="#wydobycie">Wydobycie</a> Bitcoin oraz <a href="#lancuch-blokow">łańcuch bloków</a> istnieją, aby w sieci powstała zgodność co do tego, która z tych dwóch transakcji zostanie potwierdzona i uznana za ważną.</p>
-
-<h2 id="portfel">Portfel</h2>
-<p>Portfel Bitcoin jest w jakimś sensie <b>ekwiwalentem fizycznego portfela w sieci Bitcoin</b>. Portfel zawiera Twoje <a href="#klucz-prywatny">prywatne klucze</a>, które umożliwiają Ci wydawanie bitcoinów powiązanych z nimi w <a href="#lancuch-blokow">łańcuchu bloków</a>. Każdy portfel Bitcoin może pokazać Ci łączną sumę wszystkich bitcoinów, które kontroluje, oraz umożliwia przelanie określonej kwoty konkretnej osobie, zupełnie jak prawdziwy portfel. Różni się to od kart kredytowych - używając ich jesteś obciążany przez handlowca.</p>
-
-<h2 id="potwierdzenie">Potwierdzenie</h2>
-<p>Potwierdzenie oznacza, że transakcja została <b>przetworzona przez sieć i prawdopodobieństwo jej wycofania jest bardzo niskie</b>. Transakcje otrzymują potwierdzenie, gdy zostają uwzględnione w <a href="/pl/slownik#blok">bloku</a> i dla każdego kolejnego bloku. Nawet pojedyncze potwierdzenie może być uznane za bezpieczne dla transakcji o niskiej wartości, choć dla większych kwot, jak 1000 USD, sensownie jest poczekać na 6 lub więcej potwierdzeń. Każde potwierdzenie zmniejsza ryzyko wycofania transakcji <i>w postępie geometrycznym</i>.</p>
-
-<h2 id="predkosc-hashowania">Prędkość Hashowania</h2>
-<p>Prędkość hashowania jest <b>jednostką pomiarową siły obliczeniowej sieci Bitcoin</b>. Sieć Bitcoin musi czynić wiele intensywnych obliczeń matematycznych ze względów bezpieczeństwa. Kiedy sieć osiągnie prędkość 10 TH/s, oznacza to, że może wykonać 10 bilionów operacji na sekundę.</p>
-
-<h2 id="wydobycie">Wydobycie</h2>
-<p>Wydobywanie Bitcoin to proces <b>używania sprzętu komputerowego do wykonywania obliczeń matematycznych, aby potwierdzać transakcje w sieci Bitcoin</b> oraz zwiększać bezpieczeństwo. Jako wynagrodzenie za ich usługi, górnicy Bitcoin mogą pobierać opłaty za transakcje, które potwierdzą, jak również nowo tworzone bitcoiny. Wydobywanie to wyspecjalizowany oraz konkurencyjny rynek, gdzie nagrody są dzielone zgodnie z ilością wykonywanych obliczeń. Nie wszyscy użytkownicy Bitcoin dokonują wydobywania, nie jest to też łatwy sposób na zarabianie pieniędzy.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
-			<li><a href="/pl/prywatnosc">Prywatność</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prywatnosc">Prywatność</a></li>
 			
-			<li><a href="/pl/prasa">Prasa</a></li>
-			<li><a href="/pl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prasa">Prasa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

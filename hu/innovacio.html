@@ -10,15 +10,29 @@
 <title>Innováció - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Innováció a fizetési rendszerek terén</h1>
-<p class="summarytxt">A Bitcoin-protokoll nem csak a pénz A-ból B-be való elküldéséről szól. Számos szolgáltatást biztosít, valamint sokféle lehetőséget teremt, amelyekkel a közösség továbbra is ismerkedik. Ezen az oldalon található néhány, jelenleg is kutatott technológia, amely néhány esetben valós termékké és szolgáltatássá vált. A Bitcoin legérdekesebb felhasználási módjai feltehetően még felfedezésre várnak.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Innováció a fizetési rendszerek terén</h1>
+  <h2 class="content_innovation--subtitle">A Bitcoin-protokoll nem csak a pénz A-ból B-be való elküldéséről szól. Számos szolgáltatást biztosít, valamint sokféle lehetőséget teremt, amelyekkel a közösség továbbra is ismerkedik. Ezen az oldalon található néhány, jelenleg is kutatott technológia, amely néhány esetben valós termékké és szolgáltatássá vált. A Bitcoin legérdekesebb felhasználási módjai feltehetően még felfedezésre várnak.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Csalással szembeni kontroll</h3>
+	    <p>A Bitcoin eddig soha nem látott biztonsági szintet biztosít. A hálózat a felhasználók számára védelmet biztosít a legtöbb, széles körben elterjedt csalás - mint például visszaszámlázás vagy kéretlen díjak - ellen, valamint a bitcoinokat lehetetlen hamisítani. A felhasználók biztonsági mentést készíthetnek pénztárcájukról vagy titkosíthatják azt, és a hardverpénztárcák pedig a jövőben igen nehézzé tehetik a pénz ellopását vagy elvesztését. A Bitcoint úgy tervezték, hogy a felhasználók számára pénzük felett teljes irányítást biztosítson.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Csalással szembeni kontroll</h2>
-<p>A Bitcoin eddig soha nem látott biztonsági szintet biztosít. A hálózat a felhasználók számára védelmet biztosít a legtöbb, széles körben elterjedt csalás - mint például visszaszámlázás vagy kéretlen díjak - ellen, valamint a bitcoinokat lehetetlen hamisítani. A felhasználók biztonsági mentést készíthetnek pénztárcájukról vagy titkosíthatják azt, és a hardverpénztárcák pedig a jövőben igen nehézzé tehetik a pénz ellopását vagy elvesztését. A Bitcoint úgy tervezték, hogy a felhasználók számára pénzük felett teljes irányítást biztosítson.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Globális hozzáférhetőség</h3>
+	    <p>A világ összes kifizetése együttműködhet. A Bitcoin lehetővé teszi bármely bank, vállalkozás vagy magánszemély számára a biztonságos kifizetésküldést és fogadást, bárhol, bármikor, bankszámlával vagy anélkül. A Bitcoin elérhető nagyszámú, más fizetési rendszer segítségével, saját korlátaiból fakadóan nem meghódítható országban. A Bitcoin növeli a kereskedelemhez való globális hozzáférést, és elősegítheti a nemzetközi üzletek virágzását.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Költséghatékonyság</h3>
+	    <p>A titkosítás használatával a biztonságos kifizetések lassú és költséges közvetítők nélkül kivitelezhetőek. A Bitcoin tranzakciói sokkal olcsóbbak a versenytársakénál, valamint rövid idő alatt teljesülnek. Ez azt jelenti, hogy a Bitcoin magában hordozza annak lehetőségét, hogy a jövőben bármely valuta átutalásának általános eszköze legyen. A Bitcoin ezenkívül a <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">szegénység csökkentésében</a> is szerepet játszhat a magas, munkavállalói fizetéseket sújtó tranzakciós költségek csökkentése révén.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Adományok</h3>
+	    <p>A Bitcoin különösen hatékony megoldást jelent az adományozás számos esetére. Egy kifizetés elküldése mindössze egy kattintásba kerül, és az adományok fogadása olyan egyszerű, mint egy QR-kód megjelentése. Az adományok láthatóak lehetnek a nyilvánosság számára, ezzel megnövekedett transzparenciát biztosítva a nonprofit szervezetek részére. Vészhelyzetben, például természeti katasztrófák esetén a Bitcoin-adományok a gyorsabb nemzetközi reagáláshoz járulhatnak hozzá.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Közösségi finanszírozás</h3>
+	    <p>Bár jelenleg még nem használható egyszerűen, a Bitcoin a jövőben felhasználható Kickstarter jellegű közösségi finanszírozás-kampányokhoz, amelyek során az emberek egy projektnek pénz juttatnak, és e juttatás csak akkor lép életbe, ha a kitűzött célnak megfelelő összeg összegyűlik. Az ilyen jellegű bizonyossági szerződéseket a Bitcoin-protokoll dolgozza fel, amely megakadályozza, hogy egy tranzakció aktiválódjon, mielőtt minden feltétel teljesülne. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Tudjon meg többet</a> (angol nyelven) a közösségi finanszírozás technológiai hátteréről.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Mikrokifizetések</h3>
+	    <p>A Bitcoin dollárnyi - hamarosan pedig még ennél is kisebb - összegű kifizetések feldogozására képes. Az előbb említett kifizetések teljesítése jelenleg is rutinszerűen zajlik. Képzelje el, hogy az internetes rádióadásért másodperc alapon fizet, weboldalak esetén minden meg nem jelenített reklámért egy kisebb összeget adományoz vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolja meg. A Bitcoin minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.github.io/working-with-micropayments">Tudjon meg többet</a> (angol nyelven) a Bitcoin-mikrokifizetések mögötti technológiáról.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Mediáció</h3>
+	    <p>A Bitcoin felhasználható innovatív, csoportos aláírást használó mediációs rendszerek fejlesztésére. E szolgáltatások lehetővé tehetik egy harmadik fél részére egy tranzakció elfogadását vagy elutasítását, a két fél egyet nem értése esetén, a pénzük feletti kontroll gyakorlása nélkül. Mivel e szolgáltatások bármely Bitcoin-felhasználóval és kereskedővel kompatibilisek lennének, ez valószínűleg szabad versenyt és magasabb minőségi sztenderdeket eredményezne.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Csoportos aláírást igénylő fiókok</h3>
+	    <p>A csoportos aláírások lehetővé teszik, hogy egy tranzakciót csak akkor fogadjon el a hálózat, ha egy meghatározott számú személyből álló csoport egyetért a tranzakció aláírásával. Ez felhasználható egy igazgatótanács által arra, hogy megakadályozza, hogy valamely tag elköltse a vagyon egy részét a tagok egyetértése nélkül. Ez ezenkívül felhasználható arra, hogy egy bank megelőzze a lopásokat úgy, hogy egy határérték felett blokkolja a kifizetéseket, amennyiben a felhasználó nem biztosít további igazolásokat.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Bizalom és tisztesség</h3>
+	    <p>A Bitcoin a bankokat sújtó számos bizalmi problémára megoldást kínál. Szelektíven alkalmazható könyvelési transzparenciájával, digitális szerződéseivel és visszavonhatatlan tranzakcióival a Bitcoin a megállapodások és a bizalom megteremtésének alapjául szolgálhat. A tisztességtelen bankok a más bankok vagy a társadalom kárára történő profit eléréséhez nem kerülhetik meg a rendszert. Egy olyan jövő, ahol a jelentős bankok támogatják a Bitcoint, visszaállíthatja a pénzügyi intézményekbe vetett bizalmat és tisztességet.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Rugalmasság és decentralizáció</h3>
+	    <p>A Bitcoin nagyfokú decentralizációján keresztül, megnövelt rugalmasságával és redundanciájával a fizetési rendszerek eltérő formáját hozta létre. A Bitcoin több millió dollárban mérhető kereskedelmet bonyolít le anélkül, hogy katonai védelemre lenne szüksége. A központi hibázási lehetőségek - mint például egy adatközpont - hiányában a rendszer megtámadása sokkal nehezebb feladat. A Bitcoin érdekes előrelépést jelenthet a helyi és globális pénzügyi rendszerek biztosítása terén.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Rugalmas transzparencia</h3>
+	    <p>Az összes Bitcoin-tranzakció nyilvános és transzparens, valamint a kifizetéseket kezdeményező emberek személyazonossága alapértelmezett módon rejtett. Ez lehetővé teszi a magánszemélyek és szervezetek számára, hogy rugalmas transzparenciaszabályokkal dolgozzanak. Például egy vállalkozás dönthet úgy, hogy meghatározott tranzakciókat és egyenlegeket csak meghatározott munkatársakkal oszt meg; egy nonprofit szervezet pedig szabadon bemutathatja a nyilvánosság számára, hogy mekkora összegű napi és havi összegű adományban részesül.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Automatizált megoldások</h3>
+	    <p>Az automatizált szolgáltatások gyakran a készpénzt és hitelkártya-kifizetéseket sújtó költségekkel és korlátokkal szembesülnek. Ez magában foglal mindenfajta automatát - a buszjegyautomatától a kávéautomatáig. A Bitcoin az új generációs automatizált szolgáltatások során való használatra, valamint e szolgáltatások működési költségeinek csökkentésére szolgál. Képzeljen el önmagukat vezető taxikat, vagy egy üzletet, ahol a kosara segítségével sorban állás nélkül fizethet. Sok ötlet lehetséges.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Globális hozzáférhetőség</h2>
-<p>A világ összes kifizetése együttműködhet. A Bitcoin lehetővé teszi bármely bank, vállalkozás vagy magánszemély számára a biztonságos kifizetésküldést és fogadást, bárhol, bármikor, bankszámlával vagy anélkül. A Bitcoin elérhető nagyszámú, más fizetési rendszer segítségével, saját korlátaiból fakadóan nem meghódítható országban. A Bitcoin növeli a kereskedelemhez való globális hozzáférést, és elősegítheti a nemzetközi üzletek virágzását.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Költséghatékonyság</h2>
-<p>A titkosítás használatával a biztonságos kifizetések lassú és költséges közvetítők nélkül kivitelezhetőek. A Bitcoin tranzakciói sokkal olcsóbbak a versenytársakénál, valamint rövid idő alatt teljesülnek. Ez azt jelenti, hogy a Bitcoin magában hordozza annak lehetőségét, hogy a jövőben bármely valuta átutalásának általános eszköze legyen. A Bitcoin ezenkívül a <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">szegénység csökkentésében</a> is szerepet játszhat a magas, munkavállalói fizetéseket sújtó tranzakciós költségek csökkentése révén.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Adományok</h2>
-<p>A Bitcoin különösen hatékony megoldást jelent az adományozás számos esetére. Egy kifizetés elküldése mindössze egy kattintásba kerül, és az adományok fogadása olyan egyszerű, mint egy QR-kód megjelentése. Az adományok láthatóak lehetnek a nyilvánosság számára, ezzel megnövekedett transzparenciát biztosítva a nonprofit szervezetek részére. Vészhelyzetben, például természeti katasztrófák esetén a Bitcoin-adományok a gyorsabb nemzetközi reagáláshoz járulhatnak hozzá.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Közösségi finanszírozás</h2>
-<p>Bár jelenleg még nem használható egyszerűen, a Bitcoin a jövőben felhasználható Kickstarter jellegű közösségi finanszírozás-kampányokhoz, amelyek során az emberek egy projektnek pénz juttatnak, és e juttatás csak akkor lép életbe, ha a kitűzött célnak megfelelő összeg összegyűlik. Az ilyen jellegű bizonyossági szerződéseket a Bitcoin-protokoll dolgozza fel, amely megakadályozza, hogy egy tranzakció aktiválódjon, mielőtt minden feltétel teljesülne. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Tudjon meg többet</a> (angol nyelven) a közösségi finanszírozás technológiai hátteréről.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Mikrokifizetések</h2>
-<p>A Bitcoin dollárnyi - hamarosan pedig még ennél is kisebb - összegű kifizetések feldogozására képes. Az előbb említett kifizetések teljesítése jelenleg is rutinszerűen zajlik. Képzelje el, hogy az internetes rádióadásért másodperc alapon fizet, weboldalak esetén minden meg nem jelenített reklámért egy kisebb összeget adományoz vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolja meg. A Bitcoin minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.github.io/working-with-micropayments">Tudjon meg többet</a> (angol nyelven) a Bitcoin-mikrokifizetések mögötti technológiáról.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Mediáció</h2>
-<p>A Bitcoin felhasználható innovatív, csoportos aláírást használó mediációs rendszerek fejlesztésére. E szolgáltatások lehetővé tehetik egy harmadik fél részére egy tranzakció elfogadását vagy elutasítását, a két fél egyet nem értése esetén, a pénzük feletti kontroll gyakorlása nélkül. Mivel e szolgáltatások bármely Bitcoin-felhasználóval és kereskedővel kompatibilisek lennének, ez valószínűleg szabad versenyt és magasabb minőségi sztenderdeket eredményezne.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Csoportos aláírást igénylő fiókok</h2>
-<p>A csoportos aláírások lehetővé teszik, hogy egy tranzakciót csak akkor fogadjon el a hálózat, ha egy meghatározott számú személyből álló csoport egyetért a tranzakció aláírásával. Ez felhasználható egy igazgatótanács által arra, hogy megakadályozza, hogy valamely tag elköltse a vagyon egy részét a tagok egyetértése nélkül. Ez ezenkívül felhasználható arra, hogy egy bank megelőzze a lopásokat úgy, hogy egy határérték felett blokkolja a kifizetéseket, amennyiben a felhasználó nem biztosít további igazolásokat.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Bizalom és tisztesség</h2>
-<p>A Bitcoin a bankokat sújtó számos bizalmi problémára megoldást kínál. Szelektíven alkalmazható könyvelési transzparenciájával, digitális szerződéseivel és visszavonhatatlan tranzakcióival a Bitcoin a megállapodások és a bizalom megteremtésének alapjául szolgálhat. A tisztességtelen bankok a más bankok vagy a társadalom kárára történő profit eléréséhez nem kerülhetik meg a rendszert. Egy olyan jövő, ahol a jelentős bankok támogatják a Bitcoint, visszaállíthatja a pénzügyi intézményekbe vetett bizalmat és tisztességet.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Rugalmasság és decentralizáció</h2>
-<p>A Bitcoin nagyfokú decentralizációján keresztül, megnövelt rugalmasságával és redundanciájával a fizetési rendszerek eltérő formáját hozta létre. A Bitcoin több millió dollárban mérhető kereskedelmet bonyolít le anélkül, hogy katonai védelemre lenne szüksége. A központi hibázási lehetőségek - mint például egy adatközpont - hiányában a rendszer megtámadása sokkal nehezebb feladat. A Bitcoin érdekes előrelépést jelenthet a helyi és globális pénzügyi rendszerek biztosítása terén.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Rugalmas transzparencia</h2>
-<p>Az összes Bitcoin-tranzakció nyilvános és transzparens, valamint a kifizetéseket kezdeményező emberek személyazonossága alapértelmezett módon rejtett. Ez lehetővé teszi a magánszemélyek és szervezetek számára, hogy rugalmas transzparenciaszabályokkal dolgozzanak. Például egy vállalkozás dönthet úgy, hogy meghatározott tranzakciókat és egyenlegeket csak meghatározott munkatársakkal oszt meg; egy nonprofit szervezet pedig szabadon bemutathatja a nyilvánosság számára, hogy mekkora összegű napi és havi összegű adományban részesül.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Automatizált megoldások</h2>
-<p>Az automatizált szolgáltatások gyakran a készpénzt és hitelkártya-kifizetéseket sújtó költségekkel és korlátokkal szembesülnek. Ez magában foglal mindenfajta automatát - a buszjegyautomatától a kávéautomatáig. A Bitcoin az új generációs automatizált szolgáltatások során való használatra, valamint e szolgáltatások működési költségeinek csökkentésére szolgál. Képzeljen el önmagukat vezető taxikat, vagy egy üzletet, ahol a kosara segítségével sorban állás nélkül fizethet. Sok ötlet lehetséges.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

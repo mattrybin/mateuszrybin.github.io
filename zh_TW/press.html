@@ -10,15 +10,29 @@
 <title>新聞媒體 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
+          <img src="/img/flags/zh_TW.png"><strong>繁體中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,187 +341,263 @@
 		<li><a href="#">常見問題</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>新聞媒體中心</h1>
-<p class="summary">尋找受訪者、答案和高質量的新聞媒體資料</p>
+        <div class="content_press">
+  <h1 class="content_press--title">新聞媒體中心</h1>
+  <h2 class="content_press--subtitle">尋找受訪者、答案和高質量的新聞媒體資料</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">受訪者</h2>
+    <p>與<a href="https://bitcoinfoundation.org/contact/">Bitcoin 基金會</a> 或本地的 <a href="/zh_TW/community#non-profit">非牟利機構</a>交流。 在獨立的<a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>找到更多潛在的媒體聯繫方式。</p>
+  </div>
 
-<h2 id="volunteer">受訪者</h2>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">常見問題</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">甚麼是 Bitcoin ？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 是一個共識網路，它讓一種新的支付系統和一種完全的數位貨幣成為可能。它是第一個去中心化的點對點支付網路，它由用戶來支撐，不需要中央機構或中間人。從用戶的角度看，Bitcoin 就像是網路上的鈔票一樣。Bitcoin 也被認為是現有的最傑出的<a href="http://financialcryptography.com/mt/archives/001325.html">三式記帳系統</a> 。</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 的運作原理</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>從用戶的角度看，Bitcoin 只是一個提供私人 Bitcoin 錢包和讓用戶傳送和接收比特幣的行動應用程式或電腦程式。對大部份的用戶來說，這是 Bitcoin 的用途。</p>
+            <p>在後臺，Bitcoin 網路分享著一個公開的被稱為“區塊鏈”的總的分類帳。這個分類帳包含所有已經進行的交易，這使得用戶的電腦可以核實每一筆交易的合法性。每一筆交易的真實性被相應的傳送地址的數位簽署保護，這使得所有的用戶都可以對從他們自己的 Bitcoin 地址傳送的比特幣有完全的掌控權。而且，每一個人都可以使用有專門硬體的計算器能力來處理交易并因這個服務而獲得作為獎賞的比特幣。這通常被稱為“挖礦”。如果您想要瞭解更多關於 Bitcoin 的資訊，您可以檢視<a href="/zh_TW/how-it-works">專門頁</a> 和  <a href="/bitcoin.pdf">原始論文</a>。</p>
+          </div>
+        </li>
 
-<p>與<a href="https://bitcoinfoundation.org/contact/">Bitcoin 基金會</a> 或本地的 <a href="/zh_TW/community#non-profit">非牟利機構</a>交流。</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">什麽是 Bitcoin 挖礦？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>挖礦就是利用計算器能力來處理交易、保證網路安全和讓在系統里的每一個人都一起同步的過程。它可以看作是 Bitcoin 的數據中心，但是它卻是完全分散的，挖礦者在世界各地運營且沒有任何個人擁有對這個網路的控制權。這個進程被比喻成像挖掘黃金的“挖礦”，它也是一個發放比特幣的暫時機制。然而，不像挖黃金，Bitcoin 挖礦提供一個獎賞來交換服務，這些服務對於運行一個安全的支付網路是必須的和有用的。在最後一個比特幣發放以後，挖礦仍然是必須的。</p>
+          </div>
+        </li>
 
-<p>在獨立的<a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>找到更多潛在的媒體聯繫方式。</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">如何獲得比特幣？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>作為商品或服務的支付手段。</li>
+              <li>透过一個<a href="http://howtobuybitcoins.info">Bitcoin 兑换</a>購買比特幣。</li>
+              <li>與<a href="https://localbitcoins.com/">附近的人</a>交換比特幣。</li>
+              <li>透過競爭激烈的 <a href="http://www.bitcoinmining.com/">挖礦</a>來賺取比特幣。</li>
+            </ul>
+            <p>雖然可能有些人想要通過出售比特幣來把它兑換成信用卡或PayPal上的錢，但是大部份的匯兌都不允許與這些支付方式的兌換。這是因為有人用PayPal購買了比特幣，之後他們就自己取消了交易。這通常被認為是一個拒付行為。這樣的情況時有發生。</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">真的有人在用 Bitcoin 嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>是的。<a href="http://usebitcoins.info/">越來越多的企業</a>和個人使用 Bitcoin。這包括實體企業，如餐廳、公寓、法律公司和廣受歡迎的線上服務如Namecheap, WordPress, Reddit 和 Flattr等等。雖然 Bitcoin 還是一個相對而言較新鮮的現象，但是它發展迅速。2013年8月底，<a href="https://bitcoincharts.com/bitcoin/">流通中的比特幣價值</a>超過了15億美元（US$ 1.5 billion），而且每天都有價值數百萬的比特幣在交易。</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">進行一個 Bitcoin 支付有多難？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>比起用提款卡和信用卡，Bitcoin 購買商品更容易支付，而且在沒有商家帳戶的情況下也可以支付給商家。支付通過一個錢包應用程式進行，在你的電腦上或智慧型手機上您都可以進行支付，您只需輸入收款人的地址、支付金額，然後按傳送鍵。爲了使輸入收款人的地址變得更方便，很多錢包都可以通過掃描一個 QR 碼或者通過使用 NFC 技術使兩個行動電話接觸就能獲得地址。</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">常見問題</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 的優點</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>支付自由</b></em> - 任何時候在世界的任何地方即時傳送和接受任何數量的金額是可能的。不受銀行放假的影響，也不受國界的限制，也沒有任何強制的限制，Bitcoin 讓它的用戶對他們的錢有完全的掌控權。</li>
+              <li><em><b>很低廉的手續費</b></em> - Bitcoin 支付目前是要麼不收費要麼只收取很少量的手續費。用戶可能發生的費用是爲了優先進程來實現更快的網路對交易的確認而產生的費用。另外，商家處理器可以幫助商家進行交易，把比特幣轉換成法定貨幣并每天把資金直接存入商家的銀行帳戶，這些也可能會收取費用。因為這些服務都是由 Bitcoin 發起，它們的費用比起 PayPal 或 信用卡網路便宜多了。</li>
+              <li><em><b>商家風險更低</b></em>- Bitcoin 的交易是安全而不可取消的， 它不包含任何客戶敏感的或個人的信息。這避免了商家因詐騙或詐騙式的拒付而遭受損失，而且它也不需要 PCI 標準。商家可以很容易地拓展新的市場，即便那些市場不支持信用卡或詐騙率過高。最後的結果就是更低的手續費、更大的市場和更少的行政開支。</li>
+              <li><em><b>安全與掌控權</b></em> - Bitcoin 用戶對他們的交易有完全的掌控權；商家不會像在其他的支付方式中一樣會被強迫接受不想要或者沒有注意到的收費。進行 Bitcoin 支付不需要個人信息和交易綁定。這可以有力防止身份盜用。 Bitcoin 用戶也可以用備份和加密的辦法來保護他們的錢。</li>
+              <li><em><b>透明和中立</b></em> - 關於Bitcoin 的錢的供應問題的<a href="https://www.biteasy.com/">所有資訊</a> 在區塊鏈中可以找到，任何人可以對它進行核實并隨時使用。沒有任何個人或組織可以控制或操控 Bitcoin 協議，因為它是加密安全的。這使得 Bitcoin 的核心能被信任是完全中立、透明和可預見的。</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 的缺點</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>接受程度</b></em> - 許多人還是不瞭解 Bitcoin。 每天都有越來越多的企業接受比特幣，因為他們喜歡比特幣的優勢。不過接受比特幣的企業名單相對而言還是少，它仍需要不斷發展來從<a href="https://en.wikipedia.org/wiki/Network_effect">網路效應</a>中獲益。</li>
+              <li><em><b>波動性</b></em> - 比起它應有的前景，流通中的比特幣的<a href="https://bitcoincharts.com/bitcoin/">總價值</a>和使用 Bitcoin 的企業數量仍然很小。所以，相對較小的事件、交易或企業活動都會對價格造成較大的影響。理論上，隨著 Bitcoin 市場和技術的成熟，這種波動會越來越小。之前世界上沒有一種像這樣的新興貨幣，所以很難預測它會如何發展 (當然其前景卻是值得期待的) 。</li>
+              <li><em><b>持續的發展</b></em> - Bitcoin 軟體還在調試和改進許多不完善的功能。新的工具、功能和服務持續不斷被開發出來，使 Bitcoin 更安全和容易使用。一些工具、功能和服務還不適合人人使用。大部份的 Bitcoin 企業都是新的而且也沒有提供保險。總而言之，Bitcoin 還在成長之中。</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">甚麼是 Bitcoin ？</a>
-  <div>
-  <p>Bitcoin 是一個共識網路，它讓一種新的支付系統和一種完全的數位貨幣成為可能。它是第一個去中心化的點對點支付網路，它由用戶來支撐，不需要中央機構或中間人。從用戶的角度看，Bitcoin 就像是網路上的鈔票一樣。Bitcoin 也被認為是現有的最傑出的<a href="http://financialcryptography.com/mt/archives/001325.html">三式記帳系統</a> 。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 的運作原理</a>
-  <div>
-  <p>從用戶的角度看，Bitcoin 只是一個提供私人 Bitcoin 錢包和讓用戶傳送和接收比特幣的行動應用程式或電腦程式。對大部份的用戶來說，這是 Bitcoin 的用途。</p>
-  <p>在後臺，Bitcoin 網路分享著一個公開的被稱為“區塊鏈”的總的分類帳。這個分類帳包含所有已經進行的交易，這使得用戶的電腦可以核實每一筆交易的合法性。每一筆交易的真實性被相應的傳送地址的數位簽署保護，這使得所有的用戶都可以對從他們自己的 Bitcoin 地址傳送的比特幣有完全的掌控權。而且，每一個人都可以使用有專門硬體的計算器能力來處理交易并因這個服務而獲得作為獎賞的比特幣。這通常被稱為“挖礦”。如果您想要瞭解更多關於 Bitcoin 的資訊，您可以檢視<a href="/zh_TW/how-it-works">專門頁</a> 和  <a href="/bitcoin.pdf">原始論文</a>。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">什麽是 Bitcoin 挖礦？</a>
-  <div>
-  <p>挖礦就是利用計算器能力來處理交易、保證網路安全和讓在系統里的每一個人都一起同步的過程。它可以看作是 Bitcoin 的數據中心，但是它卻是完全分散的，挖礦者在世界各地運營且沒有任何個人擁有對這個網路的控制權。這個進程被比喻成像挖掘黃金的“挖礦”，它也是一個發放比特幣的暫時機制。然而，不像挖黃金，Bitcoin 挖礦提供一個獎賞來交換服務，這些服務對於運行一個安全的支付網路是必須的和有用的。在最後一個比特幣發放以後，挖礦仍然是必須的。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">如何獲得比特幣？</a>
-  <div>
-  <ul>
-    <li>作為商品或服務的支付手段。</li>
-    <li>透过一個<a href="http://howtobuybitcoins.info">Bitcoin 兑换</a>購買比特幣。</li>
-    <li>與<a href="https://localbitcoins.com/">附近的人</a>交換比特幣。</li>
-    <li>透過競爭激烈的 <a href="http://www.bitcoinmining.com/">挖礦</a>來賺取比特幣。</li>
-  </ul>
-  <p>雖然可能有些人想要通過出售比特幣來把它兑換成信用卡或PayPal上的錢，但是大部份的匯兌都不允許與這些支付方式的兌換。這是因為有人用PayPal購買了比特幣，之後他們就自己取消了交易。這通常被認為是一個拒付行為。這樣的情況時有發生。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">真的有人在用 Bitcoin 嗎？</a>
-  <div>
-  <p>是的。<a href="http://usebitcoins.info/">越來越多的企業</a>和個人使用 Bitcoin。這包括實體企業，如餐廳、公寓、法律公司和廣受歡迎的線上服務如Namecheap, WordPress, Reddit 和 Flattr等等。雖然 Bitcoin 還是一個相對而言較新鮮的現象，但是它發展迅速。2013年8月底，<a href="https://bitcoincharts.com/bitcoin/">流通中的比特幣價值</a>超過了15億美元（US$ 1.5 billion），而且每天都有價值數百萬的比特幣在交易。</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">進行一個 Bitcoin 支付有多難？</a>
-  <div>
-  <p>比起用提款卡和信用卡，Bitcoin 購買商品更容易支付，而且在沒有商家帳戶的情況下也可以支付給商家。支付通過一個錢包應用程式進行，在你的電腦上或智慧型手機上您都可以進行支付，您只需輸入收款人的地址、支付金額，然後按傳送鍵。爲了使輸入收款人的地址變得更方便，很多錢包都可以通過掃描一個 QR 碼或者通過使用 NFC 技術使兩個行動電話接觸就能獲得地址。</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 的優點</a>
-  <div>
-  <ul>
-    <li><em><b>支付自由</b></em> - 任何時候在世界的任何地方即時傳送和接受任何數量的金額是可能的。不受銀行放假的影響，也不受國界的限制，也沒有任何強制的限制，Bitcoin 讓它的用戶對他們的錢有完全的掌控權。</li>
-    <li><em><b>很低廉的手續費</b></em> - Bitcoin 支付目前是要麼不收費要麼只收取很少量的手續費。用戶可能發生的費用是爲了優先進程來實現更快的網路對交易的確認而產生的費用。另外，商家處理器可以幫助商家進行交易，把比特幣轉換成法定貨幣并每天把資金直接存入商家的銀行帳戶，這些也可能會收取費用。因為這些服務都是由 Bitcoin 發起，它們的費用比起 PayPal 或 信用卡網路便宜多了。</li>
-    <li><em><b>商家風險更低</b></em>- Bitcoin 的交易是安全而不可取消的， 它不包含任何客戶敏感的或個人的信息。這避免了商家因詐騙或詐騙式的拒付而遭受損失，而且它也不需要 PCI 標準。商家可以很容易地拓展新的市場，即便那些市場不支持信用卡或詐騙率過高。最後的結果就是更低的手續費、更大的市場和更少的行政開支。</li>
-    <li><em><b>安全與掌控權</b></em> - Bitcoin 用戶對他們的交易有完全的掌控權；商家不會像在其他的支付方式中一樣會被強迫接受不想要或者沒有注意到的收費。進行 Bitcoin 支付不需要個人信息和交易綁定。這可以有力防止身份盜用。 Bitcoin 用戶也可以用備份和加密的辦法來保護他們的錢。</li>
-    <li><em><b>透明和中立</b></em> - 關於Bitcoin 的錢的供應問題的<a href="https://www.biteasy.com/">所有資訊</a> 在區塊鏈中可以找到，任何人可以對它進行核實并隨時使用。沒有任何個人或組織可以控制或操控 Bitcoin 協議，因為它是加密安全的。這使得 Bitcoin 的核心能被信任是完全中立、透明和可預見的。</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 的缺點</a>
-  <div>
-  <ul>
-    <li><em><b>接受程度</b></em> - 許多人還是不瞭解 Bitcoin。 每天都有越來越多的企業接受比特幣，因為他們喜歡比特幣的優勢。不過接受比特幣的企業名單相對而言還是少，它仍需要不斷發展來從<a href="https://en.wikipedia.org/wiki/Network_effect">網路效應</a>中獲益。</li>
-    <li><em><b>波動性</b></em> - 比起它應有的前景，流通中的比特幣的<a href="https://bitcoincharts.com/bitcoin/">總價值</a>和使用 Bitcoin 的企業數量仍然很小。所以，相對較小的事件、交易或企業活動都會對價格造成較大的影響。理論上，隨著 Bitcoin 市場和技術的成熟，這種波動會越來越小。之前世界上沒有一種像這樣的新興貨幣，所以很難預測它會如何發展 (當然其前景卻是值得期待的) 。</li>
-    <li><em><b>持續的發展</b></em> - Bitcoin 軟體還在調試和改進許多不完善的功能。新的工具、功能和服務持續不斷被開發出來，使 Bitcoin 更安全和容易使用。一些工具、功能和服務還不適合人人使用。大部份的 Bitcoin 企業都是新的而且也沒有提供保險。總而言之，Bitcoin 還在成長之中。</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 安全嗎？</a>
-  <div>
-  <p>Bitcoin 技術 - 其協議和密碼技術 - 有很強的安全痕跡記錄，而且 Bitcoin 網路可能是世界上最大的分散的計算器工程。Bitcoin 最常見的安全隱患是用戶的犯錯。存儲必要的私密金鑰的 Bitcoin 錢包文件可能會不小心被刪除、丟失或被盜。這跟實體鈔票存儲成一個數位形式很像。好在，用戶可以實施很好的 <a href="/zh_TW/secure-your-wallet">安全措施</a>來保護他們的錢或選擇提供良好安全水準和預防被盜或丟失的保險的服務供應商。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 是否合法？</a>
-  <div>
-  <p>據我們所知，在大部份的行政區，司法部門都<a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">不認定 Bitcoin 為非法的</a> 。然而，一些行政區(例如阿根廷和俄羅斯) 很嚴厲地限制或禁止外國貨幣。其他行政區(例如泰國) 可能會限制頒發執照給像 Bitcoin 交換這樣的實體。</p>
-  <p>不同的行政區的官員們正在採取措施給個人或企業提供有關如何把這種新技術和官方的、制定好的金融系統融合的規定。例如，美國財政部門的一個官方機構 Financial Crimes Enforcement Network (FinCEN) 就頒發了無法律約束力的指南手冊，解釋它如何界定典型的與虛擬貨幣有關的活動。</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 與稅收的關係？</a>
-  <div>
-  <p>Bitcoin 不是一種在任何行政區內具有法定貨幣地位的貨幣，不過，通常不論使用的媒介是什麽，納稅義務都是需要承擔的。在很多不同的行政區內有多種法規規定與 Bitcoin 有關的收入、銷售、工資、投資收成或其他形式的收益都有納稅義務。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 會不會被用於非法活動？</a>
-  <div>
-  <p>Bitcoin 是錢，而錢總是既可以用於合法目的也可以用於非法目的。鈔票、信用卡和現在的銀行系統在被用於非法活動方面廣泛地超過了 Bitcoin 。Bitcoin 可以給支付系統來帶巨大的創新，而這種創新的好處通常被認為是比它可能帶來的壞處要多的。</p>
-  <p>Bitcoin 的設計，使得讓錢變得更加安全的進程向前大大跨越了一步，而且它也可以看作是對許多形式的金融犯罪的一種極好的防範。例如，比特幣是完全不可能偽造的。使用者對他們的支付有完全的控制權並且他們不能接受像信用卡詐騙那樣的未經核實的收費。Bitcoin 交易是不可取消的，它可以避免拒付詐騙。Bitcoin 使用很強和實用的機制例如備份、加密和多重簽署等來讓錢更安全、不會遭遇盜竊或丟失。</p>
-  <p>有人有這樣的疑慮，他們覺得 Bitcoin 對犯罪分子來說更具有吸引力，因為它可以用來進行私人不可取消的支付。然而，這些功能在鈔票和電匯中被廣泛應用。 Bitcoin 的使用毫無疑問會受相似的金融體制中存在的規定的約束。而且 Bitcoin 也不會逃避犯罪調查的開展。一般來說，具有重要的突破的事物在他們的優點被廣泛瞭解之前常常會被認為是具有爭議的。國際網路就是它們中一個很好的例子來說明這一點。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 是一顆泡沫嗎？</a>
-  <div>
-  <p>價格的攀升不會被認為是一個泡沫。一個人為的過度估價會導致一個突然的下跌性的改正，這就會被認為是一個泡沫。基於成千上萬的市場參與者的個人選擇是比特幣價格波動的原因，因為市場尋求價格發現。人們的看法改變的原因可能包括對 Bitcoin 失去信心，不建立在 Bitcoin 經濟基礎之上的價格與價值之間的巨大差別，媒體關注度的提高刺激投機需求，對不確定性的恐懼，還有傳統的非理智的熱情與貪婪。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">為什麼比特幣有價值？</a>
-  <div>
-  <p>Bitcoin 具有價值因為它們作為一種錢的形式是有用的。Bitcoin 具有錢的特徵(耐用、可攜帶、可替代、稀缺、可分割和被認可) ，它建立在數學機制而不是物理財富(例如黃金和白銀)或對中央權威(像法定貨幣)的信任上。簡而言之，Bitcoin 由數學支撐。因為這些特徵，這種形式的錢要保持價值所需要的就是信任和採用。對於 Bitcoin，這可以通過它的使用者、商家和創業者的增長來衡量。像所有的貨幣一樣，比特幣的價值直接來源也只來源於人們想要接受它們作為一種支付方式。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 是不是一個龐兹騙局？</a>
-  <div>
-  <p>龐茲騙局是一個詐騙性的投資活動，它的回報來自于投資者本身的錢或後來的投資者支付的錢，而不是來自于他們經營的業務所獲取的利潤。當沒有足夠的新的參與者的時候，龐茲騙局就會在最後一個投資者那裡垮臺。</p>
-  <p>Bitcoin 是一個免費的沒有中央機構的軟體工程。因此，沒有人能作關於投資回報的詐騙性描述。像其他主流貨幣如黃金、美元、歐元、日圓等等一樣，Bitcoin 沒有一個擔保的購買力，且兌換率自由浮動。這導致一些波動，比特幣的擁有者會不可預測地賺錢或虧錢。在投機買賣之外，Bitcoin 也是一種具有用途廣泛且競爭力強等特質的支付系統，它已經被成千上萬的用戶和企業使用。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">誰創造了 Bitcoin ？</a>
-  <div>
-  <p>Bitcoin 是率先應用實施“密碼貨幣”的概念。這個概念最先由Wei Dai 在1998年在cypherpunks信箱組列表中描述，他提出了一種新型貨幣的想法，也即用密碼技術來控制貨幣的產生和交易，而不是通過一個中央機構來控制。第一個 Bitcoin 的說明和概念證明由中本聰先生於2009年在密碼學信箱組列表中發表。中本聰先生在2010年末離開了這個項目，他沒有解釋太多的理由。而這個社群從此呈指數增長，<a href="/zh_TW/development">許多開發人員</a> 都開始投入到 Bitcoin 中。</p>
-  <p>中本聰先生的隱匿總是會引起過度的關注，很多這些關注導致了對 Bitcoin 的開放原始碼性質的誤解。Bitcoin 協議和軟體是公開發佈的，而且世界上任何開發人員都可以評審其程式碼或製作他們自己改進版的 Bitcoin 軟體。就像現在的開發人員一樣，中本聰所作的修改被不被其他人接受，他是無法決定的，也即其影響是有限的。他并不控制 Bitcoin。因此，Bitcoin 的發明者身份在今天看來可能是像紙的發明者的身份一樣無關重要。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">比特幣能變得一文不值嗎？</a>
-  <div>
-  <p>是的。歷史上失敗和廢棄的貨幣很多，例如魏瑪共和國期間的<a href="https://en.wikipedia.org/wiki/German_gold_mark">德國馬克</a>，還有最近的 <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">辛巴威元</a>。雖然之前的貨幣失敗典型地是因為高通脹而導致。Bitcoin 不可能發生這種高通脹，但總是可能會有技術的失敗、來自其他貨幣的競爭、政治因素等。有一條基本的經驗法則，沒有任何貨幣是絕對安全不敗經得住艱難時代考驗的。Bitcoin 自從創始以來的數年之中已經被證明是可信賴的，而且Bitcoin 是具有潛力的，它正在持續發展。但是，沒有人能預測 Bitcoin 的未來會是什麽。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 是完全虛擬和非物質的嗎？</a>
-  <div>
-  <p>Bitcoin 像人們日常使用的信用卡或線上銀行網路一樣是虛擬的。Bitcoin 可以用來給實體商店進行線上支付就像使用其他任何一種錢一樣。Bitcoin 還可以用來交換實體形式的比特幣如 <a href="https://www.casascius.com/">Casascius 幣</a>， 不過用行動手機來支付是更方便的形式。 Bitcoin 的收支餘額存儲在一個巨大的分散的網路上，而且它們不可能被任何人欺詐性地篡改。換言之， Bitcoin 的用戶對他們的資金有專屬的掌控權，而且比特幣不會因為它們是虛擬的而突然消失。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">為何人們信任 Bitcoin ？</a>
-  <div>
-  <p>對 Bitcoin 的信任來自於這樣的事實：它并不需要任何信任。 Bitcoin 是完全開放的原始碼和完全去中心化的。這意味著任何人都可以随时進入整個原始碼。 所以，世界上任何的開發人員都可以仔細核查 Bitcoin 是怎麼運作的。所有的交易和發行的比特幣都可以由任何人随时進行透明性檢視。所有的支付都不需要依賴第三方來實現，而且整個系統為繁複的同行評議加密算法所保護，就像那些線上銀行一樣。沒有任何組織和個人可以控制Bitcoin, 而且即便並非所有的用户都可以信任，但是這個網路還是安全的。</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin 是匿名的嗎？</a>
-  <div>
-  <p>Bitcoin 的設計讓它的用戶在可以保證一定程度的隱私性的情況下，像使用任何其他形式的錢一樣匯款和收款。然而，Bitcoin 不是匿名的，而且它也不能提供像紙幣一樣的隱私性。使用 Bitcoin 會留下廣泛的公共記錄。有<a href="/zh_TW/protect-your-privacy">多種機制</a>並存來保護用戶的隱私，而且更多的方式正在開發的進程中。不過，在這些功能被大部份的 Bitcoin 用戶正確使用前還有很多工作要做。</p>
-  <p>有人有這樣的疑慮，他們覺得用 Bitcoin 進行的私人交易會被用於非法目的。然而，這種擔憂沒有必要，因為 Bitcoin 毫無疑問會受到相似的在金融體制中存在的規定的約束。Bitcoin 不會比鈔票的匿名程度高，它也不會阻止開展犯罪調查。另外，Bitcoin 的設計本身，就是爲了防止各種金融犯罪。 </p>
-  </div>
-</div>
-<p>要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href="/en/faq">常見問題</a> 或者<a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a>。</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 安全嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 技術 - 其協議和密碼技術 - 有很強的安全痕跡記錄，而且 Bitcoin 網路可能是世界上最大的分散的計算器工程。Bitcoin 最常見的安全隱患是用戶的犯錯。存儲必要的私密金鑰的 Bitcoin 錢包文件可能會不小心被刪除、丟失或被盜。這跟實體鈔票存儲成一個數位形式很像。好在，用戶可以實施很好的 <a href="/zh_TW/secure-your-wallet">安全措施</a>來保護他們的錢或選擇提供良好安全水準和預防被盜或丟失的保險的服務供應商。</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 是否合法？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>據我們所知，在大部份的行政區，司法部門都<a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">不認定 Bitcoin 為非法的</a> 。然而，一些行政區(例如阿根廷和俄羅斯) 很嚴厲地限制或禁止外國貨幣。其他行政區(例如泰國) 可能會限制頒發執照給像 Bitcoin 交換這樣的實體。</p>
+            <p>不同的行政區的官員們正在採取措施給個人或企業提供有關如何把這種新技術和官方的、制定好的金融系統融合的規定。例如，美國財政部門的一個官方機構 Financial Crimes Enforcement Network (FinCEN) 就頒發了無法律約束力的指南手冊，解釋它如何界定典型的與虛擬貨幣有關的活動。</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 與稅收的關係？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 不是一種在任何行政區內具有法定貨幣地位的貨幣，不過，通常不論使用的媒介是什麽，納稅義務都是需要承擔的。在很多不同的行政區內有多種法規規定與 Bitcoin 有關的收入、銷售、工資、投資收成或其他形式的收益都有納稅義務。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 會不會被用於非法活動？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 是錢，而錢總是既可以用於合法目的也可以用於非法目的。鈔票、信用卡和現在的銀行系統在被用於非法活動方面廣泛地超過了 Bitcoin 。Bitcoin 可以給支付系統來帶巨大的創新，而這種創新的好處通常被認為是比它可能帶來的壞處要多的。</p>
+            <p>Bitcoin 的設計，使得讓錢變得更加安全的進程向前大大跨越了一步，而且它也可以看作是對許多形式的金融犯罪的一種極好的防範。例如，比特幣是完全不可能偽造的。使用者對他們的支付有完全的控制權並且他們不能接受像信用卡詐騙那樣的未經核實的收費。Bitcoin 交易是不可取消的，它可以避免拒付詐騙。Bitcoin 使用很強和實用的機制例如備份、加密和多重簽署等來讓錢更安全、不會遭遇盜竊或丟失。</p>
+            <p>有人有這樣的疑慮，他們覺得 Bitcoin 對犯罪分子來說更具有吸引力，因為它可以用來進行私人不可取消的支付。然而，這些功能在鈔票和電匯中被廣泛應用。 Bitcoin 的使用毫無疑問會受相似的金融體制中存在的規定的約束。而且 Bitcoin 也不會逃避犯罪調查的開展。一般來說，具有重要的突破的事物在他們的優點被廣泛瞭解之前常常會被認為是具有爭議的。國際網路就是它們中一個很好的例子來說明這一點。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 是一顆泡沫嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>價格的攀升不會被認為是一個泡沫。一個人為的過度估價會導致一個突然的下跌性的改正，這就會被認為是一個泡沫。基於成千上萬的市場參與者的個人選擇是比特幣價格波動的原因，因為市場尋求價格發現。人們的看法改變的原因可能包括對 Bitcoin 失去信心，不建立在 Bitcoin 經濟基礎之上的價格與價值之間的巨大差別，媒體關注度的提高刺激投機需求，對不確定性的恐懼，還有傳統的非理智的熱情與貪婪。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">為什麼比特幣有價值？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 具有價值因為它們作為一種錢的形式是有用的。Bitcoin 具有錢的特徵(耐用、可攜帶、可替代、稀缺、可分割和被認可) ，它建立在數學機制而不是物理財富(例如黃金和白銀)或對中央權威(像法定貨幣)的信任上。簡而言之，Bitcoin 由數學支撐。因為這些特徵，這種形式的錢要保持價值所需要的就是信任和採用。對於 Bitcoin，這可以通過它的使用者、商家和創業者的增長來衡量。像所有的貨幣一樣，比特幣的價值直接來源也只來源於人們想要接受它們作為一種支付方式。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 是不是一個龐兹騙局？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>龐茲騙局是一個詐騙性的投資活動，它的回報來自于投資者本身的錢或後來的投資者支付的錢，而不是來自于他們經營的業務所獲取的利潤。當沒有足夠的新的參與者的時候，龐茲騙局就會在最後一個投資者那裡垮臺。</p>
+            <p>Bitcoin 是一個免費的沒有中央機構的軟體工程。因此，沒有人能作關於投資回報的詐騙性描述。像其他主流貨幣如黃金、美元、歐元、日圓等等一樣，Bitcoin 沒有一個擔保的購買力，且兌換率自由浮動。這導致一些波動，比特幣的擁有者會不可預測地賺錢或虧錢。在投機買賣之外，Bitcoin 也是一種具有用途廣泛且競爭力強等特質的支付系統，它已經被成千上萬的用戶和企業使用。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">誰創造了 Bitcoin ？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 是率先應用實施“密碼貨幣”的概念。這個概念最先由Wei Dai 在1998年在cypherpunks信箱組列表中描述，他提出了一種新型貨幣的想法，也即用密碼技術來控制貨幣的產生和交易，而不是通過一個中央機構來控制。第一個 Bitcoin 的說明和概念證明由中本聰先生於2009年在密碼學信箱組列表中發表。中本聰先生在2010年末離開了這個項目，他沒有解釋太多的理由。而這個社群從此呈指數增長，<a href="/zh_TW/development">許多開發人員</a> 都開始投入到 Bitcoin 中。</p>
+            <p>中本聰先生的隱匿總是會引起過度的關注，很多這些關注導致了對 Bitcoin 的開放原始碼性質的誤解。Bitcoin 協議和軟體是公開發佈的，而且世界上任何開發人員都可以評審其程式碼或製作他們自己改進版的 Bitcoin 軟體。就像現在的開發人員一樣，中本聰所作的修改被不被其他人接受，他是無法決定的，也即其影響是有限的。他并不控制 Bitcoin。因此，Bitcoin 的發明者身份在今天看來可能是像紙的發明者的身份一樣無關重要。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">比特幣能變得一文不值嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>是的。歷史上失敗和廢棄的貨幣很多，例如魏瑪共和國期間的<a href="https://en.wikipedia.org/wiki/German_gold_mark">德國馬克</a>，還有最近的 <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">辛巴威元</a>。雖然之前的貨幣失敗典型地是因為高通脹而導致。Bitcoin 不可能發生這種高通脹，但總是可能會有技術的失敗、來自其他貨幣的競爭、政治因素等。有一條基本的經驗法則，沒有任何貨幣是絕對安全不敗經得住艱難時代考驗的。Bitcoin 自從創始以來的數年之中已經被證明是可信賴的，而且Bitcoin 是具有潛力的，它正在持續發展。但是，沒有人能預測 Bitcoin 的未來會是什麽。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 是完全虛擬和非物質的嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 像人們日常使用的信用卡或線上銀行網路一樣是虛擬的。Bitcoin 可以用來給實體商店進行線上支付就像使用其他任何一種錢一樣。Bitcoin 還可以用來交換實體形式的比特幣如 <a href="https://www.casascius.com/">Casascius 幣</a>， 不過用行動手機來支付是更方便的形式。 Bitcoin 的收支餘額存儲在一個巨大的分散的網路上，而且它們不可能被任何人欺詐性地篡改。換言之， Bitcoin 的用戶對他們的資金有專屬的掌控權，而且比特幣不會因為它們是虛擬的而突然消失。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">為何人們信任 Bitcoin ？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>對 Bitcoin 的信任來自於這樣的事實：它并不需要任何信任。 Bitcoin 是完全開放的原始碼和完全去中心化的。這意味著任何人都可以随时進入整個原始碼。 所以，世界上任何的開發人員都可以仔細核查 Bitcoin 是怎麼運作的。所有的交易和發行的比特幣都可以由任何人随时進行透明性檢視。所有的支付都不需要依賴第三方來實現，而且整個系統為繁複的同行評議加密算法所保護，就像那些線上銀行一樣。沒有任何組織和個人可以控制Bitcoin, 而且即便並非所有的用户都可以信任，但是這個網路還是安全的。</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin 是匿名的嗎？</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin 的設計讓它的用戶在可以保證一定程度的隱私性的情況下，像使用任何其他形式的錢一樣匯款和收款。然而，Bitcoin 不是匿名的，而且它也不能提供像紙幣一樣的隱私性。使用 Bitcoin 會留下廣泛的公共記錄。有<a href="/zh_TW/protect-your-privacy">多種機制</a>並存來保護用戶的隱私，而且更多的方式正在開發的進程中。不過，在這些功能被大部份的 Bitcoin 用戶正確使用前還有很多工作要做。</p>
+            <p>有人有這樣的疑慮，他們覺得用 Bitcoin 進行的私人交易會被用於非法目的。然而，這種擔憂沒有必要，因為 Bitcoin 毫無疑問會受到相似的在金融體制中存在的規定的約束。Bitcoin 不會比鈔票的匿名程度高，它也不會阻止開展犯罪調查。另外，Bitcoin 的設計本身，就是爲了防止各種金融犯罪。 </p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href="/en/faq">常見問題</a> 或者<a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a>。</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -514,14 +608,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_TW/legal">合法</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/legal">合法</a></li>
 			
-			<li><a href="/zh_TW/privacy">隱私性</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/privacy">隱私性</a></li>
 			
-			<li><a href="/zh_TW/press">新聞媒體</a></li>
-			<li><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/press">新聞媒體</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_TW/about-us">關於 bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -530,7 +624,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>一個由其贊助的社群網站</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -552,13 +647,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -569,7 +666,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

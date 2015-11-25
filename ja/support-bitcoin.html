@@ -10,15 +10,29 @@
 <title>ビットコインを支援する - ビットコイン</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ja.png"><strong>日本語</strong>
+          <img src="/img/flags/ja.png"><strong>日本語</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">よくある質問</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>ビットコインを支援する</h1>
-<p class="summarytxt">ビットコインは、小さなコミュニティから生まれたプロトコルで、現在までに急成長を遂げてきました。ビットコインを普及し、改善するために、あなたができることがたくさんあります。</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">ビットコインを支援する</h1>
+  <h2 class="content_support-bitcoin--subtitle">ビットコインは、小さなコミュニティから生まれたプロトコルで、現在までに急成長を遂げてきました。ビットコインを普及し、改善するために、あなたができることがたくさんあります。</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />ビットコインの使用</h2>
-<p>ビットコインを支援するために、あなたがまずできることは<a href="/ja/getting-started">ビットコインを使用する</a>ことです。これが、あなたの暮らしをより容易にすることでしょう。あなたは、ビットコインを使って、支払いを受け取ったり、購入することができるのです。</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">ビットコインの使用</h3>
+      <p>ビットコインを支援するために、あなたがまずできることは<a href="/ja/getting-started">ビットコインを使用する</a>ことです。これが、あなたの暮らしをより容易にすることでしょう。あなたは、ビットコインを使って、支払いを受け取ったり、購入することができるのです。</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />ネットワークになる</h2>
-<p>あなたのインターネットのコネクションが良ければ、8333番ポートを開けて<a href="/ja/download">フルノード・ソフトウエア</a>をお使いのコンピューター上やサーバーで作動し続けることでビットコインネットワークを強化することが出来ます。フルノードはすべての取引を確実にし、中継します。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">ネットワークになる</h3>
+      <p>あなたのインターネットのコネクションが良ければ、8333番ポートを開けて<a href="/ja/download">フルノード・ソフトウエア</a>をお使いのコンピューター上やサーバーで作動し続けることでビットコインネットワークを強化することが出来ます。フルノードはすべての取引を確実にし、中継します。</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />採掘</h2>
-<p>取引処理を支援するために<a href="http://www.bitcoinmining.com/">ビットコインの採掘</a>を始めることができます。ネットワークを保護するために<a href="http://mempool.info/pools">小さな採掘プール</a>に参加し、 <a href="http://p2pool.in/">P2Pプール</a>やgetblocktemplate (GBT)サポートのある<a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">プール</a>など、分散化型プールをお選びください。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">採掘</h3>
+      <p>取引処理を支援するために<a href="http://www.bitcoinmining.com/">ビットコインの採掘</a>を始めることができます。ネットワークを保護するために<a href="http://mempool.info/pools">小さな採掘プール</a>に参加し、 <a href="http://p2pool.in/">P2Pプール</a>やgetblocktemplate (GBT)サポートのある<a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">プール</a>など、分散化型プールをお選びください。</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />翻訳</h2>
-<p>あたなもビットコイン・エコシステムの大切な部分を翻訳したり、翻訳の質を向上させることに貢献して、ビットコインの可用性を高める手助けができます。あなたの興味あるプロジェクトをお選びください。</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />開発</h2>
-<p>ビットコインは、フリーソフトウエアです。もし、あなたがデベロッパーならその素晴らしい能力を<a href="/ja/development">ビットコインの改善</a>に活かすことができます。あるいは、ビットコインを使った素晴らしいサービスやソフトウェアを開発することもできます。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">翻訳</h3>
+      <p>あたなもビットコイン・エコシステムの大切な部分を翻訳したり、翻訳の質を向上させることに貢献して、ビットコインの可用性を高める手助けができます。あなたの興味あるプロジェクトをお選びください。</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />寄付</h2>
-<p>私達を支援する最も簡単な方法は、ビットコイン協会にビットコインを<a href="https://bitcoinfoundation.org/about/donate/">寄付</a>していただくことです。また、あなたが将来有益だと思われるビットコイン関連プロジェクトに直接資金を送ることも援助となります。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">開発</h3>
+      <p>ビットコインは、フリーソフトウエアです。もし、あなたがデベロッパーならその素晴らしい能力を<a href="/ja/development">ビットコインの改善</a>に活かすことができます。あるいは、ビットコインを使った素晴らしいサービスやソフトウェアを開発することもできます。</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />団体</h2>
-<p><a href="https://bitcoinfoundation.org/">ビットコイン基金</a> と、その他多くの<a href="/ja/community#non-profit">非営利団体</a>は、ビットコインを保護しプロモートすることに専念しています。こうしたグループに加わり、プロジェクト、討論やイベントに参加することで、あなたも これらのグループを支援することができます。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">寄付</h3>
+      <p>私達を支援する最も簡単な方法は、ビットコイン協会にビットコインを<a href="https://bitcoinfoundation.org/about/donate/">寄付</a>していただくことです。また、あなたが将来有益だと思われるビットコイン関連プロジェクトに直接資金を送ることも援助となります。</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />広める</h2>
-<p>興味をお持ちの方にビットコインについて話したり、あなたのブログにお書きください。あなたの好きな店に、ビットコインを使って支払いたいことを伝えてください。また<a href="http://usebitcoins.info/">業者ディレクトリを</a> 常に最新に保てるようにお手伝いください。あるいは、クリエーティブに、ビットコインＴシャツを作ってください。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">団体</h3>
+      <p><a href="https://bitcoinfoundation.org/">ビットコイン基金</a> と、その他多くの<a href="/ja/community#non-profit">非営利団体</a>は、ビットコインを保護しプロモートすることに専念しています。こうしたグループに加わり、プロジェクト、討論やイベントに参加することで、あなたも これらのグループを支援することができます。</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />文献</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> と <a href="https://en.bitcoin.it/">Bitcoin wiki</a> では、役立つ文献を提供しており、その情報内容は常に改善されています。あなたもこれらの情報源を改善し、常に最新情報を提供する手助けをすることができます。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">広める</h3>
+      <p>興味をお持ちの方にビットコインについて話したり、あなたのブログにお書きください。あなたの好きな店に、ビットコインを使って支払いたいことを伝えてください。また<a href="http://usebitcoins.info/">業者ディレクトリを</a> 常に最新に保てるようにお手伝いください。あるいは、クリエーティブに、ビットコインＴシャツを作ってください。</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />コミュニティと会おう</h2>
-<p>ビットコイン <a href="/ja/community">コミュニティー</a> に参加し、他のビットコインのファンと話しをすることができます。日々、ビットコインについてより多くのことを学ぶことができ、新しいユーザを支援し、興味深いプロジェクトに取り組むことができます。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">文献</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> と <a href="https://en.bitcoin.it/">Bitcoin wiki</a> では、役立つ文献を提供しており、その情報内容は常に改善されています。あなたもこれらの情報源を改善し、常に最新情報を提供する手助けをすることができます。</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">コミュニティと会おう</h3>
+      <p>ビットコイン <a href="/ja/community">コミュニティー</a> に参加し、他のビットコインのファンと話しをすることができます。日々、ビットコインについてより多くのことを学ぶことができ、新しいユーザを支援し、興味深いプロジェクトに取り組むことができます。</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ja/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/legal">法律</a></li>
 			
-			<li><a href="/ja/privacy">プライバシー</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/privacy">プライバシー</a></li>
 			
-			<li><a href="/ja/press">プレス</a></li>
-			<li><a href="/ja/about-us">bitcoin.org について</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/press">プレス</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/about-us">bitcoin.org について</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

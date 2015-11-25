@@ -10,15 +10,29 @@
 <title>Частным лицам - Биткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ru.png"><strong>Русский</strong>
+          <img src="/img/flags/ru.png"><strong>Русский</strong>
 				</div>
 			</a>
 		</div>
@@ -323,58 +341,62 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_individuals">
-  <h1 class="content_individuals--title">Биткойн - частным лицам</h1>
-  <h2 class="content_individuals--subtitle">Биткойн - простейший и дешевый способ денежного обмена.</h2>
+        <div class="content_standard">
+  <h1 class="content_standard--title">Биткойн - частным лицам</h1>
+  <h2 class="content_standard--subtitle">Биткойн - простейший и дешевый способ денежного обмена.</h2>
 
-  <ul class="content_individuals--list">
-    <li class="content_individuals--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_mobile.svg" alt="Icon"/>
       <h3>Простые мобильные платежи</h3>
       <p>Мобильный биткойн-клиент позволяет совершать платежи по схеме scan-and-pay. Не нужно прокатывать карту, набирать PIN код или что-то подписывать. Все, что вам нужно для приема платежа, это открыть QR-код в своем мобильном кошельке и показать его другу, чтобы он просканировал код своим мобильным телефоном, или просто поднести телефоны друг к другу (если вы используете технологию NFC).</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lock.svg" alt="Icon"/>
       <h3>Безопасность и контроль над вашими деньгами</h3>
       <p>Биткойн-транзакции защищены криптографией высшего уровня. Никто не может взимать с вас деньги или производить платежи от вашего лица. До тех пор пока вы выполняете необходимые действия для <a href="/ru/secure-your-wallet">защиты вашего кошелька</a>, Биткойн дает вам контроль над вашими деньгами и высокий уровень защиты от разного рода мошенничества.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_simple.svg" alt="Icon"/>
       <h3>Работает где угодно, в любое время</h3>
       <p>Как и при использовании электронной почты, вам не обязательно использовать те же программы или пользоваться услугами того же провайдера, что и ваши друзья. Пусть каждый пользуется тем, что ему нравится. В этом плане не будет никаких проблем, все программное обеспечение Биткойн совместимо, так как использует одну и ту же технологию. Сеть Биткойн работает всегда, даже в праздники!</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>Быстрые международные переводы</h3>
       <p>Платеж в биткойнах можно перевести из Африки в Канаду за 10 минут. Никакой банк не сможет замедлить процесс, взимать огромные комиссионные или заморозить перевод. Перевести деньги родственникам в другую страну также просто, как сделать перевод своим соседям.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>Нулевые или очень низкие комиссии</h3>
       <p>Биткойн позволяет вам отправлять и получать платежи почти бесплатно. За исключением некоторых случаев - например, совсем маленькие платежи - комиссия не обязательна. Тем не менее, рекомендуется платить небольшую добровольную комиссию, для более быстрого подтверждения ваших транзакций, и для вознаграждения людей, которые обеспечивают работу сети Биткойн.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
       <h3>Защитите свои личные данные</h3>
       <p>Анонимные платежи являются частью нашей повседневной жизни, ведь большинство покупок в реальном мире производится без обязательного подтверждения личности. Биткойн предоставляет аналогичную свободу в онлайне. Он позволяет приобретать услуги и делать пожертвования без надоедливого просвечивания рентгеном. Однако учтите, что <a href="/ru/protect-your-privacy"><b>полная анонимность требует дополнительных действий</b></a>.</p>
     </li>
-    
-    <div class="content_individuals--action">
-      <a class="content_individuals--action--text" href="/ru/getting-started">
-        Начало работы с Биткойном
-      </a>
+
+    <div class="content_standard--action">
+      <div class="content_standard--action--wrap">
+        <a class="content_standard--action--text" href="/ru/getting-started">
+          Начало работы с Биткойном
+        </a>
+      </div>
     </div>
   </ul>
 </div>
+
       </div>
     </div>
 
@@ -384,14 +406,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ru/legal">Юридическое</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/legal">Юридическое</a></li>
 			
-			<li><a href="/ru/privacy">Конфиденциальность</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/privacy">Конфиденциальность</a></li>
 			
-			<li><a href="/ru/press">Пресса</a></li>
-			<li><a href="/ru/about-us">О bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/press">Пресса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/about-us">О bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -400,7 +422,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Веб-сайт сообщества спонсируется</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -422,13 +445,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -439,7 +464,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

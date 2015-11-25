@@ -10,15 +10,29 @@
 <title>Securizarea portofelului tău - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ro.png"><strong>Română</strong>
+          <img src="/img/flags/ro.png"><strong>Română</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">Întrebări Frecvente</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Securizarea portofelului tău</h1>
-<p class="summarytxt">Ca în viata reală, portofelul trebuie ţinut în siguranţă. Bicoin face posibil pretutindeni transferul de valoare într-un mod foarte uşor şi îţi permite să îţi controlezi banii. Asemenea proprietăţi se confruntă cu mari preocupări de securitate. În acelaşi timp, Bicoin oferă înalte nivele de securitate dacă este folosit în mod corect. <b>Trebuie avut permanent în vedere faptul că este responsabilitatea ta să urmezi cele mai bune practici pentru a-ţi proteja banii</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Securizarea portofelului tău</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Ca în viata reală, portofelul trebuie ţinut în siguranţă. Bicoin face posibil pretutindeni transferul de valoare într-un mod foarte uşor şi îţi permite să îţi controlezi banii. Asemenea proprietăţi se confruntă cu mari preocupări de securitate. În acelaşi timp, Bicoin oferă înalte nivele de securitate dacă este folosit în mod corect. <b>Trebuie avut permanent în vedere faptul că este responsabilitatea ta să urmezi cele mai bune practici pentru a-ţi proteja banii</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Fiți atent cu serviciile online</h2>
-<p>Trebuie avută mare grijă cu orice serviciu făcut să stocheze banii tăi online. Multe exchange-uri şi portofele online au avut de pierdut din cauza breşelor de securitate în trecut şi astfel de servicii în general tot nu oferă destulă asigurare şi securitate pentru a stoca banii, assemenea unei bănci. Prin urmare, s-ar putea să vrei să foloseşti altfel de <a href="/ro/alege-portofelul">portofele Bitcoin</a>. Dacă nu, trebuie să alegi acele servicii cu mare grijă. Adiţional, folosirea de autentificare cu factori multipli este recomandată.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Fiți atent cu serviciile online</h3>
+		  <p>Trebuie avută mare grijă cu orice serviciu făcut să stocheze banii tăi online. Multe exchange-uri şi portofele online au avut de pierdut din cauza breşelor de securitate în trecut şi astfel de servicii în general tot nu oferă destulă asigurare şi securitate pentru a stoca banii, assemenea unei bănci. Prin urmare, s-ar putea să vrei să foloseşti altfel de <a href="/ro/alege-portofelul">portofele Bitcoin</a>. Dacă nu, trebuie să alegi acele servicii cu mare grijă. Adiţional, folosirea de autentificare cu factori multipli este recomandată.</p>
+		</li>
 
-<h2 id="everyday">Sume mici pentru utilizări de zi cu zi.</h2>
-<p>Un portofel Bitcoin este ca un portofel pentru cash. Dacă de obicei nu îţi ţii o mie de dolari cu tine în portofel, poate vei face la fel şi cu portofelul tău Bitcoin. În general, este o practică bună să ţii doar sume mici de bitcoini pe calculator, mobil, sau server pentru utilizări de zi cu zi şi să menţii restul fondurilor într-un mediu mai sigur.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Sume mici pentru utilizări de zi cu zi.</h3>
+		  <p>Un portofel Bitcoin este ca un portofel pentru cash. Dacă de obicei nu îţi ţii o mie de dolari cu tine în portofel, poate vei face la fel şi cu portofelul tău Bitcoin. În general, este o practică bună să ţii doar sume mici de bitcoini pe calculator, mobil, sau server pentru utilizări de zi cu zi şi să menţii restul fondurilor într-un mediu mai sigur.</p>
+		</li>
 
-<h2 id="backup">Faceți backup portofelului dumneavoastră</h2>
-<p>Stocat într-un loc sigur, un backup al portofelului te poate proteja de defecţiuni ale calculatorului şi de multe erori umane. De asemenea, permite recupererea portofelului după ce telefonul mobil sau calculatorul a fost furat, dacă îţi ţii portofelul criptat.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Faceți backup portofelului dumneavoastră</h3>
+		  <p>Stocat într-un loc sigur, un backup al portofelului te poate proteja de defecţiuni ale calculatorului şi de multe erori umane. De asemenea, permite recupererea portofelului după ce telefonul mobil sau calculatorul a fost furat, dacă îţi ţii portofelul criptat.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Faceți backup întregului dumneavoastră portofel</h3>
+		  		<p>Unele portofele folosesc multe chei private interne, ascunse. Dacă ai un backup al cheilor private pentru adresele tale Bitcoin vizibile, s-ar putea să nu poţi recupera o mare parte din fonduri cu backup-ul.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Criptează copiile de siguranță online</h3>
+		  		<p>Orice copie de rezervă stocată online este foarte vulnerabilă furtului. Chiar și un calculator conectat la internet este vulnerabil programelor malițioase. Ca atare, encriptarea oricărei copii de rezervă, expusă în rețea. este o bună practică de securitate.</p>
+		  	</li>
 
-<h3 id="backupwhole">Faceți backup întregului dumneavoastră portofel</h3>
-<p>Unele portofele folosesc multe chei private interne, ascunse. Dacă ai un backup al cheilor private pentru adresele tale Bitcoin vizibile, s-ar putea să nu poţi recupera o mare parte din fonduri cu backup-ul.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Utilizaţi diverse locaţii securizate</h3>
+		  		<p>Punctele unice de eşec sunt detrimentale pentru securitate. Dacă backupul tău nu depinde de o singură locaţie, este mai puţin probabil ca un eveniment nefericit să te împiedice să-ţi recuperezi portofelul. Ai putea lua în considerare folosirea de diferite medii de stocare cum ar fi stickuri USB, hârtii şi CD-uri.</p>
+		  	</li>
 
-<h3 id="backuponline">Criptează copiile de siguranță online</h3>
-<p>Orice copie de rezervă stocată online este foarte vulnerabilă furtului. Chiar și un calculator conectat la internet este vulnerabil programelor malițioase. Ca atare, encriptarea oricărei copii de rezervă, expusă în rețea. este o bună practică de securitate.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Faceţi backup-uri regulat</h3>
+		  		<p>Este necesară crearea regulată a unor copii de rezervă (back-up) ale portofelului, pentru a fi sigur că toate schimbările recente de adrese Bitcoin și toate noile adrese Bitcoin create de tine sunt incluse în copiile tale. Cu toate acestea, toate aplicațiile vor utiliza în curând portofele ce necesită doar un singur back-up.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Utilizaţi diverse locaţii securizate</h3>
-<p>Punctele unice de eşec sunt detrimentale pentru securitate. Dacă backupul tău nu depinde de o singură locaţie, este mai puţin probabil ca un eveniment nefericit să te împiedice să-ţi recuperezi portofelul. Ai putea lua în considerare folosirea de diferite medii de stocare cum ar fi stickuri USB, hârtii şi CD-uri.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Criptează-ţi portofelul</h3>
+		  <p>Criptarea portofelului sau a telefonului mobil permite folosirea unei parole care trebuie introdusă de către oricine încearcă să retragă fonduri. Acest lucru ajută contra furtului, deşi s-ar putea să nu fie îndeajuns împotriva keylogger-elor software sau hardware.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Nu-ţi uita niciodată parola</h3>
+		  		<p>Trebuie să te asiguri că nu vei uita niciodată parola, altfel banii tăi vor fi pierduţi permanent. Spre deosebire de o bancă, opţiunile de recuperare a parolei sunt foarte limitate când vine vorba de Bitcoin. De fapt, ar trebui să-ţi poţi aminti parola şi după ani de zile în care nu ai folosit-o. Dacă eşti în dubii, ai putea să ţii o copie pe hârtie a parolei ţinută într-un loc sigur, cum ar fi un seif.</p>
+		  	</li>
 
-<h3 id="backupregular">Faceţi backup-uri regulat</h3>
-<p>Este necesară crearea regulată a unor copii de rezervă (back-up) ale portofelului, pentru a fi sigur că toate schimbările recente de adrese Bitcoin și toate noile adrese Bitcoin create de tine sunt incluse în copiile tale. Cu toate acestea, toate aplicațiile vor utiliza în curând portofele ce necesită doar un singur back-up.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Foloseşte o parolă solidă</h3>
+		  		<p>Orice parolă ce conține doar litere sau cuvinte ce pot fi recunoscute poate fi considerată foarte slabă sau ușor de spart. O parolă puternică trebuie să conțină litere, numere, semne de punctuație și trebuie să aibă o lungime de cel puțin 16 caractere. Cele mai sigure parole sunt cele generate de programe proiectate în acest scop. Parolele solide sunt de obicei mai greu de amintit, așa că va trebui să aveți grijă cu memorarea lor.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Portofel offline pentru economii</h3>
+		  <p>Un portofel offline, numit de asemenea şi stocare la rece, oferă cele mai mari niveluri de securitate pentru economii. Aceasta implică ţinerea unui portofel într-un loc sigur, fără să fie conectat la Internet. Făcut corect, poate oferi o protecţie foarte bună împotriva vulnerabilităţilor calculatoarelor. Folosirea unui portofel offline împreună cu backup-urile şi criptarea este de asemenea o practică bună. Iată un rezumat al acestor abordări.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Semnarea offline a tranzacţiilor</h3>
+		  		<p>Această abordare implică două calculatoare care împart părţi ale aceluiaşi portofel. Primul trebuie să fie deconectat de la Internet, acesta fiind singurul care deţine întreg portofelul şi poate semna tranzacţii. Al doilea calculator este conectat la Internet şi are doar un portofel de observare care poate crea doar tranzacţii nesemnate. În acest fel, se pot emite într-un mod sigur noi tranzacţii parcurgând următorii paşi.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Creează o nouă tranzacţie, folosind calculatorul conectat la Internet şi salveaz-o pe un stick USB.</li>
+		  		  <li>Semnarea tranzacţiei folosind calculatorul deconectat de la Internet.</li>
+		  		  <li>Trimiterea tranzacţiei semnate folosind calculatorul conectat la Internet.</li>
+		  		</ol>
+		  		<p>Deoarece calculatorul conectat la Internet nu poate semna tranzacţii, nu poate fi folosit pentru a retrage fonduri dacă acesta este compromis. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> poate fi folosit pentru a semna offline tranzacţii.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Portofele hardware</h3>
+		  		<p>Portofelele hardware reprezintă cel mai bun echilibru între securitate foarte mare şi uşurinţă în utilizare. Acestea sunt nişte mici dispozitive construite de la 0 pentru a fi un portofel şi nimic altceva. Niciun software nu poate fi instalat pe ele, făcându-le extrem de sigure împotriva vulnerabilităţilor calculatoarelor şi a hoţilor de pe internet. Pentru că permit backup-ul, se pot recupera fondurile în cazul în care dispozitivul este pierdut.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Păstrează aplicația actualizată</h3>
+		  <p>Folosind cea mai recentă versiune a software-ului tău Bitcoin îţi permite să primeşti actualizări importante de stabilitate şi securitate. Actualizările pot preveni probleme de gravitate variată, pot include noi funcţionalităţi şi ajută la menţinerea în siguranţă a portofelului. Instalarea actualizărilor pentru toate software-urile pe care le foloseşti pe calculatorul sau mobilul tău este de asemenea importantă pentru a menţine mediul portofelului tău în siguranţă.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Semnătură multiplă pentru protecție împotriva furtului</h3>
+		  <p>Bitcoin include şi o proprietate de semnătură multiplă, ce permite unei unei tranzacţii să ceară mai multe aprobări individuale pentru a fi efectuată. Acest lucru poate fi folosit de către o organizaţie pentru a permite membrilor săi accesul la trezorerie şi în acelaşi timp să permită o retragere doar dacă 3 din 5 membrii semnează tranzacţia. Unele portofele web oferă de asemenea portofele mulţi-semnătură, permiţând utilizatorului să aibă control asupra banilor săi în timp ce previne furtul fondurilor de către un hoţ ce compromite un singur dispozitiv sau server.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Gândiţi-vă la testamentul dumneavoastră</h3>
+		  <p>Bitcoinii tăi pot fi pierduţi pentru totdeauna dacă nu ai un plan de backup ce include prietenii sau familia. Dacă locaţia portofelelor sau a parolelor tale nu este cunoscută de nimeni când nu vei mai fi, atunci nu există vreo speranţă ca fondurile să fie vreodată recuperate. Să te ocupi puţin de lucrurile acestea poate însemna o diferenţa majoră.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Criptează-ţi portofelul</h2>
-<p>Criptarea portofelului sau a telefonului mobil permite folosirea unei parole care trebuie introdusă de către oricine încearcă să retragă fonduri. Acest lucru ajută contra furtului, deşi s-ar putea să nu fie îndeajuns împotriva keylogger-elor software sau hardware.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Nu-ţi uita niciodată parola</h3>
-<p>Trebuie să te asiguri că nu vei uita niciodată parola, altfel banii tăi vor fi pierduţi permanent. Spre deosebire de o bancă, opţiunile de recuperare a parolei sunt foarte limitate când vine vorba de Bitcoin. De fapt, ar trebui să-ţi poţi aminti parola şi după ani de zile în care nu ai folosit-o. Dacă eşti în dubii, ai putea să ţii o copie pe hârtie a parolei ţinută într-un loc sigur, cum ar fi un seif.</p>
-
-<h3 id="encryptstrong">Foloseşte o parolă solidă</h3>
-<p>Orice parolă ce conține doar litere sau cuvinte ce pot fi recunoscute poate fi considerată foarte slabă sau ușor de spart. O parolă puternică trebuie să conțină litere, numere, semne de punctuație și trebuie să aibă o lungime de cel puțin 16 caractere. Cele mai sigure parole sunt cele generate de programe proiectate în acest scop. Parolele solide sunt de obicei mai greu de amintit, așa că va trebui să aveți grijă cu memorarea lor.</p>
-
-</div>
-
-<h2 id="offline">Portofel offline pentru economii</h2>
-<p>Un portofel offline, numit de asemenea şi stocare la rece, oferă cele mai mari niveluri de securitate pentru economii. Aceasta implică ţinerea unui portofel într-un loc sigur, fără să fie conectat la Internet. Făcut corect, poate oferi o protecţie foarte bună împotriva vulnerabilităţilor calculatoarelor. Folosirea unui portofel offline împreună cu backup-urile şi criptarea este de asemenea o practică bună. Iată un rezumat al acestor abordări.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Semnarea offline a tranzacţiilor</a></h3>
-<p>Această abordare implică două calculatoare care împart părţi ale aceluiaşi portofel. Primul trebuie să fie deconectat de la Internet, acesta fiind singurul care deţine întreg portofelul şi poate semna tranzacţii. Al doilea calculator este conectat la Internet şi are doar un portofel de observare care poate crea doar tranzacţii nesemnate. În acest fel, se pot emite într-un mod sigur noi tranzacţii parcurgând următorii paşi.</p>
-<ol>
-  <li>Creează o nouă tranzacţie, folosind calculatorul conectat la Internet şi salveaz-o pe un stick USB.</li>
-  <li>Semnarea tranzacţiei folosind calculatorul deconectat de la Internet.</li>
-  <li>Trimiterea tranzacţiei semnate folosind calculatorul conectat la Internet.</li>
-</ol>
-<p>Deoarece calculatorul conectat la Internet nu poate semna tranzacţii, nu poate fi folosit pentru a retrage fonduri dacă acesta este compromis. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> poate fi folosit pentru a semna offline tranzacţii.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Portofele hardware</a></h3>
-<p>Portofelele hardware reprezintă cel mai bun echilibru între securitate foarte mare şi uşurinţă în utilizare. Acestea sunt nişte mici dispozitive construite de la 0 pentru a fi un portofel şi nimic altceva. Niciun software nu poate fi instalat pe ele, făcându-le extrem de sigure împotriva vulnerabilităţilor calculatoarelor şi a hoţilor de pe internet. Pentru că permit backup-ul, se pot recupera fondurile în cazul în care dispozitivul este pierdut.</p>
-</div>
-
-<h2 id="update">Păstrează aplicația actualizată</h2>
-<p>Folosind cea mai recentă versiune a software-ului tău Bitcoin îţi permite să primeşti actualizări importante de stabilitate şi securitate. Actualizările pot preveni probleme de gravitate variată, pot include noi funcţionalităţi şi ajută la menţinerea în siguranţă a portofelului. Instalarea actualizărilor pentru toate software-urile pe care le foloseşti pe calculatorul sau mobilul tău este de asemenea importantă pentru a menţine mediul portofelului tău în siguranţă.</p>
-
-<h2 id="offlinemulti">Semnătură multiplă pentru protecție împotriva furtului</h2>
-<p>Bitcoin include şi o proprietate de semnătură multiplă, ce permite unei unei tranzacţii să ceară mai multe aprobări individuale pentru a fi efectuată. Acest lucru poate fi folosit de către o organizaţie pentru a permite membrilor săi accesul la trezorerie şi în acelaşi timp să permită o retragere doar dacă 3 din 5 membrii semnează tranzacţia. Unele portofele web oferă de asemenea portofele mulţi-semnătură, permiţând utilizatorului să aibă control asupra banilor săi în timp ce previne furtul fondurilor de către un hoţ ce compromite un singur dispozitiv sau server.</p>
-
-<h2 id="offlinetestament">Gândiţi-vă la testamentul dumneavoastră</h2>
-<p>Bitcoinii tăi pot fi pierduţi pentru totdeauna dacă nu ai un plan de backup ce include prietenii sau familia. Dacă locaţia portofelelor sau a parolelor tale nu este cunoscută de nimeni când nu vei mai fi, atunci nu există vreo speranţă ca fondurile să fie vreodată recuperate. Să te ocupi puţin de lucrurile acestea poate însemna o diferenţa majoră.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ro/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/legal">Legal</a></li>
 			
-			<li><a href="/ro/confidentialitate">Confidenţialitate</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/confidentialitate">Confidenţialitate</a></li>
 			
-			<li><a href="/ro/presa">Presă</a></li>
-			<li><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/presa">Presă</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>사업자를 위한 비트코인 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ko.png"><strong>한국의</strong>
+          <img src="/img/flags/ko.png"><strong>한국의</strong>
 				</div>
 			</a>
 		</div>
@@ -323,62 +341,65 @@
 		<li><a href="#">질문과답변</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_businesses">
-	<h1 class="content_businesses--title">사업자를 위한 비트코인</h1>
-	<h2 class="content_businesses--subtitle">비트코인은 매우 안전하고 저렴하게 결제를 처리하는 방법입니다.</h2>
+        <div class="content_standard">
+	<h1 class="content_standard--title">사업자를 위한 비트코인</h1>
+	<h2 class="content_standard--subtitle">비트코인은 매우 안전하고 저렴하게 결제를 처리하는 방법입니다.</h2>
 
-  <ul class="content_businesses--list">
-    <li class="content_businesses--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>가장 낮은 수수료</h3>
       <p>비트코인의 고도화된 암호화 보안은 비트코인이 매우 효율적이고 값싸게 비트코인 거래를 처리할 수 있게 해줍니다. 당신은 거의 무료로 비트코인 네트워크를 통해 지불을 하거나 지불을 받을 수 있습니다. 대부분의 경우, 엄밀하게 수수료가 요구되지는 않습니다. 하지만 빠른 거래 승인을 위해서 권장됩니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_shield.svg" alt="Icon"/>
       <h3>금융사기로부터 보호</h3>
       <p>비트코인의 고도화된 암호화 보안은 비트코인이 매우 효율적이고 값싸게 비트코인 거래를 처리할 수 있게 해줍니다. 당신은 거의 무료로 비트코인 네트워크를 통해 지불을 하거나 지불을 받을 수 있습니다. 대부분의 경우, 엄밀하게 수수료가 요구되지는 않습니다. 하지만 빠른 거래 승인을 위해서 권장됩니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>신속한 국제 거래</h3>
       <p>비트코인은 단 10분이면 아프리카에서 캐나다까지 전송이 가능합니다. 비트코인은 물리적인 위치가 없기 때문에 수량 또는 장소의 제한이나 초과 수수료 없이 신속하게 전송이 가능합니다. 영업일이라고 3일을 기다리게 하는 중간 은행이 없습니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_pci.svg" alt="Icon"/>
       <h3>불필요한 PCI 준수</h3>
       <p>온라인으로 신용카드를 결제받는 것은 일반적으로 PCI 기준에 따른 복잡한 보안인증절차가 필요합니다. 비트코인 또한 업체가 비트코인 지갑과 고객결제요청을 <a href="/ko/secure-your-wallet">보안처리</a>합니다. 그러나 업체가 고객의 신용카드번호와 같은 중요한 개인정보를 처리하는데 드는 비용과 책임을 부담하지는 않습니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_visib.svg" alt="Icon"/>
       <h3>무료 홍보 효과</h3>
       <p>비트코인은 다양한 소비 방법을 찾는 새로운 고객들을 위한 신흥 시장입니다. 비트코인의 수용은 새로운 고객들을 끄는 홍보 효과가 되어 당신의 사업에 새로운 비전을 부여할 것입니다. 새로운 결제 수단의 수용은 온라인 사업 분야에 있어 현명한 행보를 시사해 왔습니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_multi.svg" alt="Icon"/>
       <h3>다중 서명</h3>
       <p>또한, 비트코인은 하위 그룹 사람들이 거래를 인증하는 경우 비트코인이 쓰일 수 있도록 다중 서명 기능을 포함합니다. 멤버중 어떤 사람이 돈을 사용했는지 찾을 뿐만 아니라, 다른 멤버의 충분한 동의 없이 만들어지는 경비를 막기위해 이사회에의해 사용될 수 있습니다.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
       <h3>투명한 회계</h3>
       <p>많은 업체들이 업체 관련 활동들에 대한 회계문서들을 필수적으로 작성해야 합니다. 비트코인을 사용하는 것은 업체의 구성원들에게 계정잔액과 거래에 대한 정보를 제공하는 것이기 때문에 당신의 업체에 가장 높은 수준의 투명성을 제공합니다. 비영리 단체들 또한 기부받는 금액에 대한 정보를 이러한 방식으로 투명하게 공개할 수 있습니다.</p>
     </li>
   </ul>
 
-  <div class="content_businesses--action">
-    <a class="content_businesses--action--text" href="/ko/getting-started">
-      비트코인 시작하기
-    </a>
+  <div class="content_standard--action">
+    <div class="content_standard--action--wrap">
+      <a class="content_standard--action--text" href="/ko/getting-started">
+        비트코인 시작하기
+      </a>
+    </div>
   </div>
 </div>
 
@@ -391,14 +412,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ko/legal">법적 고지</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/legal">법적 고지</a></li>
 			
-			<li><a href="/ko/privacy">개인 정보 보호</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/privacy">개인 정보 보호</a></li>
 			
-			<li><a href="/ko/press">기사</a></li>
-			<li><a href="/ko/about-us">bitcoin.org 소개</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/press">기사</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/about-us">bitcoin.org 소개</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -407,7 +428,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -429,13 +451,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -446,7 +470,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

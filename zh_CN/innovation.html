@@ -10,15 +10,29 @@
 <title>创新 - 比特币</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
+          <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">常见问题</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>支付系统的创新</h1>
-<p class="summarytxt">比特币协议不仅仅是从A转钱到B，它还有许多特色并且展现了许多该领域中正在探索的可能性。这里涉及的是一些目前正在研究中的技术，也有一些已经转化为真正的产品和服务。也许比特币最激动人心的用途还尚待发现。</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">支付系统的创新</h1>
+  <h2 class="content_innovation--subtitle">比特币协议不仅仅是从A转钱到B，它还有许多特色并且展现了许多该领域中正在探索的可能性。这里涉及的是一些目前正在研究中的技术，也有一些已经转化为真正的产品和服务。也许比特币最激动人心的用途还尚待发现。</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">防欺诈控制</h3>
+	    <p>比特币有可能提供前所未有的安全性等级。比特币网络向用户提供针对那些最普遍欺诈的保护，比如退单和不必要收费，同时比特币是不可能被仿造的。用户可以备份或加密他们的钱包，而硬件钱包使得以后盗取或丢失资金变得不太可能。比特币的设计允许其用户对他们的资金拥有完全控制权。</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />防欺诈控制</h2>
-<p>比特币有可能提供前所未有的安全性等级。比特币网络向用户提供针对那些最普遍欺诈的保护，比如退单和不必要收费，同时比特币是不可能被仿造的。用户可以备份或加密他们的钱包，而硬件钱包使得以后盗取或丢失资金变得不太可能。比特币的设计允许其用户对他们的资金拥有完全控制权。</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">全球可达</h3>
+	    <p>全球所有的支付能够做到完全可互操作。比特币允许任何银行，企业或个人在任何地点，任何时间安全地付款和收款，不管有没有银行账户。在许多由于其自身限制而无法使用绝大多数支付系统的国家，比特币都是可以使用的。比特币增强了商业的全球性联络，将会促进国际贸易的繁荣。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">成本效益</h3>
+	    <p>密码学方法的使用使得不需要又慢又贵的中间人的安全支付成为可能。一笔比特币交易可以比其它可选方式便宜许多，并且能在短时间内完成。这意味着比特币有一定的潜力在将来成为任何货币转帐的常用方法。比特币还能通过削减工人薪水的高额交易手续费的方式，起到帮助许多国家<a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">减轻贫穷</a>的作用。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">小费和捐款</h3>
+	    <p>比特币在一些场合已经成为尤其高效的小费和捐款解决方案。付款仅仅需要一个按键，而接收捐款可以简单到只需展示一个二维码。捐款可以对公众公开，从而给予非盈利组织更高的透明度。在自然灾害这样的紧急情况下，比特币捐款能够为更快速的国际应对做出贡献。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">众筹资金</h3>
+	    <p>虽然目前还不易使用，比特币可以用来运作Kickstarter风格的众筹活动，个人可以承诺向某个项目提供资金，只有当收到足够多的资金承诺来满足既定目标的情况下这些资金才会真正被取走。这种担保合约由比特币协议来处理，直到所有条件都满足后才允许交易发生。 <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">了解更多</a>众筹资金背后的技术。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">微支付</h3>
+	    <p>比特币可以处理1美元规模的支付，很快甚至可以做到更小的数额。这种支付甚至在今天也是很常规的。想像一下收听每秒计费的网络广播，浏览网页时给每屏蔽一个广告支付一笔小额小费，或者向无线热点购买以千字节计的带宽。比特币的高效可以使所有这些想法成为可能。 <a href="https://bitcoinj.github.io/working-with-micropayments">了解更多</a> 比特币微支付背后的技术。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">纠纷仲裁</h3>
+	    <p>比特币可以利用多重签名来开发创新的纠纷仲裁服务。这一服务可以在双发无法达成一致的情况下由对资金没有控制权的第三方来批准或者拒绝一笔交易。因为这些服务都将与任何比特币用户和商家兼容，该创新势必导致自由竞争和更高的质量标准。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">多重签名账户</h3>
+	    <p>多重签名允许比特币网络只有在某个既定群体中同意为交易签名的成员达到一定数量时才接受该交易。这一机制可以应用在董事会中以防止任何成员在未经其他成员许可的情况下花掉他们一部分的资金。它同样也可以在银行使用，通过冻结超过一定额度且无法提供额外凭据的支付来防止盗窃。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">信任与诚信</h3>
+	    <p>比特币为银行面临的许多棘手的信任问题提供了解决方案。通过可选择的账目透明度，数字合约以及不可撤销交易，比特币可以被用作重建信任和达成协议的基础。行为不端的银行将无法钻系统的空子，以牺牲其他银行或公众的利益为代价来获利。在将来，各大银行对比特币的支持将帮助重建金融机构的诚信。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency"> 弹性和去中心化</h3>
+	    <p>通过高度去中心化，比特币创造了一种不同形式的支付网络，具有更高水平的弹性和冗余度。比特币可以处理上百万美元的交易而无需动用军事保护。没有了比如数据中心这样的中央脆弱环节，攻击比特币网络将是一个更为困难的工程。比特币也许代表了本地和全球金融系统安全性领域的一次有意思的进步。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">灵活的透明度</h3>
+	    <p>所有的比特币交易都是公开透明的，而交易参与者的身份则默认为保密。这可以让个人和组织掌握灵活的透明度。比如，一家企业可以选择向某些员工透露某些交易和账户余额，正如一个非盈利组织可以选择是否让公众看到他们每天和每月收到的捐款额。</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">自动化解决方案</h3>
+	    <p>自动化服务通常用来处理现金或信用卡支付的成本和局限问题。其中包括从公车票亭到咖啡机的各种售货机。比特币适合被用于新一代的自动化服务，同时可以削减它们的操作成本。想像一下无人驾驶出租车，或者一家用购物篮就能完成付款而无需排队等候的商店。许多想法都是可能实现的。</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />全球可达</h2>
-<p>全球所有的支付能够做到完全可互操作。比特币允许任何银行，企业或个人在任何地点，任何时间安全地付款和收款，不管有没有银行账户。在许多由于其自身限制而无法使用绝大多数支付系统的国家，比特币都是可以使用的。比特币增强了商业的全球性联络，将会促进国际贸易的繁荣。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />成本效益</h2>
-<p>密码学方法的使用使得不需要又慢又贵的中间人的安全支付成为可能。一笔比特币交易可以比其它可选方式便宜许多，并且能在短时间内完成。这意味着比特币有一定的潜力在将来成为任何货币转帐的常用方法。比特币还能通过削减工人薪水的高额交易手续费的方式，起到帮助许多国家<a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">减轻贫穷</a>的作用。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />小费和捐款</h2>
-<p>比特币在一些场合已经成为尤其高效的小费和捐款解决方案。付款仅仅需要一个按键，而接收捐款可以简单到只需展示一个二维码。捐款可以对公众公开，从而给予非盈利组织更高的透明度。在自然灾害这样的紧急情况下，比特币捐款能够为更快速的国际应对做出贡献。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />众筹资金</h2>
-<p>虽然目前还不易使用，比特币可以用来运作Kickstarter风格的众筹活动，个人可以承诺向某个项目提供资金，只有当收到足够多的资金承诺来满足既定目标的情况下这些资金才会真正被取走。这种担保合约由比特币协议来处理，直到所有条件都满足后才允许交易发生。 <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">了解更多</a>众筹资金背后的技术。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />微支付</h2>
-<p>比特币可以处理1美元规模的支付，很快甚至可以做到更小的数额。这种支付甚至在今天也是很常规的。想像一下收听每秒计费的网络广播，浏览网页时给每屏蔽一个广告支付一笔小额小费，或者向无线热点购买以千字节计的带宽。比特币的高效可以使所有这些想法成为可能。 <a href="https://bitcoinj.github.io/working-with-micropayments">了解更多</a> 比特币微支付背后的技术。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />纠纷仲裁</h2>
-<p>比特币可以利用多重签名来开发创新的纠纷仲裁服务。这一服务可以在双发无法达成一致的情况下由对资金没有控制权的第三方来批准或者拒绝一笔交易。因为这些服务都将与任何比特币用户和商家兼容，该创新势必导致自由竞争和更高的质量标准。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />多重签名账户</h2>
-<p>多重签名允许比特币网络只有在某个既定群体中同意为交易签名的成员达到一定数量时才接受该交易。这一机制可以应用在董事会中以防止任何成员在未经其他成员许可的情况下花掉他们一部分的资金。它同样也可以在银行使用，通过冻结超过一定额度且无法提供额外凭据的支付来防止盗窃。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />信任与诚信</h2>
-<p>比特币为银行面临的许多棘手的信任问题提供了解决方案。通过可选择的账目透明度，数字合约以及不可撤销交易，比特币可以被用作重建信任和达成协议的基础。行为不端的银行将无法钻系统的空子，以牺牲其他银行或公众的利益为代价来获利。在将来，各大银行对比特币的支持将帮助重建金融机构的诚信。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" /> 弹性和去中心化</h2>
-<p>通过高度去中心化，比特币创造了一种不同形式的支付网络，具有更高水平的弹性和冗余度。比特币可以处理上百万美元的交易而无需动用军事保护。没有了比如数据中心这样的中央脆弱环节，攻击比特币网络将是一个更为困难的工程。比特币也许代表了本地和全球金融系统安全性领域的一次有意思的进步。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />灵活的透明度</h2>
-<p>所有的比特币交易都是公开透明的，而交易参与者的身份则默认为保密。这可以让个人和组织掌握灵活的透明度。比如，一家企业可以选择向某些员工透露某些交易和账户余额，正如一个非盈利组织可以选择是否让公众看到他们每天和每月收到的捐款额。</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />自动化解决方案</h2>
-<p>自动化服务通常用来处理现金或信用卡支付的成本和局限问题。其中包括从公车票亭到咖啡机的各种售货机。比特币适合被用于新一代的自动化服务，同时可以削减它们的操作成本。想像一下无人驾驶出租车，或者一家用购物篮就能完成付款而无需排队等候的商店。许多想法都是可能实现的。</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_CN/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/legal">法律</a></li>
 			
-			<li><a href="/zh_CN/privacy">隐私</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/privacy">隐私</a></li>
 			
-			<li><a href="/zh_CN/press">新闻媒体</a></li>
-			<li><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/press">新闻媒体</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>社区网站主办方：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

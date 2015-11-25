@@ -10,15 +10,29 @@
 <title>비트코인 - 오픈소스 P2P 화폐</title>
 <meta name="description" content="비트코인은 혁신적인 지불 네트워크이며 돈의 새로운 종류입니다. bitcoin.org에서 비트코인을 알고 시작할 필요가 있으므로 모든 것을 찾아보세요.">
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ko.png"><strong>한국의</strong>
+          <img src="/img/flags/ko.png"><strong>한국의</strong>
 				</div>
 			</a>
 		</div>
@@ -323,50 +341,49 @@
 		<li><a href="#">질문과답변</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
         
+
 <div class="content_homepage">
-  <h2 class="content_homepage--intro">비트코인은 혁신적인 결제 네트워크이자 신종 화폐입니다.</h2>
-  <div class="content_homepage--video">
-    <div class='embed-container'>
-      <iframe src='https://www.youtube.com/embed/Gc2en3nHxA4?rel=0&showinfo=0&wmode=opaque&autoplay=0' frameborder='0' allowfullscreen></iframe>
+  <div class="content_homepage--wrap">
+    <h2 class="content_homepage--intro">비트코인은 혁신적인 결제 네트워크이자 신종 화폐입니다.</h2>
+    <div class="content_homepage--video">
+      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img src="/img/bitcoin/button.svg" alt=""></span>
+    </div>
+    <div class="content_homepage--action--wrap">
+      <div class="content_homepage--action">
+        <a class="content_homepage--action--text" href="/ko/getting-started">
+          비트코인 시작하기
+        </a>
+      </div>
     </div>
   </div>
-
-  <ul class="content_homepage--list">
-    <li>
-      <img src="/img/icons/main_ico_instant.svg" alt="Icon">
-      <span>즉각적인 피어투피어 거래</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
-      <span>세계 어디서나 결제가능</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
-      <span>무료 또는 낮은  수수료</span>
-    </li>
-  </ul>
-
-  <p class="content_homepage--description">비트코인은 중앙권한이나 은행이 없는 운영을 위해 피어투피어 기술을 사용합니다. 거래의 관리와 비트코인의 발행은 네트워크에 의해 공동으로 이루어집니다. <b>비트코인은 오픈소스입니다. 공개적으로 개발되었으며 그 누구도 비트코인을 소유하거나 조종하지 않습니다. 또한 <a href="/ko/support-bitcoin">누구나 비트코인을 사용하고 비트코인에 참여할 수 있습니다</a></b>. 독특한 기능들을 통해 비트코인은 그 어떤 결제시스템도 하지못한 일들을 가능하게 합니다</p>
-
-  <div class="content_homepage--action">
-    <a href="/ko/getting-started">
-      비트코인 시작하기
-    </a>
+  <div class="content_homepage--overview--wrap">
+    <h3 class="content_homepage--overview">아니면 빠른 개요 정리</h3>
+    <div class="content_homepage--overview--list">
+      <a class="content_homepage--overview--item" href="/ko/bitcoin-for-individuals">개인 </a>
+      <a class="content_homepage--overview--item" href="/ko/bitcoin-for-businesses">사업자</a>
+      <a class="content_homepage--overview--item" href="/ko/bitcoin-for-developers">개발자 </a>
+    </div>
   </div>
-
-  <h3 class="content_homepage--overview">아니면 빠른 개요 정리</h3>
-  <div class="content_homepage--overview--list">
-    <a href="/ko/bitcoin-for-individuals">개인 </a>
-    <a href="/ko/bitcoin-for-businesses">사업자</a>
-    <a href="/ko/bitcoin-for-developers">개발자 </a>
-  </div>
-
 </div>
+<script type="text/javascript" src="/js/videoLightning.js"></script>
+<script type="text/javascript">
+$(function() {
+  $(".video-link").jqueryVideoLightning({
+    autoplay: 1,
+    backdrop_color: "#222",
+    backdrop_opacity: 0.6,
+    glow: 20,
+    glow_color: "#000"
+  });
+});
+</script>
+
 
       </div>
     </div>
@@ -377,14 +394,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ko/legal">법적 고지</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/legal">법적 고지</a></li>
 			
-			<li><a href="/ko/privacy">개인 정보 보호</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/privacy">개인 정보 보호</a></li>
 			
-			<li><a href="/ko/press">기사</a></li>
-			<li><a href="/ko/about-us">bitcoin.org 소개</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/press">기사</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/about-us">bitcoin.org 소개</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -393,7 +410,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -415,13 +433,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -432,7 +452,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

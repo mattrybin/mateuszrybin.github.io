@@ -10,15 +10,29 @@
 <title>保护你的隐私 - 比特币</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
+          <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">常见问题</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>保护你的隐私</h1>
-<p class="summarytxt">通常比特币被认为是一个匿名的支付网络。但事实上，比特币可能是世界上最透明的支付网络。同时，如果使用得当，比特币可以提供可接受的隐私性。<b>永远记住养成良好的习惯来保护你的隐私是你自己的责任。</b></p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">保护你的隐私</h1>
+	<h2 class="content_standard--subtitle">通常比特币被认为是一个匿名的支付网络。但事实上，比特币可能是世界上最透明的支付网络。同时，如果使用得当，比特币可以提供可接受的隐私性。<b>永远记住养成良好的习惯来保护你的隐私是你自己的责任。</b></h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">了解比特币的可追溯性</h3>
+      <p>比特币提供了空前的透明度水平，大部分的人还没有适应这样的机制。所有的比特币交易都是公开，可追溯的，并且永久性地存储在比特币网络中。比特币地址是定义比特币的分配和传送终点所需的唯一信息。这些地址由用户的钱包匿名产生。然而一旦地址被使用，与其有关的所有交易历史便破坏了地址的保密性。任何人都可以查看任何地址的<a href="https://www.biteasy.com">余额和所有交易</a>。由于用户通常需要透露他们的身份以便接收服务或货物，这样比特币地址就无法保持完全匿名。鉴于这些原因，比特币地址最好只使用一次，同时用户必须注意不要透露他们的地址。</p>
+    </li>
 
-<h2 id="traceable">了解比特币的可追溯性</h2>
-<p>比特币提供了空前的透明度水平，大部分的人还没有适应这样的机制。所有的比特币交易都是公开，可追溯的，并且永久性地存储在比特币网络中。比特币地址是定义比特币的分配和传送终点所需的唯一信息。这些地址由用户的钱包匿名产生。然而一旦地址被使用，与其有关的所有交易历史便破坏了地址的保密性。任何人都可以查看任何地址的<a href="https://www.biteasy.com">余额和所有交易</a>。由于用户通常需要透露他们的身份以便接收服务或货物，这样比特币地址就无法保持完全匿名。鉴于这些原因，比特币地址最好只使用一次，同时用户必须注意不要透露他们的地址。</p>
+    <li class="content_standard--items">
+      <h3 id="receive">使用新地址收款</h3>
+      <p>为了保护你的隐私，每次接收新的付款你都应该使用一个新的比特币地址。此外，你可以使用多个钱包满足不同的需求。这样做可以将你的每笔交易都隔离开以使它们无法被关联起来。付款给你的人不会看到你其它的比特币地址，也不会知道你如何使用它们。这可能是你需要记住的最重要的一条建议。</p>
+    </li>
 
-<h2 id="receive">使用新地址收款</h2>
-<p>为了保护你的隐私，每次接收新的付款你都应该使用一个新的比特币地址。此外，你可以使用多个钱包满足不同的需求。这样做可以将你的每笔交易都隔离开以使它们无法被关联起来。付款给你的人不会看到你其它的比特币地址，也不会知道你如何使用它们。这可能是你需要记住的最重要的一条建议。</p>
+    <li class="content_standard--items">
+      <h3 id="public">在公共空间要当心</h3>
+      <p>除非你的本意是接收公共捐款或者完全透明的付款，在任何如网站或社交网络的公共空间中公开比特币地址对隐私来说并不是一件好事。如果你选择这么做，时刻记住如果你从这个地址向你其他的地址发送了任何资金，这些地址的隐私性也会由于你的公共地址的历史记录而被破坏。此外，你可能还要注意不要公开那些会让别人认出你比特币地址的交易和购买信息。</p>
+    </li>
 
-<h2 id="public">在公共空间要当心</h2>
-<p>除非你的本意是接收公共捐款或者完全透明的付款，在任何如网站或社交网络的公共空间中公开比特币地址对隐私来说并不是一件好事。如果你选择这么做，时刻记住如果你从这个地址向你其他的地址发送了任何资金，这些地址的隐私性也会由于你的公共地址的历史记录而被破坏。此外，你可能还要注意不要公开那些会让别人认出你比特币地址的交易和购买信息。</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">你的IP地址可以被记录</h3>
+      <p>因为比特币网络是一个点对点对等网络，监听交易的中继过程并记录对应的IP地址是可能的。完全型节点客户端会将所有用户的交易当成自己的交易一样来中继。这意味着寻找任何一个交易的源头将变得困难，任何比特币节点都可能被错当成交易的源头。你可以考虑利用像 <a href="https://www.torproject.org/">Tor</a> 这样的工具来隐藏你的电脑IP地址，从而防止IP地址被记录。</p>
+    </li>
 
-<h2 id="iplog">你的IP地址可以被记录</h2>
-<p>因为比特币网络是一个点对点对等网络，监听交易的中继过程并记录对应的IP地址是可能的。完全型节点客户端会将所有用户的交易当成自己的交易一样来中继。这意味着寻找任何一个交易的源头将变得困难，任何比特币节点都可能被错当成交易的源头。你可以考虑利用像 <a href="https://www.torproject.org/">Tor</a> 这样的工具来隐藏你的电脑IP地址，从而防止IP地址被记录。</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">混合服务的局限</h3>
+      <p>一些被称为混淆服务的在线服务可以通过使用独立比特币地址接收和返还相同数量的比特币来混淆用户之间的可追溯性。要着重注意的是使用这类服务的合法性在不同的行政管辖区可能不一样，取决于当地的规定。这种服务还要求你充分信任其运作者不会丢失或盗取你的资金，也不会记录下你的请求。虽然混淆服务可以打破小额交易的可追溯性，这种操作对较大的交易却会变得越发困难。</p>
+    </li>
 
-<h2 id="mixing">混合服务的局限</h2>
-<p>一些被称为混淆服务的在线服务可以通过使用独立比特币地址接收和返还相同数量的比特币来混淆用户之间的可追溯性。要着重注意的是使用这类服务的合法性在不同的行政管辖区可能不一样，取决于当地的规定。这种服务还要求你充分信任其运作者不会丢失或盗取你的资金，也不会记录下你的请求。虽然混淆服务可以打破小额交易的可追溯性，这种操作对较大的交易却会变得越发困难。</p>
-
-<h2 id="future">将来的改进</h2>
-<p>在将来会有许多隐私方面的改进。比如对支付讯息API的一些改进正在进行中，可以防止在一次支付中破坏多个地址的隐私性。Bitcoin Core中的找零地址可能会陆续在其它钱包中实现。图形用户界面可能会改进以提供用户友好的支付请求特性以及阻止地址的重复使用。各种工作和研究也在进行当中，用来开发其他潜在的增强型隐私特性，比如可以将随机用户的交易结合到一起。</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">将来的改进</h3>
+      <p>在将来会有许多隐私方面的改进。比如对支付讯息API的一些改进正在进行中，可以防止在一次支付中破坏多个地址的隐私性。Bitcoin Core中的找零地址可能会陆续在其它钱包中实现。图形用户界面可能会改进以提供用户友好的支付请求特性以及阻止地址的重复使用。各种工作和研究也在进行当中，用来开发其他潜在的增强型隐私特性，比如可以将随机用户的交易结合到一起。</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_CN/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/legal">法律</a></li>
 			
-			<li><a href="/zh_CN/privacy">隐私</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/privacy">隐私</a></li>
 			
-			<li><a href="/zh_CN/press">新闻媒体</a></li>
-			<li><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/press">新闻媒体</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>社区网站主办方：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

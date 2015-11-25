@@ -10,15 +10,29 @@
 <title>Stampa - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/it.png"><strong>Italiano</strong>
+          <img src="/img/flags/it.png"><strong>Italiano</strong>
 				</div>
 			</a>
 		</div>
@@ -323,188 +341,264 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Centro stampa</h1>
-<p class="summary">Trova interviste, risposte e materiale pubblicitario di alta qualità.</p>
-
-<h2 id="volunteer">Interviste</h2>
-
-<div class="press-volunteer">
-
-<div>
-
-<p>Comunica con la <a href="https://bitcoinfoundation.org/contact/">Bitcoin Foundation</a> o con <a href="/it/comunita#non-profit">organizzazioni no-profit</a>.</p>
-
-<p>Trova più contatti stampa nel sito indipendente <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
-
-</div>
-
-</div>
-
-<h2 id="layout">FAQ</h2>
-
-<div class="press-faq">
-
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Che cos'è Bitcoin?</a>
-  <div>
-  <p>Bitcoin è una rete di consenso che consente un sistema di pagamento ed è una forma di denaro completamente digitale. Si tratta della prima rete decentralizzata di pagamento peer-to-peer, gestita dai suoi utenti senza alcuna autorità centrale o intermediari. Dalla prospettiva di un utente, Bitcoin è per la maggior parte denaro liquido che circola in internet. Bitcoin può anche essere considerato come il più illustre <a href="http://financialcryptography.com/mt/archives/001325.html">triplo sistema di bloccaggio di accesso e contabilità</a> esistente.</p>
+        <div class="content_press">
+  <h1 class="content_press--title">Centro stampa</h1>
+  <h2 class="content_press--subtitle">Trova interviste, risposte e materiale pubblicitario di alta qualità.</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">Interviste</h2>
+    <p>Comunica con la <a href="https://bitcoinfoundation.org/contact/">Bitcoin Foundation</a> o con <a href="/it/comunita#non-profit">organizzazioni no-profit</a>. Trova più contatti stampa nel sito indipendente <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
   </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Come funziona Bitcoin?</a>
-  <div>
-  <p>Dal punto di vista dell'utente, Bitcoin non è altro che un'applicazione per cellulare/tablet o un programma per computer che fornisce un portafoglio personale per accedere ai bitcoin, e consente ad un utente di inviare e ricevere bitcoin con loro. E' così che Bitcoin funziona per la maggioranza degli utenti. </p>
-  <p>Dietro le scene, la rete Bitcoin sta condividendo un libro mastro pubblico chiamato "block chain". Questo libro mastro contiene tutte le transazioni che sono state elaborate, permettendo al computer degli utenti di verificare la validità di ogni transazione. L'autenticità di ogni transazione è protetta da firme digitali che corrispondono all'indirizzo del mittente, permettendo a tutti gli utenti di avere pieno controllo sui bitcoin inviati dai loro indirizzi Bitcoin personali. In più, chiunque può processare transazioni usando la potenza computazionale dell'hardware specializzato ed ottenere un premio in bitcoin per questo servizio. Questo viene spesso chiamato "mining". Per sapere di più su Bitcoin, puoi consultare la <a href="/it/come-funziona">pagina dedicata</a> e il <a href="/bitcoin.pdf">foglio originale</a>.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Che cosa è il mining di Bitcoin?</a>
-  <div>
-  <p>Il mining è il processo che utilizza la potenza di calcolo per elaborare le transazioni, rendere sicura la rete e mantenere tutti insieme sincronizzati nel sistema. Si può considerare come il centro dati dei Bitcoin ad eccezione del fatto che è stato progettato per essere totalmente decentralizzato, con minatori che operano in tutte le nazioni senza che nessun individuo abbia il controllo della rete. Questo processo si chiama "mining" per un'analogia con l'estrazione dell'oro perchè è un meccanismo temporaneo per l'emissione di nuovi bitcoin. A differenza dell'estrazione dell'oro, però, la produzione di Bitcoin dà un premio in cambio di servizi utili al funzionamento di una rete di pagamenti sicuri. Il mining sarà comunque necessario anche dopo che l'ultimo bitcoin sarà stato estratto.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Come acquisire i bitcoin?</a>
-  <div>
-  <ul>
-    <li>Come pagamento per beni o servizi.</li>
-    <li>Acquista bitcoin da uno <a href="http://howtobuybitcoins.info">scambio Bitcoin</a>.</li>
-    <li>Scambia bitcoin con <a href="https://localbitcoins.com/">qualcuno vicino a te</a>.</li>
-    <li>Guadagna bitcoin attraverso un<a href="http://www.bitcoinmining.com/">mining</a> competitivo.</li>
-  </ul>
-  <p>Può capitare di incontrare soggetti che intendono vendere bitcoin in cambio di una carta di credito o di un pagamento via Paypal, ma la maggioranza degli scambi non consente di accogliere questi metodi di pagamento. Questo è dovuto a casi in cui qualcuno acquista dei bitcoin con Paypal, e poi scambia metà della transazione. Questa operazione si definisce comunemente con il termine di chargeback. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è realmente usato dalle persone?</a>
-  <div>
-  <p>Sì. C'è un <a href="http://usebitcoins.info/">numero crescente di aziende</a> e privati che utilizza Bitcoin. Questo include imprese di mattoni e malta come ristoranti, appartamenti, studi legali e servizi online popolari come Namecheap, WordPress e Reddit. Anche se Bitcoin rimane un fenomeno relativamente nuovo, sta crescendo velocemente. Alla fine dell'Agosto 2013, il <a href="https://bitcoincharts.com/bitcoin/">valore di tutti i bitcoin in circolazione</a> superava 1.5 miliardi di $ americani con milioni di dollari in forma di bitcoin scambiati quotidianamente.</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Quanto è difficile effettuare un pagamento Bitcoin?</a>
-  <div>
-  <p>I pagamenti Bitcoin sono più semplici da effettuare che con una carta di credito o un Bancomat, e possono essere ricevuti senza un conto da commerciante. I pagamenti sono effettuati da un'applicazione portafoglio, che sia sul tuo computer o sullo smartphone, inserendo l'indirizzo del destinatario, l'importo del pagamento e premendo invio. Per rendere più facile inserire un indirizzo, alcuni portafogli possono ottenerlo scannerizzando un codice QR o sfiorando due telefoni insieme con tecnologia NFC.</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Quali sono i vantaggi di Bitcoin?</a>
-  <div>
-  <ul>
-    <li><em><b>Libertà di pagamento</b></em> - È possibile inviare e ricevere qualsiasi quantità di denaro istantaneamente, dovunque nel mondo e in qualsiasi momento. Nessun giorno festivo. Nessun confine. Nessun limite imposto. Bitcoin permette ai suoi utenti di avere il pieno controllo del loro denaro.</li>
-    <li><em><b>Costi molto bassi</b></em> - I pagamenti Bitcoin sono correntemente processati senza costi oppure con addebiti estremamente bassi. Gli utenti possono accettare di sostenere dei costi, quando effettuano una transazione, per ricevere priorità di elaborazione, che si traduce in conferme più veloci della transazione. Inoltre, esistono dei programmi commerciali, ideati per assistere i commercianti nell'elaborazione delle transazioni, convertendo bitcoin in moneta e depositando fondi direttamente nei conti bancari dei commercianti quotidianamente. Poiché questi servizi sono basati su Bitcoin, possono essere offerti a costi molto più bassi di quelli offerti con PayPal o dalle carte di credito.</li>
-    <li><em><b>Meno rischi per i commercianti</b></em> - Le transazioni Bitcoin sono sicure, irreversibili e non contengono dati sensibili o informazioni personali del cliente. Ciò protegge i commercianti da perdite causate da frodi o da chargeback fraudolenti e non c'è bisogno della conformità PCI. I commercianti si possono facilmente espandere verso nuovi mercati dove carte di credito non sono disponibili o il tasso di frodi è inaccettabilmente alto. I risultati della rete sono costi più bassi, mercati più ampi e costi amministrativi più bassi. </li>
-    <li><em><b>Sicurezza e controllo</b></em> - Gli utenti di Bitcoin controllano totalmente le proprie transazioni; i commercianti non possono forzare cambiamenti indesiderati o inosservati, così come avviene con gli altri metodi di pagamento.  I pagamenti di Bitcoin  possono effettuarsi senza alcuna informazione personale connessa alla transazione. Questo offre una grande protezione contro il furto d'identità. Gli utenti Bitcoin possono anche proteggere il proprio denaro facendo ricorso al backup o criptando i dati.</li>
-    <li><em><b>Trasparente e neutrale</b></em> - <a href="https://www.biteasy.com/">Tutte le informazioni</a> riguardanti il magazzino di denaro Bitcoin sono prontamente disponibili sulla block chain a chiunque, per verifica ed utilizzo in tempo reale. Nessun privato o organizzazione può controllare o manipolare il protocollo Bitcoin perché è sicuro dal punto di vista crittografico. Questo permette al nucleo di Bitcoin di essere considerato sicuro per essere completamente neutrale, trasparente e prevedibile.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Quali sono gli svantaggi di Bitcoin?</a>
-  <div>
-  <ul>
-    <li><em><b>Grado di accettazione</b></em> - Molte persone sono ancora inconsapevoli dell'esistenza di Bitcoin. Ogni giorno, sempre più aziende accettano i bitcoin, in quanto vogliono trarne dei vantaggi, ma la lista resta piccola e ha ancora bisogno di crescere, per poter beneficiare degli  <a href="https://en.wikipedia.org/wiki/Network_effect">effetti della rete</a>.</li>
-    <li><em><b>Volatilità</b></em> - Il <a href="https://bitcoincharts.com/bitcoin/">valore totale</a> dei bitcoin in circolazione e il numero di aziende che usano Bitcoin sono molto piccoli rispetto a quelli che potrebbero essere. Pertanto, piccoli eventi, scambi o attività speculative potrebbero variarne significativamente il prezzo. In teoria, questa volatilità diminuirà quando il mercato di Bitcoin e le tecnologie saranno mature.  Prima d'ora, il mondo non ha mai assistito al lancio di una nuova valuta, quindi è veramente difficile (ed interessante) immaginare  che cosa succederà.</li>
-    <li><em><b>Sviluppo continuo</b></em> - Il software di Bitcoin è ancora in versione beta, con molti fattori incompleti in fase di sviluppo attivo. Nuovi strumenti, fattori e servizi sono in fase di sviluppo per rendere Bitcoin più sicuro e accessibile alle masse. Alcuni di essi non sono ancora pronti per tutti. La maggior parte delle aziende Bitcoin è nuova e non offre ancora alcuna assicurazione. In generale, Bitcoin è ancora in fase di maturazione. </li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è sicuro?</a>
-  <div>
-  <p>La tecnologia di Bitcoin - il protocollo e la criptologia - ha un potente registro della sicurezza, e la rete Bitcoin è probabilmente il maggiore progetto di elaborazione distribuito al mondo.  La più comune vulnerabilità di Bitcoin è un errore dell'utente. Il portafoglio Bitcoin raccoglie tutte le chiavi private necessarie, che possono essere cancellate, perdute, perse accidentalmente. Ciò è molto simile al denaro liquido immagazzinato in forma digitale. Per fortuna, gli utenti possono impiegare<a href="/it/proteggi-il-portafoglio">delle pratiche di sicurezza</a> per proteggere il proprio denaro o utilizzare i provider che offrono dei buoni livelli di sicurezza e assicurazione contro furto o perdita. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è legale?</a>
-  <div>
-  <p>Per quanto ne sappiamo, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin non è stato dichiarato illegale</a> dalle legislazioni nella maggior parte delle giurisdizioni. Comunque, alcune giurisdizioni (come l'Argentina o la Russia) vietano severamente o bandiscono le valute estere. Altre giurisdizioni (come la Tailandia) potrebbero limitare la licenza di alcuni enti come i Cambio Valuta Bitcoin.</p>
-  <p>Gli organi regolatori delle varie giurisdizioni stanno facendo passi avanti per fornire ad individui e commercianti delle regole su come integrare questa nuova tecnologia con il sistema finanziario regolato e formale. Ad esempio, il Financial Crimes Enforcement Netword (FinCEN), un ente del Ministero del Tesoro degli Stati Uniti, ha fornito una guida non vincolante sullo statuto che attribuisce a certe attività che hanno a che fare con le valute virtuali.</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Per quanto riguarda Bitcoin e le tasse?</a>
-  <div>
-  <p>Bitcoin non è una moneta "fiat" a corso legale in alcuna giurisdizione, tuttavia spesso maturano responsabilità fiscali senza riguardo per il mezzo utilizzato.
+
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">FAQ</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Che cos'è Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin è una rete di consenso che consente un sistema di pagamento ed è una forma di denaro completamente digitale. Si tratta della prima rete decentralizzata di pagamento peer-to-peer, gestita dai suoi utenti senza alcuna autorità centrale o intermediari. Dalla prospettiva di un utente, Bitcoin è per la maggior parte denaro liquido che circola in internet. Bitcoin può anche essere considerato come il più illustre <a href="http://financialcryptography.com/mt/archives/001325.html">triplo sistema di bloccaggio di accesso e contabilità</a> esistente.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Come funziona Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Dal punto di vista dell'utente, Bitcoin non è altro che un'applicazione per cellulare/tablet o un programma per computer che fornisce un portafoglio personale per accedere ai bitcoin, e consente ad un utente di inviare e ricevere bitcoin con loro. E' così che Bitcoin funziona per la maggioranza degli utenti. </p>
+            <p>Dietro le scene, la rete Bitcoin sta condividendo un libro mastro pubblico chiamato "block chain". Questo libro mastro contiene tutte le transazioni che sono state elaborate, permettendo al computer degli utenti di verificare la validità di ogni transazione. L'autenticità di ogni transazione è protetta da firme digitali che corrispondono all'indirizzo del mittente, permettendo a tutti gli utenti di avere pieno controllo sui bitcoin inviati dai loro indirizzi Bitcoin personali. In più, chiunque può processare transazioni usando la potenza computazionale dell'hardware specializzato ed ottenere un premio in bitcoin per questo servizio. Questo viene spesso chiamato "mining". Per sapere di più su Bitcoin, puoi consultare la <a href="/it/come-funziona">pagina dedicata</a> e il <a href="/bitcoin.pdf">foglio originale</a>.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Che cosa è il mining di Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Il mining è il processo che utilizza la potenza di calcolo per elaborare le transazioni, rendere sicura la rete e mantenere tutti insieme sincronizzati nel sistema. Si può considerare come il centro dati dei Bitcoin ad eccezione del fatto che è stato progettato per essere totalmente decentralizzato, con minatori che operano in tutte le nazioni senza che nessun individuo abbia il controllo della rete. Questo processo si chiama "mining" per un'analogia con l'estrazione dell'oro perchè è un meccanismo temporaneo per l'emissione di nuovi bitcoin. A differenza dell'estrazione dell'oro, però, la produzione di Bitcoin dà un premio in cambio di servizi utili al funzionamento di una rete di pagamenti sicuri. Il mining sarà comunque necessario anche dopo che l'ultimo bitcoin sarà stato estratto.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Come acquisire i bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>Come pagamento per beni o servizi.</li>
+              <li>Acquista bitcoin da uno <a href="http://howtobuybitcoins.info">scambio Bitcoin</a>.</li>
+              <li>Scambia bitcoin con <a href="https://localbitcoins.com/">qualcuno vicino a te</a>.</li>
+              <li>Guadagna bitcoin attraverso un<a href="http://www.bitcoinmining.com/">mining</a> competitivo.</li>
+            </ul>
+            <p>Può capitare di incontrare soggetti che intendono vendere bitcoin in cambio di una carta di credito o di un pagamento via Paypal, ma la maggioranza degli scambi non consente di accogliere questi metodi di pagamento. Questo è dovuto a casi in cui qualcuno acquista dei bitcoin con Paypal, e poi scambia metà della transazione. Questa operazione si definisce comunemente con il termine di chargeback. </p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è realmente usato dalle persone?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Sì. C'è un <a href="http://usebitcoins.info/">numero crescente di aziende</a> e privati che utilizza Bitcoin. Questo include imprese di mattoni e malta come ristoranti, appartamenti, studi legali e servizi online popolari come Namecheap, WordPress e Reddit. Anche se Bitcoin rimane un fenomeno relativamente nuovo, sta crescendo velocemente. Alla fine dell'Agosto 2013, il <a href="https://bitcoincharts.com/bitcoin/">valore di tutti i bitcoin in circolazione</a> superava 1.5 miliardi di $ americani con milioni di dollari in forma di bitcoin scambiati quotidianamente.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Quanto è difficile effettuare un pagamento Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>I pagamenti Bitcoin sono più semplici da effettuare che con una carta di credito o un Bancomat, e possono essere ricevuti senza un conto da commerciante. I pagamenti sono effettuati da un'applicazione portafoglio, che sia sul tuo computer o sullo smartphone, inserendo l'indirizzo del destinatario, l'importo del pagamento e premendo invio. Per rendere più facile inserire un indirizzo, alcuni portafogli possono ottenerlo scannerizzando un codice QR o sfiorando due telefoni insieme con tecnologia NFC.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Quali sono i vantaggi di Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Libertà di pagamento</b></em> - È possibile inviare e ricevere qualsiasi quantità di denaro istantaneamente, dovunque nel mondo e in qualsiasi momento. Nessun giorno festivo. Nessun confine. Nessun limite imposto. Bitcoin permette ai suoi utenti di avere il pieno controllo del loro denaro.</li>
+              <li><em><b>Costi molto bassi</b></em> - I pagamenti Bitcoin sono correntemente processati senza costi oppure con addebiti estremamente bassi. Gli utenti possono accettare di sostenere dei costi, quando effettuano una transazione, per ricevere priorità di elaborazione, che si traduce in conferme più veloci della transazione. Inoltre, esistono dei programmi commerciali, ideati per assistere i commercianti nell'elaborazione delle transazioni, convertendo bitcoin in moneta e depositando fondi direttamente nei conti bancari dei commercianti quotidianamente. Poiché questi servizi sono basati su Bitcoin, possono essere offerti a costi molto più bassi di quelli offerti con PayPal o dalle carte di credito.</li>
+              <li><em><b>Meno rischi per i commercianti</b></em> - Le transazioni Bitcoin sono sicure, irreversibili e non contengono dati sensibili o informazioni personali del cliente. Ciò protegge i commercianti da perdite causate da frodi o da chargeback fraudolenti e non c'è bisogno della conformità PCI. I commercianti si possono facilmente espandere verso nuovi mercati dove carte di credito non sono disponibili o il tasso di frodi è inaccettabilmente alto. I risultati della rete sono costi più bassi, mercati più ampi e costi amministrativi più bassi. </li>
+              <li><em><b>Sicurezza e controllo</b></em> - Gli utenti di Bitcoin controllano totalmente le proprie transazioni; i commercianti non possono forzare cambiamenti indesiderati o inosservati, così come avviene con gli altri metodi di pagamento.  I pagamenti di Bitcoin  possono effettuarsi senza alcuna informazione personale connessa alla transazione. Questo offre una grande protezione contro il furto d'identità. Gli utenti Bitcoin possono anche proteggere il proprio denaro facendo ricorso al backup o criptando i dati.</li>
+              <li><em><b>Trasparente e neutrale</b></em> - <a href="https://www.biteasy.com/">Tutte le informazioni</a> riguardanti il magazzino di denaro Bitcoin sono prontamente disponibili sulla block chain a chiunque, per verifica ed utilizzo in tempo reale. Nessun privato o organizzazione può controllare o manipolare il protocollo Bitcoin perché è sicuro dal punto di vista crittografico. Questo permette al nucleo di Bitcoin di essere considerato sicuro per essere completamente neutrale, trasparente e prevedibile.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Quali sono gli svantaggi di Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Grado di accettazione</b></em> - Molte persone sono ancora inconsapevoli dell'esistenza di Bitcoin. Ogni giorno, sempre più aziende accettano i bitcoin, in quanto vogliono trarne dei vantaggi, ma la lista resta piccola e ha ancora bisogno di crescere, per poter beneficiare degli  <a href="https://en.wikipedia.org/wiki/Network_effect">effetti della rete</a>.</li>
+              <li><em><b>Volatilità</b></em> - Il <a href="https://bitcoincharts.com/bitcoin/">valore totale</a> dei bitcoin in circolazione e il numero di aziende che usano Bitcoin sono molto piccoli rispetto a quelli che potrebbero essere. Pertanto, piccoli eventi, scambi o attività speculative potrebbero variarne significativamente il prezzo. In teoria, questa volatilità diminuirà quando il mercato di Bitcoin e le tecnologie saranno mature.  Prima d'ora, il mondo non ha mai assistito al lancio di una nuova valuta, quindi è veramente difficile (ed interessante) immaginare  che cosa succederà.</li>
+              <li><em><b>Sviluppo continuo</b></em> - Il software di Bitcoin è ancora in versione beta, con molti fattori incompleti in fase di sviluppo attivo. Nuovi strumenti, fattori e servizi sono in fase di sviluppo per rendere Bitcoin più sicuro e accessibile alle masse. Alcuni di essi non sono ancora pronti per tutti. La maggior parte delle aziende Bitcoin è nuova e non offre ancora alcuna assicurazione. In generale, Bitcoin è ancora in fase di maturazione. </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è sicuro?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>La tecnologia di Bitcoin - il protocollo e la criptologia - ha un potente registro della sicurezza, e la rete Bitcoin è probabilmente il maggiore progetto di elaborazione distribuito al mondo.  La più comune vulnerabilità di Bitcoin è un errore dell'utente. Il portafoglio Bitcoin raccoglie tutte le chiavi private necessarie, che possono essere cancellate, perdute, perse accidentalmente. Ciò è molto simile al denaro liquido immagazzinato in forma digitale. Per fortuna, gli utenti possono impiegare<a href="/it/proteggi-il-portafoglio">delle pratiche di sicurezza</a> per proteggere il proprio denaro o utilizzare i provider che offrono dei buoni livelli di sicurezza e assicurazione contro furto o perdita. </p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è legale?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Per quanto ne sappiamo, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin non è stato dichiarato illegale</a> dalle legislazioni nella maggior parte delle giurisdizioni. Comunque, alcune giurisdizioni (come l'Argentina o la Russia) vietano severamente o bandiscono le valute estere. Altre giurisdizioni (come la Tailandia) potrebbero limitare la licenza di alcuni enti come i Cambio Valuta Bitcoin.</p>
+            <p>Gli organi regolatori delle varie giurisdizioni stanno facendo passi avanti per fornire ad individui e commercianti delle regole su come integrare questa nuova tecnologia con il sistema finanziario regolato e formale. Ad esempio, il Financial Crimes Enforcement Netword (FinCEN), un ente del Ministero del Tesoro degli Stati Uniti, ha fornito una guida non vincolante sullo statuto che attribuisce a certe attività che hanno a che fare con le valute virtuali.</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Per quanto riguarda Bitcoin e le tasse?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin non è una moneta "fiat" a corso legale in alcuna giurisdizione, tuttavia spesso maturano responsabilità fiscali senza riguardo per il mezzo utilizzato.
 C'è un'ampia varietà di leggi in molte giurisdizioni diverse che con Bitcoin potrebbero determinare il configurarsi di redditi, vendite, libri paga, redditi da capitale o qualche altra forma di responsabilità fiscale.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è utile per attività illegali?</a>
-  <div>
-  <p>Bitcoin è denaro, e il denaro è stato sempre utilizzato per scopi sia legali sia illegali. I contanti, le carte di credito e gli attuali sistemi bancari sorpassano largamente Bitcoin nei termini del loro uso per finanziare il crimine. Bitcoin può portare una significativa innovazione nei sistemi di pagamento ed i benefici di questa innovazione sono spesso considerati essere ben oltre i loro potenziali svantaggi.</p>
-  <p>Bitcoin è pensato per essere un grande salto in avanti per rendere il denaro più sicuro e potrebbe anche agire come una significativa forma di protezione contro molte forme di crimini finanziari. Per esempio, i bitcoin sono impossibili da falsificare. Gli utenti hanno pieno controllo dei loro pagamenti e non possono ricevere addebiti non approvati come quelli delle frodi delle carte di credito. Le transazioni in Bitcoin sono irreversebili e immuni a storni di addebito fraudolenti. Bitcoin permette al denaro di essere assicurato contro il furto o lo smarrimento usando meccanismi molto sicuri ed utili come backup, crittazione, e firme multiple.</p>
-  <p>Alcune preoccupazioni sono sorte poiché Bitcoin potrebbe essere più attraente per i criminali,  dal momento che può essere utilizzata per effettuare pagamenti privati e irreversibili. Tuttavia, queste caratteristiche esistono già grazie a pagamenti in contanti e bonifici bancari, che sono ampiamente utilizzati e consolidati. L'uso di Bitcoin sarà indubbiamente soggetto a simili regolamentazioni attualmente in vigore all'interno degli esistenti sistemi finanziari, e Bitcoin non è tale da impedire indagini criminali. In generale, è comune che le importanti innovazioni vengano concepite come controverse prima i loro benefici possano essere ben compresi. Internet è un ottimo esempio tra tanti a sostegno di questa tesi.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è una bolla?</a>
-  <div>
-  <p>Una rapida salita del prezzo non costituisce una bolla. Una sopravvalutazione atificiale che porterà ad un'improvvisa correzione verso il basso costituisce una bolla. Scelte basate sull'azione umana individuale di centinaia di migliaia di attori di mercato è la causa delle fluttuazioni di prezzo di bitcoin mentre il mercato cerca di individuarne il prezzo. I motivi di un cambio di percezione possono includere una perdita di fiducia in Bitcoin, una grande differenza tra valore e prezzo non basata sui fondamentali dell'economia Bitcoin, un aumento della copertura mediatica che stimoli una domanda speculativa, paura o incertezza ed una irrazionale esuberanza ed avidità vecchio stile.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Perchè i bitcoin hanno valore?</a>
-  <div>
-  <p>I bitcoin hanno un valore, perché sono utili come una forma di denaro. I bitcoin hanno le caratteristiche del denaro (durata, portabilità, fungibilità, scarsità, divisibilità e riconoscibilità) sulla base delle proprietà della matematica, piuttosto che far riferimento a proprietà fisiche (come l'oro e l'argento) o avere fiducia nelle autorità centrali (come le monete legali). In breve, Bitcoin è gestito dalla matematica. Con tali caratteristiche, tutto ciò che serve per far sì che una forma di denaro abbia valore è fiducia e adesione. Nel caso di Bitcoin, questo si può quantificare con la sua crescente base di utenti, commercianti e nuove aziende. Come per tutte le valute, il valore dei bitcoin proviene solo e direttamente dalle persone che li accettano come forma di pagamento. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è uno schema Ponzi?</a>
-  <div>
-  <p>Uno schema di Ponzi è un'operazione di investimento fraudolento che da profitto ai suoi investitori dai loro stessi soldi, o dai soldi pagati dagli investitori successivi, invece di profitti guadagnati dal singolo gestendo un business. Gli schemi di Ponzi sono realizzati per collassare a spese degli ultimi investitori quando i nuovi partecipanti non sono abbastanza.</p>
-  <p>Bitcoin è un progetto software gratuito senza alcuna autorità centrale. Di conseguenza, nessuno è in grado di frodare in merito a restituzioni di investimento. Come le altre maggiori valute come l'oro, dollaro USA, euro, yen, ecc., non c'è una garanzia in merito all'acquisizione di valore, e lo scambio di valore varia liberamente. Questo comporta la volatilità, dove i proprietari dei bitcoin possono imprevedibilmente fare o perdere denaro. Al di là della speculazione, Bitcoin è anche un sistema di pagamento con attributi utili e competitivi, che vengono utilizzati da migliaia di utenti e aziende. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Chi ha creato Bitcoin?</a>
-  <div>
-  <p>Bitcoin è la prima realizzazione di un concetto chiamato "cryptocurrency", che fu descritta per la prima volta nel 1998 da Wei Dai nella mailing list cypherpunk, suggerendo l'idea di una nuova forma di denaro che usa la crittografia per controllare la sua creazione e le transazioni, piuttosto che un'autorità centrale. Le prime specifiche di Bitcoin e l'esposizione dell'idea furono pubblicate nel 2009 in una mailing list di crittografia da Satoshi Nakamoto. Satoshi lasciò il progetto alla fine del 2010 senza rivelare molto di se stesso. La comunità è cresciuta in modo esponenziale con <a href="/it/sviluppo">molti sviluppatori</a> che lavorano su Bitcoin.</p>
-  <p>L'anonimato di Satoshi spesso ha sollevato preoccupazioni ingiustificate, alcune delle quali sono legate a incomprensioni sulla natura open-source di Bitcoin. Il protocollo e il software Bitcoin sono stati pubblicati apertamente e qualsiasi sviluppatore in giro per il mondo può revisionare il codice o creare la propria versione modificata del software Bitcoin. Proprio come gli sviluppatori attuali, l'influenza di Satoshi fu limitata ai cambiamenti che fece in corso di adozione da altri e quindi lui non controllava Bitcoin. In quanto tale, l'identità dell'inventore di Bitcoin oggi è probabilmente rilevante come l'identità della persona che ha inventato la carta.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">I bitcoin possono perdere il proprio valore?</a>
-  <div>
-  <p>Sì, la storia è piena di valute che hanno fallito e che non sono più in uso, come <a href="https://en.wikipedia.org/wiki/German_gold_mark">il Marco tedesco</a> durante la repubblica di Weimar e, più recentemente, il<a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar"> dollaro dello Zimbabwe</a>. Nonostante i precedenti fallimenti delle valute erano tipicamente dovuti ad un certo tipo di iper-inflazione che Bitcoin rende impossibile, c'è sempre una possibilità per fallimenti tecnici, valute concorrenti, problemi politici ed altro. Come regola empirica, nessuna valuta dovrebbe essere considerata assolutamente sicura ed esente da fallimenti o periodi bui. Bitcoin si è dimostrata affidabile per anni sin dalla sua nascita e c'è una grossa possibilità per Bitcoin di continuare a crescere. Comunque, nessuno è nella posizione di predire quale sarà il futuro di Bitcoin.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è completamente virtuale e immateriale?</a>
-  <div>
-  <p>Bitcoin è un mezzo virtuale quanto le carte di credito e le reti bancarie online che le persone utilizzano ogni giorno. Bitcoin può essere impiegato per effettuare pagamenti online e in veri negozi, proprio come ogni altra forma di denaro. I bitcoin possono anche essere scambiati in forma fisica come le <a href="https://www.casascius.com/">monete Casascius </a>, ma pagare con un dispositivo mobile in genere resta il sistema più conveniente. I bilanci di Bitcoin sono immagazzinati in una grande rete, e non possono essere alterati in modo fraudolento da nessuno. In breve, gli utenti Bitcoin hanno l'esclusivo controllo sui loro fondi e i bitcoin non possono svanire, perché sono virtuali. </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Perchè le persone si fidano di Bitcoin?</a>
-  <div>
-  <p>Molta della fiducia in Bitcoin deriva dal fatto che non richiede fiducia affatto. Bitcoin è completamente open-source e decentralizzato. Questo significa che chiunque ha accesso al source code in qualsiasi momento. Qualsiasi sviluppatore nel mondo puó quindi verificare esattamente come funziona Bitcoin. Ogni transazione e bitcoin creato possono essere consultati in qualsiasi momento con trasparenza assoluta. Ogni pagamento può essere effettuato senza dipendere da terzi, e l'intero sistema é protetto da algoritmi criptografici condivisi su larga scala, come quelli usati dall'online banking. Nessuna organizzazione o individuo puó controllare Bitcoin, e il sistema rimane sicuro anche se non ci si puó fidare di tutti gli utenti.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Bitcoin è anonimo?</a>
-  <div>
-  <p>Bitcoin è programmato per consentire ai propri utenti di inviare e ricevere pagamenti ad un livello accettabile di privacy, così come ogni altra forma di denaro. Tuttavia, Bitcoin non è anonimo e non può offrire lo stesso livello di privacy, del denaro liquido. L'utilizzo di Bitcoin lascia tracce pubbliche consistenti.  <a href="/it/proteggi-la-tua-privacy">Vari meccanismi </a> sono destinati a proteggere la privacy degli utenti, e molti altri sono in fase di sviluppo.  Tuttavia, c'è ancora del lavoro da svolgere prima che tali elementi possano essere usati correttamente dalla maggioranza degli utenti Bitcoin. </p>
-  <p>Alcune preoccupazioni sono sorte in merito alle transazioni private con Bitcoin che potrebbero essere utilizzate per scopi illegali. Tuttavia, vale la pena notare che Bitcoin sarà indubbiamente soggetto a simili regolamentazioni attualmente in vigore all'interno degli esistenti sistemi finanziari. Bitcoin non può essere del denaro contante, e non è tale da impedire indagini criminali. inoltre, Bitcoin è  progettato per prevenire un ampio raggio di crimini finanziari.</p>
-  </div>
-</div>
-<p>Per conoscere meglio Bitcoin potete visitare la <a href="/en/faq">FAQ</a> completa o <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a>.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è utile per attività illegali?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin è denaro, e il denaro è stato sempre utilizzato per scopi sia legali sia illegali. I contanti, le carte di credito e gli attuali sistemi bancari sorpassano largamente Bitcoin nei termini del loro uso per finanziare il crimine. Bitcoin può portare una significativa innovazione nei sistemi di pagamento ed i benefici di questa innovazione sono spesso considerati essere ben oltre i loro potenziali svantaggi.</p>
+            <p>Bitcoin è pensato per essere un grande salto in avanti per rendere il denaro più sicuro e potrebbe anche agire come una significativa forma di protezione contro molte forme di crimini finanziari. Per esempio, i bitcoin sono impossibili da falsificare. Gli utenti hanno pieno controllo dei loro pagamenti e non possono ricevere addebiti non approvati come quelli delle frodi delle carte di credito. Le transazioni in Bitcoin sono irreversebili e immuni a storni di addebito fraudolenti. Bitcoin permette al denaro di essere assicurato contro il furto o lo smarrimento usando meccanismi molto sicuri ed utili come backup, crittazione, e firme multiple.</p>
+            <p>Alcune preoccupazioni sono sorte poiché Bitcoin potrebbe essere più attraente per i criminali,  dal momento che può essere utilizzata per effettuare pagamenti privati e irreversibili. Tuttavia, queste caratteristiche esistono già grazie a pagamenti in contanti e bonifici bancari, che sono ampiamente utilizzati e consolidati. L'uso di Bitcoin sarà indubbiamente soggetto a simili regolamentazioni attualmente in vigore all'interno degli esistenti sistemi finanziari, e Bitcoin non è tale da impedire indagini criminali. In generale, è comune che le importanti innovazioni vengano concepite come controverse prima i loro benefici possano essere ben compresi. Internet è un ottimo esempio tra tanti a sostegno di questa tesi.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è una bolla?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Una rapida salita del prezzo non costituisce una bolla. Una sopravvalutazione atificiale che porterà ad un'improvvisa correzione verso il basso costituisce una bolla. Scelte basate sull'azione umana individuale di centinaia di migliaia di attori di mercato è la causa delle fluttuazioni di prezzo di bitcoin mentre il mercato cerca di individuarne il prezzo. I motivi di un cambio di percezione possono includere una perdita di fiducia in Bitcoin, una grande differenza tra valore e prezzo non basata sui fondamentali dell'economia Bitcoin, un aumento della copertura mediatica che stimoli una domanda speculativa, paura o incertezza ed una irrazionale esuberanza ed avidità vecchio stile.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Perchè i bitcoin hanno valore?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>I bitcoin hanno un valore, perché sono utili come una forma di denaro. I bitcoin hanno le caratteristiche del denaro (durata, portabilità, fungibilità, scarsità, divisibilità e riconoscibilità) sulla base delle proprietà della matematica, piuttosto che far riferimento a proprietà fisiche (come l'oro e l'argento) o avere fiducia nelle autorità centrali (come le monete legali). In breve, Bitcoin è gestito dalla matematica. Con tali caratteristiche, tutto ciò che serve per far sì che una forma di denaro abbia valore è fiducia e adesione. Nel caso di Bitcoin, questo si può quantificare con la sua crescente base di utenti, commercianti e nuove aziende. Come per tutte le valute, il valore dei bitcoin proviene solo e direttamente dalle persone che li accettano come forma di pagamento. </p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è uno schema Ponzi?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Uno schema di Ponzi è un'operazione di investimento fraudolento che da profitto ai suoi investitori dai loro stessi soldi, o dai soldi pagati dagli investitori successivi, invece di profitti guadagnati dal singolo gestendo un business. Gli schemi di Ponzi sono realizzati per collassare a spese degli ultimi investitori quando i nuovi partecipanti non sono abbastanza.</p>
+            <p>Bitcoin è un progetto software gratuito senza alcuna autorità centrale. Di conseguenza, nessuno è in grado di frodare in merito a restituzioni di investimento. Come le altre maggiori valute come l'oro, dollaro USA, euro, yen, ecc., non c'è una garanzia in merito all'acquisizione di valore, e lo scambio di valore varia liberamente. Questo comporta la volatilità, dove i proprietari dei bitcoin possono imprevedibilmente fare o perdere denaro. Al di là della speculazione, Bitcoin è anche un sistema di pagamento con attributi utili e competitivi, che vengono utilizzati da migliaia di utenti e aziende. </p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Chi ha creato Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin è la prima realizzazione di un concetto chiamato "cryptocurrency", che fu descritta per la prima volta nel 1998 da Wei Dai nella mailing list cypherpunk, suggerendo l'idea di una nuova forma di denaro che usa la crittografia per controllare la sua creazione e le transazioni, piuttosto che un'autorità centrale. Le prime specifiche di Bitcoin e l'esposizione dell'idea furono pubblicate nel 2009 in una mailing list di crittografia da Satoshi Nakamoto. Satoshi lasciò il progetto alla fine del 2010 senza rivelare molto di se stesso. La comunità è cresciuta in modo esponenziale con <a href="/it/sviluppo">molti sviluppatori</a> che lavorano su Bitcoin.</p>
+            <p>L'anonimato di Satoshi spesso ha sollevato preoccupazioni ingiustificate, alcune delle quali sono legate a incomprensioni sulla natura open-source di Bitcoin. Il protocollo e il software Bitcoin sono stati pubblicati apertamente e qualsiasi sviluppatore in giro per il mondo può revisionare il codice o creare la propria versione modificata del software Bitcoin. Proprio come gli sviluppatori attuali, l'influenza di Satoshi fu limitata ai cambiamenti che fece in corso di adozione da altri e quindi lui non controllava Bitcoin. In quanto tale, l'identità dell'inventore di Bitcoin oggi è probabilmente rilevante come l'identità della persona che ha inventato la carta.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">I bitcoin possono perdere il proprio valore?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Sì, la storia è piena di valute che hanno fallito e che non sono più in uso, come <a href="https://en.wikipedia.org/wiki/German_gold_mark">il Marco tedesco</a> durante la repubblica di Weimar e, più recentemente, il<a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar"> dollaro dello Zimbabwe</a>. Nonostante i precedenti fallimenti delle valute erano tipicamente dovuti ad un certo tipo di iper-inflazione che Bitcoin rende impossibile, c'è sempre una possibilità per fallimenti tecnici, valute concorrenti, problemi politici ed altro. Come regola empirica, nessuna valuta dovrebbe essere considerata assolutamente sicura ed esente da fallimenti o periodi bui. Bitcoin si è dimostrata affidabile per anni sin dalla sua nascita e c'è una grossa possibilità per Bitcoin di continuare a crescere. Comunque, nessuno è nella posizione di predire quale sarà il futuro di Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è completamente virtuale e immateriale?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin è un mezzo virtuale quanto le carte di credito e le reti bancarie online che le persone utilizzano ogni giorno. Bitcoin può essere impiegato per effettuare pagamenti online e in veri negozi, proprio come ogni altra forma di denaro. I bitcoin possono anche essere scambiati in forma fisica come le <a href="https://www.casascius.com/">monete Casascius </a>, ma pagare con un dispositivo mobile in genere resta il sistema più conveniente. I bilanci di Bitcoin sono immagazzinati in una grande rete, e non possono essere alterati in modo fraudolento da nessuno. In breve, gli utenti Bitcoin hanno l'esclusivo controllo sui loro fondi e i bitcoin non possono svanire, perché sono virtuali. </p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Perchè le persone si fidano di Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Molta della fiducia in Bitcoin deriva dal fatto che non richiede fiducia affatto. Bitcoin è completamente open-source e decentralizzato. Questo significa che chiunque ha accesso al source code in qualsiasi momento. Qualsiasi sviluppatore nel mondo puó quindi verificare esattamente come funziona Bitcoin. Ogni transazione e bitcoin creato possono essere consultati in qualsiasi momento con trasparenza assoluta. Ogni pagamento può essere effettuato senza dipendere da terzi, e l'intero sistema é protetto da algoritmi criptografici condivisi su larga scala, come quelli usati dall'online banking. Nessuna organizzazione o individuo puó controllare Bitcoin, e il sistema rimane sicuro anche se non ci si puó fidare di tutti gli utenti.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Bitcoin è anonimo?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin è programmato per consentire ai propri utenti di inviare e ricevere pagamenti ad un livello accettabile di privacy, così come ogni altra forma di denaro. Tuttavia, Bitcoin non è anonimo e non può offrire lo stesso livello di privacy, del denaro liquido. L'utilizzo di Bitcoin lascia tracce pubbliche consistenti.  <a href="/it/proteggi-la-tua-privacy">Vari meccanismi </a> sono destinati a proteggere la privacy degli utenti, e molti altri sono in fase di sviluppo.  Tuttavia, c'è ancora del lavoro da svolgere prima che tali elementi possano essere usati correttamente dalla maggioranza degli utenti Bitcoin. </p>
+            <p>Alcune preoccupazioni sono sorte in merito alle transazioni private con Bitcoin che potrebbero essere utilizzate per scopi illegali. Tuttavia, vale la pena notare che Bitcoin sarà indubbiamente soggetto a simili regolamentazioni attualmente in vigore all'interno degli esistenti sistemi finanziari. Bitcoin non può essere del denaro contante, e non è tale da impedire indagini criminali. inoltre, Bitcoin è  progettato per prevenire un ampio raggio di crimini finanziari.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>Per conoscere meglio Bitcoin potete visitare la <a href="/en/faq">FAQ</a> completa o <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -515,14 +609,14 @@ C'è un'ampia varietà di leggi in molte giurisdizioni diverse che con Bitcoin p
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/it/note-legali">Note legali</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/note-legali">Note legali</a></li>
 			
-			<li><a href="/it/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/privacy">Privacy</a></li>
 			
-			<li><a href="/it/stampa">Stampa</a></li>
-			<li><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/stampa">Stampa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -531,7 +625,8 @@ C'è un'ampia varietà di leggi in molte giurisdizioni diverse che con Bitcoin p
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un sito web della comunità sponsorizzato da</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -553,13 +648,15 @@ C'è un'ampia varietà di leggi in molte giurisdizioni diverse che con Bitcoin p
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -570,7 +667,6 @@ C'è un'ampia varietà di leggi in molte giurisdizioni diverse che con Bitcoin p
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

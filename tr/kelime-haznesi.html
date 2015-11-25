@@ -10,15 +10,29 @@
 <title>Sozluk - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/tr.png"><strong>Türkçe</strong>
+          <img src="/img/flags/tr.png"><strong>Türkçe</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">SSS</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Bitcoin ile alakalı duyabileceğiniz kelimeler</h1>
-<p class="summarytxt">Bitcoin ödemelere yeni açılardan yaklaşıyor ve dolayısıyla kelime hazinenize katabileceğiniz bazı yeni kelimeler olabilir. Merak etmeyin, televizyon bile zamanında yeni kelimeler yarattı!</p>
-<h2 id="table-of-contents">İçindekiler</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Bitcoin ile alakalı duyabileceğiniz kelimeler</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin ödemelere yeni açılardan yaklaşıyor ve dolayısıyla kelime hazinenize katabileceğiniz bazı yeni kelimeler olabilir. Merak etmeyin, televizyon bile zamanında yeni kelimeler yarattı!</h2>
 
-<div class="index">
-
-<a href="#adres">Adres</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blok">Blok</a>
-
-<a href="#blok-zinciri">Blok Zinciri</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#cuzdan">Cüzdan</a>
-
-<a href="#cift-harcama">Çift Harcama</a>
-
-<a href="#gizli-anahtar">Gizli Anahtar</a>
-
-<a href="#hash-orani">Hash Oranı</a>
-
-<a href="#imza">İmza</a>
-
-<a href="#kriptografi">Kriptografi</a>
-
-<a href="#madencilik">Madencilik</a>
-
-<a href="#onay">Onaylama</a>
-
-<a href="#p2p">P2P</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="adres">Adres</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bir Bitcoin adresi <b>gerçek adresler ya da elektronik posta adresleri</b> gibidir. Bu adres sizin Bitcoin ile ödeme alabilmeniz için ihtiyaç duyduğunuz tek şeydir. Bu adreslerin önemli bir farkı her işlem için sadece bir kere kullanılabilecek olmalarıdır.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bit, bir bitcoin'in kullanılan bir alt-ünitesini belirlemek için kullanılır - 1,000,000 bit 1 bitcoin'e eşdeğerdir (BTC yada B). Bu ünite genellikle ücretlendirme ipuçları, satışlar ve hizmetler için daha uygundur.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Büyük harfle başlayan Bitcoin, Bitcoin konseptini ve kendisine ait bütün ağı ifade eder. Örnek; "Bugün Bitcoin hakkında çok şey öğrendim".<br>Küçük harfle başlayan bitcoin ise, sadece miktar olarak bitcoin'i tanımlar. Örnek;" Bugün on bitcoin harcadım." Sıklıkla BTC ya da XBT olarak da kısaltılır.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blok">Blok</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Blok, <b>zincirde bekleyen birçok işlemi içeren ve onaylayan bir kayıttır</b>. Yaklaşık her 10 dakikada bir, işlemleri içeren ortalama bir yeni blok <a href="#madencilik">madencilik</a> yoluyla <a href="#blok-zinciri">blok zincirine</a> eklenir.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blok-zinciri">Blok Zinciri</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Blok zinciri, kronolojik bir sırada <b>bütün Bitcoin işlemlerinin halka açık</b> bir kaydıdır. Blok zinciri bütün Bitcoin kullanıcılarıyla paylaşılır. Bu Bitcoin işlemlerinin kalıcılığını doğrular ve  <a href="#cift-harcama">çifte harcama</a> yapmayı önler.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC bir bitcoin için kullanılan ortak bir semboldür.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cuzdan">Cüzdan</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin cüzdanı genel hatlarıyla <b>Bitcoin ağındaki gerçek cüzdanınız gibidir</b>. Cüzdanınız, <a href="#blok-zinciri">blok zincire</a> girmesi için bitcoin'lerinizi harcamanıza yarayacak <a href="#gizli-anahtar">özel anahtar (ya da anahtarları)</a> içerir. Her Bitcoin cüzdanı size kontrol ettiği toplam bitcoin bakiyesini göstererek istediğiniz kişiye istediğiniz miktarda gönderim yapabilmenizi sağlar. Paranız kadar harcayabildiğiniz için kredi kartları gibi değildir.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cift-harcama">Çift Harcama</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Kendini zeki sanan bir kullanıcının <b>aynı anda iki ödeme yapmaya çalışmasına</b> çifte harcama diyoruz. Bitcoin <a href="#madencilik">madenleme</a> ve <a href="#blok-zinciri">blok zinciri</a>, ağ üzerinde, bu işlemlerden hangisinin onaylanacağı ve kesin doğru sayılacağı hakkında bir konsensus yaratmıştır.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="gizli-anahtar">Gizli Anahtar</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bir özel anahtar kriptografik <a href="#imza">imza</a> yoluyla <b>spesifik bir cüzdandan sizin bitcoin harcama hakkınızı sağlayan gizli bir bilgi parçasıdır</b>. Özel ahahtar (ya da anahtarlarınız) eğer bir cüzdan yazılımı kullanıyorsanız bilgisayarınızda depolanır; eğer bir çevrimiçi cüzdan kullanıyorsanız uzak bir sunucuda depolanır. Bu özel anahtarlar, sizin bu spesifik cüzdandan alışveriş yapmanızı sağladığından asla açıklanmamalıdır. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-orani">Hash Oranı</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Hash oranı <b>Bitcoin ağının işlemci gücünün ölçme birimidir</b>. Bitcoin ağı güvenlik amacıyla aşırı matematiksel işlemler yapmalıdır. Ağın 10 TH/s hash oranına varması saniyede 10 trilyon hesap yapabilmesi anlamına gelir.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="imza">İmza</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#kriptografi">Kriptografik</a> imza <b>sahibiyeti kanıtlayan matematiksel bir mekanizmadır</b>. Bitcoin'de, <a href="#cuzdan">Bitcoin cüzdanı</a> ve onun <a href="#gizli-anahtar">özel anahtar (ya da anahtarlar)</a> arasında sihirli matematiksel bir bağ vardır. Bitcoin yazılımınız bir işlemi uygun özel anahtar ile imzaladığında tüm ağ harcanan bitcoinlerin imza ile eşleştiğini görebilir. Bununla birlikte herhangi birisinin bu gizli anahtarı kırıp sizin bitcoinlerinizi çalma gibi bir şansı yoktur.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="kriptografi">Kriptografi</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Kriptografi bize <b>yüksek seviyede güvenlik sağlamaya yarayan matematiksel ispatları</b> yaratmamızı sağlayan matematik dalıdır. Çevrimiçi bankalar ve alışveriş zaten kriptografi kullanır. Bitcoin'in durumundaysa kriptografi kimsenin başkasının parasını kullanmaması için veya <a href="#blok-zinciri">blok zincirini</a> yozlaştırmaması amacıyla kullanılır. Hem de cüzdanları şifreler ki kimse şifre olmadan kullanamasın.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="madencilik">Madencilik</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin madenciliği <b>Bitcoin ağının işlemleri onaylaması amacıyla bilgisayarlara matematik işlemler yaptırmak</b> ve güvenliği artırmak anlamına gelir. Yaptıkları işin ödülü olarak Bitcoin madencileri onayladıkları işlemlerin faturalarını ve yeni oluşturulan bitcoinleri toplayabilirler. Madencilik ödüllerin ne kadar hesap yapıldığıyla doğru orantılı olduğu özelleşmiş ve rekabetçi bir piyasadır. Bütün Bitcoin kullanıcıları madencilik yapmaz ve para kazanmanın kolay bir yolu değildir.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="onay">Onaylama</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Onaylama <b>ağ tarafından işlemin tamamlandığı anlamına gelir ve kuvvetle muhtemel geri dönüşümsüzdür</b>. İşlemler bir  <a href="/tr/kelime-haznesi#blok">bloğa</a> ve sonraki her bir bloğa katıldıkları anda onay alırlar. Düşük ücretli bir işlem tek bir onaylama ile güvenli hale gelirken, 1000 $ gibi daha yüksek ücretler 6 ya da daha fazla onay bekleyebilir. Her bir onay işlemin güvenilirliğinin <i>katlanarak</i> artmasını sağlar.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Eşler-arası, her şahsın diğerleriyle doğrudan iletişim kurmasına izin vererek <b>organize toplum olarak çalışan sistemleri</b> kast eder. Bitcoin'de ağ öyle inşa edilmiştir ki her kullanıcı diğer kullanıcıların işlemlerini yayınlar. Ve, en önemlisi, herhangi bir bankaya üçüncü şahıs olarak gerek yoktur.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="adres">Adres</h2>
-<p>Bir Bitcoin adresi <b>gerçek adresler ya da elektronik posta adresleri</b> gibidir. Bu adres sizin Bitcoin ile ödeme alabilmeniz için ihtiyaç duyduğunuz tek şeydir. Bu adreslerin önemli bir farkı her işlem için sadece bir kere kullanılabilecek olmalarıdır.</p>
-
-<h2 id="bit">Bit</h2>
-<p>Bit, bir bitcoin'in kullanılan bir alt-ünitesini belirlemek için kullanılır - 1,000,000 bit 1 bitcoin'e eşdeğerdir (BTC yada B). Bu ünite genellikle ücretlendirme ipuçları, satışlar ve hizmetler için daha uygundur.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Büyük harfle başlayan Bitcoin, Bitcoin konseptini ve kendisine ait bütün ağı ifade eder. Örnek; "Bugün Bitcoin hakkında çok şey öğrendim".<br>Küçük harfle başlayan bitcoin ise, sadece miktar olarak bitcoin'i tanımlar. Örnek;" Bugün on bitcoin harcadım." Sıklıkla BTC ya da XBT olarak da kısaltılır.</p>
-
-<h2 id="blok">Blok</h2>
-<p>Blok, <b>zincirde bekleyen birçok işlemi içeren ve onaylayan bir kayıttır</b>. Yaklaşık her 10 dakikada bir, işlemleri içeren ortalama bir yeni blok <a href="#madencilik">madencilik</a> yoluyla <a href="#blok-zinciri">blok zincirine</a> eklenir.</p>
-
-<h2 id="blok-zinciri">Blok Zinciri</h2>
-<p>Blok zinciri, kronolojik bir sırada <b>bütün Bitcoin işlemlerinin halka açık</b> bir kaydıdır. Blok zinciri bütün Bitcoin kullanıcılarıyla paylaşılır. Bu Bitcoin işlemlerinin kalıcılığını doğrular ve  <a href="#cift-harcama">çifte harcama</a> yapmayı önler.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC bir bitcoin için kullanılan ortak bir semboldür.</p>
-
-<h2 id="cuzdan">Cüzdan</h2>
-<p>Bitcoin cüzdanı genel hatlarıyla <b>Bitcoin ağındaki gerçek cüzdanınız gibidir</b>. Cüzdanınız, <a href="#blok-zinciri">blok zincire</a> girmesi için bitcoin'lerinizi harcamanıza yarayacak <a href="#gizli-anahtar">özel anahtar (ya da anahtarları)</a> içerir. Her Bitcoin cüzdanı size kontrol ettiği toplam bitcoin bakiyesini göstererek istediğiniz kişiye istediğiniz miktarda gönderim yapabilmenizi sağlar. Paranız kadar harcayabildiğiniz için kredi kartları gibi değildir.</p>
-
-<h2 id="cift-harcama">Çift Harcama</h2>
-<p>Kendini zeki sanan bir kullanıcının <b>aynı anda iki ödeme yapmaya çalışmasına</b> çifte harcama diyoruz. Bitcoin <a href="#madencilik">madenleme</a> ve <a href="#blok-zinciri">blok zinciri</a>, ağ üzerinde, bu işlemlerden hangisinin onaylanacağı ve kesin doğru sayılacağı hakkında bir konsensus yaratmıştır.</p>
-
-<h2 id="gizli-anahtar">Gizli Anahtar</h2>
-<p>Bir özel anahtar kriptografik <a href="#imza">imza</a> yoluyla <b>spesifik bir cüzdandan sizin bitcoin harcama hakkınızı sağlayan gizli bir bilgi parçasıdır</b>. Özel ahahtar (ya da anahtarlarınız) eğer bir cüzdan yazılımı kullanıyorsanız bilgisayarınızda depolanır; eğer bir çevrimiçi cüzdan kullanıyorsanız uzak bir sunucuda depolanır. Bu özel anahtarlar, sizin bu spesifik cüzdandan alışveriş yapmanızı sağladığından asla açıklanmamalıdır. </p>
-
-<h2 id="hash-orani">Hash Oranı</h2>
-<p>Hash oranı <b>Bitcoin ağının işlemci gücünün ölçme birimidir</b>. Bitcoin ağı güvenlik amacıyla aşırı matematiksel işlemler yapmalıdır. Ağın 10 TH/s hash oranına varması saniyede 10 trilyon hesap yapabilmesi anlamına gelir.</p>
-
-<h2 id="imza">İmza</h2>
-<p><a href="#kriptografi">Kriptografik</a> imza <b>sahibiyeti kanıtlayan matematiksel bir mekanizmadır</b>. Bitcoin'de, <a href="#cuzdan">Bitcoin cüzdanı</a> ve onun <a href="#gizli-anahtar">özel anahtar (ya da anahtarlar)</a> arasında sihirli matematiksel bir bağ vardır. Bitcoin yazılımınız bir işlemi uygun özel anahtar ile imzaladığında tüm ağ harcanan bitcoinlerin imza ile eşleştiğini görebilir. Bununla birlikte herhangi birisinin bu gizli anahtarı kırıp sizin bitcoinlerinizi çalma gibi bir şansı yoktur.</p>
-
-<h2 id="kriptografi">Kriptografi</h2>
-<p>Kriptografi bize <b>yüksek seviyede güvenlik sağlamaya yarayan matematiksel ispatları</b> yaratmamızı sağlayan matematik dalıdır. Çevrimiçi bankalar ve alışveriş zaten kriptografi kullanır. Bitcoin'in durumundaysa kriptografi kimsenin başkasının parasını kullanmaması için veya <a href="#blok-zinciri">blok zincirini</a> yozlaştırmaması amacıyla kullanılır. Hem de cüzdanları şifreler ki kimse şifre olmadan kullanamasın.</p>
-
-<h2 id="madencilik">Madencilik</h2>
-<p>Bitcoin madenciliği <b>Bitcoin ağının işlemleri onaylaması amacıyla bilgisayarlara matematik işlemler yaptırmak</b> ve güvenliği artırmak anlamına gelir. Yaptıkları işin ödülü olarak Bitcoin madencileri onayladıkları işlemlerin faturalarını ve yeni oluşturulan bitcoinleri toplayabilirler. Madencilik ödüllerin ne kadar hesap yapıldığıyla doğru orantılı olduğu özelleşmiş ve rekabetçi bir piyasadır. Bütün Bitcoin kullanıcıları madencilik yapmaz ve para kazanmanın kolay bir yolu değildir.</p>
-
-<h2 id="onay">Onaylama</h2>
-<p>Onaylama <b>ağ tarafından işlemin tamamlandığı anlamına gelir ve kuvvetle muhtemel geri dönüşümsüzdür</b>. İşlemler bir  <a href="/tr/kelime-haznesi#blok">bloğa</a> ve sonraki her bir bloğa katıldıkları anda onay alırlar. Düşük ücretli bir işlem tek bir onaylama ile güvenli hale gelirken, 1000 $ gibi daha yüksek ücretler 6 ya da daha fazla onay bekleyebilir. Her bir onay işlemin güvenilirliğinin <i>katlanarak</i> artmasını sağlar.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Eşler-arası, her şahsın diğerleriyle doğrudan iletişim kurmasına izin vererek <b>organize toplum olarak çalışan sistemleri</b> kast eder. Bitcoin'de ağ öyle inşa edilmiştir ki her kullanıcı diğer kullanıcıların işlemlerini yayınlar. Ve, en önemlisi, herhangi bir bankaya üçüncü şahıs olarak gerek yoktur.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/tr/yasal">Yasal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/yasal">Yasal</a></li>
 			
-			<li><a href="/tr/gizlilik">Gizlilik</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/gizlilik">Gizlilik</a></li>
 			
-			<li><a href="/tr/basin">Basın</a></li>
-			<li><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/basin">Basın</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sponsor bir topluluğun web sitesi</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Pers - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/nl.png"><strong>Nederlands</strong>
+          <img src="/img/flags/nl.png"><strong>Nederlands</strong>
 				</div>
 			</a>
 		</div>
@@ -323,187 +341,263 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Perscentrum</h1>
-<p class="summary">Zoek geïnterviewden, antwoorden en hoogwaardige persmaterialen.</p>
+        <div class="content_press">
+  <h1 class="content_press--title">Perscentrum</h1>
+  <h2 class="content_press--subtitle">Zoek geïnterviewden, antwoorden en hoogwaardige persmaterialen.</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">Geïnterviewden</h2>
+    <p>Communiceer met de <a href="https://bitcoinfoundation.org/contact/">Bitcoin Foundation</a> of lokale <a href="/nl/community#non-profit">non-profit organisaties</a>. Vind meer potentiële perscontracten bij het onafhankelijke <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
+  </div>
 
-<h2 id="volunteer">Geïnterviewden</h2>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">FAQ</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wat is Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is een consensusnetwerk dat een nieuw betaalsysteem en compleet digitaal geld mogelijk maakt. Het is het eerste gedecentraliseerde door gebruikers gedreven peer-to-peer-betalingsnetwerk zonder centrale autoriteit of tussenpersonen. Vanuit het oogpunt van gebruikers is Bitcoin geld op het internet. Bitcoin kan ook worden gezien als het meest prominente <a href="http://financialcryptography.com/mt/archives/001325.html">triple-entry boekhoudsysteem</a> ter wereld.</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hoe werkt Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Vanuit het oogpunt van gebruikers is Bitcoin niets meer dan een mobiele app die of computerprogramma dat persoonlijke Bitcoin-adressen biedt en een gebruiker in staat stelt om hiermee bitcoins te verzenden en te ontvangen. Zo werkt Bitcoin voor de meeste gebruikers.</p>
+            <p>Achter de schermen deelt het Bitcoin-netwerk een openbaar register dat de blokketen wordt genoemd. Dit register bevat elke transactie die ooit is verwerkt, waardoor de computer van een gebruiker de geldigheid van elke transactie kan verifiëren. De authenticiteit van elke transactie wordt beschermd door digitale handtekeningen die aan het verzendadres zijn gekoppeld, zodat gebruikers volledige controle hebben over het verzenden van bitcoins via hun eigen Bitcoin-adres. Daarnaast kan iedereen transacties verwerken met de rekenkracht van gespecialiseerde hardware en voor deze dienst bitcoins verdienen. Dit wordt vaak mining genoemd. Raadpleeg deze <a href="/nl/hoe-het-werkt">speciale pagina</a> en de <a href="/bitcoin.pdf">originele paper</a> voor meer informatie over Bitcoin.</p>
+          </div>
+        </li>
 
-<p>Communiceer met de <a href="https://bitcoinfoundation.org/contact/">Bitcoin Foundation</a> of lokale <a href="/nl/community#non-profit">non-profit organisaties</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wat is Bitcoin-mining?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Mining is het proces van computerkracht gebruiken om transacties te verwerken, het netwerk te beveiligen en iedereen in het systeem met elkaar gesynchroniseerd te houden. Het kan worden beschouwd als het Bitcoin-datacentrum, met als uitzondering dat het is ontworpen volledig gedecentraliseerd te zijn met miners uit alle landen en zonder netwerkbeheerder wordt uitgevoerd. Dit proces wordt ook wel 'mining' genoemd omdat het een tijdelijk mechanisme is om nieuwe bitcoins uit te geven. Bitcoin-mining biedt echter beloningen in ruil voor behulpzame diensten die nodig zijn om een veilig betalingsnetwerk te kunnen uitvoeren. Mining is nog steeds nodig nadat de laatste bitcoin is uitgegeven.</p>
+          </div>
+        </li>
 
-<p>Vind meer potentiële perscontracten bij het onafhankelijke <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hoe kan ik bitcoins vergaren?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>Als betaling voor goederen of diensten.</li>
+              <li>Koop bitcoins bij een <a href="http://howtobuybitcoins.info">Bitcoin-wisselkantoor</a>.</li>
+              <li>Wissel bitcoins uit met <a href="https://localbitcoins.com/">iemand uit de buurt</a>.</li>
+              <li>Verdien bitcoins via concurrerende <a href="http://www.bitcoinmining.com/">mining</a>.</li>
+            </ul>
+            <p>Hoewel het wellicht mogelijk is om personen te vinden die bitcoins in ruil voor een creditcard- of PayPal-betaling willen verkopen, staan de meeste wisselkantoren financiering middels deze betaalmethoden niet toe. Dit komt omdat er zich gevallen kunnen voordoen waarin iemand met PayPal bitcoins aanschaft en vervolgens zijn of haar deel van de transactie terugdraait. Dit wordt ook wel een stornering genoemd.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wordt Bitcoin echt door mensen gebruikt?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Ja. Een <a href="http://usebitcoins.info/">groeiend aantal bedrijven</a> en personen gebruikt Bitcoin. Hieronder vallen fysieke bedrijven zoals restaurants, appartementen, advocatenkantoren, maar ook populaire online diensten als Namecheap, WordPress, Reddit en Flattr. Hoewel Bitcoin een relatief nieuw fenomeen is, groeit het erg snel. Eind augustus 2013 oversteeg <a href="https://bitcoincharts.com/bitcoin/">de waarde van alle bitcoins in omloop</a> US$ 1,5 miljard en wordt er dagelijks miljoenen dollar aan bitcoins uitgewisseld.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hoe moeilijk is het om een Bitcoin-betaling te doen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin-betalingen zijn eenvoudiger te doen dan aankopen via een betaalkaart of creditcard en kunnen worden ontvangen zonder verkopersaccount. Betalingen worden via een portemonnee-applicatie op een computer of smartphone verricht door het adres van de ontvanger en het bedrag in te voeren en Verzenden te selecteren. Om het gemakkelijker te maken om het adres van een ontvanger in te voeren, kunnen veel portemonnees het adres verkrijgen door een QR-code te scannen of twee telefoons met NFC-technologie tegen elkaar te houden.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">FAQ</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wat zijn de voordelen van Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Vrijheid van betaling</b></em>: het is mogelijk om elk bedrag altijd en overal direct te verzenden en te ontvangen. Geen feestdagen. Geen grenzen. Geen opgelegde limieten. Dankzij Bitcoin hebben gebruikers de volledige controle over hun geld.</li>
+              <li><em><b>Zeer lage kosten</b></em>: Bitcoin-betalingen worden momenteel zonder of tegen extreem lage kosten verwerkt. Gebruikers kunnen kosten aan transacties verbinden om prioriteitsverwerking te ontvangen, waardoor transacties sneller door het netwerk worden bevestigd. Daarnaast bestaan er verkoperverwerkers om verkopers te helpen tijdens de verwerking van transacties, de conversie van bitcoins naar fiduciaire valuta en de dagelijkse rechtstreekse storting van geld op de bankrekening van de verkoper. Omdat deze diensten op Bitcoin zijn gebaseerd, kunnen deze tegen veel lagere kosten dan PayPal of andere creditcardnetwerken worden aangeboden.</li>
+              <li><em><b>Minder risico's voor verkopers</b></em>: Bitcoin-transacties zijn veilig, onomkeerbaar en bevatten geen gevoelige of persoonlijke informatie van klanten. Op deze manier zijn verkopers beschermd tegen verliezen door fraude of frauduleuze storneringen en is PCI-compliance niet nodig. Verkopers kunnen eenvoudig naar nieuwe markten uitbreiden waar creditcards niet beschikbaar zijn of het fraudepercentage onacceptabel hoog is. De nettoresultaten zijn lagere kosten, grotere markten en minder administratiekosten.</li>
+              <li><em><b>Beveiliging en controle</b></em>: Bitcoin-gebruikers hebben de volledige controle over hun transacties. Het is voor verkopers onmogelijk om ongewilde of ongemerkte kosten af te dwingen zoals bij andere betaalmethoden kan gebeuren. Bitcoin-betalingen kunnen worden gedaan zonder dat er persoonlijke gegevens aan de transactie zijn verbonden. Dit zorgt voor een sterke bescherming tegen identiteitsdiefstal. Bitcoin-gebruikers kunnen hun geld daarnaast beschermen via back-ups en versleuteling.</li>
+              <li><em><b>Transparant en neutraal</b></em>: <a href="https://www.biteasy.com/">alle informatie</a> inzake de Bitcoin-geldtoevoer is direct beschikbaar in de blokketen zodat iedereen deze in realtime kan verifiëren en gebruiken. Personen of organisaties kunnen het Bitcoin-protocol niet controleren of manipuleren omdat het cryptografisch beveiligd is. Hierdoor kunt u ervan op aan dat de kern van Bitcoin volledig neutraal, transparant en voorspelbaar is.</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wat zijn de nadelen van Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Mate van acceptatie</b></em>: Veel mensen weten nog niet van het bestaan van Bitcoin af. Dagelijks accepteren meer bedrijven bitcoins, omdat ze gebruik willen maken van de voordelen, maar het lijstje blijft kort en moet groeien om van <a href="https://en.wikipedia.org/wiki/Network_effect">netwerkeffecten</a> te profiteren.</li>
+              <li><em><b>Volatiliteit</b></em>: de <a href="https://bitcoincharts.com/bitcoin/">totaalwaarde</a> van bitcoins in omloop en het aantal bedrijven dat Bitcoin gebruikt is nog steeds erg gering vergeleken met wat het zou kunnen zijn. Daarom beïnvloeden relatief kleine marktveranderingen de prijs aanzienlijk. Theoretisch gezien, zal deze volatiliteit afnemen naarmate Bitcoin een grotere positie in de markt krijgt en de technologie wordt verbeterd. De wereld heeft nog nooit eerder met een startende valuta te maken gehad, dus het is erg moeilijk (maar ook spannend) om voor te stellen hoe dit gaat uitpakken.</li>
+              <li><em><b>Doorlopende ontwikkeling</b></em>: de Bitcoin-software bevindt zich nog steeds in een bètafase met veel onvolledige functies in actieve ontwikkeling. Nieuwe tools, functies en diensten worden ontwikkeld om Bitcoin veiliger en toegankelijker voor het grote publiek te maken. Enkele van deze zijn nog niet klaar voor iedereen. De meeste Bitcoin-bedrijven zijn nieuw en bieden nog geen verzekering. Over het algemeen bevindt Bitcoin zich nog steeds in het proces richting volwassenheid.</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wat is Bitcoin?</a>
-  <div>
-  <p>Bitcoin is een consensusnetwerk dat een nieuw betaalsysteem en compleet digitaal geld mogelijk maakt. Het is het eerste gedecentraliseerde door gebruikers gedreven peer-to-peer-betalingsnetwerk zonder centrale autoriteit of tussenpersonen. Vanuit het oogpunt van gebruikers is Bitcoin geld op het internet. Bitcoin kan ook worden gezien als het meest prominente <a href="http://financialcryptography.com/mt/archives/001325.html">triple-entry boekhoudsysteem</a> ter wereld.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hoe werkt Bitcoin?</a>
-  <div>
-  <p>Vanuit het oogpunt van gebruikers is Bitcoin niets meer dan een mobiele app die of computerprogramma dat persoonlijke Bitcoin-adressen biedt en een gebruiker in staat stelt om hiermee bitcoins te verzenden en te ontvangen. Zo werkt Bitcoin voor de meeste gebruikers.</p>
-  <p>Achter de schermen deelt het Bitcoin-netwerk een openbaar register dat de blokketen wordt genoemd. Dit register bevat elke transactie die ooit is verwerkt, waardoor de computer van een gebruiker de geldigheid van elke transactie kan verifiëren. De authenticiteit van elke transactie wordt beschermd door digitale handtekeningen die aan het verzendadres zijn gekoppeld, zodat gebruikers volledige controle hebben over het verzenden van bitcoins via hun eigen Bitcoin-adres. Daarnaast kan iedereen transacties verwerken met de rekenkracht van gespecialiseerde hardware en voor deze dienst bitcoins verdienen. Dit wordt vaak mining genoemd. Raadpleeg deze <a href="/nl/hoe-het-werkt">speciale pagina</a> en de <a href="/bitcoin.pdf">originele paper</a> voor meer informatie over Bitcoin.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wat is Bitcoin-mining?</a>
-  <div>
-  <p>Mining is het proces van computerkracht gebruiken om transacties te verwerken, het netwerk te beveiligen en iedereen in het systeem met elkaar gesynchroniseerd te houden. Het kan worden beschouwd als het Bitcoin-datacentrum, met als uitzondering dat het is ontworpen volledig gedecentraliseerd te zijn met miners uit alle landen en zonder netwerkbeheerder wordt uitgevoerd. Dit proces wordt ook wel 'mining' genoemd omdat het een tijdelijk mechanisme is om nieuwe bitcoins uit te geven. Bitcoin-mining biedt echter beloningen in ruil voor behulpzame diensten die nodig zijn om een veilig betalingsnetwerk te kunnen uitvoeren. Mining is nog steeds nodig nadat de laatste bitcoin is uitgegeven.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hoe kan ik bitcoins vergaren?</a>
-  <div>
-  <ul>
-    <li>Als betaling voor goederen of diensten.</li>
-    <li>Koop bitcoins bij een <a href="http://howtobuybitcoins.info">Bitcoin-wisselkantoor</a>.</li>
-    <li>Wissel bitcoins uit met <a href="https://localbitcoins.com/">iemand uit de buurt</a>.</li>
-    <li>Verdien bitcoins via concurrerende <a href="http://www.bitcoinmining.com/">mining</a>.</li>
-  </ul>
-  <p>Hoewel het wellicht mogelijk is om personen te vinden die bitcoins in ruil voor een creditcard- of PayPal-betaling willen verkopen, staan de meeste wisselkantoren financiering middels deze betaalmethoden niet toe. Dit komt omdat er zich gevallen kunnen voordoen waarin iemand met PayPal bitcoins aanschaft en vervolgens zijn of haar deel van de transactie terugdraait. Dit wordt ook wel een stornering genoemd.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wordt Bitcoin echt door mensen gebruikt?</a>
-  <div>
-  <p>Ja. Een <a href="http://usebitcoins.info/">groeiend aantal bedrijven</a> en personen gebruikt Bitcoin. Hieronder vallen fysieke bedrijven zoals restaurants, appartementen, advocatenkantoren, maar ook populaire online diensten als Namecheap, WordPress, Reddit en Flattr. Hoewel Bitcoin een relatief nieuw fenomeen is, groeit het erg snel. Eind augustus 2013 oversteeg <a href="https://bitcoincharts.com/bitcoin/">de waarde van alle bitcoins in omloop</a> US$ 1,5 miljard en wordt er dagelijks miljoenen dollar aan bitcoins uitgewisseld.</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hoe moeilijk is het om een Bitcoin-betaling te doen?</a>
-  <div>
-  <p>Bitcoin-betalingen zijn eenvoudiger te doen dan aankopen via een betaalkaart of creditcard en kunnen worden ontvangen zonder verkopersaccount. Betalingen worden via een portemonnee-applicatie op een computer of smartphone verricht door het adres van de ontvanger en het bedrag in te voeren en Verzenden te selecteren. Om het gemakkelijker te maken om het adres van een ontvanger in te voeren, kunnen veel portemonnees het adres verkrijgen door een QR-code te scannen of twee telefoons met NFC-technologie tegen elkaar te houden.</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wat zijn de voordelen van Bitcoin?</a>
-  <div>
-  <ul>
-    <li><em><b>Vrijheid van betaling</b></em>: het is mogelijk om elk bedrag altijd en overal direct te verzenden en te ontvangen. Geen feestdagen. Geen grenzen. Geen opgelegde limieten. Dankzij Bitcoin hebben gebruikers de volledige controle over hun geld.</li>
-    <li><em><b>Zeer lage kosten</b></em>: Bitcoin-betalingen worden momenteel zonder of tegen extreem lage kosten verwerkt. Gebruikers kunnen kosten aan transacties verbinden om prioriteitsverwerking te ontvangen, waardoor transacties sneller door het netwerk worden bevestigd. Daarnaast bestaan er verkoperverwerkers om verkopers te helpen tijdens de verwerking van transacties, de conversie van bitcoins naar fiduciaire valuta en de dagelijkse rechtstreekse storting van geld op de bankrekening van de verkoper. Omdat deze diensten op Bitcoin zijn gebaseerd, kunnen deze tegen veel lagere kosten dan PayPal of andere creditcardnetwerken worden aangeboden.</li>
-    <li><em><b>Minder risico's voor verkopers</b></em>: Bitcoin-transacties zijn veilig, onomkeerbaar en bevatten geen gevoelige of persoonlijke informatie van klanten. Op deze manier zijn verkopers beschermd tegen verliezen door fraude of frauduleuze storneringen en is PCI-compliance niet nodig. Verkopers kunnen eenvoudig naar nieuwe markten uitbreiden waar creditcards niet beschikbaar zijn of het fraudepercentage onacceptabel hoog is. De nettoresultaten zijn lagere kosten, grotere markten en minder administratiekosten.</li>
-    <li><em><b>Beveiliging en controle</b></em>: Bitcoin-gebruikers hebben de volledige controle over hun transacties. Het is voor verkopers onmogelijk om ongewilde of ongemerkte kosten af te dwingen zoals bij andere betaalmethoden kan gebeuren. Bitcoin-betalingen kunnen worden gedaan zonder dat er persoonlijke gegevens aan de transactie zijn verbonden. Dit zorgt voor een sterke bescherming tegen identiteitsdiefstal. Bitcoin-gebruikers kunnen hun geld daarnaast beschermen via back-ups en versleuteling.</li>
-    <li><em><b>Transparant en neutraal</b></em>: <a href="https://www.biteasy.com/">alle informatie</a> inzake de Bitcoin-geldtoevoer is direct beschikbaar in de blokketen zodat iedereen deze in realtime kan verifiëren en gebruiken. Personen of organisaties kunnen het Bitcoin-protocol niet controleren of manipuleren omdat het cryptografisch beveiligd is. Hierdoor kunt u ervan op aan dat de kern van Bitcoin volledig neutraal, transparant en voorspelbaar is.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wat zijn de nadelen van Bitcoin?</a>
-  <div>
-  <ul>
-    <li><em><b>Mate van acceptatie</b></em>: Veel mensen weten nog niet van het bestaan van Bitcoin af. Dagelijks accepteren meer bedrijven bitcoins, omdat ze gebruik willen maken van de voordelen, maar het lijstje blijft kort en moet groeien om van <a href="https://en.wikipedia.org/wiki/Network_effect">netwerkeffecten</a> te profiteren.</li>
-    <li><em><b>Volatiliteit</b></em>: de <a href="https://bitcoincharts.com/bitcoin/">totaalwaarde</a> van bitcoins in omloop en het aantal bedrijven dat Bitcoin gebruikt is nog steeds erg gering vergeleken met wat het zou kunnen zijn. Daarom beïnvloeden relatief kleine marktveranderingen de prijs aanzienlijk. Theoretisch gezien, zal deze volatiliteit afnemen naarmate Bitcoin een grotere positie in de markt krijgt en de technologie wordt verbeterd. De wereld heeft nog nooit eerder met een startende valuta te maken gehad, dus het is erg moeilijk (maar ook spannend) om voor te stellen hoe dit gaat uitpakken.</li>
-    <li><em><b>Doorlopende ontwikkeling</b></em>: de Bitcoin-software bevindt zich nog steeds in een bètafase met veel onvolledige functies in actieve ontwikkeling. Nieuwe tools, functies en diensten worden ontwikkeld om Bitcoin veiliger en toegankelijker voor het grote publiek te maken. Enkele van deze zijn nog niet klaar voor iedereen. De meeste Bitcoin-bedrijven zijn nieuw en bieden nog geen verzekering. Over het algemeen bevindt Bitcoin zich nog steeds in het proces richting volwassenheid.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin veilig?</a>
-  <div>
-  <p>De Bitcoin-technologie, waaronder het protocol en de cryptografie, hebben een solide staat van dienst als het om beveiliging gaat en het Bitcoin-netwerk is waarschijnlijk het grootste gedistribueerde computerproject ter wereld. De kwetsbaarheid van Bitcoin is te vinden aan de kant van gebruikers. Bitcoin-portemonneebestanden met de noodzakelijke geheime sleutels kunnen per ongeluk worden verwijderd, verloren of gestolen. Dit is vrijwel hetzelfde als bij fysiek geld dat digitaal wordt opgeslagen. Gelukkig kunnen gebruikers robuuste <a href="/nl/beveilig-uw-portemonnee">beveiligingsmaatregelen</a> inzetten om hun geld te beschermen of serviceproviders gebruiken die goede beveiligingsniveaus en verzekeringen tegen diefstal of verlies aanbieden.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin legaal?</a>
-  <div>
-  <p>Voor zover we weten, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">is Bitcoin niet als illegaal bestempeldl</a> door wetgeving in enig rechtsgebied. Sommige rechtsgebieden beperken of verbieden alle buitenlandse valuta echter zeer strikt, zoals het geval is in landen als Argentinië en Rusland. Andere rechtsgebieden kunnen het licentiëren van bepaalde entiteiten als Bitcoin-wisselkantoren beperken, zoals Thailand.</p>
-  <p>Toezichthouders van verschillende rechtsgebieden ondernemen stappen om personen en bedrijven van regels te voorzien over hoe deze nieuwe technologie met het formele, gereguleerde financiële systeem moet worden geïntegreerd. Voorbeeld: het Financial Crimes Enforcement Network (FinCEN), een bureau in de U. S. Department of the Treasury, heeft niet-bindende richtlijnen uitgegeven over hoe het bepaalde activiteiten inzake virtuele valuta kenmerkt.</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hoe zit het met Bitcoin en belastingen?</a>
-  <div>
-  <p>Bitcoin is geen fiduciaire valuta met een status als wettig betaalmiddel in enig rechtsgebied, maar vaak wordt er een belastingschuld opgebouwd, ongeacht het gebruikte medium. Er is een groot aantal wetgevingen in veel verschillende rechtsgebieden waardoor er btw of inkomsten-, loon-, vermogenswinst- of enige andere vorm van belasting met Bitcoin kan ontstaan.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kan Bitcoin voor illegale activiteiten worden gebruikt?</a>
-  <div>
-  <p>Bitcoin is geld en geld wordt gebruikt voor zowel legale als illegale doeleinden. Contant geld, creditcards en de huidige banksystemen kennen een veel hoger percentage financiële misdaad in vergelijking met Bitcoin. Bitcoin kan belangrijke innovaties in betalingssystemen leveren en de voordelen van dergelijke innovaties worden vaak als veel belangrijker beschouwd dan hun mogelijke negatieve kanten.</p>
-  <p>Bitcoin is ontworpen om een ​​grote stap voorwaarts te zijn in het veiliger maken van geld en kan ook fungeren als een belangrijke bescherming tegen vele vormen van financiële criminaliteit. Zo zijn Bitcoins  volstrekt onmogelijk te vervalsen. Gebruikers hebben volledige controle over hun betalingen en kunnen geen niet-goedgekeurde kosten in rekening gebracht worden, zoals bij creditcardfraude. Bitcoin transacties zijn onomkeerbaar en immuun voor frauduleuze terugboekingen. Bitcoin maakt het mogelijk om geld te beveiligen tegen diefstal en verlies met behulp van zeer sterke en handige mechanismen zoals back-ups, encryptie, en meerdere handtekeningen.</p>
-  <p>Er zijn een aantal bezorgdheden geuit over het feit dat Bitcoin aantrekkelijk zou zijn voor criminelen omdat het kan worden gebruikt voor privé- en onomkeerbare betalingen. Deze kenmerken zijn echter ook al aanwezig als het gaat om contant geld en bankoverschrijvingen, twee gevestigde en veelvuldig gebruikte manieren. Het gebruik van Bitcoin zal ongetwijfeld worden onderworpen aan gelijksoortige regels die al binnen bestaande financiële systemen zijn geïmplementeerd. Daarnaast zal Bitcoin strafrechtelijke onderzoeken niet tegenhouden. Over het algemeen is het normaal dat belangrijke doorbraken als controversieel worden gezien voordat de voordelen hiervan goed zijn begrepen. Het internet is een goed voorbeeld hiervan.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin een luchtbel?</a>
-  <div>
-  <p>Een snelle prijsstijging houdt geen luchtbel in. Een kunstmatige overwaardering die een plotselinge neerwaartse correctie tot gevolg heeft, is wel een luchtbel. Keuzes gebaseerd op individuele menselijke acties door honderdduizenden marktdeelnemers is de reden dat de bitcoin-prijs schommelt, omdat de markt prijsontdekking zoekt. Redenen voor veranderingen in sentiment kunnen zijn: een vertrouwensverlies in Bitcoin, een groot verschil tussen waarde en prijs niet gebaseerd op de basis van de Bitcoin-economie, een grotere aanwezigheid in de pers waardoor speculatieve vraag wordt gestimuleerd, angst voor onzekerheid en ouderwetse irrationele overdaad en hebberigheid.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Waarom hebben bitcoins waarde?</a>
-  <div>
-  <p>Bitcoins hebben waarde, omdat ze nuttig zijn als geldvorm. Bitcoin heeft de kenmerken van geld (duurzaamheid, draagbaarheid, vervangbaar goed, schaarste, deelbaarheid en herkenbaarheid) gebaseerd op de kenmerken van wiskunde, in plaats van te vertrouwen op fysieke kenmerken (zoals goud en zilver) of vertrouwen in centrale autoriteiten (zoals fiduciaire valuta). Kortom: Bitcoin wordt wiskundig gesteund. Met al deze attributen zijn vertrouwen en aanwending alles wat nodig is voor een geldvorm om waarde te houden. In het geval van Bitcoin kan dit worden gemeten aan de hand van de groeiende basis van gebruikers, verkopers en startende ondernemingen. Net als bij alle valuta komt de waarde van bitcoins uitsluitend en rechtstreeks van mensen die welwillend zijn om deze als betaalmiddel te accepteren.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin ponzifraude?</a>
-  <div>
-  <p>Ponzifraude is een frauduleuze beleggingsoperatie dat investeerders hun opbrengst betaalt met hun eigen geld, of het geld van latere investeerders, in plaats van winst verdiend door de eigenaren van het bedrijf. Ponzifraudes zijn zo gemaakt dat ze in elkaar storten wanneer er niet genoeg nieuwe investeerders zijn, ten koste van de nieuwste investeerders.</p>
-  <p>Bitcoin is een open source softwareproject zonder centrale autoriteit, met als gevolg dat niemand zich in een zodanige positie bevindt om frauduleuze representaties van investeringsopbrengsten te maken. Net als andere grote valuta's als goud, de Amerikaanse dollar, de Euro, de Yen, etc. is er geen gegarandeerde aankoopkracht en beweegt de wisselkoers zonder beperkingen. Dit leidt tot volatiliteit waardoor eigenaars van bitcoins op onvoorspelbare wijze geld kunnen verdienen of verliezen. Speculatie daargelaten: Bitcoin is ook een betaalsysteem met nuttige en concurrerende eigenschappen die door duizenden gebruikers en bedrijven worden gebruikt.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Wie heeft Bitcoin bedacht?</a>
-  <div>
-  <p>Bitcoin is een van de eerste incarnaties van een concept dat "cryptovaluta" heet, voor het eerst beschreven in 1998 door Wei Dai op de cypherpunks-mailinglist. Deze beschrijving suggereerde het idee van een nieuwe geldsoort dat cryptografie in plaats van een centrale autoriteit gebruikt om de creatie en transacties te beheren. In 2009 werd de eerste specificatie en proof-of-concept op een cryptografie-mailinglist gepubliceerd door een lid onder het pseudoniem Satoshi Nakamoto. Tegen het eind van 2010 verliet Satoshi het project, zonder veel over zichzelf te onthullen. De community is sindsdien exponentieel gegroeid met <a href="/nl/ontwikkeling">veel ontwikkelaars</a> die aan Bitcoin werken.</p>
-  <p>De anonimiteit van Satoshi heeft vaak ongegronde bezorgdheden gewekt, vele daarvan zijn gelinkt aan het onbegrip over de opensource-aanpak van Bitcoin. Het Bitcoin-protocol en de software zijn openbaar gepubliceerd, zodat ontwikkelaars van over de hele wereld de code kunnen inzien of hun eigen aangepaste versie van de Bitcoin-software kunnen maken. Net als bij de huidige ontwikkelaars was de invloed van Satoshi beperkt tot de overname van door hem gemaakte wijzigingen door anderen en om die reden had hij de touwtjes van Bitcoin niet in handen. De identiteit van de uitvinder van Bitcoin is daarom vandaag de dag net zo relevant als de identiteit van degene die papier heeft uitgevonden.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kunnen bitcoins hun waarde verliezen?</a>
-  <div>
-  <p>Dat kan. De geschiedenis is bezaaid met munten die niet meer gebruikt worden. Voorbeelden zijn de Duitse Mark <a href="https://en.wikipedia.org/wiki/German_gold_mark"> of meer recent <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">de Zimbabwaanse dollar</a>. Het verdwijnen van deze munten komt in beide gevallen door extreme hyperinflatie die bij Bitcoin niet kan optreden. Andere redenen zijn technische problemen, concurrentie van andere munten, politieke problemen, etc. Als vuistregel kan men stellen dat geen enkele munt absoluut vrij is van technische fouten of moeilijke tijden. Bitcoin heeft een jarenlange bewezen reputatie sinds de oprichting en er is een groot groeipotentieel voor Bitcoin. Niemand kan echter de toekomst voorspellen, ook niet voor Bitcoin.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin volledig virtueel en immaterieel?</a>
-  <div>
-  <p>Bitcoin is net zo virtueel als de netwerken voor creditcards en internetbankieren die dagelijks worden gebruikt. Bitcoin kan worden gebruikt om online en in fysieke winkels te betalen, net als enige andere vorm van geld. Bitcoins kunnen daarnaast voor een fysieke vorm worden ingewisseld zoals de <a href="https://www.casascius.com/">Casascius-munten</a>, maar betalen met een mobiele telefoon blijft het gemakkelijkst. Bitcoin-saldi worden opgeslagen in een groot gedistribueerd netwerk en kunnen niet frauduleus door anderen worden gewijzigd. Met andere woorden: Bitcoin-gebruikers hebben een exclusieve controle over hun geld en bitcoins kunnen niet zomaar verdwijnen omdat ze virtueel zijn.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Waarom vertrouwen mensen Bitcoin?</a>
-  <div>
-  <p>Veel van het vertrouwen in Bitcoin komt door het feit dat Bitcoin helemaal geen vertrouwen vereist. Bitcoin is volledig opensource en gedecentraliseerd. Dit betekent dat iedereen altijd toegang heeft tot de volledige broncode. Elke ontwikkelaar ter wereld kan zo precies verifiëren hoe Bitcoin werkt. Alle transacties en bitcoins in omloop kunnen door iedereen transparant en in realtime worden opgevraagd. Alle betalingen kunnen zonder een derde partij worden gemaakt en het hele systeem is beveiligd door zeer kritisch bekeken cryptografische algoritmen die ook voor internetbankieren worden gebruikt. Bitcoin wordt niet door een organisatie of persoon beheerd en het netwerk blijft altijd veilig, zelfs als niet alle gebruikers kunnen worden vertrouwd.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Is Bitcoin anoniem?</a>
-  <div>
-  <p>Bitcoin is speciaal ontworpen om de gebruikers in staat te stellen om betalingen met een acceptabel privacyniveau te verzenden en ontvangen, net als enige andere vorm van geld. Bitcoin is echter niet anoniem en kan niet hetzelfde privacyniveau als contant geld bieden. Door het gebruik van Bitcoin wordt er een uitgebreide openbare stempel aangemaakt. Er bestaan <a href="/nl/bescherm-uw-privacy">verschillende mechanismen</a> en er worden er meer ontwikkeld om de privacy van gebruikers te beschermen. Hiervoor moet echter nog wel veel werk worden verzet voordat deze functies op de juiste wijze worden gebruikt door het merendeel van de Bitcoin-gebruikers.</p>
-  <p>Er zijn een aantal bezorgdheden geuit waaruit we opmaken dat mensen kunnen denken dat met Bitcoin privétransacties kunnen worden gebruikt voor illegale doeleinden. Hierbij is echter op te merken dat Bitcoin ongetwijfeld aan gelijksoortige regels zal worden onderworpen die al binnen bestaande financiële systemen zijn geïmplementeerd. Bitcoin kan niet anoniemer zijn dan contant geld en het zal strafrechtelijke onderzoeken in vele gevallen niet tegenhouden. Daarnaast is Bitcoin ontworpen om talloze financiële misdaden te voorkomen.</p>
-  </div>
-</div>
-<p>Bezoek alstublieft de complete <a href="/en/faq">veel gestelde vragen</a> of de <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a> om meer te weten te komen over Bitcoin.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin veilig?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>De Bitcoin-technologie, waaronder het protocol en de cryptografie, hebben een solide staat van dienst als het om beveiliging gaat en het Bitcoin-netwerk is waarschijnlijk het grootste gedistribueerde computerproject ter wereld. De kwetsbaarheid van Bitcoin is te vinden aan de kant van gebruikers. Bitcoin-portemonneebestanden met de noodzakelijke geheime sleutels kunnen per ongeluk worden verwijderd, verloren of gestolen. Dit is vrijwel hetzelfde als bij fysiek geld dat digitaal wordt opgeslagen. Gelukkig kunnen gebruikers robuuste <a href="/nl/beveilig-uw-portemonnee">beveiligingsmaatregelen</a> inzetten om hun geld te beschermen of serviceproviders gebruiken die goede beveiligingsniveaus en verzekeringen tegen diefstal of verlies aanbieden.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin legaal?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Voor zover we weten, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">is Bitcoin niet als illegaal bestempeldl</a> door wetgeving in enig rechtsgebied. Sommige rechtsgebieden beperken of verbieden alle buitenlandse valuta echter zeer strikt, zoals het geval is in landen als Argentinië en Rusland. Andere rechtsgebieden kunnen het licentiëren van bepaalde entiteiten als Bitcoin-wisselkantoren beperken, zoals Thailand.</p>
+            <p>Toezichthouders van verschillende rechtsgebieden ondernemen stappen om personen en bedrijven van regels te voorzien over hoe deze nieuwe technologie met het formele, gereguleerde financiële systeem moet worden geïntegreerd. Voorbeeld: het Financial Crimes Enforcement Network (FinCEN), een bureau in de U. S. Department of the Treasury, heeft niet-bindende richtlijnen uitgegeven over hoe het bepaalde activiteiten inzake virtuele valuta kenmerkt.</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hoe zit het met Bitcoin en belastingen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is geen fiduciaire valuta met een status als wettig betaalmiddel in enig rechtsgebied, maar vaak wordt er een belastingschuld opgebouwd, ongeacht het gebruikte medium. Er is een groot aantal wetgevingen in veel verschillende rechtsgebieden waardoor er btw of inkomsten-, loon-, vermogenswinst- of enige andere vorm van belasting met Bitcoin kan ontstaan.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kan Bitcoin voor illegale activiteiten worden gebruikt?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is geld en geld wordt gebruikt voor zowel legale als illegale doeleinden. Contant geld, creditcards en de huidige banksystemen kennen een veel hoger percentage financiële misdaad in vergelijking met Bitcoin. Bitcoin kan belangrijke innovaties in betalingssystemen leveren en de voordelen van dergelijke innovaties worden vaak als veel belangrijker beschouwd dan hun mogelijke negatieve kanten.</p>
+            <p>Bitcoin is ontworpen om een ​​grote stap voorwaarts te zijn in het veiliger maken van geld en kan ook fungeren als een belangrijke bescherming tegen vele vormen van financiële criminaliteit. Zo zijn Bitcoins  volstrekt onmogelijk te vervalsen. Gebruikers hebben volledige controle over hun betalingen en kunnen geen niet-goedgekeurde kosten in rekening gebracht worden, zoals bij creditcardfraude. Bitcoin transacties zijn onomkeerbaar en immuun voor frauduleuze terugboekingen. Bitcoin maakt het mogelijk om geld te beveiligen tegen diefstal en verlies met behulp van zeer sterke en handige mechanismen zoals back-ups, encryptie, en meerdere handtekeningen.</p>
+            <p>Er zijn een aantal bezorgdheden geuit over het feit dat Bitcoin aantrekkelijk zou zijn voor criminelen omdat het kan worden gebruikt voor privé- en onomkeerbare betalingen. Deze kenmerken zijn echter ook al aanwezig als het gaat om contant geld en bankoverschrijvingen, twee gevestigde en veelvuldig gebruikte manieren. Het gebruik van Bitcoin zal ongetwijfeld worden onderworpen aan gelijksoortige regels die al binnen bestaande financiële systemen zijn geïmplementeerd. Daarnaast zal Bitcoin strafrechtelijke onderzoeken niet tegenhouden. Over het algemeen is het normaal dat belangrijke doorbraken als controversieel worden gezien voordat de voordelen hiervan goed zijn begrepen. Het internet is een goed voorbeeld hiervan.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin een luchtbel?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Een snelle prijsstijging houdt geen luchtbel in. Een kunstmatige overwaardering die een plotselinge neerwaartse correctie tot gevolg heeft, is wel een luchtbel. Keuzes gebaseerd op individuele menselijke acties door honderdduizenden marktdeelnemers is de reden dat de bitcoin-prijs schommelt, omdat de markt prijsontdekking zoekt. Redenen voor veranderingen in sentiment kunnen zijn: een vertrouwensverlies in Bitcoin, een groot verschil tussen waarde en prijs niet gebaseerd op de basis van de Bitcoin-economie, een grotere aanwezigheid in de pers waardoor speculatieve vraag wordt gestimuleerd, angst voor onzekerheid en ouderwetse irrationele overdaad en hebberigheid.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Waarom hebben bitcoins waarde?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoins hebben waarde, omdat ze nuttig zijn als geldvorm. Bitcoin heeft de kenmerken van geld (duurzaamheid, draagbaarheid, vervangbaar goed, schaarste, deelbaarheid en herkenbaarheid) gebaseerd op de kenmerken van wiskunde, in plaats van te vertrouwen op fysieke kenmerken (zoals goud en zilver) of vertrouwen in centrale autoriteiten (zoals fiduciaire valuta). Kortom: Bitcoin wordt wiskundig gesteund. Met al deze attributen zijn vertrouwen en aanwending alles wat nodig is voor een geldvorm om waarde te houden. In het geval van Bitcoin kan dit worden gemeten aan de hand van de groeiende basis van gebruikers, verkopers en startende ondernemingen. Net als bij alle valuta komt de waarde van bitcoins uitsluitend en rechtstreeks van mensen die welwillend zijn om deze als betaalmiddel te accepteren.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin ponzifraude?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Ponzifraude is een frauduleuze beleggingsoperatie dat investeerders hun opbrengst betaalt met hun eigen geld, of het geld van latere investeerders, in plaats van winst verdiend door de eigenaren van het bedrijf. Ponzifraudes zijn zo gemaakt dat ze in elkaar storten wanneer er niet genoeg nieuwe investeerders zijn, ten koste van de nieuwste investeerders.</p>
+            <p>Bitcoin is een open source softwareproject zonder centrale autoriteit, met als gevolg dat niemand zich in een zodanige positie bevindt om frauduleuze representaties van investeringsopbrengsten te maken. Net als andere grote valuta's als goud, de Amerikaanse dollar, de Euro, de Yen, etc. is er geen gegarandeerde aankoopkracht en beweegt de wisselkoers zonder beperkingen. Dit leidt tot volatiliteit waardoor eigenaars van bitcoins op onvoorspelbare wijze geld kunnen verdienen of verliezen. Speculatie daargelaten: Bitcoin is ook een betaalsysteem met nuttige en concurrerende eigenschappen die door duizenden gebruikers en bedrijven worden gebruikt.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Wie heeft Bitcoin bedacht?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is een van de eerste incarnaties van een concept dat "cryptovaluta" heet, voor het eerst beschreven in 1998 door Wei Dai op de cypherpunks-mailinglist. Deze beschrijving suggereerde het idee van een nieuwe geldsoort dat cryptografie in plaats van een centrale autoriteit gebruikt om de creatie en transacties te beheren. In 2009 werd de eerste specificatie en proof-of-concept op een cryptografie-mailinglist gepubliceerd door een lid onder het pseudoniem Satoshi Nakamoto. Tegen het eind van 2010 verliet Satoshi het project, zonder veel over zichzelf te onthullen. De community is sindsdien exponentieel gegroeid met <a href="/nl/ontwikkeling">veel ontwikkelaars</a> die aan Bitcoin werken.</p>
+            <p>De anonimiteit van Satoshi heeft vaak ongegronde bezorgdheden gewekt, vele daarvan zijn gelinkt aan het onbegrip over de opensource-aanpak van Bitcoin. Het Bitcoin-protocol en de software zijn openbaar gepubliceerd, zodat ontwikkelaars van over de hele wereld de code kunnen inzien of hun eigen aangepaste versie van de Bitcoin-software kunnen maken. Net als bij de huidige ontwikkelaars was de invloed van Satoshi beperkt tot de overname van door hem gemaakte wijzigingen door anderen en om die reden had hij de touwtjes van Bitcoin niet in handen. De identiteit van de uitvinder van Bitcoin is daarom vandaag de dag net zo relevant als de identiteit van degene die papier heeft uitgevonden.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kunnen bitcoins hun waarde verliezen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Dat kan. De geschiedenis is bezaaid met munten die niet meer gebruikt worden. Voorbeelden zijn de Duitse Mark <a href="https://en.wikipedia.org/wiki/German_gold_mark"> of meer recent <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">de Zimbabwaanse dollar</a>. Het verdwijnen van deze munten komt in beide gevallen door extreme hyperinflatie die bij Bitcoin niet kan optreden. Andere redenen zijn technische problemen, concurrentie van andere munten, politieke problemen, etc. Als vuistregel kan men stellen dat geen enkele munt absoluut vrij is van technische fouten of moeilijke tijden. Bitcoin heeft een jarenlange bewezen reputatie sinds de oprichting en er is een groot groeipotentieel voor Bitcoin. Niemand kan echter de toekomst voorspellen, ook niet voor Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin volledig virtueel en immaterieel?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is net zo virtueel als de netwerken voor creditcards en internetbankieren die dagelijks worden gebruikt. Bitcoin kan worden gebruikt om online en in fysieke winkels te betalen, net als enige andere vorm van geld. Bitcoins kunnen daarnaast voor een fysieke vorm worden ingewisseld zoals de <a href="https://www.casascius.com/">Casascius-munten</a>, maar betalen met een mobiele telefoon blijft het gemakkelijkst. Bitcoin-saldi worden opgeslagen in een groot gedistribueerd netwerk en kunnen niet frauduleus door anderen worden gewijzigd. Met andere woorden: Bitcoin-gebruikers hebben een exclusieve controle over hun geld en bitcoins kunnen niet zomaar verdwijnen omdat ze virtueel zijn.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Waarom vertrouwen mensen Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Veel van het vertrouwen in Bitcoin komt door het feit dat Bitcoin helemaal geen vertrouwen vereist. Bitcoin is volledig opensource en gedecentraliseerd. Dit betekent dat iedereen altijd toegang heeft tot de volledige broncode. Elke ontwikkelaar ter wereld kan zo precies verifiëren hoe Bitcoin werkt. Alle transacties en bitcoins in omloop kunnen door iedereen transparant en in realtime worden opgevraagd. Alle betalingen kunnen zonder een derde partij worden gemaakt en het hele systeem is beveiligd door zeer kritisch bekeken cryptografische algoritmen die ook voor internetbankieren worden gebruikt. Bitcoin wordt niet door een organisatie of persoon beheerd en het netwerk blijft altijd veilig, zelfs als niet alle gebruikers kunnen worden vertrouwd.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Is Bitcoin anoniem?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin is speciaal ontworpen om de gebruikers in staat te stellen om betalingen met een acceptabel privacyniveau te verzenden en ontvangen, net als enige andere vorm van geld. Bitcoin is echter niet anoniem en kan niet hetzelfde privacyniveau als contant geld bieden. Door het gebruik van Bitcoin wordt er een uitgebreide openbare stempel aangemaakt. Er bestaan <a href="/nl/bescherm-uw-privacy">verschillende mechanismen</a> en er worden er meer ontwikkeld om de privacy van gebruikers te beschermen. Hiervoor moet echter nog wel veel werk worden verzet voordat deze functies op de juiste wijze worden gebruikt door het merendeel van de Bitcoin-gebruikers.</p>
+            <p>Er zijn een aantal bezorgdheden geuit waaruit we opmaken dat mensen kunnen denken dat met Bitcoin privétransacties kunnen worden gebruikt voor illegale doeleinden. Hierbij is echter op te merken dat Bitcoin ongetwijfeld aan gelijksoortige regels zal worden onderworpen die al binnen bestaande financiële systemen zijn geïmplementeerd. Bitcoin kan niet anoniemer zijn dan contant geld en het zal strafrechtelijke onderzoeken in vele gevallen niet tegenhouden. Daarnaast is Bitcoin ontworpen om talloze financiële misdaden te voorkomen.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>Bezoek alstublieft de complete <a href="/en/faq">veel gestelde vragen</a> of de <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wiki</a> om meer te weten te komen over Bitcoin.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -514,14 +608,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/nl/juridisch">Juridisch</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/juridisch">Juridisch</a></li>
 			
-			<li><a href="/nl/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/privacy">Privacy</a></li>
 			
-			<li><a href="/nl/pers">Pers</a></li>
-			<li><a href="/nl/over-ons">Over bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/over-ons">Over bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -530,7 +624,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -552,13 +647,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -569,7 +666,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

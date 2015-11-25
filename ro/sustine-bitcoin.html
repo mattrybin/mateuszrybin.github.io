@@ -10,15 +10,29 @@
 <title>Susţine Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ro.png"><strong>Română</strong>
+          <img src="/img/flags/ro.png"><strong>Română</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">Întrebări Frecvente</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Susţine Bitcoin</h1>
-<p class="summarytxt">Bitcoin este un protocol conceput într-o comunitate mică, ce a crescut foarte repede de atunci. Sunt multe lucruri pe care le poţi face pentru a ajută Bitcoin să devină mai popular şi mai bun.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Susţine Bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin este un protocol conceput într-o comunitate mică, ce a crescut foarte repede de atunci. Sunt multe lucruri pe care le poţi face pentru a ajută Bitcoin să devină mai popular şi mai bun.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Utilizează Bitcoin</h2>
-<p><a href="/ro/notiuni-de-baza">Să foloseşti Bitcoin</a> este primul lucru pe care poţi să-l faci pentru a sprijini Bitcoin. Sunt probabil destule motive prin care-ţi va face viaţa mai uşoară. Poţi accepta plata în Bitcoin şi să faci plăţi folosind Bitcoin.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Utilizează Bitcoin</h3>
+      <p><a href="/ro/notiuni-de-baza">Să foloseşti Bitcoin</a> este primul lucru pe care poţi să-l faci pentru a sprijini Bitcoin. Sunt probabil destule motive prin care-ţi va face viaţa mai uşoară. Poţi accepta plata în Bitcoin şi să faci plăţi folosind Bitcoin.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Fă parte din reţea</h2>
-<p>Dacă ai o conexiune bună la Internet, poţi întări reţea Bitcoin prin menţinerea deschisă a unui software de nod întreg pe calculatorul sau serverul tău cu portul 8333 deschis. Nodurile întregi securizează şi transmit toate tranzacţiile.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Fă parte din reţea</h3>
+      <p>Dacă ai o conexiune bună la Internet, poţi întări reţea Bitcoin prin menţinerea deschisă a unui software de nod întreg pe calculatorul sau serverul tău cu portul 8333 deschis. Nodurile întregi securizează şi transmit toate tranzacţiile.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Minerit</h2>
-<p>Poţi începe să <a href="http://www.bitcoinmining.com/">minereşti bitcoini</a> pentru a ajuta procesarea tranzacţiilor. Pentru a proteja reţeaua, ar trebui să te alături <a href="http://mempool.info/pools">pool-urilor mai mici de minerit</a> şi să preferi pool-urile descentralizate cum ar fi P2Pool sau <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pool-uri</a> cu suport getblocktemplate(GBT).</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Minerit</h3>
+      <p>Poţi începe să <a href="http://www.bitcoinmining.com/">minereşti bitcoini</a> pentru a ajuta procesarea tranzacţiilor. Pentru a proteja reţeaua, ar trebui să te alături <a href="http://mempool.info/pools">pool-urilor mai mici de minerit</a> şi să preferi pool-urile descentralizate cum ar fi P2Pool sau <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pool-uri</a> cu suport getblocktemplate(GBT).</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Traduceri</h2>
-<p>Poţi ajuta la disponibilitatea Bitcoin prin a traduce şi a îmbunătăţi traducerile existente din cadrul ecosistemului Bitcoin. Alege un proiect unde ai vrea să contribui.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Dezvoltare</h2>
-<p>Bitcoin este un software gratis. Dacă eşti un programator, îţi poţi folosi super-puterile pentru a face bine şi a <a href="/ro/dezvoltare">îmbunătăţi Bitcoin</a>. Sau poţi construi servicii sau site-uri uimitoare ce folosesc Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Traduceri</h3>
+      <p>Poţi ajuta la disponibilitatea Bitcoin prin a traduce şi a îmbunătăţi traducerile existente din cadrul ecosistemului Bitcoin. Alege un proiect unde ai vrea să contribui.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Donaţii</h2>
-<p>Cea mai simplă cale de a ajuta este de a <a href="https://bitcoinfoundation.org/about/donate/">dona către Fundaţia Bitcoin</a>. Sau poţi ajuta prin a finanţa direct orice proiect legat de Bitcoin care crezi că va fi util în viitor.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Dezvoltare</h3>
+      <p>Bitcoin este un software gratis. Dacă eşti un programator, îţi poţi folosi super-puterile pentru a face bine şi a <a href="/ro/dezvoltare">îmbunătăţi Bitcoin</a>. Sau poţi construi servicii sau site-uri uimitoare ce folosesc Bitcoin.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organizaţii</h2>
-<p><a href="https://bitcoinfoundation.org/">Fundaţia Bitcoin</a> şi multe alte <a href="/ro/comunitate#non-profit">organizaţii non-profit</a> sunt dedicate protejării şi promovării Bitcoin. Poţi ajuta aceste grupuri prin a deveni membru şi a-i ajuta cu proiectele, discuţiile şi evenimentele lor.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Donaţii</h3>
+      <p>Cea mai simplă cale de a ajuta este de a <a href="https://bitcoinfoundation.org/about/donate/">dona către Fundaţia Bitcoin</a>. Sau poţi ajuta prin a finanţa direct orice proiect legat de Bitcoin care crezi că va fi util în viitor.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Dă vestea mai departe</h2>
-<p>Vorbeşte despre Bitcoin cu persoane interesate. Scrie despre asta pe blogul tău. Menţionează în magazinele tale preferate că vrei să plăteşti în Bitcoin. Ajută prin a menţine la zi <a href="http://usebitcoins.info/">lista comercianţilor</a>. Sau poţi fi creativ şi să-ţi faci un tricou interesant cu Bitcoin .</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organizaţii</h3>
+      <p><a href="https://bitcoinfoundation.org/">Fundaţia Bitcoin</a> şi multe alte <a href="/ro/comunitate#non-profit">organizaţii non-profit</a> sunt dedicate protejării şi promovării Bitcoin. Poţi ajuta aceste grupuri prin a deveni membru şi a-i ajuta cu proiectele, discuţiile şi evenimentele lor.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Documentaţie</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> şi <a href="https://en.bitcoin.it/">Bitcoin wiki</a> oferă documentaţie folositoare şi îmbunătăţim în permanență informaţia ce o conţin. Poţi ajuta la îmbunătățirea acestor resurse şi a menţinerii lor la zi.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Dă vestea mai departe</h3>
+      <p>Vorbeşte despre Bitcoin cu persoane interesate. Scrie despre asta pe blogul tău. Menţionează în magazinele tale preferate că vrei să plăteşti în Bitcoin. Ajută prin a menţine la zi <a href="http://usebitcoins.info/">lista comercianţilor</a>. Sau poţi fi creativ şi să-ţi faci un tricou interesant cu Bitcoin .</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Întâlneşte comunităţile</h2>
-<p>Te poţi alătura <a href="/ro/comunitate">comunităţilor</a> Bitcoin şi să vorbeşti cu alţi entuziaşti Bitcoin. Poţi învăţa despre Bitcoin în fiecare zi, să ajuţi utilizatori noi şi să te implici în proiecte interesante.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Documentaţie</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> şi <a href="https://en.bitcoin.it/">Bitcoin wiki</a> oferă documentaţie folositoare şi îmbunătăţim în permanență informaţia ce o conţin. Poţi ajuta la îmbunătățirea acestor resurse şi a menţinerii lor la zi.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Întâlneşte comunităţile</h3>
+      <p>Te poţi alătura <a href="/ro/comunitate">comunităţilor</a> Bitcoin şi să vorbeşti cu alţi entuziaşti Bitcoin. Poţi învăţa despre Bitcoin în fiecare zi, să ajuţi utilizatori noi şi să te implici în proiecte interesante.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ro/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/legal">Legal</a></li>
 			
-			<li><a href="/ro/confidentialitate">Confidenţialitate</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/confidentialitate">Confidenţialitate</a></li>
 			
-			<li><a href="/ro/presa">Presă</a></li>
-			<li><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/presa">Presă</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

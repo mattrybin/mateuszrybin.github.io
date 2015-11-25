@@ -10,15 +10,29 @@
 <title>Bitcoin voor particulieren - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/nl.png"><strong>Nederlands</strong>
+          <img src="/img/flags/nl.png"><strong>Nederlands</strong>
 				</div>
 			</a>
 		</div>
@@ -323,58 +341,62 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_individuals">
-  <h1 class="content_individuals--title">Bitcoin voor particulieren</h1>
-  <h2 class="content_individuals--subtitle">Bitcoin is de eenvoudigste manier om geld uit te wisselen tegen zeer lage kosten.</h2>
+        <div class="content_standard">
+  <h1 class="content_standard--title">Bitcoin voor particulieren</h1>
+  <h2 class="content_standard--subtitle">Bitcoin is de eenvoudigste manier om geld uit te wisselen tegen zeer lage kosten.</h2>
 
-  <ul class="content_individuals--list">
-    <li class="content_individuals--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_mobile.svg" alt="Icon"/>
       <h3>Gemakkelijke mobiele betalingen</h3>
       <p>Met Bitcoin op mobiele telefoons kunt u in twee eenvoudige stappen betalen via scan-and-pay. U hoeft u niet aan te melden, kaarten in te steken of pincodes in te voeren. Om Bitcoin-betalingen te ontvangen, hoeft u alleen een QR-code te tonen in de Bitcoin portemonnee-app op uw mobiel en die te laten scannen door degene die geld naar u wil overmaken. U kunt ook uw telefoons tegen elkaar houden (als u telefoons met NFC-radiotechnologie hebt).</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lock.svg" alt="Icon"/>
       <h3>Een veilig gevoel en controle over uw geld</h3>
       <p>De cryptografie die Bitcoin-transacties beveiligt is net zo sterk als die die het leger gebruikt. Niemand kan namens u betalingen verrichten of uw geld incasseren. Als u de noodzakelijke stappen onderneemt om <a href="/nl/beveilig-uw-portemonnee">uw portemonnee te beschermen</a>, biedt Bitcoin u het beheer van uw geld en bescherming tegen allerlei soorten fraude.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_simple.svg" alt="Icon"/>
       <h3>Werkt altijd en overal</h3>
       <p>Net als met e-mail hoeft niet iedereen hetzelfde programma of dezelfde provider te gebruiken. Ze kunnen gewoon de systemen gebruiken die ze het makkelijkst vinden. Alles werkt met elkaar samen, want het is allemaal gebaseerd op dezelfde open technologie. En het Bitcoin-netwerk slaapt nooit, zelfs niet op zon- en feestdagen!</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>Snelle internationale betalingen</h3>
       <p>Bitcoins kunnen worden overgemaakt van Afrika naar Canada in tien minuten. Er zit geen bank tussen, dus er zijn geen vertragingen, geen hoge kosten en geen geblokkeerde transacties. Er is geen verschil tussen een betaling aan uw buurman of aan uw familie aan de andere kant van de wereld.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>Geen of lage verwerkingskosten</h3>
       <p>Met Bitcoin kunt u betalingen tegen zeer lage kosten verzenden en ontvangen. Met uitzondering van speciale gevallen als zeer kleine betalingen, worden er geen kosten in rekening gebracht. Het wordt echter aanbevolen om een ​​hogere vrijwillige vergoeding te betalen voor een snellere bevestiging van uw transactie en om de mensen achter het Bitcoin-netwerk te vergoeden.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
       <h3>Bescherm uw identiteit</h3>
       <p>Met Bitcoin bestaat er geen creditcardnummer dat iemand kan verzamelen om zich als u voor te doen. Het is zelfs mogelijk om een betaling te verrichten zonder uw identiteit te onthullen, net als met echt geld. U dient er echter op te letten dat er wel iets moet worden gedaan om <a href="/nl/bescherm-uw-privacy">uw privacy te beschermen</a>.</p>
     </li>
-    
-    <div class="content_individuals--action">
-      <a class="content_individuals--action--text" href="/nl/aan-de-slag">
-        Ga aan de slag met Bitcoin
-      </a>
+
+    <div class="content_standard--action">
+      <div class="content_standard--action--wrap">
+        <a class="content_standard--action--text" href="/nl/aan-de-slag">
+          Ga aan de slag met Bitcoin
+        </a>
+      </div>
     </div>
   </ul>
 </div>
+
       </div>
     </div>
 
@@ -384,14 +406,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/nl/juridisch">Juridisch</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/juridisch">Juridisch</a></li>
 			
-			<li><a href="/nl/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/privacy">Privacy</a></li>
 			
-			<li><a href="/nl/pers">Pers</a></li>
-			<li><a href="/nl/over-ons">Over bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/over-ons">Over bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -400,7 +422,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -422,13 +445,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -439,7 +464,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

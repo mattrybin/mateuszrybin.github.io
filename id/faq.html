@@ -10,15 +10,29 @@
 <title>Pertanyaan yang Sering Diajukan - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
+          <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
 				</div>
 			</a>
 		</div>
@@ -323,284 +341,553 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Pertanyaan yang Sering Diajukan</h1>
-<p class="summary">Cari jawaban untuk berbagai pertanyaan dan mitos tentang Bitcoin.</p>
+        <div class="content_faq">
+  <h1 class="content_faq--title">Pertanyaan yang Sering Diajukan</h1>
+  <h2 class="content_faq--subtitle">Cari jawaban untuk berbagai pertanyaan dan mitos tentang Bitcoin.</h2>
 
-<h2 id="table-of-contents">Daftar Isi</h2>
+  <div class="content_faq--faq">
+    <div class="content_fag--faq--title">
+      <h2>FAQ</h2>
+    </div>
 
-<div class="index">
-<ul>
-<li><a href="#umum">Umum</a></li>
-<ul>
-  <li><a href="#apa-itu-bitcoin">Apa itu Bitcoin?</a></li>
-  <li><a href="#siapa-yang-menciptakan-bitcoin">Siapa yang menciptakan Bitcoin?</a></li>
-  <li><a href="#siapa-yang-mengontrol-jaringan-bitcoin">Siapa yang mengendalikan jaringan Bitcoin?</a></li>
-  <li><a href="#bagaimana-cara-kerja-bitcoin">Bagaimana cara kerja Bitcoin?</a></li>
-  <li><a href="#apakah-bitcoin-digunakan-oleh-banyak-orang">Apakah Bitcoin benar-benar digunakan oleh banyak orang?</a></li>
-  <li><a href="#bagaimana-seseorang-memperoleh-bitcoin">Bagaimana cara mendapatkan bitcoin?</a></li>
-  <li><a href="#sulitkah-melakukan-pembayaran-menggunakan-bitcoin">Sulitkah melakukan pembayaran menggunakan Bitcoin?</a></li>
-  <li><a href="#apa-keuntungan-menggunakan-bitcoin">Apa keuntungan menggunakan Bitcoin?</a></li>
-  <li><a href="#apa-kerugian-menggunakan-bitcoin">Apa kerugian menggunakan Bitcoin?</a></li>
-  <li><a href="#mengapa-orang-mempercayai-bitcoin">Mengapa banyak orang percaya dengan Bitcoin?</a></li>
-  <li><a href="#bisakah-saya-mendapatkan-penghasilan-dengan-bitcoin">Bisakah saya mendapatkan penghasilan dengan Bitcoin?</a></li>
-  <li><a href="#apakah-bitcoin-sepenuhnya-virtual-dan-tidak-berwujud">Apakah Bitcoin sepenuhnya virtual dan tidak berwujud?</a></li>
-  <li><a href="#apakah-bitcoin-anonim">Apakah Bitcoin anonim?</a></li>
-  <li><a href="#apa-yang-terjadi-saat-bitcoin-hilang">Apa yang terjadi saat bitcoin hilang?</a></li>
-  <li><a href="#dapatkah-bitcoin-tumbuh-menjadi-jaringan-pembayaran-yang-utama">Dapatkah Bitcoin tumbuh menjadi jaringan pembayaran yang utama?</a></li>
-</ul>
-<li><a href="#sah">Sah</a></li>
-<ul>
-  <li><a href="#apakah-bitcoin-sah">Apakah Bitcoin sah?</a></li>
-  <li><a href="#apakah-bitcoin-bisa-digunakan-untuk-aktivitas-ilegal">Apakah Bitcoin bisa digunakan untuk aktivitas ilegal?</a></li>
-  <li><a href="#bisakah-bitcoin-diregulasi">Bisakah Bitcoin diregulasi?</a></li>
-  <li><a href="#bagaimana-dengan-bitcoin-dan-pajak">Bagaimana dengan Bitcoin dan pajak?</a></li>
-  <li><a href="#bagaimana-dengan-bitcoin-dan-perlindungan-konsumen">Bagaimana dengan Bitcoin dan perlindungan konsumen?</a></li>
-</ul>
-<li><a href="#ekonomi">Ekonomi</a></li>
-<ul>
-  <li><a href="#bagaimana-bitcoin-dibuat">Bagaimana bitcoin dibuat?</a></li>
-  <li><a href="#mengapa-bitcoin-memiliki-nilai">Mengapa bitcoin memiliki nilai?</a></li>
-  <li><a href="#apa-yang-menentukan-harga-bitcoin">Apa yang menentukan harga bitcoin?</a></li>
-  <li><a href="#bisakah-bitcoin-menjadi-tidak-berharga">Bisakah bitcoin menjadi tidak berharga?</a></li>
-  <li><a href="#apakah-bitcoin-merupakan-fenomena-gelembung">Apakah Bitcoin merupakan fenomena gelembung? </a></li>
-  <li><a href="#apakah-bitcoin-merupakan-skema-ponzi">Apakah Bitcoin merupakan skema Ponzi?</a></li>
-  <li><a href="#bukankah-bitcoin-menguntungkan-pengguna-awal-secara-tidak-adil">Bukankah Bitcoin menguntungkan pengguna awal secara tidak adil?</a></li>
-  <li><a href="#tidakkah-jumlah-bitcoin-yang-terbatas-menjadi-kendala">Tidakkah jumlah bitcoin yang terbatas menjadi kendala?</a></li>
-  <li><a href="#akankah-bitcoin-jatuh-dalam-spiral-deflasi">Akankah Bitcoin jatuh dalam spiral deflasi?</a></li>
-  <li><a href="#bukankah-spekulasi-dan-ketidakpastian-merupakan-masalah-bagi-bitcoin">Bukankah spekulasi dan ketidakpastian merupakan masalah bagi Bitcoin?                        </a></li>
-  <li><a href="#bagaimana-jika-seseorang-membeli-semua-bitcoin-yang-ada">Bagaimana jika seseorang membeli semua bitcoin yang ada?</a></li>
-  <li><a href="#bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik">Bagaimana jika seseorang menciptakan mata uang digital yang lebih baik?</a></li>
-</ul>
-<li><a href="#transaksi">Transaksi</a></li>
-<ul>
-  <li><a href="#mengapa-saya-harus-menunggu-10-menit">Mengapa saya harus menunggu 10 menit?</a></li>
-  <li><a href="#berapa-biaya-transaksinya">Berapa biaya transaksinya?</a></li>
-  <li><a href="#apa-yang-terjadi-jika-saya-menerima-bitcoin-ketika-komputer-saya-dalam-keadaan-mati">Apakah yang terjadi jika saya menerima sebuah bitcoin ketika komputer saya dalam keadaan mati?</a></li>
-  <li><a href="#apa-yang-dimaksud-dengan-sinkronisasi-dan-mengapa-butuh-waktu-lama-sekali">Apa yang dimaksud dengan "sinkronisasi" dan mengapa butuh waktu lama sekali?</a></li>
-</ul>
-<li><a href="#penambangan">Penambangan</a></li>
-<ul>
-  <li><a href="#apa-itu-penambangan-bitcoin">Apa itu penambangan Bitcoin?</a></li>
-  <li><a href="#bagaimana-cara-kerja-penambangan-bitcoin">Bagaimana cara kerja penambangan Bitcoin?</a></li>
-  <li><a href="#bukankah-penambangan-bitcoin-menyia-nyiakan-energi">Bukankah penambangan Bitcoin menyia-nyiakan energi?</a></li>
-  <li><a href="#bagaimana-menambang-bisa-membantu-mengamankan-bitcoin">Bagaimana penambangan membantu mengamankan Bitcoin?</a></li>
-  <li><a href="#apa-yang-saya-perlukan-untuk-mulai-menambang">Apa yang saya butuhkan untuk mulai menambang?</a></li>
-</ul>
-<li><a href="#keamanan">Keamanan</a></li>
-<ul>
-  <li><a href="#apakah-bitcoin-aman">Apakah Bitcoin aman?</a></li>
-  <li><a href="#pernahkah-bitcoin-diretas-pada-masa-lalu">Pernahkah Bitcoin diretas pada masa lalu?</a></li>
-  <li><a href="#bisakah-pengguna-berkolusi-melawan-bitcoin">Bisakah pengguna berkolusi melawan Bitcoin?</a></li>
-  <li><a href="#apakah-bitcoin-rentan-terhadap-komputerisasi-kuantum">Apakah Bitcoin rentan terhadap komputerisasi kuantum?</a></li>
-</ul>
-<li><a href="#bantuan">Bantuan</a></li>
-<ul>
-  <li><a href="#bantuan-lebih-lanjut">Saya ingin mempelajari lebih lanjut. Di mana saya bisa mendapatkan bantuan?</a></li>
-</ul>
-</ul>
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="umum" href="#umum">Umum</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-itu-bitcoin" href="#apa-itu-bitcoin">Apa itu Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin adalah jaringan konsensus yang memungkinkan sistem pembayaran baru dan uang yang sepenuhnya berbentuk digital. Bitcoin merupakan jaringan pembayaran peer-to-peer desentralisasi pertama yang dikontrol sepenuhnya oleh penggunanya tanpa ada otoritas sentral ataupun perantara. Dari sudut pandang pengguna, Bitcoin serupa seperti uang tunai di dunia internet. Bitcoin juga dapat dipandang sebagai <a href="http://financialcryptography.com/mt/archives/001325.html">sistem pembukuan tiga pencatatan</a> paling menonjol yang ada saat ini.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="siapa-yang-menciptakan-bitcoin" href="#siapa-yang-menciptakan-bitcoin">Siapa yang menciptakan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin adalah implementasi pertama tentang konsep yang bernama "cryptocurrency", yang pertama kali dijelaskan pada tahun 1998 oleh Wei Dai dalam milis cypherpunks, menyarankan ide tentang bentuk baru uang yang menggunakan kriptografi untuk mengontrol pembuatan dan transaksi, alih-alih menggunakan otoritas terpusat. Spesifikasi Bitcoin pertama dan bukti konsep dipublikasikan pada tahun 2009 dalam sebuah milis kriptografi oleh Satoshi Nakamoto. Satoshi meninggalkan proyek ini pada akhir tahun 2010 tanpa memberitahukan banyak tentang dirinya. Komunitas Bitcoin berkembang pesat seiring banyaknya <a href="/id/pengembangan">pengembang</a> yang mengerjakan Bitcoin.</p>
+            <p>Anonimitas Satoshi seringkali menimbulkan perhatian yang salah, kebanyakan berhubungan dengan salah paham atas sifat Bitcoin yang berbasis sumber terbuka. Protokol dan perangkat lunak BItcoin dipublikasikan secara terbuka dan pengembang dari seluruh dunia dapat meninjau kode atau membuat sendiri perangkat lunak Bitcoin yang telah dimodifikasi versi mereka. Sama halnya dengan pengembang saat ini, pengaruh Satoshi terbatas pada beberapa perubahan yang ia ciptakan dan diadopsi oleh pengembang lain, dan dia tidak mengontrol Bitcoin. Dengan demikian, mencari identitas penemu Bitcoin saat ini sama saja seperti mencari identitas penemu surat kabar.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="siapa-yang-mengontrol-jaringan-bitcoin" href="#siapa-yang-mengontrol-jaringan-bitcoin">Siapa yang mengendalikan jaringan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Tidak ada yang memiliki jaringan Bitcoin, sama seperti tidak ada yang memiliki teknologi pengoperasian email. Bitcoin dikendalikan oleh semua penggunanya di seluruh dunia. Pengembang memang dapat meningkatkan perangkat lunak Bitcoin, tetapi mereka tidak bisa memaksakan perubahan dalam protokol Bitcoin karena semua pengguna bebas memilih perangkat lunak dan versi yang ingin mereka gunakan. Agar dapat tetap kompatibel satu sama lain, semua pengguna perlu menggunakan perangkat lunak yang mengikuti peraturan yang sama. Bitcoin hanya bisa bekerja dengan baik bila ada konsensus penuh diantara semua penggunanya. Dengan demikian, semua pengguna dan pengembang memiliki insentif yang kuat untuk melindungi konsensus ini.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="bagaimana-cara-kerja-bitcoin" href="#bagaimana-cara-kerja-bitcoin">Bagaimana cara kerja Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Dari sudut pandang pengguna, Bitcoin tidak lebih dari aplikasi ponsel atau program komputer yang menyediakan dompet Bitcoin dan memungkinkan pengguna untuk mengirim dan menerima bitcoin. Inilah cara Bitcoin bekerja untuk sebagian besar pengguna.</p>
+            <p>Di belakang layar, jaringan Bitcoin membagikan sebuah catatan publik yang disebut "rantai-blok". Catatan ini berisi semua transaksi yang pernah diproses, memungkinkan komputer pengguna untuk memverifikasi kebsahan tiap transaksi. Keaslian tiap transaksi dilindungi oleh tanda tangan digital yang berhubungan dengan alamat pengirim, memungkinkan semua pengguna memiliki kontrol penuh atas pengiriman bitcoin dari alamat Bitcoin mereka. Sebagai tambahan, semua orang dapat memroses transaksi menggunakan kekuatan penghitungan perangkat keras khusus dan mendapatkan hadiah dalam bentuk bitcoin untuk layanan ini. Kegiatan ini seringkali disebut dengan "penambangan". Untuk mempelajari lebih lanjut mengenai Bitcoin, Anda dapat menuju <a href="/id/cara-kerja">halaman khusus</a> dan <a href="/bitcoin.pdf">surat kabar asli</a>.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="apakah-bitcoin-digunakan-oleh-banyak-orang" href="#apakah-bitcoin-digunakan-oleh-banyak-orang">Apakah Bitcoin benar-benar digunakan oleh banyak orang?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ya. Ada <a href="http://usebitcoins.info/">banyak bisnis</a> dan individu yang menggunakan Bitcoin. Termasuk bisnis fisik di dunia nyata seperti restoran, apartemen, firma hukum, dan juga layanan online terkenal seperti Namecheap, WordPress, Reddit, dan Flattr. Meskipun Bitcoin termasuk fenomena baru, namun berkembang sangat pesat. Pada akhir Agustus 2013, <a href="https://bitcoincharts.com/bitcoin/">nilai total semua bitcoin yang beredar</a> melebihi 1,5 milyar dolar AS, dengan transaksi pertukaran bitcoin senilai jutaan dolar dilakukan setiap hartinya.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="bagaimana-seseorang-memperoleh-bitcoin" href="#bagaimana-seseorang-memperoleh-bitcoin">Bagaimana cara mendapatkan bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li>Sebagai pembayaran untuk barang dan jasa.</li>
+              <li>Beli bitcoin lewat <a href="http://howtobuybitcoins.info">penukaran Bitcoin</a>.</li>
+              <li>Bertukar bitcoin dengan <a href="https://localbitcoins.com/">seseorang di dekat Anda</a>.</li>
+              <li>Dapatkan bitcoin melalui cara <a href="http://www.bitcoinmining.com/">menambang</a> yang kompetitif.</li>
+            </ul>
+            <p>Meskipun masih mungkin untuk menemukan individu yang berniat menjual bitcoin untuk ditukar dengan pembayaran kartu kredit ataupun PayPal, sebagian besar transaksi tidak mengizinkan pembayaran melalui metode-metode tersebut. Hal ini dikarenakan kasus-kasus di mana seseorang membeli bitcoin menggunakan PayPal, lalu membatalkan separuh transaksi mereka. Kasus seperti ini biasanya disebut "chargeback".</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="sulitkah-melakukan-pembayaran-menggunakan-bitcoin" href="#sulitkah-melakukan-pembayaran-menggunakan-bitcoin">Sulitkah melakukan pembayaran menggunakan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Pembayaran dengan Bitcoin lebih mudah dibandingkan dengan kartu kredit maupun debit, dan dapat diterima tanpa akun penjual. Pembayaran dilakukan melalui aplikasi dompet, baik di komputer maupun ponsel Anda, dengan memasukkan alamat penerima, jumlah pembayaran, dan tekan kirim. Untuk mempermudah memasukkan alamat penerima, banyak dompet kini dapat membaca alamat dengan memindai kode QR atau menyentuhkan dua ponsel bersamaan dengan teknologi NFC.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-keuntungan-menggunakan-bitcoin" href="#apa-keuntungan-menggunakan-bitcoin">Apa keuntungan menggunakan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li><em><b>Kebebasan Pembayaran</b></em> - Memungkinkan Anda untuk mengirim dan menerima uang secara instan di manapun dan kapanpun. Tidak ada libur bank. Tidak ada batas negara. Tidak ada batasan yang diberlakukan. Bitcoin memberikan penggunanya kontrol penuh atas uang mereka.</li>
+              <li><em><b>Biaya sangat rendah</b></em> - Pembayaran Bitcoin saat ini diproses tanpa biaya atau dengan biaya yang sangat rendah. Pengguna dapat memasukkan biaya dalam transaksi untuk memperoleh pemrosesan prioritas, sehingga mendapat konfirmasi transaksi yang lebih cepat oleh jaringan. Sebagai tambahan, prosesor penjual ada untuk membantu penjual dalam pemrosesan transaksi, mengubah bitcoin ke dalam mata uang fiat konvensional, dan memasukkan uang langsung ke rekening bank penjual setiap harinya. Karena semua layanan ini berbasis Bitcoin, maka biaya yang diperlukan jauh lebih rendah dibanding jaringan kartu kredit maupun PayPal.</li>
+              <li><em><b>Rendah risiko bagi penjual</b></em> - Transaksi Bitcoin sangat aman, tidak bisa dibatalkan, dan tidak mengandung informasi pribadi atau sensitif dari pelanggan. Hal ini melindungi penjual dari kerugian akibat penipuan atau kecurangan chargeback, serta tidak perlu penyesuaian PCI. Penjual dapat dengan mudah berekspansi ke pasar baru di mana kartu kredit tidak tersedia dan tingkat penipuan sangat tinggi. Hasil akhir dari Bitcoin adalah biaya yang lebih rendah, pasar yang lebih luas, dan pengeluaran administratif yang lebih sedikit,</li>
+              <li><em><b>Keamanan dan kontrol</b></em> - Pengguna Bitcoin memiliki kontrol penuh atas transaksi mereka; tidak mungkin bagi penjual untuk membuat tagihan yang tidak diinginkan ataupun diperhatikan sebagaimana yang bisa terjadi dengan metode pembayaran lainnya. Pembayaran dengan Bitcoin bisa dibuat tanpa menyertakan identintas pribadi untuk proses pembayarannya. Hal ini memberikan perlindungan yang kuat dari para pencuri identitas. Pengguna Bitcoin juga bisa melindungi uang mereka dengan pencadangan dan enskripsi.</li>
+              <li><em><b>Transparan dan netral</b></em> - <a href="https://www.biteasy.com/">Semua informasi</a> terkait suplai uang Bitcoin telah tersedia dalam rantai-blok bagi siapa saja yang ingin memverifikasi atau menggunakannya secara waktu-nyata. Tidak ada individu ataupun organisasi yang dapat mengontrol atau memanipulasi protokol Bitcoin karena sangat aman secara kriptografis. Hal ini memungkinkan inti Bitcoin untuk dapat sepenuhnya netral, transparan, dan dapat diprediksi.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-kerugian-menggunakan-bitcoin" href="#apa-kerugian-menggunakan-bitcoin">Apa kerugian menggunakan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <ul>
+             <li><em><b>Tingkat penerimaan</b></em> - Banyak orang masih belum menyadari keberadaan Bitcoin. Setiap hari, makin banyak bisnis yang menerima bitcoin karena mereka menginginkan keuntungan dari penggunaan bitcoin, namun tetap saja daftar pengguna masih sedikit dan perlu bertumbuh untuk mendapat keuntungan dari <a href="https://en.wikipedia.org/wiki/Network_effect">efek jaringan</a>.</li>
+             <li><em><b>Volatilitas</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Nilai total</a> dari bitcoin yang beredar dan jumlah bisnis yang menggunakan Bitcoin masih sangat kecil dibanding yang semestinya. Karena itu, acara-acara kecil, perdagangan, ataupun aktivitas bisnis dapat secara signifikan mempengaruhi harga bitcoin. Secara teori, volatilitas ini akan berkurang seiring berkembangnya pasar dan teknologi Bitcoin. Sebelumnya tidak pernah ada mata uang yang diciptakan sendiri, sehingga sangat sulit (dan menarik) untuk membayangkan perkembangan apa yang akan terjadi selanjutnya.</li>
+             <li><em><b>Pengembangan yang sedang berlangsung</b></em> - Perangkat lunak Bitcoin masih dalam versi beta dengan banyak fitur tidak lengkap yang masih dikembangkan secara aktif. Perangkat, fitur, dan layanan baru tengah dikembangkan untuk membuat Bitcoin lebih aman dan mudah diakses publik. Beberapa pengembangan ini masih belum siap untuk semua orang. Sebagian besar bisnis Bitcoin masih tergolong baru dan belum menawarkan asuransi. Secara umum, Bitcoin masih dalam proses pendewasaan.</li>
+           </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="mengapa-orang-mempercayai-bitcoin" href="#mengapa-orang-mempercayai-bitcoin">Mengapa banyak orang percaya dengan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Kebanyakan kepercayaan pada Bitcoin datang dari fakta bahwa Bitcoin tidak memerlukan kepercayaan sama sekali. Bitcoin sepenuhnya berbasis sumber-terbuka dan terdesentralisasi. Ini berarti setiap orang memiliki akses ke seluruh kode sumber setiap saat. Semua pengembang di dunia dapat memverifikasi bagaimana tepatnya cara kerja Bitcoin. Semua transaksi dan bitcoin yang diterbitkan dapat dilihat secara transparan dan waktu-nyata oleh siapa saja. Semua pembayaran dapat dilakukan tanpa tergantung pada pihak ketiga dan seluruh sistem dilindungi oleh algoritma kriptografi peer-review seperti yang digunakan dalam perbankan online. Tidak ada organisasi ataupun individu yang dapat mengontrol Bitcoin, dan jaringan tetap aman meskipun tidak semua pengguna dapat dipercaya.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bisakah-saya-mendapatkan-penghasilan-dengan-bitcoin" href="#bisakah-saya-mendapatkan-penghasilan-dengan-bitcoin">Bisakah saya mendapatkan penghasilan dengan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Anda sebaiknya jangan berharap untuk menjadi kaya dengan Bitcoin atau dengan kemunculan teknologi terbaru lainnya. Penting untuk berhati-hati terhadap segala sesuatu yang terdengar terlalu bagus untuk menjadi kenyataan atau menyalahi prinsip dasar ekonomi.</p>
+            <p>Bitcoin adalah inovasi yang sedang tumbuh dan merupakan peluang bisnis yang juga memiliki risiko. Tidak ada jaminan bahwa Bitcoin akan terus tumbuh meskipun telah berkembang sedemikian cepatnya sampai saat ini. Investasi waktu dan sumber daya pada segala sesuatu yang berhubungan dengan Bitcoin membutuhkan kemampuan wirausaha. Banyak cara untuk menghasilkan uang dengan Bitcoin seperti penambangan, spekulasi atau menjalankan bisnis baru. Semua metode ini bersifat kompetitif dan tidak ada jaminan adanya keuntungan. Semua bergantung pada masing-masing individu untuk membuat evaluasi biaya dan risiko yang mungkin muncul dalam proyek apapun.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-sepenuhnya-virtual-dan-tidak-berwujud" href="#apakah-bitcoin-sepenuhnya-virtual-dan-tidak-berwujud">Apakah Bitcoin sepenuhnya virtual dan tidak berwujud?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin bersifat virtual layaknya kartu kredit dan jaringan perbankan online yang saat ini kita gunakan setiap hari. Bitcoin bisa digunakan untuk pembayaran online dan di toko nyata seperti halnya uang konvensional. Bitcoin bisa juga ditukarkan dengan bentuk materiil seperti pada  <a href="https://www.casascius.com/">koin Casascius</a>, tetapi pembayaran dengan ponsel biasanya tetap lebih mudah. Saldo Bitcoin disimpan pada sebuah jaringan distribusi yang besar dan nilai saldo ini tidak bisa dicurangi ataupun diubah oleh siapapun. Dengan kata lain, pengguna Bitcoin memiliki kendali eksklusif atas uang mereka dan bitcoin tidak bisa hilang hanya karena berbentuk virtual. </p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-anonim" href="#apakah-bitcoin-anonim">Apakah Bitcoin anonim?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin didesain untuk memungkinkan penggunanya mengirim dan menerima pembayaran dengan level privasi yang cukup seperti halnya berbagai bentuk lain dari uang. Namun, Bitcoin tidak anonim dan tidak dapat memberikan level privasi yang sama seperti uang tunai. Penggunaan Bitcoin memerlukan pencatatan publik secara luas. Ada <a href="/id/lindungi-privasi-anda">berbagai mekanisme</a> untuk melindungi privasi pengguna, dan lebih banyak lagi tengah dikembangkan. Meski demikian, masih ada pekerjaan yang harus diselesaikan sebelum fitur-fitur ini bisa digunakan dengan benar oleh sebagian besar pengguna Bitcoin.</p>
+            <p>Beberapa kekhawatiran telah muncul terkait transaksi-transaksi pribadi bisa digunakan untuk keperluan ilegal dengan menggunakan Bitcoin. Bagaimanapun juga, patut diperhatikan bahwa Bitcoin akan menjadi bagian dari peraturan-peraturan yang sudah ada dalam sistem keuangan. Bitcoin tidak bisa lebih anonim daripada uang tunai dan tidak akan menyulitkan pengadaan investigasi kriminal bila diperlukan. Sebagai tambahan, Bitcoin juga didesain untuk mencegah kejahatan keuangan dalam jumlah besar. </p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-yang-terjadi-saat-bitcoin-hilang" href="#apa-yang-terjadi-saat-bitcoin-hilang">Apa yang terjadi saat bitcoin hilang?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ketika pengguna kehilangan dompet, ini berdampak pada hilangnya uang dari sirkulasi. Bitcoin yang hilang masih berada dalam rantai-blok seperti bitcoin-bitcoin lainya. Namun, bitcoin yang hilang akan tetap tidak aktif selamanya karena tidak ada cara yang bisa digunakan oleh siapapun untuk menemukan kunci pribadi yang memungkinkannya untuk digunakan lagi. Karena hukum kebutuhan dan penawaran, ketika bitcoin yang beredar hanya sedikit, maka jumlah yang tersisa akan lebih dibutuhkan dan memiliki nilai yang lebih tinggi sebagai dampaknya.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="dapatkah-bitcoin-tumbuh-menjadi-jaringan-pembayaran-yang-utama" href="#dapatkah-bitcoin-tumbuh-menjadi-jaringan-pembayaran-yang-utama">Dapatkah Bitcoin tumbuh menjadi jaringan pembayaran yang utama?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Jaringan Bitcoin sudah bisa memproses lebih banyak transaksi tiap detik dibanding hari ini. Kondisi ini, bagaimanapun juga, belum sepenuhnya siap untuk menangani jumlah transaksi sebesar jaringan kartu kredit. Pengembangan sedang dilakukan untuk mengatasi keterbatasan yang ada dan segala yang dibutuhkan untuk itu di masa depan. Sejak awal diciptakan, setiap aspek dari jaringan Bitcoin berproses untuk terus tumbuh dalam hal kematangan, keoptimalan dan spesialisasi dan kondisi ini diharapkan akan terus terjadi beberapa tahun ke depan. Seiring dengan pertumbuhan trafik, semakin banyak pengguna Bitcoin menggunakan klien kapasitas ringan dan simpul jaringan penuh bisa menjadi layanan yang semakin terspesialisasi. Untuk lebih lengkapnya, lihat halaman <a href="https://en.bitcoin.it/wiki/Scalability">Skalabilitas</a> pada Wiki.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="sah" href="#sah">Sah</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-sah" href="#apakah-bitcoin-sah">Apakah Bitcoin sah?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Sepengetahuan kami, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin belum dinyatakan ilegal</a> di sebagian besar negara. Meskipun ada beberapa negara (seperti Argentina dan Rusia) yang secara ketat melarang mata uang asing. Negara lain (seperti Thailand) membatasi izin entitas mata uang tertentu seperti pertukaran Bitcoin.</p>
+            <p>Para pembuat kebijakan dari berbagai negara tengah mengambil langkah untuk menyediakan peraturan bagi individu dan bisnis mengenai bagaimana mengintegrasikan teknologi baru ini dengan peraturan sistem finansial formal. Contohnya, Financial Crimes Enforcement Network (FinCEN), sebuah biro di Departemen Keuangan Amerika Serikat, menerbitkan panduan lepas mengenai bagaimana pemerintah menangani aktivitas tertentu terkait mata uang virtual.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-bisa-digunakan-untuk-aktivitas-ilegal" href="#apakah-bitcoin-bisa-digunakan-untuk-aktivitas-ilegal">Apakah Bitcoin bisa digunakan untuk aktivitas ilegal?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin adalah uang, dan uang selalu digunakan untuk tujuan sah maupun ilegal. Uang tunai, kartu kredit dan sistem perbankan saat ini secara luas melampaui Bitcoin dalam hal penggunaan untuk kegiatan kriminal. Bitcoin dapat membawa inovasi yang signifikan dalam sistem pembayaran dan keuntungan inovasi tersebut sering dianggap jauh melampaui potensi kekurangan Bitcoin.</p>
+           <p>Bitcoin didesain sebagai langkah besar untuk membuat uang menjadi lebih aman dan sekaligus berfungsi sebagai bentuk perlindungan terhadap kejahatan keuangan. Sebagai contoh, bitcoin sama sekali tidak bisa dipalsukan. Pengguna memiliki kontrol penuh atas pembayaran mereka dan tidak bisa menerima tagihan yang tidak mereka setujui seperti yang bisa terjadi pada pembobolan kartu kredit. Transaksi bitcoin tidak bisa dibatalkan dan kebal terhadap penipuan chargeback. Bitcoin memungkinkan uang menjadi lebih aman dari pencurian dan risiko kehilangan dengan menggunakan mekanisme yang sangat kuat seperti pencadangan, enkripsi dan tanda tangan berganda.</p>
+           <p>Beberapa kekhawatiran timbul mengenai peluang Bitcoin digunakan oleh kriminal karena sifatnya yang dapat dibelanjakan untuk pembayaran pribadi dan tidak dapat dibatalkan. Meski demikian, sebenarnya peluang ini telah ada dengan pembayaran uang tunai dan transfer bank, yang telah digunakan sejak lama. Penggunaan Bitcoin tentunya akan mengikuti peraturan serupa yang telah ada dalam sistem finansial saat ini, dan Bitcoin tidak akan menghalangi berjalannya investigasi kriminal. Secara umum, terobosan baru biasanya memang dianggap kontroversial sebelum berbagai keuntungannya dimengerti sepenuhnya oleh publik. Internet adalah contoh kasus yang baik untuk menggambarkan hal ini.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bisakah-bitcoin-diregulasi" href="#bisakah-bitcoin-diregulasi">Bisakah Bitcoin diregulasi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Protokol Bitcoin tidak dapat dimodifikasi tanpa kerjasama dari hampir keseluruhan penggunanya, yang dapat memilih perangkat lunak apa yang ingin mereka gunakan. Berusaha memberikan hak khusus pada otoritas lokal pada dasarnya mustahil dilakukan dalam jaringan Bitcoin global. Sebuah organisasi kaya dapat berinvestasi dalam perangkat keras penambangan untuk mengontrol separuh kekuatan penghitungan dari jaringan dan menjadi mampu untuk memblokir atau membatalkan transaksi-transaksi terbaru. Namun, tidak ada garansi bahwa mereka dapat mempertahankan kemampuan tersebut karena membutuhkan dana investasi yang setara dengan semua penambang di dunia.</p>
+           <p>Meski demikian, tetap mungkin untuk mengatur penggunaan Bitcoin seperti halnya mengatur instrumen keuangan lainnya. Sama seperti dolar, Bitcoin dapat digunakan untuk berbagai tujuan, beberapa diantaranya mungkin dianggap legal ataupun ilegal tergantung hukum yang berlaku di suatu negara. Terkait hal itu, Bitcoin tidak berbeda dari perangkat atau sumber daya lain yang harus mengikuti peraturan yang berbeda-beda dalam tiap negara. Bitcoin juga dapat dipersulit dengan adanya peraturan ketat, sehingga sulit untuk menentukan berapa persen dari pengguna akan tetap menggunakan teknologi ini. Pemerintahan yang melarang Bitcoin akan mencegah bisnis dan pasar domestiknya berkembang, sehingga menggeser peluang inovasi ke negara lain. Tantangan bagi pembuat kebijakan, seperti yang selalu terjadi, adalah mengembangkan solusi yang efisien tanpa menghambat pertumbuhan bisnis dan pasar yang baru muncul.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-dengan-bitcoin-dan-pajak" href="#bagaimana-dengan-bitcoin-dan-pajak">Bagaimana dengan Bitcoin dan pajak?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin bukanlah mata uang fiat dengan status sah di negara manapun, tetapi seringkali tetap terikat pada aturan kewajiban pajak terlepas dari media uang yang digunakan. Ada berbagai macam undang-undang di banyak negara yang dapat menyebabkan pajak pendapatan, penjualan, penggajian, laba, atau bentuk lain dari kewajiban pajak muncul dengan Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-dengan-bitcoin-dan-perlindungan-konsumen" href="#bagaimana-dengan-bitcoin-dan-perlindungan-konsumen">Bagaimana dengan Bitcoin dan perlindungan konsumen?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin membebaskan penggunanya untuk bertransaksi dengan aturan mereka sendiri. Setiap pengguna dapat mengirim dan menerima pembayaran dalam cara yang mirip dengan uang tunai, tetapi mereka juga dapat mengambil bagian dalam kontrak yang lebih rumit. Tanda tangan berganda memungkinkan transaksi untuk dapat diterima oleh jaringan hanya jika sejumlah orang dalam kelompok tertentu setuju untuk menandatangani transaksi. Hal ini memungkinkan layanan mediasi sengketa inovatif untuk dikembangkan di masa depan. Layanan tersebut dapat memungkinkan pihak ketiga untuk menyetujui atau menolak transaksi dalam kasus perselisihan antara pihak-pihak lain tanpa memiliki kontrol atas uang mereka. Berbeda dengan uang tunai dan metode pembayaran lainnya, Bitcoin selalu meninggalkan bukti publik bahwa transaksi itu terjadi, yang dapat berpotensi digunakan dalam bukti penelusuran terhadap bisnis dengan praktik penipuan.</p>
+           <p>Perlu dicatat bahwa meski penjual biasanya bergantung pada reputasi publik mereka untuk mempertahankan bisnis dan menggaji karyawan, namun mereka tidak memiliki akses ke level informasi yang sama saat berhubungan dengan pelanggan baru. Cara kerja Bitcoin memungkinkan individu dan pelaku bisnis untuk dilindungi dari penipuan dan chargeback, sembari memberikan pilihan kepada konsumen untuk meminta pengamanan lebih saat mereka tidak mempercayai penjual tertentu.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="ekonomi" href="#ekonomi">Ekonomi</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-bitcoin-dibuat" href="#bagaimana-bitcoin-dibuat">Bagaimana bitcoin dibuat?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin baru tercipta dari sebuah proses kompetitif dan desentralisasi yang disebut "penambangan". Dalam proses ini, individu mendapat hadiah dari jaringan atas layanan yang mereka berikan. Para penambang Bitcoin memroses transaksi dan mengamankan jaringan menggunakan perangkat keras khusus dan sebagai gantinya mendapat bitcoin baru.</p>
+           <p>Protokol Bitcoin didesain sedemikian rupa sehingga bitcoin baru dibuat dengan nilai tetap. Hal ini membuat penambangan Bitcoin menjadi bisnis yang sangat kompetitif. Ketika semakin banyak penambang bergabung pada jaringan, menjadi semakin sulit untuk mendapatkan keuntungan dan penambang harus mencari cara paling efisien untuk memotong biaya operasional. Tidak ada pemegang kekuasan utama ataupun pengembang yang memiliki kekuatan untuk mengontrol ataupun memanipulasi sistem untuk meningkatkan keuntungan pribadi. Setiap koneksi Bitcoin di seluruh dunia akan menolak apapun yang tidak sesuai dengan peraturan yang berlaku.    </p>
+           <p>Bitcoin diciptakan dengan tingkat yang dapat diprediksi dan semakin menurun. Jumlah bitcoin yang diciptakan setiap tahunnya secara otomatis berkurang separuh hingga penerbitan bitcoin berhenti sepenuhnya saat jumlah totalnya mencapai 21 juta bitcoin. Saat ini, penambang Bitcoin kemungkinan akan didukung secara eksklusif oleh sejumlah biaya-biaya transaksi bernominal kecil.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="mengapa-bitcoin-memiliki-nilai" href="#mengapa-bitcoin-memiliki-nilai">Mengapa bitcoin memiliki nilai?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin memiliki nilai karena berguna sepeti layaknya uang. Bitcoin memiliki sifat-sifat uang (tahan lama, ringkas, bisa ditukarkan, langka, bisa dibagi, dan bisa dikenali) berdasarkan rumusan matematika daripada berdasarkan pada bentuk fisik (seperti emas dan perak) ataupun kepercayaan pada pihak pusat (seperti mata uang fiat). Singkat kata, Bitcoin didukung oleh matematika. Dengan atribut-atribut ini, semua yang diperlukan dari uang untuk memiliki nilai tukar adalah kepercayaan dan penerimaan. Dalam kasus Bitcoin, kondisi ini bisa diukur dengan pertumbuhan pengguna, penjual dan pengguna awal. Seperti mata uang lainnya, nilai bitcoin datang hanya dari orang-orang yang mau menerimanya sebagai alat pembayaran.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-yang-menentukan-harga-bitcoin" href="#apa-yang-menentukan-harga-bitcoin">Apa yang menentukan harga bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Harga bitcoin ditentukan oleh permintaan dan penawaran. Ketika permintaan untuk bitcoin meningkat, harga meningkat dan ketika permintaan menurun, harga turun. Bitcoin yang sudah beredar jumlahnya terbatas dan bitcoin baru dibuat dengan tingkat yang dapat diprediksi dan menurun, yang berarti permintaan harus mengikuti besaran inflasi untuk menjaga harga tetap stabil. Karena Bitcoin masih merupakan pasar yang relatif kecil dibanding potensi yang sebenarnya bisa dicapai, maka tidak memerlukan jumlah uang yang besar untuk menggerakkan harga pasar naik atau turun, dan oleh karena itu harga bitcoin masih sangat mudah berubah. </p>
+            <p>Harga Bitcoin, tahun 2013 hingga 2015</p>
+            <img src="/img/faq/price_chart.png" alt="chart">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bisakah-bitcoin-menjadi-tidak-berharga" href="#bisakah-bitcoin-menjadi-tidak-berharga">Bisakah bitcoin menjadi tidak berharga?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ya. Sejarah dipenuhi dengan mata uang yang gagal dan tidak lagi digunakan, seperti <a href="https://en.wikipedia.org/wiki/German_gold_mark">Mark Jerman</a> selama pemerintahan Republik Weimar, dan yang terbaru adalah <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">dolar Zimbabwe</a>. Meskipun kegagalan mata uang pada umumnya terjadi karena jenis hiperinflasi yang tidak mungkin terjadi pada Bitcoin, selalu ada potensi terjadinya kegagalan teknis, persaingan mata uang, isu politik dan sebagainya. Sebagai aturan dasar yang utama, tidak ada mata uang yang bisa dianggap sangat aman dari kegagalan dan masa sulit. Bitcoin telah terbukti bisa diandalkan selama bertahun-tahun sejak pencanangannya dan berpotensi besar untuk terus tumbuh. Bagaimanapun juga, tidak ada seorang pun yang bisa memprediksi bahwa masa depan akan memihak Bitcoin. </p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-merupakan-fenomena-gelembung" href="#apakah-bitcoin-merupakan-fenomena-gelembung">Apakah Bitcoin merupakan fenomena gelembung? </a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Peningkatan harga yang cepat tidak selalu merupakan fenomena gelembung. Penilaian berlebih yang dibuat-buat yang akan membawa pada penurunan koreksi secara drastis merupakan fenomena gelembung. Pilihan berdasarkan perilaku manusia oleh ratusan ribu pelaku pasar merupakan penyebab dari perubahan harga bitcoin sehingga pasar berusaha menemukan harga. Alasan perubahan perilaku bisa jadi termasuk hilangnya kepercayaan terhadap Bitcoin, perbedaan yang besar antara nilai dan harga tidak berdasarkan pada dasar ekonomi Bitcoin, peningkatan liputan pers yang memunculkan permintaan spekulatif, ketakutan akan ketidakpastian, dan antusiasme kuno yang berlebih dan keserakahan. </p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apakah-bitcoin-merupakan-skema-ponzi" href="#apakah-bitcoin-merupakan-skema-ponzi">Apakah Bitcoin merupakan skema Ponzi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Skema Ponzi adalah kegiatan penipuan investasi yang membayarkan laba kepada investor dari uang mereka sendiri, atau uang yang sudah dibayarkan oleh investor sebelumnya, dan bukan dari laba yang diterima oleh masing-masing individu yang menjalankan bisnis. Skema Ponzi didesain untuk hancur pada pendanaan investor terakhir ketika jumlah peserta baru sudah tidak mencukupi.</p>
+            <p>Bitcoin adalah proyek piranti lunak tanpa otoritas pusat. Konsekuensinya, tidak ada seorang pun yang dapat berlaku curang terkait dengan keuntungan investasi. Seperti mata uang utama pada umumnya seperti emas, dolar Amerika Serikat, euro, yen, dll. tidak ada garansi atas kemampuan membeli dan nilai tukar bergerak bebas. Hal ini membawa pada volatilitas di mana pemilik bitcoin bisa secara tidak terkira mendapatkan atau kehilangan uang. Di luar faktor spekulasi, Bitcoin juga merupakan sistem pembayaran yang berguna dan kompetitif yang sedang digunakan oleh ribuan pengguna dan bisnis.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bukankah-bitcoin-menguntungkan-pengguna-awal-secara-tidak-adil" href="#bukankah-bitcoin-menguntungkan-pengguna-awal-secara-tidak-adil">Bukankah Bitcoin menguntungkan pengguna awal secara tidak adil?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Beberapa pengguna awal memiliki bitcoin dalam jumlah besar karena mereka mengambil risiko dan menginvestasikan waktu dan sumber daya pada teknologi yang belum terbukti, yang pada saat itu masih jarang digunakan dan belum memiliki keamanan yang memadai. Banyak para pengguna awal menghabiskan bitcoin dalam jumlah besar beberapa kali sebelum bitcoin menjadi berharga, atau membeli dalam jumlah kecil dan tidak mendapatkan keuntungan yang besar. Tidak ada jaminan bahwa harga bitcoin akan naik atau turun. Hal ini sangat mirip dengan berinvestasi pada tahap awal yang mungkin bisa memberikan nilai seiring kegunaan dan popularitasnya atau bahkan tidak pernah menjadi apapun. Bitcoin masih pada tahapan awal, dan telah dirancang untuk tujuan jangka panjang. Sulit dibayangkan bagaimana Bitcoin menguntungkan pengguna awal, karena pengguna Bitcoin hari ini bisa saja menjadi pengguna awal di kemudian hari, bisa juga tidak.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="tidakkah-jumlah-bitcoin-yang-terbatas-menjadi-kendala" href="#tidakkah-jumlah-bitcoin-yang-terbatas-menjadi-kendala">Tidakkah jumlah bitcoin yang terbatas menjadi kendala?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin ini unik karena hanya akan ada 21 juta bitcoin yang dibuat. Namun demikian, ini tidak akan menjadi batasan karena nilai transaksi bisa dipecah menjadi bagian unit yang lebih kecil dari sebuah bitcoin, seperti bit - terdapat 1.000.000 bit dalam 1 bitcoin. Bitcoin dapat dibagi dalam maksimal 8 tempat desimal (0,000 000 01) dan bahkan memungkinkan unit yang lebih kecil jika diperlukan di masa mendatang seiring penurunan ukuran rata-rata transaksi.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="akankah-bitcoin-jatuh-dalam-spiral-deflasi" href="#akankah-bitcoin-jatuh-dalam-spiral-deflasi">Akankah Bitcoin jatuh dalam spiral deflasi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Teori spiral deflasi menyatakan bahwa jika harga diperkirakan turun, orang akan memilih membeli di masa depan dalam rangka untuk mendapatkan keuntungan dari harga yang lebih rendah. Penurunan permintaan ini akan menyebabkan penjual menurunkan harga mereka untuk mencoba merangsang permintaan, yang justru akan membuat masalah semakin buruk dan berujung pada depresi ekonomi.</p>
+            <p>Meskipun teori in merupakan cara yang populer untuk membenarkan inflasi bagi para bankir pusat, namun tidak selalu benar dan dianggap sebagai kontroversi oleh para ekonom. Barang elektronik adalah salah satu contoh dari sebuah pasar yang harganya selalu turun secara konstan tetapi tidak berarti sedang dalam masa depresi. Serupa dengan itu, nilai dari bitcoin telah turun selama ini akan tetapi besaran ekonomi Bitcoin juga telah tumbuh pesat. Karena nilai dari mata uang dan besaran ekonomi mulai dari nol pada tahun 2009, Bitcoin adalah contoh ketidaksesuaian yang menunjukkan bahwa sebuah teori terkadang bisa saja salah.</p>
+            <p>Meskipun ada kondisi ini, Bitcoin tidak didesain untuk mengalami penurunan nilai mata uang. Lebih tepatnya Bitcoin dibuat untuk mengalami inflasi di tahun-tahun awal dan menjadi stabil di tahun-tahun berikutnya. Satu-satunya kondisi di mana jumlah bitcoin dalam sirkulasi akan turun adalah jika orang-orang ceroboh kehilangan dompet mereka karena tidak membuat pencadangan. Dengan dasar keuangan dan ekonomi yang stabil, nilai dari mata uang harusnya tetap stabil. </p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bukankah-spekulasi-dan-ketidakpastian-merupakan-masalah-bagi-bitcoin" href="#bukankah-spekulasi-dan-ketidakpastian-merupakan-masalah-bagi-bitcoin">Bukankah spekulasi dan ketidakpastian merupakan masalah bagi Bitcoin?                        </a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ini adalah kondisi seperti perumpamaan "mana yang lebih dulu: telur atau ayam". Agar harga bitcoin bisa stabil, ekonomi skala besar perlu berkembang dengan lebih banyak bisnis dan pengguna. Agar perekonomian skala besar berkembang, bisnis dan pengguna akan mencari kestabilan harga. </p>
+            <p>Untungnya, ketidakpastian tidak berpengaruh pada manfaat utama Bitcoin sebagai sistem pembayaran untuk mentransfer uang dari A ke B. Mudah bagi para pelaku bisnis untuk mengubah pembayaran bitcoin ke mata uang mereka secara instan, sehingga mereka mendapatkan keuntungan dari Bitcoin tanpa harus mengalami fluktuasi harga. Bitcoin menawarkan banyak fitur yang bermanfaat dan unik, karenanya banyak pengguna memilih menggunakan Bitcoin. Dengan solusi dan insentif yang demikian, sangat mungkin bahwa Bitcoin akan dewasa dan tumbuh hingga mencapai tahap di mana ketidakpastian/volatilitas nilainya sudah sangat berkurang.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-jika-seseorang-membeli-semua-bitcoin-yang-ada" href="#bagaimana-jika-seseorang-membeli-semua-bitcoin-yang-ada">Bagaimana jika seseorang membeli semua bitcoin yang ada?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Hanya sepersekian dari semua bitcoin yang telah diterbitkan saat ini yang dijual di pasar pertukaran. Pasar Bitcoin bersifat kompetitif, artinya harga bitcoin akan naik atau turun tergantung pada permintaan dan penawaran. Terlebih lagi, bitcoin baru akan terus diterbitkan dalam dekade-dekade mendatang. Karena itu bahkan pembeli yang paling ambisius tidak akan bisa membeli semua bitcoin yang ada sekarang. Meski demikian, situasi ini tidak mengindikasikan bahwa pasar tidak rentan terhadap manipulasi harga; masih tidak memerlukan jumlah uang yang banyak untuk menggerakkan harga pasar naik atau turun, sehingga sejauh ini Bitcoin masih tergolong aset yang mudah berubah.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik" href="#bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik">Bagaimana jika seseorang menciptakan mata uang digital yang lebih baik?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Hal itu mungkin terjadi. Untuk saat ini, Bitcoin tetap menjadi mata uang virtual tak terpusat yang paling populer, akan tetapi tidak ada jaminan bahwa posisinya akan tetap demikian. Sudah ada seperangkat mata uang lain yang terinspirasi dari Bitcoin. Mungkin bisa diasumsikan bahwa pengembangan yang signifikan akan dibutuhkan oleh mata uang baru untuk mengambil alih Bitcoin dalam hal kemampuan membangun pasar; meskipun hal ini tetap tidak bisa diprediksi. Bitcoin kemungkinan juga bisa mengadopsi pengembangan yang dilakukan mata uang saingan, selama tidak mengubah dasar pokok dari protokol.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik" href="#bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik">Bagaimana jika seseorang menciptakan mata uang digital yang lebih baik?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Hal itu mungkin terjadi. Untuk saat ini, Bitcoin tetap menjadi mata uang virtual tak terpusat yang paling populer, akan tetapi tidak ada jaminan bahwa posisinya akan tetap demikian. Sudah ada seperangkat mata uang lain yang terinspirasi dari Bitcoin. Mungkin bisa diasumsikan bahwa pengembangan yang signifikan akan dibutuhkan oleh mata uang baru untuk mengambil alih Bitcoin dalam hal kemampuan membangun pasar; meskipun hal ini tetap tidak bisa diprediksi. Bitcoin kemungkinan juga bisa mengadopsi pengembangan yang dilakukan mata uang saingan, selama tidak mengubah dasar pokok dari protokol.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="transaksi" href="#transaksi">Transaksi</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="mengapa-saya-harus-menunggu-10-menit" href="#mengapa-saya-harus-menunggu-10-menit">Mengapa saya harus menunggu 10 menit?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Menerima pembayaran hampir instan dengan Bitcoin. Namun ada penundaan rata-rata 10 menit sebelum jaringan mulai mengonfirmasi transaksi Anda dengan memasukkannya dalam blok dan sebelum Anda dapat menggunakan bitcoin yang Anda terima. Sebuah konfirmasi berarti ada konsensus pada jaringan bahwa bitcoin yang Anda terima belum dikirim ke orang lain dan masih dianggap sebagai milik Anda. Setelah transaksi Anda telah dimasukkan dalam satu blok, itu akan terus tertimbun di bawah setiap blok setelahnya, yang secara eksponensial akan mengonsolidasikan konsensus ini dan mengurangi risiko transaksi dibatalkan. Setiap pengguna bebas menentukan pada titik mana sebuah transaksi sudah dikonfirmasi, tetapi 6 konfirmasi sering dianggap aman seperti halnya menunggu 6 bulan pada transaksi kartu kredit.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="berapa-biaya-transaksinya" href="#berapa-biaya-transaksinya">Berapa biaya transaksinya?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Sebagian besar transaksi bisa diproses tanpa biaya, tetapi pengguna disarankan untuk membayar biaya secara sukarela untuk mendapatkan konfirmasi transaksi yang lebih cepat dan untuk membayar kompensasi bagi para penambang. Ketika biaya dibutuhkan, pada umumnya mereka hanya mengharap jumlah yang sedikit. Klien Bitcoin Anda biasanya akan berusaha memperkirakan berapa biaya yang dibutuhkan.</p>
+            <p>Biaya transaksi digunakan sebagai pelindung terhadap pengguna yang mengirimkan transaksi untuk membebani jaringan. Cara kerja biaya ini masih sedang dikembangkan dan akan berubah dari waktu ke waktu. Karena biaya tidak berhubungan dengan jumlah bitcoin yang dikirim, maka bisa jadi membuatnya tampak sangat rendah (0.0005 BTC untuk sebuah transfer 1.000 BTC) atau bahkan terlalu tinggi (0.004 BTC untuk pembayaran 0.02 BTC). Biaya ditentukan oleh atribut seperti data dalam transaksi dan pengulangan transaksi. Sebagai contoh, jika Anda menerima sejumlah besar pembayaran dengan nomimal kecil, maka biaya untuk mengirimkannya akan lebih tinggi. Pembayaran semacam itu dapat dibandingkan dengan membayar tagihan restoran dengan menggunakan uang receh. Membelanjakan pecahan kecil bitcoin Anda dengan cepat juga akan memerlukan biaya. Jika aktivitas Anda mengikuti pola transaksi konvensional, maka biaya akan tetap sangat rendah.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-yang-terjadi-jika-saya-menerima-bitcoin-ketika-komputer-saya-dalam-keadaan-mati" href="#apa-yang-terjadi-jika-saya-menerima-bitcoin-ketika-komputer-saya-dalam-keadaan-mati">Apakah yang terjadi jika saya menerima sebuah bitcoin ketika komputer saya dalam keadaan mati?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Tidak masalah. Bitcoin akan muncul saat Anda memulai aplikasi dompet Anda. Bitcoin tidak benar-benar diterima oleh perangkat lunak pada komputer Anda, mereka ditambahkan pada buku catatan publik yang dibagi antara semua perangkat pada jaringan. Jika Anda menerima bitcoin saat program klien dompet Anda tidak berjalan dan Anda nanti menjalankannya, maka program tersebut akan mengunduh blok-blok dan akan merekam segala jenis transaksi yang belum diketahui, dan bitcoin akhirnya akan muncul seolah-olah baru saja diterima saat itu. Dompet Anda hanya diperlukan bila Anda ingin membelanjakan bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-yang-dimaksud-dengan-sinkronisasi-dan-mengapa-butuh-waktu-lama-sekali" href="#apa-yang-dimaksud-dengan-sinkronisasi-dan-mengapa-butuh-waktu-lama-sekali">Apa yang dimaksud dengan "sinkronisasi" dan mengapa butuh waktu lama sekali?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Sinkronisasi yang lama hanya diperlukan dengan klien koneksi penuh seperti Bitcoin Core. Secara teknis, sinkronisasi adalah proses mengunduh dan memverifikasi semua transaksi Bitcoin sebelumnya pada jaringan. Beberapa klien Bitcoin perlu memperhatikan semua transaksi sebelumnya untuk menghitung saldo yang tersisa pada dompet Bitcoin Anda dan membuat transaksi baru. Langkah ini dapat memerlukan banyak sumber daya, bandwith dan penyimpanan yang cukup untuk mengakomodasi rantai block ukuran penuh. Agar Bitcoin tetap aman, beberapa orang harus tetap menggunakan klien koneksi penuh karena mereka bertugas memvalidasi dan menyampaikan transaksi.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="penambangan" href="#penambangan">Penambangan</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="apa-itu-penambangan-bitcoin" href="#apa-itu-penambangan-bitcoin">Apa itu penambangan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Penambangan adalah proses pengeluaran daya komputasi untuk memproses transaksi, mengamankan jaringan, dan membuat semua orang dalam sistem tersinkronisasi bersama-sama. Hal ini bisa diumpamakan seperti pusat data Bitcoin, kecuali bahwa ini telah dirancang untuk sepenuhnya tidak terpusat dengan penambang yang beroperasi di semua negara dan tidak ada individu yang memiliki kontrol atas jaringan. Proses ini disebut dengan "penambangan" sebagai analogi seperti penambangan emas, karena merupakan mekanisme sementara yang digunakan untuk menerbitkan bitcoin baru. Tetapi tidak seperti pertambangan emas, penambangan Bitcoin memberikan imbalan sebagai bentuk pertukaran atas layanan yang berguna yang diperlukan untuk mengoperasikan jaringan pembayaran yang aman. Penambangan masih akan diperlukan setelah bitcoin terakhir diterbitkan.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-cara-kerja-penambangan-bitcoin" href="#bagaimana-cara-kerja-penambangan-bitcoin">Bagaimana cara kerja penambangan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Setiap orang bisa menjadi penambang Bitcoin dengan cara menjalankan perangkat lunak dengan perangkat keras tertentu. Perangkat lunak untuk penambangan memantau siaran transaksi melalui jaringan peer-to-peer dan melakukan tugas-tugas tertentu untuk memroses dan mengonfirmasi transaksi-transaksi ini. Para penambang Bitcoin melakukan pekerjaan ini karena mereka dapat memperoleh biaya transaksi yang dibayarkan oleh pengguna untuk pemrosesan transaksi yang lebih cepat, dan bitcoin baru pun diterbitkan berdasarkan suatu rumus tetap.</p>
+            <p>Agar transaksi baru bisa dikonfirmasi, perlu dimasukkan ke dalam blok bersama dengan bukti matematis dari kinerja tersebut. Bukti tersebut sangatlah sulit dibuat karena tidak ada cara untuk membuatnya selain dengan mencoba miliaran kalkulasi per detik. Hal ini memerlukan penambang untuk melakukan perhitungan ini sebelum blok mereka diterima oleh jaringan dan sebelum mereka mendapat imbalan. Seiring makin banyak orang yang mulai menambang, kesulitan untuk menemukan blok yang valid secara otomatis ditingkatkan oleh jaringan untuk memastikan bahwa waktu rata-rata untuk menemukan blok tetap sekitar 10 menit. Akibatnya, penambangan adalah bisnis yang sangat kompetitif di mana tidak ada penambang perorangan dapat mengontrol apa yang ada dalam rantai blok.</p>
+            <p>Bukti kinerja tersebut juga didesain untuk bergantung pada blok sebelumnya untuk memaksakan urutan kronologis dalam rantai-blok. Hal ini membuatnya sulit secara eksponensial untuk membatalkan transaksi sebelumnya karena memerlukan penghitungan ulang dari bukti-bukti kinerja dari semua blok berikutnya. Ketika dua blok ditemukan pada saat bersamaan, penambang akan mengerjakan blok pertama yang mereka terima dan berganti ke rantai terpanjang dari blok segera setelah blok berikutnya ditemukan. Ini memungkinkan penambangan untuk mengamankan dan mempertahankan konsensus global berdasarkan kekuatan pemrosesan.</p>
+            <p>Penambang Bitcoin tidak bisa berlaku curang dengan meningkatkan hadiah mereka sendiri, juga tidak bisa memproses transaksi curang yang bisa merusak jaringan Bitcoin karena semua koneksi Bitcoin akan menolak segala jenis blok yang mengandung data tidak sah berdasarkan peraturan dari protokol Bitcoin. Dengan demikian, jaringan tetap aman meski tidak semua penambang Bitcoin bisa dipercaya.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bukankah-penambangan-bitcoin-menyia-nyiakan-energi" href="#bukankah-penambangan-bitcoin-menyia-nyiakan-energi">Bukankah penambangan Bitcoin menyia-nyiakan energi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Menghabiskan energi untuk mengamankan dan menjalankan sistem pembayaran adalah sesuatu yang tidak sia-sia. Seperti layanan pembayaran lainnya, penggunaan Bitcoin diikuti oleh adanya biaya proses pembuatan. Layanan yang diperlukan untuk menjalankan berbagai sistem keuangan yang sudah ada seperti bank, kartu kredit dan kendaraan bersenjata juga memerlukan banyak energi. Meskipun tidak seperti Bitcoin, total konsumsi energi mereka tidak transparan dan tidak bisa diukur dengan mudah.</p>
+            <p>Penambangan Bitcoin telah didesain untuk makin optimal seiring berjalannya waktu dengan perangkat keras khusus yang membutuhkan lebih sedikit energi, dan biaya pelaksanaan penambangan akan semakin sesuai dengan permintaan. Ketika penambangan Bitcoin menjadi terlalu kompetitif dan kurang menguntungkan, beberapa penambang memilih untuk berhenti dari aktifitasnya. Terlebih lagi, seluruh tenaga yang dikeluarkan penambang sebenarnya berubah menjadi panas, dan penambang yang paling diuntungkan adalah mereka yang bisa memanfaatkan kondisi panas ini. Jaringan penambangan yang optimal dan efisien adalah yang tidak memakan energi ekstra. Meskipun ini tergolong kondisi ideal, nilai ekonomis dari kegiatan penambangan membuat para penambang berusaha keras dalam aktifitas ini.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="bagaimana-menambang-bisa-membantu-mengamankan-bitcoin" href="#bagaimana-menambang-bisa-membantu-mengamankan-bitcoin">Bagaimana penambangan membantu mengamankan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Penambangan hampir serupa seperti lotre kompetitif yang membuat semua orang sulit untuk menambahkan blok-blok transaksi baru ke dalam rantai-blok. Ini melindungi netralitas jaringan dengan mencegah siapapun mendapat kekuasaan untuk memblokir transaksi tertentu. Mekanisme ini juga mencegah siapapun mengganti bagian-bagian dari rantai-blok untuk menarik kembali uang yang mereka belanjakan, yang bisa digunakan sebagai penipuan terhadap pengguna lain. Penambangan membuat sangat sulit secara eksponensial untuk membatalkan transaksi yang telah terjadi dengan meminta penulisan ulang semua blok setelah transaksi tersebut.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="apa-yang-saya-perlukan-untuk-mulai-menambang" href="#apa-yang-saya-perlukan-untuk-mulai-menambang">Apa yang saya butuhkan untuk mulai menambang?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Pada awal kemunculan Bitcoin, siapa saja bisa menemukan blok baru dengan menggunakan CPU komputer mereka. Seiring dengan makin banyaknya orang yang mulai menambang, makin sulit untuk menemukan blok baru hingga sampai pada level di mana hanya metode yang paling ramah biaya untuk menemukan blok baru adalah dengan menggunakan perangkat keras khusus. Anda dapat mengunjungi <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> untuk informasi lebih lanjut.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="keamanan" href="#keamanan">Keamanan</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="apakah-bitcoin-aman" href="#apakah-bitcoin-aman">Apakah Bitcoin aman?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Teknologi Bitcoin - protokol dan kriptografi - memiliki catatan rekor keamanan yang kuat, dan jaringan Bitcoin kemungkinan adalah proyek penghitungan terdistribusi yang terbesar di dunia. Kelemahan Bitcoin yang paling umum terletak pada kesalahan penggunanya. Data-data dompet Bitcoin yang menyimpan kunci pribadi dapat terhapus tanpa sengaja, hilang, atau dicuri. Hal ini serupa dengan uang tunai fisik yang disimpan dalam bentuk digital. Untungnya, pengguna dapat menerapkan <a href="/id/amankan-dompet-anda">langkah-langkah pengamanan</a> untuk melindungi uang mereka atau menggunakan jasa penyedia layanan yang menawarkan keamanan tingkat tinggi dan asuransi terhadap pencurian atau kehilangan.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="apakah-bitcoin-aman" href="#apakah-bitcoin-aman">Apakah Bitcoin aman?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Teknologi Bitcoin - protokol dan kriptografi - memiliki catatan rekor keamanan yang kuat, dan jaringan Bitcoin kemungkinan adalah proyek penghitungan terdistribusi yang terbesar di dunia. Kelemahan Bitcoin yang paling umum terletak pada kesalahan penggunanya. Data-data dompet Bitcoin yang menyimpan kunci pribadi dapat terhapus tanpa sengaja, hilang, atau dicuri. Hal ini serupa dengan uang tunai fisik yang disimpan dalam bentuk digital. Untungnya, pengguna dapat menerapkan <a href="/id/amankan-dompet-anda">langkah-langkah pengamanan</a> untuk melindungi uang mereka atau menggunakan jasa penyedia layanan yang menawarkan keamanan tingkat tinggi dan asuransi terhadap pencurian atau kehilangan.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="pernahkah-bitcoin-diretas-pada-masa-lalu" href="#pernahkah-bitcoin-diretas-pada-masa-lalu">Pernahkah Bitcoin diretas pada masa lalu?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Aturan protokol dan kriptografi yang digunakan oleh Bitcoin masih bekerja bertahun-tahun setelah dibuat pertama kali, yang merupakan pertanda bagus bahwa konsep ini didesain dengan baik. Meski demikian, <a href="/en/alerts">kelemahan keamanan</a> telah ditemukan dan diperbaiki seiring waktu dengan penerapan berbagai perangkat lunak. Seperti perangkat lunak lainnya, keamanan dari perangkat lunak Bitcoin bergantung pada kecepatan menemukan dan mengatasi masalah. Semakin banyak masalah yang ditemukan, semakin Bitcoin mencapai kematangan.</p>
+            <p>Sering terjadi kesalahan konsep tentang pencurian dan peretasan keamanan yang terjadi pada berbagai tempat penukaran dan bisnis. Meskipun hal-hal tadi merupakan musibah, tidak ada satupun dari hal tersebut melibatkan Bitcoin dibajak, tidak pula berarti ada kelemahan dalam Bitcoin. Sama seperti adanya perampokan bank bukan berarti mata uang dolar telah melemah atau tercemar. Bagaimanapun juga, memang penerapan keamanan yang bagus dan berbagai solusi keamanan dibutuhkan untuk memberikan perlindungan yang lebih baik bagi keamanan uang pengguna, dan untuk mengurangi risiko terjadinya pencurian dan kehilangan. Beberapa tahun terakhir, sistem keamanan telah berkembang dengan cepat, seperti enkripsi dompet, dompet offline, dompet perangkat keras, dan transaksi tanda tangan berganda.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="bisakah-pengguna-berkolusi-melawan-bitcoin" href="#bisakah-pengguna-berkolusi-melawan-bitcoin">Bisakah pengguna berkolusi melawan Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Tidaklah mungkin untuk mengubah protokol Bitcoin semudah itu. Klien Bitcoin yang tidak mengikuti aturan yang sama tidak bisa memaksakan peraturan mereka sendiri kepada pengguna lain. Menurut spesifikasi saat ini, pembelanjaan ganda tidak mungkin terjadi dalam rantai-blok yang sama, demikian pula dengan membelanjakan bitcoin tanpa tanda tangan yang valid. Karena itu, tidak mungkin menciptakan jumlah bitcoin baru yang tidak terkontrol, membelanjakan uang pengguna lain, merusak jaringan, atau yang lain semacam itu.</p>
+            <p>Namun, sebagian besar penambang dapat seenaknya memilih untuk memblokir atau membatalkan transaksi-transaksi terbaru. Mayoritas pengguna juga dapat memberikan tekanan agar diberlakukan beberapa perubahan. Karena Bitcoin hanya bekerja dengan benar bila ada konsensus lengkap antara semua pengguna, maka mengubah protokol Bitcoin bisa sangat sulit dan membutuhkan mayoritas pengguna untuk mengadopsi perubahan sehingga sisa pengguna hampir tidak punya pilihan selain mengikuti. Sebagai aturan umum, sulit untuk membayangkan mengapa pengguna Bitcoin akan memilih untuk mengadopsi perubahan yang dapat membahayakan uang mereka sendiri.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="apakah-bitcoin-rentan-terhadap-komputerisasi-kuantum" href="#apakah-bitcoin-rentan-terhadap-komputerisasi-kuantum">Apakah Bitcoin rentan terhadap komputerisasi kuantum?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ya, kebanyakan dari sistem yang berdasar pada kriptografi umumnya memang rentan terhadap komputerisasi kuantum, termasuk sistem bank tradisional. Meski demikian, komputer kuantum belum ada dan setidaknya belum akan ada untuk sementara ini. Pada saat komputerisasi quantum bisa menjadi ancaman serius bagi Bitcoin, protokol sudah bisa ditingkatkan sampai tahap algoritma post-kuantum. Mengingat pentingnya pembaruan ini, dapat diharapkan bahwa hal ini akan menjadi tinjauan penting bagi pengembang dan diadopsi oleh semua pengguna Bitcoin.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="content_fag--faq--footer">
+      <p>Anda dapat menemukan lebih banyak informasi dan bantuan pada laman <a href="/id/sumber-daya">sumber daya</a> dan <a href="/id/komunitas">komunitas</a> atau pada laman <a href="https://en.bitcoin.it/wiki/FAQ">FAQ Wiki</a>.</p>
+    </div>
+  </div>
 </div>
-
-<h2 id="umum">Umum</h2>
-
-<h3 id="apa-itu-bitcoin">Apa itu Bitcoin?</h3>
-<p>Bitcoin adalah jaringan konsensus yang memungkinkan sistem pembayaran baru dan uang yang sepenuhnya berbentuk digital. Bitcoin merupakan jaringan pembayaran peer-to-peer desentralisasi pertama yang dikontrol sepenuhnya oleh penggunanya tanpa ada otoritas sentral ataupun perantara. Dari sudut pandang pengguna, Bitcoin serupa seperti uang tunai di dunia internet. Bitcoin juga dapat dipandang sebagai <a href="http://financialcryptography.com/mt/archives/001325.html">sistem pembukuan tiga pencatatan</a> paling menonjol yang ada saat ini.</p>
-
-<h3 id="siapa-yang-menciptakan-bitcoin">Siapa yang menciptakan Bitcoin?</h3>
-<p>Bitcoin adalah implementasi pertama tentang konsep yang bernama "cryptocurrency", yang pertama kali dijelaskan pada tahun 1998 oleh Wei Dai dalam milis cypherpunks, menyarankan ide tentang bentuk baru uang yang menggunakan kriptografi untuk mengontrol pembuatan dan transaksi, alih-alih menggunakan otoritas terpusat. Spesifikasi Bitcoin pertama dan bukti konsep dipublikasikan pada tahun 2009 dalam sebuah milis kriptografi oleh Satoshi Nakamoto. Satoshi meninggalkan proyek ini pada akhir tahun 2010 tanpa memberitahukan banyak tentang dirinya. Komunitas Bitcoin berkembang pesat seiring banyaknya <a href="/id/pengembangan">pengembang</a> yang mengerjakan Bitcoin.</p>
-<p>Anonimitas Satoshi seringkali menimbulkan perhatian yang salah, kebanyakan berhubungan dengan salah paham atas sifat Bitcoin yang berbasis sumber terbuka. Protokol dan perangkat lunak BItcoin dipublikasikan secara terbuka dan pengembang dari seluruh dunia dapat meninjau kode atau membuat sendiri perangkat lunak Bitcoin yang telah dimodifikasi versi mereka. Sama halnya dengan pengembang saat ini, pengaruh Satoshi terbatas pada beberapa perubahan yang ia ciptakan dan diadopsi oleh pengembang lain, dan dia tidak mengontrol Bitcoin. Dengan demikian, mencari identitas penemu Bitcoin saat ini sama saja seperti mencari identitas penemu surat kabar.</p>
-
-<h3 id="siapa-yang-mengontrol-jaringan-bitcoin">Siapa yang mengendalikan jaringan Bitcoin?</h3>
-<p>Tidak ada yang memiliki jaringan Bitcoin, sama seperti tidak ada yang memiliki teknologi pengoperasian email. Bitcoin dikendalikan oleh semua penggunanya di seluruh dunia. Pengembang memang dapat meningkatkan perangkat lunak Bitcoin, tetapi mereka tidak bisa memaksakan perubahan dalam protokol Bitcoin karena semua pengguna bebas memilih perangkat lunak dan versi yang ingin mereka gunakan. Agar dapat tetap kompatibel satu sama lain, semua pengguna perlu menggunakan perangkat lunak yang mengikuti peraturan yang sama. Bitcoin hanya bisa bekerja dengan baik bila ada konsensus penuh diantara semua penggunanya. Dengan demikian, semua pengguna dan pengembang memiliki insentif yang kuat untuk melindungi konsensus ini.</p>
-
-<h3 id="bagaimana-cara-kerja-bitcoin">Bagaimana cara kerja Bitcoin?</h3>
-<p>Dari sudut pandang pengguna, Bitcoin tidak lebih dari aplikasi ponsel atau program komputer yang menyediakan dompet Bitcoin dan memungkinkan pengguna untuk mengirim dan menerima bitcoin. Inilah cara Bitcoin bekerja untuk sebagian besar pengguna.</p>
-<p>Di belakang layar, jaringan Bitcoin membagikan sebuah catatan publik yang disebut "rantai-blok". Catatan ini berisi semua transaksi yang pernah diproses, memungkinkan komputer pengguna untuk memverifikasi kebsahan tiap transaksi. Keaslian tiap transaksi dilindungi oleh tanda tangan digital yang berhubungan dengan alamat pengirim, memungkinkan semua pengguna memiliki kontrol penuh atas pengiriman bitcoin dari alamat Bitcoin mereka. Sebagai tambahan, semua orang dapat memroses transaksi menggunakan kekuatan penghitungan perangkat keras khusus dan mendapatkan hadiah dalam bentuk bitcoin untuk layanan ini. Kegiatan ini seringkali disebut dengan "penambangan". Untuk mempelajari lebih lanjut mengenai Bitcoin, Anda dapat menuju <a href="/id/cara-kerja">halaman khusus</a> dan <a href="/bitcoin.pdf">surat kabar asli</a>.</p>
-
-<h3 id="apakah-bitcoin-digunakan-oleh-banyak-orang">Apakah Bitcoin benar-benar digunakan oleh banyak orang?</h3>
-<p>Ya. Ada <a href="http://usebitcoins.info/">banyak bisnis</a> dan individu yang menggunakan Bitcoin. Termasuk bisnis fisik di dunia nyata seperti restoran, apartemen, firma hukum, dan juga layanan online terkenal seperti Namecheap, WordPress, Reddit, dan Flattr. Meskipun Bitcoin termasuk fenomena baru, namun berkembang sangat pesat. Pada akhir Agustus 2013, <a href="https://bitcoincharts.com/bitcoin/">nilai total semua bitcoin yang beredar</a> melebihi 1,5 milyar dolar AS, dengan transaksi pertukaran bitcoin senilai jutaan dolar dilakukan setiap hartinya.</p>
-<p>
-<img src="/img/faq/merchants_map.png" alt="Screenshot">
-</p>
-
-<h3 id="bagaimana-seseorang-memperoleh-bitcoin">Bagaimana cara mendapatkan bitcoin?</h3>
-<ul>
-  <li>Sebagai pembayaran untuk barang dan jasa.</li>
-  <li>Beli bitcoin lewat <a href="http://howtobuybitcoins.info">penukaran Bitcoin</a>.</li>
-  <li>Bertukar bitcoin dengan <a href="https://localbitcoins.com/">seseorang di dekat Anda</a>.</li>
-  <li>Dapatkan bitcoin melalui cara <a href="http://www.bitcoinmining.com/">menambang</a> yang kompetitif.</li>
-</ul>
-<p>Meskipun masih mungkin untuk menemukan individu yang berniat menjual bitcoin untuk ditukar dengan pembayaran kartu kredit ataupun PayPal, sebagian besar transaksi tidak mengizinkan pembayaran melalui metode-metode tersebut. Hal ini dikarenakan kasus-kasus di mana seseorang membeli bitcoin menggunakan PayPal, lalu membatalkan separuh transaksi mereka. Kasus seperti ini biasanya disebut "chargeback".</p>
-
-<h3 id="sulitkah-melakukan-pembayaran-menggunakan-bitcoin">Sulitkah melakukan pembayaran menggunakan Bitcoin?</h3>
-<p>Pembayaran dengan Bitcoin lebih mudah dibandingkan dengan kartu kredit maupun debit, dan dapat diterima tanpa akun penjual. Pembayaran dilakukan melalui aplikasi dompet, baik di komputer maupun ponsel Anda, dengan memasukkan alamat penerima, jumlah pembayaran, dan tekan kirim. Untuk mempermudah memasukkan alamat penerima, banyak dompet kini dapat membaca alamat dengan memindai kode QR atau menyentuhkan dua ponsel bersamaan dengan teknologi NFC.</p>
-<p>
-<img src="/img/faq/mobile_send.png" alt="Screenshot">
-<img src="/img/faq/mobile_receive.png" alt="Screenshot">
-</p>
-
-<h3 id="apa-keuntungan-menggunakan-bitcoin">Apa keuntungan menggunakan Bitcoin?</h3>
-<ul>
-  <li><em><b>Kebebasan Pembayaran</b></em> - Memungkinkan Anda untuk mengirim dan menerima uang secara instan di manapun dan kapanpun. Tidak ada libur bank. Tidak ada batas negara. Tidak ada batasan yang diberlakukan. Bitcoin memberikan penggunanya kontrol penuh atas uang mereka.</li>
-  <li><em><b>Biaya sangat rendah</b></em> - Pembayaran Bitcoin saat ini diproses tanpa biaya atau dengan biaya yang sangat rendah. Pengguna dapat memasukkan biaya dalam transaksi untuk memperoleh pemrosesan prioritas, sehingga mendapat konfirmasi transaksi yang lebih cepat oleh jaringan. Sebagai tambahan, prosesor penjual ada untuk membantu penjual dalam pemrosesan transaksi, mengubah bitcoin ke dalam mata uang fiat konvensional, dan memasukkan uang langsung ke rekening bank penjual setiap harinya. Karena semua layanan ini berbasis Bitcoin, maka biaya yang diperlukan jauh lebih rendah dibanding jaringan kartu kredit maupun PayPal.</li>
-  <li><em><b>Rendah risiko bagi penjual</b></em> - Transaksi Bitcoin sangat aman, tidak bisa dibatalkan, dan tidak mengandung informasi pribadi atau sensitif dari pelanggan. Hal ini melindungi penjual dari kerugian akibat penipuan atau kecurangan chargeback, serta tidak perlu penyesuaian PCI. Penjual dapat dengan mudah berekspansi ke pasar baru di mana kartu kredit tidak tersedia dan tingkat penipuan sangat tinggi. Hasil akhir dari Bitcoin adalah biaya yang lebih rendah, pasar yang lebih luas, dan pengeluaran administratif yang lebih sedikit,</li>
-  <li><em><b>Keamanan dan kontrol</b></em> - Pengguna Bitcoin memiliki kontrol penuh atas transaksi mereka; tidak mungkin bagi penjual untuk membuat tagihan yang tidak diinginkan ataupun diperhatikan sebagaimana yang bisa terjadi dengan metode pembayaran lainnya. Pembayaran dengan Bitcoin bisa dibuat tanpa menyertakan identintas pribadi untuk proses pembayarannya. Hal ini memberikan perlindungan yang kuat dari para pencuri identitas. Pengguna Bitcoin juga bisa melindungi uang mereka dengan pencadangan dan enskripsi.</li>
-  <li><em><b>Transparan dan netral</b></em> - <a href="https://www.biteasy.com/">Semua informasi</a> terkait suplai uang Bitcoin telah tersedia dalam rantai-blok bagi siapa saja yang ingin memverifikasi atau menggunakannya secara waktu-nyata. Tidak ada individu ataupun organisasi yang dapat mengontrol atau memanipulasi protokol Bitcoin karena sangat aman secara kriptografis. Hal ini memungkinkan inti Bitcoin untuk dapat sepenuhnya netral, transparan, dan dapat diprediksi.</li>
-</ul>
-
-<h3 id="apa-kerugian-menggunakan-bitcoin">Apa kerugian menggunakan Bitcoin?</h3>
-<ul>
-  <li><em><b>Tingkat penerimaan</b></em> - Banyak orang masih belum menyadari keberadaan Bitcoin. Setiap hari, makin banyak bisnis yang menerima bitcoin karena mereka menginginkan keuntungan dari penggunaan bitcoin, namun tetap saja daftar pengguna masih sedikit dan perlu bertumbuh untuk mendapat keuntungan dari <a href="https://en.wikipedia.org/wiki/Network_effect">efek jaringan</a>.</li>
-  <li><em><b>Volatilitas</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Nilai total</a> dari bitcoin yang beredar dan jumlah bisnis yang menggunakan Bitcoin masih sangat kecil dibanding yang semestinya. Karena itu, acara-acara kecil, perdagangan, ataupun aktivitas bisnis dapat secara signifikan mempengaruhi harga bitcoin. Secara teori, volatilitas ini akan berkurang seiring berkembangnya pasar dan teknologi Bitcoin. Sebelumnya tidak pernah ada mata uang yang diciptakan sendiri, sehingga sangat sulit (dan menarik) untuk membayangkan perkembangan apa yang akan terjadi selanjutnya.</li>
-  <li><em><b>Pengembangan yang sedang berlangsung</b></em> - Perangkat lunak Bitcoin masih dalam versi beta dengan banyak fitur tidak lengkap yang masih dikembangkan secara aktif. Perangkat, fitur, dan layanan baru tengah dikembangkan untuk membuat Bitcoin lebih aman dan mudah diakses publik. Beberapa pengembangan ini masih belum siap untuk semua orang. Sebagian besar bisnis Bitcoin masih tergolong baru dan belum menawarkan asuransi. Secara umum, Bitcoin masih dalam proses pendewasaan.</li>
-</ul>
-
-<h3 id="mengapa-orang-mempercayai-bitcoin">Mengapa banyak orang percaya dengan Bitcoin?</h3>
-<p>Kebanyakan kepercayaan pada Bitcoin datang dari fakta bahwa Bitcoin tidak memerlukan kepercayaan sama sekali. Bitcoin sepenuhnya berbasis sumber-terbuka dan terdesentralisasi. Ini berarti setiap orang memiliki akses ke seluruh kode sumber setiap saat. Semua pengembang di dunia dapat memverifikasi bagaimana tepatnya cara kerja Bitcoin. Semua transaksi dan bitcoin yang diterbitkan dapat dilihat secara transparan dan waktu-nyata oleh siapa saja. Semua pembayaran dapat dilakukan tanpa tergantung pada pihak ketiga dan seluruh sistem dilindungi oleh algoritma kriptografi peer-review seperti yang digunakan dalam perbankan online. Tidak ada organisasi ataupun individu yang dapat mengontrol Bitcoin, dan jaringan tetap aman meskipun tidak semua pengguna dapat dipercaya.</p>
-
-<h3 id="bisakah-saya-mendapatkan-penghasilan-dengan-bitcoin">Bisakah saya mendapatkan penghasilan dengan Bitcoin?</h3>
-<p>Anda sebaiknya jangan berharap untuk menjadi kaya dengan Bitcoin atau dengan kemunculan teknologi terbaru lainnya. Penting untuk berhati-hati terhadap segala sesuatu yang terdengar terlalu bagus untuk menjadi kenyataan atau menyalahi prinsip dasar ekonomi.</p>
-<p>Bitcoin adalah inovasi yang sedang tumbuh dan merupakan peluang bisnis yang juga memiliki risiko. Tidak ada jaminan bahwa Bitcoin akan terus tumbuh meskipun telah berkembang sedemikian cepatnya sampai saat ini. Investasi waktu dan sumber daya pada segala sesuatu yang berhubungan dengan Bitcoin membutuhkan kemampuan wirausaha. Banyak cara untuk menghasilkan uang dengan Bitcoin seperti penambangan, spekulasi atau menjalankan bisnis baru. Semua metode ini bersifat kompetitif dan tidak ada jaminan adanya keuntungan. Semua bergantung pada masing-masing individu untuk membuat evaluasi biaya dan risiko yang mungkin muncul dalam proyek apapun.</p>
-
-<h3 id="apakah-bitcoin-sepenuhnya-virtual-dan-tidak-berwujud">Apakah Bitcoin sepenuhnya virtual dan tidak berwujud?</h3>
-<p>Bitcoin bersifat virtual layaknya kartu kredit dan jaringan perbankan online yang saat ini kita gunakan setiap hari. Bitcoin bisa digunakan untuk pembayaran online dan di toko nyata seperti halnya uang konvensional. Bitcoin bisa juga ditukarkan dengan bentuk materiil seperti pada  <a href="https://www.casascius.com/">koin Casascius</a>, tetapi pembayaran dengan ponsel biasanya tetap lebih mudah. Saldo Bitcoin disimpan pada sebuah jaringan distribusi yang besar dan nilai saldo ini tidak bisa dicurangi ataupun diubah oleh siapapun. Dengan kata lain, pengguna Bitcoin memiliki kendali eksklusif atas uang mereka dan bitcoin tidak bisa hilang hanya karena berbentuk virtual. </p>
-
-<h3 id="apakah-bitcoin-anonim">Apakah Bitcoin anonim?</h3>
-<p>Bitcoin didesain untuk memungkinkan penggunanya mengirim dan menerima pembayaran dengan level privasi yang cukup seperti halnya berbagai bentuk lain dari uang. Namun, Bitcoin tidak anonim dan tidak dapat memberikan level privasi yang sama seperti uang tunai. Penggunaan Bitcoin memerlukan pencatatan publik secara luas. Ada <a href="/id/lindungi-privasi-anda">berbagai mekanisme</a> untuk melindungi privasi pengguna, dan lebih banyak lagi tengah dikembangkan. Meski demikian, masih ada pekerjaan yang harus diselesaikan sebelum fitur-fitur ini bisa digunakan dengan benar oleh sebagian besar pengguna Bitcoin.</p>
-<p>Beberapa kekhawatiran telah muncul terkait transaksi-transaksi pribadi bisa digunakan untuk keperluan ilegal dengan menggunakan Bitcoin. Bagaimanapun juga, patut diperhatikan bahwa Bitcoin akan menjadi bagian dari peraturan-peraturan yang sudah ada dalam sistem keuangan. Bitcoin tidak bisa lebih anonim daripada uang tunai dan tidak akan menyulitkan pengadaan investigasi kriminal bila diperlukan. Sebagai tambahan, Bitcoin juga didesain untuk mencegah kejahatan keuangan dalam jumlah besar. </p>
-
-<h3 id="apa-yang-terjadi-saat-bitcoin-hilang">Apa yang terjadi saat bitcoin hilang?</h3>
-<p>Ketika pengguna kehilangan dompet, ini berdampak pada hilangnya uang dari sirkulasi. Bitcoin yang hilang masih berada dalam rantai-blok seperti bitcoin-bitcoin lainya. Namun, bitcoin yang hilang akan tetap tidak aktif selamanya karena tidak ada cara yang bisa digunakan oleh siapapun untuk menemukan kunci pribadi yang memungkinkannya untuk digunakan lagi. Karena hukum kebutuhan dan penawaran, ketika bitcoin yang beredar hanya sedikit, maka jumlah yang tersisa akan lebih dibutuhkan dan memiliki nilai yang lebih tinggi sebagai dampaknya.</p>
-
-<h3 id="dapatkah-bitcoin-tumbuh-menjadi-jaringan-pembayaran-yang-utama">Dapatkah Bitcoin tumbuh menjadi jaringan pembayaran yang utama?</h3>
-<p>Jaringan Bitcoin sudah bisa memproses lebih banyak transaksi tiap detik dibanding hari ini. Kondisi ini, bagaimanapun juga, belum sepenuhnya siap untuk menangani jumlah transaksi sebesar jaringan kartu kredit. Pengembangan sedang dilakukan untuk mengatasi keterbatasan yang ada dan segala yang dibutuhkan untuk itu di masa depan. Sejak awal diciptakan, setiap aspek dari jaringan Bitcoin berproses untuk terus tumbuh dalam hal kematangan, keoptimalan dan spesialisasi dan kondisi ini diharapkan akan terus terjadi beberapa tahun ke depan. Seiring dengan pertumbuhan trafik, semakin banyak pengguna Bitcoin menggunakan klien kapasitas ringan dan simpul jaringan penuh bisa menjadi layanan yang semakin terspesialisasi. Untuk lebih lengkapnya, lihat halaman <a href="https://en.bitcoin.it/wiki/Scalability">Skalabilitas</a> pada Wiki.</p>
-
-<h2 id="sah">Sah</h2>
-
-<h3 id="apakah-bitcoin-sah">Apakah Bitcoin sah?</h3>
-<p>Sepengetahuan kami, <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin belum dinyatakan ilegal</a> di sebagian besar negara. Meskipun ada beberapa negara (seperti Argentina dan Rusia) yang secara ketat melarang mata uang asing. Negara lain (seperti Thailand) membatasi izin entitas mata uang tertentu seperti pertukaran Bitcoin.</p>
-<p>Para pembuat kebijakan dari berbagai negara tengah mengambil langkah untuk menyediakan peraturan bagi individu dan bisnis mengenai bagaimana mengintegrasikan teknologi baru ini dengan peraturan sistem finansial formal. Contohnya, Financial Crimes Enforcement Network (FinCEN), sebuah biro di Departemen Keuangan Amerika Serikat, menerbitkan panduan lepas mengenai bagaimana pemerintah menangani aktivitas tertentu terkait mata uang virtual.</p>
-
-<h3 id="apakah-bitcoin-bisa-digunakan-untuk-aktivitas-ilegal">Apakah Bitcoin bisa digunakan untuk aktivitas ilegal?</h3>
-<p>Bitcoin adalah uang, dan uang selalu digunakan untuk tujuan sah maupun ilegal. Uang tunai, kartu kredit dan sistem perbankan saat ini secara luas melampaui Bitcoin dalam hal penggunaan untuk kegiatan kriminal. Bitcoin dapat membawa inovasi yang signifikan dalam sistem pembayaran dan keuntungan inovasi tersebut sering dianggap jauh melampaui potensi kekurangan Bitcoin.</p>
-<p>Bitcoin didesain sebagai langkah besar untuk membuat uang menjadi lebih aman dan sekaligus berfungsi sebagai bentuk perlindungan terhadap kejahatan keuangan. Sebagai contoh, bitcoin sama sekali tidak bisa dipalsukan. Pengguna memiliki kontrol penuh atas pembayaran mereka dan tidak bisa menerima tagihan yang tidak mereka setujui seperti yang bisa terjadi pada pembobolan kartu kredit. Transaksi bitcoin tidak bisa dibatalkan dan kebal terhadap penipuan chargeback. Bitcoin memungkinkan uang menjadi lebih aman dari pencurian dan risiko kehilangan dengan menggunakan mekanisme yang sangat kuat seperti pencadangan, enkripsi dan tanda tangan berganda.</p>
-<p>Beberapa kekhawatiran timbul mengenai peluang Bitcoin digunakan oleh kriminal karena sifatnya yang dapat dibelanjakan untuk pembayaran pribadi dan tidak dapat dibatalkan. Meski demikian, sebenarnya peluang ini telah ada dengan pembayaran uang tunai dan transfer bank, yang telah digunakan sejak lama. Penggunaan Bitcoin tentunya akan mengikuti peraturan serupa yang telah ada dalam sistem finansial saat ini, dan Bitcoin tidak akan menghalangi berjalannya investigasi kriminal. Secara umum, terobosan baru biasanya memang dianggap kontroversial sebelum berbagai keuntungannya dimengerti sepenuhnya oleh publik. Internet adalah contoh kasus yang baik untuk menggambarkan hal ini.</p>
-
-<h3 id="bisakah-bitcoin-diregulasi">Bisakah Bitcoin diregulasi?</h3>
-<p>Protokol Bitcoin tidak dapat dimodifikasi tanpa kerjasama dari hampir keseluruhan penggunanya, yang dapat memilih perangkat lunak apa yang ingin mereka gunakan. Berusaha memberikan hak khusus pada otoritas lokal pada dasarnya mustahil dilakukan dalam jaringan Bitcoin global. Sebuah organisasi kaya dapat berinvestasi dalam perangkat keras penambangan untuk mengontrol separuh kekuatan penghitungan dari jaringan dan menjadi mampu untuk memblokir atau membatalkan transaksi-transaksi terbaru. Namun, tidak ada garansi bahwa mereka dapat mempertahankan kemampuan tersebut karena membutuhkan dana investasi yang setara dengan semua penambang di dunia.</p>
-<p>Meski demikian, tetap mungkin untuk mengatur penggunaan Bitcoin seperti halnya mengatur instrumen keuangan lainnya. Sama seperti dolar, Bitcoin dapat digunakan untuk berbagai tujuan, beberapa diantaranya mungkin dianggap legal ataupun ilegal tergantung hukum yang berlaku di suatu negara. Terkait hal itu, Bitcoin tidak berbeda dari perangkat atau sumber daya lain yang harus mengikuti peraturan yang berbeda-beda dalam tiap negara. Bitcoin juga dapat dipersulit dengan adanya peraturan ketat, sehingga sulit untuk menentukan berapa persen dari pengguna akan tetap menggunakan teknologi ini. Pemerintahan yang melarang Bitcoin akan mencegah bisnis dan pasar domestiknya berkembang, sehingga menggeser peluang inovasi ke negara lain. Tantangan bagi pembuat kebijakan, seperti yang selalu terjadi, adalah mengembangkan solusi yang efisien tanpa menghambat pertumbuhan bisnis dan pasar yang baru muncul.</p>
-
-<h3 id="bagaimana-dengan-bitcoin-dan-pajak">Bagaimana dengan Bitcoin dan pajak?</h3>
-<p>Bitcoin bukanlah mata uang fiat dengan status sah di negara manapun, tetapi seringkali tetap terikat pada aturan kewajiban pajak terlepas dari media uang yang digunakan. Ada berbagai macam undang-undang di banyak negara yang dapat menyebabkan pajak pendapatan, penjualan, penggajian, laba, atau bentuk lain dari kewajiban pajak muncul dengan Bitcoin.</p>
-
-<h3 id="bagaimana-dengan-bitcoin-dan-perlindungan-konsumen">Bagaimana dengan Bitcoin dan perlindungan konsumen?</h3>
-<p>Bitcoin membebaskan penggunanya untuk bertransaksi dengan aturan mereka sendiri. Setiap pengguna dapat mengirim dan menerima pembayaran dalam cara yang mirip dengan uang tunai, tetapi mereka juga dapat mengambil bagian dalam kontrak yang lebih rumit. Tanda tangan berganda memungkinkan transaksi untuk dapat diterima oleh jaringan hanya jika sejumlah orang dalam kelompok tertentu setuju untuk menandatangani transaksi. Hal ini memungkinkan layanan mediasi sengketa inovatif untuk dikembangkan di masa depan. Layanan tersebut dapat memungkinkan pihak ketiga untuk menyetujui atau menolak transaksi dalam kasus perselisihan antara pihak-pihak lain tanpa memiliki kontrol atas uang mereka. Berbeda dengan uang tunai dan metode pembayaran lainnya, Bitcoin selalu meninggalkan bukti publik bahwa transaksi itu terjadi, yang dapat berpotensi digunakan dalam bukti penelusuran terhadap bisnis dengan praktik penipuan.</p>
-<p>Perlu dicatat bahwa meski penjual biasanya bergantung pada reputasi publik mereka untuk mempertahankan bisnis dan menggaji karyawan, namun mereka tidak memiliki akses ke level informasi yang sama saat berhubungan dengan pelanggan baru. Cara kerja Bitcoin memungkinkan individu dan pelaku bisnis untuk dilindungi dari penipuan dan chargeback, sembari memberikan pilihan kepada konsumen untuk meminta pengamanan lebih saat mereka tidak mempercayai penjual tertentu.</p>
-
-<h2 id="ekonomi">Ekonomi</h2>
-
-<h3 id="bagaimana-bitcoin-dibuat">Bagaimana bitcoin dibuat?</h3>
-<p>Bitcoin baru tercipta dari sebuah proses kompetitif dan desentralisasi yang disebut "penambangan". Dalam proses ini, individu mendapat hadiah dari jaringan atas layanan yang mereka berikan. Para penambang Bitcoin memroses transaksi dan mengamankan jaringan menggunakan perangkat keras khusus dan sebagai gantinya mendapat bitcoin baru.</p>
-<p>Protokol Bitcoin didesain sedemikian rupa sehingga bitcoin baru dibuat dengan nilai tetap. Hal ini membuat penambangan Bitcoin menjadi bisnis yang sangat kompetitif. Ketika semakin banyak penambang bergabung pada jaringan, menjadi semakin sulit untuk mendapatkan keuntungan dan penambang harus mencari cara paling efisien untuk memotong biaya operasional. Tidak ada pemegang kekuasan utama ataupun pengembang yang memiliki kekuatan untuk mengontrol ataupun memanipulasi sistem untuk meningkatkan keuntungan pribadi. Setiap koneksi Bitcoin di seluruh dunia akan menolak apapun yang tidak sesuai dengan peraturan yang berlaku.    </p>
-<p>Bitcoin diciptakan dengan tingkat yang dapat diprediksi dan semakin menurun. Jumlah bitcoin yang diciptakan setiap tahunnya secara otomatis berkurang separuh hingga penerbitan bitcoin berhenti sepenuhnya saat jumlah totalnya mencapai 21 juta bitcoin. Saat ini, penambang Bitcoin kemungkinan akan didukung secara eksklusif oleh sejumlah biaya-biaya transaksi bernominal kecil.</p>
-
-<h3 id="mengapa-bitcoin-memiliki-nilai">Mengapa bitcoin memiliki nilai?</h3>
-<p>Bitcoin memiliki nilai karena berguna sepeti layaknya uang. Bitcoin memiliki sifat-sifat uang (tahan lama, ringkas, bisa ditukarkan, langka, bisa dibagi, dan bisa dikenali) berdasarkan rumusan matematika daripada berdasarkan pada bentuk fisik (seperti emas dan perak) ataupun kepercayaan pada pihak pusat (seperti mata uang fiat). Singkat kata, Bitcoin didukung oleh matematika. Dengan atribut-atribut ini, semua yang diperlukan dari uang untuk memiliki nilai tukar adalah kepercayaan dan penerimaan. Dalam kasus Bitcoin, kondisi ini bisa diukur dengan pertumbuhan pengguna, penjual dan pengguna awal. Seperti mata uang lainnya, nilai bitcoin datang hanya dari orang-orang yang mau menerimanya sebagai alat pembayaran.</p>
-
-<h3 id="apa-yang-menentukan-harga-bitcoin">Apa yang menentukan harga bitcoin?</h3>
-<p>Harga bitcoin ditentukan oleh permintaan dan penawaran. Ketika permintaan untuk bitcoin meningkat, harga meningkat dan ketika permintaan menurun, harga turun. Bitcoin yang sudah beredar jumlahnya terbatas dan bitcoin baru dibuat dengan tingkat yang dapat diprediksi dan menurun, yang berarti permintaan harus mengikuti besaran inflasi untuk menjaga harga tetap stabil. Karena Bitcoin masih merupakan pasar yang relatif kecil dibanding potensi yang sebenarnya bisa dicapai, maka tidak memerlukan jumlah uang yang besar untuk menggerakkan harga pasar naik atau turun, dan oleh karena itu harga bitcoin masih sangat mudah berubah. </p>
-<p>Harga Bitcoin, tahun 2013 hingga 2015<br><img src="/img/faq/price_chart.png" alt="chart"></p>
-
-<h3 id="bisakah-bitcoin-menjadi-tidak-berharga">Bisakah bitcoin menjadi tidak berharga?</h3>
-<p>Ya. Sejarah dipenuhi dengan mata uang yang gagal dan tidak lagi digunakan, seperti <a href="https://en.wikipedia.org/wiki/German_gold_mark">Mark Jerman</a> selama pemerintahan Republik Weimar, dan yang terbaru adalah <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">dolar Zimbabwe</a>. Meskipun kegagalan mata uang pada umumnya terjadi karena jenis hiperinflasi yang tidak mungkin terjadi pada Bitcoin, selalu ada potensi terjadinya kegagalan teknis, persaingan mata uang, isu politik dan sebagainya. Sebagai aturan dasar yang utama, tidak ada mata uang yang bisa dianggap sangat aman dari kegagalan dan masa sulit. Bitcoin telah terbukti bisa diandalkan selama bertahun-tahun sejak pencanangannya dan berpotensi besar untuk terus tumbuh. Bagaimanapun juga, tidak ada seorang pun yang bisa memprediksi bahwa masa depan akan memihak Bitcoin. </p>
-
-<h3 id="apakah-bitcoin-merupakan-fenomena-gelembung">Apakah Bitcoin merupakan fenomena gelembung? </h3>
-<p>Peningkatan harga yang cepat tidak selalu merupakan fenomena gelembung. Penilaian berlebih yang dibuat-buat yang akan membawa pada penurunan koreksi secara drastis merupakan fenomena gelembung. Pilihan berdasarkan perilaku manusia oleh ratusan ribu pelaku pasar merupakan penyebab dari perubahan harga bitcoin sehingga pasar berusaha menemukan harga. Alasan perubahan perilaku bisa jadi termasuk hilangnya kepercayaan terhadap Bitcoin, perbedaan yang besar antara nilai dan harga tidak berdasarkan pada dasar ekonomi Bitcoin, peningkatan liputan pers yang memunculkan permintaan spekulatif, ketakutan akan ketidakpastian, dan antusiasme kuno yang berlebih dan keserakahan. </p>
-
-<h3 id="apakah-bitcoin-merupakan-skema-ponzi">Apakah Bitcoin merupakan skema Ponzi?</h3>
-<p>Skema Ponzi adalah kegiatan penipuan investasi yang membayarkan laba kepada investor dari uang mereka sendiri, atau uang yang sudah dibayarkan oleh investor sebelumnya, dan bukan dari laba yang diterima oleh masing-masing individu yang menjalankan bisnis. Skema Ponzi didesain untuk hancur pada pendanaan investor terakhir ketika jumlah peserta baru sudah tidak mencukupi.</p>
-<p>Bitcoin adalah proyek piranti lunak tanpa otoritas pusat. Konsekuensinya, tidak ada seorang pun yang dapat berlaku curang terkait dengan keuntungan investasi. Seperti mata uang utama pada umumnya seperti emas, dolar Amerika Serikat, euro, yen, dll. tidak ada garansi atas kemampuan membeli dan nilai tukar bergerak bebas. Hal ini membawa pada volatilitas di mana pemilik bitcoin bisa secara tidak terkira mendapatkan atau kehilangan uang. Di luar faktor spekulasi, Bitcoin juga merupakan sistem pembayaran yang berguna dan kompetitif yang sedang digunakan oleh ribuan pengguna dan bisnis.</p>
-
-<h3 id="bukankah-bitcoin-menguntungkan-pengguna-awal-secara-tidak-adil">Bukankah Bitcoin menguntungkan pengguna awal secara tidak adil?</h3>
-<p>Beberapa pengguna awal memiliki bitcoin dalam jumlah besar karena mereka mengambil risiko dan menginvestasikan waktu dan sumber daya pada teknologi yang belum terbukti, yang pada saat itu masih jarang digunakan dan belum memiliki keamanan yang memadai. Banyak para pengguna awal menghabiskan bitcoin dalam jumlah besar beberapa kali sebelum bitcoin menjadi berharga, atau membeli dalam jumlah kecil dan tidak mendapatkan keuntungan yang besar. Tidak ada jaminan bahwa harga bitcoin akan naik atau turun. Hal ini sangat mirip dengan berinvestasi pada tahap awal yang mungkin bisa memberikan nilai seiring kegunaan dan popularitasnya atau bahkan tidak pernah menjadi apapun. Bitcoin masih pada tahapan awal, dan telah dirancang untuk tujuan jangka panjang. Sulit dibayangkan bagaimana Bitcoin menguntungkan pengguna awal, karena pengguna Bitcoin hari ini bisa saja menjadi pengguna awal di kemudian hari, bisa juga tidak.</p>
-
-<h3 id="tidakkah-jumlah-bitcoin-yang-terbatas-menjadi-kendala">Tidakkah jumlah bitcoin yang terbatas menjadi kendala?</h3>
-<p>Bitcoin ini unik karena hanya akan ada 21 juta bitcoin yang dibuat. Namun demikian, ini tidak akan menjadi batasan karena nilai transaksi bisa dipecah menjadi bagian unit yang lebih kecil dari sebuah bitcoin, seperti bit - terdapat 1.000.000 bit dalam 1 bitcoin. Bitcoin dapat dibagi dalam maksimal 8 tempat desimal (0,000 000 01) dan bahkan memungkinkan unit yang lebih kecil jika diperlukan di masa mendatang seiring penurunan ukuran rata-rata transaksi.</p>
-
-<h3 id="akankah-bitcoin-jatuh-dalam-spiral-deflasi">Akankah Bitcoin jatuh dalam spiral deflasi?</h3>
-<p>Teori spiral deflasi menyatakan bahwa jika harga diperkirakan turun, orang akan memilih membeli di masa depan dalam rangka untuk mendapatkan keuntungan dari harga yang lebih rendah. Penurunan permintaan ini akan menyebabkan penjual menurunkan harga mereka untuk mencoba merangsang permintaan, yang justru akan membuat masalah semakin buruk dan berujung pada depresi ekonomi.</p>
-<p>Meskipun teori in merupakan cara yang populer untuk membenarkan inflasi bagi para bankir pusat, namun tidak selalu benar dan dianggap sebagai kontroversi oleh para ekonom. Barang elektronik adalah salah satu contoh dari sebuah pasar yang harganya selalu turun secara konstan tetapi tidak berarti sedang dalam masa depresi. Serupa dengan itu, nilai dari bitcoin telah turun selama ini akan tetapi besaran ekonomi Bitcoin juga telah tumbuh pesat. Karena nilai dari mata uang dan besaran ekonomi mulai dari nol pada tahun 2009, Bitcoin adalah contoh ketidaksesuaian yang menunjukkan bahwa sebuah teori terkadang bisa saja salah.</p>
-<p>Meskipun ada kondisi ini, Bitcoin tidak didesain untuk mengalami penurunan nilai mata uang. Lebih tepatnya Bitcoin dibuat untuk mengalami inflasi di tahun-tahun awal dan menjadi stabil di tahun-tahun berikutnya. Satu-satunya kondisi di mana jumlah bitcoin dalam sirkulasi akan turun adalah jika orang-orang ceroboh kehilangan dompet mereka karena tidak membuat pencadangan. Dengan dasar keuangan dan ekonomi yang stabil, nilai dari mata uang harusnya tetap stabil. </p>
-
-<h3 id="bukankah-spekulasi-dan-ketidakpastian-merupakan-masalah-bagi-bitcoin">Bukankah spekulasi dan ketidakpastian merupakan masalah bagi Bitcoin?                        </h3>
-<p>Ini adalah kondisi seperti perumpamaan "mana yang lebih dulu: telur atau ayam". Agar harga bitcoin bisa stabil, ekonomi skala besar perlu berkembang dengan lebih banyak bisnis dan pengguna. Agar perekonomian skala besar berkembang, bisnis dan pengguna akan mencari kestabilan harga. </p>
-<p>Untungnya, ketidakpastian tidak berpengaruh pada manfaat utama Bitcoin sebagai sistem pembayaran untuk mentransfer uang dari A ke B. Mudah bagi para pelaku bisnis untuk mengubah pembayaran bitcoin ke mata uang mereka secara instan, sehingga mereka mendapatkan keuntungan dari Bitcoin tanpa harus mengalami fluktuasi harga. Bitcoin menawarkan banyak fitur yang bermanfaat dan unik, karenanya banyak pengguna memilih menggunakan Bitcoin. Dengan solusi dan insentif yang demikian, sangat mungkin bahwa Bitcoin akan dewasa dan tumbuh hingga mencapai tahap di mana ketidakpastian/volatilitas nilainya sudah sangat berkurang.</p>
-
-<h3 id="bagaimana-jika-seseorang-membeli-semua-bitcoin-yang-ada">Bagaimana jika seseorang membeli semua bitcoin yang ada?</h3>
-<p>Hanya sepersekian dari semua bitcoin yang telah diterbitkan saat ini yang dijual di pasar pertukaran. Pasar Bitcoin bersifat kompetitif, artinya harga bitcoin akan naik atau turun tergantung pada permintaan dan penawaran. Terlebih lagi, bitcoin baru akan terus diterbitkan dalam dekade-dekade mendatang. Karena itu bahkan pembeli yang paling ambisius tidak akan bisa membeli semua bitcoin yang ada sekarang. Meski demikian, situasi ini tidak mengindikasikan bahwa pasar tidak rentan terhadap manipulasi harga; masih tidak memerlukan jumlah uang yang banyak untuk menggerakkan harga pasar naik atau turun, sehingga sejauh ini Bitcoin masih tergolong aset yang mudah berubah.</p>
-
-<h3 id="bagaimana-jika-seseorang-menciptakan-mata-uang-digital-yang-lebih-baik">Bagaimana jika seseorang menciptakan mata uang digital yang lebih baik?</h3>
-<p>Hal itu mungkin terjadi. Untuk saat ini, Bitcoin tetap menjadi mata uang virtual tak terpusat yang paling populer, akan tetapi tidak ada jaminan bahwa posisinya akan tetap demikian. Sudah ada seperangkat mata uang lain yang terinspirasi dari Bitcoin. Mungkin bisa diasumsikan bahwa pengembangan yang signifikan akan dibutuhkan oleh mata uang baru untuk mengambil alih Bitcoin dalam hal kemampuan membangun pasar; meskipun hal ini tetap tidak bisa diprediksi. Bitcoin kemungkinan juga bisa mengadopsi pengembangan yang dilakukan mata uang saingan, selama tidak mengubah dasar pokok dari protokol.</p>
-
-<h2 id="transaksi">Transaksi</h2>
-
-<h3 id="mengapa-saya-harus-menunggu-10-menit">Mengapa saya harus menunggu 10 menit?</h3>
-<p>Menerima pembayaran hampir instan dengan Bitcoin. Namun ada penundaan rata-rata 10 menit sebelum jaringan mulai mengonfirmasi transaksi Anda dengan memasukkannya dalam blok dan sebelum Anda dapat menggunakan bitcoin yang Anda terima. Sebuah konfirmasi berarti ada konsensus pada jaringan bahwa bitcoin yang Anda terima belum dikirim ke orang lain dan masih dianggap sebagai milik Anda. Setelah transaksi Anda telah dimasukkan dalam satu blok, itu akan terus tertimbun di bawah setiap blok setelahnya, yang secara eksponensial akan mengonsolidasikan konsensus ini dan mengurangi risiko transaksi dibatalkan. Setiap pengguna bebas menentukan pada titik mana sebuah transaksi sudah dikonfirmasi, tetapi 6 konfirmasi sering dianggap aman seperti halnya menunggu 6 bulan pada transaksi kartu kredit.</p>
-
-<h3 id="berapa-biaya-transaksinya">Berapa biaya transaksinya?</h3>
-<p>Sebagian besar transaksi bisa diproses tanpa biaya, tetapi pengguna disarankan untuk membayar biaya secara sukarela untuk mendapatkan konfirmasi transaksi yang lebih cepat dan untuk membayar kompensasi bagi para penambang. Ketika biaya dibutuhkan, pada umumnya mereka hanya mengharap jumlah yang sedikit. Klien Bitcoin Anda biasanya akan berusaha memperkirakan berapa biaya yang dibutuhkan.</p>
-<p>Biaya transaksi digunakan sebagai pelindung terhadap pengguna yang mengirimkan transaksi untuk membebani jaringan. Cara kerja biaya ini masih sedang dikembangkan dan akan berubah dari waktu ke waktu. Karena biaya tidak berhubungan dengan jumlah bitcoin yang dikirim, maka bisa jadi membuatnya tampak sangat rendah (0.0005 BTC untuk sebuah transfer 1.000 BTC) atau bahkan terlalu tinggi (0.004 BTC untuk pembayaran 0.02 BTC). Biaya ditentukan oleh atribut seperti data dalam transaksi dan pengulangan transaksi. Sebagai contoh, jika Anda menerima sejumlah besar pembayaran dengan nomimal kecil, maka biaya untuk mengirimkannya akan lebih tinggi. Pembayaran semacam itu dapat dibandingkan dengan membayar tagihan restoran dengan menggunakan uang receh. Membelanjakan pecahan kecil bitcoin Anda dengan cepat juga akan memerlukan biaya. Jika aktivitas Anda mengikuti pola transaksi konvensional, maka biaya akan tetap sangat rendah.</p>
-
-<h3 id="apa-yang-terjadi-jika-saya-menerima-bitcoin-ketika-komputer-saya-dalam-keadaan-mati">Apakah yang terjadi jika saya menerima sebuah bitcoin ketika komputer saya dalam keadaan mati?</h3>
-<p>Tidak masalah. Bitcoin akan muncul saat Anda memulai aplikasi dompet Anda. Bitcoin tidak benar-benar diterima oleh perangkat lunak pada komputer Anda, mereka ditambahkan pada buku catatan publik yang dibagi antara semua perangkat pada jaringan. Jika Anda menerima bitcoin saat program klien dompet Anda tidak berjalan dan Anda nanti menjalankannya, maka program tersebut akan mengunduh blok-blok dan akan merekam segala jenis transaksi yang belum diketahui, dan bitcoin akhirnya akan muncul seolah-olah baru saja diterima saat itu. Dompet Anda hanya diperlukan bila Anda ingin membelanjakan bitcoin.</p>
-
-<h3 id="apa-yang-dimaksud-dengan-sinkronisasi-dan-mengapa-butuh-waktu-lama-sekali">Apa yang dimaksud dengan "sinkronisasi" dan mengapa butuh waktu lama sekali?</h3>
-<p>Sinkronisasi yang lama hanya diperlukan dengan klien koneksi penuh seperti Bitcoin Core. Secara teknis, sinkronisasi adalah proses mengunduh dan memverifikasi semua transaksi Bitcoin sebelumnya pada jaringan. Beberapa klien Bitcoin perlu memperhatikan semua transaksi sebelumnya untuk menghitung saldo yang tersisa pada dompet Bitcoin Anda dan membuat transaksi baru. Langkah ini dapat memerlukan banyak sumber daya, bandwith dan penyimpanan yang cukup untuk mengakomodasi rantai block ukuran penuh. Agar Bitcoin tetap aman, beberapa orang harus tetap menggunakan klien koneksi penuh karena mereka bertugas memvalidasi dan menyampaikan transaksi.</p>
-
-<h2 id="penambangan">Penambangan</h2>
-
-<h3 id="apa-itu-penambangan-bitcoin">Apa itu penambangan Bitcoin?</h3>
-<p>Penambangan adalah proses pengeluaran daya komputasi untuk memproses transaksi, mengamankan jaringan, dan membuat semua orang dalam sistem tersinkronisasi bersama-sama. Hal ini bisa diumpamakan seperti pusat data Bitcoin, kecuali bahwa ini telah dirancang untuk sepenuhnya tidak terpusat dengan penambang yang beroperasi di semua negara dan tidak ada individu yang memiliki kontrol atas jaringan. Proses ini disebut dengan "penambangan" sebagai analogi seperti penambangan emas, karena merupakan mekanisme sementara yang digunakan untuk menerbitkan bitcoin baru. Tetapi tidak seperti pertambangan emas, penambangan Bitcoin memberikan imbalan sebagai bentuk pertukaran atas layanan yang berguna yang diperlukan untuk mengoperasikan jaringan pembayaran yang aman. Penambangan masih akan diperlukan setelah bitcoin terakhir diterbitkan.</p>
-
-<h3 id="bagaimana-cara-kerja-penambangan-bitcoin">Bagaimana cara kerja penambangan Bitcoin?</h3>
-<p>Setiap orang bisa menjadi penambang Bitcoin dengan cara menjalankan perangkat lunak dengan perangkat keras tertentu. Perangkat lunak untuk penambangan memantau siaran transaksi melalui jaringan peer-to-peer dan melakukan tugas-tugas tertentu untuk memroses dan mengonfirmasi transaksi-transaksi ini. Para penambang Bitcoin melakukan pekerjaan ini karena mereka dapat memperoleh biaya transaksi yang dibayarkan oleh pengguna untuk pemrosesan transaksi yang lebih cepat, dan bitcoin baru pun diterbitkan berdasarkan suatu rumus tetap.</p>
-<p>Agar transaksi baru bisa dikonfirmasi, perlu dimasukkan ke dalam blok bersama dengan bukti matematis dari kinerja tersebut. Bukti tersebut sangatlah sulit dibuat karena tidak ada cara untuk membuatnya selain dengan mencoba miliaran kalkulasi per detik. Hal ini memerlukan penambang untuk melakukan perhitungan ini sebelum blok mereka diterima oleh jaringan dan sebelum mereka mendapat imbalan. Seiring makin banyak orang yang mulai menambang, kesulitan untuk menemukan blok yang valid secara otomatis ditingkatkan oleh jaringan untuk memastikan bahwa waktu rata-rata untuk menemukan blok tetap sekitar 10 menit. Akibatnya, penambangan adalah bisnis yang sangat kompetitif di mana tidak ada penambang perorangan dapat mengontrol apa yang ada dalam rantai blok.</p>
-<p>Bukti kinerja tersebut juga didesain untuk bergantung pada blok sebelumnya untuk memaksakan urutan kronologis dalam rantai-blok. Hal ini membuatnya sulit secara eksponensial untuk membatalkan transaksi sebelumnya karena memerlukan penghitungan ulang dari bukti-bukti kinerja dari semua blok berikutnya. Ketika dua blok ditemukan pada saat bersamaan, penambang akan mengerjakan blok pertama yang mereka terima dan berganti ke rantai terpanjang dari blok segera setelah blok berikutnya ditemukan. Ini memungkinkan penambangan untuk mengamankan dan mempertahankan konsensus global berdasarkan kekuatan pemrosesan.</p>
-<p>Penambang Bitcoin tidak bisa berlaku curang dengan meningkatkan hadiah mereka sendiri, juga tidak bisa memproses transaksi curang yang bisa merusak jaringan Bitcoin karena semua koneksi Bitcoin akan menolak segala jenis blok yang mengandung data tidak sah berdasarkan peraturan dari protokol Bitcoin. Dengan demikian, jaringan tetap aman meski tidak semua penambang Bitcoin bisa dipercaya.</p>
-
-<h3 id="bukankah-penambangan-bitcoin-menyia-nyiakan-energi">Bukankah penambangan Bitcoin menyia-nyiakan energi?</h3>
-<p>Menghabiskan energi untuk mengamankan dan menjalankan sistem pembayaran adalah sesuatu yang tidak sia-sia. Seperti layanan pembayaran lainnya, penggunaan Bitcoin diikuti oleh adanya biaya proses pembuatan. Layanan yang diperlukan untuk menjalankan berbagai sistem keuangan yang sudah ada seperti bank, kartu kredit dan kendaraan bersenjata juga memerlukan banyak energi. Meskipun tidak seperti Bitcoin, total konsumsi energi mereka tidak transparan dan tidak bisa diukur dengan mudah.</p>
-<p>Penambangan Bitcoin telah didesain untuk makin optimal seiring berjalannya waktu dengan perangkat keras khusus yang membutuhkan lebih sedikit energi, dan biaya pelaksanaan penambangan akan semakin sesuai dengan permintaan. Ketika penambangan Bitcoin menjadi terlalu kompetitif dan kurang menguntungkan, beberapa penambang memilih untuk berhenti dari aktifitasnya. Terlebih lagi, seluruh tenaga yang dikeluarkan penambang sebenarnya berubah menjadi panas, dan penambang yang paling diuntungkan adalah mereka yang bisa memanfaatkan kondisi panas ini. Jaringan penambangan yang optimal dan efisien adalah yang tidak memakan energi ekstra. Meskipun ini tergolong kondisi ideal, nilai ekonomis dari kegiatan penambangan membuat para penambang berusaha keras dalam aktifitas ini.</p>
-
-<h3 id="bagaimana-menambang-bisa-membantu-mengamankan-bitcoin">Bagaimana penambangan membantu mengamankan Bitcoin?</h3>
-<p>Penambangan hampir serupa seperti lotre kompetitif yang membuat semua orang sulit untuk menambahkan blok-blok transaksi baru ke dalam rantai-blok. Ini melindungi netralitas jaringan dengan mencegah siapapun mendapat kekuasaan untuk memblokir transaksi tertentu. Mekanisme ini juga mencegah siapapun mengganti bagian-bagian dari rantai-blok untuk menarik kembali uang yang mereka belanjakan, yang bisa digunakan sebagai penipuan terhadap pengguna lain. Penambangan membuat sangat sulit secara eksponensial untuk membatalkan transaksi yang telah terjadi dengan meminta penulisan ulang semua blok setelah transaksi tersebut.</p>
-
-<h3 id="apa-yang-saya-perlukan-untuk-mulai-menambang">Apa yang saya butuhkan untuk mulai menambang?</h3>
-<p>Pada awal kemunculan Bitcoin, siapa saja bisa menemukan blok baru dengan menggunakan CPU komputer mereka. Seiring dengan makin banyaknya orang yang mulai menambang, makin sulit untuk menemukan blok baru hingga sampai pada level di mana hanya metode yang paling ramah biaya untuk menemukan blok baru adalah dengan menggunakan perangkat keras khusus. Anda dapat mengunjungi <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> untuk informasi lebih lanjut.</p>
-
-<h2 id="keamanan">Keamanan</h2>
-
-<h3 id="apakah-bitcoin-aman">Apakah Bitcoin aman?</h3>
-<p>Teknologi Bitcoin - protokol dan kriptografi - memiliki catatan rekor keamanan yang kuat, dan jaringan Bitcoin kemungkinan adalah proyek penghitungan terdistribusi yang terbesar di dunia. Kelemahan Bitcoin yang paling umum terletak pada kesalahan penggunanya. Data-data dompet Bitcoin yang menyimpan kunci pribadi dapat terhapus tanpa sengaja, hilang, atau dicuri. Hal ini serupa dengan uang tunai fisik yang disimpan dalam bentuk digital. Untungnya, pengguna dapat menerapkan <a href="/id/amankan-dompet-anda">langkah-langkah pengamanan</a> untuk melindungi uang mereka atau menggunakan jasa penyedia layanan yang menawarkan keamanan tingkat tinggi dan asuransi terhadap pencurian atau kehilangan.</p>
-
-<h3 id="pernahkah-bitcoin-diretas-pada-masa-lalu">Pernahkah Bitcoin diretas pada masa lalu?</h3>
-<p>Aturan protokol dan kriptografi yang digunakan oleh Bitcoin masih bekerja bertahun-tahun setelah dibuat pertama kali, yang merupakan pertanda bagus bahwa konsep ini didesain dengan baik. Meski demikian, <a href="/en/alerts">kelemahan keamanan</a> telah ditemukan dan diperbaiki seiring waktu dengan penerapan berbagai perangkat lunak. Seperti perangkat lunak lainnya, keamanan dari perangkat lunak Bitcoin bergantung pada kecepatan menemukan dan mengatasi masalah. Semakin banyak masalah yang ditemukan, semakin Bitcoin mencapai kematangan.</p>
-<p>Sering terjadi kesalahan konsep tentang pencurian dan peretasan keamanan yang terjadi pada berbagai tempat penukaran dan bisnis. Meskipun hal-hal tadi merupakan musibah, tidak ada satupun dari hal tersebut melibatkan Bitcoin dibajak, tidak pula berarti ada kelemahan dalam Bitcoin. Sama seperti adanya perampokan bank bukan berarti mata uang dolar telah melemah atau tercemar. Bagaimanapun juga, memang penerapan keamanan yang bagus dan berbagai solusi keamanan dibutuhkan untuk memberikan perlindungan yang lebih baik bagi keamanan uang pengguna, dan untuk mengurangi risiko terjadinya pencurian dan kehilangan. Beberapa tahun terakhir, sistem keamanan telah berkembang dengan cepat, seperti enkripsi dompet, dompet offline, dompet perangkat keras, dan transaksi tanda tangan berganda.</p>
-
-<h3 id="bisakah-pengguna-berkolusi-melawan-bitcoin">Bisakah pengguna berkolusi melawan Bitcoin?</h3>
-<p>Tidaklah mungkin untuk mengubah protokol Bitcoin semudah itu. Klien Bitcoin yang tidak mengikuti aturan yang sama tidak bisa memaksakan peraturan mereka sendiri kepada pengguna lain. Menurut spesifikasi saat ini, pembelanjaan ganda tidak mungkin terjadi dalam rantai-blok yang sama, demikian pula dengan membelanjakan bitcoin tanpa tanda tangan yang valid. Karena itu, tidak mungkin menciptakan jumlah bitcoin baru yang tidak terkontrol, membelanjakan uang pengguna lain, merusak jaringan, atau yang lain semacam itu.</p>
-<p>Namun, sebagian besar penambang dapat seenaknya memilih untuk memblokir atau membatalkan transaksi-transaksi terbaru. Mayoritas pengguna juga dapat memberikan tekanan agar diberlakukan beberapa perubahan. Karena Bitcoin hanya bekerja dengan benar bila ada konsensus lengkap antara semua pengguna, maka mengubah protokol Bitcoin bisa sangat sulit dan membutuhkan mayoritas pengguna untuk mengadopsi perubahan sehingga sisa pengguna hampir tidak punya pilihan selain mengikuti. Sebagai aturan umum, sulit untuk membayangkan mengapa pengguna Bitcoin akan memilih untuk mengadopsi perubahan yang dapat membahayakan uang mereka sendiri.</p>
-
-<h3 id="apakah-bitcoin-rentan-terhadap-komputerisasi-kuantum">Apakah Bitcoin rentan terhadap komputerisasi kuantum?</h3>
-<p>Ya, kebanyakan dari sistem yang berdasar pada kriptografi umumnya memang rentan terhadap komputerisasi kuantum, termasuk sistem bank tradisional. Meski demikian, komputer kuantum belum ada dan setidaknya belum akan ada untuk sementara ini. Pada saat komputerisasi quantum bisa menjadi ancaman serius bagi Bitcoin, protokol sudah bisa ditingkatkan sampai tahap algoritma post-kuantum. Mengingat pentingnya pembaruan ini, dapat diharapkan bahwa hal ini akan menjadi tinjauan penting bagi pengembang dan diadopsi oleh semua pengguna Bitcoin.</p>
-
-<h2 id="bantuan">Bantuan</h2>
-
-<h3 id="bantuan-lebih-lanjut">Saya ingin mempelajari lebih lanjut. Di mana saya bisa mendapatkan bantuan?</h3>
-<p>Anda dapat menemukan lebih banyak informasi dan bantuan pada laman <a href="/id/sumber-daya">sumber daya</a> dan <a href="/id/komunitas">komunitas</a> atau pada laman <a href="https://en.bitcoin.it/wiki/FAQ">FAQ Wiki</a>.</p>
 
       </div>
     </div>
@@ -611,14 +898,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/id/sah">Sah</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/sah">Sah</a></li>
 			
-			<li><a href="/id/privasi">Privasi</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/privasi">Privasi</a></li>
 			
-			<li><a href="/id/pers">Pers</a></li>
-			<li><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -627,7 +914,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sebuah situs web komunitas yang didukung oleh</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -649,13 +937,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -666,7 +956,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

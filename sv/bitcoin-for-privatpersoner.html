@@ -10,15 +10,29 @@
 <title>Bitcoin för privatpersoner</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sv.png"><strong>Svenska</strong>
+          <img src="/img/flags/sv.png"><strong>Svenska</strong>
 				</div>
 			</a>
 		</div>
@@ -323,58 +341,62 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_individuals">
-  <h1 class="content_individuals--title">Bitcoin för privatpersoner </h1>
-  <h2 class="content_individuals--subtitle">Bitcoin är det enklaste sättet att växla pengar till en mycket låg kostnad.</h2>
+        <div class="content_standard">
+  <h1 class="content_standard--title">Bitcoin för privatpersoner </h1>
+  <h2 class="content_standard--subtitle">Bitcoin är det enklaste sättet att växla pengar till en mycket låg kostnad.</h2>
 
-  <ul class="content_individuals--list">
-    <li class="content_individuals--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_mobile.svg" alt="Icon"/>
       <h3>Förenklar mobila betalningar</h3>
       <p>Bitcoin för mobiltelefoner tillåter dig att betala med en enkel två-stegs skanna-och-betala-metod. Du behöver inte registrera dig, dra ditt kort, skriva en PIN-kod eller signera något. Allt du behöver för att ta emot Bitcoin-betalningar är att visa QR-koden i din Bitcoin-plånboksapp och låta din vän skanna din mobil, eller vidröra de två telefonerna samtidigt (med hjälp av NFC-radioteknik).</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lock.svg" alt="Icon"/>
       <h3>Säkerhet och kontroll över dina pengar</h3>
       <p>Bitcoin-transaktioner säkras av kryptografi av militär grad. Ingen kan dra pengar från dig eller göra en betalning för din räkning. Så länge som du tar stegen som krävs för att <a href="/sv/sakra-din-planbok">säkra din plånbok</a>, så ger Bitcoin dig kontroll över dina pengar och en hög grad av säkerhet mot många sorters bedrägerier.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_simple.svg" alt="Icon"/>
       <h3>Fungerar överallt, när som helst</h3>
       <p>Precis som med email, så behöver du inte fråga din familj att använda samma tjänst som du.  Låt dem använda sina favoriter, då alla är kompatibla eftersom de använder samma öppna teknik. Bitcoin-nätverket sover aldrig, inte ens på helgdagar!</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>Snabba internationella betalningar</h3>
       <p>Bitcoins kan föras över från Afrika till Kanada på 10 minuter. Det finns ingen bank som fördröjer processen, tar ut orimliga avgifter, eller kan stoppa överföringen. Du kan göra en betalning till dina grannar på samma sätt som du kan betala en familjemedlem i ett annat land.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>Inga eller låga avgifter</h3>
       <p>Bitcoin tillåter dig att skicka och ta emot betalningar till en väldigt låg kostnad. Förutom i specialfall, som väldigt små betalningar, så finns det ingen påtvingad avgift. Det är rekommenderat att betala en högre frivillig avgift för att få snabbare konfirmation på din transaktion och för att ersätta de personer som får Bitcoin nätverket att fungera.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
       <h3>Skydda din identitet</h3>
       <p>Med Bitcoin, så finns det inget kreditkortsnummer som en hackare kan använda för att låsas vara du. I praktiken så är det till och med möjligt att skicka en betalning helt utan att avslöja din identitet, nästan som med kontanter. Däremot krävs det en viss ansträngning för att helt <a href="/sv/skydda-din-integritet">säkra din integritet</a>.</p>
     </li>
-    
-    <div class="content_individuals--action">
-      <a class="content_individuals--action--text" href="/sv/kom-igang">
-        Kom igång med Bitcoin
-      </a>
+
+    <div class="content_standard--action">
+      <div class="content_standard--action--wrap">
+        <a class="content_standard--action--text" href="/sv/kom-igang">
+          Kom igång med Bitcoin
+        </a>
+      </div>
     </div>
   </ul>
 </div>
+
       </div>
     </div>
 
@@ -384,14 +406,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sv/juridiskt">Juridiskt</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/juridiskt">Juridiskt</a></li>
 			
-			<li><a href="/sv/integritet">Integritet</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/integritet">Integritet</a></li>
 			
-			<li><a href="/sv/press">Press</a></li>
-			<li><a href="/sv/om-oss">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/om-oss">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -400,7 +422,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En community hemsida sponsrat av</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -422,13 +445,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -439,7 +464,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

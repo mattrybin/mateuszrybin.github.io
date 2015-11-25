@@ -10,15 +10,29 @@
 <title>Protejează-ți intimitatea - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ro.png"><strong>Română</strong>
+          <img src="/img/flags/ro.png"><strong>Română</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">Întrebări Frecvente</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Protejează-ți intimitatea</h1>
-<p class="summarytxt">Bitcoin este adesea perceput ca o reţea de plăţi anonimă. Dar în realitate, Bitcoin este probabil cea mai transparenţă reţea de plăti din lume. În acelaşi timp, Bitcoin poate oferi nivele acceptabile de confidenţialitate atunci când este folosit corect.  <b>Întotdeauna ţine minte că este responsabilitatea ta să iei măsurile necesare pentru a-ţi proteja confidenţialitate </b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Protejează-ți intimitatea</h1>
+	<h2 class="content_standard--subtitle">Bitcoin este adesea perceput ca o reţea de plăţi anonimă. Dar în realitate, Bitcoin este probabil cea mai transparenţă reţea de plăti din lume. În acelaşi timp, Bitcoin poate oferi nivele acceptabile de confidenţialitate atunci când este folosit corect.  <b>Întotdeauna ţine minte că este responsabilitatea ta să iei măsurile necesare pentru a-ţi proteja confidenţialitate </b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Înțelegerea trasabilității Bitcoinului</h3>
+      <p>Bitcoin funcţionează la un nivel nemaiîntâlnit de transparenţă cu care majoritatea oamenilor nu sunt obişnuiţi. Toate tranzacţiile Bitcoin sunt publice, urmăribile şi stocate permanent în reţeaua Bitcoin. Adresele Bitcoin sunt singura informaţie folosită pentru a defini unde sunt bitcoinii alocaţi şi unde sunt ei trimişi. Aceste adrese sunt create în mod privat de portofelele fiecărui utilizator în parte. Dar, odată ce adresele sunt folosite, ele devin pătate de istoricul tuturor tranzacţiilor în care au fost implicate. Oricine poate vedea <a href="https://www.biteasy.com">balanţele şi toate tranzacţiile</a> a oricărei adrese. Din moment ce utilizatorii în mod normal sunt nevoiţi la un moment dat să-şi dezvăluie identitatea pentru a primi bunuri sau servicii, adresele Bitcoin nu pot rămâne în întregime anonime. Pentru aceste motive, adresele Bitcoin ar trebui să fie folosite o singură dată şi utilizatorii trebuie să fie atenţi să nu-şi dezvăluie adresele.</p>
+    </li>
 
-<h2 id="traceable">Înțelegerea trasabilității Bitcoinului</h2>
-<p>Bitcoin funcţionează la un nivel nemaiîntâlnit de transparenţă cu care majoritatea oamenilor nu sunt obişnuiţi. Toate tranzacţiile Bitcoin sunt publice, urmăribile şi stocate permanent în reţeaua Bitcoin. Adresele Bitcoin sunt singura informaţie folosită pentru a defini unde sunt bitcoinii alocaţi şi unde sunt ei trimişi. Aceste adrese sunt create în mod privat de portofelele fiecărui utilizator în parte. Dar, odată ce adresele sunt folosite, ele devin pătate de istoricul tuturor tranzacţiilor în care au fost implicate. Oricine poate vedea <a href="https://www.biteasy.com">balanţele şi toate tranzacţiile</a> a oricărei adrese. Din moment ce utilizatorii în mod normal sunt nevoiţi la un moment dat să-şi dezvăluie identitatea pentru a primi bunuri sau servicii, adresele Bitcoin nu pot rămâne în întregime anonime. Pentru aceste motive, adresele Bitcoin ar trebui să fie folosite o singură dată şi utilizatorii trebuie să fie atenţi să nu-şi dezvăluie adresele.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Utilizează noi adrese pentru a primi plăți</h3>
+      <p>Pentru a-ţi proteja identitatea, ar trebui să foloseşti o nouă adresă Bitcoin de fiecare dată când primeşti o nouă plată. Adiţional, poţi folosi mai multe portofele pentru diferite scopuri. Făcând asta îţi permite să izolezi fiecare din tranzacţiile tale în aşa fel încât nu va fi posibil să le asociezi pe toate împreună. Persoanele ce îţi trimit banii nu pot vedea ce alte adrese Bitcoin deţii şi ce faci cu ele. Aceste este probabil ce mai important sfat pe care ar trebui să-l ţii minte.</p>
+    </li>
 
-<h2 id="receive">Utilizează noi adrese pentru a primi plăți</h2>
-<p>Pentru a-ţi proteja identitatea, ar trebui să foloseşti o nouă adresă Bitcoin de fiecare dată când primeşti o nouă plată. Adiţional, poţi folosi mai multe portofele pentru diferite scopuri. Făcând asta îţi permite să izolezi fiecare din tranzacţiile tale în aşa fel încât nu va fi posibil să le asociezi pe toate împreună. Persoanele ce îţi trimit banii nu pot vedea ce alte adrese Bitcoin deţii şi ce faci cu ele. Aceste este probabil ce mai important sfat pe care ar trebui să-l ţii minte.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Fii atent cu spațiile publice</h3>
+      <p>Exceptând cazul în care intenţia ta este să primeşti donaţii publice sau plăţi cu transparenţă deplină, publicarea unei adrese Bitcoin în orice spaţiu public cum ar fi un website sau reţea de socializare nu este o idee bună când vine vorba de confidenţialitate. Dacă alegi totuşi să faci asta, aminteşte-ţi întotdeauna că dacă muţi fonduri folosind această adresă către o altă adresă a ta, ele vor fi pătate public de către istoricul adreselor tale publice. Adiţional, ar trebui să ai grijă să nu publici informaţii despre tranzacţiile sau cumpărăturile făcute de ţine care ar permite cuiva să-ţi identifice adresele Bitcoin.</p>
+    </li>
 
-<h2 id="public">Fii atent cu spațiile publice</h2>
-<p>Exceptând cazul în care intenţia ta este să primeşti donaţii publice sau plăţi cu transparenţă deplină, publicarea unei adrese Bitcoin în orice spaţiu public cum ar fi un website sau reţea de socializare nu este o idee bună când vine vorba de confidenţialitate. Dacă alegi totuşi să faci asta, aminteşte-ţi întotdeauna că dacă muţi fonduri folosind această adresă către o altă adresă a ta, ele vor fi pătate public de către istoricul adreselor tale publice. Adiţional, ar trebui să ai grijă să nu publici informaţii despre tranzacţiile sau cumpărăturile făcute de ţine care ar permite cuiva să-ţi identifice adresele Bitcoin.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Adresa ta IP poate fi înregistrată</h3>
+      <p>Pentru că reţeaua Bitcoin este o reţea peer-to-peer, este posibil să asculţi emiterile tranzacţiilor şi să ţii evidenţa adreselor IP folosite. Clienţii nod întreg emit toate tranzacţiile utilizatorilor că şi cum ar fi ale lor. Asta înseamnă că a găsi sursa unei singure tranzacţii poate fi dificil şi orice nod Bitcoin poate fi confundat ca fiind sursa unei tranzacţii când de fapt nu este. S-ar putea să îţi doreşti să ascunzi IP-ul calculatorului tău cu o unealtă ca <a href="https://www.torproject.org/">Tor</a> pentru ca IP-ul tău să nu fie înregistrat.</p>
+    </li>
 
-<h2 id="iplog">Adresa ta IP poate fi înregistrată</h2>
-<p>Pentru că reţeaua Bitcoin este o reţea peer-to-peer, este posibil să asculţi emiterile tranzacţiilor şi să ţii evidenţa adreselor IP folosite. Clienţii nod întreg emit toate tranzacţiile utilizatorilor că şi cum ar fi ale lor. Asta înseamnă că a găsi sursa unei singure tranzacţii poate fi dificil şi orice nod Bitcoin poate fi confundat ca fiind sursa unei tranzacţii când de fapt nu este. S-ar putea să îţi doreşti să ascunzi IP-ul calculatorului tău cu o unealtă ca <a href="https://www.torproject.org/">Tor</a> pentru ca IP-ul tău să nu fie înregistrat.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Limitări ale serviciilor de mixat</h3>
+      <p>Unele servicii online numite servicii de mixat oferă mixarea identificabilitatii dintre utilizatori prin primirea şi trimiterea înapoi a aceleiaşi sume folosind adrese Bitcoin independente. Este important de notat faptul că legalitatea unui astfel de serviciu poate varia şi poate fi subiectul mai multor reguli în fiecare jurisdicţie.  De asemenea semenea servicii necesită să ai încredere în persoanele din spatele lor să nu îţi piardă sau fure fondurile şi să nu salveze cererile tale. Deşi serviciile de mixare pot împiedica identificabilitatea pentru sume mici, aceast lucru devine din ce în ce mai dificil pentru tranzacţii mai mari.</p>
+    </li>
 
-<h2 id="mixing">Limitări ale serviciilor de mixat</h2>
-<p>Unele servicii online numite servicii de mixat oferă mixarea identificabilitatii dintre utilizatori prin primirea şi trimiterea înapoi a aceleiaşi sume folosind adrese Bitcoin independente. Este important de notat faptul că legalitatea unui astfel de serviciu poate varia şi poate fi subiectul mai multor reguli în fiecare jurisdicţie.  De asemenea semenea servicii necesită să ai încredere în persoanele din spatele lor să nu îţi piardă sau fure fondurile şi să nu salveze cererile tale. Deşi serviciile de mixare pot împiedica identificabilitatea pentru sume mici, aceast lucru devine din ce în ce mai dificil pentru tranzacţii mai mari.</p>
-
-<h2 id="future">Îmbunătățiri viitoare</h2>
-<p>Multe îmbunătăţiri pot fi aşteptate în viitor pentru a mări gradul de confidenţialitate. De exemplu, se depun unele eforturi ca mesajele de plata API să evite pătarea mai multor adrese în timpul unei plăţi. Adresele de schimb ale Bitcoin Core ar putea fi implementate în timp şi în alte portofele. Interfetele grafice de utilizare pot fi îmbunătăţite pentru a oferi opţiuni de cereri de plată uşor de folosit şi să descurajeze reutilizarea adreselor. De asemenea se lucrează şi cercetează şi alte opţiuni pentru a mări gradul de confidenţialitate cum ar fi abilitatea de a amesteca împreună tranzacţiile unor utilizatori aleatorii.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Îmbunătățiri viitoare</h3>
+      <p>Multe îmbunătăţiri pot fi aşteptate în viitor pentru a mări gradul de confidenţialitate. De exemplu, se depun unele eforturi ca mesajele de plata API să evite pătarea mai multor adrese în timpul unei plăţi. Adresele de schimb ale Bitcoin Core ar putea fi implementate în timp şi în alte portofele. Interfetele grafice de utilizare pot fi îmbunătăţite pentru a oferi opţiuni de cereri de plată uşor de folosit şi să descurajeze reutilizarea adreselor. De asemenea se lucrează şi cercetează şi alte opţiuni pentru a mări gradul de confidenţialitate cum ar fi abilitatea de a amesteca împreună tranzacţiile unor utilizatori aleatorii.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ro/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/legal">Legal</a></li>
 			
-			<li><a href="/ro/confidentialitate">Confidenţialitate</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/confidentialitate">Confidenţialitate</a></li>
 			
-			<li><a href="/ro/presa">Presă</a></li>
-			<li><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/presa">Presă</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

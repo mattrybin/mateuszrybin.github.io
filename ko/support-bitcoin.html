@@ -10,15 +10,29 @@
 <title>비트코인을 지지해주세요 - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ko.png"><strong>한국의</strong>
+          <img src="/img/flags/ko.png"><strong>한국의</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">질문과답변</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>비트코인을 지지해주세요</h1>
-<p class="summarytxt">비트코인은 조그마한 커뮤니티에서 태어난 이후로 빠르게 성장해온 프로토콜입니다. 시간이 지나면서 비트코인이 널리 퍼져나가고 개선되는데에 당신이 도울 수 있는 일들이 굉장히 많습니다.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">비트코인을 지지해주세요</h1>
+  <h2 class="content_support-bitcoin--subtitle">비트코인은 조그마한 커뮤니티에서 태어난 이후로 빠르게 성장해온 프로토콜입니다. 시간이 지나면서 비트코인이 널리 퍼져나가고 개선되는데에 당신이 도울 수 있는 일들이 굉장히 많습니다.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />비트코인 사용하기</h2>
-<p>비트코인을 지지하는 첫번째 방법은 바로 <a href="/ko/getting-started">비트코인을 사용</a>하는 것입니다. 비트코인은 아마 삶의 여러부분에서 당신에게 편리함을 제공할 것입니다. 지불을 받거나 물건을 구입할 때 비트코인을 사용하세요.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">비트코인 사용하기</h3>
+      <p>비트코인을 지지하는 첫번째 방법은 바로 <a href="/ko/getting-started">비트코인을 사용</a>하는 것입니다. 비트코인은 아마 삶의 여러부분에서 당신에게 편리함을 제공할 것입니다. 지불을 받거나 물건을 구입할 때 비트코인을 사용하세요.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />네트워크가 되세요</h2>
-<p>좋은 인터넷 연결을 가지고 계신다면, <a href="/ko/download">전체 노드 소프트웨어</a>를 컴퓨터나 서버에 포트 8333 오픈으로 작동시키면서 Bitcoin 네트워크를 강력하게 할 수 있습니다. 전체 노드는 모든 거래를 안전하게 해주며 다시 의존합니다.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">네트워크가 되세요</h3>
+      <p>좋은 인터넷 연결을 가지고 계신다면, <a href="/ko/download">전체 노드 소프트웨어</a>를 컴퓨터나 서버에 포트 8333 오픈으로 작동시키면서 Bitcoin 네트워크를 강력하게 할 수 있습니다. 전체 노드는 모든 거래를 안전하게 해주며 다시 의존합니다.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />채굴</h2>
-<p>거래처리를 돕기위해 <a href="http://www.bitcoinmining.com/">비트코인 채굴</a>을 시작할 수 있습니다. 네트워크를 보호하기 위해서는 <a href="http://mempool.info/pools">작은 채굴장</a>에 가입하고 <a href="http://p2pool.in/">P2Pool</a>이나 <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">getblocktemplate (GBT) 지원이 되는 채굴장</a>같이 분권화된 채굴장들을 선호하세요.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">채굴</h3>
+      <p>거래처리를 돕기위해 <a href="http://www.bitcoinmining.com/">비트코인 채굴</a>을 시작할 수 있습니다. 네트워크를 보호하기 위해서는 <a href="http://mempool.info/pools">작은 채굴장</a>에 가입하고 <a href="http://p2pool.in/">P2Pool</a>이나 <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">getblocktemplate (GBT) 지원이 되는 채굴장</a>같이 분권화된 채굴장들을 선호하세요.</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />번역</h2>
-<p>번역을 하거나 비트코인 생태계에 중요한 부분의 번역을 개선함으로써 비트코인 이용도 증가에 도움이 될 수 있습니다. 여러분이 돕고 싶은 프로젝트를 골라 도와주세요. </p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />개발</h2>
-<p>비트코인은 자유 소프트웨어입니다. 당신이 개발자라면 당신의 능력을 이용해 <a href="/ko/development">비트코인을 개선</a>할 수 있습니다. 또는 비트코인과 관련된 굉장한 새 서비스나 소프트웨어를 개발할 수 있습니다. </p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">번역</h3>
+      <p>번역을 하거나 비트코인 생태계에 중요한 부분의 번역을 개선함으로써 비트코인 이용도 증가에 도움이 될 수 있습니다. 여러분이 돕고 싶은 프로젝트를 골라 도와주세요. </p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />후원</h2>
-<p>저희를 돕는 가장 쉬운 방법은 비트코인 재단에 소액의 비트코인을 <a href="https://bitcoinfoundation.org/about/donate/">기부</a>하는 것입니다. 아니면 미래에 당신에게 도움이 될 거라 생각하는 비트코인 관련 프로젝트를 후원하여 저희를 도울 수도 있습니다. </p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">개발</h3>
+      <p>비트코인은 자유 소프트웨어입니다. 당신이 개발자라면 당신의 능력을 이용해 <a href="/ko/development">비트코인을 개선</a>할 수 있습니다. 또는 비트코인과 관련된 굉장한 새 서비스나 소프트웨어를 개발할 수 있습니다. </p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />조직</h2>
-<p> <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a>과 많은 <a href="/ko/community#non-profit">비영리 단체</a>들이 비트코인을 홍보하고 보호하는 헌신하고 있습니다. 이들의 프로젝트, 토론, 이벤트에 참여함으로 이들 모임들을 도울 수 있습니다.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">후원</h3>
+      <p>저희를 돕는 가장 쉬운 방법은 비트코인 재단에 소액의 비트코인을 <a href="https://bitcoinfoundation.org/about/donate/">기부</a>하는 것입니다. 아니면 미래에 당신에게 도움이 될 거라 생각하는 비트코인 관련 프로젝트를 후원하여 저희를 도울 수도 있습니다. </p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />퍼뜨리세요</h2>
-<p>관심이 있는 이들에게 비트코인에 대해 이야기하거나 블로그에 글을 쓰면 됩니다. 당신이 제일 좋아하는 가게에 비트코인을 이용해 돈을 지불하고 싶다고 말할 수도 있습니다. 비트코인을 취급하는 <a href="http://usebitcoins.info/">상점 주소록</a>을 업데이트하거나 자신만의 비트코인 티셔츠를 만드는 창의적인 방법도 있습니다.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">조직</h3>
+      <p> <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a>과 많은 <a href="/ko/community#non-profit">비영리 단체</a>들이 비트코인을 홍보하고 보호하는 헌신하고 있습니다. 이들의 프로젝트, 토론, 이벤트에 참여함으로 이들 모임들을 도울 수 있습니다.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />다큐멘테이션</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a>와 <a href="https://en.bitcoin.it/">비트코인 위키</a>는 유용한 다큐멘테이션을 제공하며 끊임없이 가지고 있는 정보를 개선하고 있습니다. 당신도 이러한 자료들을 업데이트하고 개선하는데 도움을 줄 수 있습니다.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">퍼뜨리세요</h3>
+      <p>관심이 있는 이들에게 비트코인에 대해 이야기하거나 블로그에 글을 쓰면 됩니다. 당신이 제일 좋아하는 가게에 비트코인을 이용해 돈을 지불하고 싶다고 말할 수도 있습니다. 비트코인을 취급하는 <a href="http://usebitcoins.info/">상점 주소록</a>을 업데이트하거나 자신만의 비트코인 티셔츠를 만드는 창의적인 방법도 있습니다.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />커뮤니티를 만나세요</h2>
-<p>비트코인 <a href="/ko/community">커뮤니티</a>들에 참여해서 다른 비트코인 팬들과 얘기를 나누세요. 매일매일 비트코인에 대해 더 많이 배우고 새로운 사용자들에게 도움을 주며 재미있는 프로젝트에 참여할 수 있습니다.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">다큐멘테이션</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a>와 <a href="https://en.bitcoin.it/">비트코인 위키</a>는 유용한 다큐멘테이션을 제공하며 끊임없이 가지고 있는 정보를 개선하고 있습니다. 당신도 이러한 자료들을 업데이트하고 개선하는데 도움을 줄 수 있습니다.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">커뮤니티를 만나세요</h3>
+      <p>비트코인 <a href="/ko/community">커뮤니티</a>들에 참여해서 다른 비트코인 팬들과 얘기를 나누세요. 매일매일 비트코인에 대해 더 많이 배우고 새로운 사용자들에게 도움을 주며 재미있는 프로젝트에 참여할 수 있습니다.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ko/legal">법적 고지</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/legal">법적 고지</a></li>
 			
-			<li><a href="/ko/privacy">개인 정보 보호</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/privacy">개인 정보 보호</a></li>
 			
-			<li><a href="/ko/press">기사</a></li>
-			<li><a href="/ko/about-us">bitcoin.org 소개</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/press">기사</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ko/about-us">bitcoin.org 소개</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

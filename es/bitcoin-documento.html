@@ -10,15 +10,29 @@
 <title>Bitcoin: un sistema de dinero en efectivo electrónico peer-to-peer</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/es.png"><strong>Español</strong>
+          <img src="/img/flags/es.png"><strong>Español</strong>
 				</div>
 			</a>
 		</div>
@@ -323,32 +341,37 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Bitcoin: un sistema de dinero en efectivo electrónico peer-to-peer</h1>
-<p class="summary">El documento que presentó por primera vez Bitcoin</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Bitcoin: un sistema de dinero en efectivo electrónico peer-to-peer</h1>
+	<h2 class="content_standard--subtitle">El documento que presentó por primera vez Bitcoin</h2>
 
-<p>Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:
+	<p>Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:</p>
+
+
 
 
 <ul>
-<li><b><a href="/bitcoin.pdf">English original</a></b></li>
+	<li><b><a href="/bitcoin.pdf">English original</a></b></li>
 
-<li><a href="/files/bitcoin-paper/bitcoin_es.pdf">Español (España)</a> traducido por <a href="https://github.com/breathingdog">Breathingdog</a></li>
+	<li><a href="/files/bitcoin-paper/bitcoin_es.pdf">Español (España)</a> traducido por <a href="https://github.com/breathingdog">Breathingdog</a></li>
 
-<li><a href="/files/bitcoin-paper/bitcoin_es_latam.pdf">Español (Latinoamericano)</a> traducido por <a href="https://github.com/gubatron">Angel León</a></li>
+	<li><a href="/files/bitcoin-paper/bitcoin_es_latam.pdf">Español (Latinoamericano)</a> traducido por <a href="https://github.com/gubatron">Angel León</a></li>
 
-<li><a href="/files/bitcoin-paper/bitcoin_it.pdf">Italiano</a> traducido por
- <a href="https://github.com/terzim">Terzim</a></li>
+	<li><a href="/files/bitcoin-paper/bitcoin_it.pdf">Italiano</a> traducido por
+	 <a href="https://github.com/terzim">Terzim</a></li>
 
-<li><a href="/files/bitcoin-paper/bitcoin_ru.pdf">Русский</a> traducido por <a href="https://github.com/arvicco">Ar Vicco</a></li>
+	<li><a href="/files/bitcoin-paper/bitcoin_ru.pdf">Русский</a> traducido por <a href="https://github.com/arvicco">Ar Vicco</a></li>
 
-<li><a href="/files/bitcoin-paper/bitcoin_se.pdf">Svenska</a> traducido por <a href="https://github.com/hanspandeya">hanspandeya</a></li>
+	<li><a href="/files/bitcoin-paper/bitcoin_se.pdf">Svenska</a> traducido por <a href="https://github.com/hanspandeya">hanspandeya</a></li>
 </ul>
 
-<p>¿Quieres traducir el documento a tu lengua? Para consultar las instrucciones, visita el <a href="https://github.com/saivann/bitcoinwhitepaper">Bitcoin Paper repository</a> y si tienes preguntas, visita: <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">open an issue</a>.</p>
+	<p>¿Quieres traducir el documento a tu lengua? Para consultar las instrucciones, visita el <a href="https://github.com/saivann/bitcoinwhitepaper">Bitcoin Paper repository</a> y si tienes preguntas, visita: <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">open an issue</a>.</p>
+</div>
 
       </div>
     </div>
@@ -359,14 +382,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/es/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/es/prensa">Prensa</a></li>
-			<li><a href="/es/sobre-nosotros">Acerca de bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/prensa">Prensa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/sobre-nosotros">Acerca de bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -375,7 +398,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Una comunidad web patrocinada por</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -397,13 +421,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -414,7 +440,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

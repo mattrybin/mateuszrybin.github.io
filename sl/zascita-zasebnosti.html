@@ -10,15 +10,29 @@
 <title>Zaščitite svojo zasebnost - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Zaščitite svojo zasebnost</h1>
-<p class="summarytxt">Mnogo ljudi vidi bitcoin kot omrežje za anonimna plačila, v resnici pa je bitcoin najbrž daleč najbolj pregledno in javno plačilno omrežje na svetu. Hkrati bitcoin ob pravilni uporabi uporabniku omogoča sprejemljivo stopnjo zasebnosti. <b>Ne pozabite, da je uporaba bitcoina na način za zaščito zasebnosti vaša lastna odgovornost.</b></p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Zaščitite svojo zasebnost</h1>
+	<h2 class="content_standard--subtitle">Mnogo ljudi vidi bitcoin kot omrežje za anonimna plačila, v resnici pa je bitcoin najbrž daleč najbolj pregledno in javno plačilno omrežje na svetu. Hkrati bitcoin ob pravilni uporabi uporabniku omogoča sprejemljivo stopnjo zasebnosti. <b>Ne pozabite, da je uporaba bitcoina na način za zaščito zasebnosti vaša lastna odgovornost.</b></h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">O sledljivosti pri bitcoinu</h3>
+      <p>Plačilno omrežje bitcoin deluje izjemno transparentno -- mnogo bolj, kot sistemi, ki jih je večina ljudi vajena. Vsako nakazilo se namreč javno, sledljivo in trajno shrani v verigo blokov. V verigi blokov so bitcoin naslovi edina informacija o tem, od kod so novci prišli in kam so šli. Ti naslovi se ustvarjajo zasebno v denarnicah uporabnikov. Ko pa se posamezen naslov uporabi v omrežju, se tam trajno shrani skupaj z zgodovino vseh povezanih nakazil. Vsakdo si lahko ogleda <a href="https://www.biteasy.com">stanje in promet</a> na vsakem naslovu. Ker uporabniki običajno razkrijejo svoje ime in naslov ponudnikom storitev, da lahko prejmejo storitve ali blago, bitcoin naslovi ne morejo ostati povsem anonimni. Zato se priporoča, da se vsak bitcoin naslov uporabi le enkrat in uporabniki morajo paziti, da ne objavljajo svojih naslovov.</p>
+    </li>
 
-<h2 id="traceable">O sledljivosti pri bitcoinu</h2>
-<p>Plačilno omrežje bitcoin deluje izjemno transparentno -- mnogo bolj, kot sistemi, ki jih je večina ljudi vajena. Vsako nakazilo se namreč javno, sledljivo in trajno shrani v verigo blokov. V verigi blokov so bitcoin naslovi edina informacija o tem, od kod so novci prišli in kam so šli. Ti naslovi se ustvarjajo zasebno v denarnicah uporabnikov. Ko pa se posamezen naslov uporabi v omrežju, se tam trajno shrani skupaj z zgodovino vseh povezanih nakazil. Vsakdo si lahko ogleda <a href="https://www.biteasy.com">stanje in promet</a> na vsakem naslovu. Ker uporabniki običajno razkrijejo svoje ime in naslov ponudnikom storitev, da lahko prejmejo storitve ali blago, bitcoin naslovi ne morejo ostati povsem anonimni. Zato se priporoča, da se vsak bitcoin naslov uporabi le enkrat in uporabniki morajo paziti, da ne objavljajo svojih naslovov.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Za prejemanje plačil vedno uporabljajte nove naslove</h3>
+      <p>Če želite zaščititi svojo zasebnost, morate za vsako nakazilo, v katerem prejmete novce, uporabiti nov naslov. Nadalje lahko za različne namene uporabljate različne denarnice. Nakazil, ki izhajajo iz različnih denarnic, brez dodatnih informacij ni mogoče povezati med seboj. Tako ljudje, s katerimi izmenjujete bitcoine, ne bodo mogli vedeti, kateri drugi naslovi so vaši in kaj z njimi počnete. To je najbrž najpomembnejša stvar, ki si jo morate zapomniti.</p>
+    </li>
 
-<h2 id="receive">Za prejemanje plačil vedno uporabljajte nove naslove</h2>
-<p>Če želite zaščititi svojo zasebnost, morate za vsako nakazilo, v katerem prejmete novce, uporabiti nov naslov. Nadalje lahko za različne namene uporabljate različne denarnice. Nakazil, ki izhajajo iz različnih denarnic, brez dodatnih informacij ni mogoče povezati med seboj. Tako ljudje, s katerimi izmenjujete bitcoine, ne bodo mogli vedeti, kateri drugi naslovi so vaši in kaj z njimi počnete. To je najbrž najpomembnejša stvar, ki si jo morate zapomniti.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Bodite previdni pri objavljanju svojih naslovov</h3>
+      <p>Če vaš namen ni javno prejemanje donacij ali drugih plačil na javno pregleden način, objava svojega naslova (npr. na forumu ali socialnem omrežju) ni najboljša ideja, kar se tiče zasebnosti. Če to vseeno storite, ne pozabite, da če pošljete sredstva s tega naslova drugam, bodo ta sredstva javno sledljiva, da izvirajo od vas. Prav tako pazite, da ne objavljate podatkov o svojih nakazilih in nakupih, ki bi lahko komu omogočili prepoznati vaše bitcoin naslove.</p>
+    </li>
 
-<h2 id="public">Bodite previdni pri objavljanju svojih naslovov</h2>
-<p>Če vaš namen ni javno prejemanje donacij ali drugih plačil na javno pregleden način, objava svojega naslova (npr. na forumu ali socialnem omrežju) ni najboljša ideja, kar se tiče zasebnosti. Če to vseeno storite, ne pozabite, da če pošljete sredstva s tega naslova drugam, bodo ta sredstva javno sledljiva, da izvirajo od vas. Prav tako pazite, da ne objavljate podatkov o svojih nakazilih in nakupih, ki bi lahko komu omogočili prepoznati vaše bitcoin naslove.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Vaš IP-naslov lahko drugi uporabniki zabeležijo</h3>
+      <p>Ker je omrežje bitcoin vrstniško ("peer-to-peer"), je v njem mogoče slediti posrednikom nakazil in zapisovati njihove IP-naslove. Odjemalci posredujejo tuja nakazila na isti način kot svoje, zaradi česar je iskanje izvora posameznega nakazila oteženo in vir se lahko napačno interpretira. Če vas beleženje IP-naslovov skrbi, premislite o maskiranju svojega IP-naslova z uporabo orodja, kot je <a href="https://www.torproject.org/">Tor</a>.</p>
+    </li>
 
-<h2 id="iplog">Vaš IP-naslov lahko drugi uporabniki zabeležijo</h2>
-<p>Ker je omrežje bitcoin vrstniško ("peer-to-peer"), je v njem mogoče slediti posrednikom nakazil in zapisovati njihove IP-naslove. Odjemalci posredujejo tuja nakazila na isti način kot svoje, zaradi česar je iskanje izvora posameznega nakazila oteženo in vir se lahko napačno interpretira. Če vas beleženje IP-naslovov skrbi, premislite o maskiranju svojega IP-naslova z uporabo orodja, kot je <a href="https://www.torproject.org/">Tor</a>.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Omejitve mešalnih storitev</h3>
+      <p>Obstajajo internetne storitve, imenovane mešalne storitve, ki zmešajo novce več uporabnikov tako, da se sled preteklih nakazil izgubi. Vsak uporabnik namreč pošlje svoje novce v mešalni sistem in dobi nazaj isto količino novcev, ki pa so drugi. Zakonitost tega početja je v različnih deželah različna. Uporabnik te storitve mora tudi zaupati ponudniku storitve, da mu bo res vrnil vloženi denar ter da ne bo hranil zapisnika mešanja. Mešalne storitve lahko zabrišejo sledljivost za manjše zneske, višji pa ko so zneski, težje je sledljivost zabrisati.</p>
+    </li>
 
-<h2 id="mixing">Omejitve mešalnih storitev</h2>
-<p>Obstajajo internetne storitve, imenovane mešalne storitve, ki zmešajo novce več uporabnikov tako, da se sled preteklih nakazil izgubi. Vsak uporabnik namreč pošlje svoje novce v mešalni sistem in dobi nazaj isto količino novcev, ki pa so drugi. Zakonitost tega početja je v različnih deželah različna. Uporabnik te storitve mora tudi zaupati ponudniku storitve, da mu bo res vrnil vloženi denar ter da ne bo hranil zapisnika mešanja. Mešalne storitve lahko zabrišejo sledljivost za manjše zneske, višji pa ko so zneski, težje je sledljivost zabrisati.</p>
-
-<h2 id="future">Izboljšave v prihodnosti</h2>
-<p>V prihodnosti lahko pričakujemo mnoge izboljšave glede zasebnosti v bitcoinu. V programskem vmesniku plačevanja se na primer dela na izogibanju hkratnega plačevanja z več različnih naslovov, saj jih to javno poveže kot naslove istega lastnika. Tudi druge denarnice bodo morda v prihodnosti vgradile naslove za drobiž, kot jih uporablja Bitcoin Core. Pričakujemo lahko razvoj grafičnih uporabniških vmesnikov denarnic, ki bodo omogočili uporabniku prijazne zahtevke za plačilo in skušali preprečiti večkratno uporabo naslovov. Veliko dela in raziskav se vlaga tudi v razvoj razširjenih funkcionalnosti za zasebnost kot npr. možnost združevanja nakazil nepovezanih uporabnikov.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Izboljšave v prihodnosti</h3>
+      <p>V prihodnosti lahko pričakujemo mnoge izboljšave glede zasebnosti v bitcoinu. V programskem vmesniku plačevanja se na primer dela na izogibanju hkratnega plačevanja z več različnih naslovov, saj jih to javno poveže kot naslove istega lastnika. Tudi druge denarnice bodo morda v prihodnosti vgradile naslove za drobiž, kot jih uporablja Bitcoin Core. Pričakujemo lahko razvoj grafičnih uporabniških vmesnikov denarnic, ki bodo omogočili uporabniku prijazne zahtevke za plačilo in skušali preprečiti večkratno uporabo naslovov. Veliko dela in raziskav se vlaga tudi v razvoj razširjenih funkcionalnosti za zasebnost kot npr. možnost združevanja nakazil nepovezanih uporabnikov.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

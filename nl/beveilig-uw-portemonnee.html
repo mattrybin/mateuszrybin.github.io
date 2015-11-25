@@ -10,15 +10,29 @@
 <title>Beveilig uw portemonnee - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/nl.png"><strong>Nederlands</strong>
+          <img src="/img/flags/nl.png"><strong>Nederlands</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Beveilig uw portemonnee</h1>
-<p class="summarytxt">Net als in het gewone leven moet u goed op uw portemonnee letten. Bitcoin maakt het eenvoudiger dan ooit om geld wereldwijd te versturen. Daarnaast houdt u altijd controle over uw geld. Aan zulke grote mogelijkheden kleven echter grote veiligheidszorgen. Tegelijkertijd kan Bitcoin heel erg veilig zijn als het correct wordt gebruikt. <b>Onthoud dat u verantwoordelijk bent voor het aanwenden van goede gewoonten om de veiligheid van uw geld te waarborgen</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Beveilig uw portemonnee</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Net als in het gewone leven moet u goed op uw portemonnee letten. Bitcoin maakt het eenvoudiger dan ooit om geld wereldwijd te versturen. Daarnaast houdt u altijd controle over uw geld. Aan zulke grote mogelijkheden kleven echter grote veiligheidszorgen. Tegelijkertijd kan Bitcoin heel erg veilig zijn als het correct wordt gebruikt. <b>Onthoud dat u verantwoordelijk bent voor het aanwenden van goede gewoonten om de veiligheid van uw geld te waarborgen</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Wees voorzichtig met online diensten</h2>
-<p>Wees op uw hoede voor services die zijn ontworpen om uw geld online op te slaan. Veel wisselkantoren en online portemonnees hebben in het verleden te maken gehad met beveiligingsschendingen en dergelijke services bieden over het algemeen nog steeds niet genoeg verzekering en beveiliging om te kunnen worden gebruikt voor het opslaan van geld zoals een bank. Daarom wilt u misschien andere <a href="/nl/kies-uw-portemonnee"> Bitcoin-portemonnees</a> gebruiken. Wees in andere gevallen voorzichtig bij het kiezen van dergelijke services. Daarnaast raden we u aan om een tweevoudige authenticatie te gebruiken.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Wees voorzichtig met online diensten</h3>
+		  <p>Wees op uw hoede voor services die zijn ontworpen om uw geld online op te slaan. Veel wisselkantoren en online portemonnees hebben in het verleden te maken gehad met beveiligingsschendingen en dergelijke services bieden over het algemeen nog steeds niet genoeg verzekering en beveiliging om te kunnen worden gebruikt voor het opslaan van geld zoals een bank. Daarom wilt u misschien andere <a href="/nl/kies-uw-portemonnee"> Bitcoin-portemonnees</a> gebruiken. Wees in andere gevallen voorzichtig bij het kiezen van dergelijke services. Daarnaast raden we u aan om een tweevoudige authenticatie te gebruiken.</p>
+		</li>
 
-<h2 id="everyday">Kleine bedragen voor alledaags gebruik</h2>
-<p>Een Bitcoin-portemonnee is als een portemonnee met cash. Als u niet met duizend euro in uw zak zou rondlopen, kunt u dezelfde bedenkingen hebben bij uw Bitcoin-portemonnee. Over het algemeen is het het beste om kleine hoeveelheden bitcoins op uw computer of mobiele apparaat te hebben voor alledaags gebruik en de resterende hoeveelheid in een veilige omgeving te bewaren.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Kleine bedragen voor alledaags gebruik</h3>
+		  <p>Een Bitcoin-portemonnee is als een portemonnee met cash. Als u niet met duizend euro in uw zak zou rondlopen, kunt u dezelfde bedenkingen hebben bij uw Bitcoin-portemonnee. Over het algemeen is het het beste om kleine hoeveelheden bitcoins op uw computer of mobiele apparaat te hebben voor alledaags gebruik en de resterende hoeveelheid in een veilige omgeving te bewaren.</p>
+		</li>
 
-<h2 id="backup">Maak back-ups van uw portemonnee</h2>
-<p>Indien op een veilige plek opgeslagen, kan een back-up van uw portemonnee u beschermen tegen computeruitval en menselijke vergissingen. U kunt op deze manier ook uw portemonnee herstellen als uw mobiele apparaat of computer is gestolen, mits u uw portemonnee hebt versleuteld.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Maak back-ups van uw portemonnee</h3>
+		  <p>Indien op een veilige plek opgeslagen, kan een back-up van uw portemonnee u beschermen tegen computeruitval en menselijke vergissingen. U kunt op deze manier ook uw portemonnee herstellen als uw mobiele apparaat of computer is gestolen, mits u uw portemonnee hebt versleuteld.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Maak een back-up van uw gehele portemonnee</h3>
+		  		<p>Sommige portemonnees gebruiken intern vele verborgen geheime sleutels. Als u slechts een back-up heeft van uw geheime sleutels voor uw zichtbare Bitcoin-adressen, zou het kunnen dat u niet in staat bent om een groot deel van uw geld uit de back-up terug te halen.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Versleutel online back-ups</h3>
+		  		<p>Elke back-up die online is opgeslagen is zeer gevoelig voor diefstal. Zelfs een computer die slechts is verbonden met het internet is kwetsbaar voor kwaadaardige software. Daarom is het een goed gebruik om elke back-up die op één of andere manier met het internet in contact staat te versleutelen.</p>
+		  	</li>
 
-<h3 id="backupwhole">Maak een back-up van uw gehele portemonnee</h3>
-<p>Sommige portemonnees gebruiken intern vele verborgen geheime sleutels. Als u slechts een back-up heeft van uw geheime sleutels voor uw zichtbare Bitcoin-adressen, zou het kunnen dat u niet in staat bent om een groot deel van uw geld uit de back-up terug te halen.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Gebruik veel veilige locaties</h3>
+		  		<p>Het is goed om niet afhankelijk te zijn van één enkel punt waar iets mis kan gaan, een zogenaamd 'single point of failure'. Als u een kopie van uw back-up op verschillende plaatsen opslaat is het onwaarschijnlijker dat een ramp u van uw bitcoins berooft; bijvoorbeeld als uw huis afbrandt. U kunt ook overwegen om uw back-up op verschillende media op te slaan, zoals op USB-sticks, op papier en op cd's.</p>
+		  	</li>
 
-<h3 id="backuponline">Versleutel online back-ups</h3>
-<p>Elke back-up die online is opgeslagen is zeer gevoelig voor diefstal. Zelfs een computer die slechts is verbonden met het internet is kwetsbaar voor kwaadaardige software. Daarom is het een goed gebruik om elke back-up die op één of andere manier met het internet in contact staat te versleutelen.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Maak regelmatig back-ups</h3>
+		  		<p>U dient regelmatig een back-up te maken om ervoor te zorgen dat alle nieuwe Bitcoin-adressen en alle recente wisselgeldadressen opgenomen zijn in de back-up. Echter, binnenkort zullen alle programma's portemonnees gebruiken waarvan maar één keer een back-up gemaakt hoeft te worden.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Gebruik veel veilige locaties</h3>
-<p>Het is goed om niet afhankelijk te zijn van één enkel punt waar iets mis kan gaan, een zogenaamd 'single point of failure'. Als u een kopie van uw back-up op verschillende plaatsen opslaat is het onwaarschijnlijker dat een ramp u van uw bitcoins berooft; bijvoorbeeld als uw huis afbrandt. U kunt ook overwegen om uw back-up op verschillende media op te slaan, zoals op USB-sticks, op papier en op cd's.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Versleutel uw portemonnee</h3>
+		  <p>Als u uw portemonnee of smartphone versleutelt, kan er niets worden uitgehaald zonder wachtwoord. Zo bent u beter beveiligd tegen dieven, maar het kan u niet beschermen tegen software of hardware die uw toetsaanslagen uitleest.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Vergeet uw wachtwoord nooit</h3>
+		  		<p>U moet ervoor zorgen dat u nooit uw wachtwoord vergeet of verliest, anders bent u uw geld voor altijd kwijt! Er zijn in tegenstelling tot banken vrij weinig mogelijkheden om uw Bitcoin-wachtwoord te herstellen. Zelfs na jaren uw wachtwoord niet gebruikt te hebben, dient u deze nog te kunnen herinneren. Als u twijfelt, kunt u wellicht uw wachtwoord op een briefje schrijven en op een veilige plek bewaren, zoals in een kluis.</p>
+		  	</li>
 
-<h3 id="backupregular">Maak regelmatig back-ups</h3>
-<p>U dient regelmatig een back-up te maken om ervoor te zorgen dat alle nieuwe Bitcoin-adressen en alle recente wisselgeldadressen opgenomen zijn in de back-up. Echter, binnenkort zullen alle programma's portemonnees gebruiken waarvan maar één keer een back-up gemaakt hoeft te worden.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Gebruik een sterk wachtwoord</h3>
+		  		<p>Een wachtwoord dat slechts bestaat uit letters of herkenbare woorden moet worden beschouwd als zeer zwak en makkelijk te kraken. Een sterk wachtwoord bevat letters, cijfers en leestekens en is ten minste 16 tekens lang. De veiligste wachtwoorden worden gegenereerd door programma's die speciaal voor dat doeleinde zijn gemaakt. Sterke wachtwoorden zijn vaak moeilijker te onthouden, dus u moet ervoor zorgen dat u dit goed in uw hoofd houdt.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Offline portemonnee voor spaargeld</h3>
+		  <p>Een offline portemonnee, ook wel cold storage genoemd, biedt het hoogste veiligheidsniveau om geld te bewaren. U doet dit door een portemonnee te bewaren op een beveiligde plek die niet is verbonden met het internet. Als dit correct wordt uitgevoerd, biedt het een goede beveiliging tegen kwetsbaarheden van computers. Een offline portemonnee samen met back-ups en versleuteling gebruiken wordt aanbevolen. Hier volgt een overzicht van enkele benaderingen.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Offline transactieondertekening</h3>
+		  		<p>Voor deze aanpak hebt u twee computers nodig die een portemonnee gedeeltelijk delen. De eerste mag met geen enkel netwerk zijn verbonden. Dit is degene die de volledige portemonnee bevat en in staat is transacties te ondertekenen. De tweede computer is verbonden met het internet en heeft een alleen-bekijken-versie van de portemonnee. Hiermee kunnen transacties wel worden gemaakt, maar niet worden ondertekend. Zo kunt u op veilige wijze nieuwe transacties uitgeven via de volgende stappen:</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Maak een nieuwe transactie aan op de online computer en sla deze op een USB-stick op.</li>
+		  		  <li>Stop de USB-stick in de offline computer en onderteken de transactie.</li>
+		  		  <li>Stop de USB-stick weer in de online computer en verstuur de ondertekende transactie.</li>
+		  		</ol>
+		  		<p>Omdat de computer die is verbonden met het internet geen transacties kan ondertekenen, kan deze ook niet worden gebruikt om geld te verzenden als deze is gekraakt. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> kan offline transactieondertekening uitvoeren.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Hardwareportemonnees</h3>
+		  		<p>Hardwareportemonnees zijn de beste balans tussen zeer hoge veiligheid en gebruiksgemak. Deze portemonnees zijn kleine apparaatjes die van het begin af aan als portemonnee zijn ontworpen. Er kan geen software op worden geïnstalleerd, waardoor deze portemonnees erg veilig zijn wat betreft kwetsbaarheid van computers en online dieven. Omdat ze back-ups toestaan, kunt u uw geld terugkrijgen als u het apparaat verliest.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Houd uw software up-to-date</h3>
+		  <p>Met de nieuwste versie van de Bitcoin-software beschikt u altijd over de belangrijkste stabiliteits- en beveiligingsfixes. Updates kunnen verschillende problemen voorkomen dankzij nieuwe handige functies en een betere beveiliging van uw portemonnee. Het installeren van updates voor alle andere software op uw computer of mobiele apparaat is tevens van belang om uw portemonnee-omgeving veiliger te maken.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Meervoudige handtekeningen om te beschermen tegen diefstal</h3>
+		  <p>Bitcoin heeft een functionaliteit voor meerdere handtekeningen, wat ervoor zorgt dat een transactie meerdere onafhankelijke goedkeuringen vereist om uitgevoerd te worden. Dit kan gebruikt worden door een organisatie om zijn leden toegang te geven tot de schatkist, waarbij een opname alleen toegestaan wordt als 3 of 5 leden de transactie ondertekenen. Sommige webportemonnees leveren ook portemonnees met meerdere handtekeningen, wat de gebruikers in staat stelt om controle over hun geld te houden terwijl ze voorkomen dat een dief fondsen steelt door in te breken op een enkel apparaat of server.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Denk aan uw testament</h3>
+		  <p>Uw bitcoins kunnen voorgoed verloren gaan als u geen back-upplan heeft voor uw naasten en familie. Als niemand de locatie van uw portemonnees en wachtwoorden kent als u er niet meer bent, dan is er geen hoop meer dat uw geld kan worden teruggehaald. Als u hier een beetje tijd in investeert, kan dat een wereld van verschil maken.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Versleutel uw portemonnee</h2>
-<p>Als u uw portemonnee of smartphone versleutelt, kan er niets worden uitgehaald zonder wachtwoord. Zo bent u beter beveiligd tegen dieven, maar het kan u niet beschermen tegen software of hardware die uw toetsaanslagen uitleest.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Vergeet uw wachtwoord nooit</h3>
-<p>U moet ervoor zorgen dat u nooit uw wachtwoord vergeet of verliest, anders bent u uw geld voor altijd kwijt! Er zijn in tegenstelling tot banken vrij weinig mogelijkheden om uw Bitcoin-wachtwoord te herstellen. Zelfs na jaren uw wachtwoord niet gebruikt te hebben, dient u deze nog te kunnen herinneren. Als u twijfelt, kunt u wellicht uw wachtwoord op een briefje schrijven en op een veilige plek bewaren, zoals in een kluis.</p>
-
-<h3 id="encryptstrong">Gebruik een sterk wachtwoord</h3>
-<p>Een wachtwoord dat slechts bestaat uit letters of herkenbare woorden moet worden beschouwd als zeer zwak en makkelijk te kraken. Een sterk wachtwoord bevat letters, cijfers en leestekens en is ten minste 16 tekens lang. De veiligste wachtwoorden worden gegenereerd door programma's die speciaal voor dat doeleinde zijn gemaakt. Sterke wachtwoorden zijn vaak moeilijker te onthouden, dus u moet ervoor zorgen dat u dit goed in uw hoofd houdt.</p>
-
-</div>
-
-<h2 id="offline">Offline portemonnee voor spaargeld</h2>
-<p>Een offline portemonnee, ook wel cold storage genoemd, biedt het hoogste veiligheidsniveau om geld te bewaren. U doet dit door een portemonnee te bewaren op een beveiligde plek die niet is verbonden met het internet. Als dit correct wordt uitgevoerd, biedt het een goede beveiliging tegen kwetsbaarheden van computers. Een offline portemonnee samen met back-ups en versleuteling gebruiken wordt aanbevolen. Hier volgt een overzicht van enkele benaderingen.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Offline transactieondertekening</a></h3>
-<p>Voor deze aanpak hebt u twee computers nodig die een portemonnee gedeeltelijk delen. De eerste mag met geen enkel netwerk zijn verbonden. Dit is degene die de volledige portemonnee bevat en in staat is transacties te ondertekenen. De tweede computer is verbonden met het internet en heeft een alleen-bekijken-versie van de portemonnee. Hiermee kunnen transacties wel worden gemaakt, maar niet worden ondertekend. Zo kunt u op veilige wijze nieuwe transacties uitgeven via de volgende stappen:</p>
-<ol>
-  <li>Maak een nieuwe transactie aan op de online computer en sla deze op een USB-stick op.</li>
-  <li>Stop de USB-stick in de offline computer en onderteken de transactie.</li>
-  <li>Stop de USB-stick weer in de online computer en verstuur de ondertekende transactie.</li>
-</ol>
-<p>Omdat de computer die is verbonden met het internet geen transacties kan ondertekenen, kan deze ook niet worden gebruikt om geld te verzenden als deze is gekraakt. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> kan offline transactieondertekening uitvoeren.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Hardwareportemonnees</a></h3>
-<p>Hardwareportemonnees zijn de beste balans tussen zeer hoge veiligheid en gebruiksgemak. Deze portemonnees zijn kleine apparaatjes die van het begin af aan als portemonnee zijn ontworpen. Er kan geen software op worden geïnstalleerd, waardoor deze portemonnees erg veilig zijn wat betreft kwetsbaarheid van computers en online dieven. Omdat ze back-ups toestaan, kunt u uw geld terugkrijgen als u het apparaat verliest.</p>
-</div>
-
-<h2 id="update">Houd uw software up-to-date</h2>
-<p>Met de nieuwste versie van de Bitcoin-software beschikt u altijd over de belangrijkste stabiliteits- en beveiligingsfixes. Updates kunnen verschillende problemen voorkomen dankzij nieuwe handige functies en een betere beveiliging van uw portemonnee. Het installeren van updates voor alle andere software op uw computer of mobiele apparaat is tevens van belang om uw portemonnee-omgeving veiliger te maken.</p>
-
-<h2 id="offlinemulti">Meervoudige handtekeningen om te beschermen tegen diefstal</h2>
-<p>Bitcoin heeft een functionaliteit voor meerdere handtekeningen, wat ervoor zorgt dat een transactie meerdere onafhankelijke goedkeuringen vereist om uitgevoerd te worden. Dit kan gebruikt worden door een organisatie om zijn leden toegang te geven tot de schatkist, waarbij een opname alleen toegestaan wordt als 3 of 5 leden de transactie ondertekenen. Sommige webportemonnees leveren ook portemonnees met meerdere handtekeningen, wat de gebruikers in staat stelt om controle over hun geld te houden terwijl ze voorkomen dat een dief fondsen steelt door in te breken op een enkel apparaat of server.</p>
-
-<h2 id="offlinetestament">Denk aan uw testament</h2>
-<p>Uw bitcoins kunnen voorgoed verloren gaan als u geen back-upplan heeft voor uw naasten en familie. Als niemand de locatie van uw portemonnees en wachtwoorden kent als u er niet meer bent, dan is er geen hoop meer dat uw geld kan worden teruggehaald. Als u hier een beetje tijd in investeert, kan dat een wereld van verschil maken.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/nl/juridisch">Juridisch</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/juridisch">Juridisch</a></li>
 			
-			<li><a href="/nl/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/privacy">Privacy</a></li>
 			
-			<li><a href="/nl/pers">Pers</a></li>
-			<li><a href="/nl/over-ons">Over bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/nl/over-ons">Over bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Речник - Биткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/bg.png"><strong>български</strong>
+          <img src="/img/flags/bg.png"><strong>български</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">ЧЗВ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Някои думи, свързани с Биткойн, които може би ще чуете</h1>
-<p class="summarytxt">Биткойн предвижда нов подход за плащания и, като такъв, използва някои нови думи, които могат да станат част от вашия речник. Не се притеснявайте, дори телевизията е създала много нови думи!</p>
-<h2 id="table-of-contents">Съдържание</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Някои думи, свързани с Биткойн, които може би ще чуете</h1>
+  <h2 class="content_vocalbulary--subtitle">Биткойн предвижда нов подход за плащания и, като такъв, използва някои нови думи, които могат да станат част от вашия речник. Не се притеснявайте, дори телевизията е създала много нови думи!</h2>
 
-<div class="index">
-
-<a href="#address">Адрес</a>
-
-<a href="#bit">Бит</a>
-
-<a href="#bitcoin">Биткойн</a>
-
-<a href="#double-spend">Двоен харч (Double spend)</a>
-
-<a href="#mining">Добив</a>
-
-<a href="#cryptography">Криптография</a>
-
-<a href="#signature">Подпис</a>
-
-<a href="#wallet">Портфейл</a>
-
-<a href="#confirmation">Потвърждение</a>
-
-<a href="#hash-rate">Хеш-рейт (Hash Rate)</a>
-
-<a href="#private-key">Частен ключ (Private Key)</a>
-
-<a href="#block">Block</a>
-
-<a href="#block-chain">Block Chain</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#p2p">P2P</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">Адрес</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Биткойн адресът е <b>подобен на физическия адрес или имейла</b>. Това е единствена информация, която трябва да осигурите в Биткойн, за да може някой да ви плати в мрежата. Важна разлика, обаче е фактът, че всеки Биткойн адрес трябва да се използва само за една единствена транзакция.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Бит</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Милибиткойнът е обща единица, използвана за обозначаване на под-единица на биткойн - 1 000 000 бита се равнява на 1 биткойн (BTC или B⃦). Тази единица е обикновено по-удобна за ценообразуване на стоки и услуги.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Биткойн</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Биткойн, написано с главна буква, се използва, когато се говори за концепцията Биткойн или за цялата мрежа, като например "Аз четох за Биткойн протокола днес."<br>биткойн с малка буква се използва, за да опише биткойните като разчетна единица, като например "Изпратих 10 биткойна днес." Често използвано в практиката съкращение за биткойн е BTC или XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">Двоен харч (Double spend)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Ако злонамерен потребител се опита да <b>плати на различни получатели с едни и същи биткойни по едно и също време</b>, то това е дублиране на разходите. Биткойн <a href="#mining">добивът</a> и <a href="#block-chain">блок-веригата</a> работят заедно и създават консенсус в мрежата коя от двете сделки да се потвърди и да се счита за валидна.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">Добив</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Добивът на Биткойн е процес, в който <b>компютърен хардуер извършва математически изчисления в Биткойн мрежата за потвърждаване на транзакции</b> с цел повишаване на сигурността. За своите услуги "копачите" в Биткойн могат да събират такси за транзакциите, които потвърждават, като те се получават от новосъздадените биткойни. Добивът е специализиран и конкурентен пазар, където възнагражденията се разделят, според това колко изчисления са направени. Не всички потребителите на Биткойн извършват този процес, защото това не е лесен начин да се печелят пари.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">Криптография</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Криптографията е клон на математиката, който ни позволява да създадем <b>математически доказателства, осигуряващи високо ниво на сигурност</b>. В онлайн търговията и банковото дело вече се използва криптографията. В случая с Биткойн, криптографията се използва, за да направи невъзможно, потребителите да изразходват средства от чужд портфейл или да развалят <a href="#block-chain">блок-веригата</a>. Тя може да се използва и за криптиране на портфейли, така че те да не могат да се използват без парола.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">Подпис</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#cryptography">Криптографски </a> подпис е <b>математически механизъм, който позволява на някой да докаже собствеността си</b>. В случая с Биткойн, <a href="#wallet">портфейлът</a> и неговият <a href="#private-key">частен ключ</a> са свързани по начин, наподобяващ математическа магия. Когато вашият Биткойн софтуер подписва транзакция с подходящ частен ключ, цялата мрежа може да види, че подписът съвпада с биткойните, които се изразходват. Въпреки това, няма начин някой да разбере частния ви ключ и да открадне вашите трудно спечелените биткойни.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">Портфейл</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Биткойн портфейлът е нещо като <b>еквивалент на физически портфейл в Биткойн мрежата</b>. Портфейлът всъщност съдържа вашия <a href="#private-key">частен (и) ключ (ове)</a>, което ви позволява да харчите биткойни в определена <a href="#block-chain">блок-верига</a>. Всеки Биткойн портфейл може да ви покаже общото салдо на всички биткойни, които той контролира и ви позволява да заплатите определена сума на определен човек, точно както с истински портфейл. Нещата са различни при кредитните карти, където вие сте задължен от търговеца.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">Потвърждение</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Потвърждението означава, че транзакцията е била <b>обработена от мрежата и е много малко вероятно да бъде отменена</b>. Транзакциите получават потвърждение, когато бъдат включени в поредния и всеки следващ <a href="/bg/vocabulary#block">блок</a>. Дори едно единствено потвърждение може да се счита за достатъчно за транзакция с ниска стойност, въпреки че за по-големи суми като $1,000 обикновено се чакат шест или повече потвърждения. Всяко потвърждение <i>експоненциално</i> намалява риска от отмяна на транзакция.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">Хеш-рейт (Hash Rate)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Хеш-рейтът е <b>мерна единица за процесорна мощ в Биткойн мрежата</b>. Мрежата трябва да прави интензивни математически операции за целите на сигурността и когато тя достигне размер на хеш-рейт от 10 Th/с, това означава, че може да се правят 10 милиарда изчисления в секунда.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">Частен ключ (Private Key)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Частният ключ е <b>тайна част от данните, която доказва правото определен портфейл да изразходва средства</b> чрез криптографски <a href="#signature">подпис</a>. Вашият частен (и) ключ (ове) се съхранява на компютъра ви, ако използвате софтуерен портфейл и на някои отдалечени сървъри, ако използвате уеб портфейл. Частните ключове никога не трябва да бъдат обявявани, тъй като те позволяват изразходване на биткойни за съответния портфейл.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">Block</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Блокът е <b>запис в блок-веригата, който съдържа и потвърждава много, чакащи транзакции</b>. Приблизително на всеки 10 минути, нов блок, съдържащ транзакции, се прилага към <a href="#block-chain">блок-веригата</a> чрез <a href="#mining">добив</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block-chain">Block Chain</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Блок-веригата представлява <b>публичен регистър на всички Биткойн транзакции</b> в хронологичен ред. Тя се споделя между всички Биткойн потребители. Използва се, за да потвърди биткойн транзакциите и да предотврати <a href="#double-spend">дублиране на разходите</a> (използването на биткойни, които са били изхарчени вече в предишна транзакция).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC е обща единица, използвана за обозначаване на един биткойн (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Понятието P2P се отнася за <b>системи, които работят като организиран колектив</b>, позволявайки на всеки да комуникира директно с останалите участници. В случая с Биткойн, мрежата е изградена по такъв начин, че всеки потребител изпраща транзакции на други потребители, като най-важното в случая е, че не е необходима банкова институция като трета страна.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="address">Адрес</h2>
-<p>Биткойн адресът е <b>подобен на физическия адрес или имейла</b>. Това е единствена информация, която трябва да осигурите в Биткойн, за да може някой да ви плати в мрежата. Важна разлика, обаче е фактът, че всеки Биткойн адрес трябва да се използва само за една единствена транзакция.</p>
-
-<h2 id="bit">Бит</h2>
-<p>Милибиткойнът е обща единица, използвана за обозначаване на под-единица на биткойн - 1 000 000 бита се равнява на 1 биткойн (BTC или B⃦). Тази единица е обикновено по-удобна за ценообразуване на стоки и услуги.</p>
-
-<h2 id="bitcoin">Биткойн</h2>
-<p>Биткойн, написано с главна буква, се използва, когато се говори за концепцията Биткойн или за цялата мрежа, като например "Аз четох за Биткойн протокола днес."<br>биткойн с малка буква се използва, за да опише биткойните като разчетна единица, като например "Изпратих 10 биткойна днес." Често използвано в практиката съкращение за биткойн е BTC или XBT.</p>
-
-<h2 id="double-spend">Двоен харч (Double spend)</h2>
-<p>Ако злонамерен потребител се опита да <b>плати на различни получатели с едни и същи биткойни по едно и също време</b>, то това е дублиране на разходите. Биткойн <a href="#mining">добивът</a> и <a href="#block-chain">блок-веригата</a> работят заедно и създават консенсус в мрежата коя от двете сделки да се потвърди и да се счита за валидна.</p>
-
-<h2 id="mining">Добив</h2>
-<p>Добивът на Биткойн е процес, в който <b>компютърен хардуер извършва математически изчисления в Биткойн мрежата за потвърждаване на транзакции</b> с цел повишаване на сигурността. За своите услуги "копачите" в Биткойн могат да събират такси за транзакциите, които потвърждават, като те се получават от новосъздадените биткойни. Добивът е специализиран и конкурентен пазар, където възнагражденията се разделят, според това колко изчисления са направени. Не всички потребителите на Биткойн извършват този процес, защото това не е лесен начин да се печелят пари.</p>
-
-<h2 id="cryptography">Криптография</h2>
-<p>Криптографията е клон на математиката, който ни позволява да създадем <b>математически доказателства, осигуряващи високо ниво на сигурност</b>. В онлайн търговията и банковото дело вече се използва криптографията. В случая с Биткойн, криптографията се използва, за да направи невъзможно, потребителите да изразходват средства от чужд портфейл или да развалят <a href="#block-chain">блок-веригата</a>. Тя може да се използва и за криптиране на портфейли, така че те да не могат да се използват без парола.</p>
-
-<h2 id="signature">Подпис</h2>
-<p><a href="#cryptography">Криптографски </a> подпис е <b>математически механизъм, който позволява на някой да докаже собствеността си</b>. В случая с Биткойн, <a href="#wallet">портфейлът</a> и неговият <a href="#private-key">частен ключ</a> са свързани по начин, наподобяващ математическа магия. Когато вашият Биткойн софтуер подписва транзакция с подходящ частен ключ, цялата мрежа може да види, че подписът съвпада с биткойните, които се изразходват. Въпреки това, няма начин някой да разбере частния ви ключ и да открадне вашите трудно спечелените биткойни.</p>
-
-<h2 id="wallet">Портфейл</h2>
-<p>Биткойн портфейлът е нещо като <b>еквивалент на физически портфейл в Биткойн мрежата</b>. Портфейлът всъщност съдържа вашия <a href="#private-key">частен (и) ключ (ове)</a>, което ви позволява да харчите биткойни в определена <a href="#block-chain">блок-верига</a>. Всеки Биткойн портфейл може да ви покаже общото салдо на всички биткойни, които той контролира и ви позволява да заплатите определена сума на определен човек, точно както с истински портфейл. Нещата са различни при кредитните карти, където вие сте задължен от търговеца.</p>
-
-<h2 id="confirmation">Потвърждение</h2>
-<p>Потвърждението означава, че транзакцията е била <b>обработена от мрежата и е много малко вероятно да бъде отменена</b>. Транзакциите получават потвърждение, когато бъдат включени в поредния и всеки следващ <a href="/bg/vocabulary#block">блок</a>. Дори едно единствено потвърждение може да се счита за достатъчно за транзакция с ниска стойност, въпреки че за по-големи суми като $1,000 обикновено се чакат шест или повече потвърждения. Всяко потвърждение <i>експоненциално</i> намалява риска от отмяна на транзакция.</p>
-
-<h2 id="hash-rate">Хеш-рейт (Hash Rate)</h2>
-<p>Хеш-рейтът е <b>мерна единица за процесорна мощ в Биткойн мрежата</b>. Мрежата трябва да прави интензивни математически операции за целите на сигурността и когато тя достигне размер на хеш-рейт от 10 Th/с, това означава, че може да се правят 10 милиарда изчисления в секунда.</p>
-
-<h2 id="private-key">Частен ключ (Private Key)</h2>
-<p>Частният ключ е <b>тайна част от данните, която доказва правото определен портфейл да изразходва средства</b> чрез криптографски <a href="#signature">подпис</a>. Вашият частен (и) ключ (ове) се съхранява на компютъра ви, ако използвате софтуерен портфейл и на някои отдалечени сървъри, ако използвате уеб портфейл. Частните ключове никога не трябва да бъдат обявявани, тъй като те позволяват изразходване на биткойни за съответния портфейл.</p>
-
-<h2 id="block">Block</h2>
-<p>Блокът е <b>запис в блок-веригата, който съдържа и потвърждава много, чакащи транзакции</b>. Приблизително на всеки 10 минути, нов блок, съдържащ транзакции, се прилага към <a href="#block-chain">блок-веригата</a> чрез <a href="#mining">добив</a>.</p>
-
-<h2 id="block-chain">Block Chain</h2>
-<p>Блок-веригата представлява <b>публичен регистър на всички Биткойн транзакции</b> в хронологичен ред. Тя се споделя между всички Биткойн потребители. Използва се, за да потвърди биткойн транзакциите и да предотврати <a href="#double-spend">дублиране на разходите</a> (използването на биткойни, които са били изхарчени вече в предишна транзакция).</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC е обща единица, използвана за обозначаване на един биткойн (B⃦).</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Понятието P2P се отнася за <b>системи, които работят като организиран колектив</b>, позволявайки на всеки да комуникира директно с останалите участници. В случая с Биткойн, мрежата е изградена по такъв начин, че всеки потребител изпраща транзакции на други потребители, като най-важното в случая е, че не е необходима банкова институция като трета страна.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/bg/legal">Правни</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/bg/legal">Правни</a></li>
 			
-			<li><a href="/bg/privacy">Защита на личните данни</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/bg/privacy">Защита на личните данни</a></li>
 			
-			<li><a href="/bg/press">Преса</a></li>
-			<li><a href="/bg/about-us">Относно bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/bg/press">Преса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/bg/about-us">Относно bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Сайтът на общността е спонсориран от</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

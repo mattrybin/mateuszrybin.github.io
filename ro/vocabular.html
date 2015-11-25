@@ -10,15 +10,29 @@
 <title>Vocabular - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ro.png"><strong>Română</strong>
+          <img src="/img/flags/ro.png"><strong>Română</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">Întrebări Frecvente</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Câțiva termeni Bitcoin</h1>
-<p class="summarytxt">Bitcoin oferă o nouă abordare asupra plăţilor, şi datorită acestui lucru vor exista noi cuvinte ce s-ar putea să devină o parte a vocabularului tău. Nu te îngrijora, chiar şi umila televiziune a creat noi cuvinte!</p>
-<h2 id="table-of-contents">Cuprins</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Câțiva termeni Bitcoin</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin oferă o nouă abordare asupra plăţilor, şi datorită acestui lucru vor exista noi cuvinte ce s-ar putea să devină o parte a vocabularului tău. Nu te îngrijora, chiar şi umila televiziune a creat noi cuvinte!</h2>
 
-<div class="index">
-
-<a href="#adresa">Adresă</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#bloc">Bloc</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#cheie-privata">Cheie privată</a>
-
-<a href="#cheltuiala-dubla">Cheltuială dublă</a>
-
-<a href="#confirmare">Confirmare</a>
-
-<a href="#criptografie">Criptografie</a>
-
-<a href="#lant-de-blocuri">Lanţ de blocuri</a>
-
-<a href="#minerit">Minerit</a>
-
-<a href="#p2p">P2P</a>
-
-<a href="#portofel">Portofel</a>
-
-<a href="#rata-hash">Rată Hash </a>
-
-<a href="#semnatura">Semnătură</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="adresa">Adresă</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>O adresă Bitcoin este <b>similară cu o adresă fizică sau cu un email</b>. Este singura informaţie ce trebuie introdusă pentru ca cineva să te plătească folosind Bitcoin. O diferenţă importantă, de asemenea, este că fiecare adresă ar trebui folosită pentru o singură tranzacţie.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bit este o unitate comună folosită să descrie o subunitate a unui bitcoin - 1.000.000 biţi este egal cu 1 bitcoin(BTC sau B⃦). Această unitate este de obicei mai facilă pentru a afişa preţul bunurilor, serviciilor şi a bacşişurilor.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - cu majusculă, este folosit pentru a descrie conceptul Bitcoin, sau întreaga reţea. De exemplu: „Aastăzi am învăţat despre protocolul Bitcoin.” <br>bitcoin - fără majusculă, este folosit pentru a descrie bitcoinii ca unitate, de exemplu: „Am trimis zece bitcoini astăzi.”; este adesea abreviat BTC sau XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bloc">Bloc</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Un bloc este o <b>verigă a lanţului de blocuri ce conţine multe tranzacţii în aşteptare</b>. În fiecare 10 minute, în medie, un nou bloc ce include tranzacţii este adăugat <a href="#lant-de-blocuri">lanţului de blocuri</a> prin <a href="#minerit">minerit</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC este o unitate comună folosită pentru a desemna un bitcoin (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cheie-privata">Cheie privată</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>O cheie privată este o <b>bucată secretă de date ce dovedeşte faptul că ai dreptul să chelui bitcoini dintr-un anume portofel</b> printr-o <a href="#semnatura">semnătură</a> criptografică. Cheia (sau cheile) tale private sunt stocate în calculatorul tău dacă foloseşti un portofel software; sunt stocate în servere la distanţă dacă foloseşti un portofel web. Cheile private nu trebuiesc niciodată dezvăluite pentru că permit cheltuirea bitcoinilor din respectivul portofel Bitcoin.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cheltuiala-dubla">Cheltuială dublă</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Dacă un utilizator răuvoitor încearcă să <b>trimită bitcoini către doi destinatari diferiţi în acelaşi timp</b>, se numeşte cletuiala dublă. <a href="#minerit">Mineritul</a> de Bitcoin şi <a href="#lant-de-blocuri">blockchainul</a> vor crea un consens referitor la care dintre cele două tranzacţiile va fi confirmată şi considerată validă.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmare">Confirmare</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Confirmarea se referă la faptul că tranzacţia a fost <b>procesată de către reţea şi că este extrem de improbabil că aceasta să fie inversată</b>. Tranzacţiile primesc o confirmare când sunt incluse într-un <a href="/ro/vocabular#bloc">bloc</a> şi încă o confirmare pentru fiecare bloc după acela. Chiar şi o singură confirmare poate fi considerată ca fiind sigură pentru tranzacţii de mică valoare, deşi pentru sume mai mari, de exemplu 1000 de dolari, are sens să aştepţi 6 sau mai multe confirmări. Fiecare confirmare scade <i>exponenţial</i> riscul ca tranzacţia să fie inversată.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="criptografie">Criptografie</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Criptografia este acea ramură a matematicii ce ne permite să creăm <b>dovezi matematice ce oferă un grad înalt de securitate</b>. Comerţul şi bankingul online deja folosesc criptografia. În cazul Bitcoin, criptografia este folosită pentru a face imposibil ca cineva să cheltuie fonduri din portofelul altcuiva sau să corupă <a href="#lant-de-blocuri">lanţul de blocuri</a>. Poate de asemenea să fie folosită pentru a cripta un portofel, astfel încât să nu putea fi folosit fără parolă.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="lant-de-blocuri">Lanţ de blocuri</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Lanțul de blocuri este un <b>registru public al tranzacţiilor Bitcoin</b> în ordine cronologică. Lanţul de blocuri este distribuit între toţi utilizatorii Bitcoin. Acesta este folosit pentru a verifica autenticitatea tranzacţiilor Bitcoin şi pentru a împiedica <a href="#cheltuiala-dubla">cheltuielile duble</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="minerit">Minerit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Mineritul de Bitcoin este un proces prin care <b>calculatoarele efectuează o serie de calcule matematice pentru reţeaua Bitcoin, pentru a confirma tranzacţiile</b> şi pentru a securiza reţeaua. Ca răsplată pentru serviciile lor, minerii Bitcoin colectează taxele de tranzacţie aferente tranzacţiilor pe care le confirmă , împreună cu bitcoinii noi creaţi. Mineritul este o piaţă specializată şi competitivă, unde răsplata este împărţită în funcţie de câte calcule sunt făcute. Nu toţi utilizatorii Bitcoin minează Bitcoin şi minatul nu reprezintă un mod rapid şi uşor de a face bani.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Peer-to-peer se referă la faptul că <b>sistemele din reţea lucrează ca un colectiv organizat</b>, permiţând fiecărui individ să interacţioneze direct cu ceilalţi. În cazul Bicoin, reţeaua este construită în aşa fel încât fiecare utilizator emite tranzacţiile altor utilizatori. Şi, foarte important de reţinut, nu este necesară o bancă.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="portofel">Portofel</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Un portofel Bitcoin este aproximativ <b>echivalentul unui portofel fizic în reţeaua Bitcoin</b>. Portofelul deţine, de fapt, <a href="#cheie-privata">cheia (sau cheile) private</a> ce permit cheltuirea bitcoinilor alocaţi acestuia în <a href="#lant-de-blocuri">blockchain</a>. Fiecare portofel Bitcoin îţi poate arăta soldul bitcoinilor ce îi deţine şi permite plata unei sume către o anumită persoană, ca un portofel adevărat. Totuşi, este diferit faţă de un card de credit, unde eşti taxat de către comerciant.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="rata-hash">Rată Hash </a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Rată de hash este <b>unitatea de măsură a puterii de procesare a reţelei Bitcoin</b>. Reţeaua Bitcoin trebuie să facă operaţii matematice intensive pentru motive de securitate. Când reţeaua a atins o rată de hash de 10 Th/s a însemnat că poate facă 10 trilioane de calcule pe secundă.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="semnatura">Semnătură</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>O semnătură <a href="#criptografie">criptografică</a> este un <b>mecanism matematic ce permite cuiva să dovedească posesia</b>. În cazul Bitcoin, un <a href="#portofel">portofel Bitcoin</a> şi <a href="#cheie-privata">cheia (sau cheile) sale private</a> sunt legate între ele de puţină magie matematică. Când software-ul Bitcoin semnează o tranzacţie cu cheia privată potrivită, întreagă reţea poate vedea faptul că semnătura se potrivește cu bitcoinii ce sunt cheltuiţi. Pe de altă parte, nu există absolut nici o cale ca cineva să-ţi ghicească cheia privată şi să-ţi fure bitcoinii munciţi din greu.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="adresa">Adresă</h2>
-<p>O adresă Bitcoin este <b>similară cu o adresă fizică sau cu un email</b>. Este singura informaţie ce trebuie introdusă pentru ca cineva să te plătească folosind Bitcoin. O diferenţă importantă, de asemenea, este că fiecare adresă ar trebui folosită pentru o singură tranzacţie.</p>
-
-<h2 id="bit">Bit</h2>
-<p>Bit este o unitate comună folosită să descrie o subunitate a unui bitcoin - 1.000.000 biţi este egal cu 1 bitcoin(BTC sau B⃦). Această unitate este de obicei mai facilă pentru a afişa preţul bunurilor, serviciilor şi a bacşişurilor.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Bitcoin - cu majusculă, este folosit pentru a descrie conceptul Bitcoin, sau întreaga reţea. De exemplu: „Aastăzi am învăţat despre protocolul Bitcoin.” <br>bitcoin - fără majusculă, este folosit pentru a descrie bitcoinii ca unitate, de exemplu: „Am trimis zece bitcoini astăzi.”; este adesea abreviat BTC sau XBT.</p>
-
-<h2 id="bloc">Bloc</h2>
-<p>Un bloc este o <b>verigă a lanţului de blocuri ce conţine multe tranzacţii în aşteptare</b>. În fiecare 10 minute, în medie, un nou bloc ce include tranzacţii este adăugat <a href="#lant-de-blocuri">lanţului de blocuri</a> prin <a href="#minerit">minerit</a>.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC este o unitate comună folosită pentru a desemna un bitcoin (B⃦).</p>
-
-<h2 id="cheie-privata">Cheie privată</h2>
-<p>O cheie privată este o <b>bucată secretă de date ce dovedeşte faptul că ai dreptul să chelui bitcoini dintr-un anume portofel</b> printr-o <a href="#semnatura">semnătură</a> criptografică. Cheia (sau cheile) tale private sunt stocate în calculatorul tău dacă foloseşti un portofel software; sunt stocate în servere la distanţă dacă foloseşti un portofel web. Cheile private nu trebuiesc niciodată dezvăluite pentru că permit cheltuirea bitcoinilor din respectivul portofel Bitcoin.</p>
-
-<h2 id="cheltuiala-dubla">Cheltuială dublă</h2>
-<p>Dacă un utilizator răuvoitor încearcă să <b>trimită bitcoini către doi destinatari diferiţi în acelaşi timp</b>, se numeşte cletuiala dublă. <a href="#minerit">Mineritul</a> de Bitcoin şi <a href="#lant-de-blocuri">blockchainul</a> vor crea un consens referitor la care dintre cele două tranzacţiile va fi confirmată şi considerată validă.</p>
-
-<h2 id="confirmare">Confirmare</h2>
-<p>Confirmarea se referă la faptul că tranzacţia a fost <b>procesată de către reţea şi că este extrem de improbabil că aceasta să fie inversată</b>. Tranzacţiile primesc o confirmare când sunt incluse într-un <a href="/ro/vocabular#bloc">bloc</a> şi încă o confirmare pentru fiecare bloc după acela. Chiar şi o singură confirmare poate fi considerată ca fiind sigură pentru tranzacţii de mică valoare, deşi pentru sume mai mari, de exemplu 1000 de dolari, are sens să aştepţi 6 sau mai multe confirmări. Fiecare confirmare scade <i>exponenţial</i> riscul ca tranzacţia să fie inversată.</p>
-
-<h2 id="criptografie">Criptografie</h2>
-<p>Criptografia este acea ramură a matematicii ce ne permite să creăm <b>dovezi matematice ce oferă un grad înalt de securitate</b>. Comerţul şi bankingul online deja folosesc criptografia. În cazul Bitcoin, criptografia este folosită pentru a face imposibil ca cineva să cheltuie fonduri din portofelul altcuiva sau să corupă <a href="#lant-de-blocuri">lanţul de blocuri</a>. Poate de asemenea să fie folosită pentru a cripta un portofel, astfel încât să nu putea fi folosit fără parolă.</p>
-
-<h2 id="lant-de-blocuri">Lanţ de blocuri</h2>
-<p>Lanțul de blocuri este un <b>registru public al tranzacţiilor Bitcoin</b> în ordine cronologică. Lanţul de blocuri este distribuit între toţi utilizatorii Bitcoin. Acesta este folosit pentru a verifica autenticitatea tranzacţiilor Bitcoin şi pentru a împiedica <a href="#cheltuiala-dubla">cheltuielile duble</a>.</p>
-
-<h2 id="minerit">Minerit</h2>
-<p>Mineritul de Bitcoin este un proces prin care <b>calculatoarele efectuează o serie de calcule matematice pentru reţeaua Bitcoin, pentru a confirma tranzacţiile</b> şi pentru a securiza reţeaua. Ca răsplată pentru serviciile lor, minerii Bitcoin colectează taxele de tranzacţie aferente tranzacţiilor pe care le confirmă , împreună cu bitcoinii noi creaţi. Mineritul este o piaţă specializată şi competitivă, unde răsplata este împărţită în funcţie de câte calcule sunt făcute. Nu toţi utilizatorii Bitcoin minează Bitcoin şi minatul nu reprezintă un mod rapid şi uşor de a face bani.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Peer-to-peer se referă la faptul că <b>sistemele din reţea lucrează ca un colectiv organizat</b>, permiţând fiecărui individ să interacţioneze direct cu ceilalţi. În cazul Bicoin, reţeaua este construită în aşa fel încât fiecare utilizator emite tranzacţiile altor utilizatori. Şi, foarte important de reţinut, nu este necesară o bancă.</p>
-
-<h2 id="portofel">Portofel</h2>
-<p>Un portofel Bitcoin este aproximativ <b>echivalentul unui portofel fizic în reţeaua Bitcoin</b>. Portofelul deţine, de fapt, <a href="#cheie-privata">cheia (sau cheile) private</a> ce permit cheltuirea bitcoinilor alocaţi acestuia în <a href="#lant-de-blocuri">blockchain</a>. Fiecare portofel Bitcoin îţi poate arăta soldul bitcoinilor ce îi deţine şi permite plata unei sume către o anumită persoană, ca un portofel adevărat. Totuşi, este diferit faţă de un card de credit, unde eşti taxat de către comerciant.</p>
-
-<h2 id="rata-hash">Rată Hash </h2>
-<p>Rată de hash este <b>unitatea de măsură a puterii de procesare a reţelei Bitcoin</b>. Reţeaua Bitcoin trebuie să facă operaţii matematice intensive pentru motive de securitate. Când reţeaua a atins o rată de hash de 10 Th/s a însemnat că poate facă 10 trilioane de calcule pe secundă.</p>
-
-<h2 id="semnatura">Semnătură</h2>
-<p>O semnătură <a href="#criptografie">criptografică</a> este un <b>mecanism matematic ce permite cuiva să dovedească posesia</b>. În cazul Bitcoin, un <a href="#portofel">portofel Bitcoin</a> şi <a href="#cheie-privata">cheia (sau cheile) sale private</a> sunt legate între ele de puţină magie matematică. Când software-ul Bitcoin semnează o tranzacţie cu cheia privată potrivită, întreagă reţea poate vedea faptul că semnătura se potrivește cu bitcoinii ce sunt cheltuiţi. Pe de altă parte, nu există absolut nici o cale ca cineva să-ţi ghicească cheia privată şi să-ţi fure bitcoinii munciţi din greu.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ro/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/legal">Legal</a></li>
 			
-			<li><a href="/ro/confidentialitate">Confidenţialitate</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/confidentialitate">Confidenţialitate</a></li>
 			
-			<li><a href="/ro/presa">Presă</a></li>
-			<li><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/presa">Presă</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ro/despre-noi">Despre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

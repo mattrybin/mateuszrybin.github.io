@@ -10,15 +10,29 @@
 <title>Mediji - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,187 +341,263 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Tiskovno središče</h1>
-<p class="summary">Stopite v stik s sogovorniki za intervjuje, poiščite odgovore na vprašanja in pridobite kvalitetne tiskovne materiale.</p>
+        <div class="content_press">
+  <h1 class="content_press--title">Tiskovno središče</h1>
+  <h2 class="content_press--subtitle">Stopite v stik s sogovorniki za intervjuje, poiščite odgovore na vprašanja in pridobite kvalitetne tiskovne materiale.</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">Intervjuvanci</h2>
+    <p>Stopite v stik s <a href="https://bitcoinfoundation.org/contact/">Fundacijo Bitcoin</a> ali lokalnimi <a href="/sl/skupnost#neprofitne">neprofitnimi organizacijami</a>. Še več stikov za medije najdete na neodvisnem spletišču <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
+  </div>
 
-<h2 id="volunteer">Intervjuvanci</h2>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">Pogosta vprašanja</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kaj je bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin je omrežje, ki temelji na soglasju; omogoča obstoj novega plačilnega sistema in povsem digitalnega denarja. Tehnično gledano je bitcoin prvo vrstniško (p2p) decentralizirano razpršeno plačilno omrežje, ki ga poganjajo uporabniki brez centralnega organa ali posrednikov. Z uporabniškega stališča pa je bitcoin bolj ali manj internetna gotovina. Bitcoin je tudi najboljši obstoječ primer <a href="http://financialcryptography.com/mt/archives/001325.html">trojnega knjigovodstva</a>.</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kako bitcoin deluje?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>S stališča povprečnega uporabnika je bitcoin zgolj aplikacija na računalniku ali pametnem telefonu, ki deluje kot osebna denarnica in omogoča plačevanje in sprejemanje plačil -- podobno kot aplikacija za elektronsko pošto pošilja in sprejema pošto.</p>
+            <p>Bitcoin v ozadju uporablja javno knjigo nakazil, ki se imenuje veriga blokov. To knjigo hranijo vsi udeleženci omrežja, vsebuje pa vsa veljavna nakazila, ki so se kdaj zgodila v omrežju bitcoin. Tako lahko vsak udeleženec omrežja na svojem računalniku preveri veljavnost vseh nakazil. Pristnost nakazil zagotavljajo digitalni podpisi; z njihovo pomočjo lahko bitcoine na nekem naslovu potroši le lastnik tega naslova. Nadalje se lahko vsakdo vključi v procesiranje nakazil s pomočjo namenske strojne opreme in pri tem nekaj zasluži; temu pravimo rudarjenje. Več si lahko preberete na strani  <a href="/sl/kako-deluje">Kako deluje bitcoin?</a> ali pa v izvornem <a href="/bitcoin.pdf">dokumentu</a>.</p>
+          </div>
+        </li>
 
-<p>Stopite v stik s <a href="https://bitcoinfoundation.org/contact/">Fundacijo Bitcoin</a> ali lokalnimi <a href="/sl/skupnost#neprofitne">neprofitnimi organizacijami</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kaj je rudarjenje bitcoinov?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Rudarjenje je postopek, v katerem računalniki izvajajo računske postopke, s katerimi procesirajo nakazila, varujejo omrežje in skrbijo za soglasje in usklajenost vseh udeležencev sistema. Rudarjenje si lahko predstavljate kot dejavnost podatkovnega centra za bitcoin, le da je ta "center" povsem decentraliziran in razpršen po vsem svetu brez enega posameznika, ki bi proces nadzoroval. Izraz "rudarjenje" je analogija rudarjenju zlata, ker je to hkrati tudi proces, v katerem nastajajo novi bitcoini. Od kopanja zlata pa se rudarjenje v bitcoinu razlikuje po tem, da je delo, za katerega rudarji prejemajo nagrado, koristno za celotno omrežje, saj skrbi za njegovo celovitost in varnost. Rudarjenje bo še vedno potrebno tudi po tem, ko bodo nastali vsi bitcoini.</p>
+          </div>
+        </li>
 
-<p>Še več stikov za medije najdete na neodvisnem spletišču <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kako pridobim bitcoine?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>Kot plačilo za izdelke ali storitve.</li>
+              <li>Z nakupom bitcoinov v <a href="http://howtobuybitcoins.info">menjalnici</a>.</li>
+              <li>Z nakupom bitcoinov od <a href="https://localbitcoins.com/">koga v bližini</a>.</li>
+              <li>S konkurenčnim <a href="http://www.bitcoinmining.com/">rudarjenjem</a>.</li>
+            </ul>
+            <p>Čeprav obstajajo posamezniki, ki so pripravljeni prodati bitcoine v zameno za plačilo s kreditno kartico ali PayPalom, večina menjalnic ne sprejema teh plačilnih sredstev. Kartice in PayPal namreč omogočajo storno plačil in zlonameren uporabnik lahko kupi bitcoine, nato pa stornira plačilo oz. zahteva povračilo sredstev in trdi, da bitcoinov ni prejel.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Ali ljudje res uporabljajo bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Da. Vedno več <a href="http://usebitcoins.info/">podjetij</a> in posameznikov uporablja bitcoin; med drugim so to klasična podjetja kot npr. restavracije, prenočišča, pravniška podjetja, pa tudi priljubljene spletne storitve kot npr. Namecheap, WordPress, Reddit in Flattr. Bitcoin je nov, a hitro raste. Aprila 2014 je bila <a href="https://bitcoincharts.com/bitcoin/">skupna vrednost vseh bitcoinov v obtoku</a> ocenjena na 6 milijard dolarjev, na menjalnicah pa so se dnevno izvajali posli skupnega obsega več milijonov dolarjev.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kako težko je plačati z bitcoinom?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Plačevanje z bitcoinom je lažje kot s kreditnimi ali bančnimi karticami, sprejemanje plačil pa je možno brez kakršnekoli storitve tretje osebe. Plačilo izvedete v aplikaciji, ki služi kot denarnica, na svojem računalniku ali mobilniku, tako da vnesete prejemnikov naslov in znesek ter pritisnete gumb Pošlji. Za lažjo izmenjavo prejemnikovega naslova mnogo denarnic podpira čitanje QR-kod s kamero ali prenos z dotikom mobilnikov z uporabo tehnologije NFC.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">Pogosta vprašanja</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kaj so prednosti bitcoina?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Svoboda plačevanja</b></em> - Plačati in prejeti je možno kakršenkoli znesek kadarkoli in kjerkoli na svetu, v trenutku. Ni bančnih počitnic; ni meja; ni vsiljenih omejitev. Bitcoin omogča uporabnikom popoln nadzor nad svojim denarjem.</li>
+              <li><em><b>Zelo nizke pristojbine</b></em> - Plačila z bitcoinom se trenutno procesirajo z zelo nizkimi prispevki ali brez njih. Uporabniki lahko pri plačevanju prostovoljno plačajo prispevek v poljubni višini, s čimer si povečajo verjetnost prednostne obdelave nakazila v omrežju. Poleg tega obstajajo storitve, ki trgovcem pomagajo pri procesiranju nakazil in lahko tudi pretvorijo bitcoine v fiatno valuto (npr. evre) ter vsak dan nakažejo denar na trgovčev bančni račun. Ker te storitve temeljijo na bitcoinu, jih ponudniki lahko ponudijo z mnogo nižjimi pristojbinami kot npr. omrežja kreditnih kartic ali PayPal.</li>
+              <li><em><b>Manjša tveganja za trgovce</b></em> - Nakazila v omrežju bitcoin so varna in dokončna ter ne vsebujejo občutljivih ali osebnih podatkov kupcev. To ščiti trgovce pred izgubami zaradi goljufij ali goljufivih stornacij in izloča potrebo po skladnosti s pravili industrije plačilnih kartic. Trgovci zlahka dosežejo nove trge, kjer plačilne kartice niso na voljo ali pa je stopnja goljufij s karticami previsoka. Posledica so nižji stroški procesiranja, večji tržni doseg in nižji stroški administracije.</li>
+              <li><em><b>Varnost, nadzor in upravljanje</b></em> - Uporabniki bitcoina sami popolnoma nadzirajo svoja sredstva in nakazila. Nemogoče je, da bi trgovec uporabniku karkoli zaračunal brez uporabnikove vednosti in potrditve, kar se dogaja z drugimi plačilnimi sredstvi, ki se uporabljajo na internetu. To tudi zagotavlja močno zaščito pred krajo identitete. Uporabniki bitcoina lahko svoja sredstva zaščitijo tudi z uporabo rezervnih kopij in šifriranja.</li>
+              <li><em><b>Preglednost in nevtralnost</b></em> - <a href="https://www.biteasy.com/">Vsi podatki</a> glede denarne zaloge bitcoinov in nakazil so javno dostopni v verigi blokov in vsakdo jih lahko vidi, preveri in uporabi kadarkoli, v realnem času. Noben posameznik ali posamezna organizacija ne more manipulirati z bitcoinom, ker je protokol kriptografsko varen. Na ta način lahko vemo, da je jedro bitcoina vedno nevtralno, pregledno in predvidljivo.</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kaj so slabosti bitcoina?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Stopnja sprejetosti</b></em> - Mnogo ljudi še ne pozna bitcoina. Vsak dan se pojavljajo nova podjetja, ki sprejemajo bitcoin, a je skupen doseg še vedno majhen in mora še zrasti, da bo dosegel rezultate  <a href="https://en.wikipedia.org/wiki/Network_effect">mrežnih učinkov</a>.</li>
+              <li><em><b>Nestanovitnost cene</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Skupna vrednost</a> bitcoinov v obtoku in število podjetij, ki ga uporabljajo, sta še razmeroma nizka. Zato lahko že manjši dogodki, trgovanja in druge poslovne dejavnosti pomembno vplivajo na ceno. V teoriji se bo ta nestanovitnost nižala z dozorevanjem bitcoina kot tehnologije. Svet še nikoli prej ni videl start-up valute, zato si je resnično težko -- a razburljivo -- predstavljati, kako se bo zadeva razvijala.</li>
+              <li><em><b>Tehnologija v razvoju</b></em> - Osnovna programska oprema za bitcoin je še vedno v beta-fazi in marsikatera funkcionalnost je še v razvoju in testiranju. Razvijajo se nova orodja in storitve, ki bodo naredile bitcoin bolj varen in dostopen širšemu občinstvu. Nekatere od teh storitev še niso primerne za vsakogar. Večina podjetij je novih in ne nudijo zadostnega zavarovanja. V splošnem je bitcoin še vedno v fazi dozorevanja.</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kaj je bitcoin?</a>
-  <div>
-  <p>Bitcoin je omrežje, ki temelji na soglasju; omogoča obstoj novega plačilnega sistema in povsem digitalnega denarja. Tehnično gledano je bitcoin prvo vrstniško (p2p) decentralizirano razpršeno plačilno omrežje, ki ga poganjajo uporabniki brez centralnega organa ali posrednikov. Z uporabniškega stališča pa je bitcoin bolj ali manj internetna gotovina. Bitcoin je tudi najboljši obstoječ primer <a href="http://financialcryptography.com/mt/archives/001325.html">trojnega knjigovodstva</a>.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kako bitcoin deluje?</a>
-  <div>
-  <p>S stališča povprečnega uporabnika je bitcoin zgolj aplikacija na računalniku ali pametnem telefonu, ki deluje kot osebna denarnica in omogoča plačevanje in sprejemanje plačil -- podobno kot aplikacija za elektronsko pošto pošilja in sprejema pošto.</p>
-  <p>Bitcoin v ozadju uporablja javno knjigo nakazil, ki se imenuje veriga blokov. To knjigo hranijo vsi udeleženci omrežja, vsebuje pa vsa veljavna nakazila, ki so se kdaj zgodila v omrežju bitcoin. Tako lahko vsak udeleženec omrežja na svojem računalniku preveri veljavnost vseh nakazil. Pristnost nakazil zagotavljajo digitalni podpisi; z njihovo pomočjo lahko bitcoine na nekem naslovu potroši le lastnik tega naslova. Nadalje se lahko vsakdo vključi v procesiranje nakazil s pomočjo namenske strojne opreme in pri tem nekaj zasluži; temu pravimo rudarjenje. Več si lahko preberete na strani  <a href="/sl/kako-deluje">Kako deluje bitcoin?</a> ali pa v izvornem <a href="/bitcoin.pdf">dokumentu</a>.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kaj je rudarjenje bitcoinov?</a>
-  <div>
-  <p>Rudarjenje je postopek, v katerem računalniki izvajajo računske postopke, s katerimi procesirajo nakazila, varujejo omrežje in skrbijo za soglasje in usklajenost vseh udeležencev sistema. Rudarjenje si lahko predstavljate kot dejavnost podatkovnega centra za bitcoin, le da je ta "center" povsem decentraliziran in razpršen po vsem svetu brez enega posameznika, ki bi proces nadzoroval. Izraz "rudarjenje" je analogija rudarjenju zlata, ker je to hkrati tudi proces, v katerem nastajajo novi bitcoini. Od kopanja zlata pa se rudarjenje v bitcoinu razlikuje po tem, da je delo, za katerega rudarji prejemajo nagrado, koristno za celotno omrežje, saj skrbi za njegovo celovitost in varnost. Rudarjenje bo še vedno potrebno tudi po tem, ko bodo nastali vsi bitcoini.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kako pridobim bitcoine?</a>
-  <div>
-  <ul>
-    <li>Kot plačilo za izdelke ali storitve.</li>
-    <li>Z nakupom bitcoinov v <a href="http://howtobuybitcoins.info">menjalnici</a>.</li>
-    <li>Z nakupom bitcoinov od <a href="https://localbitcoins.com/">koga v bližini</a>.</li>
-    <li>S konkurenčnim <a href="http://www.bitcoinmining.com/">rudarjenjem</a>.</li>
-  </ul>
-  <p>Čeprav obstajajo posamezniki, ki so pripravljeni prodati bitcoine v zameno za plačilo s kreditno kartico ali PayPalom, večina menjalnic ne sprejema teh plačilnih sredstev. Kartice in PayPal namreč omogočajo storno plačil in zlonameren uporabnik lahko kupi bitcoine, nato pa stornira plačilo oz. zahteva povračilo sredstev in trdi, da bitcoinov ni prejel.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Ali ljudje res uporabljajo bitcoin?</a>
-  <div>
-  <p>Da. Vedno več <a href="http://usebitcoins.info/">podjetij</a> in posameznikov uporablja bitcoin; med drugim so to klasična podjetja kot npr. restavracije, prenočišča, pravniška podjetja, pa tudi priljubljene spletne storitve kot npr. Namecheap, WordPress, Reddit in Flattr. Bitcoin je nov, a hitro raste. Aprila 2014 je bila <a href="https://bitcoincharts.com/bitcoin/">skupna vrednost vseh bitcoinov v obtoku</a> ocenjena na 6 milijard dolarjev, na menjalnicah pa so se dnevno izvajali posli skupnega obsega več milijonov dolarjev.</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kako težko je plačati z bitcoinom?</a>
-  <div>
-  <p>Plačevanje z bitcoinom je lažje kot s kreditnimi ali bančnimi karticami, sprejemanje plačil pa je možno brez kakršnekoli storitve tretje osebe. Plačilo izvedete v aplikaciji, ki služi kot denarnica, na svojem računalniku ali mobilniku, tako da vnesete prejemnikov naslov in znesek ter pritisnete gumb Pošlji. Za lažjo izmenjavo prejemnikovega naslova mnogo denarnic podpira čitanje QR-kod s kamero ali prenos z dotikom mobilnikov z uporabo tehnologije NFC.</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kaj so prednosti bitcoina?</a>
-  <div>
-  <ul>
-    <li><em><b>Svoboda plačevanja</b></em> - Plačati in prejeti je možno kakršenkoli znesek kadarkoli in kjerkoli na svetu, v trenutku. Ni bančnih počitnic; ni meja; ni vsiljenih omejitev. Bitcoin omogča uporabnikom popoln nadzor nad svojim denarjem.</li>
-    <li><em><b>Zelo nizke pristojbine</b></em> - Plačila z bitcoinom se trenutno procesirajo z zelo nizkimi prispevki ali brez njih. Uporabniki lahko pri plačevanju prostovoljno plačajo prispevek v poljubni višini, s čimer si povečajo verjetnost prednostne obdelave nakazila v omrežju. Poleg tega obstajajo storitve, ki trgovcem pomagajo pri procesiranju nakazil in lahko tudi pretvorijo bitcoine v fiatno valuto (npr. evre) ter vsak dan nakažejo denar na trgovčev bančni račun. Ker te storitve temeljijo na bitcoinu, jih ponudniki lahko ponudijo z mnogo nižjimi pristojbinami kot npr. omrežja kreditnih kartic ali PayPal.</li>
-    <li><em><b>Manjša tveganja za trgovce</b></em> - Nakazila v omrežju bitcoin so varna in dokončna ter ne vsebujejo občutljivih ali osebnih podatkov kupcev. To ščiti trgovce pred izgubami zaradi goljufij ali goljufivih stornacij in izloča potrebo po skladnosti s pravili industrije plačilnih kartic. Trgovci zlahka dosežejo nove trge, kjer plačilne kartice niso na voljo ali pa je stopnja goljufij s karticami previsoka. Posledica so nižji stroški procesiranja, večji tržni doseg in nižji stroški administracije.</li>
-    <li><em><b>Varnost, nadzor in upravljanje</b></em> - Uporabniki bitcoina sami popolnoma nadzirajo svoja sredstva in nakazila. Nemogoče je, da bi trgovec uporabniku karkoli zaračunal brez uporabnikove vednosti in potrditve, kar se dogaja z drugimi plačilnimi sredstvi, ki se uporabljajo na internetu. To tudi zagotavlja močno zaščito pred krajo identitete. Uporabniki bitcoina lahko svoja sredstva zaščitijo tudi z uporabo rezervnih kopij in šifriranja.</li>
-    <li><em><b>Preglednost in nevtralnost</b></em> - <a href="https://www.biteasy.com/">Vsi podatki</a> glede denarne zaloge bitcoinov in nakazil so javno dostopni v verigi blokov in vsakdo jih lahko vidi, preveri in uporabi kadarkoli, v realnem času. Noben posameznik ali posamezna organizacija ne more manipulirati z bitcoinom, ker je protokol kriptografsko varen. Na ta način lahko vemo, da je jedro bitcoina vedno nevtralno, pregledno in predvidljivo.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kaj so slabosti bitcoina?</a>
-  <div>
-  <ul>
-    <li><em><b>Stopnja sprejetosti</b></em> - Mnogo ljudi še ne pozna bitcoina. Vsak dan se pojavljajo nova podjetja, ki sprejemajo bitcoin, a je skupen doseg še vedno majhen in mora še zrasti, da bo dosegel rezultate  <a href="https://en.wikipedia.org/wiki/Network_effect">mrežnih učinkov</a>.</li>
-    <li><em><b>Nestanovitnost cene</b></em> - <a href="https://bitcoincharts.com/bitcoin/">Skupna vrednost</a> bitcoinov v obtoku in število podjetij, ki ga uporabljajo, sta še razmeroma nizka. Zato lahko že manjši dogodki, trgovanja in druge poslovne dejavnosti pomembno vplivajo na ceno. V teoriji se bo ta nestanovitnost nižala z dozorevanjem bitcoina kot tehnologije. Svet še nikoli prej ni videl start-up valute, zato si je resnično težko -- a razburljivo -- predstavljati, kako se bo zadeva razvijala.</li>
-    <li><em><b>Tehnologija v razvoju</b></em> - Osnovna programska oprema za bitcoin je še vedno v beta-fazi in marsikatera funkcionalnost je še v razvoju in testiranju. Razvijajo se nova orodja in storitve, ki bodo naredile bitcoin bolj varen in dostopen širšemu občinstvu. Nekatere od teh storitev še niso primerne za vsakogar. Večina podjetij je novih in ne nudijo zadostnega zavarovanja. V splošnem je bitcoin še vedno v fazi dozorevanja.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin varen?</a>
-  <div>
-  <p>Tehnologija, ki stoji za bitcoinom, tj. protokol in kriptografija, ima uspešno zgodovino varnosti in neprebojnosti. Omrežje bitcoin je najbrž daleč največji razpršen računalniški projekt na svetu. Najpogostejša varnostna težava pri uporabi bitcoina so napake uporabnika samega. Denarnico, ki hrani ključe za dostop do bitcoinov, lahko uporabnik po nesreči izgubi, izbriše ali pa mu jo ukradejo. To je nekako tako, kot bi imeli fizičen denar shranjen v digitalni obliki. Na srečo obstajajo  <a href="/sl/zavarujte-svojo-denarnico">dobre prakse za zaščito sredstev</a> in storitve, ki nudijo visoko stopnjo varnosti pred krajo ali izgubo.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin zakonit?</a>
-  <div>
-  <p>Kolikor nam je znano, bitcoin v večini držav <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">ni protizakonit</a>. Vendar pa nekatere dežele, npr. Argentina in Rusija, močno omejujejo ali prepovedujejo uporabo tujih valut. Druge dežele, npr. Tajska, pa omejujejo licenciranje določenih vrst pravnih oseb, npr. menjalnic za bitcoin.</p>
-  <p>Oblasti v raznih deželah izdajajo pravila, navodila in smernice za posameznike in podjetja, kako integrirati to novo tehnologijo v obstoječi regulirani finančni sistem. Ameriški FinCEN je npr. izdal smernice.  Nekaj informacij, tudi o Sloveniji, lahko najdete na <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country#Slovenia">Wikipedia</a>.</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kako je glede bitcoina in davkov?</a>
-  <div>
-  <p>Bitcoin ni fiatna valuta in tudi ni zakonito plačilno sredstvo nobene države ali okrožja. Vseeno pa mnogi pravni okviri zahtevajo plačilo davkov ne glede na sredstvo trgovanja. Zakonodaja po svetu je zelo raznolika in pri uporabi bitcoina je ponekod morda potrebno plačati davek, npr. davek na plače, na dobiček, na dodano vrednost, dohodnino, prometni ali kak drug davek.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin uporaben za nezakonite dejavnosti?</a>
-  <div>
-  <p>Bitcoin je denar in ljudje so vsak denar vedno uporabljali tako za zakonite kot za nezakonite dejavnosti. Trenutno se gotovina, kreditne kartice in obstoječi bančni sistem v nezakonite namene uporabljajo neprimerljivo bolj pogosto kot bitcoin. Bitcoin prinaša pomembne inovacije v svet plačilnih sistemov in prednosti teh inovacij v splošnem razumemo kot mnogo bolj pomembne kot pa njegove potencialne slabosti.</p>
-  <p>Bitcoin je zasnovan kot velik korak naprej pri zaščiti vsega, kar se tiče denarja, in bi lahko pomagal delovati kot močna zaščita pred mnogimi finančnimi zločini. Bitcoine je npr. popolnoma nemogoče ponarejati. Uporabniki imajo popoln nadzor nad svojim denarjem in nihče jim ne more nepooblaščeno zaračunavati kot pri goljufijah s kreditnimi karticami. Nakazila z bitcoinom so dokončna in zato imuna na goljufive stornacije. Bitcoin omogoča zaščito denarja pred krajo in izgubo s pomočjo zelo močnih in uporabnih mehanizmov kot so rezervne kopije, šifriranje in večstransko podpisovanje.</p>
-  <p>Nekatere skrbi, da bi bil bitcoin lahko bolj privlačen za zločince, saj so z njim možna zasebna in nepovratna plačila. Vendar pa so podobne stvari mogoče tudi z gotovino in bančnimi nakazili, ki se že široko uporabljajo. Za uporabo bitcoina bodo nedvomno veljale podobne uredbe, kot že veljajo za obstoječe finančne in plačilne sisteme, in z uporabo bitcoina se najbrž ne da izogniti finančnim preiskavam. V splošnem se pogosto dogaja, da pomembni tehnološki preboji v javnosti najprej doživijo močne polemike, preden javnost dobro razume njihove prednosti; internet je eden od mnogih primerov tega pojava.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin finančni mehurček?</a>
-  <div>
-  <p>Hitra porast vrednosti še ne predstavlja mehurčka. Mehurček nastane pri umetni precenjenosti, ki vodi v nenadno korekcijo vrednosti navzdol. Nihanje cene bitcoina v iskanju tržnega ravnotežja je posledica posameznih odločitev stotisočev udeležencev na trgu. Ceno vodi razpoloženje na trgu, razlogi za spremembe razpoloženja pa so lahko med drugim stopnja zaupanja v bitcoin, velika dojeta razlika med ceno in vrednostjo glede na temelje bitcoin ekonomije, špekulativno povpraševanje zaradi povečanega kritja v tisku, strah pred negotovimi dogodki in čustva kot iracionalno navdušenje in pohlep.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Zakaj imajo bitcoini vrednost?</a>
-  <div>
-  <p>Vrednost bitcoinov je v njihovi uporabnosti kot denar. Bitcoin ima lastnosti denarja (trajnost, prenosljivost, zamenljivost enot, redkost, deljivost in prepoznavnost), ki izhajajo iz matematičnih lastnosti in ne iz fizičnih (kot npr. pri zlatu ali srebru) ali zaupanja v centralni organ (kot pri fiatnih valutah). Valuto bitcoin torej podpira matematika. Ko so te lastnosti dane, je za ohranjanje vrednosti denarja potrebno le zaupanje in sprejetost. V primeru bitcoina sprejetost predstavlja rastoča baza uporabnikov, trgovcev in podjetij. Kot pri vsaki valuti tudi vrednost bitcoina izhaja zgolj in neposredno od ljudi, ki so ga pripravljeni sprejeti kot plačilo.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin Ponzijeva shema?</a>
-  <div>
-  <p>Ponzijeva shema je naložbena goljufija, pri kateri organizator izplačuje donose iz glavnice investitorjev samih ali pa iz vlog kasnejših vlagateljev, namesto iz dobička iz poslovanja. Ponzijeve sheme se na koncu sesujejo v škodo zadnjih vlagateljev, ko zmanjka novih interesentov.</p>
-  <p>Bitcoin je prostoprogramski projekt brez centralnega organa, zato nihče nima avtoritete, da bi obljubljal lažne dobičke. Kot pri drugih menjalnih sredstvih kot so zlato, ameriški dolar, euro, yen itd., tudi v bitcoinu ni zagotovila ohranjanja kupne moči in njegov tečaj je prosto določen s strani trga. To vodi v nestanovitnost tečaja in lastniki bitcoinov lahko nepredvidljivo pridobijo ali izgubijo del vrednosti svojega premoženja. Nepovezano s špekulacijami na borzi pa je bitcoin tudi plačilni sistem z uporabnimi in konkurenčnimi lastnosti, ki ga uporabljajo tisoči posameznikov in podjetij po vsem svetu.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Kdo je ustvaril bitcoin?</a>
-  <div>
-  <p>Bitcoin je prva implementacija t.i. "kriptovalute", koncepta, ki ga je prvi opisal Wei Dai leta 1998 na poštnem seznamu cypherpunkov. Gre za idejo o novi obliki denarja, pri katerem za tvorbo novcev in nadzor nad nakazili namesto centralnega organa skrbi kriptografija. Prvo specifikaicijo bitcoina in dokaz koncepta je leta 2009 na kriptografskem poštnem seznamu objavil Satoši Nakamoto. Satoši je konec leta 2010 zapustil projekt, ne da bi razkril kaj dosti o sebi. Skupnost še naprej hitro raste in na bitcoinu sedaj dela precej  <a href="/sl/razvoj">razvijalcev</a>.</p>
-  <p>Satošijeva anonimnost je dvignila nekaj skrbi, ki pa so neutemeljene in običajno izhajajo iz nerazumevanja odprtokodne narave bitcoina. Protokol bitcoin in programska oprema, ki ga implementira, sta objavljena odprto in vsak razvijalec kjerkoli na svetu lahko pregleda celotno kodo ali izdela, uporablja in razpečuje svojo spremenjeno verzijo programske opreme. Spremembe, ki jih naredijo današnji razvijalci bitcoina, kot tudi spremembe, ki jih je naredil Satoši, se lahko uveljavijo samo, če jih začnejo ljudje uporabljati. Tako Satoši, kot tudi današnji razvijalci, nikoli ni imel popolnega nadzora nad bitcoinom. Identiteta izumitelja bitcoina je danes približno tako pomembna kot identiteta osebe, ki je izumila papir.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Ali lahko bitcoini postanejo ničvredni?</a>
-  <div>
-  <p>Da, to je mogoče. Zgodovina je polna valut, ki so propadle in niso več v uporabi, npr. marka <a href="https://sl.wikipedia.org/wiki/Weimarska_republika">Weimarske republike</a>, <a href="https://sl.wikipedia.org/wiki/Jugoslovanski_dinar">Jugoslovanski dinar</a> ali nedavno zimbabvejski dolar. Omenjene valute so sicer vse propadle s hiperinflacijo, ki je v bitcoinu nemogoča; vseeno pa obstaja možnost tehnične napake, boljše konkurenčne valute, političnih razlogov ipd. V splošnem nobena valuta ni imuna na propad v hudih razmerah. Bitcoin se je do zdaj v petih letih svojega obstoja izkazal za zanesljivega in potencial za rast je še visok. Seveda pa je njegovo prihodnost nemogoče napovedati.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin popolnoma virtualen in nematerialen?</a>
-  <div>
-  <p>Bitcoin je virtualen ravno toliko kot kreditne kartice in omrežja internetnega bančništva, ki ga ljudje dnevno in široko uporabljajo. Z bitcoinom je mogoče plačevati na spletu in v fizičnih trgovinah ravno tako kot s katerokoli drugo obliko denarja. Bitcoine je mogoče uporabljati tudi v fizični obliki, kot so npr.  <a href="https://www.casascius.com/">kovanci Casascius</a>, čeprav je plačevanje z mobilnikom običajno bolj praktično. Stanja na bitcoin računih so shranjena v velikem razpršenem omrežju, kjer jih nihče ne more goljufivo spremeniti. Vsak uporabnik bitcoina lahko tako v popolnosti upravlja s svojim denarjem in bitcoini ne morejo kar izginiti samo zato, ker so virtualni.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Zakaj ljudje zaupajo bitcoinu?</a>
-  <div>
-  <p>Velik del zaupanja v bitcoin izhaja iz dejstva, da za uporabo bitcoina ni potrebno zaupati nikomur. Bitcoin je povsem odprtokoden in decentraliziran. Vsakdo ima kadarkoli dostop do celotne programske kode. Vsak programer lahko zato kadarkoli preveri, kako bitcoin deluje. Vsakdo lahko pregleda vsa nakazila in vse novonastale bitcoine, in to praktično takoj, ko se zgodijo. Plačila so mogoča brez zanašanja na tretjo osebo in celoten sistem ščitijo široko preverjeni kriptografski algoritmi -- isti, kot se uporabljajo npr. pri spletnem bančništvu. Nobena posamezna organizacija ali posameznik ne more upravljati z bitcoinom, zato omrežje ostaja varno, tudi če niso vsi njegovi uporabniki vredni zaupanja.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Je bitcoin anonimen?</a>
-  <div>
-  <p>Bitcoin je zasnovan tako, da omogoča uporabnikom plačevanje z zadovoljivo stopnjo zasebnosti, ki je podobna kot pri drugih plačilnih sredstvih. Ni pa anonimen in ne more zagotavljati enake stopnje zasebnosti kot plačevanje z gotovino. Vsaka uporaba bitcoina se beleži v zelo natančnem javnem zapisniku. Za zaščito zasebnosti uporabnikov obstajajo <a href="/sl/zascita-zasebnosti">razni mehanizmi</a> in še več jih je v razvoju. Potrebnega bo še nekaj dela, preden bodo orodja za te načine uporabe razvita do te mere, da jih bo večina uporabnikov lahko enostavno pravilno uporabljala.</p>
-  <p>Nekatere skrbi, da bi se zasebna nakazila v bitcoinu lahko uporabljala v nezakonite namene. Vredno je opozoriti, da bodo za bitcoin nedvomno veljale podobne uredbe, kot že veljajo za obstoječe finančne in plačilne sisteme. Bitcoin ne more biti enako ali bolj anonimen kot gotovina in najbrž ne more preprečiti finančnih preiskav. Poleg tega je bitcoin zasnovan tako, da že sam po sebi preprečuje širok spekter finančnih zločinov.</p>
-  </div>
-</div>
-<p>Za več informacij o bitcoinu si oglejte <a href="/en/faq">VinO</a> ali <a href="https://en.bitcoin.it/wiki/FAQ">Wiki o bitcoinu</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin varen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Tehnologija, ki stoji za bitcoinom, tj. protokol in kriptografija, ima uspešno zgodovino varnosti in neprebojnosti. Omrežje bitcoin je najbrž daleč največji razpršen računalniški projekt na svetu. Najpogostejša varnostna težava pri uporabi bitcoina so napake uporabnika samega. Denarnico, ki hrani ključe za dostop do bitcoinov, lahko uporabnik po nesreči izgubi, izbriše ali pa mu jo ukradejo. To je nekako tako, kot bi imeli fizičen denar shranjen v digitalni obliki. Na srečo obstajajo  <a href="/sl/zavarujte-svojo-denarnico">dobre prakse za zaščito sredstev</a> in storitve, ki nudijo visoko stopnjo varnosti pred krajo ali izgubo.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin zakonit?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Kolikor nam je znano, bitcoin v večini držav <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">ni protizakonit</a>. Vendar pa nekatere dežele, npr. Argentina in Rusija, močno omejujejo ali prepovedujejo uporabo tujih valut. Druge dežele, npr. Tajska, pa omejujejo licenciranje določenih vrst pravnih oseb, npr. menjalnic za bitcoin.</p>
+            <p>Oblasti v raznih deželah izdajajo pravila, navodila in smernice za posameznike in podjetja, kako integrirati to novo tehnologijo v obstoječi regulirani finančni sistem. Ameriški FinCEN je npr. izdal smernice.  Nekaj informacij, tudi o Sloveniji, lahko najdete na <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country#Slovenia">Wikipedia</a>.</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kako je glede bitcoina in davkov?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin ni fiatna valuta in tudi ni zakonito plačilno sredstvo nobene države ali okrožja. Vseeno pa mnogi pravni okviri zahtevajo plačilo davkov ne glede na sredstvo trgovanja. Zakonodaja po svetu je zelo raznolika in pri uporabi bitcoina je ponekod morda potrebno plačati davek, npr. davek na plače, na dobiček, na dodano vrednost, dohodnino, prometni ali kak drug davek.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin uporaben za nezakonite dejavnosti?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin je denar in ljudje so vsak denar vedno uporabljali tako za zakonite kot za nezakonite dejavnosti. Trenutno se gotovina, kreditne kartice in obstoječi bančni sistem v nezakonite namene uporabljajo neprimerljivo bolj pogosto kot bitcoin. Bitcoin prinaša pomembne inovacije v svet plačilnih sistemov in prednosti teh inovacij v splošnem razumemo kot mnogo bolj pomembne kot pa njegove potencialne slabosti.</p>
+            <p>Bitcoin je zasnovan kot velik korak naprej pri zaščiti vsega, kar se tiče denarja, in bi lahko pomagal delovati kot močna zaščita pred mnogimi finančnimi zločini. Bitcoine je npr. popolnoma nemogoče ponarejati. Uporabniki imajo popoln nadzor nad svojim denarjem in nihče jim ne more nepooblaščeno zaračunavati kot pri goljufijah s kreditnimi karticami. Nakazila z bitcoinom so dokončna in zato imuna na goljufive stornacije. Bitcoin omogoča zaščito denarja pred krajo in izgubo s pomočjo zelo močnih in uporabnih mehanizmov kot so rezervne kopije, šifriranje in večstransko podpisovanje.</p>
+            <p>Nekatere skrbi, da bi bil bitcoin lahko bolj privlačen za zločince, saj so z njim možna zasebna in nepovratna plačila. Vendar pa so podobne stvari mogoče tudi z gotovino in bančnimi nakazili, ki se že široko uporabljajo. Za uporabo bitcoina bodo nedvomno veljale podobne uredbe, kot že veljajo za obstoječe finančne in plačilne sisteme, in z uporabo bitcoina se najbrž ne da izogniti finančnim preiskavam. V splošnem se pogosto dogaja, da pomembni tehnološki preboji v javnosti najprej doživijo močne polemike, preden javnost dobro razume njihove prednosti; internet je eden od mnogih primerov tega pojava.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin finančni mehurček?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Hitra porast vrednosti še ne predstavlja mehurčka. Mehurček nastane pri umetni precenjenosti, ki vodi v nenadno korekcijo vrednosti navzdol. Nihanje cene bitcoina v iskanju tržnega ravnotežja je posledica posameznih odločitev stotisočev udeležencev na trgu. Ceno vodi razpoloženje na trgu, razlogi za spremembe razpoloženja pa so lahko med drugim stopnja zaupanja v bitcoin, velika dojeta razlika med ceno in vrednostjo glede na temelje bitcoin ekonomije, špekulativno povpraševanje zaradi povečanega kritja v tisku, strah pred negotovimi dogodki in čustva kot iracionalno navdušenje in pohlep.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Zakaj imajo bitcoini vrednost?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Vrednost bitcoinov je v njihovi uporabnosti kot denar. Bitcoin ima lastnosti denarja (trajnost, prenosljivost, zamenljivost enot, redkost, deljivost in prepoznavnost), ki izhajajo iz matematičnih lastnosti in ne iz fizičnih (kot npr. pri zlatu ali srebru) ali zaupanja v centralni organ (kot pri fiatnih valutah). Valuto bitcoin torej podpira matematika. Ko so te lastnosti dane, je za ohranjanje vrednosti denarja potrebno le zaupanje in sprejetost. V primeru bitcoina sprejetost predstavlja rastoča baza uporabnikov, trgovcev in podjetij. Kot pri vsaki valuti tudi vrednost bitcoina izhaja zgolj in neposredno od ljudi, ki so ga pripravljeni sprejeti kot plačilo.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin Ponzijeva shema?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Ponzijeva shema je naložbena goljufija, pri kateri organizator izplačuje donose iz glavnice investitorjev samih ali pa iz vlog kasnejših vlagateljev, namesto iz dobička iz poslovanja. Ponzijeve sheme se na koncu sesujejo v škodo zadnjih vlagateljev, ko zmanjka novih interesentov.</p>
+            <p>Bitcoin je prostoprogramski projekt brez centralnega organa, zato nihče nima avtoritete, da bi obljubljal lažne dobičke. Kot pri drugih menjalnih sredstvih kot so zlato, ameriški dolar, euro, yen itd., tudi v bitcoinu ni zagotovila ohranjanja kupne moči in njegov tečaj je prosto določen s strani trga. To vodi v nestanovitnost tečaja in lastniki bitcoinov lahko nepredvidljivo pridobijo ali izgubijo del vrednosti svojega premoženja. Nepovezano s špekulacijami na borzi pa je bitcoin tudi plačilni sistem z uporabnimi in konkurenčnimi lastnosti, ki ga uporabljajo tisoči posameznikov in podjetij po vsem svetu.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Kdo je ustvaril bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin je prva implementacija t.i. "kriptovalute", koncepta, ki ga je prvi opisal Wei Dai leta 1998 na poštnem seznamu cypherpunkov. Gre za idejo o novi obliki denarja, pri katerem za tvorbo novcev in nadzor nad nakazili namesto centralnega organa skrbi kriptografija. Prvo specifikaicijo bitcoina in dokaz koncepta je leta 2009 na kriptografskem poštnem seznamu objavil Satoši Nakamoto. Satoši je konec leta 2010 zapustil projekt, ne da bi razkril kaj dosti o sebi. Skupnost še naprej hitro raste in na bitcoinu sedaj dela precej  <a href="/sl/razvoj">razvijalcev</a>.</p>
+            <p>Satošijeva anonimnost je dvignila nekaj skrbi, ki pa so neutemeljene in običajno izhajajo iz nerazumevanja odprtokodne narave bitcoina. Protokol bitcoin in programska oprema, ki ga implementira, sta objavljena odprto in vsak razvijalec kjerkoli na svetu lahko pregleda celotno kodo ali izdela, uporablja in razpečuje svojo spremenjeno verzijo programske opreme. Spremembe, ki jih naredijo današnji razvijalci bitcoina, kot tudi spremembe, ki jih je naredil Satoši, se lahko uveljavijo samo, če jih začnejo ljudje uporabljati. Tako Satoši, kot tudi današnji razvijalci, nikoli ni imel popolnega nadzora nad bitcoinom. Identiteta izumitelja bitcoina je danes približno tako pomembna kot identiteta osebe, ki je izumila papir.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Ali lahko bitcoini postanejo ničvredni?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Da, to je mogoče. Zgodovina je polna valut, ki so propadle in niso več v uporabi, npr. marka <a href="https://sl.wikipedia.org/wiki/Weimarska_republika">Weimarske republike</a>, <a href="https://sl.wikipedia.org/wiki/Jugoslovanski_dinar">Jugoslovanski dinar</a> ali nedavno zimbabvejski dolar. Omenjene valute so sicer vse propadle s hiperinflacijo, ki je v bitcoinu nemogoča; vseeno pa obstaja možnost tehnične napake, boljše konkurenčne valute, političnih razlogov ipd. V splošnem nobena valuta ni imuna na propad v hudih razmerah. Bitcoin se je do zdaj v petih letih svojega obstoja izkazal za zanesljivega in potencial za rast je še visok. Seveda pa je njegovo prihodnost nemogoče napovedati.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin popolnoma virtualen in nematerialen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin je virtualen ravno toliko kot kreditne kartice in omrežja internetnega bančništva, ki ga ljudje dnevno in široko uporabljajo. Z bitcoinom je mogoče plačevati na spletu in v fizičnih trgovinah ravno tako kot s katerokoli drugo obliko denarja. Bitcoine je mogoče uporabljati tudi v fizični obliki, kot so npr.  <a href="https://www.casascius.com/">kovanci Casascius</a>, čeprav je plačevanje z mobilnikom običajno bolj praktično. Stanja na bitcoin računih so shranjena v velikem razpršenem omrežju, kjer jih nihče ne more goljufivo spremeniti. Vsak uporabnik bitcoina lahko tako v popolnosti upravlja s svojim denarjem in bitcoini ne morejo kar izginiti samo zato, ker so virtualni.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Zakaj ljudje zaupajo bitcoinu?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Velik del zaupanja v bitcoin izhaja iz dejstva, da za uporabo bitcoina ni potrebno zaupati nikomur. Bitcoin je povsem odprtokoden in decentraliziran. Vsakdo ima kadarkoli dostop do celotne programske kode. Vsak programer lahko zato kadarkoli preveri, kako bitcoin deluje. Vsakdo lahko pregleda vsa nakazila in vse novonastale bitcoine, in to praktično takoj, ko se zgodijo. Plačila so mogoča brez zanašanja na tretjo osebo in celoten sistem ščitijo široko preverjeni kriptografski algoritmi -- isti, kot se uporabljajo npr. pri spletnem bančništvu. Nobena posamezna organizacija ali posameznik ne more upravljati z bitcoinom, zato omrežje ostaja varno, tudi če niso vsi njegovi uporabniki vredni zaupanja.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Je bitcoin anonimen?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Bitcoin je zasnovan tako, da omogoča uporabnikom plačevanje z zadovoljivo stopnjo zasebnosti, ki je podobna kot pri drugih plačilnih sredstvih. Ni pa anonimen in ne more zagotavljati enake stopnje zasebnosti kot plačevanje z gotovino. Vsaka uporaba bitcoina se beleži v zelo natančnem javnem zapisniku. Za zaščito zasebnosti uporabnikov obstajajo <a href="/sl/zascita-zasebnosti">razni mehanizmi</a> in še več jih je v razvoju. Potrebnega bo še nekaj dela, preden bodo orodja za te načine uporabe razvita do te mere, da jih bo večina uporabnikov lahko enostavno pravilno uporabljala.</p>
+            <p>Nekatere skrbi, da bi se zasebna nakazila v bitcoinu lahko uporabljala v nezakonite namene. Vredno je opozoriti, da bodo za bitcoin nedvomno veljale podobne uredbe, kot že veljajo za obstoječe finančne in plačilne sisteme. Bitcoin ne more biti enako ali bolj anonimen kot gotovina in najbrž ne more preprečiti finančnih preiskav. Poleg tega je bitcoin zasnovan tako, da že sam po sebi preprečuje širok spekter finančnih zločinov.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>Za več informacij o bitcoinu si oglejte <a href="/en/faq">VinO</a> ali <a href="https://en.bitcoin.it/wiki/FAQ">Wiki o bitcoinu</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -514,14 +608,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -530,7 +624,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -552,13 +647,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -569,7 +666,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

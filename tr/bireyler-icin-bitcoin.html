@@ -10,15 +10,29 @@
 <title>Bireyler için Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/tr.png"><strong>Türkçe</strong>
+          <img src="/img/flags/tr.png"><strong>Türkçe</strong>
 				</div>
 			</a>
 		</div>
@@ -323,58 +341,62 @@
 		<li><a href="#">SSS</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_individuals">
-  <h1 class="content_individuals--title">Bireyler için Bitcoin</h1>
-  <h2 class="content_individuals--subtitle">Bitcoin çok az masrafla para transferi yapmanın en basit yoludur.</h2>
+        <div class="content_standard">
+  <h1 class="content_standard--title">Bireyler için Bitcoin</h1>
+  <h2 class="content_standard--subtitle">Bitcoin çok az masrafla para transferi yapmanın en basit yoludur.</h2>
 
-  <ul class="content_individuals--list">
-    <li class="content_individuals--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_mobile.svg" alt="Icon"/>
       <h3>Mobil ödemelerde kolaylık</h3>
       <p>Bitcoin mobil platformlarda basit iki adımla ödeme yapmanızı sağlar: tara ve öde. Kartınızı okuyucudan geçirmek, PIN kodu girmek ya da bir şey imzalamak gerekmez. Bitcoin ödemesi alabilmek için tek ihtiyacınız olan Bitcoin cüzdan aplikasyonundaki QR kodunu göstermek ve arkadaşınızın telefonuyla taramasını sağlamaktır. Ya da iki telefonu birbirine dokundurabilirsiniz (NFC radyo teknolojisini kullanarak)</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lock.svg" alt="Icon"/>
       <h3>Paranız üzerinde kontrol ve güvenlik</h3>
       <p>Bitcoin işlemleri askeri düzeyde kriptografiyle sağlanır. Kimse sizin adınıza para talep edemez ve ya ödeme yapamaz. <a href="/tr/cuzdaninizi-guvenceye-almak">Cüzdanınızı korumak</a> için gereken adımları attığınız sürece, Bitcoin size paranızı kontrol etme ve dolandırıcılıktan korunma yetilerini sağlar.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_simple.svg" alt="Icon"/>
       <h3>Her yerde, her zaman çalışır</h3>
       <p>Aynen eposta'da olduğu gibi, ailenizi aynı yazılımı ve aynı servis sağlayıcıyı kullanmaya mecbur etmek zorunda değilsiniz. Bırakın istediklerini kullansınlar. Burada bir sorun yok, hepsi aynı açık teknolojiyi kullandığından uyumludur. Bitcoin iletişim ağı hiç bir zaman uyumaz, tatillerde bile!</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>Hızlı uluslararası ödemeler</h3>
       <p>Bitcoinler Afrika'dan Kanada'ya 10 dakika içerisinde transfer edilebilir. Bu süreci yavaşlatacak, gereksiz ücretler çıkaracak veya transferi donduracak aracı bir banka yoktur. Komşularınıza ödemeyi başka bir ülkedeki akrabanıza yaptığınız gibi yaparsınız.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>Sıfır veya düşük ücretler</h3>
       <p>Bitcoin çok düşük bir ücret karşılığında ödeme almanızı ve göndermenizi sağlar. Çok düşük ödemeler gibi bazı özel durumlar dışında mecburi ücretlendirme olmaz. İşleminizin daha hızlı onaylanması ve Bitcoin sistemini idare eden kişilerin hakkını vermek için olabildiğince yüksek miktarda gönüllü ödeme yapmanız önerilir.</p>
     </li>
 
-    <li class="content_individuals--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_anon.svg" alt="Icon"/>
       <h3>Kimliğinizi koruyun</h3>
       <p>Bitcoin’de kötü niyetli kullanıcıların eline geçirerek sizin yerinize geçebileceği bir kredi kartı numarası bulunmaz. Hatta kimliğinizi ele vermeden ödeme yapabilirsiniz, aynı gerçek para gibi. Ancak <a href="/tr/gizliliginizi-koruyun">gizliliğinizi korumak</a> için biraz efor sarfetmeniz gerekebilir. </p>
     </li>
-    
-    <div class="content_individuals--action">
-      <a class="content_individuals--action--text" href="/tr/baslarken">
-        Bitcoin'e başlarken
-      </a>
+
+    <div class="content_standard--action">
+      <div class="content_standard--action--wrap">
+        <a class="content_standard--action--text" href="/tr/baslarken">
+          Bitcoin'e başlarken
+        </a>
+      </div>
     </div>
   </ul>
 </div>
+
       </div>
     </div>
 
@@ -384,14 +406,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/tr/yasal">Yasal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/yasal">Yasal</a></li>
 			
-			<li><a href="/tr/gizlilik">Gizlilik</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/gizlilik">Gizlilik</a></li>
 			
-			<li><a href="/tr/basin">Basın</a></li>
-			<li><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/basin">Basın</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -400,7 +422,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sponsor bir topluluğun web sitesi</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -422,13 +445,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -439,7 +464,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

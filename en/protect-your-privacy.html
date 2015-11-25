@@ -10,15 +10,29 @@
 <title>Protect your privacy - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -200,7 +218,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/en.png"><strong>English</strong>
+          <img src="/img/flags/en.png"><strong>English</strong>
 				</div>
 			</a>
 		</div>
@@ -327,31 +345,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Protect your privacy</h1>
-<p class="summarytxt">Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Protect your privacy</h1>
+	<h2 class="content_standard--subtitle">Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Understanding Bitcoin traceability</h3>
+      <p>Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the <a href="https://www.biteasy.com">balance and all transactions</a> of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses.</p>
+    </li>
 
-<h2 id="traceable">Understanding Bitcoin traceability</h2>
-<p>Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the <a href="https://www.biteasy.com">balance and all transactions</a> of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Use new addresses to receive payments</h3>
+      <p>To protect your privacy, you should use a new Bitcoin address each time you receive a new payment. Additionally, you can use multiple wallets for different purposes. Doing so allows you to isolate each of your transactions in such a way that it is not possible to associate them all together. People who send you money cannot see what other Bitcoin addresses you own and what you do with them. This is probably the most important advice you should keep in mind.</p>
+    </li>
 
-<h2 id="receive">Use new addresses to receive payments</h2>
-<p>To protect your privacy, you should use a new Bitcoin address each time you receive a new payment. Additionally, you can use multiple wallets for different purposes. Doing so allows you to isolate each of your transactions in such a way that it is not possible to associate them all together. People who send you money cannot see what other Bitcoin addresses you own and what you do with them. This is probably the most important advice you should keep in mind.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Be careful with public spaces</h3>
+      <p>Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a website or social network is not a good idea when it comes to privacy. If you choose to do so, always remember that if you move any funds with this address to one of your other addresses, they will be publicly tainted by the history of your public address. Additionally, you might also want to be careful not to publish information about your transactions and purchases that could allow someone to identify your Bitcoin addresses.</p>
+    </li>
 
-<h2 id="public">Be careful with public spaces</h2>
-<p>Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a website or social network is not a good idea when it comes to privacy. If you choose to do so, always remember that if you move any funds with this address to one of your other addresses, they will be publicly tainted by the history of your public address. Additionally, you might also want to be careful not to publish information about your transactions and purchases that could allow someone to identify your Bitcoin addresses.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Your IP address can be logged</h3>
+      <p>Because the Bitcoin network is a peer-to-peer network, it is possible to listen for transactions' relays and log their IP addresses. Full node clients relay all users' transactions just like their own. This means that finding the source of any particular transaction can be difficult and any Bitcoin node can be mistaken as the source of a transaction when they are not. You might want to consider hiding your computer's IP address with a tool like <a href="https://www.torproject.org/">Tor</a> so that it cannot be logged.</p>
+    </li>
 
-<h2 id="iplog">Your IP address can be logged</h2>
-<p>Because the Bitcoin network is a peer-to-peer network, it is possible to listen for transactions' relays and log their IP addresses. Full node clients relay all users' transactions just like their own. This means that finding the source of any particular transaction can be difficult and any Bitcoin node can be mistaken as the source of a transaction when they are not. You might want to consider hiding your computer's IP address with a tool like <a href="https://www.torproject.org/">Tor</a> so that it cannot be logged.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Limitations of mixing services</h3>
+      <p>Some online services called mixing services offer to mix traceability between users by receiving and sending back the same amount using independent Bitcoin addresses. It is important to note that the legality of using such services might vary and be subjected to different rules in each jurisdiction. Such services also require you to trust the individuals running them not to lose or steal your funds and not to keep a log of your requests. Even though mixing services can break traceability for small amounts, it becomes increasingly difficult to do the same for larger transactions.</p>
+    </li>
 
-<h2 id="mixing">Limitations of mixing services</h2>
-<p>Some online services called mixing services offer to mix traceability between users by receiving and sending back the same amount using independent Bitcoin addresses. It is important to note that the legality of using such services might vary and be subjected to different rules in each jurisdiction. Such services also require you to trust the individuals running them not to lose or steal your funds and not to keep a log of your requests. Even though mixing services can break traceability for small amounts, it becomes increasingly difficult to do the same for larger transactions.</p>
-
-<h2 id="future">Future improvements</h2>
-<p>Many improvements can be expected in the future to improve privacy. For instance, some efforts are ongoing with the payment messages API to avoid tainting multiple addresses together during a payment. Bitcoin Core change addresses might be implemented in other wallets over time. Graphical user interfaces might be improved to provide user friendly payment request features and discourage addresses reuse. Various work and research is also being done to develop other potential extended privacy features like being able to join random users' transactions together.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Future improvements</h3>
+      <p>Many improvements can be expected in the future to improve privacy. For instance, some efforts are ongoing with the payment messages API to avoid tainting multiple addresses together during a payment. Bitcoin Core change addresses might be implemented in other wallets over time. Graphical user interfaces might be improved to provide user friendly payment request features and discourage addresses reuse. Various work and research is also being done to develop other potential extended privacy features like being able to join random users' transactions together.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -361,14 +394,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/en/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy Policy</a></li>
 			
-			<li><a href="/en/press">Press</a></li>
-			<li><a href="/en/about-us">About bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/about-us">About bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -377,7 +410,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -399,13 +433,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -416,7 +452,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

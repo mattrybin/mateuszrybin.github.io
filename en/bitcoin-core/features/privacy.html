@@ -16,7 +16,7 @@
 <title>Privacy - Bitcoin Core Features</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
@@ -25,6 +25,19 @@
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 
 
@@ -43,6 +56,10 @@
 
 
 
+
+  <div class="banner-message alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
 
 
 
@@ -801,10 +818,10 @@ all lightweight clients are still vulnerable today.</strong></p>
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
   <a href="/en/legal">Legal</a>
   
-  <a href="/en/privacy">Privacy</a>
+  <a href="/en/privacy">Privacy Policy</a>
   
   <a href="/en/press">Press</a>
   <a href="/en/about-us">About bitcoin.org</a>
@@ -838,7 +855,6 @@ all lightweight clients are still vulnerable today.</strong></p>
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

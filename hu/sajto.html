@@ -10,15 +10,29 @@
 <title>Sajtó - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,187 +341,263 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Sajtóközpont</h1>
-<p class="summary">Böngésszen interjúalanyok, válaszok és kiváló minőségű sajtóanyagok között.</p>
+        <div class="content_press">
+  <h1 class="content_press--title">Sajtóközpont</h1>
+  <h2 class="content_press--subtitle">Böngésszen interjúalanyok, válaszok és kiváló minőségű sajtóanyagok között.</h2>
+  <div class="content_press--body">
+    <h2 id="volunteer">Interjúalanyok</h2>
+    <p>Lépjen kapcsolatba a <a href="https://bitcoinfoundation.org/contact/">Bitcoin Alapítvánnyal</a> vagy helyi, <a href="/hu/kozosseg#nonprofit">nonprofit szervezetekkel</a>. További potenciális sajtókapcsolatokat a független <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a> weboldalon találhat.</p>
+  </div>
 
-<h2 id="volunteer">Interjúalanyok</h2>
+  <div class="content_press--faq">
+    <div class="content_press--faq--title">
+      <h2 id="layout">GYIK</h2>
+    </div>
+    <div class="content_press--foq--section">
+      <ul class="content_press--faq--list">
 
-<div class="press-volunteer">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Mi az a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoin egy konszenzusra épülő hálózat, amely egy új fizetési rendszert, valamint egy teljes mértékben digitális pénzt keletkeztet. Ez az első decentralizált, peer-to-peer fizetési hálózat, amelyet felhasználói fejlesztenek, központi hatalom vagy közvetítők nélkül. Felhasználói szemszögből a Bitcoin tulajdonképpen internetes készpénznek tekinthető. A Bitcoin a legjelentősebb, létező, ún. <a href="http://financialcryptography.com/mt/archives/001325.html">hármas könyvviteli rendszer</a>.</p>
+          </div>
+        </li>
 
-<div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hogyan működik a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Felhasználói szemszögből a Bitcoin nem más, mint egy mobilalkalmazás vagy számítógépes program, amely személyes Bitcoin-pénztárcát biztosít, és amely lehetővé teszi a felhasználó számára, hogy segítségével bitcoinokat küldjön és fogadjon. A legtöbb felhasználó számára a Bitcoin így működik.</p>
+            <p>A színfalak mögött a Bitcoin-hálózat egy "blokkláncnak" nevezett nyilvános főkönyvet oszt meg. Ez a főkönyv tartalmaz minden valaha feldolgozott tranzakciót, lehetőséget teremtve a felhasználók számítógépeinek minden egyes tranzakció érvényességének megerősítésére. Minden egyes tranzakció hitelességét a küldő féllel megegyező digitális aláírások védik, teljes irányítást biztosítva minden felhasználó számára a Bitcoin-címekről történő bitcoin-küldéshez. Ezenkívül bárki feldolgozhatja a tranzakciókat specializált hardver számítási kapacitását kihasználva, valamint e szolgáltatásért cserébe bitcoin-jutalomban részesülhet. Erre a tevékenységre gyakran "bányászatként" hivatkoznak. A Bitcoinnal kapcsolatos további információkért keresse fel az <a href="/hu/hogyan-mukodik">e célnak szentelt oldalt</a> és olvassa el az <a href="/bitcoin.pdf">eredeti tanulmányt</a> (angol nyelven).</p>
+          </div>
+        </li>
 
-<p>Lépjen kapcsolatba a <a href="https://bitcoinfoundation.org/contact/">Bitcoin Alapítvánnyal</a> vagy helyi, <a href="/hu/kozosseg#nonprofit">nonprofit szervezetekkel</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Mi az a Bitcoin-bányászat?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A bányászat a számítógépek számítási kapacitásának tranzakció-feldolgozásra való használatának, a hálózat biztonsága megteremtésének, valamint a rendszer minden tagja szinkronban tartásának folyamata. Megközelíthető egyfajta Bitcoin-adatközpontként, kivéve, hogy úgy tervezték, hogy a világ minden táján dolgozó bányászok révén teljesen decentralizált legyen, és hogy senki se irányíthassa a rendszert. Erre a folyamatra "bányászaként" szokás utalni, az aranybányászat analógiájaként, mivel úgyszintén egy ideiglenes, ebben az esetben új bitcoinok kibocsátására szolgáló mechanizmusról van szó. Ugyanakkor - ellentétben az aranybányászattal - a Bitcoin-bányászat a fizetési hálózat biztonságának megteremtéséért végzett hasznos szolgálatokért cserébe jutalmat biztosít. A bányászat egészen az utolsó bitcoin kibocsátásáig szükséges tevékenység lesz.</p>
+          </div>
+        </li>
 
-<p>További potenciális sajtókapcsolatokat a független <a href="https://bitcoinpresscenter.org">bitcoinpresscenter.org</a> weboldalon találhat.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hogyan szerezhetőek bitcoinok?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li>Termékek és szolgáltatások ellenértékeként.</li>
+              <li>Vásároljon bitcoinokat egy <a href="http://howtobuybitcoins.info">Bitcoin-tőzsdén</a>.</li>
+              <li>Kereskedjen bitcoinnal <a href="https://localbitcoins.com/">lakhelye környékén</a>.</li>
+              <li>Jusson bitcoinokhoz versenyszerű <a href="http://www.bitcoinmining.com/">bányászat</a> segítségével.</li>
+            </ul>
+            <p>Bár lehetséges lenne olyan magánszemélyt találni, aki hajlandó lenne bitcoinokat eladni hitelkártya vagy PayPal-kifizetés ellenében, a legtöbb kereskedés nem engedélyezi e fizetési módok használatát. Ennek oka az, hogy vannak olyan esetek, amikor valaki PayPal segítségével vásárol bitcoinokat, ezt követően pedig visszavonja a tranzakciót őt érintő felét. Ezen esetre gyakran visszaszámlázásként utalnak.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Tényleg használják az emberek a Bitcoint?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Igen. A Bitcoint használó magánszemélyek és <a href="http://usebitcoins.info/">vállalkozások</a> száma egyre növekszik. Ez magában foglal fizikai vállalkozásokat - például éttermeket, ügyvédi irodákat -, illetve a Namecheaphez, Wordpresshez, Reddithez és Flattrhöz hasonló, népszerű online szolgáltatásokat. Mivel a Bitcoin továbbra is relatíve új jelenségnek tekinthető, ezért gyorsan növekszik. 2013 augusztásának végén a <a href="https://bitcoincharts.com/bitcoin/">forgalomban lévő bitcoinok értéke</a> meghaladta az 1,5 milliárd dollárt; valamint nap mint nap több millió dollár értékű bitcoin cserél gazdát.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Mennyire bonyolult a Bitcoinnal fizetni?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoin-kifizetések egyszerűbben kezdeményezhetőek, mint a bank- vagy hitelkártyával történő vásárlások; valamint kereskedői fiók nélkül is fogadhatóak. A kifizetések egy pénztárca-alkalmazás segítségével hozhatóak létre számítógépén vagy okostelefonján, a címzett címe és a kifizetési összeg megadásával, valamint a küldés gomb megnyomásával. A címzett címe megadásának leegyszerűsítésére számos pénztárca hozzájuthat a címhez egy QR-kód beolvasásával vagy - az NFC technológiának köszönhetően - két telefon összeérintésével.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
 
-<h2 id="layout">GYIK</h2>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Mik a Bitcoin előnyei?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Fizetési szabadság</b></em> - Lehetségessé válik bármekkora összegű pénzt küldeni és fogadni azonnal, bármikor, a világ bármelyik sarkából. Nincsenek munkaszüneti napok. Nincsenek határok. A Bitcoin teljes irányítást biztosít felhasználóinak pénzük ellenőrzése felett.</li>
+              <li><em><b>Nagyon alacsony díjak</b></em> - A Bitcoin-kifizetések feldolgozása jelenleg vagy díjtalanul vagy rendkívül alacsony díjak mellett történik. A felhasználók díjat mellékelhetnek tranzakcióikhoz az elsőbbségi feldolgozáshoz, amely a tranzakció hálózat által történő gyorsabb visszaigazolását eredményezi. Továbbá a kereskedői feldolgozószoftverek a kereskedők tranzakcióinak feldolgozását, a bitcoinok hivatalos pénznemre történő átváltását, valamint az átváltott pénz kereskedői bankszámlára történő napi elhelyezését segítik. Mivel e rendszerek a Bitcoinon alapulnak, a PayPalnál és a hitelkártya-hálózatoknál sokkal alacsonyabb díjakkal működnek.</li>
+              <li><em><b>Kisebb kereskedői kockázat</b></em> - A Bitcoin-tranzakciók biztonságosak, visszavonhatatlanok és nem tartalmaznak érzékeny vagy személyes információkat. Ez megvédi a kereskedőket a csalásokból vagy a tisztességtelen visszaszámlázásoktól, és szükségtelenné teszi a PCI-megfelelés használatát. A kereskedők könnyedén új piacokra léphetnek be, amelyeken vagy a hitelkártyák nem elérhetőek vagy a csalások aránya elfogadhatatlanul magas. A végső eredmény alacsonyabb díjakban, nagyobb piacokban és kevesebb adminisztrációs költségben testesül meg.</li>
+              <li><em><b>Biztonság és kontroll</b></em> - A Bitcoin-felhasználók teljes irányítást élveznek tranzakcióik felett; a kereskedők számára lehetetlen kéretlen vagy rejtett díjak felszámítása, amelyek más fizetési módok esetén megtörténhetnek. A Bitcoin-kifizetések a tranzakcióhoz csatolt személyes információk nélkül kezdeményezhetőek. Ez erős védelmet jelent a személyazonosság ellopását célzó támadásokkal szemben. A Bitcoin-felhasználók ezenkívül biztonsági mentéssel és titkosítással védhetik meg pénzüket.</li>
+              <li><em><b>Transzparens és semleges</b></em> - <a href="https://www.biteasy.com/">Minden, a Bitcoin pénzkínálatát érintő információ</a> a blokkláncon azonnal, bárki számára, valós időben hozzáférhető, visszaigazolható és használható. Egyetlen magánszemély vagy szervezet sem irányíthatja vagy befolyásolhatja a Bitcoin-protokollt, mivel kriptográfiailag biztonságosnak tekinthető. Ez lehetővé teszi, hogy a Bitcoin magja teljes mértékben semleges, transzparens és kiszámítható legyen.</li>
+            </ul>
+          </div>
+        </li>
 
-<div class="press-faq">
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Mik a Bitcoin hátrányai?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <ul>
+              <li><em><b>Az elfogadás mértéke</b></em> - Az emberek többsége nem ismeri a Bitcoint. Minden nappal egyre több vállalkozás fogad el bitcoinokat, mivel rendelkezni kívánnak az elfogadás biztosította előnyökkel. Ugyanakkor a lista egyelőre rövid, illetve további növekedésre van szüksége a <a href="https://en.wikipedia.org/wiki/Network_effect">hálózati hatás</a> (angol nyelven) kihasználásához.</li>
+              <li><em><b>Volatilitás</b></em> - A forgalomban lévő bitcoinok <a href="https://bitcoincharts.com/bitcoin/">összértéke</a> és a Bitcoint használó vállalkozások száma továbbra is nagyon alacsony ahhoz képest, hogy mennyi lehetne. Ezért relatíve kis események, megkötött üzletek vagy kereskedelmi tevékenységek jelentősen befolyásolhatják az árfolyamot. Elméletileg a volatilitás a Bitcoin-piacok és a technológia éretté válásával csökkenni fog. Soha nem látott még a világ startup-pénznemet, így igazán nehéz (és egyben izgalmas) elképzelni, hogy hogyan fog teljesíteni.</li>
+              <li><em><b>Folyamatos fejlesztés</b></em> - A Bitcoin-szoftver továbbra is béta üzemmódban van, számos, még fejlesztés alatt álló szolgáltatással. Új eszközök, funkciók és szolgáltatások fejlesztése zajlik a Bitcoin biztonságosabbá tétele, valamint a széles közönség számára való nagyobb hozzáférhetősége érdekében. Ezek közül néhány még nem elérhető mindenki számára. A legtöbb Bitcoin-vállalkozás még új, és nem kínál biztosítást. Általánosan elmondható, hogy a Bitcoin jelenleg is az éretté válás útján halad.</li>
+            </ul>
+          </div>
+        </li>
 
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Mi az a Bitcoin?</a>
-  <div>
-  <p>A Bitcoin egy konszenzusra épülő hálózat, amely egy új fizetési rendszert, valamint egy teljes mértékben digitális pénzt keletkeztet. Ez az első decentralizált, peer-to-peer fizetési hálózat, amelyet felhasználói fejlesztenek, központi hatalom vagy közvetítők nélkül. Felhasználói szemszögből a Bitcoin tulajdonképpen internetes készpénznek tekinthető. A Bitcoin a legjelentősebb, létező, ún. <a href="http://financialcryptography.com/mt/archives/001325.html">hármas könyvviteli rendszer</a>.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hogyan működik a Bitcoin?</a>
-  <div>
-  <p>Felhasználói szemszögből a Bitcoin nem más, mint egy mobilalkalmazás vagy számítógépes program, amely személyes Bitcoin-pénztárcát biztosít, és amely lehetővé teszi a felhasználó számára, hogy segítségével bitcoinokat küldjön és fogadjon. A legtöbb felhasználó számára a Bitcoin így működik.</p>
-  <p>A színfalak mögött a Bitcoin-hálózat egy "blokkláncnak" nevezett nyilvános főkönyvet oszt meg. Ez a főkönyv tartalmaz minden valaha feldolgozott tranzakciót, lehetőséget teremtve a felhasználók számítógépeinek minden egyes tranzakció érvényességének megerősítésére. Minden egyes tranzakció hitelességét a küldő féllel megegyező digitális aláírások védik, teljes irányítást biztosítva minden felhasználó számára a Bitcoin-címekről történő bitcoin-küldéshez. Ezenkívül bárki feldolgozhatja a tranzakciókat specializált hardver számítási kapacitását kihasználva, valamint e szolgáltatásért cserébe bitcoin-jutalomban részesülhet. Erre a tevékenységre gyakran "bányászatként" hivatkoznak. A Bitcoinnal kapcsolatos további információkért keresse fel az <a href="/hu/hogyan-mukodik">e célnak szentelt oldalt</a> és olvassa el az <a href="/bitcoin.pdf">eredeti tanulmányt</a> (angol nyelven).</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Mi az a Bitcoin-bányászat?</a>
-  <div>
-  <p>A bányászat a számítógépek számítási kapacitásának tranzakció-feldolgozásra való használatának, a hálózat biztonsága megteremtésének, valamint a rendszer minden tagja szinkronban tartásának folyamata. Megközelíthető egyfajta Bitcoin-adatközpontként, kivéve, hogy úgy tervezték, hogy a világ minden táján dolgozó bányászok révén teljesen decentralizált legyen, és hogy senki se irányíthassa a rendszert. Erre a folyamatra "bányászaként" szokás utalni, az aranybányászat analógiájaként, mivel úgyszintén egy ideiglenes, ebben az esetben új bitcoinok kibocsátására szolgáló mechanizmusról van szó. Ugyanakkor - ellentétben az aranybányászattal - a Bitcoin-bányászat a fizetési hálózat biztonságának megteremtéséért végzett hasznos szolgálatokért cserébe jutalmat biztosít. A bányászat egészen az utolsó bitcoin kibocsátásáig szükséges tevékenység lesz.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hogyan szerezhetőek bitcoinok?</a>
-  <div>
-  <ul>
-    <li>Termékek és szolgáltatások ellenértékeként.</li>
-    <li>Vásároljon bitcoinokat egy <a href="http://howtobuybitcoins.info">Bitcoin-tőzsdén</a>.</li>
-    <li>Kereskedjen bitcoinnal <a href="https://localbitcoins.com/">lakhelye környékén</a>.</li>
-    <li>Jusson bitcoinokhoz versenyszerű <a href="http://www.bitcoinmining.com/">bányászat</a> segítségével.</li>
-  </ul>
-  <p>Bár lehetséges lenne olyan magánszemélyt találni, aki hajlandó lenne bitcoinokat eladni hitelkártya vagy PayPal-kifizetés ellenében, a legtöbb kereskedés nem engedélyezi e fizetési módok használatát. Ennek oka az, hogy vannak olyan esetek, amikor valaki PayPal segítségével vásárol bitcoinokat, ezt követően pedig visszavonja a tranzakciót őt érintő felét. Ezen esetre gyakran visszaszámlázásként utalnak.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Tényleg használják az emberek a Bitcoint?</a>
-  <div>
-  <p>Igen. A Bitcoint használó magánszemélyek és <a href="http://usebitcoins.info/">vállalkozások</a> száma egyre növekszik. Ez magában foglal fizikai vállalkozásokat - például éttermeket, ügyvédi irodákat -, illetve a Namecheaphez, Wordpresshez, Reddithez és Flattrhöz hasonló, népszerű online szolgáltatásokat. Mivel a Bitcoin továbbra is relatíve új jelenségnek tekinthető, ezért gyorsan növekszik. 2013 augusztásának végén a <a href="https://bitcoincharts.com/bitcoin/">forgalomban lévő bitcoinok értéke</a> meghaladta az 1,5 milliárd dollárt; valamint nap mint nap több millió dollár értékű bitcoin cserél gazdát.</p>
-  <p>
-  <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png" alt="Screenshot">
-  </p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Mennyire bonyolult a Bitcoinnal fizetni?</a>
-  <div>
-  <p>A Bitcoin-kifizetések egyszerűbben kezdeményezhetőek, mint a bank- vagy hitelkártyával történő vásárlások; valamint kereskedői fiók nélkül is fogadhatóak. A kifizetések egy pénztárca-alkalmazás segítségével hozhatóak létre számítógépén vagy okostelefonján, a címzett címe és a kifizetési összeg megadásával, valamint a küldés gomb megnyomásával. A címzett címe megadásának leegyszerűsítésére számos pénztárca hozzájuthat a címhez egy QR-kód beolvasásával vagy - az NFC technológiának köszönhetően - két telefon összeérintésével.</p>
-  <p><img src="/img/faq/mobile_send.png" style="height:325px;width:190px;" alt="Screenshot"><img src="/img/faq/mobile_receive.png" style="height:325px;width:190px;" alt="Screenshot"></p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Mik a Bitcoin előnyei?</a>
-  <div>
-  <ul>
-    <li><em><b>Fizetési szabadság</b></em> - Lehetségessé válik bármekkora összegű pénzt küldeni és fogadni azonnal, bármikor, a világ bármelyik sarkából. Nincsenek munkaszüneti napok. Nincsenek határok. A Bitcoin teljes irányítást biztosít felhasználóinak pénzük ellenőrzése felett.</li>
-    <li><em><b>Nagyon alacsony díjak</b></em> - A Bitcoin-kifizetések feldolgozása jelenleg vagy díjtalanul vagy rendkívül alacsony díjak mellett történik. A felhasználók díjat mellékelhetnek tranzakcióikhoz az elsőbbségi feldolgozáshoz, amely a tranzakció hálózat által történő gyorsabb visszaigazolását eredményezi. Továbbá a kereskedői feldolgozószoftverek a kereskedők tranzakcióinak feldolgozását, a bitcoinok hivatalos pénznemre történő átváltását, valamint az átváltott pénz kereskedői bankszámlára történő napi elhelyezését segítik. Mivel e rendszerek a Bitcoinon alapulnak, a PayPalnál és a hitelkártya-hálózatoknál sokkal alacsonyabb díjakkal működnek.</li>
-    <li><em><b>Kisebb kereskedői kockázat</b></em> - A Bitcoin-tranzakciók biztonságosak, visszavonhatatlanok és nem tartalmaznak érzékeny vagy személyes információkat. Ez megvédi a kereskedőket a csalásokból vagy a tisztességtelen visszaszámlázásoktól, és szükségtelenné teszi a PCI-megfelelés használatát. A kereskedők könnyedén új piacokra léphetnek be, amelyeken vagy a hitelkártyák nem elérhetőek vagy a csalások aránya elfogadhatatlanul magas. A végső eredmény alacsonyabb díjakban, nagyobb piacokban és kevesebb adminisztrációs költségben testesül meg.</li>
-    <li><em><b>Biztonság és kontroll</b></em> - A Bitcoin-felhasználók teljes irányítást élveznek tranzakcióik felett; a kereskedők számára lehetetlen kéretlen vagy rejtett díjak felszámítása, amelyek más fizetési módok esetén megtörténhetnek. A Bitcoin-kifizetések a tranzakcióhoz csatolt személyes információk nélkül kezdeményezhetőek. Ez erős védelmet jelent a személyazonosság ellopását célzó támadásokkal szemben. A Bitcoin-felhasználók ezenkívül biztonsági mentéssel és titkosítással védhetik meg pénzüket.</li>
-    <li><em><b>Transzparens és semleges</b></em> - <a href="https://www.biteasy.com/">Minden, a Bitcoin pénzkínálatát érintő információ</a> a blokkláncon azonnal, bárki számára, valós időben hozzáférhető, visszaigazolható és használható. Egyetlen magánszemély vagy szervezet sem irányíthatja vagy befolyásolhatja a Bitcoin-protokollt, mivel kriptográfiailag biztonságosnak tekinthető. Ez lehetővé teszi, hogy a Bitcoin magja teljes mértékben semleges, transzparens és kiszámítható legyen.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Mik a Bitcoin hátrányai?</a>
-  <div>
-  <ul>
-    <li><em><b>Az elfogadás mértéke</b></em> - Az emberek többsége nem ismeri a Bitcoint. Minden nappal egyre több vállalkozás fogad el bitcoinokat, mivel rendelkezni kívánnak az elfogadás biztosította előnyökkel. Ugyanakkor a lista egyelőre rövid, illetve további növekedésre van szüksége a <a href="https://en.wikipedia.org/wiki/Network_effect">hálózati hatás</a> (angol nyelven) kihasználásához.</li>
-    <li><em><b>Volatilitás</b></em> - A forgalomban lévő bitcoinok <a href="https://bitcoincharts.com/bitcoin/">összértéke</a> és a Bitcoint használó vállalkozások száma továbbra is nagyon alacsony ahhoz képest, hogy mennyi lehetne. Ezért relatíve kis események, megkötött üzletek vagy kereskedelmi tevékenységek jelentősen befolyásolhatják az árfolyamot. Elméletileg a volatilitás a Bitcoin-piacok és a technológia éretté válásával csökkenni fog. Soha nem látott még a világ startup-pénznemet, így igazán nehéz (és egyben izgalmas) elképzelni, hogy hogyan fog teljesíteni.</li>
-    <li><em><b>Folyamatos fejlesztés</b></em> - A Bitcoin-szoftver továbbra is béta üzemmódban van, számos, még fejlesztés alatt álló szolgáltatással. Új eszközök, funkciók és szolgáltatások fejlesztése zajlik a Bitcoin biztonságosabbá tétele, valamint a széles közönség számára való nagyobb hozzáférhetősége érdekében. Ezek közül néhány még nem elérhető mindenki számára. A legtöbb Bitcoin-vállalkozás még új, és nem kínál biztosítást. Általánosan elmondható, hogy a Bitcoin jelenleg is az éretté válás útján halad.</li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Biztonságos-e a Bitcoin?</a>
-  <div>
-  <p>A Bitcoin technológiája - a protokoll és a kriptográfia - komoly biztonsági tapasztalattal rendelkezik, és a Bitcoin-hálózat valószínűleg a legnagyobb megosztott számítástechnikai projekt a világon. A Bitcoin legáltalánosabb sebezhetőségét a felhasználói hibák okozzák. A szükséges privát kulcsokat tartalmazó Bitcoin-pénztárcafájlok véletlenül kitörölhetőek, elveszíthetőek vagy ellophatják őket. Ez nagyon hasonló a fizikai készpénz digitális formában történő tárolásához. Szerencsére a felhasználók erős <a href="/hu/vedje-meg-penztarcajat">biztonsági gyakorlatokat vezethetnek be</a> pénzük megvédése érdekében, vagy magas szintű biztonságot, illetve a lopásokra vagy elvesztésre biztosítást kínáló szolgáltatókat használhatnak.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Legális-e a Bitcoin?</a>
-  <div>
-  <p>A legjobb tudomásunk szerint a <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">legtöbb törvényalkotó nem tiltotta be a Bitcoint</a>. Ugyanakkor néhány ország törvényalkotója (például Argentínában és Oroszországban) súlyosan büntet vagy tilt minden külföldi pénznemet. Más törvényalkotók (például Thaiföldön) korlátozhatják meghatározott jogi személyek - mint például a Bitcoin-tőzsdék - bejegyzését.</p>
-  <p>Számos törvényalkotó szabályozója tesz lépéseket annak irányába, hogy magánszemélyek és vállalkozások számára ezen új technológia hivatalos, szabályozott pénzügyi rendszerrel való integrálására vonatkozó szabályokat biztosítson. Például a FinCEN, az USA pénzügyminisztériumának kijelölt osztálya kibocsátott egy nem törvényerejű iránymutatást a virtuális pénznemekkel végzett különböző tevékenységek jellemzőiről.</p>
-  <ul>
-    <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
-    <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
-  </ul>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hogyan viszonyul a Bitcoin az adózáshoz?</a>
-  <div>
-  <p>A bitcoint nem tekinti hivatalos, konvertibilis pénznemnek egyetlen törvényalkotó sem, de gyakran adókötelezettség lép fel a közvetítőeszköztől függetlenül. Sokféle törvényalkotó sokféle törvénnyel keletkeztethet a Bitcoinnal kapcsolatos vállalkozói, forgalmi jövedelem- és kamat- vagy egyéb adókötelezettséget.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Hasznos-e a Bitcoin illegális tevékenységekhez?</a>
-  <div>
-  <p>A bitcoin pénz, és a pénzt mindig is egyaránt használták legális és illegális célokra. A készpénz, a hitelkártyák és a jelenlegi bankrendszerek messze túlszárnyalják a Bitcoint az elkövetett pénzügyi bűntettek tekintetében. A Bitcoin jelentős innovációt jelent a fizetési rendszerekre nézve, és ilyesfajta innovációk előnyeit gyakran sokkal nagyobbnak tekintik, mint lehetséges hátrányait.</p>
-  <p>A Bitcoint úgy tervezték, hogy nagy lépést jelentsen a pénz biztonságosabbá tétele irányában, valamint jelentős védelmet biztosítson a pénzügyi bűnözés számos formájával szemben. Például a bitcoinokat teljes mértékben lehetetlen hamisítani. A felhasználók teljes irányítást élveznek kifizetéseik felett, valamint nem sújthatják őket kéretlen díjak, szemben a hitelkártyacsalás esetével. A Bitcoin-tranzakciók visszavonhatatlanok és immúnisak a tisztességtelen visszaszámlázásokkal szemben. A Bitcoin lehetővé teszi, hogy a pénzt nagyon erős és hasznos mechanizmusokkal - mint például biztonsági mentések, titkosítás és csoportos aláírások - lehessen a lopások és elvesztés ellen védeni.</p>
-  <p>Némi aggodalmat kelt, hogy fennáll a veszélye annak, hogy a Bitcoin vonzóvá válhat a bűnözök számára, mivel segítségével privát és visszavonhatatlan kifizetések végezhetőek. Mindemellett ezek a jellemzők már léteznek a készpénznél és elektronikus átutalásnál, amelyek széles körben használtak és elfogadottak. A Bitcoin használatát kétségtelenül a meglévő pénzügyi rendszerekhez hasonló szabályozásnak fogják alávetni. A Bitcoin nem lehet névtelenebb a készpénznél, valamint nem valószínű, hogy általa elkerülhetőek a nyomozások. Általánosan elmondható, hogy a fontos áttöréseket gyakran tekintik vitatott hatásúnak a hasznok pontos megértését megelőzően. Az Internet - többek között - jó példa ennek illusztrálására.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Buborék-e a Bitcoin?</a>
-  <div>
-  <p>Az árak gyors emelkedése még nem teremt buborékot. A mesterséges felülértékelésből következő hirtelen lefelé történő korrekció teremt buborékot. A bitcoin árfolyama a piaci szereplők százezreinek egyéni, emberi döntései következtében ingadozik, ahogyan a piac az árfelfedezést végzi. A Bitcoinnal szembeni vélemények változásában szerepet játszik a Bitcoinnal szembeni bizalomvesztés, az ár és érték közötti, nem a Bitcoin piacának alapjai által okozott nagy különbség, a spekulatív keresletet gerjesztő megnövekedett sajtóérdeklődés, a bizonytalanságtól való félelem és a jó öreg irracionális bőség és kapzsiság.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Miért képviselnek értéket a bitcoinok?</a>
-  <div>
-  <p>A bitcoinok azért rendelkeznek értékkel, mert fizetőeszközként használhatóak. A bitcoin inkább matematikai jellemzői, mintsem fizikai tulajdonságai (mint például az arany és ezüst) vagy egy központi hatalomban való bizalom (például hivatalos pénznemek) alapján rendelkezik a(z) (áru)pénz funkcióival (tartósság, hordozhatóság, helyettesíthetőség, ritkaság, oszthatóság és felismerhetőség). Röviden szólva a bitcoin matematikai hátterű. Ezekkel a jellemzőkkel egy fizetőeszköz számára nem szükséges más, mint a bizalom és az elfogadás. A Bitcoin esetében mindez a növekvő felhasználói, kereskedői és startup-vállalkozói körrel mérhető. Ahogyan bármely pénznem, úgy a bitcoin értékét is kizárólag és közvetlenül az azt fizetőeszközként elfogadó emberek teremtik meg.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Ponzi-séma-e a Bitcoin?</a>
-  <div>
-  <p>A Ponzi-séma egy tisztességtelen befektetési művelet, amely a hozamokat a befektetők saját pénzéből fedezi, vagy a később csatlakozó befektetők pénzét használja fel a korábbi befektetők kifizetésére, ahelyett, hogy a vállalkozást vezető egyének által realizált profitot használná fel erre a célra. A Ponzi-sémákat úgy tervezték, hogy új csatlakozók elmaradása esetén saját súlyuk alatt összeomoljanak.</p>
-  <p>A Bitcoin egy ingyenes szoftverprojekt, amely nem kötődik semmilyen központi hatalomhoz. Ebből fakadóan senki nincs olyan helyzetben, hogy tisztességtelenül jelenítse meg a befektetések hozamát. A főbb fizetőeszközökhöz hasonlóan - mint például az arany, az amerikai dollár, az euró, a jen stb. - nincsen garantált vásárlóereje, valamint átváltási aránya szabadon változik. Ez volatilitáshoz vezet, amely esetben a bitcoinok tulajdonosai megjósolhatatlanul kereshetnek és veszíthetnek pénzt. A spekulációt leszámítva a Bitcoin egy hasznos és versenyképes jellemzőkkel bíró fizetési rendszer, amelyet felhasználók és vállalkozások ezrei használnak.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Ki hozta létre a Bitcoint?</a>
-  <div>
-  <p>A Bitcoin egy "kriptovalutának" nevezett koncepció első megvalósítása, amelyet először Wei Dai írt körül a cypherpunks levelezőlistáján 1998-ban, a pénz egy új formájára javaslatot téve, amely egy központi hatalom helyett kriptográfiát használ létrehozására és tranzakciói irányítására. Az első Bitcoin-specifikációt és koncepcióbizonyítást (PoC) Satoshi Nakamoto publikálta 2009-ben, egy kriptográfiával foglalkozó levelezőlistán. Satoshi 2010 végén kilépett a projektből; anélkül, hogy önmagáról sokat elárult volna. A közösség azóta exponenciális ütemben növekszik, és <a href="/hu/fejlesztes">számos fejlesztő</a> dolgozik a Bitcoinon.</p>
-  <p>Satoshi anonimitása gyakran igazságtalan kérdéseket vetett fel, amelyek nagy része a Bitcoin nyílt forráskódú jellegének félreértéséből fakadt. A Bitcoin-protokoll és szoftver nyíltan publikált, és a kódot a világ bármely fejlesztője felülvizsgálhatja, vagy létrehozhatja saját, módosított Bitcoin-szoftververzióját. Éppen úgy, ahogy a jelenlegi fejlesztőké, Satoshi befolyása is csak azokra a változtatásokra terjedt ki, amelyeket mások elfogadtak; ily módon nem irányította a Bitcoint. Így tehát a Bitcoin feltalálójának személyazonossága feltehetőleg annyira releváns manapság, mint a papír feltalálójáé.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Elveszíthetik-e értéküket a bitcoinok?</a>
-  <div>
-  <p>Igen. A történelem hemzseg az összeomlott és megszűnt pénznemektől, mint például a Weimari Köztársaság idején használt <a href="https://en.wikipedia.org/wiki/German_gold_mark">német márka</a>, vagy a közelmúlt <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">zimbabwei dollárja</a>. Habár a múlt pénznemeinek bukását tipikusan a hiperinfláció okozta - amelyet a Bitcoin lehetetlenné tesz -, mindig fennáll az esélye a technikai hibáknak, konkurens pénznemek felbukkanásának, politikai problémáknak és így tovább. Egyszerű ökölszabályként elmondható, hogy egyetlen pénznem sem tekinthető tökéletesen hibátlannak vagy nehéz időszakoktól mentesnek. A Bitcoin bevezetése óta bizonyította megbízhatóságát, és nagy lehetőségek vannak benne a további fejlődésre. Mindazonáltal senki nincs olyan helyzetben, hogy megjósolja a Bitcoin jövőjét.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Teljesen virtuális és immateriális-e a Bitcoin?</a>
-  <div>
-  <p>A Bitcoin éppen annyira virtuális, mint az emberek által mindennap használt hitelkártyák és online banki hálózatok. A Bitcoin használható online fizetésre és fizikai üzletekben is - éppúgy, mint bármely más pénzforma. A <a href="https://www.casascius.com/">Casascius érmékhez</a> hasonlóan a bitcoinokkal is lehetséges fizikai formában kereskedni, ugyanakkor a mobiltelefonnal való fizetés általában továbbra is kényelmesebbnek tekinthető. A Bitcoin-egyenlegek egy nagy, megosztott hálózaton tárolódnak, és nem lehetséges tisztességtelenül módosítani rajtuk. Másképpen fogalmazva a Bitcoin-felhasználók kizárólagos irányítást élveznek vagyonuk felett, és bitcoinjaik nem tűnhetnek el csak azért, mert virtuálisak.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Miért bíznak az emberek a Bitcoinban?</a>
-  <div>
-  <p>A Bitcoinnal szembeni bizalom legnagyobb része abból tényből fakad, hogy egyáltalán nem igényel bizalmat. A Bitcoin teljes mértékben nyílt forráskódú és decentralizált. Ez azt jelenti, hogy bárki, bármikor hozzáférhet a teljes forráskódhoz. Így a világ bármely fejlesztője pontosan megerősítheti, hogy hogyan működik a Bitcoin. Minden életre hívott tranzakció és bitcoin transzparensen, valós időben, bárki által ellenőrizhető. Minden kifizetés harmadik féltől való függéstől mentesen teljesíthető, és a teljes rendszert az online bankolásban is használt, fejlesztők által szigorúan és kölcsönösen ellenőrzött (peer-reviewed) kriptográfiai algoritmusok védik. Semmilyen szervezet vagy magánszemély nem irányítja a Bitcoint, és a hálózat még akkor is biztonságos marad, ha a felhasználók nem mindegyike megbízható.</p>
-  </div>
-</div>
-<div>
-  <a onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">Anonim-e a Bitcoin?</a>
-  <div>
-  <p>A Bitcoint úgy tervezték, hogy lehetőséget biztosítson felhasználói számára a kifizetések elfogadható titkossági szinten történő küldésére és fogadásra, éppen úgy, mint bármely más pénzforma esetében. Ugyanakkor a Bitcoin nem anonim és a készpénz titkossági szintjét sem képes biztosítani. A Bitcoin használata kiterjedt, nyilvános adatmennyiség létrehozásával jár. <a href="/hu/vedje-meg-szemelyes-adatait">Különböző mechanizmusok</a> léteznek a felhasználók személyes adatainak védelmére, és még több áll jelenleg is fejlesztés alatt. Mindazonáltal további munka szükséges ahhoz, hogy e szolgáltatásokat a legtöbb Bitcoin-felhasználó helyesen tudja használni.</p>
-  <p>Némi aggodalmat kelt, hogy a Bitcoin privát tranzakcióit fel lehet-e használni illegális célokra. Ennek kapcsán érdemes megjegyezni, hogy a Bitcoint kétségtelenül a meglévő pénzügyi rendszerekhez hasonló szabályozásnak fogják alávetni. A Bitcoin nem lehet névtelenebb a készpénznél, valamint nem valószínű, hogy általa elkerülhetőek a nyomozások. Mindemellett a Bitcoint úgy tervezték, hogy a pénzügyi bűntettek széles skáláját megelőzze.</p>
-  </div>
-</div>
-<p>A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href="/en/faq">GYIK-et</a> tartalmazó oldalra vagy a <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wikire</a>.</p>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Biztonságos-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoin technológiája - a protokoll és a kriptográfia - komoly biztonsági tapasztalattal rendelkezik, és a Bitcoin-hálózat valószínűleg a legnagyobb megosztott számítástechnikai projekt a világon. A Bitcoin legáltalánosabb sebezhetőségét a felhasználói hibák okozzák. A szükséges privát kulcsokat tartalmazó Bitcoin-pénztárcafájlok véletlenül kitörölhetőek, elveszíthetőek vagy ellophatják őket. Ez nagyon hasonló a fizikai készpénz digitális formában történő tárolásához. Szerencsére a felhasználók erős <a href="/hu/vedje-meg-penztarcajat">biztonsági gyakorlatokat vezethetnek be</a> pénzük megvédése érdekében, vagy magas szintű biztonságot, illetve a lopásokra vagy elvesztésre biztosítást kínáló szolgáltatókat használhatnak.</p>
+          </div>
+        </li>
 
-</div>
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Legális-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A legjobb tudomásunk szerint a <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">legtöbb törvényalkotó nem tiltotta be a Bitcoint</a>. Ugyanakkor néhány ország törvényalkotója (például Argentínában és Oroszországban) súlyosan büntet vagy tilt minden külföldi pénznemet. Más törvényalkotók (például Thaiföldön) korlátozhatják meghatározott jogi személyek - mint például a Bitcoin-tőzsdék - bejegyzését.</p>
+            <p>Számos törvényalkotó szabályozója tesz lépéseket annak irányába, hogy magánszemélyek és vállalkozások számára ezen új technológia hivatalos, szabályozott pénzügyi rendszerrel való integrálására vonatkozó szabályokat biztosítson. Például a FinCEN, az USA pénzügyminisztériumának kijelölt osztálya kibocsátott egy nem törvényerejű iránymutatást a virtuális pénznemekkel végzett különböző tevékenységek jellemzőiről.</p>
+            <ul>
+              <li><a href="http://www.ecb.europa.eu/pub/pdf/other/virtualcurrencyschemes201210en.pdf">Virtual Currency Schemes - European Central Bank</a></li>
+              <li><a href="http://www.fincen.gov/statutes_regs/guidance/pdf/FIN-2013-G001.pdf">Application of FinCEN’s Regulations to Persons Administering, Exchanging, or Using Virtual Currencies</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hogyan viszonyul a Bitcoin az adózáshoz?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A bitcoint nem tekinti hivatalos, konvertibilis pénznemnek egyetlen törvényalkotó sem, de gyakran adókötelezettség lép fel a közvetítőeszköztől függetlenül. Sokféle törvényalkotó sokféle törvénnyel keletkeztethet a Bitcoinnal kapcsolatos vállalkozói, forgalmi jövedelem- és kamat- vagy egyéb adókötelezettséget.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Hasznos-e a Bitcoin illegális tevékenységekhez?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A bitcoin pénz, és a pénzt mindig is egyaránt használták legális és illegális célokra. A készpénz, a hitelkártyák és a jelenlegi bankrendszerek messze túlszárnyalják a Bitcoint az elkövetett pénzügyi bűntettek tekintetében. A Bitcoin jelentős innovációt jelent a fizetési rendszerekre nézve, és ilyesfajta innovációk előnyeit gyakran sokkal nagyobbnak tekintik, mint lehetséges hátrányait.</p>
+            <p>A Bitcoint úgy tervezték, hogy nagy lépést jelentsen a pénz biztonságosabbá tétele irányában, valamint jelentős védelmet biztosítson a pénzügyi bűnözés számos formájával szemben. Például a bitcoinokat teljes mértékben lehetetlen hamisítani. A felhasználók teljes irányítást élveznek kifizetéseik felett, valamint nem sújthatják őket kéretlen díjak, szemben a hitelkártyacsalás esetével. A Bitcoin-tranzakciók visszavonhatatlanok és immúnisak a tisztességtelen visszaszámlázásokkal szemben. A Bitcoin lehetővé teszi, hogy a pénzt nagyon erős és hasznos mechanizmusokkal - mint például biztonsági mentések, titkosítás és csoportos aláírások - lehessen a lopások és elvesztés ellen védeni.</p>
+            <p>Némi aggodalmat kelt, hogy fennáll a veszélye annak, hogy a Bitcoin vonzóvá válhat a bűnözök számára, mivel segítségével privát és visszavonhatatlan kifizetések végezhetőek. Mindemellett ezek a jellemzők már léteznek a készpénznél és elektronikus átutalásnál, amelyek széles körben használtak és elfogadottak. A Bitcoin használatát kétségtelenül a meglévő pénzügyi rendszerekhez hasonló szabályozásnak fogják alávetni. A Bitcoin nem lehet névtelenebb a készpénznél, valamint nem valószínű, hogy általa elkerülhetőek a nyomozások. Általánosan elmondható, hogy a fontos áttöréseket gyakran tekintik vitatott hatásúnak a hasznok pontos megértését megelőzően. Az Internet - többek között - jó példa ennek illusztrálására.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Buborék-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Az árak gyors emelkedése még nem teremt buborékot. A mesterséges felülértékelésből következő hirtelen lefelé történő korrekció teremt buborékot. A bitcoin árfolyama a piaci szereplők százezreinek egyéni, emberi döntései következtében ingadozik, ahogyan a piac az árfelfedezést végzi. A Bitcoinnal szembeni vélemények változásában szerepet játszik a Bitcoinnal szembeni bizalomvesztés, az ár és érték közötti, nem a Bitcoin piacának alapjai által okozott nagy különbség, a spekulatív keresletet gerjesztő megnövekedett sajtóérdeklődés, a bizonytalanságtól való félelem és a jó öreg irracionális bőség és kapzsiság.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Miért képviselnek értéket a bitcoinok?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A bitcoinok azért rendelkeznek értékkel, mert fizetőeszközként használhatóak. A bitcoin inkább matematikai jellemzői, mintsem fizikai tulajdonságai (mint például az arany és ezüst) vagy egy központi hatalomban való bizalom (például hivatalos pénznemek) alapján rendelkezik a(z) (áru)pénz funkcióival (tartósság, hordozhatóság, helyettesíthetőség, ritkaság, oszthatóság és felismerhetőség). Röviden szólva a bitcoin matematikai hátterű. Ezekkel a jellemzőkkel egy fizetőeszköz számára nem szükséges más, mint a bizalom és az elfogadás. A Bitcoin esetében mindez a növekvő felhasználói, kereskedői és startup-vállalkozói körrel mérhető. Ahogyan bármely pénznem, úgy a bitcoin értékét is kizárólag és közvetlenül az azt fizetőeszközként elfogadó emberek teremtik meg.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Ponzi-séma-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Ponzi-séma egy tisztességtelen befektetési művelet, amely a hozamokat a befektetők saját pénzéből fedezi, vagy a később csatlakozó befektetők pénzét használja fel a korábbi befektetők kifizetésére, ahelyett, hogy a vállalkozást vezető egyének által realizált profitot használná fel erre a célra. A Ponzi-sémákat úgy tervezték, hogy új csatlakozók elmaradása esetén saját súlyuk alatt összeomoljanak.</p>
+            <p>A Bitcoin egy ingyenes szoftverprojekt, amely nem kötődik semmilyen központi hatalomhoz. Ebből fakadóan senki nincs olyan helyzetben, hogy tisztességtelenül jelenítse meg a befektetések hozamát. A főbb fizetőeszközökhöz hasonlóan - mint például az arany, az amerikai dollár, az euró, a jen stb. - nincsen garantált vásárlóereje, valamint átváltási aránya szabadon változik. Ez volatilitáshoz vezet, amely esetben a bitcoinok tulajdonosai megjósolhatatlanul kereshetnek és veszíthetnek pénzt. A spekulációt leszámítva a Bitcoin egy hasznos és versenyképes jellemzőkkel bíró fizetési rendszer, amelyet felhasználók és vállalkozások ezrei használnak.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Ki hozta létre a Bitcoint?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoin egy "kriptovalutának" nevezett koncepció első megvalósítása, amelyet először Wei Dai írt körül a cypherpunks levelezőlistáján 1998-ban, a pénz egy új formájára javaslatot téve, amely egy központi hatalom helyett kriptográfiát használ létrehozására és tranzakciói irányítására. Az első Bitcoin-specifikációt és koncepcióbizonyítást (PoC) Satoshi Nakamoto publikálta 2009-ben, egy kriptográfiával foglalkozó levelezőlistán. Satoshi 2010 végén kilépett a projektből; anélkül, hogy önmagáról sokat elárult volna. A közösség azóta exponenciális ütemben növekszik, és <a href="/hu/fejlesztes">számos fejlesztő</a> dolgozik a Bitcoinon.</p>
+            <p>Satoshi anonimitása gyakran igazságtalan kérdéseket vetett fel, amelyek nagy része a Bitcoin nyílt forráskódú jellegének félreértéséből fakadt. A Bitcoin-protokoll és szoftver nyíltan publikált, és a kódot a világ bármely fejlesztője felülvizsgálhatja, vagy létrehozhatja saját, módosított Bitcoin-szoftververzióját. Éppen úgy, ahogy a jelenlegi fejlesztőké, Satoshi befolyása is csak azokra a változtatásokra terjedt ki, amelyeket mások elfogadtak; ily módon nem irányította a Bitcoint. Így tehát a Bitcoin feltalálójának személyazonossága feltehetőleg annyira releváns manapság, mint a papír feltalálójáé.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Elveszíthetik-e értéküket a bitcoinok?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>Igen. A történelem hemzseg az összeomlott és megszűnt pénznemektől, mint például a Weimari Köztársaság idején használt <a href="https://en.wikipedia.org/wiki/German_gold_mark">német márka</a>, vagy a közelmúlt <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">zimbabwei dollárja</a>. Habár a múlt pénznemeinek bukását tipikusan a hiperinfláció okozta - amelyet a Bitcoin lehetetlenné tesz -, mindig fennáll az esélye a technikai hibáknak, konkurens pénznemek felbukkanásának, politikai problémáknak és így tovább. Egyszerű ökölszabályként elmondható, hogy egyetlen pénznem sem tekinthető tökéletesen hibátlannak vagy nehéz időszakoktól mentesnek. A Bitcoin bevezetése óta bizonyította megbízhatóságát, és nagy lehetőségek vannak benne a további fejlődésre. Mindazonáltal senki nincs olyan helyzetben, hogy megjósolja a Bitcoin jövőjét.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Teljesen virtuális és immateriális-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoin éppen annyira virtuális, mint az emberek által mindennap használt hitelkártyák és online banki hálózatok. A Bitcoin használható online fizetésre és fizikai üzletekben is - éppúgy, mint bármely más pénzforma. A <a href="https://www.casascius.com/">Casascius érmékhez</a> hasonlóan a bitcoinokkal is lehetséges fizikai formában kereskedni, ugyanakkor a mobiltelefonnal való fizetés általában továbbra is kényelmesebbnek tekinthető. A Bitcoin-egyenlegek egy nagy, megosztott hálózaton tárolódnak, és nem lehetséges tisztességtelenül módosítani rajtuk. Másképpen fogalmazva a Bitcoin-felhasználók kizárólagos irányítást élveznek vagyonuk felett, és bitcoinjaik nem tűnhetnek el csak azért, mert virtuálisak.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Miért bíznak az emberek a Bitcoinban?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoinnal szembeni bizalom legnagyobb része abból tényből fakad, hogy egyáltalán nem igényel bizalmat. A Bitcoin teljes mértékben nyílt forráskódú és decentralizált. Ez azt jelenti, hogy bárki, bármikor hozzáférhet a teljes forráskódhoz. Így a világ bármely fejlesztője pontosan megerősítheti, hogy hogyan működik a Bitcoin. Minden életre hívott tranzakció és bitcoin transzparensen, valós időben, bárki által ellenőrizhető. Minden kifizetés harmadik féltől való függéstől mentesen teljesíthető, és a teljes rendszert az online bankolásban is használt, fejlesztők által szigorúan és kölcsönösen ellenőrzött (peer-reviewed) kriptográfiai algoritmusok védik. Semmilyen szervezet vagy magánszemély nem irányítja a Bitcoint, és a hálózat még akkor is biztonságos marad, ha a felhasználók nem mindegyike megbízható.</p>
+          </div>
+        </li>
+
+        <li class="content_press--faq--item">
+          <div class="content_press--faq--item--title">
+            <a href="#">Anonim-e a Bitcoin?</a>
+          </div>
+          <div class="content_press--faq--item--content">
+            <p>A Bitcoint úgy tervezték, hogy lehetőséget biztosítson felhasználói számára a kifizetések elfogadható titkossági szinten történő küldésére és fogadásra, éppen úgy, mint bármely más pénzforma esetében. Ugyanakkor a Bitcoin nem anonim és a készpénz titkossági szintjét sem képes biztosítani. A Bitcoin használata kiterjedt, nyilvános adatmennyiség létrehozásával jár. <a href="/hu/vedje-meg-szemelyes-adatait">Különböző mechanizmusok</a> léteznek a felhasználók személyes adatainak védelmére, és még több áll jelenleg is fejlesztés alatt. Mindazonáltal további munka szükséges ahhoz, hogy e szolgáltatásokat a legtöbb Bitcoin-felhasználó helyesen tudja használni.</p>
+            <p>Némi aggodalmat kelt, hogy a Bitcoin privát tranzakcióit fel lehet-e használni illegális célokra. Ennek kapcsán érdemes megjegyezni, hogy a Bitcoint kétségtelenül a meglévő pénzügyi rendszerekhez hasonló szabályozásnak fogják alávetni. A Bitcoin nem lehet névtelenebb a készpénznél, valamint nem valószínű, hogy általa elkerülhetőek a nyomozások. Mindemellett a Bitcoint úgy tervezték, hogy a pénzügyi bűntettek széles skáláját megelőzze.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="content_press--faq--footer">
+        <p>A Bitcoinnal kapcsolatos további információkhoz látogasson el a teljes <a href="/en/faq">GYIK-et</a> tartalmazó oldalra vagy a <a href="https://en.bitcoin.it/wiki/FAQ">Bitcoin Wikire</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content_press--video">
+    <h2 id="videos">Videos</h2>
+    <ul class="content_press--video--list">
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Funke</span>
+        </a>
+      </li>
+
+      <li class="content_press--video--item">
+        <a href="https://www.youtube.com/watch?v=Um63OQz3bjo&amp;feature=player_embedded" target="_blank">
+          <img src="/img/press/video/whatisbitcoin.jpg" alt="what is Bitcoin">
+          <span>What is Bitcoin - Weusecoins</span>
+        </a>
+      </li>
+    </ul>
+    <a class="content_press-video--link" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">More formats and languages</a>
+  </div>
 
 
+  
 
       </div>
     </div>
@@ -514,14 +608,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -530,7 +624,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -552,13 +647,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -569,7 +666,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

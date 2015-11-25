@@ -10,15 +10,29 @@
 <title>Словник - Біткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/uk.png"><strong>Українська</strong>
+          <img src="/img/flags/uk.png"><strong>Українська</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">ЧаПи</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Деякі біткойн-терміни, про які ви можливо чули</h1>
-<p class="summarytxt">Біткойн впроваджує новий підхід до платежів, а це означає, що ваш словниковий запас поповниться новими слівцями. Не хвилюйтесь, навіть скромне телебачення створює нові слова! </p>
-<h2 id="table-of-contents">Зміст</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Деякі біткойн-терміни, про які ви можливо чули</h1>
+  <h2 class="content_vocalbulary--subtitle">Біткойн впроваджує новий підхід до платежів, а це означає, що ваш словниковий запас поповниться новими слівцями. Не хвилюйтесь, навіть скромне телебачення створює нові слова! </h2>
 
-<div class="index">
-
-<a href="#address">Адреса</a>
-
-<a href="#bit">Біт</a>
-
-<a href="#bitcoin">Біткойн</a>
-
-<a href="#block">Блок</a>
-
-<a href="#mining">Видобуток</a>
-
-<a href="#wallet">Гаманець</a>
-
-<a href="#cryptography">Криптографія</a>
-
-<a href="#block-chain">Ланцюжок блоків</a>
-
-<a href="#signature">Підпис</a>
-
-<a href="#confirmation">Підтвердження</a>
-
-<a href="#double-spend">Повторне витрачання</a>
-
-<a href="#private-key">Приватний ключ</a>
-
-<a href="#hash-rate">Хешрейт</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#p2p">P2P</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="address">Адреса</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Біткойн-адреса <b>подібна до фізичної чи електронної адреси</b>. Це єдина інформація, яку вам необхідно передати тому, хто надсилатиме вам біткоїни. Проте, важлива відмінність полягає у тому, що кожна адреса повинна використовуватись тільки для однієї транзакції. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Біт</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Біт - загальноприйнята одиниця, що використовується для позначення субодиниць біткоїну - 1 000 000 бітів дорівнює 1 біткойн (BTC або B⃦). Ця одиниця зазвичай більш зручна для встановлення вартості чайових, товарів та послуг.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Біткойн</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Біткойн з великої літери використовується для опису ідеї Біткойн, або системи в цілому, наприклад: "Сьогодні я вивчав інформацію про протокол Біткойн".<br>біткойн з маленької літери використовується для опису біткоїну в якості розрахункової одиниці, наприклад: "Сьогодні я надіслав десять біткоїнів"; також часто використовується його абревіатура - BTC або XBT. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block">Блок</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Блок - це <b>запис у ланцюжку блоків, що містить та підтверджує багато транзакцій, що очікують підтвердження</b>. Завдяки <a href="#mining">видобутку</a>, в середньому приблизно кожні 10 хвилин до <a href="#block-chain">ланцюжка блоків</a> додається новий блок транзакцій.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">Видобуток</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Видобуток біткоїнів - це процес, <b>що передбачає використання апаратних ресурсів комп'ютера з метою виконання математичних розрахунків для підтвердження транзакцій</b> і забезпечення безпеки мережі Біткойн. У якості винагороди за свої послуги видобувачі можуть збирати комісії за підтверджені ними транзакції - новостворені біткоїни. Видобуток - це специфічний та конкурентний ринок, де винагорода розподіляється у відповідності до кількості виконаних розрахунків. Не всі біткойн-користувачі використовують видобуток, і це не легкий спосіб заробити гроші.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="wallet">Гаманець</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Біткойн-гаманець - це деякою мірою <b>еквівалент фізичного гаманця у мережі Біткойн</b>. Гаманець насправді містить ваші <a href="#private-key">приватні ключі</a>, що дозволяють вам витрачати біткоїни, виділені окремому ключеві у <a href="#block-chain">ланцюжку блоків</a>. Кожен біткойн-гаманець може показати вам загальний баланс усіх біткоїнів, що знаходяться у ньому, а також дозволяє вам надсилати конкретну суму конкретній особі, так само як справжній гаманець. Гаманець відрізняється від кредитних карт, де кошти списуються торговцем.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cryptography">Криптографія</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Криптографія - це гілка математики, що дозволяє нам створювати <b>математичні докази, які забезпечують високий рівень безпеки</b>. Криптографія вже використовується у онлайн-торгівлі та банківській справі. У Біткойн криптографія використовується для унеможливлення витрачання коштів з чужого гаманця чи псування <a href="#block-chain">ланцюжка блоків</a>. Окрім цього, вона також може використовуватись для шифрування гаманця, щоб його було неможливо використовувати без паролю.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="block-chain">Ланцюжок блоків</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Ланцюжок блоків - це <b>публічний запис біткойн-транзакцій</b> у хронологічному порядку. Ланцюжок блоків єдиний для усіх біткойн-кристувачів. Він використовується для перевірки незмінності біткойн-транзакцій та запобігання <a href="#double-spend">повторному витрачанню</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signature">Підпис</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#cryptography">Криптографічний</a> підпис - це <b>математичний механізм, що дозволяє підтвердити право власності</b>. У випадку Біткойн, <a href="#wallet">біткойн-гаманець</a> та його <a href="#private-key">приватні ключі</a> поєднані деякою математичною магією. Коли ваша біткойн-програма підписує транзакцію за допомогою відповідного приватного ключа, уся мережа може бачити, що підпис співпадає з біткоїнами, що надсилаються. Проте, ніхто і ніде не може вгадати ваш приватний ключ з метою викрадення ваших біткоїнів, зароблених тяжкою працею.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="confirmation">Підтвердження</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Підтвердження означає, що транзакція була <b>опрацьована мережею та майже напевно не буде відмінена</b>. Транзакції отримують підтвердження тоді, коли вони включені до <a href="/uk/vocabulary#block">блоку</a> і до всіх наступних блоків. Навіть одне підтвердження вважається безпечним для транзакції невеликого розміру, тим не менше, для більших сум, таких як 1000 доларів США і більше, бажано дочекатись щонайменше 6 підтверджень. Кожне підтвердження <i>експоненціально</i> зменшує ризик звороту транзакції.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">Повторне витрачання</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Якщо зловмисний користувач намагається <b>одночасно надіслати свої біткоїни двом різним отримувачам</b>, - це називається повторним витрачанням. <a href="#mining">Біткойн-видобуток</a> та <a href="#block-chain">ланцюжок блоків</a> існують для того, щоб мережа могла досягнути згоди з приводу того, яку з двох транзакцій підтвердити та вважати дійсною.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="private-key">Приватний ключ</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Приватний ключ - це <b>секретні дані, що підтверджують ваше право на витрачання біткоїнів з конкретного гаманця</b> за допомогою криптографічного <a href="#signature">підпису</a>. У випадку використання програми-гаманця, ваші приватні ключі зберігаються на вашому комп'ютері; якщо ж ви використовуєте веб-гаманець, вони зберігаються на віддалених серверах. Приватні ключі ніколи не варто розголошувати, так як вони дозволяють вам витрачати біткоїни з гаманця, до якого вони мають відношення. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">Хешрейт</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Хешрейт - це <b>одиниця вимірювання обчислювальної потужності мережі Біткойн</b>. Мережа Біткойн повинна виконувати потужні математичні операції для забезпечення безпеки. Коли мережа досягає 10 Терахешів за секунду, це означає, що вона може виконувати 10 трильйонів розрахунків за секунду.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC - загальноприйнята одиниця, що використовується для позначення одного біткоїну (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Термін рeer-to-peer означає <b>системи, що працюють як організована спільнота</b>, надаючи можливість кожному учаснику безпосередньо взаємодіяти з іншими. У випадку Біткойн, мережа побудована таким чином, що кожен користувач транслює транзакції інших користувачів. Ключовим моментом є те, що для роботи не потрібен ніякий банк чи інший посередник.  </p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="address">Адреса</h2>
-<p>Біткойн-адреса <b>подібна до фізичної чи електронної адреси</b>. Це єдина інформація, яку вам необхідно передати тому, хто надсилатиме вам біткоїни. Проте, важлива відмінність полягає у тому, що кожна адреса повинна використовуватись тільки для однієї транзакції. </p>
-
-<h2 id="bit">Біт</h2>
-<p>Біт - загальноприйнята одиниця, що використовується для позначення субодиниць біткоїну - 1 000 000 бітів дорівнює 1 біткойн (BTC або B⃦). Ця одиниця зазвичай більш зручна для встановлення вартості чайових, товарів та послуг.</p>
-
-<h2 id="bitcoin">Біткойн</h2>
-<p>Біткойн з великої літери використовується для опису ідеї Біткойн, або системи в цілому, наприклад: "Сьогодні я вивчав інформацію про протокол Біткойн".<br>біткойн з маленької літери використовується для опису біткоїну в якості розрахункової одиниці, наприклад: "Сьогодні я надіслав десять біткоїнів"; також часто використовується його абревіатура - BTC або XBT. </p>
-
-<h2 id="block">Блок</h2>
-<p>Блок - це <b>запис у ланцюжку блоків, що містить та підтверджує багато транзакцій, що очікують підтвердження</b>. Завдяки <a href="#mining">видобутку</a>, в середньому приблизно кожні 10 хвилин до <a href="#block-chain">ланцюжка блоків</a> додається новий блок транзакцій.</p>
-
-<h2 id="mining">Видобуток</h2>
-<p>Видобуток біткоїнів - це процес, <b>що передбачає використання апаратних ресурсів комп'ютера з метою виконання математичних розрахунків для підтвердження транзакцій</b> і забезпечення безпеки мережі Біткойн. У якості винагороди за свої послуги видобувачі можуть збирати комісії за підтверджені ними транзакції - новостворені біткоїни. Видобуток - це специфічний та конкурентний ринок, де винагорода розподіляється у відповідності до кількості виконаних розрахунків. Не всі біткойн-користувачі використовують видобуток, і це не легкий спосіб заробити гроші.</p>
-
-<h2 id="wallet">Гаманець</h2>
-<p>Біткойн-гаманець - це деякою мірою <b>еквівалент фізичного гаманця у мережі Біткойн</b>. Гаманець насправді містить ваші <a href="#private-key">приватні ключі</a>, що дозволяють вам витрачати біткоїни, виділені окремому ключеві у <a href="#block-chain">ланцюжку блоків</a>. Кожен біткойн-гаманець може показати вам загальний баланс усіх біткоїнів, що знаходяться у ньому, а також дозволяє вам надсилати конкретну суму конкретній особі, так само як справжній гаманець. Гаманець відрізняється від кредитних карт, де кошти списуються торговцем.</p>
-
-<h2 id="cryptography">Криптографія</h2>
-<p>Криптографія - це гілка математики, що дозволяє нам створювати <b>математичні докази, які забезпечують високий рівень безпеки</b>. Криптографія вже використовується у онлайн-торгівлі та банківській справі. У Біткойн криптографія використовується для унеможливлення витрачання коштів з чужого гаманця чи псування <a href="#block-chain">ланцюжка блоків</a>. Окрім цього, вона також може використовуватись для шифрування гаманця, щоб його було неможливо використовувати без паролю.</p>
-
-<h2 id="block-chain">Ланцюжок блоків</h2>
-<p>Ланцюжок блоків - це <b>публічний запис біткойн-транзакцій</b> у хронологічному порядку. Ланцюжок блоків єдиний для усіх біткойн-кристувачів. Він використовується для перевірки незмінності біткойн-транзакцій та запобігання <a href="#double-spend">повторному витрачанню</a>.</p>
-
-<h2 id="signature">Підпис</h2>
-<p><a href="#cryptography">Криптографічний</a> підпис - це <b>математичний механізм, що дозволяє підтвердити право власності</b>. У випадку Біткойн, <a href="#wallet">біткойн-гаманець</a> та його <a href="#private-key">приватні ключі</a> поєднані деякою математичною магією. Коли ваша біткойн-програма підписує транзакцію за допомогою відповідного приватного ключа, уся мережа може бачити, що підпис співпадає з біткоїнами, що надсилаються. Проте, ніхто і ніде не може вгадати ваш приватний ключ з метою викрадення ваших біткоїнів, зароблених тяжкою працею.</p>
-
-<h2 id="confirmation">Підтвердження</h2>
-<p>Підтвердження означає, що транзакція була <b>опрацьована мережею та майже напевно не буде відмінена</b>. Транзакції отримують підтвердження тоді, коли вони включені до <a href="/uk/vocabulary#block">блоку</a> і до всіх наступних блоків. Навіть одне підтвердження вважається безпечним для транзакції невеликого розміру, тим не менше, для більших сум, таких як 1000 доларів США і більше, бажано дочекатись щонайменше 6 підтверджень. Кожне підтвердження <i>експоненціально</i> зменшує ризик звороту транзакції.</p>
-
-<h2 id="double-spend">Повторне витрачання</h2>
-<p>Якщо зловмисний користувач намагається <b>одночасно надіслати свої біткоїни двом різним отримувачам</b>, - це називається повторним витрачанням. <a href="#mining">Біткойн-видобуток</a> та <a href="#block-chain">ланцюжок блоків</a> існують для того, щоб мережа могла досягнути згоди з приводу того, яку з двох транзакцій підтвердити та вважати дійсною.</p>
-
-<h2 id="private-key">Приватний ключ</h2>
-<p>Приватний ключ - це <b>секретні дані, що підтверджують ваше право на витрачання біткоїнів з конкретного гаманця</b> за допомогою криптографічного <a href="#signature">підпису</a>. У випадку використання програми-гаманця, ваші приватні ключі зберігаються на вашому комп'ютері; якщо ж ви використовуєте веб-гаманець, вони зберігаються на віддалених серверах. Приватні ключі ніколи не варто розголошувати, так як вони дозволяють вам витрачати біткоїни з гаманця, до якого вони мають відношення. </p>
-
-<h2 id="hash-rate">Хешрейт</h2>
-<p>Хешрейт - це <b>одиниця вимірювання обчислювальної потужності мережі Біткойн</b>. Мережа Біткойн повинна виконувати потужні математичні операції для забезпечення безпеки. Коли мережа досягає 10 Терахешів за секунду, це означає, що вона може виконувати 10 трильйонів розрахунків за секунду.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC - загальноприйнята одиниця, що використовується для позначення одного біткоїну (B⃦).</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Термін рeer-to-peer означає <b>системи, що працюють як організована спільнота</b>, надаючи можливість кожному учаснику безпосередньо взаємодіяти з іншими. У випадку Біткойн, мережа побудована таким чином, що кожен користувач транслює транзакції інших користувачів. Ключовим моментом є те, що для роботи не потрібен ніякий банк чи інший посередник.  </p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/uk/legal">Правові питання</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/legal">Правові питання</a></li>
 			
-			<li><a href="/uk/privacy">Конфіденційність</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/privacy">Конфіденційність</a></li>
 			
-			<li><a href="/uk/press">Преса</a></li>
-			<li><a href="/uk/about-us">Про bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/press">Преса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/uk/about-us">Про bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Спонсор веб-сайту спільноти </span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

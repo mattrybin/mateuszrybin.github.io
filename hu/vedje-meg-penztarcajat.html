@@ -10,15 +10,29 @@
 <title>Védje meg pénztárcáját - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Védje meg pénztárcáját</h1>
-<p class="summarytxt">Akárcsak a való életben, a pénztárcáját ebben az esetben is védenie szükséges. A Bitcoin az értékek továbbítását nagyon egyszerű módon teszi lehetővé, és lehetőséget teremt a pénze feletti irányítás megszerzésére. E nagyszerű szolgáltatások azonban komoly biztonsági megfontolásokat igényelnek. A Bitcoin megfelelő használat esetén igen magas szintű biztonságot nyújthat. <b>Soha ne feledje, az Ön felelőssége, hogy jó gyakorlatokat sajátítson el pénze védelmére</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Védje meg pénztárcáját</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Akárcsak a való életben, a pénztárcáját ebben az esetben is védenie szükséges. A Bitcoin az értékek továbbítását nagyon egyszerű módon teszi lehetővé, és lehetőséget teremt a pénze feletti irányítás megszerzésére. E nagyszerű szolgáltatások azonban komoly biztonsági megfontolásokat igényelnek. A Bitcoin megfelelő használat esetén igen magas szintű biztonságot nyújthat. <b>Soha ne feledje, az Ön felelőssége, hogy jó gyakorlatokat sajátítson el pénze védelmére</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Legyen óvatos az online szolgáltatásokkal</h2>
-<p>A pénze online tárolására tervezett összes szolgáltatással kapcsolatban körültekintően érdemes eljárnia. A múltban a legtöbb tőzsde és online pénztárca biztonságának megsértésétől szenvedett, valamint ez effajta szolgáltatások általában továbbra sem kínálnak elegendő biztosítást és biztonságot ahhoz, hogy pénzét segítségükkel egy bankhoz hasonló módon tárolhassa. Ebből következően érdemes megfontolnia más típusú <a href="/hu/valasszon-penztarcat">Bitcoin-pénztárcák</a> használatát. Ellenkező esetben az ilyesfajta szolgáltatások kiválasztásakor körültekintően érdemes eljárnia. Mindemellett kétlépcsős hitelesítés alkalmazása ajánlott.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Legyen óvatos az online szolgáltatásokkal</h3>
+		  <p>A pénze online tárolására tervezett összes szolgáltatással kapcsolatban körültekintően érdemes eljárnia. A múltban a legtöbb tőzsde és online pénztárca biztonságának megsértésétől szenvedett, valamint ez effajta szolgáltatások általában továbbra sem kínálnak elegendő biztosítást és biztonságot ahhoz, hogy pénzét segítségükkel egy bankhoz hasonló módon tárolhassa. Ebből következően érdemes megfontolnia más típusú <a href="/hu/valasszon-penztarcat">Bitcoin-pénztárcák</a> használatát. Ellenkező esetben az ilyesfajta szolgáltatások kiválasztásakor körültekintően érdemes eljárnia. Mindemellett kétlépcsős hitelesítés alkalmazása ajánlott.</p>
+		</li>
 
-<h2 id="everyday">Kis összegek mindennapi használathoz</h2>
-<p>A Bitcoin-pénztárca olyan, mint egy pénztárca készpénzzel. Ha nem szívesen tart több tízezer dollárt zsebében, akkor érdemes a Bitcoin-pénztárcája esetén is ezt a gyakorlatot követnie. Általában jó gyakorlat a hétköznapi használathoz csupán kis összegű bitcoint tárolnia számítógépén, mobiltelefonján vagy szerverén; a fennmaradó összeget pedig biztonságosabb környezetben tartania.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Kis összegek mindennapi használathoz</h3>
+		  <p>A Bitcoin-pénztárca olyan, mint egy pénztárca készpénzzel. Ha nem szívesen tart több tízezer dollárt zsebében, akkor érdemes a Bitcoin-pénztárcája esetén is ezt a gyakorlatot követnie. Általában jó gyakorlat a hétköznapi használathoz csupán kis összegű bitcoint tárolnia számítógépén, mobiltelefonján vagy szerverén; a fennmaradó összeget pedig biztonságosabb környezetben tartania.</p>
+		</li>
 
-<h2 id="backup">Készítsen biztonsági mentést pénztárcájáról</h2>
-<p>Biztonságos helyen tárolva pénztárcája biztonsági mentése megóvhatja Önt a számítógépe meghibásodásából és bármely emberi hibából fakadó problémáktól. Ugyancsak lehetővé teszi pénztárcája visszaállítását mobiltelefonja vagy számítógépe ellopása esetén, amennyiben pénztárcáját titkosítja.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Készítsen biztonsági mentést pénztárcájáról</h3>
+		  <p>Biztonságos helyen tárolva pénztárcája biztonsági mentése megóvhatja Önt a számítógépe meghibásodásából és bármely emberi hibából fakadó problémáktól. Ugyancsak lehetővé teszi pénztárcája visszaállítását mobiltelefonja vagy számítógépe ellopása esetén, amennyiben pénztárcáját titkosítja.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Készítsen biztonsági mentést pénztárcája egészéről</h3>
+		  		<p>Néhány pénztárca számos rejtett, belső, privát kulcsot használ. Ha csupán a látható Bitcoin-címeihez tartozó privát kulcsairól készít biztonsági mentést, akkor előfordulhat, hogy nem tudja majd visszaállítani vagyona nagy részét e biztonsági mentésével.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Titkosítsa az online biztonsági mentéseket</h3>
+		  		<p>Bármely online tárolt biztonsági mentés nagyon könnyen lopás áldozatává válhat. Még egy internetkapcsolattal rendelkező számítógép is sebezhető a rosszindulatú szoftverek támadásaival szemben. Így tehát bármely, a hálózatnak kitett biztonsági mentés titkosítása jó biztonsági gyakorlatnak tekinthető.</p>
+		  	</li>
 
-<h3 id="backupwhole">Készítsen biztonsági mentést pénztárcája egészéről</h3>
-<p>Néhány pénztárca számos rejtett, belső, privát kulcsot használ. Ha csupán a látható Bitcoin-címeihez tartozó privát kulcsairól készít biztonsági mentést, akkor előfordulhat, hogy nem tudja majd visszaállítani vagyona nagy részét e biztonsági mentésével.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Használjon sok biztonságos helyet</h3>
+		  		<p>A kritikus hibapontok (SPOF) aláássák a biztonságot. Ha biztonsági mentése nem függ egy önálló helytől, kevésbé valószínű, hogy bármely szerencsétlen esemény megakadályozza pénztárcája visszaállítását. Ugyanakkor érdemes megfontolnia eltérő médiumok - mint például pendrive-ok, papírra vetett jegyzetek és CD-k - használatát.</p>
+		  	</li>
 
-<h3 id="backuponline">Titkosítsa az online biztonsági mentéseket</h3>
-<p>Bármely online tárolt biztonsági mentés nagyon könnyen lopás áldozatává válhat. Még egy internetkapcsolattal rendelkező számítógép is sebezhető a rosszindulatú szoftverek támadásaival szemben. Így tehát bármely, a hálózatnak kitett biztonsági mentés titkosítása jó biztonsági gyakorlatnak tekinthető.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Készítsen rendszeresen biztonsági mentést</h3>
+		  		<p>Rendszeresen biztonsági mentést kell készítenie pénztárcájáról, hogy biztosra vehesse, hogy minden, a közelmúltban Ön által készített Bitcoin-változáscím, valamint az összes új Bitcoin-cím részét képezi biztonsági mentésének. Ugyanakkor nemsokára az összes alkalmazás olyan pénztárcákat fog használni, amelyekről csak egyszer szükséges biztonsági mentést készíteni.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Használjon sok biztonságos helyet</h3>
-<p>A kritikus hibapontok (SPOF) aláássák a biztonságot. Ha biztonsági mentése nem függ egy önálló helytől, kevésbé valószínű, hogy bármely szerencsétlen esemény megakadályozza pénztárcája visszaállítását. Ugyanakkor érdemes megfontolnia eltérő médiumok - mint például pendrive-ok, papírra vetett jegyzetek és CD-k - használatát.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Titkosítsa pénztárcáját</h3>
+		  <p>A pénztárcája vagy okostelefonja titkosítása lehetőséget teremt arra, hogy bármely pénzmozgást jelszóhoz kössön. Ez védelmet nyújt a tolvajok ellen, ám nem nyújt védelmet meg a billentyűzetfigyelő-hardverek vagy szoftverek ellen.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Soha ne felejtse el jelszavát</h3>
+		  		<p>Soha nem szabad elfelejtenie jelszavát, mivel vagyona ebben az esetben örökre el fog veszni. A bankjával ellentétben a Bitcoin esetében nagyon szűk a jelszó-visszaállítási lehetőségek skálája. Sőt mi több, jelszavára akkor is emlékeznie kell, ha évek óta nem használta. Kétség esetén érdemes jelszava másolatát papírra vetve, például egy páncélszekrényben tárolnia.</p>
+		  	</li>
 
-<h3 id="backupregular">Készítsen rendszeresen biztonsági mentést</h3>
-<p>Rendszeresen biztonsági mentést kell készítenie pénztárcájáról, hogy biztosra vehesse, hogy minden, a közelmúltban Ön által készített Bitcoin-változáscím, valamint az összes új Bitcoin-cím részét képezi biztonsági mentésének. Ugyanakkor nemsokára az összes alkalmazás olyan pénztárcákat fog használni, amelyekről csak egyszer szükséges biztonsági mentést készíteni.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Használjon erős jelszót</h3>
+		  		<p>Minden olyan jelszó, amely csak betűkből vagy felismerhető szavakból áll, nagyon gyengének, illetve könnyedén feltörhetőnek tekinthető. Egy erős jelszónak betűket, számokat és írásjeleket kell tartalmaznia, valamint legalább 16 karakter hosszúságúnak kell lennie. A legbiztonságosabb jelszavakat a kifejezetten az erre a célra tervezett programok generálják. Az erős jelszavak nehezen megjegyezhetőek, ezért érdemes időt szánnia megjegyzésükre.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Offline pénztárca megtakarításai számára</h3>
+		  <p>A hidegtárolásként is ismert offline pénztárca a megtakarítások legmagasabb szintű védelmét biztosítja. A lényege egy pénztárca biztonságos, hálózathoz nem kapcsolódó helyen való tárolása. Megfelelő kialakítás esetén nagyszerű védelmet biztosít a számítógépek sebezhetőségeivel szemben. Az offline pénztárca biztonsági mentésekkel és titkosítással kombinálva jó gyakorlatot jelent. Az alábbiakban néhány megközelítés áttekintését olvashatja:</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Offline tranzakció-aláírás</h3>
+		  		<p>E megközelítés szerint két számítógép egyazon pénztárca egyes, közös részein osztozik. Az elsőt minden hálózatról le kell választani. Ez az egyetlen gép, amely tartalmazza az egész pénztárcát, és amellyel aláírhatóak a tranzakciók. A második gép csatlakozik a hálózathoz, és mindössze egy figyelő pénztárcát tartalmaz, amellyel kizárólag aláíratlan tranzakciók hozhatóak létre. Ily módon biztonságosan hozhat létre tranzakciókat a következő lépésekkel:</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Hozzon létre egy új tranzakciót az online számítógépén, és mentse el egy pendrive-ra.</li>
+		  		  <li>Írja alá a tranzakciót az offline számítógép segítségével.</li>
+		  		  <li>Küldje el az aláírt tranzakciót az online számítógép segítségével.</li>
+		  		</ol>
+		  		<p>Mivel az a számítógép, amely interneteléréssel rendelkezik, nem képes tranzakciót aláírni, veszélyeztetés esetén nem használható pénz felvételére. Az <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> használható offline tranzakciók aláírására.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Hardverpénztárcák</h3>
+		  		<p>A hardverpénztárcák jelentik a magas szintű biztonság és az egyszerű használat közötti arany középutat. Ezeket a kis készülékeket alapjaiktól kezdve csakis pénztárcának tervezték. Semmilyen szoftver nem telepíthető rájuk, e jellemző pedig igen ellenállóvá teszi őket a számítógépek sebezhetőségeivel, illetve az online tolvajokkal szemben. Mivel lehetséges biztonsági mentést készíteni róluk, ezért akkor is visszaállítható vagyona, ha elveszít egy ilyen készüléket.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Tartsa szoftverét naprakészen</h3>
+		  <p>A Bitcoin-szoftver legújabb verziójának használata biztosítja Önnek az elengedhetetlen megbízhatóságot és a biztonsági javításokat. A frissítések különböző mélységű problémáktól óvhatják meg, illetve új, hasznos szolgáltatásokat biztosítanak pénztárcája védelmére. A számítógépén és mobiltelefonján található többi szoftver rendszeres frissítése ugyancsak hozzájárul pénztárcája környezetének biztonságosabbá tételéhez.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Csoportos aláírás a lopások elleni védelemhez</h3>
+		  <p>A Bitcoin rendelkezik egy csoportos aláírási szolgáltatással, amely lehetővé teszi, hogy egy tranzakció aláírásához több független jóváhagyás elköltése legyen szükséges. A csoportos aláírás például lehetővé teszi, hogy egy szervezet hozzáférést engedélyezzen tagjai számára pénztárához, ugyanakkor kizárólag akkor engedélyezve egy tranzakciót, ha 3-ból 5 felhasználó aláírja azt. Néhány webes pénztárca-szolgáltató is biztosít csoportos aláírású pénztárcákat a felhasználók számára, a pénzük feletti kontrollt lehetővé téve, ugyanakkor a tolvajok számára lehetetlenné téve, hogy egyetlen készülék vagy szerver feltörésével ellopják a pénzüket.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Gondoljon végrendeletére</h3>
+		  <p>A bitcoinjai örökre elveszhetnek, amennyiben nincsen biztonsági mentésre vonatkozó terve az ismerősei és családja számára. Ha halálát követően a pénztárcáinak vagy jelszavainak helye nem ismert senki számára, nincs remény a vagyonához való hozzáférésre. Már az is óriási különbséget jelenthet, ha egy kis időt szentel ennek a kérdésnek.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Titkosítsa pénztárcáját</h2>
-<p>A pénztárcája vagy okostelefonja titkosítása lehetőséget teremt arra, hogy bármely pénzmozgást jelszóhoz kössön. Ez védelmet nyújt a tolvajok ellen, ám nem nyújt védelmet meg a billentyűzetfigyelő-hardverek vagy szoftverek ellen.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Soha ne felejtse el jelszavát</h3>
-<p>Soha nem szabad elfelejtenie jelszavát, mivel vagyona ebben az esetben örökre el fog veszni. A bankjával ellentétben a Bitcoin esetében nagyon szűk a jelszó-visszaállítási lehetőségek skálája. Sőt mi több, jelszavára akkor is emlékeznie kell, ha évek óta nem használta. Kétség esetén érdemes jelszava másolatát papírra vetve, például egy páncélszekrényben tárolnia.</p>
-
-<h3 id="encryptstrong">Használjon erős jelszót</h3>
-<p>Minden olyan jelszó, amely csak betűkből vagy felismerhető szavakból áll, nagyon gyengének, illetve könnyedén feltörhetőnek tekinthető. Egy erős jelszónak betűket, számokat és írásjeleket kell tartalmaznia, valamint legalább 16 karakter hosszúságúnak kell lennie. A legbiztonságosabb jelszavakat a kifejezetten az erre a célra tervezett programok generálják. Az erős jelszavak nehezen megjegyezhetőek, ezért érdemes időt szánnia megjegyzésükre.</p>
-
-</div>
-
-<h2 id="offline">Offline pénztárca megtakarításai számára</h2>
-<p>A hidegtárolásként is ismert offline pénztárca a megtakarítások legmagasabb szintű védelmét biztosítja. A lényege egy pénztárca biztonságos, hálózathoz nem kapcsolódó helyen való tárolása. Megfelelő kialakítás esetén nagyszerű védelmet biztosít a számítógépek sebezhetőségeivel szemben. Az offline pénztárca biztonsági mentésekkel és titkosítással kombinálva jó gyakorlatot jelent. Az alábbiakban néhány megközelítés áttekintését olvashatja:</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Offline tranzakció-aláírás</a></h3>
-<p>E megközelítés szerint két számítógép egyazon pénztárca egyes, közös részein osztozik. Az elsőt minden hálózatról le kell választani. Ez az egyetlen gép, amely tartalmazza az egész pénztárcát, és amellyel aláírhatóak a tranzakciók. A második gép csatlakozik a hálózathoz, és mindössze egy figyelő pénztárcát tartalmaz, amellyel kizárólag aláíratlan tranzakciók hozhatóak létre. Ily módon biztonságosan hozhat létre tranzakciókat a következő lépésekkel:</p>
-<ol>
-  <li>Hozzon létre egy új tranzakciót az online számítógépén, és mentse el egy pendrive-ra.</li>
-  <li>Írja alá a tranzakciót az offline számítógép segítségével.</li>
-  <li>Küldje el az aláírt tranzakciót az online számítógép segítségével.</li>
-</ol>
-<p>Mivel az a számítógép, amely interneteléréssel rendelkezik, nem képes tranzakciót aláírni, veszélyeztetés esetén nem használható pénz felvételére. Az <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> használható offline tranzakciók aláírására.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Hardverpénztárcák</a></h3>
-<p>A hardverpénztárcák jelentik a magas szintű biztonság és az egyszerű használat közötti arany középutat. Ezeket a kis készülékeket alapjaiktól kezdve csakis pénztárcának tervezték. Semmilyen szoftver nem telepíthető rájuk, e jellemző pedig igen ellenállóvá teszi őket a számítógépek sebezhetőségeivel, illetve az online tolvajokkal szemben. Mivel lehetséges biztonsági mentést készíteni róluk, ezért akkor is visszaállítható vagyona, ha elveszít egy ilyen készüléket.</p>
-</div>
-
-<h2 id="update">Tartsa szoftverét naprakészen</h2>
-<p>A Bitcoin-szoftver legújabb verziójának használata biztosítja Önnek az elengedhetetlen megbízhatóságot és a biztonsági javításokat. A frissítések különböző mélységű problémáktól óvhatják meg, illetve új, hasznos szolgáltatásokat biztosítanak pénztárcája védelmére. A számítógépén és mobiltelefonján található többi szoftver rendszeres frissítése ugyancsak hozzájárul pénztárcája környezetének biztonságosabbá tételéhez.</p>
-
-<h2 id="offlinemulti">Csoportos aláírás a lopások elleni védelemhez</h2>
-<p>A Bitcoin rendelkezik egy csoportos aláírási szolgáltatással, amely lehetővé teszi, hogy egy tranzakció aláírásához több független jóváhagyás elköltése legyen szükséges. A csoportos aláírás például lehetővé teszi, hogy egy szervezet hozzáférést engedélyezzen tagjai számára pénztárához, ugyanakkor kizárólag akkor engedélyezve egy tranzakciót, ha 3-ból 5 felhasználó aláírja azt. Néhány webes pénztárca-szolgáltató is biztosít csoportos aláírású pénztárcákat a felhasználók számára, a pénzük feletti kontrollt lehetővé téve, ugyanakkor a tolvajok számára lehetetlenné téve, hogy egyetlen készülék vagy szerver feltörésével ellopják a pénzüket.</p>
-
-<h2 id="offlinetestament">Gondoljon végrendeletére</h2>
-<p>A bitcoinjai örökre elveszhetnek, amennyiben nincsen biztonsági mentésre vonatkozó terve az ismerősei és családja számára. Ha halálát követően a pénztárcáinak vagy jelszavainak helye nem ismert senki számára, nincs remény a vagyonához való hozzáférésre. Már az is óriási különbséget jelenthet, ha egy kis időt szentel ennek a kérdésnek.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Proteggi il tuo portafoglio - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/it.png"><strong>Italiano</strong>
+          <img src="/img/flags/it.png"><strong>Italiano</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Proteggi il tuo portafoglio</h1>
-<p class="summarytxt">Come nella vita reale, il tuo portafoglio deve essere tenuto al sicuro. Bitcoin rende possibile trasferire i tuoi valori dovunque in modo molto facile e ti permette, così, di controllare il tuo denaro. Tali straordinarie caratteristiche impongono in ogni caso molta attenzione alla sicurezza. Allo stesso tempo, Bitcoin può garantire anche alti livelli di sicurezza, se usato correttamente. <b>Ricorda sempre che è tua responsabilità adottare le migliori strategie per proteggere il tuo denaro</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Proteggi il tuo portafoglio</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Come nella vita reale, il tuo portafoglio deve essere tenuto al sicuro. Bitcoin rende possibile trasferire i tuoi valori dovunque in modo molto facile e ti permette, così, di controllare il tuo denaro. Tali straordinarie caratteristiche impongono in ogni caso molta attenzione alla sicurezza. Allo stesso tempo, Bitcoin può garantire anche alti livelli di sicurezza, se usato correttamente. <b>Ricorda sempre che è tua responsabilità adottare le migliori strategie per proteggere il tuo denaro</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Fai attenzione quando utilizzi i servizi online</h2>
-<p>Devi essere molto attento, quanto utilizzi un qualsiasi servizio ideato per custodire il tuo denaro online. Molti sistemi di scambio e portafogli online hanno subito pesanti violazioni in passato, e tali servizi in genere non assicurano ancora abbastanza sicurezza da poter essere utilizzati come una banca. Di conseguenza, dovresti utilizzare altri tipi di<a href="/it/scegli-il-tuo-portafoglio">portafogli Bitcoin</a>. Altrimenti, dovrai essere molto attento nello scegliere tali servizi. Inoltre, è consigliato l'utilizzo di un'autenticazione a due fattori. </p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Fai attenzione quando utilizzi i servizi online</h3>
+		  <p>Devi essere molto attento, quanto utilizzi un qualsiasi servizio ideato per custodire il tuo denaro online. Molti sistemi di scambio e portafogli online hanno subito pesanti violazioni in passato, e tali servizi in genere non assicurano ancora abbastanza sicurezza da poter essere utilizzati come una banca. Di conseguenza, dovresti utilizzare altri tipi di<a href="/it/scegli-il-tuo-portafoglio">portafogli Bitcoin</a>. Altrimenti, dovrai essere molto attento nello scegliere tali servizi. Inoltre, è consigliato l'utilizzo di un'autenticazione a due fattori. </p>
+		</li>
 
-<h2 id="everyday">Piccole somme per gli utilizzi quotidiani</h2>
-<p>Un portafoglio di Bitcoin è come un portafoglio contente denaro. Se non desideri tenere migliaia di dollari in tasca, lo stesso vale per il tuo portafoglio di Bitcoin. In generale, è buona norma tenere piccole somme di Bitcoin per l'uso quotidiano sul PC, sui dispositivi mobili o sul server, e conservare la somma rimanente in un ambiente più sicuro.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Piccole somme per gli utilizzi quotidiani</h3>
+		  <p>Un portafoglio di Bitcoin è come un portafoglio contente denaro. Se non desideri tenere migliaia di dollari in tasca, lo stesso vale per il tuo portafoglio di Bitcoin. In generale, è buona norma tenere piccole somme di Bitcoin per l'uso quotidiano sul PC, sui dispositivi mobili o sul server, e conservare la somma rimanente in un ambiente più sicuro.</p>
+		</li>
 
-<h2 id="backup">Fai il backup del tuo portafoglio</h2>
-<p>Conservato in un luogo sicuro, un backup del tuo portafoglio può proteggerti da guasti del computer e da alcuni altri errori umani. Può anche permetterti di recuperare il tuo portafoglio, qualora il tuo cellulare o computer siano stati rubati, se mantieni criptato il tuo portafoglio.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Fai il backup del tuo portafoglio</h3>
+		  <p>Conservato in un luogo sicuro, un backup del tuo portafoglio può proteggerti da guasti del computer e da alcuni altri errori umani. Può anche permetterti di recuperare il tuo portafoglio, qualora il tuo cellulare o computer siano stati rubati, se mantieni criptato il tuo portafoglio.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Fai il backup di tutto il tuo portafoglio</h3>
+		  		<p>Alcuni portafogli utilizzano alcune chiavi private al loro interno. Se hai solo un backup delle chiavi private dei tuoi indirizzi Bitcoin visibili, potresti non essere in grado di recuperare gran parte dei tuoi fondi con il tuo backup.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Cripta i backup online</h3>
+		  		<p>Qualunque backup conservato online corre il rischio di essere rubato. Poiché qualunque computer può essere vulnerabile ai malware se connesso ad Internet, è consigliabile criptare qualunque backup che sia destinato ad essere a contatto con la rete.</p>
+		  	</li>
 
-<h3 id="backupwhole">Fai il backup di tutto il tuo portafoglio</h3>
-<p>Alcuni portafogli utilizzano alcune chiavi private al loro interno. Se hai solo un backup delle chiavi private dei tuoi indirizzi Bitcoin visibili, potresti non essere in grado di recuperare gran parte dei tuoi fondi con il tuo backup.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Utilizza diversi luoghi sicuri</h3>
+		  		<p>Conservare un backup in un unico posto non è proprio l'ideale. Se disponi di più copie di backup conservate in diversi luoghi, allora le probabilità che un qualunque sfortunato evento ti impedisca di recuperare il tuo portafoglio sono davvero basse. Potresti conservare i tuoi backup su chiavette USB, su CD o in documenti.</p>
+		  	</li>
 
-<h3 id="backuponline">Cripta i backup online</h3>
-<p>Qualunque backup conservato online corre il rischio di essere rubato. Poiché qualunque computer può essere vulnerabile ai malware se connesso ad Internet, è consigliabile criptare qualunque backup che sia destinato ad essere a contatto con la rete.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Esegui dei backup periodicamente</h3>
+		  		<p>I backup del tuo portafoglio dovrebbero essere eseguiti con una certa regolarità, in modo da assicurarti che contengano le variazioni più recenti ai tuoi indirizzi Bitcoin nonché gli indirizzi che hai creato da poco. Comunque, tutte le applicazioni utilizzeranno a breve dei portafogli per i quali sarà richiesto di fare un backup una sola volta.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Utilizza diversi luoghi sicuri</h3>
-<p>Conservare un backup in un unico posto non è proprio l'ideale. Se disponi di più copie di backup conservate in diversi luoghi, allora le probabilità che un qualunque sfortunato evento ti impedisca di recuperare il tuo portafoglio sono davvero basse. Potresti conservare i tuoi backup su chiavette USB, su CD o in documenti.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Cripta il tuo portafoglio</h3>
+		  <p>Criptare il tuo portafoglio o il tuo smartphone ti consente di impostare una password per chiunque cerchi di ritirare tutti i fondi. Questo aiuta a proteggerti dai ladri, anche se non può proteggerti da keylogging hardware o software.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Non dimenticare mai la tua password</h3>
+		  		<p>Dovresti assicurarti di non dimenticare mai la password, o i tuoi fondi saranno persi per sempre. A differenza della tua banca, ci sono possibilità molto limitate per il recupero di password con Bitcoin. Infatti, dovresti poter ricordare la tua password persino dopo anni senza utilizzarla. Nel dubbio, potresti voler tenere una copia cartacea della tua password in un posto sicuro come una cassaforte.</p>
+		  	</li>
 
-<h3 id="backupregular">Esegui dei backup periodicamente</h3>
-<p>I backup del tuo portafoglio dovrebbero essere eseguiti con una certa regolarità, in modo da assicurarti che contengano le variazioni più recenti ai tuoi indirizzi Bitcoin nonché gli indirizzi che hai creato da poco. Comunque, tutte le applicazioni utilizzeranno a breve dei portafogli per i quali sarà richiesto di fare un backup una sola volta.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Utilizza una password complessa</h3>
+		  		<p>Una password che contenga solo lettere o parole di senso compiuto va considerata molto debole e semplice da indovinare. Una password sicura deve contenere lettere, numeri, segni di punteggiatura e deve essere lunga almeno 16 caratteri. Le password più sicure sono quelle generate da programmi creati appositamente per questo scopo. Questo tipo di password è solitamente più difficile da ricordare, dovresti quindi impegnarti a memorizzarla.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Un portafoglio offline per conservare i risparmi</h3>
+		  <p>Un portafoglio offline, noto anche come cold storage, fornisce il più alto livello di sicurezza per i risparmi. Questo sistema implica il salvataggio di un portafoglio in un posto sicuro non connesso alla rete. Quando realizzato propriamente, può offrire un'ottima protezione contro alcune vulnerabilità del computer. Anche usare un portafoglio offline insieme con i backup e la crittografia è una buona pratica. Qui è presentata una panoramica di alcuni approcci.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Firmare una transazione offline</h3>
+		  		<p>Questo approccio implica avere due computer che condividono alcune parti dello stesso portafoglio. Il primo computer dev'essere disconnesso da qualunque rete. È l'unico che conserva l'intero portafoglio e l'unico ad essere in grado di firmare le transazioni. Il secondo computer è connesso alla rete e possiede solamente un portafoglio di osservazione che può creare esclusivamente transazioni non firmate. In questo modo si possono effettuare in sicurezza nuove transazioni con i seguenti passaggi.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Creare una nuova transazione sul computer online e salvarla su una chiavetta USB.</li>
+		  		  <li>Firmare la transazione con il computer in modalità offline.</li>
+		  		  <li>Inviare con il computer in modalità online la transazione firmata.</li>
+		  		</ol>
+		  		<p>Poiché il computer connesso alla rete non può firmare le transazioni, se viene compromesso non può essere usato per prelevare fondi. Per firmare una transazione offline si può utilizzare <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a></p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Portafogli hardware</h3>
+		  		<p>I portafogli hardware sono il miglior bilancio tra sicurezza molto alta e comodità d'uso. Si tratta di piccoli dispositivi che sono designati dalla radice per essere un portafoglio e niente altro. Nessun software può essere installato su di essi, rendendoli molto sicuri contro le vulnerabilità dei computer e furti online. Dato che possono permettere il backup, tu puoi recuperare i tuoi fondi se hai perso il dispositivo.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Mantieni aggiornato il tuo software</h3>
+		  <p>Usando l'ultima versione del tuo software Bitcoin potrai ricevere importanti correzioni di stabilità e sicurezza. Gli aggiornamenti possono prevenire problemi di diversa gravità, includere nuove utili funzionalità ed aiutare a mantenere sicuro il tuo portafoglio. L'installazione di aggiornamenti per tutti gli altri software disponibili sul tuo computer o cellulare è importante anche per mantenere l'ambiente del tuo portafoglio più sicuro.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Funzione multi-firma per la protezione dai furti</h3>
+		  <p>Bitcoin include una funzione multi-firma che consente ad una transazione di avere conferme multiple e indipendenti prima di essere realmente effettuata. Questa funzione può essere utilizzata da un'organizzazione per fornire ai suoi membri l'accesso ai propri fondi, ma di consentirne l'utilizzo solo se almeno 3 su 5 membri danno la loro approvazione. Alcuni siti web forniscono portafogli con multi-firma, consentendo agli utenti di mantenere il controllo sui propri fondi e prevenire che vengano rubati anche se un ladro riuscisse a compromettere un loro dispositivo o un loro server.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Pensa al tuo testamento</h3>
+		  <p>I tuoi bitcoin potrebbero andar perduti per sempre se non hai un piano di riserva per la tua famiglia. Quando sarai passato a miglior vita, se nessuno conosce il posto dove conservi il portafoglio o la tua password, allora non c'è alcuna speranza che il tuo patrimonio possa mai essere recuperato. Dedicare un po' di tempo a questi problemi può fare una grande differenza.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Cripta il tuo portafoglio</h2>
-<p>Criptare il tuo portafoglio o il tuo smartphone ti consente di impostare una password per chiunque cerchi di ritirare tutti i fondi. Questo aiuta a proteggerti dai ladri, anche se non può proteggerti da keylogging hardware o software.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Non dimenticare mai la tua password</h3>
-<p>Dovresti assicurarti di non dimenticare mai la password, o i tuoi fondi saranno persi per sempre. A differenza della tua banca, ci sono possibilità molto limitate per il recupero di password con Bitcoin. Infatti, dovresti poter ricordare la tua password persino dopo anni senza utilizzarla. Nel dubbio, potresti voler tenere una copia cartacea della tua password in un posto sicuro come una cassaforte.</p>
-
-<h3 id="encryptstrong">Utilizza una password complessa</h3>
-<p>Una password che contenga solo lettere o parole di senso compiuto va considerata molto debole e semplice da indovinare. Una password sicura deve contenere lettere, numeri, segni di punteggiatura e deve essere lunga almeno 16 caratteri. Le password più sicure sono quelle generate da programmi creati appositamente per questo scopo. Questo tipo di password è solitamente più difficile da ricordare, dovresti quindi impegnarti a memorizzarla.</p>
-
-</div>
-
-<h2 id="offline">Un portafoglio offline per conservare i risparmi</h2>
-<p>Un portafoglio offline, noto anche come cold storage, fornisce il più alto livello di sicurezza per i risparmi. Questo sistema implica il salvataggio di un portafoglio in un posto sicuro non connesso alla rete. Quando realizzato propriamente, può offrire un'ottima protezione contro alcune vulnerabilità del computer. Anche usare un portafoglio offline insieme con i backup e la crittografia è una buona pratica. Qui è presentata una panoramica di alcuni approcci.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Firmare una transazione offline</a></h3>
-<p>Questo approccio implica avere due computer che condividono alcune parti dello stesso portafoglio. Il primo computer dev'essere disconnesso da qualunque rete. È l'unico che conserva l'intero portafoglio e l'unico ad essere in grado di firmare le transazioni. Il secondo computer è connesso alla rete e possiede solamente un portafoglio di osservazione che può creare esclusivamente transazioni non firmate. In questo modo si possono effettuare in sicurezza nuove transazioni con i seguenti passaggi.</p>
-<ol>
-  <li>Creare una nuova transazione sul computer online e salvarla su una chiavetta USB.</li>
-  <li>Firmare la transazione con il computer in modalità offline.</li>
-  <li>Inviare con il computer in modalità online la transazione firmata.</li>
-</ol>
-<p>Poiché il computer connesso alla rete non può firmare le transazioni, se viene compromesso non può essere usato per prelevare fondi. Per firmare una transazione offline si può utilizzare <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a></p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Portafogli hardware</a></h3>
-<p>I portafogli hardware sono il miglior bilancio tra sicurezza molto alta e comodità d'uso. Si tratta di piccoli dispositivi che sono designati dalla radice per essere un portafoglio e niente altro. Nessun software può essere installato su di essi, rendendoli molto sicuri contro le vulnerabilità dei computer e furti online. Dato che possono permettere il backup, tu puoi recuperare i tuoi fondi se hai perso il dispositivo.</p>
-</div>
-
-<h2 id="update">Mantieni aggiornato il tuo software</h2>
-<p>Usando l'ultima versione del tuo software Bitcoin potrai ricevere importanti correzioni di stabilità e sicurezza. Gli aggiornamenti possono prevenire problemi di diversa gravità, includere nuove utili funzionalità ed aiutare a mantenere sicuro il tuo portafoglio. L'installazione di aggiornamenti per tutti gli altri software disponibili sul tuo computer o cellulare è importante anche per mantenere l'ambiente del tuo portafoglio più sicuro.</p>
-
-<h2 id="offlinemulti">Funzione multi-firma per la protezione dai furti</h2>
-<p>Bitcoin include una funzione multi-firma che consente ad una transazione di avere conferme multiple e indipendenti prima di essere realmente effettuata. Questa funzione può essere utilizzata da un'organizzazione per fornire ai suoi membri l'accesso ai propri fondi, ma di consentirne l'utilizzo solo se almeno 3 su 5 membri danno la loro approvazione. Alcuni siti web forniscono portafogli con multi-firma, consentendo agli utenti di mantenere il controllo sui propri fondi e prevenire che vengano rubati anche se un ladro riuscisse a compromettere un loro dispositivo o un loro server.</p>
-
-<h2 id="offlinetestament">Pensa al tuo testamento</h2>
-<p>I tuoi bitcoin potrebbero andar perduti per sempre se non hai un piano di riserva per la tua famiglia. Quando sarai passato a miglior vita, se nessuno conosce il posto dove conservi il portafoglio o la tua password, allora non c'è alcuna speranza che il tuo patrimonio possa mai essere recuperato. Dedicare un po' di tempo a questi problemi può fare una grande differenza.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/it/note-legali">Note legali</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/note-legali">Note legali</a></li>
 			
-			<li><a href="/it/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/privacy">Privacy</a></li>
 			
-			<li><a href="/it/stampa">Stampa</a></li>
-			<li><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/stampa">Stampa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un sito web della comunità sponsorizzato da</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

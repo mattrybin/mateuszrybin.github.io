@@ -10,15 +10,29 @@
 <title>Innovation - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sv.png"><strong>Svenska</strong>
+          <img src="/img/flags/sv.png"><strong>Svenska</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Innovation av betalningssystem</h1>
-<p class="summarytxt">Bitcoin-protokollet handlar inte bara om att skicka pengar från A till B. Det har många andra funktioner och öppnar för nya möjligheter som fortfarande utforskas. Här är några teknologier som utvärderas och som i vissa fall har blivit riktiga produkter och tjänster. De mest intressanta användningarna av Bitcoin är antagligen inte påtänkta än.  </p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Innovation av betalningssystem</h1>
+  <h2 class="content_innovation--subtitle">Bitcoin-protokollet handlar inte bara om att skicka pengar från A till B. Det har många andra funktioner och öppnar för nya möjligheter som fortfarande utforskas. Här är några teknologier som utvärderas och som i vissa fall har blivit riktiga produkter och tjänster. De mest intressanta användningarna av Bitcoin är antagligen inte påtänkta än.  </h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Skydd mot bedrägeri</h3>
+	    <p>En ny nivå av säkerhet är möjlig med Bitcoin. Nätverket skyddar användare mot de flesta bedrägerier som "chargebacks" eller oönskade betalningar och bitcoins är omöjliga att förfalska. Användare kan säkerhetskopiera eller kryptera sin plånbok och hårdvaruplånböcker kan göra det väldigt svårt att bli bestulen eller tappa sina pengar i framtiden. Bitcoin är designat för att möjliggöra användare att ha total kontroll över sina pengar.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Skydd mot bedrägeri</h2>
-<p>En ny nivå av säkerhet är möjlig med Bitcoin. Nätverket skyddar användare mot de flesta bedrägerier som "chargebacks" eller oönskade betalningar och bitcoins är omöjliga att förfalska. Användare kan säkerhetskopiera eller kryptera sin plånbok och hårdvaruplånböcker kan göra det väldigt svårt att bli bestulen eller tappa sina pengar i framtiden. Bitcoin är designat för att möjliggöra användare att ha total kontroll över sina pengar.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Global tillgänglighet</h3>
+	    <p>Alla betalningar i världen skulle kunna vara fullständigt interoperabla. Bitcoin tillåter alla banker, företag eller privat personer att säkert skicka och ta emot betalningar var som helst, när som helst med eller utan ett bankkonto. Bitcoin är tillgängligt i ett stort antal länder som fortfarande är utanför de flesta betalningssystem på grund av deras begränsningar. Bitcoin ökar den globala tillgängligheten för handel och det kan hjälpa internationell handel att blomstra.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Kostnadseffektivitet</h3>
+	    <p>Med användandet av kryptografi, så är säkra betalningar möjliga utan långsamma och kostsamma mellanhänder. En Bitcoin-transaktion kan vara mycket billigare än alternativen och kan genomföras på mycket kort tid. Det innebär att Bitcoin har potentialen till att bli ett vanligt sätt att överföra vilken valuta som helst i framtiden. Bitcoin skulle också kunna spela en roll i att <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">minska fattigdomen</a> i många länder genom att kapa de höga transaktionsavgifterna på arbetarnas löner. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Dricks och donationer</h3>
+	    <p>Bitcoin har varit en speciellt effektiv lösning för att få dricks och donationer. Att skicka en betalning kräver bara ett klick och att ta emot donationer är lika enkelt som att visa en QR-kod. Donationer kan vara publikt synliga, vilket ger ökad transparens för ideella organisationer. I katastrofsituationer skulle Bitcoin-donationer kunna användas för att bidra till snabbare internationell respons.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Crowdfunding</h3>
+	    <p>Bitcoin kan användas för att köra Kickstarter liknande crowdfunding kampanjer, där individer lovar pengar till ett projekt, pengarna dras sedan endast ifall tillräckligt mycket pengar samlats in så att projektet når sitt förutbestämda mål. Sådana kontrakt sköts utav Bitcoin-protokollet, som kan förhindra att en transaktion utförs tills ett givet villkor har uppfyllts. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Läs mer</a> om teknologin bakom crowdfunding och testa <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Mikrobetalningar</h3>
+	    <p>Bitcoin kan bearbeta betalningar på bara några kronor och snart mycket mindre belopp än så. Sådana betalningar är rutin redan idag. Tänkt dig att lyssna till Internet radio betalat per sekund, titta på hemsidor och betala en liten summa för reklam du slipper se eller köpa bandbredd från en WiFi-hotspot per kilobyte. Bitcoin är effektivt nog för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.github.io/working-with-micropayments">Läs mer</a> om tekniken bakom Bitcoin-mikrobetalningar.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Dispyt medling</h3>
+	    <p>Bitcoin kan användas för att utveckla innovativa dispytmedlingstjänster som använder flera signaturer. Sådana tjänster skulle göra det möjligt för en tredje part att acceptera eller inte acceptera en transaktion ifall det skulle uppstå en dispyt mellan betalare och mottagare utan att ha kontroll över deras pengar. Eftersom dessa tjänster skulle vara kompatibla med alla användare och handlare som använder Bitcoin, skulle de kunna leda till friare konkurrens och högre kvalité på tjänsterna.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Mutli-signatur konton</h3>
+	    <p>Multipla signatur tillåter en transaktion att bli accepterad av nätverket om en definerad grupp människor signerar transaktionen. Detta skulle kunna användas i en styrelse så att styrelsemedlemmar inte kan spendera kassans pengar utan att de andra medlemmarna ger sitt samtycke. Detta skulle också kunna användas av banker för att förhindra stora överföringar ifall inte användare delger ytterligare referenser.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Tillit och integritet</h3>
+	    <p>Bitcoin erbjuder lösningar till många tillitsrelaterade problem som hemsöker banker. Med selektiv redovisningstransparens, digitala kontrakt och irreverisbla transaktioner kan Bitcoin används som grund för att återställa tillit och överenskommelse. Skurkbanker kan inte längre lura systemet och göra vinst på bekostnad av andra banker och privatpersoner. En framtid där stora banker stödjer Bitcoin skulle det kunna återställa integritet och tillit till de finansiella institutionerna.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Motståndskraft och decentralisering</h3>
+	    <p>På grund av dess decentralisering, skapade Bitcoin en ny form av betalnätverk med en ökad feltolerans och redundans. Bitcoin kan hantera transaktioner på milliontals kronor utan att kräva militärt skydd. Med ingen enskild punkt för haveri så är det väldigt svårt att attackera nätverket. Bitcoin skulle kunna representera ett intressant steg framåt i säkrandet av lokala och globala finanssystem.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Flexibel transparens</h3>
+	    <p>Alla Bitcoins transaktioner är publika och transparenta och personerna bakom betalningen är som standard privata. Det erbjuder individer och organisationer att arbeta med flexibla transparens regler. Till exempel, ett företag kan välja att bara visa vissa transaktioner och saldon till vissa anställda samtidigt är ideella organisationer fria offentliggöra att hur mycket de får in i dagliga och månatliga donationer.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Automatiserade lösningar</h3>
+	    <p>Automatiserade tjänster får i vanliga fall hantera kostnader och begränsningar av kontant eller kreditkortsbetalningar. Detta inkluderar alla former av varuautomater, bussbiljetter och kaffemaskiner. Bitcoin är passande för nästa generations automatiska tjänster samtidigt som operationskostnader kan sänkas. Föreställ dig självkörande taxibilar eller en butik där du betalar utan att behöva vänta i kö. Många nya idéer är möjliga.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Global tillgänglighet</h2>
-<p>Alla betalningar i världen skulle kunna vara fullständigt interoperabla. Bitcoin tillåter alla banker, företag eller privat personer att säkert skicka och ta emot betalningar var som helst, när som helst med eller utan ett bankkonto. Bitcoin är tillgängligt i ett stort antal länder som fortfarande är utanför de flesta betalningssystem på grund av deras begränsningar. Bitcoin ökar den globala tillgängligheten för handel och det kan hjälpa internationell handel att blomstra.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Kostnadseffektivitet</h2>
-<p>Med användandet av kryptografi, så är säkra betalningar möjliga utan långsamma och kostsamma mellanhänder. En Bitcoin-transaktion kan vara mycket billigare än alternativen och kan genomföras på mycket kort tid. Det innebär att Bitcoin har potentialen till att bli ett vanligt sätt att överföra vilken valuta som helst i framtiden. Bitcoin skulle också kunna spela en roll i att <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">minska fattigdomen</a> i många länder genom att kapa de höga transaktionsavgifterna på arbetarnas löner. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Dricks och donationer</h2>
-<p>Bitcoin har varit en speciellt effektiv lösning för att få dricks och donationer. Att skicka en betalning kräver bara ett klick och att ta emot donationer är lika enkelt som att visa en QR-kod. Donationer kan vara publikt synliga, vilket ger ökad transparens för ideella organisationer. I katastrofsituationer skulle Bitcoin-donationer kunna användas för att bidra till snabbare internationell respons.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Crowdfunding</h2>
-<p>Bitcoin kan användas för att köra Kickstarter liknande crowdfunding kampanjer, där individer lovar pengar till ett projekt, pengarna dras sedan endast ifall tillräckligt mycket pengar samlats in så att projektet når sitt förutbestämda mål. Sådana kontrakt sköts utav Bitcoin-protokollet, som kan förhindra att en transaktion utförs tills ett givet villkor har uppfyllts. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Läs mer</a> om teknologin bakom crowdfunding och testa <a href="https://www.vinumeris.com/lighthouse">Lighthouse</a>.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Mikrobetalningar</h2>
-<p>Bitcoin kan bearbeta betalningar på bara några kronor och snart mycket mindre belopp än så. Sådana betalningar är rutin redan idag. Tänkt dig att lyssna till Internet radio betalat per sekund, titta på hemsidor och betala en liten summa för reklam du slipper se eller köpa bandbredd från en WiFi-hotspot per kilobyte. Bitcoin är effektivt nog för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.github.io/working-with-micropayments">Läs mer</a> om tekniken bakom Bitcoin-mikrobetalningar.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Dispyt medling</h2>
-<p>Bitcoin kan användas för att utveckla innovativa dispytmedlingstjänster som använder flera signaturer. Sådana tjänster skulle göra det möjligt för en tredje part att acceptera eller inte acceptera en transaktion ifall det skulle uppstå en dispyt mellan betalare och mottagare utan att ha kontroll över deras pengar. Eftersom dessa tjänster skulle vara kompatibla med alla användare och handlare som använder Bitcoin, skulle de kunna leda till friare konkurrens och högre kvalité på tjänsterna.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Mutli-signatur konton</h2>
-<p>Multipla signatur tillåter en transaktion att bli accepterad av nätverket om en definerad grupp människor signerar transaktionen. Detta skulle kunna användas i en styrelse så att styrelsemedlemmar inte kan spendera kassans pengar utan att de andra medlemmarna ger sitt samtycke. Detta skulle också kunna användas av banker för att förhindra stora överföringar ifall inte användare delger ytterligare referenser.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Tillit och integritet</h2>
-<p>Bitcoin erbjuder lösningar till många tillitsrelaterade problem som hemsöker banker. Med selektiv redovisningstransparens, digitala kontrakt och irreverisbla transaktioner kan Bitcoin används som grund för att återställa tillit och överenskommelse. Skurkbanker kan inte längre lura systemet och göra vinst på bekostnad av andra banker och privatpersoner. En framtid där stora banker stödjer Bitcoin skulle det kunna återställa integritet och tillit till de finansiella institutionerna.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Motståndskraft och decentralisering</h2>
-<p>På grund av dess decentralisering, skapade Bitcoin en ny form av betalnätverk med en ökad feltolerans och redundans. Bitcoin kan hantera transaktioner på milliontals kronor utan att kräva militärt skydd. Med ingen enskild punkt för haveri så är det väldigt svårt att attackera nätverket. Bitcoin skulle kunna representera ett intressant steg framåt i säkrandet av lokala och globala finanssystem.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Flexibel transparens</h2>
-<p>Alla Bitcoins transaktioner är publika och transparenta och personerna bakom betalningen är som standard privata. Det erbjuder individer och organisationer att arbeta med flexibla transparens regler. Till exempel, ett företag kan välja att bara visa vissa transaktioner och saldon till vissa anställda samtidigt är ideella organisationer fria offentliggöra att hur mycket de får in i dagliga och månatliga donationer.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Automatiserade lösningar</h2>
-<p>Automatiserade tjänster får i vanliga fall hantera kostnader och begränsningar av kontant eller kreditkortsbetalningar. Detta inkluderar alla former av varuautomater, bussbiljetter och kaffemaskiner. Bitcoin är passande för nästa generations automatiska tjänster samtidigt som operationskostnader kan sänkas. Föreställ dig självkörande taxibilar eller en butik där du betalar utan att behöva vänta i kö. Många nya idéer är möjliga.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sv/juridiskt">Juridiskt</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/juridiskt">Juridiskt</a></li>
 			
-			<li><a href="/sv/integritet">Integritet</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/integritet">Integritet</a></li>
 			
-			<li><a href="/sv/press">Press</a></li>
-			<li><a href="/sv/om-oss">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/om-oss">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En community hemsida sponsrat av</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

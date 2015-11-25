@@ -10,15 +10,29 @@
 <title>Védje meg személyes adatait - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Védje meg személyes adatait</h1>
-<p class="summarytxt">A Bitcoinra gyakran anonim fizetési rendszerként tekintenek. A valóságban a Bitcoin a világ feltehetően legtranszparensebb fizetési rendszere. Ugyanakkor a Bitcoin elfogadható szintű titkosságot biztosít megfelelő használat esetén. <b>Soha ne feledje, hogy az Ön felelőssége, hogy jó gyakorlatok elsajátításával megvédje személyes adatait</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Védje meg személyes adatait</h1>
+	<h2 class="content_standard--subtitle">A Bitcoinra gyakran anonim fizetési rendszerként tekintenek. A valóságban a Bitcoin a világ feltehetően legtranszparensebb fizetési rendszere. Ugyanakkor a Bitcoin elfogadható szintű titkosságot biztosít megfelelő használat esetén. <b>Soha ne feledje, hogy az Ön felelőssége, hogy jó gyakorlatok elsajátításával megvédje személyes adatait</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">A Bitcoin nyomonkövethetőségének megértése</h3>
+      <p>A Bitcoin korábban soha nem tapasztalt transzparenciával működik, amihez az emberek többsége nincsen hozzászokva. Az összes Bitcoin-tranzakció nyilvános, nyomon követhető, illetve azonnal tárolódik a Bitcoin-hálózaton. A Bitcoin-címek jelentik a bitcoinok helyének és küldési címének egyetlen azonosítóját. E címeket privát módon hozza létre a felhasználók pénztárcája. Ugyanakkor, ha egy cím használttá válik, akkor "beszennyeződik" az összes olyan tranzakció történetével, amelyben részt vett. Bárki láthatja bármelyik cím <a href="https://www.biteasy.com">egyenlegét és összes tranzakcióját</a>. Mivel a felhasználóknak általában fel kell fedniük személyazonosságukat ahhoz, hogy termékeket vásárolhassanak vagy szolgáltatásokat vehessenek igénybe, a Bitcoin-címek nem lehetnek teljes mértékben anonimok. Ezen okok miatt a Bitcoin-címeket csak egyszer célszerű használni, valamint a felhasználónak óvakodniuk kell címeik felfedésétől.</p>
+    </li>
 
-<h2 id="traceable">A Bitcoin nyomonkövethetőségének megértése</h2>
-<p>A Bitcoin korábban soha nem tapasztalt transzparenciával működik, amihez az emberek többsége nincsen hozzászokva. Az összes Bitcoin-tranzakció nyilvános, nyomon követhető, illetve azonnal tárolódik a Bitcoin-hálózaton. A Bitcoin-címek jelentik a bitcoinok helyének és küldési címének egyetlen azonosítóját. E címeket privát módon hozza létre a felhasználók pénztárcája. Ugyanakkor, ha egy cím használttá válik, akkor "beszennyeződik" az összes olyan tranzakció történetével, amelyben részt vett. Bárki láthatja bármelyik cím <a href="https://www.biteasy.com">egyenlegét és összes tranzakcióját</a>. Mivel a felhasználóknak általában fel kell fedniük személyazonosságukat ahhoz, hogy termékeket vásárolhassanak vagy szolgáltatásokat vehessenek igénybe, a Bitcoin-címek nem lehetnek teljes mértékben anonimok. Ezen okok miatt a Bitcoin-címeket csak egyszer célszerű használni, valamint a felhasználónak óvakodniuk kell címeik felfedésétől.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Használjon új címeket a kifizetések fogadására</h3>
+      <p>Személyes adatainak védelme érdekében minden új kifizetés fogadására új Bitcoin-címet érdemes használnia. Továbbá különböző célokra többféle pénztárcát használhat. Ily módon úgy különítheti el tranzakcióit egymástól, hogy összekapcsolásuk nem lehetséges. Az Önnek fizető személyek nem látják, hogy milyen Bitcoin-címeket birtokol, és mire használja őket. Valószínűleg ez a legfontosabb szabály, amelyet érdemes észben tartania.</p>
+    </li>
 
-<h2 id="receive">Használjon új címeket a kifizetések fogadására</h2>
-<p>Személyes adatainak védelme érdekében minden új kifizetés fogadására új Bitcoin-címet érdemes használnia. Továbbá különböző célokra többféle pénztárcát használhat. Ily módon úgy különítheti el tranzakcióit egymástól, hogy összekapcsolásuk nem lehetséges. Az Önnek fizető személyek nem látják, hogy milyen Bitcoin-címeket birtokol, és mire használja őket. Valószínűleg ez a legfontosabb szabály, amelyet érdemes észben tartania.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Legyen óvatos nyilvános helyeken</h3>
+      <p>Hacsak nem az a célja, hogy nyilvánosan, teljes transzparencia mellett adományokat gyűjtsön vagy kifizetéseket fogadjon, a Bitcoin-címek megosztása bármely nyilvános helyen - mint például egy honlapon vagy közösségi hálózaton - nem a legjobb ötlet a személyes adatok védelme szempontjából. Amennyiben mégis így dönt, soha ne felejtse el, hogy ha bármilyen összeget erről a címről átvisz egy másik címe egyikére, az összeg nyilvánosan "szennyezetté" fog válni a nyilvános cím tranzakciótörténetével. Ezenkívül nem célszerű információkat megosztania tranzakcióiról és vásárlásairól, mivel ezek segítségével Bitcoin-címei azonosíthatóvá válhatnak.</p>
+    </li>
 
-<h2 id="public">Legyen óvatos nyilvános helyeken</h2>
-<p>Hacsak nem az a célja, hogy nyilvánosan, teljes transzparencia mellett adományokat gyűjtsön vagy kifizetéseket fogadjon, a Bitcoin-címek megosztása bármely nyilvános helyen - mint például egy honlapon vagy közösségi hálózaton - nem a legjobb ötlet a személyes adatok védelme szempontjából. Amennyiben mégis így dönt, soha ne felejtse el, hogy ha bármilyen összeget erről a címről átvisz egy másik címe egyikére, az összeg nyilvánosan "szennyezetté" fog válni a nyilvános cím tranzakciótörténetével. Ezenkívül nem célszerű információkat megosztania tranzakcióiról és vásárlásairól, mivel ezek segítségével Bitcoin-címei azonosíthatóvá válhatnak.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">IP-címe naplózható</h3>
+      <p>Mivel a Bitcoin-hálózat peer-to-peer hálózat, ezért a tranzakciók folyama megfigyelhető, és az IP-címek naplózhatóak. A teljes csomóponti klienseken a sajátjuk mellett áthalad az összes felhasználó tranzakciója. Ez azt jelenti, hogy adott tranzakció forrásának megtalálása nehéz lehet, valamint bármely Bitcoin-csomópontról tévesen feltételezhető, hogy adott tranzakció forrása. Érdemes megfontolnia, hogy számítógépe IP-címét elrejtse egy <a href="https://www.torproject.org/">Torhoz</a> hasonló eszközzel, hogy ne lehessen naplózni.</p>
+    </li>
 
-<h2 id="iplog">IP-címe naplózható</h2>
-<p>Mivel a Bitcoin-hálózat peer-to-peer hálózat, ezért a tranzakciók folyama megfigyelhető, és az IP-címek naplózhatóak. A teljes csomóponti klienseken a sajátjuk mellett áthalad az összes felhasználó tranzakciója. Ez azt jelenti, hogy adott tranzakció forrásának megtalálása nehéz lehet, valamint bármely Bitcoin-csomópontról tévesen feltételezhető, hogy adott tranzakció forrása. Érdemes megfontolnia, hogy számítógépe IP-címét elrejtse egy <a href="https://www.torproject.org/">Torhoz</a> hasonló eszközzel, hogy ne lehessen naplózni.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">A keverőszolgáltatások korlátai</h3>
+      <p>Néhány, keverőszolgáltatásnak nevezett online szolgáltatás a nyomonkövethetőség felhasználók közötti összekeverését ajánlja független Bitcoin-címek használatával, azonos összeget fogadva és küldve e címekre. Fontos megjegyezni, hogy az effajta szolgáltatások legalitása változó, valamint eltérő szabályok alá vonják a különböző törvényalkotók. Az effajta szolgáltatások ezenkívül megkövetelik, hogy megbízzon az őket használó magánszemélyekben azzal kapcsolatban, hogy ne veszítsék vagy lopják el vagyonát, illetve ne naplózzák kérelmeit. Bár a keverőszolgáltatások megszakíthatják a nyomonkövethetőséget kisebb összegek esetén, nagyon összegek esetén ugyanez sokkal nehezebbé válik.</p>
+    </li>
 
-<h2 id="mixing">A keverőszolgáltatások korlátai</h2>
-<p>Néhány, keverőszolgáltatásnak nevezett online szolgáltatás a nyomonkövethetőség felhasználók közötti összekeverését ajánlja független Bitcoin-címek használatával, azonos összeget fogadva és küldve e címekre. Fontos megjegyezni, hogy az effajta szolgáltatások legalitása változó, valamint eltérő szabályok alá vonják a különböző törvényalkotók. Az effajta szolgáltatások ezenkívül megkövetelik, hogy megbízzon az őket használó magánszemélyekben azzal kapcsolatban, hogy ne veszítsék vagy lopják el vagyonát, illetve ne naplózzák kérelmeit. Bár a keverőszolgáltatások megszakíthatják a nyomonkövethetőséget kisebb összegek esetén, nagyon összegek esetén ugyanez sokkal nehezebbé válik.</p>
-
-<h2 id="future">Jövőbeli fejlesztések</h2>
-<p>Számos fejlesztés várható a jövőben a személyes adatok védelemének javítása érdekében. Például a közösség jelenleg is erőfeszítéseket tesz a kifizetési üzenetek API-jában azért, hogy egy kifizetés során több cím "szennyezése" elkerülhetővé váljon. A Bitcoin Core változáscímeket az idő előrehaladtával valószínűleg más pénztárcákba is implementálni lehet majd. A grafikus felhasználói felületek fejleszthetőek lesznek egy felhasználóbarát kifizetési kérelmi szolgáltatás megvalósítására, és a címek újrafelhasználásának gátlására. További munkák és kutatások folynak további potenciális, kiterjesztett, személyes adatok védelmével kapcsolatos szolgáltatások - mint például véletlenszerűen kiválasztott felhasználók tranzakcióinak összekapcsolása - megalkotására.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Jövőbeli fejlesztések</h3>
+      <p>Számos fejlesztés várható a jövőben a személyes adatok védelemének javítása érdekében. Például a közösség jelenleg is erőfeszítéseket tesz a kifizetési üzenetek API-jában azért, hogy egy kifizetés során több cím "szennyezése" elkerülhetővé váljon. A Bitcoin Core változáscímeket az idő előrehaladtával valószínűleg más pénztárcákba is implementálni lehet majd. A grafikus felhasználói felületek fejleszthetőek lesznek egy felhasználóbarát kifizetési kérelmi szolgáltatás megvalósítására, és a címek újrafelhasználásának gátlására. További munkák és kutatások folynak további potenciális, kiterjesztett, személyes adatok védelmével kapcsolatos szolgáltatások - mint például véletlenszerűen kiválasztott felhasználók tranzakcióinak összekapcsolása - megalkotására.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

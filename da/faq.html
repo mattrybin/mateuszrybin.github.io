@@ -10,15 +10,29 @@
 <title>FAQ – Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/da.png"><strong>Dansk</strong>
+          <img src="/img/flags/da.png"><strong>Dansk</strong>
 				</div>
 			</a>
 		</div>
@@ -323,284 +341,553 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Ofte stillede spørgsmål</h1>
-<p class="summary">Find svar på tilbagevendende spørgsmål og myter om Bitcoin.</p>
+        <div class="content_faq">
+  <h1 class="content_faq--title">Ofte stillede spørgsmål</h1>
+  <h2 class="content_faq--subtitle">Find svar på tilbagevendende spørgsmål og myter om Bitcoin.</h2>
 
-<h2 id="table-of-contents">Indhold</h2>
+  <div class="content_faq--faq">
+    <div class="content_fag--faq--title">
+      <h2>FAQ</h2>
+    </div>
 
-<div class="index">
-<ul>
-<li><a href="#generelt">Generelt</a></li>
-<ul>
-  <li><a href="#hvad-er-bitcoin">Hvad er Bitcoin?</a></li>
-  <li><a href="#hvem-skabte-bitcoin">Hvem skabte Bitcoin?</a></li>
-  <li><a href="#hvem-styrer-bitcoin-netvaerket">Hvem styrer Bitcoin-netværket?</a></li>
-  <li><a href="#hvordan-fungerer-bitcoin">Hvordan fungerer Bitcoin?</a></li>
-  <li><a href="#bruges-bitcoin-virkelig-af-folk">Bruges Bitcoin virkelig af folk?</a></li>
-  <li><a href="#hvordan-skaffer-man-bitcoin">Hvordan skaffer man bitcoin?</a></li>
-  <li><a href="#hvor-svaert-er-det-at-lave-en-bitcoin-betaling">Hvor svært er det at lave en Bitcoin-betaling?</a></li>
-  <li><a href="#hvad-er-fordelene-ved-bitcoin">Hvad er fordelene ved Bitcoin?</a></li>
-  <li><a href="#hvad-er-ulemperne-ved-bitcoin">Hvad er ulemperne ved Bitcoin?</a></li>
-  <li><a href="#hvorfor-stoler-folk-paa-bitcoin">Hvorfor stoler folk på Bitcoin?</a></li>
-  <li><a href="#kan-jeg-tjene-penge-med-bitcoin">Kan jeg tjene penge med Bitcoin?</a></li>
-  <li><a href="#er-bitcoin-fuldt-ud-virtuelt-og-immaterielt">Er Bitcoin fuldt ud virtuelt og immaterielt?</a></li>
-  <li><a href="#er-bitcoin-anonymt">Er Bitcoin anonymt?</a></li>
-  <li><a href="#hvad-sker-der-naar-bitcoin-mistes">Hvad sker der, når bitcoin mistes?</a></li>
-  <li><a href="#kan-bitcoin-skaleres-til-at-blive-et-stort-betalingsnetvaerk">Kan Bitcoin skaleres til at blive et stort betalingsnetværk?</a></li>
-</ul>
-<li><a href="#juridisk">Juridisk</a></li>
-<ul>
-  <li><a href="#er-bitcoin-lovligt">Er Bitcoin lovligt?</a></li>
-  <li><a href="#er-bitcoin-brugbart-til-ulovlige-formaal">Er Bitcoin brugbart til ulovlige formål?</a></li>
-  <li><a href="#kan-bitcoin-reguleres">Kan Bitcoin reguleres?</a></li>
-  <li><a href="#hvad-med-bitcoin-og-skat">Hvad med Bitcoin og skat?</a></li>
-  <li><a href="#hvad-med-bitcoin-og-forbrugerbeskyttelse">Hvad med Bitcoin og forbrugerbeskyttelse?</a></li>
-</ul>
-<li><a href="#oekonomi">Økonomi</a></li>
-<ul>
-  <li><a href="#hvordan-skabes-bitcoin">Hvordan skabes bitcoin?</a></li>
-  <li><a href="#hvorfor-har-bitcoin-vaerdi">Hvorfor har bitcoin værdi?</a></li>
-  <li><a href="#hvad-afgoer-bitcoins-pris">Hvad afgør bitcoins pris?</a></li>
-  <li><a href="#kan-bitcoin-blive-vaerdiloese">Kan bitcoin blive værdiløse?</a></li>
-  <li><a href="#er-bitcoin-en-boble">Er Bitcoin en boble?</a></li>
-  <li><a href="#er-bitcoin-et-pyramidespil">Er Bitcoin et pyramidespil?</a></li>
-  <li><a href="#giver-bitcoin-ikke-tidlige-brugere-unfair-fordele">Giver Bitcoin ikke tidlige brugere unfair fordele?</a></li>
-  <li><a href="#vil-den-endelige-maengde-bitcoin-ikke-blive-en-begraensning">Vil den endelige mængde bitcoin ikke blive en begrænsning?</a></li>
-  <li><a href="#vil-bitcoin-ikke-ende-i-en-deflationsspiral">Vil Bitcoin ikke ende i en deflationsspiral?</a></li>
-  <li><a href="#er-spekulation-og-flygtighed-ikke-et-problem-for-bitcoin">Er spekulation og flygtighed ikke et problem for Bitcoin?</a></li>
-  <li><a href="#hvad-nu-hvis-en-person-koebte-alle-eksisterende-bitcoin">Hvad nu hvis en person købte alle eksisterende bitcoin?</a></li>
-  <li><a href="#hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta">Hvad nu hvis nogen skaber en bedre digital valuta?</a></li>
-</ul>
-<li><a href="#transaktioner">Transaktioner</a></li>
-<ul>
-  <li><a href="#hvorfor-skal-jeg-vente-10-minutter">Hvorfor skal jeg vente 10 minutter?</a></li>
-  <li><a href="#hvor-stort-vil-transaktionsgebyret-vaere">Hvor stort vil transaktionsgebyret være?</a></li>
-  <li><a href="#hvad-nu-hvis-jeg-modtager-bitcoin-mens-min-computer-er-slukket">Hvad nu hvis jeg modtager bitcoin, mens min computer er slukket?</a></li>
-  <li><a href="#hvad-betyder-synkronisering-og-hvorfor-tager-det-saa-laenge">Hvad betyder "synkronisering", og hvorfor tager det så længe?</a></li>
-</ul>
-<li><a href="#mining">Mining</a></li>
-<ul>
-  <li><a href="#hvad-er-bitcoin-mining">Hvad er Bitcoin-mining?</a></li>
-  <li><a href="#hvordan-fungerer-bitcoin-mining">Hvordan fungerer Bitcoin-mining?</a></li>
-  <li><a href="#er-bitcoin-mining-ikke-energispild">Er Bitcoin-mining ikke energispild?</a></li>
-  <li><a href="#hvordan-hjaelper-mining-med-at-sikre-bitcoin">Hvordan hjælper mining med at sikre Bitcoin?</a></li>
-  <li><a href="#hvad-behoever-jeg-for-at-begynde-at-mine">Hvad behøver jeg for at begynde at mine?</a></li>
-</ul>
-<li><a href="#sikkerhed">Sikkerhed</a></li>
-<ul>
-  <li><a href="#er-bitcoin-sikkert">Er Bitcoin sikkert?</a></li>
-  <li><a href="#er-bitcoin-ikke-blevet-hacket-i-fortiden">Er Bitcoin ikke blevet hacket i fortiden?</a></li>
-  <li><a href="#kan-brugere-konspirere-mod-bitcoin">Kan brugere konspirere mod Bitcoin?</a></li>
-  <li><a href="#er-bitcoin-saarbar-overfor-kvantecomputere">Er Bitcoin sårbar overfor kvantecomputere?</a></li>
-</ul>
-<li><a href="#hjaelp">Hjælp</a></li>
-<ul>
-  <li><a href="#mere-hjaelp">Jeg vil gerne lære mere. Hvor kan jeg få hjælp?</a></li>
-</ul>
-</ul>
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="generelt" href="#generelt">Generelt</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-er-bitcoin" href="#hvad-er-bitcoin">Hvad er Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin er et konsensusnetværk, som giver mulighed for et nyt betalingssystem og fuldstændigt digitale penge. Det er det første decentraliserede bruger-til-bruger-betalingsnetværk, som køres af dets brugere uden nogen central autoritet eller mellemmand. Fra brugerens perspektiv minder Bitcoin meget om kontanter til Internet. Bitcoin kan også ses som det mest prominente <a href="http://financialcryptography.com/mt/archives/001325.html">system til tredobbelt bogholderi</a>, der findes.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvem-skabte-bitcoin" href="#hvem-skabte-bitcoin">Hvem skabte Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin er den første implementering af et koncept, der hedder "cryptocurrency" (altså kryptovaluta), som først blev beskrevet i 1998 af Wei Dai på cypherpunkt-postlisten, og som foreslog idéen om en ny slags penge, der bruger kryptografi til at styre sin oprettelse og transaktioner, frem for en central autoritet. Den første Bitcoin-specifikation og "proof-of-concept"-prototype blev offentliggjort i 2009 på en postliste for kryptografi af Satoshi Nakamoto. Satoshi forlod projektet sidst i 2010 uden at afsløre meget om sig selv. Fællesskabet er siden vokset eksponentielt med <a href="/da/udvikling">mange udviklere</a>, der arbejder på Bitcoin.</p>
+            <p>Satoshis anonymitet har ofte rejst uberettigede bekymringer, hvoraf mange kan hægtes sammen med misforståelse af Bitcoins karakter af åben kildekode. Bitcoin-protokollen og -software udgives offentligt, og enhver udvikler rundt om i verden kan gennemse koden eller lave deres egen modificerede udgave af Bitcoin-softwaren. Præcis som med aktuelle udviklere var Satoshis indflydelse begrænset til, at de ændringer han lavede, skulle tages i brug af andre, og derfor var han ikke i kontrol over Bitcoin. Som sådan er identiteten af Bitcoins skaber i dag nogenlunde lige så relevant som identiteten på den person, som opfandt papiret.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="hvem-styrer-bitcoin-netvaerket" href="#hvem-styrer-bitcoin-netvaerket">Hvem styrer Bitcoin-netværket?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ingen ejer Bitcoin-netværket, ligesom ingen ejer teknologien bag email. Bitcoin styres af alle Bitcoin-brugere rundt om i verden. Selvom udviklere forbedrer softwaren, kan de ikke gennemtvinge en ændring i Bitcoin-protokollen, fordi alle brugere frit kan bestemme, hvilken software og version de bruger. For at forblive kompatible med hinanden er alle brugere nødt til at bruge software, der overholder de samme regler. Bitcoin kan kun fungere rigtigt med komplet konsensus mellem alle brugere. Derfor har alle brugere og udviklere stærke incitamenter til at beskytte denne konsensus.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="hvordan-fungerer-bitcoin" href="#hvordan-fungerer-bitcoin">Hvordan fungerer Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bra brugerens synspunkt er Bitcoin ikke andet end en mobil-app eller computerprogram, som giver en personlig Bitcoin-tegnebog og tillader en bruger at sende og modtage bitcoin. Det er sådan, Bitcoin fungerer for de fleste brugere.</p>
+            <p>Under motorhjelmen deler Bitcoin-netværket en offentlig regnskabsbog, der hedder "blokkæden". Denne regnskabsbog indeholder alle transaktioner, der nogensinde er foretaget, og den tillader en brugers computer at verificere validiteten af hver transaktion. Autentiteten for hver transaktion beskyttes af digitale signaturer, der svarer til afsendelsesadresserne, hvilket tillader alle brugere at være i fuld kontrol over afsendelse af bitcoin fra deres egne Bitcoin-adresser. Der ud over kan enhver bearbejde transaktioner ved at bruge beregningskraften fra specialiseret hardware og optjene belønninger i bitcoin for denne tjeneste. Dette kaldes ofte "mining". For at lære mere om Bitcoin kan du se den <a href="/da/hvordan-det-fungerer">dedikerede side</a> og den <a href="/bitcoin.pdf">oprindelige videnskabelige artikel</a>.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="bruges-bitcoin-virkelig-af-folk" href="#bruges-bitcoin-virkelig-af-folk">Bruges Bitcoin virkelig af folk?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ja. Der er et <a href="http://usebitcoins.info/">voksende antal virksomheder</a> og enkeltpersoner, der bruger Bitcoin. Dette inkluderer fysiske forretninger, som fx restauranter, lejligheder, advokater, og populære onlinetjenester, som fx Namecheap, WordPress, Reddit og Flattr. Selvom Bitcoin stadig er et relativt nyt fænomen, vokser det hurtigt. I alutningen af august 2013 overstiger <a href="https://bitcoincharts.com/bitcoin/">værdien af alle bitcoin i cirkulation</a> 1,5 milliarder U.S.-dollar, med en dagsomsætning der er flere millioner dollar værd.</p>
+            <img src="/img/faq/merchants_map.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="hvordan-skaffer-man-bitcoin" href="#hvordan-skaffer-man-bitcoin">Hvordan skaffer man bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li>Som betaling for varer eller tjenester.</li>
+              <li>Køb bitcoin på en <a href="http://howtobuybitcoins.info">Bitcoin-børs</a>.</li>
+              <li>Udveksl bitcoin med <a href="https://localbitcoins.com/">en person i nærheden af dig</a>.</li>
+              <li>Tjen bitcoin gennem konkurrencepræget <a href="http://www.bitcoinmining.com/">mining</a>.</li>
+            </ul>
+            <p>Selvom det er muligt at finde enkeltpersoner, der vil sælge bitcoin i bytte for en kreditkort- eller PayPal-betaling, tillader de fleste børser ikke betalinger via disse betalingsmetoder. Dette skyldes tilfælde, hvor nogen køber bitcoin med PayPal, hvorefter vedkommende trækker overførslen tilbage. Dette refereres ofte til som "chargeback".</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvor-svaert-er-det-at-lave-en-bitcoin-betaling" href="#hvor-svaert-er-det-at-lave-en-bitcoin-betaling">Hvor svært er det at lave en Bitcoin-betaling?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin-betalinger er nemmere at lave end debet- eller kreditkortbetalinger, og de kan modtages uden en forhandlerkonto. Betalinger laves i et tegnebogsprogram, enten på din computer eller smartphone, ved at indtaste modtagerens adresse, betalingsbeløbet og klikke send. For at gøre det nemmere at indtaste modtagens adresse kan mange tegnebøger læse adressen ved at scanne en QR-kode eller ved at holde to telefoner mod hinanden med NFC-teknologi.</p>
+            <img src="/img/faq/mobile_send.png" alt="Screenshot">
+            <img src="/img/faq/mobile_receive.png" alt="Screenshot">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-er-fordelene-ved-bitcoin" href="#hvad-er-fordelene-ved-bitcoin">Hvad er fordelene ved Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <ul>
+              <li><em><b>Betalingsfrihed</b></em> – Det er muligt at sende og modtage ethvert beløb øjeblikkeligt overalt i verden når som helst. Ingen banklukkedage, Ingen grænser. Ingen påtagede begrænsninger. Bitcoin tillader brugerne at have fuld kontrol over deres penge.</li>
+              <li><em><b>Meget lave gebyrer</b></em> – Bitcoin-betalinger gennemføres p.t. enten uden gebyrer eller med ekstremt lave gebyrer. Brugere kan vælge at inkludere gebyrer i transaktioner for at få dem bearbejdet med højere prioritet, hvilket resulterer i hurtigere bekræftelser af transaktioner fra netværkets side. Der ud over findes der bearbejdningsværktøjer for handelsdrivende, der assisterer ved transaktionsbearbejdning, konverterer bitcoin til fiat-valuta og indsætter penge direkte på de handelsdrivendes bankkonti dagligt. Da disse tjenester er baseret på Bitcoin, kan de tilbyde meget lavere gebyrer end PayPal- eller kreditkort-netværk.</li>
+              <li><em><b>Færre risici for handelsdrivende</b></em> – Bitcoin-transaktioner er sikre, uigenkaldelige og indeholder ikke kunders sensitive eller personlige information. Dette beskytter handelsdrivende imod tab, der forårsages af svindel eller svigagtige tilbagetrækninger, og der er ingen grund til PCI-overholdelse. Handelsdrivende kan nemt udvide til nye markeder, hvor kreditkort ikke er tilgængelige, eller svindelniveauet er uacceptabelt højt. Resultatet er lavere gebyrer, større markeder og færre administrative omkostninger.</li>
+              <li><em><b>Sikkerhed og kontrol</b></em> – Bitcoin-brugere har fuld kontrol over deres transaktioner; det er umuligt for handelsdrivende at gennemtvinge uønskede eller ubemærkede opkrævninger, som det kan ske med andre betalingsmetoder. Bitcoin-betalinger kan oprettes uden personlig information tilknyttet til transaktionen. Dette tilbyder stærk beskyttelse imod identitetstyveri. Bitcoin-brugere kan også beskytte deres penge ved hjælp af sikkerhedskopier og kryptering.</li>
+              <li><em><b>Transparent og neutral</b></em> – <a href="https://www.biteasy.com/">Al information</a> om Bitcoin-pengemængden er tilgængelig på blokkæden, så enhver kan verificere og bruge i realtid. Intet individ eller organisation kan styre eller manipulere Bitcoin-protokollen, fordi den er kryptografisk sikker. Dette gør, at man kan have tillid til kernen i Bitcoin med hensyn til at være fuldstændig neutral, transparent og forudsigelig.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-er-ulemperne-ved-bitcoin" href="#hvad-er-ulemperne-ved-bitcoin">Hvad er ulemperne ved Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <ul>
+             <li><em><b>Modtagelsesgrad</b></em> – Mange mennesker kender stadig ikke til Bitcoin. Hver dag begynder flere forretninger at modtage bitcoin, fordi de er interesserede i de fordele, det giver, men listen er stadig lille, og den skal vokse, før den kan drage fordel af <a href="http://da.wikipedia.org/wiki/Netv%C3%A6rkseffekt">netværkseffekten</a>.</li>
+             <li><em><b>Flygtighed</b></em> – Den <a href="https://bitcoincharts.com/bitcoin/">totale værdi</a> af alle bitcoin i cirkulation og antallet af virksomheder, der bruger Bitcoin, er stadig meget lavt sammenlignet med hvad de kunne være. Derfor kan relativt små hændelser, handler eller forretningsaktiviteter påvirke prisen betydeligt. Teoretisk set vil denne flygtighed formindskes efterhånden som Bitcoin-markederne og teknologien modner. Aldrig før har verden set en opstartsvaluta, så det er i sandhed svært (og spændende) at forestille sig, hvordan det vil forløbe sig.</li>
+             <li><em><b>Løbende udvikling</b></em> – Bitcoin-software er stadig i beta, med mange ufærdige funktionaliteter under aktiv udvikling. Nye værktøjer, funktionaliteter og tjenester er under udvikling for at gøre Bitcoin mere sikker og tilgængelig for masserne. Nogle af disse er stadig ikke klar til alle. De fleste Bitcoin-virksomheder er nye og tilbyder stadig ingen forsikring. Generelt set er Bitcoin stadig under modning.</li>
+           </ul>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvorfor-stoler-folk-paa-bitcoin" href="#hvorfor-stoler-folk-paa-bitcoin">Hvorfor stoler folk på Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Meget af tilliden til Bitcoin kommer fra det faktum, at det ikke kræver nogen tillid overhovedet. Bitcoin har fuldt ud åben kildekode og er fuldt ud decentraliseret. Dette betyder, at enhver til enhver tid har adgang til den komplette kildekode. Enhver udvikler i verden kan derfor verificere præcis, hvordan Bitcoin fungerer. Alle transaktioner og bitcoins, der bliver udstedt, kan helt gennemskueligt følges i realtid af enhver. Alle betalinger kan laves uden tillid til tredjepart, og hele systemet er beskyttet af stærkt peer-gennemtjekkede kryptografiske algoritmer, ligesom dem der benyttes i netbanker. Ingen organisation eller individ kan tage kontrol over Bitcoin, og netværket forbliver sikkert, selv hvis ikke alle brugerne kan stoles på.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="kan-jeg-tjene-penge-med-bitcoin" href="#kan-jeg-tjene-penge-med-bitcoin">Kan jeg tjene penge med Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Du bør aldrig forvente at blive rig med Bitcoin eller nogen anden fremspirende teknologi. Det er altid vigtigt at være forsigtig med alt, hvad der lyder for godt til at være sandt, eller ikke følger basale økonomiske regler.</p>
+            <p>Bitcoin er grobund for innovation, og der er forretningsmuligheder, der også involverer risici. Der er ingen garanti for, at Bitcoin vil blive ved med at vokse, selvom det har udviklet sig med meget stor hastighed indtil videre. Det kræver iværksætterånd at investere tid og ressourcer på noget, der er Bitcoin-relateret. Der er adskillige måder at tjene penge med Bitcoin, så som mining, spekulation eller at køre nye virksomheder. Alle disse metoder er konkurrenceprægede, og der er ingen garanti for profit. Det er op til hvert individ at lave en forsvarlig evaluering af udgifterne og de risici, der føres med ethvert sådant projekt.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-fuldt-ud-virtuelt-og-immaterielt" href="#er-bitcoin-fuldt-ud-virtuelt-og-immaterielt">Er Bitcoin fuldt ud virtuelt og immaterielt?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin er lige så virtuelt som de kreditkort og netbanker, folk bruger hver dag. Bitcoin kan bruges til at betale online og i fysiske forretninger, præcis ligesom enhver anden form for penge. Bitcoin kan også veksles i fysisk form, som fx <a href="https://www.casascius.com/">Casascius coins</a>, men det er typisk mere belejligt at betale med en mobiltelefon. Bitcoin-saldi gemmes i et stort, distribueret netværk, og de kan ikke svigagtigt ændres an nogen. Med andre ord: Bitcoin-brugere har eksklusiv kontrol over deres penge, og bitcoin kan ikke forsvinde, bare fordi de er virtuelle.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-anonymt" href="#er-bitcoin-anonymt">Er Bitcoin anonymt?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin er designet til at tillade brugerne at sende og modtage betalinger med et acceptabelt niveau af privatlivsbeskyttelse, så vel som med enhver anden form for penge. Men Bitcoin er dog ikke anonymt og kan ikke tilbyde det samme privatlivsbeskyttelse som kontanter. Brugen af Bitcoin efterlader omfangsrige offentlige optegninger. <a href="/da/beskyt-dit-privatliv">Forskellige mekanismer</a> eksisterer, der kan beskytte brugeres privatliv, og flere er under udvikling. Men der er stadig arbejde, der skal gøres, før disse funktionaliteter kan bruges korrekt af de fleste Bitcoin-brugere.</p>
+            <p>Nogle bekymringer, der er nævnt, går på at private transaktioner kan bruges til illegale formål med Bitcoin. Det er dog værd at notere sig, at Bitcoin vil uden tvivl udsættes for lignende regulering, som allerede foregår i eksisterende finansielle systemer. Bitcoin kan ikke være mere anonymt end kontanter, og det synes ikke at kunne forhindre kriminalefterforskning fra at blive udført. Tilmed er Bitcoin designet til at forhindre en stor mængde financielle forbrydelser.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-sker-der-naar-bitcoin-mistes" href="#hvad-sker-der-naar-bitcoin-mistes">Hvad sker der, når bitcoin mistes?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Når en bruger mister sin tegnebog, har det den effekt, at penge flyttes ud af cirkulation. Mistede bitcoin forbliver i blokkæden, præcis lige som alle andre bitcoin. Men mistede bitcoin forbliver dog inaktive for evigt, fordi der ikke er nogen mulighed for nogen at finde de(n) private nøgle(r), som ville have gjort det muligt at bruge dem igen. På grund af loven om udbud og efterspørgsel vil de tilbageblivende bitcoins, når andre mistes, være i højere efterspørgsel og vil forøge deres værdi for at kompensere.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="kan-bitcoin-skaleres-til-at-blive-et-stort-betalingsnetvaerk" href="#kan-bitcoin-skaleres-til-at-blive-et-stort-betalingsnetvaerk">Kan Bitcoin skaleres til at blive et stort betalingsnetværk?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin-netværket kan allerede bearbejde et meget større antal transaktioner, end det gør i dag. Det er dog ikke helt klar til at skalere til niveauet for et af de store kreditkortnetværk. Der arbejdes på at øge de nuværende begrænsninger, og fremtidige krav er velkendte. Siden begyndelsen har alle aspekter af Bitcoin-netværket været i et løbende udvikling, hvad angår modning, optimering og specialisering, og det bør forventes at forblive i den tilstand nogle år endnu. Efterhånden som trafikken vokser, vil flere brugere benytte sig af letvægtsklienter, og komplette netværksknuder kan blive en mere specialiseret tjeneste. For flere detaljer, se siden om <a href="https://en.bitcoin.it/wiki/Scalability">skalabilitet</a> på wiki'en.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="juridisk" href="#juridisk">Juridisk</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-lovligt" href="#er-bitcoin-lovligt">Er Bitcoin lovligt?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Efter vores bedste overbevisning er <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin ikke blevet ulovliggjort</a> af lovgivningen i de fleste jurisdiktioner. Nogle myndigheder (så som Argentina og Rusland) pålægger udenlandske valutaer strenge begrænsninger eller forbud. Andre myndigheder (så som Thailand) kan lægge begrænsninger på licenseringen af bestemte enheder, så som Bitcoin-børser.</p>
+            <p>Regulatorer fra adskillige myndigheder er undervejs til at fremlægge regler for enkeltpersoner og virksomheder for hvordan denne ny teknologi skal integreres med det formelle, regulerede finanssystem. The Financial Crimes Enforcement Network (FinCEN), et bureau i U.S.A.s finansdepartement, udgav et ikke-bindende guidesæt omkring hvordan det karaktiserer bestemte aktiviteter, der involverer virtuelle valutaer.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-brugbart-til-ulovlige-formaal" href="#er-bitcoin-brugbart-til-ulovlige-formaal">Er Bitcoin brugbart til ulovlige formål?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin er penge, og penge er altid blevet brugt til både lovlige og ulovlige formål. Kontanter, kreditkort og nuværende banksystemer overgår i stor udstrækning Bitcoin, når det kommer til deres brug til at finansiere kriminalitet. Bitcoin kan bringe betydelig innovation til betalingssystemer, og fordelene ved sådan innovation betragtes ofte som værende ulemperne langt opvejende.</p>
+           <p>Bitcoin er designet til at være et kæmpemæssigt skridt foran i at gøre penge sikre, og ville også kunne optræde som betydelig beskyttelse imod mange former for finansiel kriminalitet. For eksempel er bitcoin fuldstændig umulige at forfalske. Brugere har fuld kontrol over deres betalinger og kan ikke udsættes for ikke-godkendte opkrævninger som fx ved kreditkortsvindel. Bitcoin-transaktioner er uigenkaldelige og immune overfor svigagtige chargebacks. Bitcoin lader penge være sikret imod tyveri og tab ved brug af stærke og brugbare mekanismer, så som sikkerhedskopier, kryptering og multi-signaturer.</p>
+           <p>Enkelte bekymringer, der er nævnt, går på at Bitcoin kan være mere attraktivt for kriminelle, fordi det kan bruges til at lave private og uigenkaldelige betalinger. Disse funktionaliteter eksisterer dog allerede med kontanter og bankoverførsler, som er i bred benyttelse og er veletablerede. Brugen af Bitcoin vil uden tvivl udsættes for lignende regulering, som allerede foregår i eksisterende finansielle systemer, og Bitcoin synes ikke at kunne forhindre kriminalefterforskning fra at blive udført. Generelt set er det normalt for vigtige gennembrudsteknologier at blive anset for at være kontroversielle, før der er bred forståelse for deres fordele. Internet er et godt eksempel imellem mange andre, der illustrerer dette.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="kan-bitcoin-reguleres" href="#kan-bitcoin-reguleres">Kan Bitcoin reguleres?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Selve Bitcoin-protokollen kan ikke ændres uden samarbejde fra nær ved alle dens brugere, som vælger hvilken software, de bruger. Forsøg på at tildele specielle rettigheder til en lokal autoritet i reglerne for det globale Bitcoin-netværk er ikke praktisk muligt. En rig organisation ville kunne vælge at investere i mining-hardware for at have kontrol over halvdelen af beregningskraften i netværket og være i stand til at blokere eller afvise nylige transaktioner. Der er dog ingen garanti for, at de ville kunne opnå denne magt, da det ville kræve, at man investerer lige så meget som alle andre minere i verden til sammen.</p>
+           <p>Det er dog muligt at regulere brugen af Bitcoin på samme måde som med alle andre instrumenter. Ligesom med dollaren kan Bitcoin bruges til et bredt udvalg af formål, hvoraf nogle kan opfattes som legitime eller ikke følgende alle myndigheders lovgivning. På denne måde er Bitcoin ikke anerledes end alle andre værktøjer eller ressourcer, og den kan udsættes for forskellige reguleringer i hvert land. Brug af Bitcoin kan også gøres besværlig af restriktive reguleringer, hvorved det vil være svært at bestemme, hvor stor en procentdel af brugerne, der vil fortsætte med at bruge teknologien. En regering, der vælger at forbyde Bitcoin, ville forhindre indenlands virksomheder og markeder at udvikle sig, og dermed flytte innovation til andre lande. Udfordringen for regulatorer er som altid at udvikle effektive løsninger uden at nedsætte væksten for nye spirende markeder og forretninger.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-med-bitcoin-og-skat" href="#hvad-med-bitcoin-og-skat">Hvad med Bitcoin og skat?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin er ikke en fiat-valuta med juridisk status af officiel betalingsmiddel i nogen jurisdiktion, men ofte kan skatteforpligtelser tilflyde, uanset det anvendte medium. Der er et bredt udvalg af lovgivninger i mange forskellige jurisdiktioner, som ville kunne foranledige indkomstskat, moms, arbejdsgiverskat, kapitalindkomstskat eller en anden form for skatteforpligtelse med Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-med-bitcoin-og-forbrugerbeskyttelse" href="#hvad-med-bitcoin-og-forbrugerbeskyttelse">Hvad med Bitcoin og forbrugerbeskyttelse?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Bitcoin frigør folk til at lave transaktioner på deres egne præmisser. Hver bruger kan sende og modtage betalinger på samme måde som med kontanter, men de kan også tage del i mere komplicerede kontrakter. Multi-signaturer muliggør, at en transaktion kun accepteres af netværket, hvis en bestemt mængde personer i en defineret gruppe er enige om at signere transaktionen. Dette muliggør udvikling af innovative mæglingstjenester i fremtiden. Sådanne tjenester ville kunne gøre det muligt for en tredjepart at godkende eller afvise en transaktion, hvis stridigheder opstår mellem de andre parter, men uden at have kontrol over deres penge. I modsætning til kontanter og andre betalingsmetoder efterlader Bitcoin altid et offentligt bevis for, at en transaktion har fundet sted, hvilket potentielt kan bruges i forbindelse med regres imod virksomheder, der handler svigagtigt.</p>
+           <p>Det er også værd at notere sig, at selvom handelsdrivende normalt afhænger af deres offentlige omdømme for at kunne blive i deres branche og betale deres ansatte, har de ikke adgang til den samme mængde information, når de handler med nye kunder. Den måde Bitcoin fungerer på gør, at både personer og forretninger beskyttes imod svigagtige chargebacks, samtidig med at kunden får valget om at tage imod yderligere beskyttelse, når man ikke vil stole på en bestemt handelsdrivende.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="oekonomi" href="#oekonomi">Økonomi</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvordan-skabes-bitcoin" href="#hvordan-skabes-bitcoin">Hvordan skabes bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+           <p>Nye bitcoin genereres via en konkurrencepræget og decentraliseret proces, der kaldes "mining". Denne proces involverer, at personer belønnes af netværket for deres tjeneste. Bitcoin-minere bearbejder transaktioner og sikrer netværket ved hjælp af specialiseret hardware og modtager nye bitcoin i bytte.</p>
+           <p>Bitcoin-protokollen er designet på en sådan måde, at nye bitcoin skabes med en fast hyppighed. Dette gør Bitcoin-mining til en meget konkurrencepræget størrelse. Når flere minere slutter sig til netværket, bliver det tilsvarende sværere at lave overskud, og minere må søge til effektivitet for at skære ned på deres driftsomkostninger. Ingen central autoritet eller udvikler har magt til at styre eller manipulere systemet for at øge deres overskud. Enhver Bitcoin-knude i verden vil afvise alt, der ikke overholder de regler, den forventer at systemet følger.</p>
+           <p>Bitcoin skabes med en aftagende og forudsigelig hyppighed. Antallet af nye bitcoin, der skabes hvert år, bliver automatisk halveret over tid, indtil udgivelse af bitcoin stopper helt ved en total mængde på 21 millioner bitcoin i eksistens. Når det sker, vil minere sandsynligvis udelukkende støttes af et stort antal små transaktionsgebyrer.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvorfor-har-bitcoin-vaerdi" href="#hvorfor-har-bitcoin-vaerdi">Hvorfor har bitcoin værdi?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin har værdi, fordi de er nyttige som en form for penge. Bitcoin har de samme karakteristika som penge (holdbarhed, mobilitet, ombyttelighed, knaphed, delelighed og genkendelighed) bareseret på matematikkens egenskaber frem for fysiske egenskaber (ligesom guld og sølv) og tiltro til centrale autoriteter (ligesom fiat-valuta). Bitcoin opbakkes kort sagt af matematik. Med disse egenskaber er alt, hvad der behøves for at en form for penge har værdi, er tillid og udbredelse. I Bitcoins tilfælde kan dette måles på den voksende mængde af brugere, handelsdrivende og opstartsvirksomheder. Som med alle valuta kommer bitcoins værdi direkte og kun fra det faktum, at folk er villige til at acceptere dem som betaling.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-afgoer-bitcoins-pris" href="#hvad-afgoer-bitcoins-pris">Hvad afgør bitcoins pris?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Prisen på en bitcoin afgøres af udbud og efterspørgsel. Når efterspørgsel for bitcoin øges, stiger prisen, og når efterspørgsel falder, falder prisen også. Der er kun et endeligt antal bitcoin i cirkulation, og nye bitcoin skabes med en forudsigelig og faldende hyppighed, hvilket betyder at efterspørgsel skal følge dette niveau af inflation for at holde prisen stabil. Da Bitcoin stadig er et relativt lille marked, sammenlignet med hvad det kunne være, skal der ikke betydelige mængder penge til at flytte markedet op eller ned, og dermed er prisen på en bitcoin stadig meget flygtig.</p>
+            <p>Bitcoin-pris over tid:</p>
+            <img src="/img/faq/price_chart.png" alt="chart">
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="kan-bitcoin-blive-vaerdiloese" href="#kan-bitcoin-blive-vaerdiloese">Kan bitcoin blive værdiløse?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ja. Historien er fyldt med fejlslagne valutaer, som ikke længere bruges, som fx den <a href="https://en.wikipedia.org/wiki/German_gold_mark">tyske mark</a> under Weimar-republikken og, mere nyligt, den <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">zimbabwiske dollar</a>. Selvom tidligere valutafiaskoer typisk var på grund af hyperinflation, af en type som er umuligt med Bitcoin, er der altid potentiale for tekniske fiaskoer, konkurrerende valutaer, politiske problemstillinger og så videre. En basal tommelfingerregel siger, at ingen valuta bør anses som absolut sikker, når det kommer til fiasko eller hårde tider. Bitcoin har vist sig pålidelig i flere år siden dens begyndelse, og der er masser af potentiale for, at Bitcoin fortsætter med at vokse. Ingen er dog i stand til at forudsige, hvad fremtiden vil bringe for Bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-en-boble" href="#er-bitcoin-en-boble">Er Bitcoin en boble?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>En hurtig stigning i prisen udgør ikke en boble. En kunstig overvurdeling, som leder til en pludselig nedadgående rettelse, udgør en boble. Valg baseret på individuelle menneskelige handlinger fra hundrede tusinder af markedsdeltagere er årsagen til, at bitcoins pris fluktuerer, efterhånden som markedet søger prisopdagelse. Begrundelser for ændringer i opfattelsen kan omfatte et fald i tiltroen til Bitcoin, en stor forskel mellem værdi og pris, der ikke er baseret på Bitcoin-økonomiens grundbegreber, forøger pressedækning der stimulerer spekulativ efterspørgsel, frygt for usikkerhed, og gammeldags irrationel begejstring og grådighed.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-et-pyramidespil" href="#er-bitcoin-et-pyramidespil">Er Bitcoin et pyramidespil?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Et pyramidespil er en svigagtig investeringsforetagende, som tilbagebetaler investorerne ud fra deres egne penge eller fra penge, der er betalt af efterfølgende investorer, i stedet for fra overskud, der tjenes af de personer, der køre foretagenet. Pyramidespil er designet til at kollapse på bekostning af de sidste investorer, når der ikke længere er nok nye deltagere.</p>
+            <p>Bitcoin er et projekt med fri software og ingen central autoritet. Dermed er ingen i en position til at fremsætte svigagtige repræsentationer af investeringsoverskud. Ligesom med andre store valutaer, så som guld, U.S.-dollar, euro, yen, etc. er der ikke nogen garanteret købekraft og vekselkursen flyder frit. Dette leder til flygtighed, hvor ejere af bitcoin uforudsigeligt kan tjene eller miste penge. Ud over spekulation er Bitcoin også et betalingssystem med brugbare og konkurrencedygtige egenskaber, som bliver brugt af tusinder af brugere og forretninger.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="giver-bitcoin-ikke-tidlige-brugere-unfair-fordele" href="#giver-bitcoin-ikke-tidlige-brugere-unfair-fordele">Giver Bitcoin ikke tidlige brugere unfair fordele?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Nogle tidlige brugere har store summer bitcoin, fordi de tog risici og investerede tid og ressourcer i en uprøvet teknologi, som stort set ikke blev brugt af nogen, og som dengang var meget sværere at sikre ordentligt. Mange tidlige brugere brugte store beløb i bitcoin en del gange, før de blev værdifulde, eller købte kun små beløb og tjente dermed ikke stort. Der er ingen garanti for, at prisen på en bitcoin vil gå op eller ned. Dette er meget lig investering i en tidlig opstartsvirksomhed, som enten kan blive værdifuld gennem dens brugbarhed og popularitet, eller aldrig bryde igennem. Bitcoin er stadig i sin barndom, og den er designet med meget langsigtet basis for øje; det er svært at forestille sig, hvordan det kunne være mindre til fordel for tidlige brugere, og i dags brugere er, eller er måske ikke, morgendagens tidlige brugere.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="vil-den-endelige-maengde-bitcoin-ikke-blive-en-begraensning" href="#vil-den-endelige-maengde-bitcoin-ikke-blive-en-begraensning">Vil den endelige mængde bitcoin ikke blive en begrænsning?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin er unik i det aspekt, at der i alt kun vil blive genereret 21 millioner bitcoin nogensinde. Dette vil dog aldrig blive en begrænsning, da transaktioner til denomineres i mindre underenheder til en bitcoin, så som bits – der er 1.000.000 bits i 1 bitcoin. Bitcoin kan deles op i 8 decimalpladser (0,000 000 01) og potentielt endnu mindre enheder, hvis det nogensinde bliver et krav i fremtiden, efterhånden som den gennemsnitlige transaktionsstørrelse mindskes.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="vil-bitcoin-ikke-ende-i-en-deflationsspiral" href="#vil-bitcoin-ikke-ende-i-en-deflationsspiral">Vil Bitcoin ikke ende i en deflationsspiral?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Teorien om deflationsspiralen siger, at hvis priserne forventes at falde, vil folk flytte deres køb længere ud i fremtiden for at drage fordel af de lavere priser. Dette fald i efterspørgselen vil efterhånden gøre, at handelsdrivende sænker deres priser for at prøve at stimulere efterspørgsel, hvilket gør problemet værre og leder til en økonomisk depression.</p>
+            <p>Selvom denne teori er en populær måde at berettige inflation blandt centralbanker, ser den ikke ud til altid at holde vand, og den opfattes som kontroversiel blandt økonomer. Forbrugerelektronik er et eksempel på et marked, hvor priserne falder konstant, men som ikke er i depression. På samme måde er værdien af bitcoin steget over tid, og alligevel er størrelsen på Bitcoin-økonomien også steget dramatisk på samme tid. Da både valutaens værdi og økonomiens størrelse startede på nul i 2009, er Bitcoin et modeksempel på teorien, der viser, at den i nogle tilfælde er forkert.</p>
+            <p>På trods af dette er Bitcoin ikke designet til at være en deflatorisk valuta. Det er mere korrekt at sige, at det er Bitcoins mål at være inflatorisk i de tidlige år og blive stabil i de senere år. Det eneste tidspunkt, hvor det samlede antal bitcoins i cirkulation falder, er når folk bekymringsløst mister deres tegnebøger ved at undlade at lave sikkerhedskopier. Med en stabil monetær base og en stabil økonomi, bør valutaens værdi forblive den samme.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-spekulation-og-flygtighed-ikke-et-problem-for-bitcoin" href="#er-spekulation-og-flygtighed-ikke-et-problem-for-bitcoin">Er spekulation og flygtighed ikke et problem for Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Dette er situationen med hønen og ægget. For at bitcoins pris kan stabilisere, er der brug for en økonomi i stor skala med flere virksomheder og brugere. For at en økonomi i stor skala kan udvikle sig, vil virksomheder og brugere søge prisstabilitet.</p>
+            <p>Heldigvis påvirker flygtighed ikke hovedfordelene ved Bitcoin som et betalingssystem til overførsel af penge fra punkt A til punkt B. Det er muligt for virksomheder øjeblikkeligt at konvertere bitcoinbetalinger til deres lokale valuta, hvilket tillader dem at profitere fra fordelene ved Bitcoin uden at være udsat for prisflygtigheder. Da Bitcoin tilbyder mange nyttige og unikke funktionaliteter og egenskaber, vælger mange brugere at benytte Bitcoin. Med sådanne løsninger og incitamenter er det muligt, at Bitcoin vil modne og udvikle sig til en grad, hvor prisflygtighed vil være begrænset.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-nu-hvis-en-person-koebte-alle-eksisterende-bitcoin" href="#hvad-nu-hvis-en-person-koebte-alle-eksisterende-bitcoin">Hvad nu hvis en person købte alle eksisterende bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Kun en brøkdel af de bitcoin, der er udstedt til dato, kan findes til salg på børserne. Bitcoin-markeder er konkurrenceprægede, hvilket betyder, at prisen på en bitcoin vil stige eller falde afhængigt af udbud og efterspørgsel. Derudover vil nye bitcoin fortsat blive udstedt i flere årtier. Derfor vil selv den mest målrettede køber ikke kunne købe alle eksisterende bitcoin. Denne situation skal dog ikke foreslå, at markederne ikke er sårbare overfor prismanipulation; det kræver stadig ikke et betydeligt beløb at flytte markedsprisen op eller ned, og dermed forbliver Bitcoin et flygtigt aktiv indtil videre.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta" href="#hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta">Hvad nu hvis nogen skaber en bedre digital valuta?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Det kan ske. Indtil videre er Bitcoin forblevet langt den mest populære decentraliserede virtuelle valuta, men det kan ikke garanteres, at den vil holde den position. Der er allerede en mængde alternative valutaer, der er inspireret af Bitcoin. Det er dog sandsynligvis korrekt at antage, at betydelige forbedringer vil kræves, for at en ny valuta kan overtage Bitcoin med hensyn til det etablerede marked, selvom dette forbliver uforudsigeligt. Bitcoin kan også tænkes at implementere forbedringer fra en konkurrerende valuta, så længe dette ikke ændrer fundamentale dele af protokollen.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta" href="#hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta">Hvad nu hvis nogen skaber en bedre digital valuta?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Det kan ske. Indtil videre er Bitcoin forblevet langt den mest populære decentraliserede virtuelle valuta, men det kan ikke garanteres, at den vil holde den position. Der er allerede en mængde alternative valutaer, der er inspireret af Bitcoin. Det er dog sandsynligvis korrekt at antage, at betydelige forbedringer vil kræves, for at en ny valuta kan overtage Bitcoin med hensyn til det etablerede marked, selvom dette forbliver uforudsigeligt. Bitcoin kan også tænkes at implementere forbedringer fra en konkurrerende valuta, så længe dette ikke ændrer fundamentale dele af protokollen.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="transaktioner" href="#transaktioner">Transaktioner</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvorfor-skal-jeg-vente-10-minutter" href="#hvorfor-skal-jeg-vente-10-minutter">Hvorfor skal jeg vente 10 minutter?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Modtagelse af en betaling er stort set øjeblikkelig med Bitcoin. Der er dog en gennemsnitlig forsinkelse på 10 minutter, før netværket begynder at bekræfte din transaktion ved at inkludere den i en blok, og før du kan bruge de bitcoin, du modtager. En bekræftelse betyder, at der er konsensus i netværket, at de bitcoin, du modtog, ikke også er sendt til andre og opfattes som din ejendom. Når din transaktion er inkluderet i én blok, vil den fortsætte med at blive "begravet" under hver efterfølgende blok efter den, hvilket eksponentielt underbygger denne konsensus og mindsker risikoen for en afvist transaktion. Hver bruger kan frit afgøre, på hvilket tidspunkt de opfatter en transaktion som bekræftet, men 6 bekræftelser anses ofte som lige så sikkert som at vente 6 måneder på en kreditkorttransaktion.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvor-stort-vil-transaktionsgebyret-vaere" href="#hvor-stort-vil-transaktionsgebyret-vaere">Hvor stort vil transaktionsgebyret være?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>De fleste transaktioner kan bearbejdes uden gebyrer, men brugere opfordres til at betale et lille valgfrit gebyr for hurtigere bekræftelse af deres transaktioner og for at belønne minere. Når gebyrer er påkrævet, overstiger de generelt ikke nogle få 10-ører i værdi. Din Bitcoin-klient vil sædvanligvis prøve at estimere et passende gebyr, når det er nødvendigt.</p>
+            <p>Transaktionsgebyrer bruges som beskyttelse mod, at brugere sender transaktioner for at overbelaste netværket. Den præcise måde, hvorpå gebyrer fungerer, er stadig under udvikling og vil ændres over tid. Da gebyret ikke er relateret til det beløb, der sendes, kan det virke ekstremt lavt (0,0005 BTC for en overførsel på 1.000 BTC) eller uretfærdigt højt (0,004 BTC for en betaling på 0,02 BTC). Gebyret beregnes udfra egenskaber så som data i transaktionen og transaktionsgentagelse. Hvis du for eksempel modtage et stort antal meget små beløb, så vil gebyrene for at sende disse videre blive højere. Sådanne betalinger kan sammenlignes med at betale en restaurationsregning kun med 50-ører. Hvis du sender brøkdele af dine bitcoin lynhurtigt, kan det også kræve et gebyr. Hvis dine aktiviteter følger mønstret for konventionelle transaktioner, bør gebyrerne forblive meget lave.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-nu-hvis-jeg-modtager-bitcoin-mens-min-computer-er-slukket" href="#hvad-nu-hvis-jeg-modtager-bitcoin-mens-min-computer-er-slukket">Hvad nu hvis jeg modtager bitcoin, mens min computer er slukket?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Dette fungerer fint. De modtagne bitcoin vil dukke op, næste gang du starter din tegnebogsapplikation. Bitcoin modtages ikke som sådan af selve softwaren på din computer; de tilføjes en offentlig regnskabsbog, som deles mellem alle enheder i netværket. Hvis du modtager bitcoin, mens dit tegnebogsprogram ikke kører, og du senere starter det, vil det hente blokke og følge op på alle de transaktioner, det ikke allerede kendte til, og de modtagne bitcoin vil efterhånden dukke op, som om de lige var blevet modtaget i realtid. Din tegnebog behøves kun, når du vil bruge bitcoin.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-betyder-synkronisering-og-hvorfor-tager-det-saa-laenge" href="#hvad-betyder-synkronisering-og-hvorfor-tager-det-saa-laenge">Hvad betyder "synkronisering", og hvorfor tager det så længe?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Lange synkroniseringstider er kun påkrævet med komplet-knude-klienter som Bitcoin Core. Teknisk set er synkronisering processen med at hente og verificere alle tidligere Bitcoin-transaktioner fra netværket. For at nogle Bitcoin-klienter kan beregne din tilgængelige saldo i din Bitcoin-tegnebog og oprette nye transaktioner, er de nødt til at være opmærksom på alle tidligere transaktioner. Dette skridt kan være ressourcekrævende og kræver tilpas med båndbredde og lagerplads for at rumme blokkædens fulde størrelse. For at Bitcoin kan forblive sikkert, bør nok personer blive ved med at benytte komplet-knude-klienter, fordi de udfører opgaven med at validere og videresende transaktioner.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="mining" href="#mining">Mining</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvad-er-bitcoin-mining" href="#hvad-er-bitcoin-mining">Hvad er Bitcoin-mining?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Mining er en proces, der går ud på at bruge regnekraft på at bearbejde transaktioner, sikre netværket og holde alle i netværket synkroniseret med hinanden. Det kan anskues som Bitcoins datacenter, undtaget for det faktum at det er designet til at være fuldt ud decentraliseret med minere, der opererer fra alle lande, og at ingen person har kontrol over netværket. Denne proces refereres til som "mining" som en analogi til guldminedrift, fordi den også fungerer som en midlertidig mekanisme til udstedelse af nye bitcoin. Til forskel fra guldminedrift giver Bitcoin-mining dog en belønning til gengæld for nyttig tjeneste, der kræves for at kunne køre et sikkert betalingsnetværk. Mining vil stadig være påkrævet, når den sidste bitcoin er udstedt.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvordan-fungerer-bitcoin-mining" href="#hvordan-fungerer-bitcoin-mining">Hvordan fungerer Bitcoin-mining?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Alle kan blive Bitcoin-miner ved at køre software på specialiseret hardware. Mining-software lytter efter transaktioner, der rundsendes gennem bruger-til-bruger-netværket og udfører de fornødne opgaver for at bearbejde og bekræfte disse transaktioner. Bitcoin-minere udfører dette arbejde, fordi de kan tjene transaktionsgebyrer, der betales af brugere for hurtigere transaktionsbearbejdning, og nyligt udstedte bitcoin, der sættes i verden efter en fastsat formel.</p>
+            <p>For at nye transaktioner kan bekræftes, skal de inkluderes i en blok sammen med matematisk bevis for arbejdet (proof-of-work). Sådanne beviser er meget svære at generere, fordi der ikke er nogen måde at generere dem andet end at prøve milliardvis af beregninger per sekund. Dette betyder, at minere udfører disse beregninger, før deres blokke bliver accepteret af netværket, og før de bliver belønnet. Efterhånden som flere folk begynder at mine, stiger sværhedsgraden for at finde gyldige blokke automatisk fra netværkets side for at sikre, at den gennemsnitlige tid, det tager at finde en ny blok, forbliver lig med 10 minutter. Som resultat heraf er mining en meget konkurrencepræget størrelse, hvor ingen individuel miner kan kontrollere, hvad der inkluderes i blokkæden.</p>
+            <p>Beviset for arbejdet er også designet til at afhænge af den tidligere blok for at gennemtvinge en kronologisk rækkefølge i blokkæden. Dette gør det eksponentielt sværere at omstøde tidligere transaktioner, fordi det kræver genberegning af beviserne for arbejde for alle de efterfølgende blokke. Når to blokke findes på samme tid, arbejder minere på den første blok, de modtager og skifter så til den længste kæde af blokke, så snart den næste blok findes. Dette lader mining at sikre og opretholde global konsensus baseret på beregningskraft.</p>
+            <p>Bitcoin-minere er hverken i stand til at snyde ved at forøge deres egen belønning eller ved at beregne på svigagtige transaktioner, som ville kunne kurruptere Bitcoin-netværket, fordi alle Bitcoin-knuder ville afvise enhver blok, der indeholder ugyldig data, som foreskrevet af reglerne i Bitcoin-protokollen. Dermed forbliver netværket sikkert, selv hvis ikke alle Bitcoin-minere kan stoles på.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="er-bitcoin-mining-ikke-energispild" href="#er-bitcoin-mining-ikke-energispild">Er Bitcoin-mining ikke energispild?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>At bruge energi til at sikre og drive et betalingssystem er næppe spild. Ligesom enhver anden betalingstjeneste medfører også Bitcoin nogle driftsomkostninger. Tjenester som er nødvendige for at drive udbredte monetære systemer, såsom banker, betalingskort og pansrede køretøjer, bruger også store mængder energi. Dog er deres energiforbrug, i modsætning til Bitcoin, ikke transparent og er svært at måle.</p>
+            <p>Bitcoin-mining er designet til at blive mere optimeret over tid ved hjælp af specialiseret hardware, der bruger mindre energi, og driftsomkostningerne ved at mine bør blive ved med at være proportional til efterspørgslen. Når Bitcoin-ming bliver for konkurrencepræget og mindre indbringende, vælger nogle minere at stoppe deres aktiviteter. Der ud over vil al den energi, der bruges på at mine, i sidste ende omformes til varme, og de minere, der tjener mest, vil være dem, der har brugt denne varme til noget fornuftigt. Et optimalt effektivt mining-netværk er et, der faktisk ikke forbruger ekstra energi. Selvom dette er et ideal, er økonomien ved mining sådan indrettet, at minere individuelt stræber efter det.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+            <a id="hvordan-hjaelper-mining-med-at-sikre-bitcoin" href="#hvordan-hjaelper-mining-med-at-sikre-bitcoin">Hvordan hjælper mining med at sikre Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Mining skaber hvad der kan sammenlignes med et konkurrencepræget lotteri, som gør det svært for nogen fortløbende at tilføje nye blokke i blokkæden. Dette beskytter netværkets neutralitet ved at forhindre individer i at få magten til at blokere bestemte transaktioner. Dette forhindrer også individer i at erstatte dele af blokkæden for at annullere deres egne spenderinger, hvilket ville kunne bruges til at svindle andre brugere. Mining gør det eksponentielt sværere at omstøde en tidligere transaktion ved at sætte krav om, at alle følgende blokke fra denne transaktion skal genskrives.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="hvad-behoever-jeg-for-at-begynde-at-mine" href="#hvad-behoever-jeg-for-at-begynde-at-mine">Hvad behøver jeg for at begynde at mine?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>I Bitcoins tidlige dage kunne enhver finde en ny blok ved hjælp af deres computers CPU. Efterhånden som flere og flere begyndte at mine, steg sværhedsgraden på at finde nye blokke meget, indtil det punkt hvor den mest omkostningseffektive mining-metode er at bruge specialiseret hardware. Du kan besøge <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> for mere information.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content_fag--foq--section">
+
+      <h3 class="content_fag--faq--section--title">
+        <a id="sikkerhed" href="#sikkerhed">Sikkerhed</a>
+      </h3>
+
+      <ul class="content_fag--faq--list">
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="er-bitcoin-sikkert" href="#er-bitcoin-sikkert">Er Bitcoin sikkert?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin-teknologien – protokollen og kryptografien – har en stærk historik, hvad angår sikkerhed, og Bitcoin-netværket er formentlig det største distribuerede computerprojekt i verden. Bitcoins mest almindelige sårbarhed ligger i brugerfejl. Filer med Bitcoin-tegnebøger, som opbevarer de nødvendige private nøgler, kan blive slettet ved en fejl, mistet eller stjålet. Dette er meget lig fysiske kontanter, dog gemt i digital form. Heldigvis kan brugere implementere sunde <a href="/da/sikr-din-tegnebog">sikkerhedsprocedurer</a> for at beskytte deres penge og bruge tjenesteudbydere, som tilbyder et godt sikkerheds- og forsikringsniveau imod tyvery og tab.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="er-bitcoin-sikkert" href="#er-bitcoin-sikkert">Er Bitcoin sikkert?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Bitcoin-teknologien – protokollen og kryptografien – har en stærk historik, hvad angår sikkerhed, og Bitcoin-netværket er formentlig det største distribuerede computerprojekt i verden. Bitcoins mest almindelige sårbarhed ligger i brugerfejl. Filer med Bitcoin-tegnebøger, som opbevarer de nødvendige private nøgler, kan blive slettet ved en fejl, mistet eller stjålet. Dette er meget lig fysiske kontanter, dog gemt i digital form. Heldigvis kan brugere implementere sunde <a href="/da/sikr-din-tegnebog">sikkerhedsprocedurer</a> for at beskytte deres penge og bruge tjenesteudbydere, som tilbyder et godt sikkerheds- og forsikringsniveau imod tyvery og tab.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="er-bitcoin-ikke-blevet-hacket-i-fortiden" href="#er-bitcoin-ikke-blevet-hacket-i-fortiden">Er Bitcoin ikke blevet hacket i fortiden?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Protokollens regler og den kryptografi, der bruges i Bitcoin, fungerer stadig flere år efter deres skabelse, hvilket er en god indikation på, at konceptet er ordentligt designet. Dog er <a href="/en/alerts">sikkerhedsbrister</a> fundet og løst over tid i forskellige softwareimplementationer. Ligesom med alle andre typer software afhænger sikkerheden ved Bitcoin-software på den hastighed, som problemer bliver fundet og rettet med. Jo mere sådanne problemer opdages, jo mere modner Bitcoin.</p>
+            <p>Der er ofte misforståelser om tyverier og sikkerhedsbrister, som er sket på diverse børser og virksomheder. Selvom disse hændelser er uheldige, involverer ingen af dem, at Bitcoin selv er blevet hacket, ej heller påpeger de fejl, der kan tilskrives Bitcoin; på samme måde som at et bankrøveri ikke betyder, at den danske krone er blevet kompromitteret. Det er dog korrekt at sige. at et komplet række gode procedurer og intuitive sikkerhedsløsninger er nødvendige for at give brugere en bedre beskyttelse af deres penge, og for at reducere den generelle risiko for tyveri og tab. Henover de seneste få år er sådanne sikkerhedsfunktionaliteter udviklet hurtigt efter hinanden, så som kryptering af tegnebøger, offline-tegnebøger, hardware-tegnebøger og multi-signatur-transaktioner.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="kan-brugere-konspirere-mod-bitcoin" href="#kan-brugere-konspirere-mod-bitcoin">Kan brugere konspirere mod Bitcoin?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Det er ikke muligt at ændre Bitcoin-protokollen så nemt. Enhver Bitcoin-klient, som ikke overholder regelsættet, kan ikke gennemtvinge deres egne regler hos andre brugere. I følge den aktuelle specifikation er dobbeltspendering ikke muligt på den samme blokkæde, og det er det heller ikke at bruge bitcoin uden en gyldig signatur. Derfor er det ikke muligt at generere ukontrollerede mængder af bitcoin ud af den blå luft, bruge andre brugeres penge, korrupte netværket eller noget lignende.</p>
+            <p>Dog ville hovedparten af minerne uafhængigt af hinanden kunne vælge at blokere eller omstøde nylige transaktioner. Hovedparten af brugerne kan også presse på for at få ændringer optaget. Da Bitcoin kun fungerer korrekt med komplet konsensus mellem alle brugere, kan det være meget besværligt at ændre protokollen og kræver at et overvældende flertal af brugerne implementerer ændringerne på en sådan måde, at de resterende brugere stort set ikke har andet valg end at følge trop. Som hovedregel er det svært at forestille sig, hvorfor en Bitcoin-bruger ville vælge at implementere en ændring, der kunne kompromittere vedkommendes egne penge.</p>
+          </div>
+        </li>
+
+        <li class="content_fag--faq--item">
+          <div class="content_faq--faq--item--title">
+           <a id="er-bitcoin-saarbar-overfor-kvantecomputere" href="#er-bitcoin-saarbar-overfor-kvantecomputere">Er Bitcoin sårbar overfor kvantecomputere?</a>
+          </div>
+          <div class="content_fag--faq--item--content">
+            <p>Ja, det er generelt de fleste systemer, som afhænger af kryptografi, herunder også traditionelle banksystemer. Men kvantecomputere eksisterer ikke endnu, og kommer sandsynligvis ikke til det foreløbig. I tilfælde af, at kvantecomputere bliver en overhængende trussel mod Bitcoin, så kan protokollen givetvis opgraderes til at være sikker imod kvantekryptografi. Taget en sådan udvikling i betragtning, så er det højest forventeligt, at det vil være et stort fokusområde for alle Bitcoin-udviklere og -brugere.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="content_fag--faq--footer">
+      <p>Du kan finde mere information og hjælp på siderne om <a href="/da/ressourcer">ressourcer</a> og <a href="/da/faellesskab">fællesskaber</a> eller på <a href="https://en.bitcoin.it/wiki/FAQ">Wiki'ens FAQ</a>.</p>
+    </div>
+  </div>
 </div>
-
-<h2 id="generelt">Generelt</h2>
-
-<h3 id="hvad-er-bitcoin">Hvad er Bitcoin?</h3>
-<p>Bitcoin er et konsensusnetværk, som giver mulighed for et nyt betalingssystem og fuldstændigt digitale penge. Det er det første decentraliserede bruger-til-bruger-betalingsnetværk, som køres af dets brugere uden nogen central autoritet eller mellemmand. Fra brugerens perspektiv minder Bitcoin meget om kontanter til Internet. Bitcoin kan også ses som det mest prominente <a href="http://financialcryptography.com/mt/archives/001325.html">system til tredobbelt bogholderi</a>, der findes.</p>
-
-<h3 id="hvem-skabte-bitcoin">Hvem skabte Bitcoin?</h3>
-<p>Bitcoin er den første implementering af et koncept, der hedder "cryptocurrency" (altså kryptovaluta), som først blev beskrevet i 1998 af Wei Dai på cypherpunkt-postlisten, og som foreslog idéen om en ny slags penge, der bruger kryptografi til at styre sin oprettelse og transaktioner, frem for en central autoritet. Den første Bitcoin-specifikation og "proof-of-concept"-prototype blev offentliggjort i 2009 på en postliste for kryptografi af Satoshi Nakamoto. Satoshi forlod projektet sidst i 2010 uden at afsløre meget om sig selv. Fællesskabet er siden vokset eksponentielt med <a href="/da/udvikling">mange udviklere</a>, der arbejder på Bitcoin.</p>
-<p>Satoshis anonymitet har ofte rejst uberettigede bekymringer, hvoraf mange kan hægtes sammen med misforståelse af Bitcoins karakter af åben kildekode. Bitcoin-protokollen og -software udgives offentligt, og enhver udvikler rundt om i verden kan gennemse koden eller lave deres egen modificerede udgave af Bitcoin-softwaren. Præcis som med aktuelle udviklere var Satoshis indflydelse begrænset til, at de ændringer han lavede, skulle tages i brug af andre, og derfor var han ikke i kontrol over Bitcoin. Som sådan er identiteten af Bitcoins skaber i dag nogenlunde lige så relevant som identiteten på den person, som opfandt papiret.</p>
-
-<h3 id="hvem-styrer-bitcoin-netvaerket">Hvem styrer Bitcoin-netværket?</h3>
-<p>Ingen ejer Bitcoin-netværket, ligesom ingen ejer teknologien bag email. Bitcoin styres af alle Bitcoin-brugere rundt om i verden. Selvom udviklere forbedrer softwaren, kan de ikke gennemtvinge en ændring i Bitcoin-protokollen, fordi alle brugere frit kan bestemme, hvilken software og version de bruger. For at forblive kompatible med hinanden er alle brugere nødt til at bruge software, der overholder de samme regler. Bitcoin kan kun fungere rigtigt med komplet konsensus mellem alle brugere. Derfor har alle brugere og udviklere stærke incitamenter til at beskytte denne konsensus.</p>
-
-<h3 id="hvordan-fungerer-bitcoin">Hvordan fungerer Bitcoin?</h3>
-<p>Bra brugerens synspunkt er Bitcoin ikke andet end en mobil-app eller computerprogram, som giver en personlig Bitcoin-tegnebog og tillader en bruger at sende og modtage bitcoin. Det er sådan, Bitcoin fungerer for de fleste brugere.</p>
-<p>Under motorhjelmen deler Bitcoin-netværket en offentlig regnskabsbog, der hedder "blokkæden". Denne regnskabsbog indeholder alle transaktioner, der nogensinde er foretaget, og den tillader en brugers computer at verificere validiteten af hver transaktion. Autentiteten for hver transaktion beskyttes af digitale signaturer, der svarer til afsendelsesadresserne, hvilket tillader alle brugere at være i fuld kontrol over afsendelse af bitcoin fra deres egne Bitcoin-adresser. Der ud over kan enhver bearbejde transaktioner ved at bruge beregningskraften fra specialiseret hardware og optjene belønninger i bitcoin for denne tjeneste. Dette kaldes ofte "mining". For at lære mere om Bitcoin kan du se den <a href="/da/hvordan-det-fungerer">dedikerede side</a> og den <a href="/bitcoin.pdf">oprindelige videnskabelige artikel</a>.</p>
-
-<h3 id="bruges-bitcoin-virkelig-af-folk">Bruges Bitcoin virkelig af folk?</h3>
-<p>Ja. Der er et <a href="http://usebitcoins.info/">voksende antal virksomheder</a> og enkeltpersoner, der bruger Bitcoin. Dette inkluderer fysiske forretninger, som fx restauranter, lejligheder, advokater, og populære onlinetjenester, som fx Namecheap, WordPress, Reddit og Flattr. Selvom Bitcoin stadig er et relativt nyt fænomen, vokser det hurtigt. I alutningen af august 2013 overstiger <a href="https://bitcoincharts.com/bitcoin/">værdien af alle bitcoin i cirkulation</a> 1,5 milliarder U.S.-dollar, med en dagsomsætning der er flere millioner dollar værd.</p>
-<p>
-<img src="/img/faq/merchants_map.png" alt="Screenshot">
-</p>
-
-<h3 id="hvordan-skaffer-man-bitcoin">Hvordan skaffer man bitcoin?</h3>
-<ul>
-  <li>Som betaling for varer eller tjenester.</li>
-  <li>Køb bitcoin på en <a href="http://howtobuybitcoins.info">Bitcoin-børs</a>.</li>
-  <li>Udveksl bitcoin med <a href="https://localbitcoins.com/">en person i nærheden af dig</a>.</li>
-  <li>Tjen bitcoin gennem konkurrencepræget <a href="http://www.bitcoinmining.com/">mining</a>.</li>
-</ul>
-<p>Selvom det er muligt at finde enkeltpersoner, der vil sælge bitcoin i bytte for en kreditkort- eller PayPal-betaling, tillader de fleste børser ikke betalinger via disse betalingsmetoder. Dette skyldes tilfælde, hvor nogen køber bitcoin med PayPal, hvorefter vedkommende trækker overførslen tilbage. Dette refereres ofte til som "chargeback".</p>
-
-<h3 id="hvor-svaert-er-det-at-lave-en-bitcoin-betaling">Hvor svært er det at lave en Bitcoin-betaling?</h3>
-<p>Bitcoin-betalinger er nemmere at lave end debet- eller kreditkortbetalinger, og de kan modtages uden en forhandlerkonto. Betalinger laves i et tegnebogsprogram, enten på din computer eller smartphone, ved at indtaste modtagerens adresse, betalingsbeløbet og klikke send. For at gøre det nemmere at indtaste modtagens adresse kan mange tegnebøger læse adressen ved at scanne en QR-kode eller ved at holde to telefoner mod hinanden med NFC-teknologi.</p>
-<p>
-<img src="/img/faq/mobile_send.png" alt="Screenshot">
-<img src="/img/faq/mobile_receive.png" alt="Screenshot">
-</p>
-
-<h3 id="hvad-er-fordelene-ved-bitcoin">Hvad er fordelene ved Bitcoin?</h3>
-<ul>
-  <li><em><b>Betalingsfrihed</b></em> – Det er muligt at sende og modtage ethvert beløb øjeblikkeligt overalt i verden når som helst. Ingen banklukkedage, Ingen grænser. Ingen påtagede begrænsninger. Bitcoin tillader brugerne at have fuld kontrol over deres penge.</li>
-  <li><em><b>Meget lave gebyrer</b></em> – Bitcoin-betalinger gennemføres p.t. enten uden gebyrer eller med ekstremt lave gebyrer. Brugere kan vælge at inkludere gebyrer i transaktioner for at få dem bearbejdet med højere prioritet, hvilket resulterer i hurtigere bekræftelser af transaktioner fra netværkets side. Der ud over findes der bearbejdningsværktøjer for handelsdrivende, der assisterer ved transaktionsbearbejdning, konverterer bitcoin til fiat-valuta og indsætter penge direkte på de handelsdrivendes bankkonti dagligt. Da disse tjenester er baseret på Bitcoin, kan de tilbyde meget lavere gebyrer end PayPal- eller kreditkort-netværk.</li>
-  <li><em><b>Færre risici for handelsdrivende</b></em> – Bitcoin-transaktioner er sikre, uigenkaldelige og indeholder ikke kunders sensitive eller personlige information. Dette beskytter handelsdrivende imod tab, der forårsages af svindel eller svigagtige tilbagetrækninger, og der er ingen grund til PCI-overholdelse. Handelsdrivende kan nemt udvide til nye markeder, hvor kreditkort ikke er tilgængelige, eller svindelniveauet er uacceptabelt højt. Resultatet er lavere gebyrer, større markeder og færre administrative omkostninger.</li>
-  <li><em><b>Sikkerhed og kontrol</b></em> – Bitcoin-brugere har fuld kontrol over deres transaktioner; det er umuligt for handelsdrivende at gennemtvinge uønskede eller ubemærkede opkrævninger, som det kan ske med andre betalingsmetoder. Bitcoin-betalinger kan oprettes uden personlig information tilknyttet til transaktionen. Dette tilbyder stærk beskyttelse imod identitetstyveri. Bitcoin-brugere kan også beskytte deres penge ved hjælp af sikkerhedskopier og kryptering.</li>
-  <li><em><b>Transparent og neutral</b></em> – <a href="https://www.biteasy.com/">Al information</a> om Bitcoin-pengemængden er tilgængelig på blokkæden, så enhver kan verificere og bruge i realtid. Intet individ eller organisation kan styre eller manipulere Bitcoin-protokollen, fordi den er kryptografisk sikker. Dette gør, at man kan have tillid til kernen i Bitcoin med hensyn til at være fuldstændig neutral, transparent og forudsigelig.</li>
-</ul>
-
-<h3 id="hvad-er-ulemperne-ved-bitcoin">Hvad er ulemperne ved Bitcoin?</h3>
-<ul>
-  <li><em><b>Modtagelsesgrad</b></em> – Mange mennesker kender stadig ikke til Bitcoin. Hver dag begynder flere forretninger at modtage bitcoin, fordi de er interesserede i de fordele, det giver, men listen er stadig lille, og den skal vokse, før den kan drage fordel af <a href="http://da.wikipedia.org/wiki/Netv%C3%A6rkseffekt">netværkseffekten</a>.</li>
-  <li><em><b>Flygtighed</b></em> – Den <a href="https://bitcoincharts.com/bitcoin/">totale værdi</a> af alle bitcoin i cirkulation og antallet af virksomheder, der bruger Bitcoin, er stadig meget lavt sammenlignet med hvad de kunne være. Derfor kan relativt små hændelser, handler eller forretningsaktiviteter påvirke prisen betydeligt. Teoretisk set vil denne flygtighed formindskes efterhånden som Bitcoin-markederne og teknologien modner. Aldrig før har verden set en opstartsvaluta, så det er i sandhed svært (og spændende) at forestille sig, hvordan det vil forløbe sig.</li>
-  <li><em><b>Løbende udvikling</b></em> – Bitcoin-software er stadig i beta, med mange ufærdige funktionaliteter under aktiv udvikling. Nye værktøjer, funktionaliteter og tjenester er under udvikling for at gøre Bitcoin mere sikker og tilgængelig for masserne. Nogle af disse er stadig ikke klar til alle. De fleste Bitcoin-virksomheder er nye og tilbyder stadig ingen forsikring. Generelt set er Bitcoin stadig under modning.</li>
-</ul>
-
-<h3 id="hvorfor-stoler-folk-paa-bitcoin">Hvorfor stoler folk på Bitcoin?</h3>
-<p>Meget af tilliden til Bitcoin kommer fra det faktum, at det ikke kræver nogen tillid overhovedet. Bitcoin har fuldt ud åben kildekode og er fuldt ud decentraliseret. Dette betyder, at enhver til enhver tid har adgang til den komplette kildekode. Enhver udvikler i verden kan derfor verificere præcis, hvordan Bitcoin fungerer. Alle transaktioner og bitcoins, der bliver udstedt, kan helt gennemskueligt følges i realtid af enhver. Alle betalinger kan laves uden tillid til tredjepart, og hele systemet er beskyttet af stærkt peer-gennemtjekkede kryptografiske algoritmer, ligesom dem der benyttes i netbanker. Ingen organisation eller individ kan tage kontrol over Bitcoin, og netværket forbliver sikkert, selv hvis ikke alle brugerne kan stoles på.</p>
-
-<h3 id="kan-jeg-tjene-penge-med-bitcoin">Kan jeg tjene penge med Bitcoin?</h3>
-<p>Du bør aldrig forvente at blive rig med Bitcoin eller nogen anden fremspirende teknologi. Det er altid vigtigt at være forsigtig med alt, hvad der lyder for godt til at være sandt, eller ikke følger basale økonomiske regler.</p>
-<p>Bitcoin er grobund for innovation, og der er forretningsmuligheder, der også involverer risici. Der er ingen garanti for, at Bitcoin vil blive ved med at vokse, selvom det har udviklet sig med meget stor hastighed indtil videre. Det kræver iværksætterånd at investere tid og ressourcer på noget, der er Bitcoin-relateret. Der er adskillige måder at tjene penge med Bitcoin, så som mining, spekulation eller at køre nye virksomheder. Alle disse metoder er konkurrenceprægede, og der er ingen garanti for profit. Det er op til hvert individ at lave en forsvarlig evaluering af udgifterne og de risici, der føres med ethvert sådant projekt.</p>
-
-<h3 id="er-bitcoin-fuldt-ud-virtuelt-og-immaterielt">Er Bitcoin fuldt ud virtuelt og immaterielt?</h3>
-<p>Bitcoin er lige så virtuelt som de kreditkort og netbanker, folk bruger hver dag. Bitcoin kan bruges til at betale online og i fysiske forretninger, præcis ligesom enhver anden form for penge. Bitcoin kan også veksles i fysisk form, som fx <a href="https://www.casascius.com/">Casascius coins</a>, men det er typisk mere belejligt at betale med en mobiltelefon. Bitcoin-saldi gemmes i et stort, distribueret netværk, og de kan ikke svigagtigt ændres an nogen. Med andre ord: Bitcoin-brugere har eksklusiv kontrol over deres penge, og bitcoin kan ikke forsvinde, bare fordi de er virtuelle.</p>
-
-<h3 id="er-bitcoin-anonymt">Er Bitcoin anonymt?</h3>
-<p>Bitcoin er designet til at tillade brugerne at sende og modtage betalinger med et acceptabelt niveau af privatlivsbeskyttelse, så vel som med enhver anden form for penge. Men Bitcoin er dog ikke anonymt og kan ikke tilbyde det samme privatlivsbeskyttelse som kontanter. Brugen af Bitcoin efterlader omfangsrige offentlige optegninger. <a href="/da/beskyt-dit-privatliv">Forskellige mekanismer</a> eksisterer, der kan beskytte brugeres privatliv, og flere er under udvikling. Men der er stadig arbejde, der skal gøres, før disse funktionaliteter kan bruges korrekt af de fleste Bitcoin-brugere.</p>
-<p>Nogle bekymringer, der er nævnt, går på at private transaktioner kan bruges til illegale formål med Bitcoin. Det er dog værd at notere sig, at Bitcoin vil uden tvivl udsættes for lignende regulering, som allerede foregår i eksisterende finansielle systemer. Bitcoin kan ikke være mere anonymt end kontanter, og det synes ikke at kunne forhindre kriminalefterforskning fra at blive udført. Tilmed er Bitcoin designet til at forhindre en stor mængde financielle forbrydelser.</p>
-
-<h3 id="hvad-sker-der-naar-bitcoin-mistes">Hvad sker der, når bitcoin mistes?</h3>
-<p>Når en bruger mister sin tegnebog, har det den effekt, at penge flyttes ud af cirkulation. Mistede bitcoin forbliver i blokkæden, præcis lige som alle andre bitcoin. Men mistede bitcoin forbliver dog inaktive for evigt, fordi der ikke er nogen mulighed for nogen at finde de(n) private nøgle(r), som ville have gjort det muligt at bruge dem igen. På grund af loven om udbud og efterspørgsel vil de tilbageblivende bitcoins, når andre mistes, være i højere efterspørgsel og vil forøge deres værdi for at kompensere.</p>
-
-<h3 id="kan-bitcoin-skaleres-til-at-blive-et-stort-betalingsnetvaerk">Kan Bitcoin skaleres til at blive et stort betalingsnetværk?</h3>
-<p>Bitcoin-netværket kan allerede bearbejde et meget større antal transaktioner, end det gør i dag. Det er dog ikke helt klar til at skalere til niveauet for et af de store kreditkortnetværk. Der arbejdes på at øge de nuværende begrænsninger, og fremtidige krav er velkendte. Siden begyndelsen har alle aspekter af Bitcoin-netværket været i et løbende udvikling, hvad angår modning, optimering og specialisering, og det bør forventes at forblive i den tilstand nogle år endnu. Efterhånden som trafikken vokser, vil flere brugere benytte sig af letvægtsklienter, og komplette netværksknuder kan blive en mere specialiseret tjeneste. For flere detaljer, se siden om <a href="https://en.bitcoin.it/wiki/Scalability">skalabilitet</a> på wiki'en.</p>
-
-<h2 id="juridisk">Juridisk</h2>
-
-<h3 id="er-bitcoin-lovligt">Er Bitcoin lovligt?</h3>
-<p>Efter vores bedste overbevisning er <a href="https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country">Bitcoin ikke blevet ulovliggjort</a> af lovgivningen i de fleste jurisdiktioner. Nogle myndigheder (så som Argentina og Rusland) pålægger udenlandske valutaer strenge begrænsninger eller forbud. Andre myndigheder (så som Thailand) kan lægge begrænsninger på licenseringen af bestemte enheder, så som Bitcoin-børser.</p>
-<p>Regulatorer fra adskillige myndigheder er undervejs til at fremlægge regler for enkeltpersoner og virksomheder for hvordan denne ny teknologi skal integreres med det formelle, regulerede finanssystem. The Financial Crimes Enforcement Network (FinCEN), et bureau i U.S.A.s finansdepartement, udgav et ikke-bindende guidesæt omkring hvordan det karaktiserer bestemte aktiviteter, der involverer virtuelle valutaer.</p>
-
-<h3 id="er-bitcoin-brugbart-til-ulovlige-formaal">Er Bitcoin brugbart til ulovlige formål?</h3>
-<p>Bitcoin er penge, og penge er altid blevet brugt til både lovlige og ulovlige formål. Kontanter, kreditkort og nuværende banksystemer overgår i stor udstrækning Bitcoin, når det kommer til deres brug til at finansiere kriminalitet. Bitcoin kan bringe betydelig innovation til betalingssystemer, og fordelene ved sådan innovation betragtes ofte som værende ulemperne langt opvejende.</p>
-<p>Bitcoin er designet til at være et kæmpemæssigt skridt foran i at gøre penge sikre, og ville også kunne optræde som betydelig beskyttelse imod mange former for finansiel kriminalitet. For eksempel er bitcoin fuldstændig umulige at forfalske. Brugere har fuld kontrol over deres betalinger og kan ikke udsættes for ikke-godkendte opkrævninger som fx ved kreditkortsvindel. Bitcoin-transaktioner er uigenkaldelige og immune overfor svigagtige chargebacks. Bitcoin lader penge være sikret imod tyveri og tab ved brug af stærke og brugbare mekanismer, så som sikkerhedskopier, kryptering og multi-signaturer.</p>
-<p>Enkelte bekymringer, der er nævnt, går på at Bitcoin kan være mere attraktivt for kriminelle, fordi det kan bruges til at lave private og uigenkaldelige betalinger. Disse funktionaliteter eksisterer dog allerede med kontanter og bankoverførsler, som er i bred benyttelse og er veletablerede. Brugen af Bitcoin vil uden tvivl udsættes for lignende regulering, som allerede foregår i eksisterende finansielle systemer, og Bitcoin synes ikke at kunne forhindre kriminalefterforskning fra at blive udført. Generelt set er det normalt for vigtige gennembrudsteknologier at blive anset for at være kontroversielle, før der er bred forståelse for deres fordele. Internet er et godt eksempel imellem mange andre, der illustrerer dette.</p>
-
-<h3 id="kan-bitcoin-reguleres">Kan Bitcoin reguleres?</h3>
-<p>Selve Bitcoin-protokollen kan ikke ændres uden samarbejde fra nær ved alle dens brugere, som vælger hvilken software, de bruger. Forsøg på at tildele specielle rettigheder til en lokal autoritet i reglerne for det globale Bitcoin-netværk er ikke praktisk muligt. En rig organisation ville kunne vælge at investere i mining-hardware for at have kontrol over halvdelen af beregningskraften i netværket og være i stand til at blokere eller afvise nylige transaktioner. Der er dog ingen garanti for, at de ville kunne opnå denne magt, da det ville kræve, at man investerer lige så meget som alle andre minere i verden til sammen.</p>
-<p>Det er dog muligt at regulere brugen af Bitcoin på samme måde som med alle andre instrumenter. Ligesom med dollaren kan Bitcoin bruges til et bredt udvalg af formål, hvoraf nogle kan opfattes som legitime eller ikke følgende alle myndigheders lovgivning. På denne måde er Bitcoin ikke anerledes end alle andre værktøjer eller ressourcer, og den kan udsættes for forskellige reguleringer i hvert land. Brug af Bitcoin kan også gøres besværlig af restriktive reguleringer, hvorved det vil være svært at bestemme, hvor stor en procentdel af brugerne, der vil fortsætte med at bruge teknologien. En regering, der vælger at forbyde Bitcoin, ville forhindre indenlands virksomheder og markeder at udvikle sig, og dermed flytte innovation til andre lande. Udfordringen for regulatorer er som altid at udvikle effektive løsninger uden at nedsætte væksten for nye spirende markeder og forretninger.</p>
-
-<h3 id="hvad-med-bitcoin-og-skat">Hvad med Bitcoin og skat?</h3>
-<p>Bitcoin er ikke en fiat-valuta med juridisk status af officiel betalingsmiddel i nogen jurisdiktion, men ofte kan skatteforpligtelser tilflyde, uanset det anvendte medium. Der er et bredt udvalg af lovgivninger i mange forskellige jurisdiktioner, som ville kunne foranledige indkomstskat, moms, arbejdsgiverskat, kapitalindkomstskat eller en anden form for skatteforpligtelse med Bitcoin.</p>
-
-<h3 id="hvad-med-bitcoin-og-forbrugerbeskyttelse">Hvad med Bitcoin og forbrugerbeskyttelse?</h3>
-<p>Bitcoin frigør folk til at lave transaktioner på deres egne præmisser. Hver bruger kan sende og modtage betalinger på samme måde som med kontanter, men de kan også tage del i mere komplicerede kontrakter. Multi-signaturer muliggør, at en transaktion kun accepteres af netværket, hvis en bestemt mængde personer i en defineret gruppe er enige om at signere transaktionen. Dette muliggør udvikling af innovative mæglingstjenester i fremtiden. Sådanne tjenester ville kunne gøre det muligt for en tredjepart at godkende eller afvise en transaktion, hvis stridigheder opstår mellem de andre parter, men uden at have kontrol over deres penge. I modsætning til kontanter og andre betalingsmetoder efterlader Bitcoin altid et offentligt bevis for, at en transaktion har fundet sted, hvilket potentielt kan bruges i forbindelse med regres imod virksomheder, der handler svigagtigt.</p>
-<p>Det er også værd at notere sig, at selvom handelsdrivende normalt afhænger af deres offentlige omdømme for at kunne blive i deres branche og betale deres ansatte, har de ikke adgang til den samme mængde information, når de handler med nye kunder. Den måde Bitcoin fungerer på gør, at både personer og forretninger beskyttes imod svigagtige chargebacks, samtidig med at kunden får valget om at tage imod yderligere beskyttelse, når man ikke vil stole på en bestemt handelsdrivende.</p>
-
-<h2 id="oekonomi">Økonomi</h2>
-
-<h3 id="hvordan-skabes-bitcoin">Hvordan skabes bitcoin?</h3>
-<p>Nye bitcoin genereres via en konkurrencepræget og decentraliseret proces, der kaldes "mining". Denne proces involverer, at personer belønnes af netværket for deres tjeneste. Bitcoin-minere bearbejder transaktioner og sikrer netværket ved hjælp af specialiseret hardware og modtager nye bitcoin i bytte.</p>
-<p>Bitcoin-protokollen er designet på en sådan måde, at nye bitcoin skabes med en fast hyppighed. Dette gør Bitcoin-mining til en meget konkurrencepræget størrelse. Når flere minere slutter sig til netværket, bliver det tilsvarende sværere at lave overskud, og minere må søge til effektivitet for at skære ned på deres driftsomkostninger. Ingen central autoritet eller udvikler har magt til at styre eller manipulere systemet for at øge deres overskud. Enhver Bitcoin-knude i verden vil afvise alt, der ikke overholder de regler, den forventer at systemet følger.</p>
-<p>Bitcoin skabes med en aftagende og forudsigelig hyppighed. Antallet af nye bitcoin, der skabes hvert år, bliver automatisk halveret over tid, indtil udgivelse af bitcoin stopper helt ved en total mængde på 21 millioner bitcoin i eksistens. Når det sker, vil minere sandsynligvis udelukkende støttes af et stort antal små transaktionsgebyrer.</p>
-
-<h3 id="hvorfor-har-bitcoin-vaerdi">Hvorfor har bitcoin værdi?</h3>
-<p>Bitcoin har værdi, fordi de er nyttige som en form for penge. Bitcoin har de samme karakteristika som penge (holdbarhed, mobilitet, ombyttelighed, knaphed, delelighed og genkendelighed) bareseret på matematikkens egenskaber frem for fysiske egenskaber (ligesom guld og sølv) og tiltro til centrale autoriteter (ligesom fiat-valuta). Bitcoin opbakkes kort sagt af matematik. Med disse egenskaber er alt, hvad der behøves for at en form for penge har værdi, er tillid og udbredelse. I Bitcoins tilfælde kan dette måles på den voksende mængde af brugere, handelsdrivende og opstartsvirksomheder. Som med alle valuta kommer bitcoins værdi direkte og kun fra det faktum, at folk er villige til at acceptere dem som betaling.</p>
-
-<h3 id="hvad-afgoer-bitcoins-pris">Hvad afgør bitcoins pris?</h3>
-<p>Prisen på en bitcoin afgøres af udbud og efterspørgsel. Når efterspørgsel for bitcoin øges, stiger prisen, og når efterspørgsel falder, falder prisen også. Der er kun et endeligt antal bitcoin i cirkulation, og nye bitcoin skabes med en forudsigelig og faldende hyppighed, hvilket betyder at efterspørgsel skal følge dette niveau af inflation for at holde prisen stabil. Da Bitcoin stadig er et relativt lille marked, sammenlignet med hvad det kunne være, skal der ikke betydelige mængder penge til at flytte markedet op eller ned, og dermed er prisen på en bitcoin stadig meget flygtig.</p>
-<p>Bitcoin-pris over tid:<br><img src="/img/faq/price_chart.png" alt="chart"></p>
-
-<h3 id="kan-bitcoin-blive-vaerdiloese">Kan bitcoin blive værdiløse?</h3>
-<p>Ja. Historien er fyldt med fejlslagne valutaer, som ikke længere bruges, som fx den <a href="https://en.wikipedia.org/wiki/German_gold_mark">tyske mark</a> under Weimar-republikken og, mere nyligt, den <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">zimbabwiske dollar</a>. Selvom tidligere valutafiaskoer typisk var på grund af hyperinflation, af en type som er umuligt med Bitcoin, er der altid potentiale for tekniske fiaskoer, konkurrerende valutaer, politiske problemstillinger og så videre. En basal tommelfingerregel siger, at ingen valuta bør anses som absolut sikker, når det kommer til fiasko eller hårde tider. Bitcoin har vist sig pålidelig i flere år siden dens begyndelse, og der er masser af potentiale for, at Bitcoin fortsætter med at vokse. Ingen er dog i stand til at forudsige, hvad fremtiden vil bringe for Bitcoin.</p>
-
-<h3 id="er-bitcoin-en-boble">Er Bitcoin en boble?</h3>
-<p>En hurtig stigning i prisen udgør ikke en boble. En kunstig overvurdeling, som leder til en pludselig nedadgående rettelse, udgør en boble. Valg baseret på individuelle menneskelige handlinger fra hundrede tusinder af markedsdeltagere er årsagen til, at bitcoins pris fluktuerer, efterhånden som markedet søger prisopdagelse. Begrundelser for ændringer i opfattelsen kan omfatte et fald i tiltroen til Bitcoin, en stor forskel mellem værdi og pris, der ikke er baseret på Bitcoin-økonomiens grundbegreber, forøger pressedækning der stimulerer spekulativ efterspørgsel, frygt for usikkerhed, og gammeldags irrationel begejstring og grådighed.</p>
-
-<h3 id="er-bitcoin-et-pyramidespil">Er Bitcoin et pyramidespil?</h3>
-<p>Et pyramidespil er en svigagtig investeringsforetagende, som tilbagebetaler investorerne ud fra deres egne penge eller fra penge, der er betalt af efterfølgende investorer, i stedet for fra overskud, der tjenes af de personer, der køre foretagenet. Pyramidespil er designet til at kollapse på bekostning af de sidste investorer, når der ikke længere er nok nye deltagere.</p>
-<p>Bitcoin er et projekt med fri software og ingen central autoritet. Dermed er ingen i en position til at fremsætte svigagtige repræsentationer af investeringsoverskud. Ligesom med andre store valutaer, så som guld, U.S.-dollar, euro, yen, etc. er der ikke nogen garanteret købekraft og vekselkursen flyder frit. Dette leder til flygtighed, hvor ejere af bitcoin uforudsigeligt kan tjene eller miste penge. Ud over spekulation er Bitcoin også et betalingssystem med brugbare og konkurrencedygtige egenskaber, som bliver brugt af tusinder af brugere og forretninger.</p>
-
-<h3 id="giver-bitcoin-ikke-tidlige-brugere-unfair-fordele">Giver Bitcoin ikke tidlige brugere unfair fordele?</h3>
-<p>Nogle tidlige brugere har store summer bitcoin, fordi de tog risici og investerede tid og ressourcer i en uprøvet teknologi, som stort set ikke blev brugt af nogen, og som dengang var meget sværere at sikre ordentligt. Mange tidlige brugere brugte store beløb i bitcoin en del gange, før de blev værdifulde, eller købte kun små beløb og tjente dermed ikke stort. Der er ingen garanti for, at prisen på en bitcoin vil gå op eller ned. Dette er meget lig investering i en tidlig opstartsvirksomhed, som enten kan blive værdifuld gennem dens brugbarhed og popularitet, eller aldrig bryde igennem. Bitcoin er stadig i sin barndom, og den er designet med meget langsigtet basis for øje; det er svært at forestille sig, hvordan det kunne være mindre til fordel for tidlige brugere, og i dags brugere er, eller er måske ikke, morgendagens tidlige brugere.</p>
-
-<h3 id="vil-den-endelige-maengde-bitcoin-ikke-blive-en-begraensning">Vil den endelige mængde bitcoin ikke blive en begrænsning?</h3>
-<p>Bitcoin er unik i det aspekt, at der i alt kun vil blive genereret 21 millioner bitcoin nogensinde. Dette vil dog aldrig blive en begrænsning, da transaktioner til denomineres i mindre underenheder til en bitcoin, så som bits – der er 1.000.000 bits i 1 bitcoin. Bitcoin kan deles op i 8 decimalpladser (0,000 000 01) og potentielt endnu mindre enheder, hvis det nogensinde bliver et krav i fremtiden, efterhånden som den gennemsnitlige transaktionsstørrelse mindskes.</p>
-
-<h3 id="vil-bitcoin-ikke-ende-i-en-deflationsspiral">Vil Bitcoin ikke ende i en deflationsspiral?</h3>
-<p>Teorien om deflationsspiralen siger, at hvis priserne forventes at falde, vil folk flytte deres køb længere ud i fremtiden for at drage fordel af de lavere priser. Dette fald i efterspørgselen vil efterhånden gøre, at handelsdrivende sænker deres priser for at prøve at stimulere efterspørgsel, hvilket gør problemet værre og leder til en økonomisk depression.</p>
-<p>Selvom denne teori er en populær måde at berettige inflation blandt centralbanker, ser den ikke ud til altid at holde vand, og den opfattes som kontroversiel blandt økonomer. Forbrugerelektronik er et eksempel på et marked, hvor priserne falder konstant, men som ikke er i depression. På samme måde er værdien af bitcoin steget over tid, og alligevel er størrelsen på Bitcoin-økonomien også steget dramatisk på samme tid. Da både valutaens værdi og økonomiens størrelse startede på nul i 2009, er Bitcoin et modeksempel på teorien, der viser, at den i nogle tilfælde er forkert.</p>
-<p>På trods af dette er Bitcoin ikke designet til at være en deflatorisk valuta. Det er mere korrekt at sige, at det er Bitcoins mål at være inflatorisk i de tidlige år og blive stabil i de senere år. Det eneste tidspunkt, hvor det samlede antal bitcoins i cirkulation falder, er når folk bekymringsløst mister deres tegnebøger ved at undlade at lave sikkerhedskopier. Med en stabil monetær base og en stabil økonomi, bør valutaens værdi forblive den samme.</p>
-
-<h3 id="er-spekulation-og-flygtighed-ikke-et-problem-for-bitcoin">Er spekulation og flygtighed ikke et problem for Bitcoin?</h3>
-<p>Dette er situationen med hønen og ægget. For at bitcoins pris kan stabilisere, er der brug for en økonomi i stor skala med flere virksomheder og brugere. For at en økonomi i stor skala kan udvikle sig, vil virksomheder og brugere søge prisstabilitet.</p>
-<p>Heldigvis påvirker flygtighed ikke hovedfordelene ved Bitcoin som et betalingssystem til overførsel af penge fra punkt A til punkt B. Det er muligt for virksomheder øjeblikkeligt at konvertere bitcoinbetalinger til deres lokale valuta, hvilket tillader dem at profitere fra fordelene ved Bitcoin uden at være udsat for prisflygtigheder. Da Bitcoin tilbyder mange nyttige og unikke funktionaliteter og egenskaber, vælger mange brugere at benytte Bitcoin. Med sådanne løsninger og incitamenter er det muligt, at Bitcoin vil modne og udvikle sig til en grad, hvor prisflygtighed vil være begrænset.</p>
-
-<h3 id="hvad-nu-hvis-en-person-koebte-alle-eksisterende-bitcoin">Hvad nu hvis en person købte alle eksisterende bitcoin?</h3>
-<p>Kun en brøkdel af de bitcoin, der er udstedt til dato, kan findes til salg på børserne. Bitcoin-markeder er konkurrenceprægede, hvilket betyder, at prisen på en bitcoin vil stige eller falde afhængigt af udbud og efterspørgsel. Derudover vil nye bitcoin fortsat blive udstedt i flere årtier. Derfor vil selv den mest målrettede køber ikke kunne købe alle eksisterende bitcoin. Denne situation skal dog ikke foreslå, at markederne ikke er sårbare overfor prismanipulation; det kræver stadig ikke et betydeligt beløb at flytte markedsprisen op eller ned, og dermed forbliver Bitcoin et flygtigt aktiv indtil videre.</p>
-
-<h3 id="hvad-nu-hvis-nogen-skaber-en-bedre-digital-valuta">Hvad nu hvis nogen skaber en bedre digital valuta?</h3>
-<p>Det kan ske. Indtil videre er Bitcoin forblevet langt den mest populære decentraliserede virtuelle valuta, men det kan ikke garanteres, at den vil holde den position. Der er allerede en mængde alternative valutaer, der er inspireret af Bitcoin. Det er dog sandsynligvis korrekt at antage, at betydelige forbedringer vil kræves, for at en ny valuta kan overtage Bitcoin med hensyn til det etablerede marked, selvom dette forbliver uforudsigeligt. Bitcoin kan også tænkes at implementere forbedringer fra en konkurrerende valuta, så længe dette ikke ændrer fundamentale dele af protokollen.</p>
-
-<h2 id="transaktioner">Transaktioner</h2>
-
-<h3 id="hvorfor-skal-jeg-vente-10-minutter">Hvorfor skal jeg vente 10 minutter?</h3>
-<p>Modtagelse af en betaling er stort set øjeblikkelig med Bitcoin. Der er dog en gennemsnitlig forsinkelse på 10 minutter, før netværket begynder at bekræfte din transaktion ved at inkludere den i en blok, og før du kan bruge de bitcoin, du modtager. En bekræftelse betyder, at der er konsensus i netværket, at de bitcoin, du modtog, ikke også er sendt til andre og opfattes som din ejendom. Når din transaktion er inkluderet i én blok, vil den fortsætte med at blive "begravet" under hver efterfølgende blok efter den, hvilket eksponentielt underbygger denne konsensus og mindsker risikoen for en afvist transaktion. Hver bruger kan frit afgøre, på hvilket tidspunkt de opfatter en transaktion som bekræftet, men 6 bekræftelser anses ofte som lige så sikkert som at vente 6 måneder på en kreditkorttransaktion.</p>
-
-<h3 id="hvor-stort-vil-transaktionsgebyret-vaere">Hvor stort vil transaktionsgebyret være?</h3>
-<p>De fleste transaktioner kan bearbejdes uden gebyrer, men brugere opfordres til at betale et lille valgfrit gebyr for hurtigere bekræftelse af deres transaktioner og for at belønne minere. Når gebyrer er påkrævet, overstiger de generelt ikke nogle få 10-ører i værdi. Din Bitcoin-klient vil sædvanligvis prøve at estimere et passende gebyr, når det er nødvendigt.</p>
-<p>Transaktionsgebyrer bruges som beskyttelse mod, at brugere sender transaktioner for at overbelaste netværket. Den præcise måde, hvorpå gebyrer fungerer, er stadig under udvikling og vil ændres over tid. Da gebyret ikke er relateret til det beløb, der sendes, kan det virke ekstremt lavt (0,0005 BTC for en overførsel på 1.000 BTC) eller uretfærdigt højt (0,004 BTC for en betaling på 0,02 BTC). Gebyret beregnes udfra egenskaber så som data i transaktionen og transaktionsgentagelse. Hvis du for eksempel modtage et stort antal meget små beløb, så vil gebyrene for at sende disse videre blive højere. Sådanne betalinger kan sammenlignes med at betale en restaurationsregning kun med 50-ører. Hvis du sender brøkdele af dine bitcoin lynhurtigt, kan det også kræve et gebyr. Hvis dine aktiviteter følger mønstret for konventionelle transaktioner, bør gebyrerne forblive meget lave.</p>
-
-<h3 id="hvad-nu-hvis-jeg-modtager-bitcoin-mens-min-computer-er-slukket">Hvad nu hvis jeg modtager bitcoin, mens min computer er slukket?</h3>
-<p>Dette fungerer fint. De modtagne bitcoin vil dukke op, næste gang du starter din tegnebogsapplikation. Bitcoin modtages ikke som sådan af selve softwaren på din computer; de tilføjes en offentlig regnskabsbog, som deles mellem alle enheder i netværket. Hvis du modtager bitcoin, mens dit tegnebogsprogram ikke kører, og du senere starter det, vil det hente blokke og følge op på alle de transaktioner, det ikke allerede kendte til, og de modtagne bitcoin vil efterhånden dukke op, som om de lige var blevet modtaget i realtid. Din tegnebog behøves kun, når du vil bruge bitcoin.</p>
-
-<h3 id="hvad-betyder-synkronisering-og-hvorfor-tager-det-saa-laenge">Hvad betyder "synkronisering", og hvorfor tager det så længe?</h3>
-<p>Lange synkroniseringstider er kun påkrævet med komplet-knude-klienter som Bitcoin Core. Teknisk set er synkronisering processen med at hente og verificere alle tidligere Bitcoin-transaktioner fra netværket. For at nogle Bitcoin-klienter kan beregne din tilgængelige saldo i din Bitcoin-tegnebog og oprette nye transaktioner, er de nødt til at være opmærksom på alle tidligere transaktioner. Dette skridt kan være ressourcekrævende og kræver tilpas med båndbredde og lagerplads for at rumme blokkædens fulde størrelse. For at Bitcoin kan forblive sikkert, bør nok personer blive ved med at benytte komplet-knude-klienter, fordi de udfører opgaven med at validere og videresende transaktioner.</p>
-
-<h2 id="mining">Mining</h2>
-
-<h3 id="hvad-er-bitcoin-mining">Hvad er Bitcoin-mining?</h3>
-<p>Mining er en proces, der går ud på at bruge regnekraft på at bearbejde transaktioner, sikre netværket og holde alle i netværket synkroniseret med hinanden. Det kan anskues som Bitcoins datacenter, undtaget for det faktum at det er designet til at være fuldt ud decentraliseret med minere, der opererer fra alle lande, og at ingen person har kontrol over netværket. Denne proces refereres til som "mining" som en analogi til guldminedrift, fordi den også fungerer som en midlertidig mekanisme til udstedelse af nye bitcoin. Til forskel fra guldminedrift giver Bitcoin-mining dog en belønning til gengæld for nyttig tjeneste, der kræves for at kunne køre et sikkert betalingsnetværk. Mining vil stadig være påkrævet, når den sidste bitcoin er udstedt.</p>
-
-<h3 id="hvordan-fungerer-bitcoin-mining">Hvordan fungerer Bitcoin-mining?</h3>
-<p>Alle kan blive Bitcoin-miner ved at køre software på specialiseret hardware. Mining-software lytter efter transaktioner, der rundsendes gennem bruger-til-bruger-netværket og udfører de fornødne opgaver for at bearbejde og bekræfte disse transaktioner. Bitcoin-minere udfører dette arbejde, fordi de kan tjene transaktionsgebyrer, der betales af brugere for hurtigere transaktionsbearbejdning, og nyligt udstedte bitcoin, der sættes i verden efter en fastsat formel.</p>
-<p>For at nye transaktioner kan bekræftes, skal de inkluderes i en blok sammen med matematisk bevis for arbejdet (proof-of-work). Sådanne beviser er meget svære at generere, fordi der ikke er nogen måde at generere dem andet end at prøve milliardvis af beregninger per sekund. Dette betyder, at minere udfører disse beregninger, før deres blokke bliver accepteret af netværket, og før de bliver belønnet. Efterhånden som flere folk begynder at mine, stiger sværhedsgraden for at finde gyldige blokke automatisk fra netværkets side for at sikre, at den gennemsnitlige tid, det tager at finde en ny blok, forbliver lig med 10 minutter. Som resultat heraf er mining en meget konkurrencepræget størrelse, hvor ingen individuel miner kan kontrollere, hvad der inkluderes i blokkæden.</p>
-<p>Beviset for arbejdet er også designet til at afhænge af den tidligere blok for at gennemtvinge en kronologisk rækkefølge i blokkæden. Dette gør det eksponentielt sværere at omstøde tidligere transaktioner, fordi det kræver genberegning af beviserne for arbejde for alle de efterfølgende blokke. Når to blokke findes på samme tid, arbejder minere på den første blok, de modtager og skifter så til den længste kæde af blokke, så snart den næste blok findes. Dette lader mining at sikre og opretholde global konsensus baseret på beregningskraft.</p>
-<p>Bitcoin-minere er hverken i stand til at snyde ved at forøge deres egen belønning eller ved at beregne på svigagtige transaktioner, som ville kunne kurruptere Bitcoin-netværket, fordi alle Bitcoin-knuder ville afvise enhver blok, der indeholder ugyldig data, som foreskrevet af reglerne i Bitcoin-protokollen. Dermed forbliver netværket sikkert, selv hvis ikke alle Bitcoin-minere kan stoles på.</p>
-
-<h3 id="er-bitcoin-mining-ikke-energispild">Er Bitcoin-mining ikke energispild?</h3>
-<p>At bruge energi til at sikre og drive et betalingssystem er næppe spild. Ligesom enhver anden betalingstjeneste medfører også Bitcoin nogle driftsomkostninger. Tjenester som er nødvendige for at drive udbredte monetære systemer, såsom banker, betalingskort og pansrede køretøjer, bruger også store mængder energi. Dog er deres energiforbrug, i modsætning til Bitcoin, ikke transparent og er svært at måle.</p>
-<p>Bitcoin-mining er designet til at blive mere optimeret over tid ved hjælp af specialiseret hardware, der bruger mindre energi, og driftsomkostningerne ved at mine bør blive ved med at være proportional til efterspørgslen. Når Bitcoin-ming bliver for konkurrencepræget og mindre indbringende, vælger nogle minere at stoppe deres aktiviteter. Der ud over vil al den energi, der bruges på at mine, i sidste ende omformes til varme, og de minere, der tjener mest, vil være dem, der har brugt denne varme til noget fornuftigt. Et optimalt effektivt mining-netværk er et, der faktisk ikke forbruger ekstra energi. Selvom dette er et ideal, er økonomien ved mining sådan indrettet, at minere individuelt stræber efter det.</p>
-
-<h3 id="hvordan-hjaelper-mining-med-at-sikre-bitcoin">Hvordan hjælper mining med at sikre Bitcoin?</h3>
-<p>Mining skaber hvad der kan sammenlignes med et konkurrencepræget lotteri, som gør det svært for nogen fortløbende at tilføje nye blokke i blokkæden. Dette beskytter netværkets neutralitet ved at forhindre individer i at få magten til at blokere bestemte transaktioner. Dette forhindrer også individer i at erstatte dele af blokkæden for at annullere deres egne spenderinger, hvilket ville kunne bruges til at svindle andre brugere. Mining gør det eksponentielt sværere at omstøde en tidligere transaktion ved at sætte krav om, at alle følgende blokke fra denne transaktion skal genskrives.</p>
-
-<h3 id="hvad-behoever-jeg-for-at-begynde-at-mine">Hvad behøver jeg for at begynde at mine?</h3>
-<p>I Bitcoins tidlige dage kunne enhver finde en ny blok ved hjælp af deres computers CPU. Efterhånden som flere og flere begyndte at mine, steg sværhedsgraden på at finde nye blokke meget, indtil det punkt hvor den mest omkostningseffektive mining-metode er at bruge specialiseret hardware. Du kan besøge <a href="http://www.bitcoinmining.com/">BitcoinMining.com</a> for mere information.</p>
-
-<h2 id="sikkerhed">Sikkerhed</h2>
-
-<h3 id="er-bitcoin-sikkert">Er Bitcoin sikkert?</h3>
-<p>Bitcoin-teknologien – protokollen og kryptografien – har en stærk historik, hvad angår sikkerhed, og Bitcoin-netværket er formentlig det største distribuerede computerprojekt i verden. Bitcoins mest almindelige sårbarhed ligger i brugerfejl. Filer med Bitcoin-tegnebøger, som opbevarer de nødvendige private nøgler, kan blive slettet ved en fejl, mistet eller stjålet. Dette er meget lig fysiske kontanter, dog gemt i digital form. Heldigvis kan brugere implementere sunde <a href="/da/sikr-din-tegnebog">sikkerhedsprocedurer</a> for at beskytte deres penge og bruge tjenesteudbydere, som tilbyder et godt sikkerheds- og forsikringsniveau imod tyvery og tab.</p>
-
-<h3 id="er-bitcoin-ikke-blevet-hacket-i-fortiden">Er Bitcoin ikke blevet hacket i fortiden?</h3>
-<p>Protokollens regler og den kryptografi, der bruges i Bitcoin, fungerer stadig flere år efter deres skabelse, hvilket er en god indikation på, at konceptet er ordentligt designet. Dog er <a href="/en/alerts">sikkerhedsbrister</a> fundet og løst over tid i forskellige softwareimplementationer. Ligesom med alle andre typer software afhænger sikkerheden ved Bitcoin-software på den hastighed, som problemer bliver fundet og rettet med. Jo mere sådanne problemer opdages, jo mere modner Bitcoin.</p>
-<p>Der er ofte misforståelser om tyverier og sikkerhedsbrister, som er sket på diverse børser og virksomheder. Selvom disse hændelser er uheldige, involverer ingen af dem, at Bitcoin selv er blevet hacket, ej heller påpeger de fejl, der kan tilskrives Bitcoin; på samme måde som at et bankrøveri ikke betyder, at den danske krone er blevet kompromitteret. Det er dog korrekt at sige. at et komplet række gode procedurer og intuitive sikkerhedsløsninger er nødvendige for at give brugere en bedre beskyttelse af deres penge, og for at reducere den generelle risiko for tyveri og tab. Henover de seneste få år er sådanne sikkerhedsfunktionaliteter udviklet hurtigt efter hinanden, så som kryptering af tegnebøger, offline-tegnebøger, hardware-tegnebøger og multi-signatur-transaktioner.</p>
-
-<h3 id="kan-brugere-konspirere-mod-bitcoin">Kan brugere konspirere mod Bitcoin?</h3>
-<p>Det er ikke muligt at ændre Bitcoin-protokollen så nemt. Enhver Bitcoin-klient, som ikke overholder regelsættet, kan ikke gennemtvinge deres egne regler hos andre brugere. I følge den aktuelle specifikation er dobbeltspendering ikke muligt på den samme blokkæde, og det er det heller ikke at bruge bitcoin uden en gyldig signatur. Derfor er det ikke muligt at generere ukontrollerede mængder af bitcoin ud af den blå luft, bruge andre brugeres penge, korrupte netværket eller noget lignende.</p>
-<p>Dog ville hovedparten af minerne uafhængigt af hinanden kunne vælge at blokere eller omstøde nylige transaktioner. Hovedparten af brugerne kan også presse på for at få ændringer optaget. Da Bitcoin kun fungerer korrekt med komplet konsensus mellem alle brugere, kan det være meget besværligt at ændre protokollen og kræver at et overvældende flertal af brugerne implementerer ændringerne på en sådan måde, at de resterende brugere stort set ikke har andet valg end at følge trop. Som hovedregel er det svært at forestille sig, hvorfor en Bitcoin-bruger ville vælge at implementere en ændring, der kunne kompromittere vedkommendes egne penge.</p>
-
-<h3 id="er-bitcoin-saarbar-overfor-kvantecomputere">Er Bitcoin sårbar overfor kvantecomputere?</h3>
-<p>Ja, det er generelt de fleste systemer, som afhænger af kryptografi, herunder også traditionelle banksystemer. Men kvantecomputere eksisterer ikke endnu, og kommer sandsynligvis ikke til det foreløbig. I tilfælde af, at kvantecomputere bliver en overhængende trussel mod Bitcoin, så kan protokollen givetvis opgraderes til at være sikker imod kvantekryptografi. Taget en sådan udvikling i betragtning, så er det højest forventeligt, at det vil være et stort fokusområde for alle Bitcoin-udviklere og -brugere.</p>
-
-<h2 id="hjaelp">Hjælp</h2>
-
-<h3 id="mere-hjaelp">Jeg vil gerne lære mere. Hvor kan jeg få hjælp?</h3>
-<p>Du kan finde mere information og hjælp på siderne om <a href="/da/ressourcer">ressourcer</a> og <a href="/da/faellesskab">fællesskaber</a> eller på <a href="https://en.bitcoin.it/wiki/FAQ">Wiki'ens FAQ</a>.</p>
 
       </div>
     </div>
@@ -611,14 +898,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/da/juridisk">Juridisk</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/juridisk">Juridisk</a></li>
 			
-			<li><a href="/da/privatliv">Privatliv</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/privatliv">Privatliv</a></li>
 			
-			<li><a href="/da/presse">Presse</a></li>
-			<li><a href="/da/om-os">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/presse">Presse</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/om-os">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -627,7 +914,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En fællesskabswebside sponsoreret af</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -649,13 +937,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -666,7 +956,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

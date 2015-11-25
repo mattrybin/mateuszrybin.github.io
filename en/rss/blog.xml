@@ -5,8 +5,8 @@
     <description>News about Bitcoin.org</description>
     <link>//</link>
     <atom:link href="//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Oct 2015 00:27:54 +0700</pubDate>
-    <lastBuildDate>Mon, 26 Oct 2015 00:27:54 +0700</lastBuildDate>
+    <pubDate>Wed, 25 Nov 2015 23:44:20 +0700</pubDate>
+    <lastBuildDate>Wed, 25 Nov 2015 23:44:20 +0700</lastBuildDate>
     <generator>Jekyll v1.3.0</generator>
     
       <item>
@@ -181,7 +181,7 @@ Bitcoin Foundation&lt;/a&gt;, we’ve added two major new features to the
 &lt;p&gt;A new &lt;a href=&quot;/en/developer-glossary&quot;&gt;glossary section&lt;/a&gt; has been added to the Bitcoin.org Developer
 Documentation, and with it comes a fully-Javascript search engine that
 helps you look up glossary entries, Bitcoin Core RPCs, Bitcoin BIPs,
-Script-language op codes, and Bitcoin P2P protocol messages.&lt;/p&gt;
+Script-language opcodes, and Bitcoin P2P protocol messages.&lt;/p&gt;
 
 &lt;h2 id=&quot;developer-glossary-main-page&quot;&gt;Developer glossary main page&lt;/h2&gt;
 
@@ -231,7 +231,7 @@ they appear in the search:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Glossary entries (Bitcoin.org)&lt;/li&gt;
   &lt;li&gt;RPCs  (Bitcoin.org)&lt;/li&gt;
-  &lt;li&gt;Op codes (Bitcoin Wiki)&lt;/li&gt;
+  &lt;li&gt;Opcodes (Bitcoin Wiki)&lt;/li&gt;
   &lt;li&gt;BIPs (just notable and non-withdrawn BIPs; GitHub.com BIPs repo)&lt;/li&gt;
   &lt;li&gt;Bitcoin P2P protocol messages (Bitcoin.org)&lt;/li&gt;
 &lt;/ul&gt;

@@ -10,15 +10,29 @@
 <title>支持比特币 - 比特币</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
+          <img src="/img/flags/zh_CN.png"><strong>简体中文</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">常见问题</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>支持比特币</h1>
-<p class="summarytxt">比特币是在一个小型线上社区诞生的协议，之后成长迅速。随着时间的推移，有很多你能做的事情可以帮助比特币的传播和改进。</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">支持比特币</h1>
+  <h2 class="content_support-bitcoin--subtitle">比特币是在一个小型线上社区诞生的协议，之后成长迅速。随着时间的推移，有很多你能做的事情可以帮助比特币的传播和改进。</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />使用比特币</h2>
-<p>你可以为支持比特币所做的第一件事就是<a href="/zh_CN/getting-started">使用比特币</a>。通常在很多情况下比特币都能让你的生活更轻松。你可以使用比特币接受付款和购买商品。</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">使用比特币</h3>
+      <p>你可以为支持比特币所做的第一件事就是<a href="/zh_CN/getting-started">使用比特币</a>。通常在很多情况下比特币都能让你的生活更轻松。你可以使用比特币接受付款和购买商品。</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />成为比特币网络的一部分</h2>
-<p>如果你有一个很好的网络连接，你可以通过保持<a href="/zh_CN/download">完全节点软件</a>在你的电脑或服务器上的运行，同时保持端口 8333 处于开放状态来加强比特币网络。完全节点传送所有的交易并保证交易安全。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">成为比特币网络的一部分</h3>
+      <p>如果你有一个很好的网络连接，你可以通过保持<a href="/zh_CN/download">完全节点软件</a>在你的电脑或服务器上的运行，同时保持端口 8333 处于开放状态来加强比特币网络。完全节点传送所有的交易并保证交易安全。</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />挖矿</h2>
-<p>您可以开始通过<a href="http://www.bitcoinmining.com/">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 <a href="http://mempool.info/pools">较小的矿池</a>并且优先考虑去中心化的矿池比如<a href="http://p2pool.in/">P2Pool</a>或者支持块模板(GBT)的<a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">矿池</a>。 </p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">挖矿</h3>
+      <p>您可以开始通过<a href="http://www.bitcoinmining.com/">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 <a href="http://mempool.info/pools">较小的矿池</a>并且优先考虑去中心化的矿池比如<a href="http://p2pool.in/">P2Pool</a>或者支持块模板(GBT)的<a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">矿池</a>。 </p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />翻译</h2>
-<p>你可以在比特币生态系统中的重要组成部分内，通过翻译或改进现有的翻译来帮助比特币提高可用性。挑一个你想要帮忙的项目吧。</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />开发</h2>
-<p>比特币是开源的。如果你是一个开发者，你可以施展你的超能力来做对比特币有利的事和<a href="/zh_CN/development">改进比特币</a>，或者，你也可以打造出使用比特币的令人惊叹的服务或软件。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">翻译</h3>
+      <p>你可以在比特币生态系统中的重要组成部分内，通过翻译或改进现有的翻译来帮助比特币提高可用性。挑一个你想要帮忙的项目吧。</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />捐赠</h2>
-<p>最简单的帮助方式是<a href="https://bitcoinfoundation.org/about/donate/">捐赠</a>一些比特币给比特币基金会。或是资助你认为在将来会有所帮助的有关比特币的项目。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">开发</h3>
+      <p>比特币是开源的。如果你是一个开发者，你可以施展你的超能力来做对比特币有利的事和<a href="/zh_CN/development">改进比特币</a>，或者，你也可以打造出使用比特币的令人惊叹的服务或软件。</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />组织</h2>
-<p> <a href="https://bitcoinfoundation.org/">比特币基金会</a>和许多其它 <a href="/zh_CN/community#non-profit">非盈利组织</a>致力于保护和宣传比特币。你可以通过加入这些组织并参与他们的项目，讨论和活动来帮助他们。 </p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">捐赠</h3>
+      <p>最简单的帮助方式是<a href="https://bitcoinfoundation.org/about/donate/">捐赠</a>一些比特币给比特币基金会。或是资助你认为在将来会有所帮助的有关比特币的项目。</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />传播</h2>
-<p>同感兴趣的人谈论比特币，在你的博客中撰写关于它的文章，告诉你喜爱的商店你想用比特币来支付，协助更新<a href="http://usebitcoins.info/">商户名录</a>，或者发挥创造力为你自己做一件漂亮的比特币T恤。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">组织</h3>
+      <p> <a href="https://bitcoinfoundation.org/">比特币基金会</a>和许多其它 <a href="/zh_CN/community#non-profit">非盈利组织</a>致力于保护和宣传比特币。你可以通过加入这些组织并参与他们的项目，讨论和活动来帮助他们。 </p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />文档</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> 和 <a href="https://en.bitcoin.it/">比特币维基</a>提供有用的文档， 我们还在不断改进它们所包含的信息。你可以协助改进这些资源并使它们保持更新。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">传播</h3>
+      <p>同感兴趣的人谈论比特币，在你的博客中撰写关于它的文章，告诉你喜爱的商店你想用比特币来支付，协助更新<a href="http://usebitcoins.info/">商户名录</a>，或者发挥创造力为你自己做一件漂亮的比特币T恤。</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />和社区见见面</h2>
-<p>你可以加入到<a href="/zh_CN/community">比特币社区</a>中与其他比特币爱好者交谈。你每天都能了解更多关于比特币的知识、帮助新用户，也可以参与到有趣的项目中来。</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">文档</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> 和 <a href="https://en.bitcoin.it/">比特币维基</a>提供有用的文档， 我们还在不断改进它们所包含的信息。你可以协助改进这些资源并使它们保持更新。</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">和社区见见面</h3>
+      <p>你可以加入到<a href="/zh_CN/community">比特币社区</a>中与其他比特币爱好者交谈。你每天都能了解更多关于比特币的知识、帮助新用户，也可以参与到有趣的项目中来。</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/zh_CN/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/legal">法律</a></li>
 			
-			<li><a href="/zh_CN/privacy">隐私</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/privacy">隐私</a></li>
 			
-			<li><a href="/zh_CN/press">新闻媒体</a></li>
-			<li><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/press">新闻媒体</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/zh_CN/about-us">关于bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>社区网站主办方：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

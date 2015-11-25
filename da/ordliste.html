@@ -10,15 +10,29 @@
 <title>Ordliste – Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/da.png"><strong>Dansk</strong>
+          <img src="/img/flags/da.png"><strong>Dansk</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Nogle Bitcoin-ord, du sikkert hører</h1>
-<p class="summarytxt">Bitcoin giver en ny tilgang til betalinger og, som sådan, er der nogle nye ord, som kan blive en del af dit ordforråd. Fortvivl ej, selv det nu ydmyge tv skable nye ord!</p>
-<h2 id="table-of-contents">Indhold</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Nogle Bitcoin-ord, du sikkert hører</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin giver en ny tilgang til betalinger og, som sådan, er der nogle nye ord, som kan blive en del af dit ordforråd. Fortvivl ej, selv det nu ydmyge tv skable nye ord!</h2>
 
-<div class="index">
-
-<a href="#adresse">Adresse</a>
-
-<a href="#bekraeftelse">Bekræftelse (confirmation)</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blok">Blok (block)</a>
-
-<a href="#blokkaede">Blokkæde (block chain)</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#dobbeltspendering">Dobbeltspendering (double spend)</a>
-
-<a href="#hashrate">Hashrate (Hash rate)</a>
-
-<a href="#kryptografi">Kryptografi</a>
-
-<a href="#mining">Mining</a>
-
-<a href="#p2p">P2P</a>
-
-<a href="#privat-noegle">Privat nøgle (private key)</a>
-
-<a href="#signatur">Signatur</a>
-
-<a href="#tegnebog">Tegnebog (wallet)</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="adresse">Adresse</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>En Bitcoin-adresse er at <b>ligestille med en fysisk adresse eller en email-adresse</b>. Den er den eneste information, du behøver at give til en person, for at vedkommende kan betale dig med Bitcoin. En vigtig forskel er dog, at hver adresse kun bør bruges til en enkelt transaktion.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bekraeftelse">Bekræftelse (confirmation)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bekræftelse betyder, at en transaktion er blevet <b>bearbejdet af netværket og er yderst usandsynlig kandidat til at blive afvist</b>. Transaktioner modtager en bekræftelse, når de inkluderes i en <a href="/da/ordliste#blok">blok</a> og for hver efterfølgende blok. Selv en enkelt bekræftelse kan opfattes som sikker for transaktioner med lav værdi, mens det for større beløb, som fx 10.000 kroner, giver mening at vente på 6 bekræftelser eller mere. Hver bekræftelse forringer <i>eksponentielt</i> risikoen for en afvist transaktion.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bit er en udbredt enhed, der bruges til at angive en underenhed af en bitcoin – 1.000.000 bit er lig med 1 bitcoin (BTC eller B⃦). Denne enhed er for det meste mere belejlig til angivelse af drikkepenge og pricer på varer og services.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin – skrevet med stort begyndelsesbogstav – bruges når begrebet Bitcoin eller selve netværket beskrives. Fx: "Jeg lærte noget om Bitcoin-protokollen i dag."<br>bitcoin – skrevet med småt – bruges til at beskrive bitcoin som enhed eller konto. Fx: "Jeg sendte to bitcoin i dag." Det forkortes ofte BTC eller XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blok">Blok (block)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>En blok er en <b>fortegnelse i blokkæden, som indeholder og bekræfter mange ventende transaktioner</b>. Omtrent hvert 10. minut gennemsnitligt bliver en ny blok, der indeholder transaktioner, føjet til <a href="#blokkaede">blokkæden</a> ved hjælp af <a href="#mining">mining</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blokkaede">Blokkæde (block chain)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Blokkæden er en <b>offentlig optegnelse over Bitcoin-transaktioner</b> i kronologisk rækkefølge. Blokkæden deles mellem alle Bitcoin-brugere. Den bruges til at verificere bestandigheden af Bitcoin-transaktioner og til at forhindre  <a href="#dobbeltspendering">dobbeltspendering</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC er en udbredt enhed, der bruges til at angive én bitcoin (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="dobbeltspendering">Dobbeltspendering (double spend)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Hvis en ondsindet bruger prøver at <b>sende sine bitcoin til to forskellige modtagere på samme tid</b>, kaldes dette dobbeltspendering. Bitcoin-<a href="#mining">mining</a> og <a href="#blokkaede">blokkæden</a> er der for at skabe enighed i netværket om hvilken en af de to transaktioner, der vil blive bekræftet og opfattes som gyldig.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hashrate">Hashrate (Hash rate)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Hashraten er <b>måleenheden for Bitcoin-netværkets beregningskraft</b>. Bitcoin-netværket skal lave intensive matematiske beregninger af sikkerhedsgrunde. Da netværket nåede en hashrate på 10 Th/s, betød det, at det kunne udføre 10 billioner beregninger per sekund.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="kryptografi">Kryptografi</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Kryptografi er den gren af matematikken, der lader os oprette <b>matematiske beviser, som giver et højt niveau af sikkerhed</b>. Onlinehandel og bankverdenen bruger allerede kryptografi. I Bitcoins tilfælde bruges kryptogafi til at gøre det umuligt for nogen at bruge penge fra en anden brugers tegnebog eller at ødelægge <a href="#blokkaede">blokkæden</a>. Det kan også bruges til at kryptere en tegnebog, så den ikke kan bruges uden et kodeord.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">Mining</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin-mining er det at <b>få computer-hardware til at lave matematiske beregninger for Bitcoin-netværket for at bekræfte transaktioner</b> og øge sikkerheden. Som en gevinst for deres tjenester kan Bitcoin-minere samle transaktionsgebyrer for de transaktioner, de bekræfter, sammen med nyligt skabte bitcoin. Mining er et specialiseret og konkurrencepræget marked, hvor gevinster deles op, efter hvor megen beregning man udfører. De færreste Bitcoin-brugere udfører Bitcoin-mining, og det er ikke en let måde at tjene penge.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bruger-til-bruger (peer-to-peer) refererer til <b>systemer, som arbejder som en organiseret samling</b> ved at tillade hvert individ at interagere direkte med andre. I Bitcoins tilfælde er netværket opbygget på en sådan måde, at hver bruger rundsender transaktionerne fra andre brugere. Og, afgørende, ingen bank kræves som tredjepart.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="privat-noegle">Privat nøgle (private key)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>En privat nøgle er et <b>hemmeligt stykke data, som beviser din ret til at bruge bitcoin fra en bestemt tegnebog</b> ved hjælp af en kryptografisk <a href="#signatur">signatur</a>. Din(e) private nøgle(r) gemmes på din computer, hvis du bruger en software-tegnebog, og de gemmes på en fjernserver, hvis du bruger en nettegnebog. Private nøgler må aldrig afsløres, da de tillader dig at bruge bitcoin fra deres respektive Bitcoin-tegnebog.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="signatur">Signatur</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>En <a href="#kryptografi">kryptografisk</a> signatur er <b>en matematisk mekanisme, som tillader en person at bevise ejerskab</b>. I Bitcoins tilfælde sammenkædes en <a href="#tegnebog">Bitcoin-tegnebog</a> med dens <a href="#privat-noegle">private nøgle(r)</a> ved hjælp af matematisk magi. Når din Bitcoin-software signerer en transaktion med den rigtige private nøgle, kan hele netværket se, at signaturen stemmer overens med de bitcoin, der bliver spenderet. Dog er der ingen mulighed for hele verden at gætte din private nøgle for at stjæle dine hårdttjente bitcoin.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="tegnebog">Tegnebog (wallet)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>En Bitcoin-tegnebog er løseligt <b>det samme som en fysisk tegnebog i Bitcoin-netværket</b>. Tegnebogen indeholder automatisk din(e) <a href="#privat-noegle">private nøgle(r)</a>, som tillader dig at bruge de bitcoin, der er associeret med tegnebogen i <a href="#blokkaede">blokkæden</a>. Hver Bitcoin-tegnebog kan vise dig den totale saldo af alle bitcoin, den har kontrol over, og lader dig betale et specificeret beløb til en specificeret person, lige som en rigtig tegnebog. Dette er til forskel fra kreditkort, hvor beløb opkræves af den handelsdrivende.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="adresse">Adresse</h2>
-<p>En Bitcoin-adresse er at <b>ligestille med en fysisk adresse eller en email-adresse</b>. Den er den eneste information, du behøver at give til en person, for at vedkommende kan betale dig med Bitcoin. En vigtig forskel er dog, at hver adresse kun bør bruges til en enkelt transaktion.</p>
-
-<h2 id="bekraeftelse">Bekræftelse (confirmation)</h2>
-<p>Bekræftelse betyder, at en transaktion er blevet <b>bearbejdet af netværket og er yderst usandsynlig kandidat til at blive afvist</b>. Transaktioner modtager en bekræftelse, når de inkluderes i en <a href="/da/ordliste#blok">blok</a> og for hver efterfølgende blok. Selv en enkelt bekræftelse kan opfattes som sikker for transaktioner med lav værdi, mens det for større beløb, som fx 10.000 kroner, giver mening at vente på 6 bekræftelser eller mere. Hver bekræftelse forringer <i>eksponentielt</i> risikoen for en afvist transaktion.</p>
-
-<h2 id="bit">Bit</h2>
-<p>Bit er en udbredt enhed, der bruges til at angive en underenhed af en bitcoin – 1.000.000 bit er lig med 1 bitcoin (BTC eller B⃦). Denne enhed er for det meste mere belejlig til angivelse af drikkepenge og pricer på varer og services.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Bitcoin – skrevet med stort begyndelsesbogstav – bruges når begrebet Bitcoin eller selve netværket beskrives. Fx: "Jeg lærte noget om Bitcoin-protokollen i dag."<br>bitcoin – skrevet med småt – bruges til at beskrive bitcoin som enhed eller konto. Fx: "Jeg sendte to bitcoin i dag." Det forkortes ofte BTC eller XBT.</p>
-
-<h2 id="blok">Blok (block)</h2>
-<p>En blok er en <b>fortegnelse i blokkæden, som indeholder og bekræfter mange ventende transaktioner</b>. Omtrent hvert 10. minut gennemsnitligt bliver en ny blok, der indeholder transaktioner, føjet til <a href="#blokkaede">blokkæden</a> ved hjælp af <a href="#mining">mining</a>.</p>
-
-<h2 id="blokkaede">Blokkæde (block chain)</h2>
-<p>Blokkæden er en <b>offentlig optegnelse over Bitcoin-transaktioner</b> i kronologisk rækkefølge. Blokkæden deles mellem alle Bitcoin-brugere. Den bruges til at verificere bestandigheden af Bitcoin-transaktioner og til at forhindre  <a href="#dobbeltspendering">dobbeltspendering</a>.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC er en udbredt enhed, der bruges til at angive én bitcoin (B⃦).</p>
-
-<h2 id="dobbeltspendering">Dobbeltspendering (double spend)</h2>
-<p>Hvis en ondsindet bruger prøver at <b>sende sine bitcoin til to forskellige modtagere på samme tid</b>, kaldes dette dobbeltspendering. Bitcoin-<a href="#mining">mining</a> og <a href="#blokkaede">blokkæden</a> er der for at skabe enighed i netværket om hvilken en af de to transaktioner, der vil blive bekræftet og opfattes som gyldig.</p>
-
-<h2 id="hashrate">Hashrate (Hash rate)</h2>
-<p>Hashraten er <b>måleenheden for Bitcoin-netværkets beregningskraft</b>. Bitcoin-netværket skal lave intensive matematiske beregninger af sikkerhedsgrunde. Da netværket nåede en hashrate på 10 Th/s, betød det, at det kunne udføre 10 billioner beregninger per sekund.</p>
-
-<h2 id="kryptografi">Kryptografi</h2>
-<p>Kryptografi er den gren af matematikken, der lader os oprette <b>matematiske beviser, som giver et højt niveau af sikkerhed</b>. Onlinehandel og bankverdenen bruger allerede kryptografi. I Bitcoins tilfælde bruges kryptogafi til at gøre det umuligt for nogen at bruge penge fra en anden brugers tegnebog eller at ødelægge <a href="#blokkaede">blokkæden</a>. Det kan også bruges til at kryptere en tegnebog, så den ikke kan bruges uden et kodeord.</p>
-
-<h2 id="mining">Mining</h2>
-<p>Bitcoin-mining er det at <b>få computer-hardware til at lave matematiske beregninger for Bitcoin-netværket for at bekræfte transaktioner</b> og øge sikkerheden. Som en gevinst for deres tjenester kan Bitcoin-minere samle transaktionsgebyrer for de transaktioner, de bekræfter, sammen med nyligt skabte bitcoin. Mining er et specialiseret og konkurrencepræget marked, hvor gevinster deles op, efter hvor megen beregning man udfører. De færreste Bitcoin-brugere udfører Bitcoin-mining, og det er ikke en let måde at tjene penge.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Bruger-til-bruger (peer-to-peer) refererer til <b>systemer, som arbejder som en organiseret samling</b> ved at tillade hvert individ at interagere direkte med andre. I Bitcoins tilfælde er netværket opbygget på en sådan måde, at hver bruger rundsender transaktionerne fra andre brugere. Og, afgørende, ingen bank kræves som tredjepart.</p>
-
-<h2 id="privat-noegle">Privat nøgle (private key)</h2>
-<p>En privat nøgle er et <b>hemmeligt stykke data, som beviser din ret til at bruge bitcoin fra en bestemt tegnebog</b> ved hjælp af en kryptografisk <a href="#signatur">signatur</a>. Din(e) private nøgle(r) gemmes på din computer, hvis du bruger en software-tegnebog, og de gemmes på en fjernserver, hvis du bruger en nettegnebog. Private nøgler må aldrig afsløres, da de tillader dig at bruge bitcoin fra deres respektive Bitcoin-tegnebog.</p>
-
-<h2 id="signatur">Signatur</h2>
-<p>En <a href="#kryptografi">kryptografisk</a> signatur er <b>en matematisk mekanisme, som tillader en person at bevise ejerskab</b>. I Bitcoins tilfælde sammenkædes en <a href="#tegnebog">Bitcoin-tegnebog</a> med dens <a href="#privat-noegle">private nøgle(r)</a> ved hjælp af matematisk magi. Når din Bitcoin-software signerer en transaktion med den rigtige private nøgle, kan hele netværket se, at signaturen stemmer overens med de bitcoin, der bliver spenderet. Dog er der ingen mulighed for hele verden at gætte din private nøgle for at stjæle dine hårdttjente bitcoin.</p>
-
-<h2 id="tegnebog">Tegnebog (wallet)</h2>
-<p>En Bitcoin-tegnebog er løseligt <b>det samme som en fysisk tegnebog i Bitcoin-netværket</b>. Tegnebogen indeholder automatisk din(e) <a href="#privat-noegle">private nøgle(r)</a>, som tillader dig at bruge de bitcoin, der er associeret med tegnebogen i <a href="#blokkaede">blokkæden</a>. Hver Bitcoin-tegnebog kan vise dig den totale saldo af alle bitcoin, den har kontrol over, og lader dig betale et specificeret beløb til en specificeret person, lige som en rigtig tegnebog. Dette er til forskel fra kreditkort, hvor beløb opkræves af den handelsdrivende.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/da/juridisk">Juridisk</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/juridisk">Juridisk</a></li>
 			
-			<li><a href="/da/privatliv">Privatliv</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/privatliv">Privatliv</a></li>
 			
-			<li><a href="/da/presse">Presse</a></li>
-			<li><a href="/da/om-os">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/presse">Presse</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/om-os">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En fællesskabswebside sponsoreret af</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

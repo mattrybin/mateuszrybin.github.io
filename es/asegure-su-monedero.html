@@ -10,15 +10,29 @@
 <title>Aseguramiento de su monedero - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/es.png"><strong>Español</strong>
+          <img src="/img/flags/es.png"><strong>Español</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Asegurando tu billetera</h1>
-<p class="summarytxt">Al igual que en la vida real, su monedero debe estar protegido. Bitcoin permite transferir dinero a cualquier lugar fácilmente y le permite tener el control sobre su dinero. Estas grandes características también conllevan riesgos de seguridad. Al mismo tiempo, Bitcoin ofrece altos niveles de seguridad si se usa correctamente. <b>Recuerde siempre que es su responsabilidad adoptar las medidas adecuadas para proteger su dinero</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Asegurando tu billetera</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Al igual que en la vida real, su monedero debe estar protegido. Bitcoin permite transferir dinero a cualquier lugar fácilmente y le permite tener el control sobre su dinero. Estas grandes características también conllevan riesgos de seguridad. Al mismo tiempo, Bitcoin ofrece altos niveles de seguridad si se usa correctamente. <b>Recuerde siempre que es su responsabilidad adoptar las medidas adecuadas para proteger su dinero</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Tenga cuidado con servicios en línea</h2>
-<p>Debe ser cuidadoso con cualquier servicio que guarde sus monedas online. Muchas casas de cambio y monederos online han tenido fallos de seguridad y no son una opción lo suficientemente segura para que guarde sus monedas como si de un banco se tratara. Por lo tanto, debería usar otros tipos de <a href="/es/elige-tu-monedero">monederos Bitcoin</a>. Si no, intente elegir estos servicios con mucho cuidado. Adicionalmente, se recomienda usar una autenticación de dos factores.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Tenga cuidado con servicios en línea</h3>
+		  <p>Debe ser cuidadoso con cualquier servicio que guarde sus monedas online. Muchas casas de cambio y monederos online han tenido fallos de seguridad y no son una opción lo suficientemente segura para que guarde sus monedas como si de un banco se tratara. Por lo tanto, debería usar otros tipos de <a href="/es/elige-tu-monedero">monederos Bitcoin</a>. Si no, intente elegir estos servicios con mucho cuidado. Adicionalmente, se recomienda usar una autenticación de dos factores.</p>
+		</li>
 
-<h2 id="everyday">Pequeñas cantidades para uso diario</h2>
-<p>Un monedero Bitcoin es como un monedero con dinero real. Por el mismo motivo que no guardaría mil dólares en efectivo en su bolsillo, tiene que tener el mismo cuidado con su monedero Bitcoin. En general, es aconsejable tener en su ordenador, móvil o servidor sólo pequeñas cantidades para uso diario y tener el resto de sus fondos en un lugar más seguro.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Pequeñas cantidades para uso diario</h3>
+		  <p>Un monedero Bitcoin es como un monedero con dinero real. Por el mismo motivo que no guardaría mil dólares en efectivo en su bolsillo, tiene que tener el mismo cuidado con su monedero Bitcoin. En general, es aconsejable tener en su ordenador, móvil o servidor sólo pequeñas cantidades para uso diario y tener el resto de sus fondos en un lugar más seguro.</p>
+		</li>
 
-<h2 id="backup">Realiza una copia de seguridad de tu billetera.</h2>
-<p>Si la guarda en un lugar seguro, la copias de seguridad de su monedero le puede proteger contra fallos de su ordenador o humanos. También le permite recuperar su monedero si le roban su móvil u ordenador, siempre que tenga su monedero encriptado.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Realiza una copia de seguridad de tu billetera.</h3>
+		  <p>Si la guarda en un lugar seguro, la copias de seguridad de su monedero le puede proteger contra fallos de su ordenador o humanos. También le permite recuperar su monedero si le roban su móvil u ordenador, siempre que tenga su monedero encriptado.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Realiza una copia de seguridad completa de tu billera</h3>
+		  		<p>Algunos monederos usan internamente muchas claves privadas. Si solo tienes una copia de seguridad de las claves privadas de tus direcciones Bitcoin, tal vez no seas capaz de recuperar una gran parte de tus fondos con esa copia de seguridad.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Encripte sus copias de seguridad en linea</h3>
+		  		<p>Cualquier copia de seguridad que sea almacenada en línea es altamente vulnerable a robos. Incluso un computador que esté conectado a internet es vulnerable a software malicioso. Por lo tanto, encriptar cualquier copia de seguridad que esté expuesta a la red es una buena práctica de seguridad.</p>
+		  	</li>
 
-<h3 id="backupwhole">Realiza una copia de seguridad completa de tu billera</h3>
-<p>Algunos monederos usan internamente muchas claves privadas. Si solo tienes una copia de seguridad de las claves privadas de tus direcciones Bitcoin, tal vez no seas capaz de recuperar una gran parte de tus fondos con esa copia de seguridad.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Use muchas ubicaciones seguras</h3>
+		  		<p>Los puntos únicos de falla son malos para la seguridad. Si su copia de seguridad no depende de una única ubicación, es menos probable que cualquier evento inesperado le impida recuperar su monedero. Podría considerar la posibilidad de utilizar diferentes medios como memorias USB, papeles y CDs.</p>
+		  	</li>
 
-<h3 id="backuponline">Encripte sus copias de seguridad en linea</h3>
-<p>Cualquier copia de seguridad que sea almacenada en línea es altamente vulnerable a robos. Incluso un computador que esté conectado a internet es vulnerable a software malicioso. Por lo tanto, encriptar cualquier copia de seguridad que esté expuesta a la red es una buena práctica de seguridad.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Haga copias de seguridad regularmente</h3>
+		  		<p>Es necesario hacer copias de seguridad de su monedero con regularidad para asegurarse de que todos los cambios recientes de las direcciones Bitcoin y todas la nuevas direcciones Bitcoin que ha creado se incluyan en su copia de seguridad. Sin embargo, todas las aplicaciones pronto usarán monederos que solo necesitan respaldarse una vez.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Use muchas ubicaciones seguras</h3>
-<p>Los puntos únicos de falla son malos para la seguridad. Si su copia de seguridad no depende de una única ubicación, es menos probable que cualquier evento inesperado le impida recuperar su monedero. Podría considerar la posibilidad de utilizar diferentes medios como memorias USB, papeles y CDs.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Encripte su monedero</h3>
+		  <p>La encriptación de su monedero o smartphone le permite establecer una contraseña para cualquiera que intente retirar fondos. Esto ofrece protección contra el robo, aunque no ofrece protección contra sistemas de software o hardware de "keylogging".</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Nunca olvide su contraseña</h3>
+		  		<p>Debe asegurarse de que nunca olvidará su contraseña o perderá sus fondos para siempre. A diferencia de su banco, Bitcoin no cuenta con opciones de recuperación de contraseña. De hecho, debería poder recordar su contraseña después de muchos años sin usarla. En caso de dudas, es posible que quiera mantener una copia en papel de su contraseña en un lugar seguro como una caja fuerte.</p>
+		  	</li>
 
-<h3 id="backupregular">Haga copias de seguridad regularmente</h3>
-<p>Es necesario hacer copias de seguridad de su monedero con regularidad para asegurarse de que todos los cambios recientes de las direcciones Bitcoin y todas la nuevas direcciones Bitcoin que ha creado se incluyan en su copia de seguridad. Sin embargo, todas las aplicaciones pronto usarán monederos que solo necesitan respaldarse una vez.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Use una contraseña fuerte</h3>
+		  		<p>Las contraseñas que tan sólo contengan letras o palabras reconocibles son débiles y fáciles de averiguar. Para que una contraseña sea segura, ésta debe contener letras, números, signos de puntuación y tener, como mínimo, una longitud de 16 caracteres. Las contraseñas consideradas como más seguras son aquellas generadas por programas diseñados para este fin. Las contraseñas seguras son por lo general difíciles de recordar, por lo que debe asegurarse de memorizarlas correctamente.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Monedero fuera de línea para los ahorros</h3>
+		  <p>Un monedero offline, también conocido como almacenamiento en frío, ofrece el mayor nivel de seguridad para sus ahorros. Este sistema consiste en guardar el monedero en un lugar seguro y que no esté conectado a Internet. Cuando se realiza correctamente, este sistema ofrece muy buena protección contra las vulnerabilidades de un ordenador. El uso de un monedero offline junto con copias de seguridad y encriptación también es muy seguro. A continuación verá algunos métodos.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Firmar transacciones fuera de línea</h3>
+		  		<p>Esta técnica implica tener dos computadores compartiendo algunas partes del mismo monedero. El primero debe estar desconectado de cualquier red. Este es el único que tiene el monedero completo y puede firmar transacciones. El segundo computador está conectado a la red y solo tiene un monedero que únicamente puede crear transacciones sin firmar. De esta manera, usted puede registrar nuevas transacciones de forma segura con los siguientes pasos.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Crear una nueva transacción en el ordenador online y guardarla en una memoria USB.</li>
+		  		  <li>Firmar la transacción con el computador fuera de línea.</li>
+		  		  <li>Enviar la transacción firmada con el computador en línea.</li>
+		  		</ol>
+		  		<p>Como el ordenador que está conectado a la red no puede firmar transacciones, este no podría ser utilizado para retirar fondos si se ve comprometido. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> puede ser utilizado para firmar transacciones offline.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Monederos fisicos</h3>
+		  		<p>Las carteras físicas son el mejor equilibrio entre seguridad y facilidad de uso. Son pequeños dispositivos que están diseñados desde la raíz para ser una cartera y nada mas. No se puede instalar software, haciéndolos muy seguros frente a las vulnerabilidades de un ordenador o ladrones de internet. Al permitir hacer copias de seguridad, puedes recuperar tus fondos si pierdes el dispositivo.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Mantenga su software al día</h3>
+		  <p>Usar la versión más reciente de su software de Bitcoin le permite tener importantes actualizaciones de estabilidad y seguridad. Las actualizaciones pueden prevenir problemas de diversa gravedad, incluir nuevas funciones y ayudarle a mantener protegido su monedero. También es importante instalar actualizaciones de otros programas en su ordenador o teléfono móvil para que el entorno de su monedero sea más seguro.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Firma-múltiple para proteger contra robo</h3>
+		  <p>Bitcoin incluye una característica multi-firma que permite a una transacción pedir la firma de más de una clave privada. Actualmente solo usuarios técnicos pueden usarlo pero se espera estar disponible en un futuro. Multi-firma puede, por ejemplo, permitir a una organización dar acceso a la tesorería a sus miembros y permitir una extracción de dinero solo si 3 de los 5 miembros firman la transacción. También permite a los monederos online del futuro compartir una dirección multi-firma con sus usuarios, de manera que un ladrón tenga que comprometer su ordenador y los servidores del monedero online para conseguir robar tus fondos.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Piensa en tu testamento</h3>
+		  <p>Tus bitcoins se pueden perder para siempre si no tienes un plan de respaldo para tus compañeros y familiares. Si la ubicación de tus monederos o tus claves no son conocidas por nadie cuando ya no estés, tus fondos no podrán ser recuperados. Tomarse un poco de tiempo para este tema puede conllevar una gran diferencia.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Encripte su monedero</h2>
-<p>La encriptación de su monedero o smartphone le permite establecer una contraseña para cualquiera que intente retirar fondos. Esto ofrece protección contra el robo, aunque no ofrece protección contra sistemas de software o hardware de "keylogging".</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Nunca olvide su contraseña</h3>
-<p>Debe asegurarse de que nunca olvidará su contraseña o perderá sus fondos para siempre. A diferencia de su banco, Bitcoin no cuenta con opciones de recuperación de contraseña. De hecho, debería poder recordar su contraseña después de muchos años sin usarla. En caso de dudas, es posible que quiera mantener una copia en papel de su contraseña en un lugar seguro como una caja fuerte.</p>
-
-<h3 id="encryptstrong">Use una contraseña fuerte</h3>
-<p>Las contraseñas que tan sólo contengan letras o palabras reconocibles son débiles y fáciles de averiguar. Para que una contraseña sea segura, ésta debe contener letras, números, signos de puntuación y tener, como mínimo, una longitud de 16 caracteres. Las contraseñas consideradas como más seguras son aquellas generadas por programas diseñados para este fin. Las contraseñas seguras son por lo general difíciles de recordar, por lo que debe asegurarse de memorizarlas correctamente.</p>
-
-</div>
-
-<h2 id="offline">Monedero fuera de línea para los ahorros</h2>
-<p>Un monedero offline, también conocido como almacenamiento en frío, ofrece el mayor nivel de seguridad para sus ahorros. Este sistema consiste en guardar el monedero en un lugar seguro y que no esté conectado a Internet. Cuando se realiza correctamente, este sistema ofrece muy buena protección contra las vulnerabilidades de un ordenador. El uso de un monedero offline junto con copias de seguridad y encriptación también es muy seguro. A continuación verá algunos métodos.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Firmar transacciones fuera de línea</a></h3>
-<p>Esta técnica implica tener dos computadores compartiendo algunas partes del mismo monedero. El primero debe estar desconectado de cualquier red. Este es el único que tiene el monedero completo y puede firmar transacciones. El segundo computador está conectado a la red y solo tiene un monedero que únicamente puede crear transacciones sin firmar. De esta manera, usted puede registrar nuevas transacciones de forma segura con los siguientes pasos.</p>
-<ol>
-  <li>Crear una nueva transacción en el ordenador online y guardarla en una memoria USB.</li>
-  <li>Firmar la transacción con el computador fuera de línea.</li>
-  <li>Enviar la transacción firmada con el computador en línea.</li>
-</ol>
-<p>Como el ordenador que está conectado a la red no puede firmar transacciones, este no podría ser utilizado para retirar fondos si se ve comprometido. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> puede ser utilizado para firmar transacciones offline.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Monederos fisicos</a></h3>
-<p>Las carteras físicas son el mejor equilibrio entre seguridad y facilidad de uso. Son pequeños dispositivos que están diseñados desde la raíz para ser una cartera y nada mas. No se puede instalar software, haciéndolos muy seguros frente a las vulnerabilidades de un ordenador o ladrones de internet. Al permitir hacer copias de seguridad, puedes recuperar tus fondos si pierdes el dispositivo.</p>
-</div>
-
-<h2 id="update">Mantenga su software al día</h2>
-<p>Usar la versión más reciente de su software de Bitcoin le permite tener importantes actualizaciones de estabilidad y seguridad. Las actualizaciones pueden prevenir problemas de diversa gravedad, incluir nuevas funciones y ayudarle a mantener protegido su monedero. También es importante instalar actualizaciones de otros programas en su ordenador o teléfono móvil para que el entorno de su monedero sea más seguro.</p>
-
-<h2 id="offlinemulti">Firma-múltiple para proteger contra robo</h2>
-<p>Bitcoin incluye una característica multi-firma que permite a una transacción pedir la firma de más de una clave privada. Actualmente solo usuarios técnicos pueden usarlo pero se espera estar disponible en un futuro. Multi-firma puede, por ejemplo, permitir a una organización dar acceso a la tesorería a sus miembros y permitir una extracción de dinero solo si 3 de los 5 miembros firman la transacción. También permite a los monederos online del futuro compartir una dirección multi-firma con sus usuarios, de manera que un ladrón tenga que comprometer su ordenador y los servidores del monedero online para conseguir robar tus fondos.</p>
-
-<h2 id="offlinetestament">Piensa en tu testamento</h2>
-<p>Tus bitcoins se pueden perder para siempre si no tienes un plan de respaldo para tus compañeros y familiares. Si la ubicación de tus monederos o tus claves no son conocidas por nadie cuando ya no estés, tus fondos no podrán ser recuperados. Tomarse un poco de tiempo para este tema puede conllevar una gran diferencia.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/es/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/es/prensa">Prensa</a></li>
-			<li><a href="/es/sobre-nosotros">Acerca de bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/prensa">Prensa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/es/sobre-nosotros">Acerca de bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Una comunidad web patrocinada por</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Beskyt dit privatliv – Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/da.png"><strong>Dansk</strong>
+          <img src="/img/flags/da.png"><strong>Dansk</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Beskyt dit privatliv</h1>
-<p class="summarytxt">Bitcoin opfattes ofte som et anonymt betalingsnetværk. Men i virkeligheden er Bitcoin vel nok det mest gennemsigtige betalingssystem i verden. På samme tid kan Bitcoin tilbyde et acceptabelt niveau af privatlivsbeskyttelse, når det bruges korrekt. <b>Husk altid, at det er dit ansvar at lære dig selv gode vaner for at beskytte dit privatliv</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Beskyt dit privatliv</h1>
+	<h2 class="content_standard--subtitle">Bitcoin opfattes ofte som et anonymt betalingsnetværk. Men i virkeligheden er Bitcoin vel nok det mest gennemsigtige betalingssystem i verden. På samme tid kan Bitcoin tilbyde et acceptabelt niveau af privatlivsbeskyttelse, når det bruges korrekt. <b>Husk altid, at det er dit ansvar at lære dig selv gode vaner for at beskytte dit privatliv</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Forståelse af Bitcoins sporbarhed</h3>
+      <p>Bitcoin arbejder med et niveau af gennemsigtighed, som er uden fortilfælde, og som de fleste ikke er vant til at arbejde med. Alle Bitcoin-transaktioner er offentlige, sporbare og gemmes permanent i Bitcoin-netværket. Bitcoin-adresser er den eneste information, der bruges til at afgøre, hvor bitcoin er fordelt, og hvortil de bliver sendt. Disse adresser oprettes under private forhold af hver brugers tegnebog. Men når en adresse først er brugt, bliver den forbundet med historikken over alle de transaktioner, den er involveret i. Enhver kan se <a href="https://www.biteasy.com">saldoen og alle transaktioner</a> for enhver adresse. Da brugere normalt er nødt til at afsløre deres identitet for at modtage varer eller tjenester, kan Bitcoin-adresser ikke forblive fuldt ud anonyme. Af disse grunde bør Bitcoin-adresser kun benyttes én gang, og brugere bør være forsigtige med ikke at afsløre deres adresser.</p>
+    </li>
 
-<h2 id="traceable">Forståelse af Bitcoins sporbarhed</h2>
-<p>Bitcoin arbejder med et niveau af gennemsigtighed, som er uden fortilfælde, og som de fleste ikke er vant til at arbejde med. Alle Bitcoin-transaktioner er offentlige, sporbare og gemmes permanent i Bitcoin-netværket. Bitcoin-adresser er den eneste information, der bruges til at afgøre, hvor bitcoin er fordelt, og hvortil de bliver sendt. Disse adresser oprettes under private forhold af hver brugers tegnebog. Men når en adresse først er brugt, bliver den forbundet med historikken over alle de transaktioner, den er involveret i. Enhver kan se <a href="https://www.biteasy.com">saldoen og alle transaktioner</a> for enhver adresse. Da brugere normalt er nødt til at afsløre deres identitet for at modtage varer eller tjenester, kan Bitcoin-adresser ikke forblive fuldt ud anonyme. Af disse grunde bør Bitcoin-adresser kun benyttes én gang, og brugere bør være forsigtige med ikke at afsløre deres adresser.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Brug nye adresser til at modtage betalinger</h3>
+      <p>For at beskytte dit privatliv bør du bruge en ny Bitcoin-adresse, hver gang du modtager en ny betaling. Der ud over kan du bruge flere tegnebøger til forskellige formål. Ved at gøre dette kan du isolere hver af dine transaktioner på en sådan måde, at det ikke er muligt at associere dem alle med hinanden. Personer, der sender dig penge, kan ikke se hvilke andre Bitcoin-adresser, du ejer, og hvad du gør med dem. Dette er nok det vigtigste råd, du bør holde dig for øje.</p>
+    </li>
 
-<h2 id="receive">Brug nye adresser til at modtage betalinger</h2>
-<p>For at beskytte dit privatliv bør du bruge en ny Bitcoin-adresse, hver gang du modtager en ny betaling. Der ud over kan du bruge flere tegnebøger til forskellige formål. Ved at gøre dette kan du isolere hver af dine transaktioner på en sådan måde, at det ikke er muligt at associere dem alle med hinanden. Personer, der sender dig penge, kan ikke se hvilke andre Bitcoin-adresser, du ejer, og hvad du gør med dem. Dette er nok det vigtigste råd, du bør holde dig for øje.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Vær forsigtig med offentlige steder</h3>
+      <p>Med mindre din intention er at modtage offentlige donationer eller betalinger med fuld gennemsigtighed, er det ikke en god idé, hvad angår privatliv, at offentliggøre en Bitcoin-adresse på nogen form for offentligt sted, så som en webside eller socialt netværk. Hvis du vælger at gøre dette, så husk altid at, hvis du flytter penge fra denne adresse til en af dine andre adresser, vil den blive offentligt forbundet til historikken for din offentlige adresse. Der ud over bør du også være forsigtig med ikke at offentliggøre information om dine transaktioner og køb, som kunne lade nogen identificere dine Bitcoin-adresser.</p>
+    </li>
 
-<h2 id="public">Vær forsigtig med offentlige steder</h2>
-<p>Med mindre din intention er at modtage offentlige donationer eller betalinger med fuld gennemsigtighed, er det ikke en god idé, hvad angår privatliv, at offentliggøre en Bitcoin-adresse på nogen form for offentligt sted, så som en webside eller socialt netværk. Hvis du vælger at gøre dette, så husk altid at, hvis du flytter penge fra denne adresse til en af dine andre adresser, vil den blive offentligt forbundet til historikken for din offentlige adresse. Der ud over bør du også være forsigtig med ikke at offentliggøre information om dine transaktioner og køb, som kunne lade nogen identificere dine Bitcoin-adresser.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Din IP-adresse kan blive logført</h3>
+      <p>Da Bitcoin-netværket er et bruger-til-bruger-netværk (P2P), er det muligt at lytte efter transaktioners videresendere og logføre deres IP-adresser. Klienter med komplette knuder videresender alle brugeres transaktioner, ligesom deres egne. Dette betyder, at det kan være svært at finde kilden for en bestemt transaktion, og enhver Bitcoin-knude kan fejlagtigt antages som kilden til en transaktion, selvom den ikke er det. Du bør overveje at skjule din computers IP-adresse med et værktøj som <a href="https://www.torproject.org/">Tor</a>, så den ikke kan logføres.</p>
+    </li>
 
-<h2 id="iplog">Din IP-adresse kan blive logført</h2>
-<p>Da Bitcoin-netværket er et bruger-til-bruger-netværk (P2P), er det muligt at lytte efter transaktioners videresendere og logføre deres IP-adresser. Klienter med komplette knuder videresender alle brugeres transaktioner, ligesom deres egne. Dette betyder, at det kan være svært at finde kilden for en bestemt transaktion, og enhver Bitcoin-knude kan fejlagtigt antages som kilden til en transaktion, selvom den ikke er det. Du bør overveje at skjule din computers IP-adresse med et værktøj som <a href="https://www.torproject.org/">Tor</a>, så den ikke kan logføres.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Begrænsninger for miksertjenester</h3>
+      <p>Onlinetjenester, der kaldes miksertjenester (mixer services) tilbyder at mikse sporbarheden mellem brugere ved at modtage og tilbagesende de samme beløb ved hjælp af uafhængige Bitcoin-adresser. Det er vigtigt at notere sig, at lovligheden ved at bruge en sådan tjeneste kan afvige fra myndighed til myndighed. Sådanne tjenester kræver også, at du har tillid til, at de personer, der kører dem, ikke mister eller stjæler dine penge, og at de ikke holder log over dine forespørgsler. Selv om miksertjenester kan bryde sporbarheden for små beløb, bliver det tiltagende mere besværligt at gøre det samme for større transaktioner.</p>
+    </li>
 
-<h2 id="mixing">Begrænsninger for miksertjenester</h2>
-<p>Onlinetjenester, der kaldes miksertjenester (mixer services) tilbyder at mikse sporbarheden mellem brugere ved at modtage og tilbagesende de samme beløb ved hjælp af uafhængige Bitcoin-adresser. Det er vigtigt at notere sig, at lovligheden ved at bruge en sådan tjeneste kan afvige fra myndighed til myndighed. Sådanne tjenester kræver også, at du har tillid til, at de personer, der kører dem, ikke mister eller stjæler dine penge, og at de ikke holder log over dine forespørgsler. Selv om miksertjenester kan bryde sporbarheden for små beløb, bliver det tiltagende mere besværligt at gøre det samme for større transaktioner.</p>
-
-<h2 id="future">Fremtidige forbedringer</h2>
-<p>Mange forbedringer kan forventes i fremtiden for at forøge privatlivetsbeskyttelsen. For eksempel er der kræfter, der arbejder på at få API'en for betalingsbeskeder til at undgå at forbinde flere adresser under en betaling. Bitcoin Cores byttepengeadresser bliver sandsynligvis implementeret i andre tegnebøger over tid. Grafiske brugerflader kan forbedres for at give brugervenlige betalingsanmodninger og fraråde genbrug af adresser. Diverse forskning og arbejde udføres også for at udvikle andre potentielle udvidede privatlivsfunktionaliteter, så som at være i stand til at samle tilfældige brugeres transaktioner sammen.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Fremtidige forbedringer</h3>
+      <p>Mange forbedringer kan forventes i fremtiden for at forøge privatlivetsbeskyttelsen. For eksempel er der kræfter, der arbejder på at få API'en for betalingsbeskeder til at undgå at forbinde flere adresser under en betaling. Bitcoin Cores byttepengeadresser bliver sandsynligvis implementeret i andre tegnebøger over tid. Grafiske brugerflader kan forbedres for at give brugervenlige betalingsanmodninger og fraråde genbrug af adresser. Diverse forskning og arbejde udføres også for at udvikle andre potentielle udvidede privatlivsfunktionaliteter, så som at være i stand til at samle tilfældige brugeres transaktioner sammen.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/da/juridisk">Juridisk</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/juridisk">Juridisk</a></li>
 			
-			<li><a href="/da/privatliv">Privatliv</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/privatliv">Privatliv</a></li>
 			
-			<li><a href="/da/presse">Presse</a></li>
-			<li><a href="/da/om-os">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/presse">Presse</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/da/om-os">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En fællesskabswebside sponsoreret af</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

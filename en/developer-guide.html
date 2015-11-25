@@ -10,15 +10,29 @@
 <title>Developer Guide - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -200,7 +218,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/en.png"><strong>English</strong>
+          <img src="/img/flags/en.png"><strong>English</strong>
 				</div>
 			</a>
 		</div>
@@ -327,6 +345,7 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
@@ -1115,10 +1134,10 @@ first transaction.  At this point, there should be two copies of Bob’s
   the transaction validation fails. Otherwise it pops the <em>true</em> value off the stack.</p>
         </li>
         <li>
-          <p>Finally, Alice’s <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Called a scriptPubKey in code." class="auto-link">pubkey script</a> executes <a href="/en/developer-reference#term-op-checksig" title="Op code which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a>, which checks the
+          <p>Finally, Alice’s <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Called a scriptPubKey in code." class="auto-link">pubkey script</a> executes <a href="/en/developer-reference#term-op-checksig" title="Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a>, which checks the
 <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> Bob provided against the now-authenticated <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a> he
 also provided. If the <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> matches the <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a> and was
-generated using all of the data required to be signed, <a href="/en/developer-reference#term-op-checksig" title="Op code which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a>
+generated using all of the data required to be signed, <a href="/en/developer-reference#term-op-checksig" title="Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a>
 pushes the value <em>true</em> onto the top of the stack.</p>
         </li>
       </ul>
@@ -1234,30 +1253,30 @@ Signature script: &lt;sig&gt; [sig] [sig...] &lt;redeemScript&gt;
 | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_includes/devdoc/guide_transactions.md%0A%0A">Report Issue</a>
 | <a href="/en/development#devcommunities">Discuss</a></div>
 
-      <p>Although <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig op codes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." class="auto-link">P2SH multisig</a> is now generally used for <a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." class="auto-link">multisig</a> transactions, this base script
+      <p>Although <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig opcodes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." class="auto-link">P2SH multisig</a> is now generally used for <a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." class="auto-link">multisig</a> transactions, this base script
 can be used to require multiple <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> before a <a href="/en/glossary/unspent-transaction-output" title="An Unspent Transaction Output (UTXO) that can be spent as an input in a new transaction." class="auto-link">UTXO</a> can be spent.</p>
 
       <p>In <a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." class="auto-link">multisig</a> <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Called a scriptPubKey in code." class="auto-link">pubkey scripts</a>, called <a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." class="auto-link">m-of-n</a>, <em>m</em> is the <em>minimum</em> number of <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a>
 which must match a <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a>; <em>n</em> is the <em>number</em> of <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> being
-provided. Both <em>m</em> and <em>n</em> should be <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">op codes</a> <code>OP_1</code> through <code>OP_16</code>,
+provided. Both <em>m</em> and <em>n</em> should be <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">opcodes</a> <code>OP_1</code> through <code>OP_16</code>,
 corresponding to the number desired.</p>
 
       <p>Because of an off-by-one error in the original Bitcoin implementation
-which must be preserved for compatibility, <a href="/en/developer-reference#term-op-checkmultisig" title="Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)" class="auto-link"><code>OP_CHECKMULTISIG</code></a>
+which must be preserved for compatibility, <a href="/en/developer-reference#term-op-checkmultisig" title="Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)" class="auto-link"><code>OP_CHECKMULTISIG</code></a>
 consumes one more value from the stack than indicated by <em>m</em>, so the
 list of <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">secp256k1 signatures</a> in the <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Called a scriptSig in code." class="auto-link">signature script</a> must be prefaced with an extra value
 (<code>OP_0</code>) which will be consumed but not used.</p>
 
       <p>The <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Called a scriptSig in code." class="auto-link">signature script</a> must provide <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> in the same order as the
 corresponding <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> appear in the <a href="/en/glossary/pubkey-script" title="A script included in outputs which sets the conditions that must be fulfilled for those satoshis to be spent.  Data for fulfilling the conditions can be provided in a signature script. Called a scriptPubKey in code." class="auto-link">pubkey script</a> or <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem
-script</a>. See the desciption in <a href="/en/developer-reference#term-op-checkmultisig" title="Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"><code>OP_CHECKMULTISIG</code></a>
+script</a>. See the desciption in <a href="/en/developer-reference#term-op-checkmultisig" title="Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"><code>OP_CHECKMULTISIG</code></a>
 for details.</p>
 
       <pre><code>Pubkey script: &lt;m&gt; &lt;A pubkey&gt; [B pubkey] [C pubkey...] &lt;n&gt; OP_CHECKMULTISIG
 Signature script: OP_0 &lt;A sig&gt; [B sig] [C sig...]
 </code></pre>
 
-      <p>Although it’s not a separate transaction type, this is a <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig op codes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." class="auto-link">P2SH multisig</a> with 2-of-3:</p>
+      <p>Although it’s not a separate transaction type, this is a <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig opcodes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." class="auto-link">P2SH multisig</a> with 2-of-3:</p>
 
       <pre><code>Pubkey script: OP_HASH160 &lt;Hash160(redeemScript)&gt; OP_EQUAL
 Redeem script: &lt;OP_2&gt; &lt;A pubkey&gt; &lt;B pubkey&gt; &lt;C pubkey&gt; &lt;OP_3&gt; OP_CHECKMULTISIG
@@ -1311,7 +1330,7 @@ in a <a href="/en/glossary/p2sh-address" title="A Bitcoin payment address compri
 <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a> as valid no matter what the <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> says.
 This allows payment to non-standard scripts, and as of Bitcoin Core
 0.11, almost all valid <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem scripts</a> can be spent. The exception is
-scripts that use unassigned <a href="https://en.bitcoin.it/wiki/Script#Reserved_words">NOP op codes</a>; these <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">op codes</a> are
+scripts that use unassigned <a href="https://en.bitcoin.it/wiki/Script#Reserved_words">NOP opcodes</a>; these <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">opcodes</a> are
 reserved for future <a href="/en/glossary/soft-fork" title="A temporary fork in the block chain which commonly occurs when miners using non-upgraded nodes violate a new consensus rule their nodes don't know about." class="auto-link">soft forks</a> and can only be relayed or mined by nodes
 that don’t follow the standard mempool policy.</p>
 
@@ -1344,8 +1363,8 @@ currently non-standard.</p>
         </li>
         <li>
           <p>The transaction’s <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Called a scriptSig in code." class="auto-link">signature script</a> must only push data to the script
-evaluation stack. It cannot push new <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">OP codes</a>, with the exception of
-<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">OP codes</a> which solely push data to the stack.</p>
+evaluation stack. It cannot push new <a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">opcodes</a>, with the exception of
+<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">opcodes</a> which solely push data to the stack.</p>
         </li>
         <li>
           <p>The transaction must not include any <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">outputs</a> which receive fewer than
@@ -1362,7 +1381,7 @@ Exception: standard null data <a href="/en/glossary/output" title="An output in 
 | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_includes/devdoc/guide_transactions.md%0A%0A">Report Issue</a>
 | <a href="/en/development#devcommunities">Discuss</a></div>
 
-      <p><a href="/en/developer-reference#term-op-checksig" title="Op code which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a> extracts a non-stack argument from each <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> it
+      <p><a href="/en/developer-reference#term-op-checksig" title="Opcode which returns true if a signature signs the correct parts of a transaction and matches a provided public key" class="auto-link"><code>OP_CHECKSIG</code></a> extracts a non-stack argument from each <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> it
 evaluates, allowing the signer to decide which parts of the transaction
 to sign. Since the <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> protects those parts of the transaction
 from modification, this lets signers selectively choose to let other
@@ -1676,12 +1695,12 @@ who should get the <a href="/en/glossary/denominations" title="Denominations of 
 
       <p>To create a multiple-<a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signature</a> (<a href="/en/glossary/multisig" title="A pubkey script that provides *n* number of pubkeys and requires the corresponding signature script provide *m* minimum number signatures corresponding to the provided pubkeys." id="term-multisig" class="term">multisig</a>)
 <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">output</a>, they each give the others a <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public key</a>. Then Bob creates the
-following <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig op codes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." id="term-p2sh-multisig" class="term">P2SH multisig</a> <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a>:</p>
+following <a href="/en/glossary/p2sh-multisig" title="A P2SH output where the redeem script uses one of the multisig opcodes.  Up until Bitcoin Core 0.10.0, P2SH multisig scripts were standard transactions, but most other P2SH scripts were not." id="term-p2sh-multisig" class="term">P2SH multisig</a> <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a>:</p>
 
       <pre><code>OP_2 [A's pubkey] [B's pubkey] [C's pubkey] OP_3 OP_CHECKMULTISIG
 </code></pre>
 
-      <p>(<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">Op codes</a> to push the <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> onto the stack are not shown.)</p>
+      <p>(<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">Opcodes</a> to push the <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> onto the stack are not shown.)</p>
 
       <p><code>OP_2</code> and <code>OP_3</code> push the actual numbers 2 and 3 onto the
 stack. <code>OP_2</code>
@@ -1716,12 +1735,12 @@ his <a href="/en/glossary/signature" title="A value related to a public key whic
       <pre><code>OP_0 [A's signature] [B's or C's signature] [serialized redeem script]
 </code></pre>
 
-      <p>(<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">Op codes</a> to push the <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> and <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> onto the stack are
+      <p>(<a href="/en/glossary/op-code" title="Operation codes from the Bitcoin Script language which push data or perform functions within a pubkey script or signature script." class="auto-link">Opcodes</a> to push the <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> and <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a> onto the stack are
 not shown. <code>OP_0</code> is a workaround for an off-by-one error in the original
 implementation which must be preserved for compatibility.  Note that
 the <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Called a scriptSig in code." class="auto-link">signature script</a> must provide <a href="/en/glossary/signature" title="A value related to a public key which could only have reasonably been created by someone who has the private key that created that public key. Used in Bitcoin to authorize spending satoshis previously sent to a public key." class="auto-link">signatures</a> in the same order as the
 corresponding <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> appear in the <a href="/en/glossary/redeem-script" title="A script similar in function to a pubkey script. One copy of it is hashed to create a P2SH address (used in an actual pubkey script) and another copy is placed in the spending signature script to enforce its conditions." class="auto-link">redeem script</a>.  See the description in
-<a href="/en/developer-reference#term-op-checkmultisig" title="Op code which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"><code>OP_CHECKMULTISIG</code></a> for details.)</p>
+<a href="/en/developer-reference#term-op-checkmultisig" title="Opcode which returns true if one or more provided signatures (m) sign the correct parts of a transaction and match one or more provided public keys (n)"><code>OP_CHECKMULTISIG</code></a> for details.)</p>
 
       <p>When the transaction is broadcast to the <a href="/en/developer-guide#term-network" title="The Bitcoin P2P network which broadcasts transactions and blocks" class="auto-link">network</a>, each <a href="/en/developer-guide#term-peer" title="Peer on the P2P network who receives and broadcasts transactions and blocks" class="auto-link">peer</a> checks the
 <a href="/en/glossary/signature-script" title="Data generated by a spender which is almost always used as variables to satisfy a pubkey script. Called a scriptSig in code." class="auto-link">signature script</a> against the <a href="/en/glossary/p2sh-address" title="A Bitcoin payment address comprising a hashed script, allowing the spender to create a standard pubkey script that Pays To Script Hash (P2SH). The script can be almost any valid pubkey script." class="auto-link">P2SH output</a> Charlie previously paid,
@@ -2250,7 +2269,7 @@ Curve (EC) defined in <a href="http://www.secg.org/sec2-v2.pdf" class="auto-link
 <a href="/en/glossary/public-key" title="The public portion of a keypair which can be used to verify signatures made with the private portion of the keypair." class="auto-link">public keys</a> contain an identification byte, a 32-byte X coordinate, and
 a 32-byte Y coordinate. The extremely simplified illustration below
 shows such a point on the elliptic curve used by Bitcoin,
-x<sup>2</sup> = y<sup>3</sup> + 7, over a field of
+y<sup>2</sup> = x<sup>3</sup> + 7, over a field of
 contiguous numbers.</p>
 
       <p><img src="/img/dev/en-ecdsa-compressed-public-key.svg" alt="Point On ECDSA Curve" /></p>
@@ -4406,6 +4425,25 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
 
     </div>
 </div>
+<a href="#" id="scrollup">Scroll</a>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('#scrollup').fadeIn();
+      } else {
+          $('#scrollup').fadeOut();
+      }
+  });
+
+  $('#scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 400);
+      return false;
+  });
+
+});
+</script>
 </div>
 
       </div>
@@ -4417,14 +4455,14 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/en/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy Policy</a></li>
 			
-			<li><a href="/en/press">Press</a></li>
-			<li><a href="/en/about-us">About bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/about-us">About bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -4433,7 +4471,8 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -4455,13 +4494,15 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -4472,7 +4513,6 @@ both MIT licensed, can interpret GetBlockTemplate for your programs.</p>
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

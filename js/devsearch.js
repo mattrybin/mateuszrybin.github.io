@@ -163,7 +163,7 @@ uri: "/en/glossary/null-data-transaction",
 category: "Glossary"
 },
 {
-label: "Data-pushing op code",
+label: "Data-pushing opcode",
 uri: "/en/glossary/op-code",
 category: "Glossary"
 },
@@ -388,7 +388,7 @@ uri: "/en/glossary/locktime",
 category: "Glossary"
 },
 {
-label: "Non-data-pushing op code",
+label: "Non-data-pushing opcode",
 uri: "/en/glossary/op-code",
 category: "Glossary"
 },
@@ -398,13 +398,13 @@ uri: "/en/glossary/null-data-transaction",
 category: "Glossary"
 },
 {
-label: "Op code",
-uri: "/en/glossary/op-code",
+label: "OP_RETURN transaction",
+uri: "/en/glossary/null-data-transaction",
 category: "Glossary"
 },
 {
-label: "OP_RETURN transaction",
-uri: "/en/glossary/null-data-transaction",
+label: "Opcode",
+uri: "/en/glossary/op-code",
 category: "Glossary"
 },
 {
@@ -1141,572 +1141,572 @@ category: "RPCs"
 {
 label: "OP_0 (OP_FALSE)",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PUSHDATA1",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PUSHDATA2",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PUSHDATA4",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_1NEGATE",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_1 (OP_TRUE)",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_3",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_4",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_5",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_6",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_7",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_8",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_9",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_10",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_11",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_12",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_13",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_14",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_15",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_16",
 uri: "https://en.bitcoin.it/wiki/Script#Constants",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_IF",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOTIF",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ELSE",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ENDIF",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_VERIFY",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RETURN",
 uri: "https://en.bitcoin.it/wiki/Script#Flow_control",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_TOALTSTACK",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_FROMALTSTACK",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_IFDUP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_DEPTH",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_DROP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_DUP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NIP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_OVER",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PICK",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ROLL",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ROT",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SWAP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_TUCK",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2DROP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2DUP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_3DUP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2OVER",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2ROT",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2SWAP",
 uri: "https://en.bitcoin.it/wiki/Script#Stack",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CAT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Splice",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SUBSTR (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Splice",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_LEFT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Splice",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RIGHT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Splice",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SIZE",
 uri: "https://en.bitcoin.it/wiki/Script#Splice",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_INVERT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_AND (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_OR (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_XOR (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_EQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_EQUALVERIFY",
 uri: "https://en.bitcoin.it/wiki/Script#Bitwise_logic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_1ADD",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_1SUB",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2MUL (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_2DIV (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NEGATE",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ABS",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOT",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_0NOTEQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_ADD",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SUB",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_MUL (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_DIV (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_MOD (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_LSHIFT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RSHIFT (disabled)",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_BOOLAND",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_BOOLOR",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NUMEQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NUMEQUALVERIFY",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NUMNOTEQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_LESSTHAN",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_GREATERTHAN",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_LESSTHANOREQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_GREATERTHANOREQUAL",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_MIN",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_MAX",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_WITHIN",
 uri: "https://en.bitcoin.it/wiki/Script#Arithmetic",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RIPEMD160",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SHA1",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_SHA256",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_HASH160",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_HASH256",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CODESEPARATOR",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CHECKSIG",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CHECKSIGVERIFY",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CHECKMULTISIG",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_CHECKMULTISIGVERIFY",
 uri: "https://en.bitcoin.it/wiki/Script#Crypto",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PUBKEYHASH (invalid)",
 uri: "https://en.bitcoin.it/wiki/Script#Pseudo-words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_PUBKEY (invalid)",
 uri: "https://en.bitcoin.it/wiki/Script#Pseudo-words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_INVALIDOPCODE (invalid)",
 uri: "https://en.bitcoin.it/wiki/Script#Pseudo-words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RESERVED (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_VER (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_VERIF (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_VERNOTIF (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RESERVED1 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_RESERVED2 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP1 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP2 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP3 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP4 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP5 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP6 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP7 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP8 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP9 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 {
 label: "OP_NOP10 (reserved)",
 uri: "https://en.bitcoin.it/wiki/Script#Reserved_words",
-category: "Op codes"
+category: "Opcodes"
 },
 
 

@@ -10,15 +10,29 @@
 <title>Szótár - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Néhány Bitcoinnal kapcsolatos kifejezés, amellyel találkozhat</h1>
-<p class="summarytxt">A Bitcoin a kifizetések új megközelítését jelenti, és mint ilyen, néhány új szóval gyarapíthatja szókincsét. Ne aggódjon - még a ma már hétköznapinak számító televízió is új szavakat hívott életre!</p>
-<h2 id="table-of-contents">Tartalomjegyzék</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Néhány Bitcoinnal kapcsolatos kifejezés, amellyel találkozhat</h1>
+  <h2 class="content_vocalbulary--subtitle">A Bitcoin a kifizetések új megközelítését jelenti, és mint ilyen, néhány új szóval gyarapíthatja szókincsét. Ne aggódjon - még a ma már hétköznapinak számító televízió is új szavakat hívott életre!</h2>
 
-<div class="index">
-
-<a href="#alairas">Aláírás</a>
-
-<a href="#banyaszat">Bányászat</a>
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blokk">Blokk</a>
-
-<a href="#blokklanc">Blokklánc</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#cim">Cím</a>
-
-<a href="#dupla-koltes">Dupla költés</a>
-
-<a href="#hasharany">Hasharány</a>
-
-<a href="#kriptografia">Kriptográfia</a>
-
-<a href="#p2p">P2P</a>
-
-<a href="#penztarca">Pénztárca</a>
-
-<a href="#privat-kulcs">Privát kulcs</a>
-
-<a href="#visszaigazolas">Visszaigazolás</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="alairas">Aláírás</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A <a href="#kriptografia">kriptografikus</a> aláírás <b>egy matematikai mechanizmus, amely lehetővé teszi a felhasználók számára a tulajdonjog igazolását</b>. A Bitcoin esetében a <a href="#penztarca">Bitcoin-pénztárca</a> és a hozzá tartozó <a href="#privat-kulcs">privát kulcs(ok)</a> egyfajta matematikai varázslat révén kapcsolódnak össze. Miközben a Bitcoin szoftvere egy tranzakciót ír alá a megfelelő privát kulcs segítségével, a teljes hálózat számára látható, hogy az aláírás megegyezik az elköltött bitcoinokkal. Ugyanakkor lehetetlen kitalálni egy felhasználó privát kulcsát, ily módon pedig ellopni nehezen megszerzett bitcoinjait.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="banyaszat">Bányászat</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A Bitcoin-bányászat folyamata során <b>a számítógép hardverét matematikai műveletek elvégzésére használjuk, a Bitcoin-hálózat tranzakcióinak visszaigazolására</b> és a biztonság növelésére. Szolgálatuk jutalmaként a Bitcoinbányászok az általuk visszaigazolt tranzakciókért tranzakciós díjakat szedhetnek, valamint újonnan létrehozott bitcoinokhoz juthatnak. A bányászat specializált és versenyző piac, ahol a jutalmak az elvégzett számítások arányában kerülnek felosztásra. Nem minden Bitcoin-felhasználó vesz részt a Bitcoin-bányászatban, és ezzel egyáltalán nem egyszerű pénzt keresni.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A bit a bitcoin alegységeinek alapegysége - 1000000 bit alkot egy bitcoint (BTC vagy B⃦) Ezen egység általában kényelmesebben használható kis összegű adományok, termékek és szolgáltatások árazására.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A Bitcoin - nagy kezdőbetűvel - a Bitcoin koncepciójának leírására vagy a teljes hálózat elnevezésére szolgál. Például "Ma a Bitcoin-protokollról tanultam." A bitcoin - kisbetűvel - a bitcoinok, mint mértékegység leírására szolgál. Például: "Ma 10 bitcoint küldtem."; ezenkívül gyakran rövidítik BTC-ként vagy XBT-ként.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blokk">Blokk</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Egy blokk <b>egy olyan elem a blokkláncban, amely tartalmaz és visszaigazol számos várakozó tranzakciót</b>. <a href="#banyaszat">Bányászaton</a> keresztül hozzávetőleg, illetve átlagosan 10 percenként fűződik hozzá egy tranzakciókat tartalmazó, új blokk a <a href="#blokklanc">blokklánchoz</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blokklanc">Blokklánc</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A blokklánc <b>a Bitcoin-tranzakciók nyilvános jegyzéke</b>, időrendi sorrendben. A blokklánchoz az összes Bitcoin-felhasználó hozzáfér. A Bitcoin-tranzakciók folytonosságának megerősítésére, valamint a <a href="#dupla-koltes">dupla költés</a> megelőzésére szolgál.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A BTC a bitcoin alapegysége (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="cim">Cím</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A Bitcoin-cím <b>hasonló egy fizikai vagy e-mail címhez</b>. Ez minden információ, amelyet Önnek a Bitcoin segítségével történő kifizetéshez biztosítania szükséges. Fontos különbség ugyanakkor, hogy egy címet csak egyetlen tranzakcióhoz célszerű használnia.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="dupla-koltes">Dupla költés</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Amennyiben egy tisztességtelen felhasználó kísérletet tesz a <b>bitcoinjai két címzett számára való elköltésének</b>, akkor dupla költés esete áll fent. A <a href="#banyaszat">Bitcoin-bányászat</a> és a <a href="#blokklanc">blokklánc</a> biztosítja a hálózat konszenzusát azzal kapcsolatban, hogy a két tranzakció közül melyik igazolható vissza és tekintető érvényesnek.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hasharany">Hasharány</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A hasharány <b>a Bitcoin-hálózat számítási sebességének mérési egysége</b>. A Bitcoin-hálózatnak biztonsági okokból intenzív matematikai számítások elvégzésére van szüksége. Ha a hálózat eléri a 10 Th/mp hasharányt, akkor másodpercenként 10 billió művelet elvégzésére képes.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="kriptografia">Kriptográfia</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A kriptográfia a matematika azon ága, amely lehetővé teszi számunkra, hogy olyan <b>matematikai bizonyításokat hozzunk létre, amelyek magas szintű biztonságot teremtenek</b>. Az online kereskedelem és bankolás ugyancsak kriptográfiát használ. A Bitcoin esetében a kriptográfiát arra használjuk, hogy lehetetlenné tegyük más felhasználók pénztárcájából való költést, valamint a <a href="#blokklanc">blokklánc</a> károsítását. Ugyanakkor pénztárcák titkosítására is használható, amelyek ily módon nem használhatóak jelszó nélkül.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A peer-to-peer kifejezés <b>olyan rendszereket takar, amelyek szervezett közösségként működnek</b>, lehetőséget teremtve minden egyénnek a közösségi többi tagjával való közvetlen interakcióra. A Bitcoin esetében a hálózat oly módon épül fel, hogy minden felhasználó közvetíti más felhasználók tranzakcióit. Alapvető jellemzője továbbá, hogy nincs szükség bankra harmadik félként.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="penztarca">Pénztárca</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A Bitcoin-pénztárca <b>nagy vonalakban megegyezik a Bitcoin-hálózaton található fizikai pénztárcával</b>. A pénztárca lényegében <a href="#privat-kulcs">privát kulcsát, kulcsait</a> tartalmazza; ez lehetővé teszi a <a href="#blokklanc">blokkláncban</a> hozzájuk kapcsolt bitcoinok elköltését. Minden Bitcoin-pénztárca tartalmazza az általa kezelt bitcoinok teljes egyenlegét, és lehetőséget biztosít arra, hogy meghatározott összeget, meghatározott személynek fizessen ki; éppen úgy mint egy igazi pénztárcával. Ez a folyamat eltérő a hitelkártyáktól, amely esetben a kereskedő terheli meg számláját.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="privat-kulcs">Privát kulcs</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A privát kulcs egy <b>titkos adatcsomag, amely jogot biztosít a bitcoinok egy meghatározott pénztárcából való elköltésére</b> egy kriptografikus <a href="#alairas">aláírás</a> segítségével. Amennyiben szoftverpénztárcát használ, privát kulcsa(i) számítógépén; webes pénztárca esetében pedig egy távoli szerveren tárolódnak. A privát kulcsait soha nem szabad felfednie, mivel lehetővé teszik, hogy a bitcoinok a hozzájuk tartozó Bitcoin-pénztárcából elkölthetőek legyenek.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="visszaigazolas">Visszaigazolás</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>A visszaigazolás azt jelenti, hogy egy tranzakciót <b>feldolgozott a hálózat, valamint igen kevéssé valószínű, hogy visszavonható</b>. A tranzakciók akkor nyernek visszaigazolást, amennyiben hozzáadódnak egy adott <a href="/hu/szotar#blokk">blokkhoz</a>, valamint minden, az adott blokkot megelőző blokkhoz. Egyetlen visszaigazolás is biztonságosnak tekinthető alacsony összegű tranzakciók esetén, azonban nagyobb, például 1000 USD értékű összeg esetén célszerű legalább 6 visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="alairas">Aláírás</h2>
-<p>A <a href="#kriptografia">kriptografikus</a> aláírás <b>egy matematikai mechanizmus, amely lehetővé teszi a felhasználók számára a tulajdonjog igazolását</b>. A Bitcoin esetében a <a href="#penztarca">Bitcoin-pénztárca</a> és a hozzá tartozó <a href="#privat-kulcs">privát kulcs(ok)</a> egyfajta matematikai varázslat révén kapcsolódnak össze. Miközben a Bitcoin szoftvere egy tranzakciót ír alá a megfelelő privát kulcs segítségével, a teljes hálózat számára látható, hogy az aláírás megegyezik az elköltött bitcoinokkal. Ugyanakkor lehetetlen kitalálni egy felhasználó privát kulcsát, ily módon pedig ellopni nehezen megszerzett bitcoinjait.</p>
-
-<h2 id="banyaszat">Bányászat</h2>
-<p>A Bitcoin-bányászat folyamata során <b>a számítógép hardverét matematikai műveletek elvégzésére használjuk, a Bitcoin-hálózat tranzakcióinak visszaigazolására</b> és a biztonság növelésére. Szolgálatuk jutalmaként a Bitcoinbányászok az általuk visszaigazolt tranzakciókért tranzakciós díjakat szedhetnek, valamint újonnan létrehozott bitcoinokhoz juthatnak. A bányászat specializált és versenyző piac, ahol a jutalmak az elvégzett számítások arányában kerülnek felosztásra. Nem minden Bitcoin-felhasználó vesz részt a Bitcoin-bányászatban, és ezzel egyáltalán nem egyszerű pénzt keresni.</p>
-
-<h2 id="bit">Bit</h2>
-<p>A bit a bitcoin alegységeinek alapegysége - 1000000 bit alkot egy bitcoint (BTC vagy B⃦) Ezen egység általában kényelmesebben használható kis összegű adományok, termékek és szolgáltatások árazására.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>A Bitcoin - nagy kezdőbetűvel - a Bitcoin koncepciójának leírására vagy a teljes hálózat elnevezésére szolgál. Például "Ma a Bitcoin-protokollról tanultam." A bitcoin - kisbetűvel - a bitcoinok, mint mértékegység leírására szolgál. Például: "Ma 10 bitcoint küldtem."; ezenkívül gyakran rövidítik BTC-ként vagy XBT-ként.</p>
-
-<h2 id="blokk">Blokk</h2>
-<p>Egy blokk <b>egy olyan elem a blokkláncban, amely tartalmaz és visszaigazol számos várakozó tranzakciót</b>. <a href="#banyaszat">Bányászaton</a> keresztül hozzávetőleg, illetve átlagosan 10 percenként fűződik hozzá egy tranzakciókat tartalmazó, új blokk a <a href="#blokklanc">blokklánchoz</a>.</p>
-
-<h2 id="blokklanc">Blokklánc</h2>
-<p>A blokklánc <b>a Bitcoin-tranzakciók nyilvános jegyzéke</b>, időrendi sorrendben. A blokklánchoz az összes Bitcoin-felhasználó hozzáfér. A Bitcoin-tranzakciók folytonosságának megerősítésére, valamint a <a href="#dupla-koltes">dupla költés</a> megelőzésére szolgál.</p>
-
-<h2 id="btc">BTC</h2>
-<p>A BTC a bitcoin alapegysége (B⃦).</p>
-
-<h2 id="cim">Cím</h2>
-<p>A Bitcoin-cím <b>hasonló egy fizikai vagy e-mail címhez</b>. Ez minden információ, amelyet Önnek a Bitcoin segítségével történő kifizetéshez biztosítania szükséges. Fontos különbség ugyanakkor, hogy egy címet csak egyetlen tranzakcióhoz célszerű használnia.</p>
-
-<h2 id="dupla-koltes">Dupla költés</h2>
-<p>Amennyiben egy tisztességtelen felhasználó kísérletet tesz a <b>bitcoinjai két címzett számára való elköltésének</b>, akkor dupla költés esete áll fent. A <a href="#banyaszat">Bitcoin-bányászat</a> és a <a href="#blokklanc">blokklánc</a> biztosítja a hálózat konszenzusát azzal kapcsolatban, hogy a két tranzakció közül melyik igazolható vissza és tekintető érvényesnek.</p>
-
-<h2 id="hasharany">Hasharány</h2>
-<p>A hasharány <b>a Bitcoin-hálózat számítási sebességének mérési egysége</b>. A Bitcoin-hálózatnak biztonsági okokból intenzív matematikai számítások elvégzésére van szüksége. Ha a hálózat eléri a 10 Th/mp hasharányt, akkor másodpercenként 10 billió művelet elvégzésére képes.</p>
-
-<h2 id="kriptografia">Kriptográfia</h2>
-<p>A kriptográfia a matematika azon ága, amely lehetővé teszi számunkra, hogy olyan <b>matematikai bizonyításokat hozzunk létre, amelyek magas szintű biztonságot teremtenek</b>. Az online kereskedelem és bankolás ugyancsak kriptográfiát használ. A Bitcoin esetében a kriptográfiát arra használjuk, hogy lehetetlenné tegyük más felhasználók pénztárcájából való költést, valamint a <a href="#blokklanc">blokklánc</a> károsítását. Ugyanakkor pénztárcák titkosítására is használható, amelyek ily módon nem használhatóak jelszó nélkül.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>A peer-to-peer kifejezés <b>olyan rendszereket takar, amelyek szervezett közösségként működnek</b>, lehetőséget teremtve minden egyénnek a közösségi többi tagjával való közvetlen interakcióra. A Bitcoin esetében a hálózat oly módon épül fel, hogy minden felhasználó közvetíti más felhasználók tranzakcióit. Alapvető jellemzője továbbá, hogy nincs szükség bankra harmadik félként.</p>
-
-<h2 id="penztarca">Pénztárca</h2>
-<p>A Bitcoin-pénztárca <b>nagy vonalakban megegyezik a Bitcoin-hálózaton található fizikai pénztárcával</b>. A pénztárca lényegében <a href="#privat-kulcs">privát kulcsát, kulcsait</a> tartalmazza; ez lehetővé teszi a <a href="#blokklanc">blokkláncban</a> hozzájuk kapcsolt bitcoinok elköltését. Minden Bitcoin-pénztárca tartalmazza az általa kezelt bitcoinok teljes egyenlegét, és lehetőséget biztosít arra, hogy meghatározott összeget, meghatározott személynek fizessen ki; éppen úgy mint egy igazi pénztárcával. Ez a folyamat eltérő a hitelkártyáktól, amely esetben a kereskedő terheli meg számláját.</p>
-
-<h2 id="privat-kulcs">Privát kulcs</h2>
-<p>A privát kulcs egy <b>titkos adatcsomag, amely jogot biztosít a bitcoinok egy meghatározott pénztárcából való elköltésére</b> egy kriptografikus <a href="#alairas">aláírás</a> segítségével. Amennyiben szoftverpénztárcát használ, privát kulcsa(i) számítógépén; webes pénztárca esetében pedig egy távoli szerveren tárolódnak. A privát kulcsait soha nem szabad felfednie, mivel lehetővé teszik, hogy a bitcoinok a hozzájuk tartozó Bitcoin-pénztárcából elkölthetőek legyenek.</p>
-
-<h2 id="visszaigazolas">Visszaigazolás</h2>
-<p>A visszaigazolás azt jelenti, hogy egy tranzakciót <b>feldolgozott a hálózat, valamint igen kevéssé valószínű, hogy visszavonható</b>. A tranzakciók akkor nyernek visszaigazolást, amennyiben hozzáadódnak egy adott <a href="/hu/szotar#blokk">blokkhoz</a>, valamint minden, az adott blokkot megelőző blokkhoz. Egyetlen visszaigazolás is biztonságosnak tekinthető alacsony összegű tranzakciók esetén, azonban nagyobb, például 1000 USD értékű összeg esetén célszerű legalább 6 visszaigazolást megvárni. Minden egyes visszaigazolás <i>exponenciálisan</i> csökkenti a visszavont tranzakció kockázatát.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

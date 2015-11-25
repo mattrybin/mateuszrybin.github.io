@@ -10,15 +10,29 @@
 <title>Поддержать Биткойн - Биткойн</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ru.png"><strong>Русский</strong>
+          <img src="/img/flags/ru.png"><strong>Русский</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Поддержать Биткойн</h1>
-<p class="summarytxt">Биткойн когда-то зародился в небольшом сообществе, и с тех пор значительно вырос. Есть много вещей, которые вы могли бы сделать, чтобы помочь распространению и развитию Биткойна.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Поддержать Биткойн</h1>
+  <h2 class="content_support-bitcoin--subtitle">Биткойн когда-то зародился в небольшом сообществе, и с тех пор значительно вырос. Есть много вещей, которые вы могли бы сделать, чтобы помочь распространению и развитию Биткойна.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Использование Биткойна</h2>
-<p><a href="/ru/getting-started"> Первое</a>, что вы можете сделать, чтобы помочь Биткойну - это начать пользоваться им. Есть много примеров, где он может упростить вашу жизнь. К тому же, вы сами можете начать принимать платежи в биткойнах.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Использование Биткойна</h3>
+      <p><a href="/ru/getting-started"> Первое</a>, что вы можете сделать, чтобы помочь Биткойну - это начать пользоваться им. Есть много примеров, где он может упростить вашу жизнь. К тому же, вы сами можете начать принимать платежи в биткойнах.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Станьте частью сети Биткойн</h2>
-<p>Если у вас хорошее интернет-подключение, вы можете усилить сеть Биткойн, запуская <a href="/en/full-node">приложение полного узла</a> на своем компьютере с открытым портом 8333. Полные узлы защищают сеть и передают все транзакции.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Станьте частью сети Биткойн</h3>
+      <p>Если у вас хорошее интернет-подключение, вы можете усилить сеть Биткойн, запуская <a href="/en/full-node">приложение полного узла</a> на своем компьютере с открытым портом 8333. Полные узлы защищают сеть и передают все транзакции.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Майнинг</h2>
-<p>Вы можете начать <a href="http://www.bitcoinmining.com/">майнить биткойны</a> чтобы поддержать безопасность транзакций. Для защиты сети, вы можете присоединиться <a href="http://mempool.info/pools">к небольшим пулам</a>, выбрать децентрализованный пул, такой как <a href="http://p2pool.in/">P2Pool</a> или <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">пулы</a> с поддержкой getblocktemplate (GBT).</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Майнинг</h3>
+      <p>Вы можете начать <a href="http://www.bitcoinmining.com/">майнить биткойны</a> чтобы поддержать безопасность транзакций. Для защиты сети, вы можете присоединиться <a href="http://mempool.info/pools">к небольшим пулам</a>, выбрать децентрализованный пул, такой как <a href="http://p2pool.in/">P2Pool</a> или <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">пулы</a> с поддержкой getblocktemplate (GBT).</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Перевод</h2>
-<p>Вы можете помочь увеличить доступность Биткойна, переводя или улучшая переводы внутри важных частей биткойн-экосистемы.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Разработка</h2>
-<p>Биткойн является проектом с открытым исходным кодом. Если вы - программист, вы можете использовать свои супер-способности во имя Добра, <a href="/ru/development">развивая Биткойн</a>. Или создать отличные сервисы и приложения, которые поддерживают Биткойн.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Перевод</h3>
+      <p>Вы можете помочь увеличить доступность Биткойна, переводя или улучшая переводы внутри важных частей биткойн-экосистемы.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Пожертвования</h2>
-<p>Самый простой способ помочь это <a href="https://bitcoinfoundation.org/about/donate/">пожертвовать</a> Bitcoin Foundation несколько биткойнов. Или вы можете напрямую финансировать любой проект относящийся к Биткойну, который по вашему мнению будет полезен в будущем.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Разработка</h3>
+      <p>Биткойн является проектом с открытым исходным кодом. Если вы - программист, вы можете использовать свои супер-способности во имя Добра, <a href="/ru/development">развивая Биткойн</a>. Или создать отличные сервисы и приложения, которые поддерживают Биткойн.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Некоммерческие организации</h2>
-<p> <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> и многие другие <a href="/ru/community#non-profit">некоммерческие организации</a> созданы для защиты и продвижения Биткойна. Вы можете помочь этим группам, вступив в них и участвуя в их проектах, дискуссиях и событиях.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Пожертвования</h3>
+      <p>Самый простой способ помочь это <a href="https://bitcoinfoundation.org/about/donate/">пожертвовать</a> Bitcoin Foundation несколько биткойнов. Или вы можете напрямую финансировать любой проект относящийся к Биткойну, который по вашему мнению будет полезен в будущем.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Распространение</h2>
-<p>Рассказывайте о Биткойне интересующимся людям. Напишите о нем в своем блоге. Сообщите администрации своих любимых магазинов, что хотели бы оплачивать свои покупки биткойнами. Или будьте креативными: сделайте себе футболку с Биткойн-лого.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Некоммерческие организации</h3>
+      <p> <a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> и многие другие <a href="/ru/community#non-profit">некоммерческие организации</a> созданы для защиты и продвижения Биткойна. Вы можете помочь этим группам, вступив в них и участвуя в их проектах, дискуссиях и событиях.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Документация</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> и <a href="https://en.bitcoin.it/">Bitcoin Wiki</a> предоставляют полезную документацию. Мы постоянно улучшаем информацию, которая имеется на этих сайтах. Вы можете помочь улучшить эти ресурсы и поддерживать их в актуальном состоянии.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Распространение</h3>
+      <p>Рассказывайте о Биткойне интересующимся людям. Напишите о нем в своем блоге. Сообщите администрации своих любимых магазинов, что хотели бы оплачивать свои покупки биткойнами. Или будьте креативными: сделайте себе футболку с Биткойн-лого.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Встретиться с сообществами</h2>
-<p>Вы можете присоединиться к <a href="/ru/community">биткойн-сообществу</a> и поговорить с другими биткойн-энтузиастами. Вы можете узнавать больше о Биткойне каждый день, помогать новым пользователям и участвовать в интересных проектах.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Документация</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> и <a href="https://en.bitcoin.it/">Bitcoin Wiki</a> предоставляют полезную документацию. Мы постоянно улучшаем информацию, которая имеется на этих сайтах. Вы можете помочь улучшить эти ресурсы и поддерживать их в актуальном состоянии.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Встретиться с сообществами</h3>
+      <p>Вы можете присоединиться к <a href="/ru/community">биткойн-сообществу</a> и поговорить с другими биткойн-энтузиастами. Вы можете узнавать больше о Биткойне каждый день, помогать новым пользователям и участвовать в интересных проектах.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ru/legal">Юридическое</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/legal">Юридическое</a></li>
 			
-			<li><a href="/ru/privacy">Конфиденциальность</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/privacy">Конфиденциальность</a></li>
 			
-			<li><a href="/ru/press">Пресса</a></li>
-			<li><a href="/ru/about-us">О bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/press">Пресса</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ru/about-us">О bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Веб-сайт сообщества спонсируется</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

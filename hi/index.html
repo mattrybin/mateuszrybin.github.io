@@ -10,15 +10,29 @@
 <title>Bitcoin - ओपन सोर्स  P2P धन</title>
 <meta name="description" content="Bitcoin एक अभिनव भुगतान नेटवर्क है और एक नए तरह का पैसा। सारी आवश्यक जानकारी का पता लगाएं और bitcoin.org पर Bitcoin के साथ शुरू हो जाएं।">
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hi.png"><strong>हिन्दी</strong>
+          <img src="/img/flags/hi.png"><strong>हिन्दी</strong>
 				</div>
 			</a>
 		</div>
@@ -323,50 +341,49 @@
 		<li><a href="#">अक्सर पूछे जाने वाले प्रश्न</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
         
+
 <div class="content_homepage">
-  <h2 class="content_homepage--intro">Bitcoin एक अभिनव भुगतान नेटवर्क और नई तरह का पैसा है।</h2>
-  <div class="content_homepage--video">
-    <div class='embed-container'>
-      <iframe src='https://www.youtube.com/embed/Gc2en3nHxA4?rel=0&showinfo=0&wmode=opaque&autoplay=0' frameborder='0' allowfullscreen></iframe>
+  <div class="content_homepage--wrap">
+    <h2 class="content_homepage--intro">Bitcoin एक अभिनव भुगतान नेटवर्क और नई तरह का पैसा है।</h2>
+    <div class="content_homepage--video">
+      <span class="content_homepage--video--button video-link" data-video-id="Gc2en3nHxA4" href=""><img src="/img/bitcoin/button.svg" alt=""></span>
+    </div>
+    <div class="content_homepage--action--wrap">
+      <div class="content_homepage--action">
+        <a class="content_homepage--action--text" href="/hi/getting-started">
+           Bitcoin के साथ शुरू हो जाइए 
+        </a>
+      </div>
     </div>
   </div>
-
-  <ul class="content_homepage--list">
-    <li>
-      <img src="/img/icons/main_ico_instant.svg" alt="Icon">
-      <span>त्वरित सहकर्मी-से-सहकर्मी  लेनदेन</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_worldwide.svg" alt="Icon">
-      <span>दुनिया भर में भुगतान</span>
-    </li>
-    <li>
-      <img src="/img/icons/main_ico_lowfee.svg" alt="Icon">
-      <span>शून्य या कम प्रोसेसिंग फीस</span>
-    </li>
-  </ul>
-
-  <p class="content_homepage--description">बगैर कोई केंद्रीय सत्ता या बैंकों के साथ संचालित करने के लिए Bitcoin सहकर्मी-से-सहकर्मी प्रौद्योगिकी का उपयोग करता है;  लेनदेन प्रबंध और Bitcoins देना नेटवर्क द्वारा सामूहिक रूप से किया जाता है। <b>Bitcoin खुले स्रोत है; इसकी पहलु सार्वजनिक है कोई भी Bitcoin का मालिक नही ना किसी का इस पर नियंत्रण और  <a href="/hi/support-bitcoin"> हर कोई भाग उठा सकता है। </a></b> अपने विशिष्ट गुणों के कई माध्यम से Bitcoin  अन्र्य उत्तेजक उपयोग प्रदान करता है जो पिछले भुगतान प्रणाली द्वारा कवर नहीं किया जा सकता थे। </p>
-
-  <div class="content_homepage--action">
-    <a href="/hi/getting-started">
-       Bitcoin के साथ शुरू हो जाइए 
-    </a>
+  <div class="content_homepage--overview--wrap">
+    <h3 class="content_homepage--overview">या निम्न के  लिए.... त्वरित अवलोकन प्राप्त करिए</h3>
+    <div class="content_homepage--overview--list">
+      <a class="content_homepage--overview--item" href="/hi/bitcoin-for-individuals">व्यक्तिगत</a>
+      <a class="content_homepage--overview--item" href="/hi/bitcoin-for-businesses">व्यवसाय</a>
+      <a class="content_homepage--overview--item" href="/hi/bitcoin-for-developers">डेवलपर्स</a>
+    </div>
   </div>
-
-  <h3 class="content_homepage--overview">या निम्न के  लिए.... त्वरित अवलोकन प्राप्त करिए</h3>
-  <div class="content_homepage--overview--list">
-    <a href="/hi/bitcoin-for-individuals">व्यक्तिगत</a>
-    <a href="/hi/bitcoin-for-businesses">व्यवसाय</a>
-    <a href="/hi/bitcoin-for-developers">डेवलपर्स</a>
-  </div>
-
 </div>
+<script type="text/javascript" src="/js/videoLightning.js"></script>
+<script type="text/javascript">
+$(function() {
+  $(".video-link").jqueryVideoLightning({
+    autoplay: 1,
+    backdrop_color: "#222",
+    backdrop_opacity: 0.6,
+    glow: 20,
+    glow_color: "#000"
+  });
+});
+</script>
+
 
       </div>
     </div>
@@ -377,14 +394,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hi/legal">कानूनी</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hi/legal">कानूनी</a></li>
 			
-			<li><a href="/hi/privacy">गोपनियता</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hi/privacy">गोपनियता</a></li>
 			
-			<li><a href="/hi/press">प्रेस</a></li>
-			<li><a href="/hi/about-us">bitcoin.org के बारे में</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hi/press">प्रेस</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hi/about-us">bitcoin.org के बारे में</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -393,7 +410,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span> समुदाय वेबसाइट प्रायोजित किया गया निम्न के द्वारा</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -415,13 +433,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -432,7 +452,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

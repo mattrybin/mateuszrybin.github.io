@@ -10,15 +10,29 @@
 <title>Bitcoin'i Destekleyin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/tr.png"><strong>Türkçe</strong>
+          <img src="/img/flags/tr.png"><strong>Türkçe</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">SSS</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Bitcoin'i Destekleyin</h1>
-<p class="summarytxt">Bitcoin küçük bir topluluktan doğan bir protokoldür ve zamanla hızlıca büyümüştür. Bitcoin'in yayılması ve gelişmesi için çok şey yapabilirsiniz.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Bitcoin'i Destekleyin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin küçük bir topluluktan doğan bir protokoldür ve zamanla hızlıca büyümüştür. Bitcoin'in yayılması ve gelişmesi için çok şey yapabilirsiniz.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Bitcoin Kullanmak</h2>
-<p><a href="/tr/baslarken">Bitcoin'i kullanmak</a> Bitcoin'i desteklemek için yapılabilecek en önemli şeydir. Muhtemelen hayatınızı kolaylaştıracağı bir çok durum var. Ödemeleri Bitcoin ile kabul edebilir ve harcama yapabilirsiniz.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Bitcoin Kullanmak</h3>
+      <p><a href="/tr/baslarken">Bitcoin'i kullanmak</a> Bitcoin'i desteklemek için yapılabilecek en önemli şeydir. Muhtemelen hayatınızı kolaylaştıracağı bir çok durum var. Ödemeleri Bitcoin ile kabul edebilir ve harcama yapabilirsiniz.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Ağa katılın</h2>
-<p>Eğer iyi bir Internet bağlantınız varsa Bitcoin ağını, bilgisayarınızda yada sunucunuzda 8333 portu açık şekilde <a href="/tr/indir">tam düğüm yazılım</a> çalıştırarak güçlendirebilirsiniz. Tam düğüm tüm işlemleri güvenli hale getirir ve aktarım sağlar.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Ağa katılın</h3>
+      <p>Eğer iyi bir Internet bağlantınız varsa Bitcoin ağını, bilgisayarınızda yada sunucunuzda 8333 portu açık şekilde <a href="/tr/indir">tam düğüm yazılım</a> çalıştırarak güçlendirebilirsiniz. Tam düğüm tüm işlemleri güvenli hale getirir ve aktarım sağlar.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Madencilik</h2>
-<p>İşlemleri hızlandırmak adına <a href="http://www.bitcoinmining.com/">bitcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için <a href="http://mempool.info/pools">küçük maden havuzlarına</a> katılmalı ve merkezci olmayan <a href="http://p2pool.in/">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">havuzlar</a> seçmelisiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Madencilik</h3>
+      <p>İşlemleri hızlandırmak adına <a href="http://www.bitcoinmining.com/">bitcoin madenciliğine</a> başlayabilirsiniz. Ağı korumak için <a href="http://mempool.info/pools">küçük maden havuzlarına</a> katılmalı ve merkezci olmayan <a href="http://p2pool.in/">P2Pool</a> ya da getblocktemplate (GBT) destekli <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">havuzlar</a> seçmelisiniz.</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Çeviri yapın</h2>
-<p>Bitcoin ekosisteminin önemli kısımlarında çeviri yaparak ya da çevirileri düzelterek Bitcoin kullanılabirliğini artırmaya yardımcı olabilirsiniz. Yardım etmek istediğiniz bir proje varsa seçmeniz yeterli.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Geliştirme</h2>
-<p>Bitcoin ücretsiz bir yazılımdır. Yani eğer br geliştiriciyseniz süper güçlerinizi iyiye kullanarak <a href="/tr/gelistirme">Bitcoin'i geliştirebilir</a> veya Bitcoin kullanan yeni servis ve yazılımlar geliştirebilirsiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Çeviri yapın</h3>
+      <p>Bitcoin ekosisteminin önemli kısımlarında çeviri yaparak ya da çevirileri düzelterek Bitcoin kullanılabirliğini artırmaya yardımcı olabilirsiniz. Yardım etmek istediğiniz bir proje varsa seçmeniz yeterli.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Bağış</h2>
-<p>Yardım etmenin en kolay yolu Bitcoin Vakfı'na birkaç Bitcoin <a href="https://bitcoinfoundation.org/about/donate/">bağış</a> yapmaktır. Veya ilerde yardımcı olacağını düşündüğünüz Bitcoin'le alakalı proje varsa onlara da para gönderebilirsiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Geliştirme</h3>
+      <p>Bitcoin ücretsiz bir yazılımdır. Yani eğer br geliştiriciyseniz süper güçlerinizi iyiye kullanarak <a href="/tr/gelistirme">Bitcoin'i geliştirebilir</a> veya Bitcoin kullanan yeni servis ve yazılımlar geliştirebilirsiniz.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organizasyonlar</h2>
-<p><a href="https://bitcoinfoundation.org/">Bitcoin Vakfı</a> ve bir çok diğer <a href="/tr/topluluk#kar-etmeyen">kar amacı gütmeyen kuruluşlar</a>  Bitcoini korumaya ve geliştirmeye adanmıştır. Bunlara katılarak bu gruplara yardım edebilir ve projelerinin, tartışmalarının ve etkinliklerinin bir parçası olabilirsiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Bağış</h3>
+      <p>Yardım etmenin en kolay yolu Bitcoin Vakfı'na birkaç Bitcoin <a href="https://bitcoinfoundation.org/about/donate/">bağış</a> yapmaktır. Veya ilerde yardımcı olacağını düşündüğünüz Bitcoin'le alakalı proje varsa onlara da para gönderebilirsiniz.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Yaymaya yardım edin</h2>
-<p>İnsanların ilgisini çekmek için Bitcoin hakkında konuşun. Bloglarınızda bu konu hakkında yazılar yazın. En beğendiğiniz alış veriş merkezlerine Bitcoin ile ödeme yapmak istediğinizi söyleyin.  <a href="http://usebitcoins.info/">Satış dizinlerini</a> güncel tutun. Ya da yaratıcı olup bir Bitcoin tişörtü yaptırın.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organizasyonlar</h3>
+      <p><a href="https://bitcoinfoundation.org/">Bitcoin Vakfı</a> ve bir çok diğer <a href="/tr/topluluk#kar-etmeyen">kar amacı gütmeyen kuruluşlar</a>  Bitcoini korumaya ve geliştirmeye adanmıştır. Bunlara katılarak bu gruplara yardım edebilir ve projelerinin, tartışmalarının ve etkinliklerinin bir parçası olabilirsiniz.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Belgeleme</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> ve <a href="https://en.bitcoin.it/">Bitcoin wiki</a> yararlı belgeler sağlar ve sürekli olarak içerdikleri bilgileri geliştirir. Siz de bu kaynakları geliştirebilir ve güncel kalmalarını sağlayabilirsiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Yaymaya yardım edin</h3>
+      <p>İnsanların ilgisini çekmek için Bitcoin hakkında konuşun. Bloglarınızda bu konu hakkında yazılar yazın. En beğendiğiniz alış veriş merkezlerine Bitcoin ile ödeme yapmak istediğinizi söyleyin.  <a href="http://usebitcoins.info/">Satış dizinlerini</a> güncel tutun. Ya da yaratıcı olup bir Bitcoin tişörtü yaptırın.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Topluluklarla tanışın</h2>
-<p>Bitcoin <a href="/tr/topluluk">topluluklarına</a> katılıp diğer Bitcoin hayranlarıyla konuşabilirsiniz. Her gün Bitcoin hakkında yeni şeyler öğrenip yeni kullanıcılara yardım edebilir ve ilginç projelere katılabilirsiniz.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Belgeleme</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> ve <a href="https://en.bitcoin.it/">Bitcoin wiki</a> yararlı belgeler sağlar ve sürekli olarak içerdikleri bilgileri geliştirir. Siz de bu kaynakları geliştirebilir ve güncel kalmalarını sağlayabilirsiniz.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Topluluklarla tanışın</h3>
+      <p>Bitcoin <a href="/tr/topluluk">topluluklarına</a> katılıp diğer Bitcoin hayranlarıyla konuşabilirsiniz. Her gün Bitcoin hakkında yeni şeyler öğrenip yeni kullanıcılara yardım edebilir ve ilginç projelere katılabilirsiniz.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/tr/yasal">Yasal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/yasal">Yasal</a></li>
 			
-			<li><a href="/tr/gizlilik">Gizlilik</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/gizlilik">Gizlilik</a></li>
 			
-			<li><a href="/tr/basin">Basın</a></li>
-			<li><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/basin">Basın</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/tr/hakkimizda">Bitcoin.org hakkında</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sponsor bir topluluğun web sitesi</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

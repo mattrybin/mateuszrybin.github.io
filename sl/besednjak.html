@@ -10,15 +10,29 @@
 <title>Slovar - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,89 +341,152 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Nekaj izrazov, ki jih lahko srečate</h1>
-<p class="summarytxt">Bitcoin ponuja nov način plačevanja, kar pomeni, da boste morda morali v svoj besednjak zapisati kakšno novo besedo ali izraz. A brez skrbi, tudi skromna televizija je ustvarjala nove izraze, na katere smo se navadili!</p>
-<h2 id="table-of-contents">Kazalo</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Nekaj izrazov, ki jih lahko srečate</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin ponuja nov način plačevanja, kar pomeni, da boste morda morali v svoj besednjak zapisati kakšno novo besedo ali izraz. A brez skrbi, tudi skromna televizija je ustvarjala nove izraze, na katere smo se navadili!</h2>
 
-<div class="index">
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blok">Blok</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#denarnica">Denarnica</a>
-
-<a href="#dvojno-trosenje">Dvojno trošenje</a>
-
-<a href="#hitrost-zgoscevanja">Hitrost zgoščevanja</a>
-
-<a href="#kriptografija">Kriptografija</a>
-
-<a href="#naslov">Naslov</a>
-
-<a href="#podpis">Podpis</a>
-
-<a href="#potrditev">Potrditev</a>
-
-<a href="#rudarjenje">Rudarjenje</a>
-
-<a href="#veriga-blokov">Veriga blokov</a>
-
-<a href="#vrstnisko">Vrstniški sistemi (P2P)</a>
-
-<a href="#zasebni-kljuc">Zasebni ključ</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Beseda "bitcoin" lahko pomeni koncept bitcoina ali pa celotno omrežje bitcoina, npr. "Danes sem se veliko naučil o protokolu bitcoin." Pomeni pa lahko tudi obračunsko ("denarno") enoto, npr. "Danes sem poslal 3 bitcoine"; v tem kontekstu se pogosto uporablja okrajšava BTC ali XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blok">Blok</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Blok je <b>zapis v verigi blokov, ki vsebuje in potrjuje nakazila</b>. V povprečju vsakih 10 minut nastane nov blok in se doda na rep <a href="#veriga-blokov">verige blokov</a>; nastajanju novih blokov pravimo <a href="#rudarjenje">rudarjenje</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>BTC je osnovna enota valute bitcoin. Ta oznaka se uporablja kot B⃦ - podobno kot EUR za euro ali €.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="denarnica">Denarnica</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin denarnica <b>ima v omrežju bitcoin enako vlogo kot običajna denarnica v običajnem plačilnem prometu</b>. V denarnici so shranjeni vaši <a href="#zasebni-kljuc">zasebni ključi</a>, ki vam omogočajo uporabo novcev, ki so v <a href="#veriga-blokov">verigi blokov</a> dodeljeni vaši denarnici. Bitcoin denarnica vam lahko prikaže stanje, tj. količino novcev v denarnici, in vam omogoča plačila konkretnih zneskov konkretnim osebam -- kot običajna denarnica. V tem se sistem bitcoin razlikuje od kreditnih kartic, kjer plačila zaračunavajo in sprožijo trgovci.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="dvojno-trosenje">Dvojno trošenje</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Dvojno trošenje je dogodek, ko skuša zlonameren uporabnik <b>poslati iste novce na dva različna naslova</b>. <a href="#rudarjenje">Rudarjenje</a> in <a href="#veriga-blokov">veriga blokov</a> obstajata z namenom doseganja soglasja v omrežju glede tega, katero od teh dveh konfliktnih nakazil bo potrjeno in bo torej obveljalo kot veljavno.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hitrost-zgoscevanja">Hitrost zgoščevanja</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Hitrost zgoščevanja je <b>mera procesne moči omrežja bitcoin</b>. Omrežje bitcoin za svojo varnost izvaja intenzivne matematične operacije. Hitrost 10 Ph/s pomeni, da omrežje opravi deset milijonov milijard operacij vsako sekundo.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="kriptografija">Kriptografija</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Kriptografija je veja matematike, ki nam daje <b>matematične dokaze za visoko stopnjo varnosti</b>. Internetno poslovanje in bančništvo kriptografijo že dolgo s pridom uporablja praktično na vsakem koraku. Pri bitcoinu kriptografija preprečuje nepooblaščenim osebam trošenje tujih novcev ali neveljavne vnose v <a href="#veriga-blokov">verigo blokov</a>. Uporablja se tudi za šifriranje denarnice, da se le-te ne da uporabljati brez gesla.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="naslov">Naslov</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin naslov deluje <b>podobno poštnemu ali elektronskemu naslovu</b>. Naslov je edina informacija, ki jo potrebujete, da nekomu pošljete novce. Pomembna razlika pa je, da je za vsako nakazilo priporočljivo uporabiti nov naslov.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="podpis">Podpis</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#kriptografija">Kriptografski</a> podpis je <b>matematičen mehanizem, ki omogoča dokazovanje lastništva</b>. V primeru bitcoina je <a href="#denarnica">denarnica</a>  s svojimi <a href="#zasebni-kljuc">zasebnimi ključi</a> povezana s pomočjo matematike. Ko vaša bitcoin aplikacija podpiše nakazilo s primernim zasebnim ključem, lahko vsakdo v omrežju preveri, da podpis ustreza bitcoinom, ki jih to nakazilo troši; ni pa kljub temu nobenega načina, da bi kdorkoli na podlagi podpisa ugotovil vaš zasebni ključ in tako ukradel vaše novce.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="potrditev">Potrditev</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Potrditev pomeni, da <b>je nakazilo obdelalo omrežje in ni več verjetno, da bi to nakazilo postalo neveljavno ali stornirano</b>. Nakazilo prejme prvo potrditev, ko se vključi v <a href="/sl/besednjak#blok">blok</a>, in nadaljnje za vsak nadaljnji blok, ki nastane v <a href="/sl/besednjak#veriga-blokov">verigi blokov</a>. Nakazila z manjšimi zneski lahko obravnavate kot potrjena in varna že po prvi potrditvi, pri večjih zneskih (recimo 1000 EUR ali več) pa je običajno smiselno počakati na 6 potrditev ali več. Z novimi potrditvami tveganje za stornacijo nakazila eksponentno pada.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="rudarjenje">Rudarjenje</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Rudarjenje bitcoinov je proces, kjer <b>računalniška strojna oprema izvaja matematične izračune, preko katerih omrežje Bitcoin potrjuje nakazila</b>. S tem se tudi poveča varnost sistema. Bitcoin rudarji lahko za nagrado poberejo prispevke, plačane pri nakazilih, ki jih potrdijo, skupaj z novo nastalimi bitcoini. Rudarjenje je specializiran in konkurenčen trg, kjer se nagrade delijo glede na število opravljenih izračunov. Seveda se vsi uporabniki bitcoina ne ukvarjajo z rudarjenjem, saj to nikakor ni lahka pot do zaslužka.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="veriga-blokov">Veriga blokov</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Veriga blokov je <b>javni zapisnik vseh bitcoin nakazil</b> v časovnem vrstnem redu. Vsi uporabniki dostopajo do verige blokov in jo hranijo. Njen namen je preverjanje trajnosti nakazil in preprečevanje <a href="#dvojno-trosenje">dvojnega trošenja</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="vrstnisko">Vrstniški sistemi (P2P)</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Izraz "vrstniški sistem" se nanaša na <b>sisteme, ki delujejo kot organizirana skupnost</b> in komunicirajo neposredno drug z drugim. Tudi omrežje bitcoin je zgrajeno tako, da lahko vsak uporabnik posreduje nakazila drugih uporabnikov. Tako ni potrebe po posrednikih, kot so banke, kar je bistvenega pomena za delovanje bitcoina.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="zasebni-kljuc">Zasebni ključ</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Zasebni ključ je <b>skriven podatek, ki vam daje možnost in pravico potrošiti novce v določeni denarnici</b> s pomočjo <a href="#podpis">kriptografskega podpisa</a>. Zasbni ključi vam v resnici dajejo lastništvo bitcoinov. Vaši zasebni ključi so shranjeni na vašem računalniku, če uporabljate programsko denarnico. Če uprabljate spletno denarnico, so shranjeni na oddaljenem strežniku. Zasebnih ključev ne smete nikoli razkriti nikomur, ker omogočajo trošenje vaših bitcoinov.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Beseda "bitcoin" lahko pomeni koncept bitcoina ali pa celotno omrežje bitcoina, npr. "Danes sem se veliko naučil o protokolu bitcoin." Pomeni pa lahko tudi obračunsko ("denarno") enoto, npr. "Danes sem poslal 3 bitcoine"; v tem kontekstu se pogosto uporablja okrajšava BTC ali XBT.</p>
-
-<h2 id="blok">Blok</h2>
-<p>Blok je <b>zapis v verigi blokov, ki vsebuje in potrjuje nakazila</b>. V povprečju vsakih 10 minut nastane nov blok in se doda na rep <a href="#veriga-blokov">verige blokov</a>; nastajanju novih blokov pravimo <a href="#rudarjenje">rudarjenje</a>.</p>
-
-<h2 id="btc">BTC</h2>
-<p>BTC je osnovna enota valute bitcoin. Ta oznaka se uporablja kot B⃦ - podobno kot EUR za euro ali €.</p>
-
-<h2 id="denarnica">Denarnica</h2>
-<p>Bitcoin denarnica <b>ima v omrežju bitcoin enako vlogo kot običajna denarnica v običajnem plačilnem prometu</b>. V denarnici so shranjeni vaši <a href="#zasebni-kljuc">zasebni ključi</a>, ki vam omogočajo uporabo novcev, ki so v <a href="#veriga-blokov">verigi blokov</a> dodeljeni vaši denarnici. Bitcoin denarnica vam lahko prikaže stanje, tj. količino novcev v denarnici, in vam omogoča plačila konkretnih zneskov konkretnim osebam -- kot običajna denarnica. V tem se sistem bitcoin razlikuje od kreditnih kartic, kjer plačila zaračunavajo in sprožijo trgovci.</p>
-
-<h2 id="dvojno-trosenje">Dvojno trošenje</h2>
-<p>Dvojno trošenje je dogodek, ko skuša zlonameren uporabnik <b>poslati iste novce na dva različna naslova</b>. <a href="#rudarjenje">Rudarjenje</a> in <a href="#veriga-blokov">veriga blokov</a> obstajata z namenom doseganja soglasja v omrežju glede tega, katero od teh dveh konfliktnih nakazil bo potrjeno in bo torej obveljalo kot veljavno.</p>
-
-<h2 id="hitrost-zgoscevanja">Hitrost zgoščevanja</h2>
-<p>Hitrost zgoščevanja je <b>mera procesne moči omrežja bitcoin</b>. Omrežje bitcoin za svojo varnost izvaja intenzivne matematične operacije. Hitrost 10 Ph/s pomeni, da omrežje opravi deset milijonov milijard operacij vsako sekundo.</p>
-
-<h2 id="kriptografija">Kriptografija</h2>
-<p>Kriptografija je veja matematike, ki nam daje <b>matematične dokaze za visoko stopnjo varnosti</b>. Internetno poslovanje in bančništvo kriptografijo že dolgo s pridom uporablja praktično na vsakem koraku. Pri bitcoinu kriptografija preprečuje nepooblaščenim osebam trošenje tujih novcev ali neveljavne vnose v <a href="#veriga-blokov">verigo blokov</a>. Uporablja se tudi za šifriranje denarnice, da se le-te ne da uporabljati brez gesla.</p>
-
-<h2 id="naslov">Naslov</h2>
-<p>Bitcoin naslov deluje <b>podobno poštnemu ali elektronskemu naslovu</b>. Naslov je edina informacija, ki jo potrebujete, da nekomu pošljete novce. Pomembna razlika pa je, da je za vsako nakazilo priporočljivo uporabiti nov naslov.</p>
-
-<h2 id="podpis">Podpis</h2>
-<p><a href="#kriptografija">Kriptografski</a> podpis je <b>matematičen mehanizem, ki omogoča dokazovanje lastništva</b>. V primeru bitcoina je <a href="#denarnica">denarnica</a>  s svojimi <a href="#zasebni-kljuc">zasebnimi ključi</a> povezana s pomočjo matematike. Ko vaša bitcoin aplikacija podpiše nakazilo s primernim zasebnim ključem, lahko vsakdo v omrežju preveri, da podpis ustreza bitcoinom, ki jih to nakazilo troši; ni pa kljub temu nobenega načina, da bi kdorkoli na podlagi podpisa ugotovil vaš zasebni ključ in tako ukradel vaše novce.</p>
-
-<h2 id="potrditev">Potrditev</h2>
-<p>Potrditev pomeni, da <b>je nakazilo obdelalo omrežje in ni več verjetno, da bi to nakazilo postalo neveljavno ali stornirano</b>. Nakazilo prejme prvo potrditev, ko se vključi v <a href="/sl/besednjak#blok">blok</a>, in nadaljnje za vsak nadaljnji blok, ki nastane v <a href="/sl/besednjak#veriga-blokov">verigi blokov</a>. Nakazila z manjšimi zneski lahko obravnavate kot potrjena in varna že po prvi potrditvi, pri večjih zneskih (recimo 1000 EUR ali več) pa je običajno smiselno počakati na 6 potrditev ali več. Z novimi potrditvami tveganje za stornacijo nakazila eksponentno pada.</p>
-
-<h2 id="rudarjenje">Rudarjenje</h2>
-<p>Rudarjenje bitcoinov je proces, kjer <b>računalniška strojna oprema izvaja matematične izračune, preko katerih omrežje Bitcoin potrjuje nakazila</b>. S tem se tudi poveča varnost sistema. Bitcoin rudarji lahko za nagrado poberejo prispevke, plačane pri nakazilih, ki jih potrdijo, skupaj z novo nastalimi bitcoini. Rudarjenje je specializiran in konkurenčen trg, kjer se nagrade delijo glede na število opravljenih izračunov. Seveda se vsi uporabniki bitcoina ne ukvarjajo z rudarjenjem, saj to nikakor ni lahka pot do zaslužka.</p>
-
-<h2 id="veriga-blokov">Veriga blokov</h2>
-<p>Veriga blokov je <b>javni zapisnik vseh bitcoin nakazil</b> v časovnem vrstnem redu. Vsi uporabniki dostopajo do verige blokov in jo hranijo. Njen namen je preverjanje trajnosti nakazil in preprečevanje <a href="#dvojno-trosenje">dvojnega trošenja</a>.</p>
-
-<h2 id="vrstnisko">Vrstniški sistemi (P2P)</h2>
-<p>Izraz "vrstniški sistem" se nanaša na <b>sisteme, ki delujejo kot organizirana skupnost</b> in komunicirajo neposredno drug z drugim. Tudi omrežje bitcoin je zgrajeno tako, da lahko vsak uporabnik posreduje nakazila drugih uporabnikov. Tako ni potrebe po posrednikih, kot so banke, kar je bistvenega pomena za delovanje bitcoina.</p>
-
-<h2 id="zasebni-kljuc">Zasebni ključ</h2>
-<p>Zasebni ključ je <b>skriven podatek, ki vam daje možnost in pravico potrošiti novce v določeni denarnici</b> s pomočjo <a href="#podpis">kriptografskega podpisa</a>. Zasbni ključi vam v resnici dajejo lastništvo bitcoinov. Vaši zasebni ključi so shranjeni na vašem računalniku, če uporabljate programsko denarnico. Če uprabljate spletno denarnico, so shranjeni na oddaljenem strežniku. Zasebnih ključev ne smete nikoli razkriti nikomur, ker omogočajo trošenje vaših bitcoinov.</p>
-
 
       </div>
     </div>
@@ -416,14 +497,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -432,7 +513,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -454,13 +536,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -471,7 +555,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

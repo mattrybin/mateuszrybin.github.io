@@ -10,15 +10,29 @@
 <title>Lindungi privasi Anda - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
+          <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Lindungi privasi Anda</h1>
-<p class="summarytxt">Bitcoin seringkali dianggap sebagai jaringan pembayaran anonim. Padahal sesungguhnya, Bitcoin bisa jadi merupakan jaringan pembayaran yang paling transparan di dunia. Di saat bersamaan, Bitcoin juga dapat memberikan tingkat keamanan privasi yang bisa diterima, bila digunakan dengan benar. <b>Mohon selalu ingat bahwa melindungi privasi Anda dengan senantiasa melakukan langkah-langkah pengamanan adalah tanggung jawab Anda</b>.</p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Lindungi privasi Anda</h1>
+	<h2 class="content_standard--subtitle">Bitcoin seringkali dianggap sebagai jaringan pembayaran anonim. Padahal sesungguhnya, Bitcoin bisa jadi merupakan jaringan pembayaran yang paling transparan di dunia. Di saat bersamaan, Bitcoin juga dapat memberikan tingkat keamanan privasi yang bisa diterima, bila digunakan dengan benar. <b>Mohon selalu ingat bahwa melindungi privasi Anda dengan senantiasa melakukan langkah-langkah pengamanan adalah tanggung jawab Anda</b>.</h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Memahami kemampuan Bitcoin untuk ditelusuri</h3>
+      <p>Bitcoin bekerja dengan tingkat transparansi yang belum pernah ada sebelumnya. Semua transaksi Bitcoin bersifat publik, dapat dilacak, dan secara permanen disimpan dalam jaringan Bitcoin. Alamat Bitcoin adalah satu-satunya informasi yang digunakan untuk menentukan di mana bitcoin disimpan dan ke mana mereka dikirim. Alamat ini dibuat secara pribadi oleh dompet masing-masing pengguna. Namun, setelah alamat tersebut digunakan, mereka menjadi tercemar oleh sejarah semua transaksi mereka. Siapapun dapat melihat <a href="https://www.biteasy.com">saldo dan semua transaksi</a> alamat manapun. Karena pengguna biasanya harus memberitahukan identitas mereka dalam rangka untuk menerima jasa atau barang, alamat Bitcoin tidak bisa tetap sepenuhnya anonim. Untuk alasan ini, alamat Bitcoin sebaiknya hanya digunakan sekali dan pengguna harus berhati-hati untuk tidak memberitahukan alamat mereka.</p>
+    </li>
 
-<h2 id="traceable">Memahami kemampuan Bitcoin untuk ditelusuri</h2>
-<p>Bitcoin bekerja dengan tingkat transparansi yang belum pernah ada sebelumnya. Semua transaksi Bitcoin bersifat publik, dapat dilacak, dan secara permanen disimpan dalam jaringan Bitcoin. Alamat Bitcoin adalah satu-satunya informasi yang digunakan untuk menentukan di mana bitcoin disimpan dan ke mana mereka dikirim. Alamat ini dibuat secara pribadi oleh dompet masing-masing pengguna. Namun, setelah alamat tersebut digunakan, mereka menjadi tercemar oleh sejarah semua transaksi mereka. Siapapun dapat melihat <a href="https://www.biteasy.com">saldo dan semua transaksi</a> alamat manapun. Karena pengguna biasanya harus memberitahukan identitas mereka dalam rangka untuk menerima jasa atau barang, alamat Bitcoin tidak bisa tetap sepenuhnya anonim. Untuk alasan ini, alamat Bitcoin sebaiknya hanya digunakan sekali dan pengguna harus berhati-hati untuk tidak memberitahukan alamat mereka.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Gunakan alamat baru untuk menerima pembayaran</h3>
+      <p>Untuk melindungi privasi, Anda disarankan menggunakan satu alamat Bitcoin yang baru setiap kali Anda menerima pembayaran. Sebagai tambahan, Anda bisa menggunakan banyak dompet untuk tujuan yang berbeda-beda. Dengan demikian transaksi-transaksi yang Anda lakukan tidak dapat dihubung-hubungkan secara bersamaan. Orang-orang yang mengirimkan Anda uang tidak bisa melihat akun Bitcoin lain yang Anda punya serta apa yang Anda lakukan dengan akun-akun tersebut. Ini adalah saran yang harus selalu Anda ingat.   </p>
+    </li>
 
-<h2 id="receive">Gunakan alamat baru untuk menerima pembayaran</h2>
-<p>Untuk melindungi privasi, Anda disarankan menggunakan satu alamat Bitcoin yang baru setiap kali Anda menerima pembayaran. Sebagai tambahan, Anda bisa menggunakan banyak dompet untuk tujuan yang berbeda-beda. Dengan demikian transaksi-transaksi yang Anda lakukan tidak dapat dihubung-hubungkan secara bersamaan. Orang-orang yang mengirimkan Anda uang tidak bisa melihat akun Bitcoin lain yang Anda punya serta apa yang Anda lakukan dengan akun-akun tersebut. Ini adalah saran yang harus selalu Anda ingat.   </p>
+    <li class="content_standard--items">
+      <h3 id="public">Berhati-hatilah di ruang publik</h3>
+      <p>Kecuali Anda berniat menerima donasi atau pembayaran publik dengan transparansi penuh, mempublikasikan alamat Bitcoin di ruang publik seperti website atau media sosial tidaklah disarankan demi privasi Anda. Jika Anda memilih demikian, selalu ingat bahwa jika Anda memindahkan uang dari alamat ini ke alamat Anda yang lain, maka publik akan mengetahui jejak sejarah alamat Anda. Sebagai tambahan, Anda juga perlu berhati-hati untuk tidak mempublikasikan informasi mengenai transaksi dan pembelian Anda yang dapat membuat seseorang mampu mengidentifikasi alamat Bitcoin Anda.</p>
+    </li>
 
-<h2 id="public">Berhati-hatilah di ruang publik</h2>
-<p>Kecuali Anda berniat menerima donasi atau pembayaran publik dengan transparansi penuh, mempublikasikan alamat Bitcoin di ruang publik seperti website atau media sosial tidaklah disarankan demi privasi Anda. Jika Anda memilih demikian, selalu ingat bahwa jika Anda memindahkan uang dari alamat ini ke alamat Anda yang lain, maka publik akan mengetahui jejak sejarah alamat Anda. Sebagai tambahan, Anda juga perlu berhati-hati untuk tidak mempublikasikan informasi mengenai transaksi dan pembelian Anda yang dapat membuat seseorang mampu mengidentifikasi alamat Bitcoin Anda.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Alamat IP Anda dapat tercatat</h3>
+      <p>Karena jaringan Bitcoin adalah jaringan peer-to-peer, ada kemungkinan untuk mendengarkan siaran transaksi dan alamat IP mereka. Klien asli menyiarkan semua transaksi pengguna seperti transaksi mereka sendiri. Ini artinya sulit untuk menemukan sumber dari transaksi tertentu dan bisa saja salah menebak jaringan Bitcoin tertentu sebagai sumber transaksi, padahal bukan. Anda perlu mempertimbangkan untuk menyembunyikan alamat IP komputer Anda dengan alat seperti <a href="https://www.torproject.org/">Tor</a> sehingga tidak dapat tercatat.</p>
+    </li>
 
-<h2 id="iplog">Alamat IP Anda dapat tercatat</h2>
-<p>Karena jaringan Bitcoin adalah jaringan peer-to-peer, ada kemungkinan untuk mendengarkan siaran transaksi dan alamat IP mereka. Klien asli menyiarkan semua transaksi pengguna seperti transaksi mereka sendiri. Ini artinya sulit untuk menemukan sumber dari transaksi tertentu dan bisa saja salah menebak jaringan Bitcoin tertentu sebagai sumber transaksi, padahal bukan. Anda perlu mempertimbangkan untuk menyembunyikan alamat IP komputer Anda dengan alat seperti <a href="https://www.torproject.org/">Tor</a> sehingga tidak dapat tercatat.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Keterbatasan layanan pencampuran</h3>
+      <p>Beberapa layanan online yang disebut layanan pencampuran menawarkan untuk mencampur traceability antara pengguna dengan menerima dan mengirim kembali jumlah uang yang sama menggunakan alamat Bitcoin independen. Penting untuk dicatat bahwa keabsahan penggunaan layanan tersebut mungkin berbeda-beda dan dikenakan aturan yang berbeda di setiap negara. Layanan ini juga mengharuskan Anda untuk mempercayai individu yang menjalankan layanan tersebut, bahwa mereka tidak akan menghilangkan atau mencuri uang Anda dan tidak mencatat permintaan Anda. Meskipun layanan pencampuran dapat mematahkan traceability untuk transaksi dalam jumlah kecil, namun semakin sulit untuk melakukan hal yang sama pada transaksi yang berjumlah lebih besar.</p>
+    </li>
 
-<h2 id="mixing">Keterbatasan layanan pencampuran</h2>
-<p>Beberapa layanan online yang disebut layanan pencampuran menawarkan untuk mencampur traceability antara pengguna dengan menerima dan mengirim kembali jumlah uang yang sama menggunakan alamat Bitcoin independen. Penting untuk dicatat bahwa keabsahan penggunaan layanan tersebut mungkin berbeda-beda dan dikenakan aturan yang berbeda di setiap negara. Layanan ini juga mengharuskan Anda untuk mempercayai individu yang menjalankan layanan tersebut, bahwa mereka tidak akan menghilangkan atau mencuri uang Anda dan tidak mencatat permintaan Anda. Meskipun layanan pencampuran dapat mematahkan traceability untuk transaksi dalam jumlah kecil, namun semakin sulit untuk melakukan hal yang sama pada transaksi yang berjumlah lebih besar.</p>
-
-<h2 id="future">Pengembangan di masa depan</h2>
-<p>Berbagai pengembangan untuk meningkatkan privasi akan diciptakan di masa depan. Contohnya, beberapa upaya tengah dilakukan mengenai pesan-pesan pembayaran API untuk menghindari pencemaran beberapa alamat bersamaan saat dilakukan satu pembayaran. Alamat Bitcoin Core yang berubah-ubah mungkin dapat diimplementasikan pada dompet-dompet lain seiring waktu. Grafik antarmuka pengguna mungkin akan ditingkatkan untuk menyediakan fitur permintaan pembayaran yang ramah pengguna, serta mencegah alamat digunakan kembali. Berbagai penelitian juga tengah dilakukan untuk mengembangkan fitur-fitur privasi yang potensial untuk diperpanjang, seperti kemampuan untuk menggabungkan transaksi beberapa pengguna secara acak bersama-sama.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Pengembangan di masa depan</h3>
+      <p>Berbagai pengembangan untuk meningkatkan privasi akan diciptakan di masa depan. Contohnya, beberapa upaya tengah dilakukan mengenai pesan-pesan pembayaran API untuk menghindari pencemaran beberapa alamat bersamaan saat dilakukan satu pembayaran. Alamat Bitcoin Core yang berubah-ubah mungkin dapat diimplementasikan pada dompet-dompet lain seiring waktu. Grafik antarmuka pengguna mungkin akan ditingkatkan untuk menyediakan fitur permintaan pembayaran yang ramah pengguna, serta mencegah alamat digunakan kembali. Berbagai penelitian juga tengah dilakukan untuk mengembangkan fitur-fitur privasi yang potensial untuk diperpanjang, seperti kemampuan untuk menggabungkan transaksi beberapa pengguna secara acak bersama-sama.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/id/sah">Sah</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/sah">Sah</a></li>
 			
-			<li><a href="/id/privasi">Privasi</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/privasi">Privasi</a></li>
 			
-			<li><a href="/id/pers">Pers</a></li>
-			<li><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sebuah situs web komunitas yang didukung oleh</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

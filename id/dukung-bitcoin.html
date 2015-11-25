@@ -10,15 +10,29 @@
 <title>Dukung Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
+          <img src="/img/flags/id.png"><strong>Bahasa Indonesia</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Dukung Bitcoin</h1>
-<p class="summarytxt">Bitcoin adalah protokol yang lahir dari komunitas kecil dan telah berkembang pesat sejak dicetuskan. Banyak hal yang bisa Anda lakukan untuk membantu Bitcoin menyebar dan berkembang semakin baik seiring waktu.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Dukung Bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin adalah protokol yang lahir dari komunitas kecil dan telah berkembang pesat sejak dicetuskan. Banyak hal yang bisa Anda lakukan untuk membantu Bitcoin menyebar dan berkembang semakin baik seiring waktu.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Menggunakan Bitcoin</h2>
-<p><a href="/id/memulai">Menggunakan Bitcoin</a> adalah hal pertama yang bisa Anda lakukan untuk mendukung Bitcoin. Ada banyak kemudahan yang bisa Anda dapatkan dengan menggunakan Bitcoin. Anda dapat menerima pembayaran dan melakukan pembelian dengan Bitcoin.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Menggunakan Bitcoin</h3>
+      <p><a href="/id/memulai">Menggunakan Bitcoin</a> adalah hal pertama yang bisa Anda lakukan untuk mendukung Bitcoin. Ada banyak kemudahan yang bisa Anda dapatkan dengan menggunakan Bitcoin. Anda dapat menerima pembayaran dan melakukan pembelian dengan Bitcoin.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Jadilah bagian dari jaringan</h2>
-<p>Jika Anda memiliki koneksi internet yang bagus, Anda bisa memperkuat jaringan Bitcoin dengan menjaga <a href="/id/unduh">perangkat lunak simpul penuh</a>  tetap berjalan pada komputer atau server Anda dengan port 8333 terbuka.  Simpul penuh mengamankan dan menyampaikan semua transaksi.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Jadilah bagian dari jaringan</h3>
+      <p>Jika Anda memiliki koneksi internet yang bagus, Anda bisa memperkuat jaringan Bitcoin dengan menjaga <a href="/id/unduh">perangkat lunak simpul penuh</a>  tetap berjalan pada komputer atau server Anda dengan port 8333 terbuka.  Simpul penuh mengamankan dan menyampaikan semua transaksi.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Penambangan</h2>
-<p>Anda dapat mulai <a href="http://www.bitcoinmining.com/">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya Anda bergabung dengan <a href="http://mempool.info/pools">kelompok penambangan kecil</a> dan lebih memilih kelompok tak terpusat seperti <a href="http://p2pool.in/">P2Pool</a> atau <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">kelompok-kelompok</a> dengan dukungan getblocktemplate (GBT).</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Penambangan</h3>
+      <p>Anda dapat mulai <a href="http://www.bitcoinmining.com/">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya Anda bergabung dengan <a href="http://mempool.info/pools">kelompok penambangan kecil</a> dan lebih memilih kelompok tak terpusat seperti <a href="http://p2pool.in/">P2Pool</a> atau <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">kelompok-kelompok</a> dengan dukungan getblocktemplate (GBT).</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Terjemahkan</h2>
-<p>Anda dapat membantu meningkatkan ketersediaan Bitcoin dengan menerjemahkan atau meningkatkan terjemahan di dalam bagian penting dari ekosistem Bitcoin. Cukup pilih proyek mana yang Anda ingin bantu.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Pengembangan</h2>
-<p>Bitcoin adalah perangkat lunak gratis. Jadi jika Anda adalah seorang pengembang, Anda dapat menggunakan kekuatan-super Anda untuk melakukan kebaikan dan <a href="/id/pengembangan">meningkatkan Bitcoin</a>. Atau Anda dapat membangun layanan atau perangkat lunak baru yang menakjubkan yang dapat menggunakan Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Terjemahkan</h3>
+      <p>Anda dapat membantu meningkatkan ketersediaan Bitcoin dengan menerjemahkan atau meningkatkan terjemahan di dalam bagian penting dari ekosistem Bitcoin. Cukup pilih proyek mana yang Anda ingin bantu.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Donasi</h2>
-<p>Cara yang termudah untuk membantu adalah <a href="https://bitcoinfoundation.org/about/donate/">mendonasikan</a> beberapa bitcoin ke Bitcoin Foundation. Atau Anda dapat membantu mendanai proyek apapun yang berkaitan dengan Bitcoin yang Anda percaya akan bermanfaat dimasa akan datang.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Pengembangan</h3>
+      <p>Bitcoin adalah perangkat lunak gratis. Jadi jika Anda adalah seorang pengembang, Anda dapat menggunakan kekuatan-super Anda untuk melakukan kebaikan dan <a href="/id/pengembangan">meningkatkan Bitcoin</a>. Atau Anda dapat membangun layanan atau perangkat lunak baru yang menakjubkan yang dapat menggunakan Bitcoin.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organisasi</h2>
-<p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> dan banyak <a href="/id/komunitas#nirlaba">organisasi nirlaba</a> lainnya berdedikasi untuk menjaga dan mempromosikan Bitcoin. Anda dapat membantu organisasi-organisasi ini dengan cara bergabung bersama mereka serta berpartisipasi dalam proyek, acara, dan diskusi mereka.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Donasi</h3>
+      <p>Cara yang termudah untuk membantu adalah <a href="https://bitcoinfoundation.org/about/donate/">mendonasikan</a> beberapa bitcoin ke Bitcoin Foundation. Atau Anda dapat membantu mendanai proyek apapun yang berkaitan dengan Bitcoin yang Anda percaya akan bermanfaat dimasa akan datang.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Sebarkan</h2>
-<p>Bicaralah mengenai Bitcoin kepada orang-orang yang tertarik. Tulislah mengenai Bitcoin di blog Anda. Beritahu toko-toko favorit Anda bahwa Anda ingin membayar menggunakan Bitcoin. Bantu menjaga <a href="http://usebitcoins.info/">daftar penjual</a> tetap akurat dan aktual. Atau menjadi kreatif dan membuat kaos Bitcoin yang bagus untuk Anda sendiri.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organisasi</h3>
+      <p><a href="https://bitcoinfoundation.org/">Bitcoin Foundation</a> dan banyak <a href="/id/komunitas#nirlaba">organisasi nirlaba</a> lainnya berdedikasi untuk menjaga dan mempromosikan Bitcoin. Anda dapat membantu organisasi-organisasi ini dengan cara bergabung bersama mereka serta berpartisipasi dalam proyek, acara, dan diskusi mereka.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Dokumentasi</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> dan <a href="https://en.bitcoin.it/">Bitcoin wiki</a> menyediakan berbagai informasi yang berguna dan kami secara terus-menerus meningkatkan informasi di dalamnya. Anda bisa membantu meningkatkan sumber-sumber informasi tersebut tetap akurat dan aktual.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Sebarkan</h3>
+      <p>Bicaralah mengenai Bitcoin kepada orang-orang yang tertarik. Tulislah mengenai Bitcoin di blog Anda. Beritahu toko-toko favorit Anda bahwa Anda ingin membayar menggunakan Bitcoin. Bantu menjaga <a href="http://usebitcoins.info/">daftar penjual</a> tetap akurat dan aktual. Atau menjadi kreatif dan membuat kaos Bitcoin yang bagus untuk Anda sendiri.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Bertemu dengan komunitas</h2>
-<p>Anda dapat bergabung dengan <a href="/id/komunitas">komunitas</a> Bitcoin dan berbicara dengan penggemar Bitcoin lainnya. Anda juga bisa mempelajari lebih lanjut mengenai Bitcoin setiap hari, membantu pengguna baru dan ikut terlibat dalam proyek-proyek menarik.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Dokumentasi</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> dan <a href="https://en.bitcoin.it/">Bitcoin wiki</a> menyediakan berbagai informasi yang berguna dan kami secara terus-menerus meningkatkan informasi di dalamnya. Anda bisa membantu meningkatkan sumber-sumber informasi tersebut tetap akurat dan aktual.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Bertemu dengan komunitas</h3>
+      <p>Anda dapat bergabung dengan <a href="/id/komunitas">komunitas</a> Bitcoin dan berbicara dengan penggemar Bitcoin lainnya. Anda juga bisa mempelajari lebih lanjut mengenai Bitcoin setiap hari, membantu pengguna baru dan ikut terlibat dalam proyek-proyek menarik.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/id/sah">Sah</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/sah">Sah</a></li>
 			
-			<li><a href="/id/privasi">Privasi</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/privasi">Privasi</a></li>
 			
-			<li><a href="/id/pers">Pers</a></li>
-			<li><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/pers">Pers</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/id/mengenai-kami">Mengenai bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Sebuah situs web komunitas yang didukung oleh</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

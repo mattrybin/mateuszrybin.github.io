@@ -10,15 +10,29 @@
 <title>OpenSSL Heartbleed vulnerability</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/bbe9e42df3901d0b80f1ff202d596833.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,8 +44,6 @@
 <div class="top">
   <div class="top_main">
     
-
-
   <div class="alert_standard alert">
     <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
   </div>
@@ -206,7 +218,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/en.png"><strong>English</strong>
+          <img src="/img/flags/en.png"><strong>English</strong>
 				</div>
 			</a>
 		</div>
@@ -333,6 +345,7 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
@@ -342,23 +355,27 @@
 <link rel="canonical" href="https://bitcoin.org/en/alert/2014-04-11-heartbleed"/>
 
 
+<div class="content_alert">
+
 <link rel="alternate" type="application/rss+xml" href="/en/rss/alerts.rss" title="Bitcoin network status and alerts">
 
-<div class="subhead-links">
-  <a href="/en/alerts">Network alerts history</a>
-| <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
-| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2014-04-11-heartbleed.html">Post history</a>
-| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_alerts/2014-04-11-heartbleed.html%0A%0A">Report issue</a>
-</div>
+  <div class="content_alert--subhead">
+    <a href="/en/alerts">Network alerts history</a>
+  | <a type="application/rss+xml" href="/en/rss/alerts.rss"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+  | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2014-04-11-heartbleed.html">Post history</a>
+  | <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_alerts/2014-04-11-heartbleed.html%0A%0A">Report issue</a>
+  </div>
 
-<div class="post">
+  <div class="content_alert--post">
 
-  <header class="post-header">
-    <h1 class="post-title alerttitle"><img src="/img/icons/warning.svg" alt="warning">OpenSSL Heartbleed vulnerability<br><small>11 April 2014</small></h1>
-  </header>
+    <header class="content_alert--post--header">
+      <img class="content_alert--post--header--icon" src="/img/icons/warning.svg" alt="warning">
+      <h1 class="content_alert--post--header--title">OpenSSL Heartbleed vulnerability</h1>
+      <h2 class="content_alert--post--header--subtitle">11 April 2014</h2>
+    </header>
 
-  <article class="post-content">
-    <h2 id="what-happened">What happened</h2>
+    <article class="content_alert--content">
+      <h2 id="what-happened">What happened</h2>
  
 <p>The version of OpenSSL used by Bitcoin Core software version 0.9.0 and earlier
 contains a bug that can reveal memory to a remote attacker. See 
@@ -403,8 +420,9 @@ very likely discover the rpcpassword and the last rpc request. It is possible
   <i>This notice last updated: Fri, 11 Apr 2014 12:19:23 -0400</i>
 </div>
 
-  </article>
+    </article>
 
+  </div>
 </div>
 
       </div>
@@ -416,14 +434,14 @@ very likely discover the rpcpassword and the last rpc request. It is possible
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu alert">Network Status</a></li>
-			<li><a href="/en/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy Policy</a></li>
 			
-			<li><a href="/en/press">Press</a></li>
-			<li><a href="/en/about-us">About bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/about-us">About bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -432,7 +450,8 @@ very likely discover the rpcpassword and the last rpc request. It is possible
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -440,9 +459,7 @@ very likely discover the rpcpassword and the last rpc request. It is possible
 
 <div class="footer">
   <div class="footer_main">
-    
-
-<div class="footer_developer">
+    <div class="footer_developer">
 	<div class="footer_developer--header">
 		<img class="footer_developer--logo" src="/img/components/header_standard--logo.svg">
 		<h2>Bitcoin<span>Core</span></h2>
@@ -456,13 +473,15 @@ very likely discover the rpcpassword and the last rpc request. It is possible
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -473,7 +492,6 @@ very likely discover the rpcpassword and the last rpc request. It is possible
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

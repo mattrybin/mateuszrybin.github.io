@@ -10,15 +10,29 @@
 <title>Säkra din plånbok - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sv.png"><strong>Svenska</strong>
+          <img src="/img/flags/sv.png"><strong>Svenska</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Säkra din plånbok</h1>
-<p class="summarytxt">Precis som i verkligheten så måste din plånbok säkras. Bitcoin gör de möjligt att överföra pengar var som helst väldigt enkelt och du har total kontroll. Sådana funktioner orsakar vissa säkerhetsbekymmer. Samtidigt kan Bitcoin tillhandahålla en väldigt hög nivå av säkerhet, om använt korrekt. <b>Kom alltid ihåg att det är ditt ansvar att använda bra rutiner för att säkra dina pengar.</b></p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Säkra din plånbok</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Precis som i verkligheten så måste din plånbok säkras. Bitcoin gör de möjligt att överföra pengar var som helst väldigt enkelt och du har total kontroll. Sådana funktioner orsakar vissa säkerhetsbekymmer. Samtidigt kan Bitcoin tillhandahålla en väldigt hög nivå av säkerhet, om använt korrekt. <b>Kom alltid ihåg att det är ditt ansvar att använda bra rutiner för att säkra dina pengar.</b></h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Var observant när du använder nättjänster</h2>
-<p>Du ska vara försiktigt med alla tjänster som är designade till att lagra dina pengar på nätet. Många börser och nätplånböcker har tidigare lidit av säkerhetsintrång och sådana tjänster tillhandahåller generellt inte tillräckligt med försäkring och säkerhet, för att lagra dina pengar som på en bank. Du kanske vill använda andra typer av <a href="/sv/valj-din-planbok">Bitcoin-plånböcker</a>. Annars ska du använda dessa tjänster väldigt försiktigt. Att använda tvåstegsverifiering är rekommenderat.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Var observant när du använder nättjänster</h3>
+		  <p>Du ska vara försiktigt med alla tjänster som är designade till att lagra dina pengar på nätet. Många börser och nätplånböcker har tidigare lidit av säkerhetsintrång och sådana tjänster tillhandahåller generellt inte tillräckligt med försäkring och säkerhet, för att lagra dina pengar som på en bank. Du kanske vill använda andra typer av <a href="/sv/valj-din-planbok">Bitcoin-plånböcker</a>. Annars ska du använda dessa tjänster väldigt försiktigt. Att använda tvåstegsverifiering är rekommenderat.</p>
+		</li>
 
-<h2 id="everyday">Små mängder för vardagsbruk</h2>
-<p>En Bitcoin-plånbok är som en plånbok med kontanter. Ifall du inte skulle ha tusentals kronor i plånboken, så ska du nog tänka likadant för din Bitcoin plånbok. Generellt, så är det bra att alltid hålla små belopp av bitcoins på din dator, mobil eller server för vardagligt användande och hålla resten av dina pengar på en säkrare plats.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Små mängder för vardagsbruk</h3>
+		  <p>En Bitcoin-plånbok är som en plånbok med kontanter. Ifall du inte skulle ha tusentals kronor i plånboken, så ska du nog tänka likadant för din Bitcoin plånbok. Generellt, så är det bra att alltid hålla små belopp av bitcoins på din dator, mobil eller server för vardagligt användande och hålla resten av dina pengar på en säkrare plats.</p>
+		</li>
 
-<h2 id="backup">Säkerhetskopiera din plånbok</h2>
-<p>Om du lagrar dina bitcoins på en säker plats och har fullständiga säkerhetskopior kan det skydda dig mot många datorhaverier och mänskliga misstag. Det kan också möjliggöra en återställning av din plånbok ifall din dator eller mobil blir stulen och din plånbok också är krypterad.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Säkerhetskopiera din plånbok</h3>
+		  <p>Om du lagrar dina bitcoins på en säker plats och har fullständiga säkerhetskopior kan det skydda dig mot många datorhaverier och mänskliga misstag. Det kan också möjliggöra en återställning av din plånbok ifall din dator eller mobil blir stulen och din plånbok också är krypterad.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Säkerhetskopiera hela din plånbok</h3>
+		  		<p>Vissa plånböcker använder gömda privata nycklar internt. Om du bara har en säkerhetskopia av dina privata nycklar för dina publika Bitcoin-adresser, kan du eventuellt inte återställa stora delar av dina pengar från din säkerhetskopia.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Kryptera dina nätsäkerhetskopior</h3>
+		  		<p>Säkerhetskopior som lagras på nätet har hög stöldrisk. Datorer som är internetanslutna är i riskzonen för skadlig programvara. Därmed är det en bra säkerhetsrutin att kryptera säkerhetskopior som lagras på enheter som är nätverksanslutna.</p>
+		  	</li>
 
-<h3 id="backupwhole">Säkerhetskopiera hela din plånbok</h3>
-<p>Vissa plånböcker använder gömda privata nycklar internt. Om du bara har en säkerhetskopia av dina privata nycklar för dina publika Bitcoin-adresser, kan du eventuellt inte återställa stora delar av dina pengar från din säkerhetskopia.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Använd många säkra platser</h3>
+		  		<p>Om din säkerhetskopia inte är beroende av en plats, så löper du en väsentligen mindre risk att någon olycka skulle förhindra dig från att återställa din plånbok. Du kanske borde fundera på att använda andra medium för säkerhetskopior som USB, papper eller CD skivor.</p>
+		  	</li>
 
-<h3 id="backuponline">Kryptera dina nätsäkerhetskopior</h3>
-<p>Säkerhetskopior som lagras på nätet har hög stöldrisk. Datorer som är internetanslutna är i riskzonen för skadlig programvara. Därmed är det en bra säkerhetsrutin att kryptera säkerhetskopior som lagras på enheter som är nätverksanslutna.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Säkerhetskopiera regelbundet</h3>
+		  		<p>Du behöver säkerhetskopiera din plånbok regelbundet för att se till att alla Bitcoin-växelmyntsadresser och alla nya Bitcoin-adresser du skapar är inkluderade i säkerhetskopian. Men alla program kommer snart använda plånböcker som enbart behöver säkerhetskopieras en gång.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Använd många säkra platser</h3>
-<p>Om din säkerhetskopia inte är beroende av en plats, så löper du en väsentligen mindre risk att någon olycka skulle förhindra dig från att återställa din plånbok. Du kanske borde fundera på att använda andra medium för säkerhetskopior som USB, papper eller CD skivor.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Kryptera din plånbok</h3>
+		  <p>Att kryptera din plånbok eller smartphone tillåter dig att sätta ett lösenord som måste matas in för att kunna ta ut några pengar. Det hjälper dig att skydda dig mot tjuvar, även fast det inte kan skydda mot virus som loggar det du skriver. </p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Glöm aldrig ditt lösenord</h3>
+		  		<p>Du måste se till att inte glömma ditt lösenord för annars kommer dina pengar vara permanent förlorade. Tillskillnad från din bank, så finns det väldigt begränsade möjligheter att få tillbaka ditt lösenord med Bitcoin. Du ska kunna minnas ditt lösenord efter många år utan att ha använt det. Ifall du är osäker kanske du borde spara en papperskopia av ditt lösenord på en säker plats, t.ex i ett kassaskåp.</p>
+		  	</li>
 
-<h3 id="backupregular">Säkerhetskopiera regelbundet</h3>
-<p>Du behöver säkerhetskopiera din plånbok regelbundet för att se till att alla Bitcoin-växelmyntsadresser och alla nya Bitcoin-adresser du skapar är inkluderade i säkerhetskopian. Men alla program kommer snart använda plånböcker som enbart behöver säkerhetskopieras en gång.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Använd ett starkt lösenord</h3>
+		  		<p>Alla lösenord som bara innehåller bokstäver eller igenkännbara ord kan anses som väldigt svaga och lätta att knäcka. Ett starkt lösenord måste innehålla bokstäver, siffror, punkter och måste vara minst 16 karaktärer långt. De säkraste lösenorden är dem som är genererade av program specifikt designade för det ändamålet. Starka lösenord är oftast svårare att komma ihåg, så var noggrann med att memorera det. </p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Offlineplånbok för besparingar</h3>
+		  <p>En offlineplånbok, också kallat kalllagring, erbjuder den högsta nivån av säkerhet för sparpengar. Det innebär att plånboken lagras på en säker plats som inte är ansluten till nätverket. Korrekt utfört erbjuder det ett väldigt bra skydd mot dataintrång. Användandet av offlineplånbok tillsammans med säkerhetskopior och kryptering är också bra rutin. Här är en översikt av några tillvägagångssätt.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Transaktionssignering offline</h3>
+		  		<p>Det här tillvägagångssättet involverar två datorer som delar på delar av samma plånbok. Den första får inte vara anslutet till något nätverk. Det är den enda datorn som håller hela plånboken och den enda som kan signera transaktioner. Den andra datorn är uppkopplad till nätverket och har bara en observerande plånbok som kan skapa osignerade transaktioner. På här vägen kan du säkert skapa nya transaktioner med dessa steg.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Skapa en ny transaktion på datorn som är uppkopplad och spara transaktionen på ett USB-minne.</li>
+		  		  <li>Signera transaktionen med din offlinedator.</li>
+		  		  <li>Skicka den signerade transaktionen med den uppkopplade datorn.</li>
+		  		</ol>
+		  		<p>Eftersom datorn som är uppkopplad till nätverket inte kan signera transaktioner, så kan den inte användas till att ta ut några pengar ifall den är komprometterad. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> kan användas för att utföra en offline transaktionssignatur.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Hårdvaruplånböcker</h3>
+		  		<p>Hårdvaruplånböcker är den bästa balansen mellan hög säkerhet och enkelhet att använda. Dessa små enheter är designade från grunden för att vara en Bitcoin-plånbok och inget annat. Ingen mjukvara kan installeras på den, vilket gör dem väldigt säkra mot datasäkerhetshål och tjuvar på nätet. Enheterna tillåter säkerhetkopiering så du kan återställa dina pengar även fast du tappar bort den.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Se till att din mjukvara alltid är uppdaterad</h3>
+		  <p>Användandet av den senaste Bitcoin-mjukvaran tillåter dig att ta del av viktiga stabilitets och säkerhets fixar. Uppdateringar kan förhindra problem av olika allvarlighetsgrad, inkludera nya funktioner och hjälpa dig hålla din plånbok säker. Installera uppdateringar för all annan mjukvara på din dator eller mobil är också viktigt för att hålla din plånbok säker.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Multisignaturer för att skydda mot stöld</h3>
+		  <p>Bitcoin inkluderar en multi-signatursfunktion som möjliggör att en transaktion kan kräva flera oberoende signaturer för att transaktionen ska kunna utföras. Det kan användas av en organisation för att ge sina medlemmar tillgång till kassan samtidigt som organisationen endast tillåter ett uttag om 3 av 5 medlemmar har signerat transaktionen. Vissa webbplånböcker tillhandahåller också multi-signatursplånböcker, som tillåter användaren att ha kontroll över deras pengar samtidigt som en tjuv är förhindrad att stjäla pengarna genom att kompromettera en enda enhet eller server.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Tänk över ditt testamente</h3>
+		  <p>Dina Bitcoins kan försvinna för evigt om du inte har en plan för dina vänner och din familj ifall något oväntat skulle ske. Saknas information om vart dina plånböcker är lagrade eller om dina lösenord inte är kända av någon så kan inte dina pengar återfås. Att lägga tid på att planera detta kan göra stor skillnad om något oförutsett inträffar.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Kryptera din plånbok</h2>
-<p>Att kryptera din plånbok eller smartphone tillåter dig att sätta ett lösenord som måste matas in för att kunna ta ut några pengar. Det hjälper dig att skydda dig mot tjuvar, även fast det inte kan skydda mot virus som loggar det du skriver. </p>
-
-<div class="box">
-
-<h3 id="encryptforget">Glöm aldrig ditt lösenord</h3>
-<p>Du måste se till att inte glömma ditt lösenord för annars kommer dina pengar vara permanent förlorade. Tillskillnad från din bank, så finns det väldigt begränsade möjligheter att få tillbaka ditt lösenord med Bitcoin. Du ska kunna minnas ditt lösenord efter många år utan att ha använt det. Ifall du är osäker kanske du borde spara en papperskopia av ditt lösenord på en säker plats, t.ex i ett kassaskåp.</p>
-
-<h3 id="encryptstrong">Använd ett starkt lösenord</h3>
-<p>Alla lösenord som bara innehåller bokstäver eller igenkännbara ord kan anses som väldigt svaga och lätta att knäcka. Ett starkt lösenord måste innehålla bokstäver, siffror, punkter och måste vara minst 16 karaktärer långt. De säkraste lösenorden är dem som är genererade av program specifikt designade för det ändamålet. Starka lösenord är oftast svårare att komma ihåg, så var noggrann med att memorera det. </p>
-
-</div>
-
-<h2 id="offline">Offlineplånbok för besparingar</h2>
-<p>En offlineplånbok, också kallat kalllagring, erbjuder den högsta nivån av säkerhet för sparpengar. Det innebär att plånboken lagras på en säker plats som inte är ansluten till nätverket. Korrekt utfört erbjuder det ett väldigt bra skydd mot dataintrång. Användandet av offlineplånbok tillsammans med säkerhetskopior och kryptering är också bra rutin. Här är en översikt av några tillvägagångssätt.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Transaktionssignering offline</a></h3>
-<p>Det här tillvägagångssättet involverar två datorer som delar på delar av samma plånbok. Den första får inte vara anslutet till något nätverk. Det är den enda datorn som håller hela plånboken och den enda som kan signera transaktioner. Den andra datorn är uppkopplad till nätverket och har bara en observerande plånbok som kan skapa osignerade transaktioner. På här vägen kan du säkert skapa nya transaktioner med dessa steg.</p>
-<ol>
-  <li>Skapa en ny transaktion på datorn som är uppkopplad och spara transaktionen på ett USB-minne.</li>
-  <li>Signera transaktionen med din offlinedator.</li>
-  <li>Skicka den signerade transaktionen med den uppkopplade datorn.</li>
-</ol>
-<p>Eftersom datorn som är uppkopplad till nätverket inte kan signera transaktioner, så kan den inte användas till att ta ut några pengar ifall den är komprometterad. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> kan användas för att utföra en offline transaktionssignatur.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Hårdvaruplånböcker</a></h3>
-<p>Hårdvaruplånböcker är den bästa balansen mellan hög säkerhet och enkelhet att använda. Dessa små enheter är designade från grunden för att vara en Bitcoin-plånbok och inget annat. Ingen mjukvara kan installeras på den, vilket gör dem väldigt säkra mot datasäkerhetshål och tjuvar på nätet. Enheterna tillåter säkerhetkopiering så du kan återställa dina pengar även fast du tappar bort den.</p>
-</div>
-
-<h2 id="update">Se till att din mjukvara alltid är uppdaterad</h2>
-<p>Användandet av den senaste Bitcoin-mjukvaran tillåter dig att ta del av viktiga stabilitets och säkerhets fixar. Uppdateringar kan förhindra problem av olika allvarlighetsgrad, inkludera nya funktioner och hjälpa dig hålla din plånbok säker. Installera uppdateringar för all annan mjukvara på din dator eller mobil är också viktigt för att hålla din plånbok säker.</p>
-
-<h2 id="offlinemulti">Multisignaturer för att skydda mot stöld</h2>
-<p>Bitcoin inkluderar en multi-signatursfunktion som möjliggör att en transaktion kan kräva flera oberoende signaturer för att transaktionen ska kunna utföras. Det kan användas av en organisation för att ge sina medlemmar tillgång till kassan samtidigt som organisationen endast tillåter ett uttag om 3 av 5 medlemmar har signerat transaktionen. Vissa webbplånböcker tillhandahåller också multi-signatursplånböcker, som tillåter användaren att ha kontroll över deras pengar samtidigt som en tjuv är förhindrad att stjäla pengarna genom att kompromettera en enda enhet eller server.</p>
-
-<h2 id="offlinetestament">Tänk över ditt testamente</h2>
-<p>Dina Bitcoins kan försvinna för evigt om du inte har en plan för dina vänner och din familj ifall något oväntat skulle ske. Saknas information om vart dina plånböcker är lagrade eller om dina lösenord inte är kända av någon så kan inte dina pengar återfås. Att lägga tid på att planera detta kan göra stor skillnad om något oförutsett inträffar.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sv/juridiskt">Juridiskt</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/juridiskt">Juridiskt</a></li>
 			
-			<li><a href="/sv/integritet">Integritet</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/integritet">Integritet</a></li>
 			
-			<li><a href="/sv/press">Press</a></li>
-			<li><a href="/sv/om-oss">Om bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sv/om-oss">Om bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>En community hemsida sponsrat av</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

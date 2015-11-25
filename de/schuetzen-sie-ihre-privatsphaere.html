@@ -10,15 +10,29 @@
 <title>Schützen Sie ihre Privatsphäre - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/de.png"><strong>Deutsch</strong>
+          <img src="/img/flags/de.png"><strong>Deutsch</strong>
 				</div>
 			</a>
 		</div>
@@ -323,31 +341,46 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Schützen Sie ihre Privatsphäre</h1>
-<p class="summarytxt">Bitcoin wird häufig als anonymes Zahlungsnetzwerk verstanden. In Wirklichkeit ist Bitcoin das vermutlich transparenteste Zahlungsnetzwerk der Welt. Gleichzeitig bietet Bitcoin, richtig genutzt, einen annehmbaren Grad an Privatsphäre. <b>Denken Sie aber immer daran, dass es in ihrer Verantwortung liegt sich Methoden anzugewöhnen, mit denen Sie ihre Privatsphäre schützen können.</b></p>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Schützen Sie ihre Privatsphäre</h1>
+	<h2 class="content_standard--subtitle">Bitcoin wird häufig als anonymes Zahlungsnetzwerk verstanden. In Wirklichkeit ist Bitcoin das vermutlich transparenteste Zahlungsnetzwerk der Welt. Gleichzeitig bietet Bitcoin, richtig genutzt, einen annehmbaren Grad an Privatsphäre. <b>Denken Sie aber immer daran, dass es in ihrer Verantwortung liegt sich Methoden anzugewöhnen, mit denen Sie ihre Privatsphäre schützen können.</b></h2>
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
+      <h3 id="traceable">Die Rückverfolgbarkeit von Bitcoin verstehen</h3>
+      <p>Bitcoin arbeitet mit einem noch nie dagewesenen Maß an Transparenz, mit dessen Umgang die  meisten Menschen nicht vertraut sind. Alle Bitcoin-Transaktionen sind öffentlich, zurückverfolgbar und dauerhaft im Bitcoin-Netzwerk gespeichert. Bitcoin-Adressen sind die einzige Information, die verwendet wird um zu bestimmen, wie Bitcoins zugeteilt sind bzw. wohin sie gesendet werden. Dieses Adressen werden von der Wallet jedes Nutzers privat generiert. Sobald jedoch Adressen verwendet werden, haftet die Historie aller Transaktionen, in die sie involviert sind, an ihnen. Jeder kann den  <a href="https://www.biteasy.com">Kontostand und alle Transaktionen</a>  einer Adresse einsehen. Da Nutzer normalerweise ihre Identität preisgeben müssen, um Dienstleistungen oder Waren entgegenzunehmen, können Bitcoin Adressen nicht vollständig anonym bleiben. Aus diesen Gründen sollten Bitcoin Adressen nur einmalig verwendet werden, und Nutzer müssen vorsichtig sein um ihre Adressen nicht preiszugeben.</p>
+    </li>
 
-<h2 id="traceable">Die Rückverfolgbarkeit von Bitcoin verstehen</h2>
-<p>Bitcoin arbeitet mit einem noch nie dagewesenen Maß an Transparenz, mit dessen Umgang die  meisten Menschen nicht vertraut sind. Alle Bitcoin-Transaktionen sind öffentlich, zurückverfolgbar und dauerhaft im Bitcoin-Netzwerk gespeichert. Bitcoin-Adressen sind die einzige Information, die verwendet wird um zu bestimmen, wie Bitcoins zugeteilt sind bzw. wohin sie gesendet werden. Dieses Adressen werden von der Wallet jedes Nutzers privat generiert. Sobald jedoch Adressen verwendet werden, haftet die Historie aller Transaktionen, in die sie involviert sind, an ihnen. Jeder kann den  <a href="https://www.biteasy.com">Kontostand und alle Transaktionen</a>  einer Adresse einsehen. Da Nutzer normalerweise ihre Identität preisgeben müssen, um Dienstleistungen oder Waren entgegenzunehmen, können Bitcoin Adressen nicht vollständig anonym bleiben. Aus diesen Gründen sollten Bitcoin Adressen nur einmalig verwendet werden, und Nutzer müssen vorsichtig sein um ihre Adressen nicht preiszugeben.</p>
+    <li class="content_standard--items">
+      <h3 id="receive">Benutzern Sie neue Adressen um Zahlungen zu empfangen</h3>
+      <p>Um ihre Privatsphäre zu schützen, sollten Sie jedes Mal, wenn Sie eine Zahlung empfangen, eine neue Adresse nutzen. Außerdem können Sie mehrere Wallets für unterschiedliche Zwecke nutzen. Auf diese Art können Sie jede ihrer Transaktionen trennen und es ist nicht möglich, sie alle miteinander in Verbindung zu bringen. Menschen, die ihnen Geld senden, können nicht sehen, welche anderen Bitcoin-Adressen Ihnen gehören und was Sie damit machen. Das ist vermutlich eine der wichtigsten Ratschläge, die Sie beachten sollten.</p>
+    </li>
 
-<h2 id="receive">Benutzern Sie neue Adressen um Zahlungen zu empfangen</h2>
-<p>Um ihre Privatsphäre zu schützen, sollten Sie jedes Mal, wenn Sie eine Zahlung empfangen, eine neue Adresse nutzen. Außerdem können Sie mehrere Wallets für unterschiedliche Zwecke nutzen. Auf diese Art können Sie jede ihrer Transaktionen trennen und es ist nicht möglich, sie alle miteinander in Verbindung zu bringen. Menschen, die ihnen Geld senden, können nicht sehen, welche anderen Bitcoin-Adressen Ihnen gehören und was Sie damit machen. Das ist vermutlich eine der wichtigsten Ratschläge, die Sie beachten sollten.</p>
+    <li class="content_standard--items">
+      <h3 id="public">Seien Sie in öffentlichen Netzwerken vorsichtig</h3>
+      <p>So lange es nicht ihre Absicht ist, öffentliche Spenden oder Zahlungen mit vollkommener Transparenz zu empfangen, ist es im Sinne der Privatsphäre keine gute Idee eine Bitcoin-Adresse auf ihrer Webseite oder in öffentlichen Netzwerken zu veröffentlichen. Wenn Sie sich trotzdem dazu entschließen, denken Sie immer daran, dass, wenn Sie Beträge von dieser Adresse auf eine ihrer anderen Adressen übertragen, beide Adressen in der Historie ihrer öffentlichen Adresse auftauchen. Zusätzlich sollten Sie darauf achten, keine Informationen über Transaktionen und Einkäufe zu veröffentlichen, die es jemanden ermöglichen, ihre Bitcoin-Adressen zu identifizieren.</p>
+    </li>
 
-<h2 id="public">Seien Sie in öffentlichen Netzwerken vorsichtig</h2>
-<p>So lange es nicht ihre Absicht ist, öffentliche Spenden oder Zahlungen mit vollkommener Transparenz zu empfangen, ist es im Sinne der Privatsphäre keine gute Idee eine Bitcoin-Adresse auf ihrer Webseite oder in öffentlichen Netzwerken zu veröffentlichen. Wenn Sie sich trotzdem dazu entschließen, denken Sie immer daran, dass, wenn Sie Beträge von dieser Adresse auf eine ihrer anderen Adressen übertragen, beide Adressen in der Historie ihrer öffentlichen Adresse auftauchen. Zusätzlich sollten Sie darauf achten, keine Informationen über Transaktionen und Einkäufe zu veröffentlichen, die es jemanden ermöglichen, ihre Bitcoin-Adressen zu identifizieren.</p>
+    <li class="content_standard--items">
+      <h3 id="iplog">Ihre IP-Adresse kann geloggt werden</h3>
+      <p>Weil Bitcoin ein Peer-to-Peer Netzwerk ist, ist es möglich die Übermittlung von Transaktion zu überwachen und IP-Adressen aufzuzeichnen. "Full Node"-Clients übermitteln alle Transaktionen, als wären es ihre eigenen. Das bedeutet, dass das Auffinden der Quelle einer bestimmten Transaktion schwierig sein kann und jeder Bitcoin-"Node" fälschlicherweise für den Ausgangspunkt gehalten werden kann. Sie sollten es in Betracht ziehen, die IP-Adresse ihres Computers mit einem Hilfsmittel wie <a href="https://www.torproject.org/">Tor</a> zu verstecken, so dass diese nicht aufgezeichnet werden kann.</p>
+    </li>
 
-<h2 id="iplog">Ihre IP-Adresse kann geloggt werden</h2>
-<p>Weil Bitcoin ein Peer-to-Peer Netzwerk ist, ist es möglich die Übermittlung von Transaktion zu überwachen und IP-Adressen aufzuzeichnen. "Full Node"-Clients übermitteln alle Transaktionen, als wären es ihre eigenen. Das bedeutet, dass das Auffinden der Quelle einer bestimmten Transaktion schwierig sein kann und jeder Bitcoin-"Node" fälschlicherweise für den Ausgangspunkt gehalten werden kann. Sie sollten es in Betracht ziehen, die IP-Adresse ihres Computers mit einem Hilfsmittel wie <a href="https://www.torproject.org/">Tor</a> zu verstecken, so dass diese nicht aufgezeichnet werden kann.</p>
+    <li class="content_standard--items">
+      <h3 id="mixing">Einschränkungen von "Mixingservices"</h3>
+      <p>Einige "Mixingservices" genannte Onlinedienste bieten an, die Rückverfolgbarkeit von Adressen zwischen Nutzern zu erschweren, indem sie denselben Betrag mit unterschiedlichen Bitcoin-Adressen empfangen und weiter versenden. Es ist wichtig zu wissen, dass die Legalität der Nutzung solcher Dienste je nach Gesetzgebung eines Landes unterschiedlichen Regeln unterworfen sein kann. Außerdem müssen Sie darauf vertrauen, dass die Personen, die diese Dienste anbieten, ihr Geld nicht verlieren, stehlen oder eine Logdatei ihrere Anfragen speichern. Auch wenn "Mixingservices" für kleine Beträge eine gute Möglichkeit bieten, die Rückverfolgbarkeit zu erschweren, wird es bei größeren Beträgen umso schwieriger.</p>
+    </li>
 
-<h2 id="mixing">Einschränkungen von "Mixingservices"</h2>
-<p>Einige "Mixingservices" genannte Onlinedienste bieten an, die Rückverfolgbarkeit von Adressen zwischen Nutzern zu erschweren, indem sie denselben Betrag mit unterschiedlichen Bitcoin-Adressen empfangen und weiter versenden. Es ist wichtig zu wissen, dass die Legalität der Nutzung solcher Dienste je nach Gesetzgebung eines Landes unterschiedlichen Regeln unterworfen sein kann. Außerdem müssen Sie darauf vertrauen, dass die Personen, die diese Dienste anbieten, ihr Geld nicht verlieren, stehlen oder eine Logdatei ihrere Anfragen speichern. Auch wenn "Mixingservices" für kleine Beträge eine gute Möglichkeit bieten, die Rückverfolgbarkeit zu erschweren, wird es bei größeren Beträgen umso schwieriger.</p>
-
-<h2 id="future">Zukünftige Verbesserungen</h2>
-<p>Zukünftig können viele Verbesserungen, die die Privatsphäre erhöhen, erwartet werden. Zum Beispiel gibt es einige Bemühungen, um zu verhindern, dass mehrere Adressen durch eine Zahlung mitenander in Verbindung gebracht werden können. Bitcoin Cores "Change Address" könnte mit der Zeit auch in andere Wallets implementiert werden. Grafische Nutzeroberflächen könnten verbessert werden, um nutzerfreundliche Zahlungsanfrage-Features zu bieten und um das Wiederverwenden von Adressen zu vermeiden. Vielerlei Arbeits- und Forschungstätigkeiten finden ebenso im Bereich der möglichen "Extended Privacy"-Features, wie die Möglichkeit zufällige Nutzertransaktionen zusammenzufügen, statt.</p>
-
+    <li class="content_standard--items">
+      <h3 id="future">Zukünftige Verbesserungen</h3>
+      <p>Zukünftig können viele Verbesserungen, die die Privatsphäre erhöhen, erwartet werden. Zum Beispiel gibt es einige Bemühungen, um zu verhindern, dass mehrere Adressen durch eine Zahlung mitenander in Verbindung gebracht werden können. Bitcoin Cores "Change Address" könnte mit der Zeit auch in andere Wallets implementiert werden. Grafische Nutzeroberflächen könnten verbessert werden, um nutzerfreundliche Zahlungsanfrage-Features zu bieten und um das Wiederverwenden von Adressen zu vermeiden. Vielerlei Arbeits- und Forschungstätigkeiten finden ebenso im Bereich der möglichen "Extended Privacy"-Features, wie die Möglichkeit zufällige Nutzertransaktionen zusammenzufügen, statt.</p>
+    </li>
+  </ul>
+</div>
       </div>
     </div>
 
@@ -357,14 +390,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/de/rechtliches">Rechtliches</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/de/rechtliches">Rechtliches</a></li>
 			
-			<li><a href="/de/privatsphaere">Privatsphäre</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/de/privatsphaere">Privatsphäre</a></li>
 			
-			<li><a href="/de/presse">Presse</a></li>
-			<li><a href="/de/ueber-uns">Über bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/de/presse">Presse</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/de/ueber-uns">Über bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -373,7 +406,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Eine Community Website gesponsert von</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -395,13 +429,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -412,7 +448,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

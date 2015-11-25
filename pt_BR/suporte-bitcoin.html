@@ -10,15 +10,29 @@
 <title>Suporte Bitcoin - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pt_BR.png"><strong>Português Brasil</strong>
+          <img src="/img/flags/pt_BR.png"><strong>Português Brasil</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Suporte Bitcoin</h1>
-<p class="summarytxt">Bitcoin é um protoloco que nasceu de uma pequena comunidade que tem crescido cada vez mais. Você pode ajudar a difundir e melhorar a Bitcoin de várias maneiras.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Suporte Bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin é um protoloco que nasceu de uma pequena comunidade que tem crescido cada vez mais. Você pode ajudar a difundir e melhorar a Bitcoin de várias maneiras.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Usando Bitcoin</h2>
-<p><a href="/pt_BR/comecando">Usar Bitcoin</a> é a primeira coisa a fazer para apoiar Bitcoin. Há provavelmente muitos casos onde ele facilita sua vida. Você pode aceitar pagamentos e fazer compras com Bitcoin.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Usando Bitcoin</h3>
+      <p><a href="/pt_BR/comecando">Usar Bitcoin</a> é a primeira coisa a fazer para apoiar Bitcoin. Há provavelmente muitos casos onde ele facilita sua vida. Você pode aceitar pagamentos e fazer compras com Bitcoin.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Faça parte da rede Bitcoin</h2>
-<p>Se você tem uma boa conexão de internet, você pode reforçar a rede Bitcoin ao manter o<a href="/pt_BR/download"> programa full node</a> rodando no seu computador e servidor com port 8333 aberto. Full nodes são transações seguras e retransmitidas.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Faça parte da rede Bitcoin</h3>
+      <p>Se você tem uma boa conexão de internet, você pode reforçar a rede Bitcoin ao manter o<a href="/pt_BR/download"> programa full node</a> rodando no seu computador e servidor com port 8333 aberto. Full nodes são transações seguras e retransmitidas.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Mineração</h2>
-<p>Você pode começar a <a href="http://www.bitcoinmining.com/">minerar Bitcoins</a> para ajudar a processar transações. De modo a proteger a rede, você pode participar de <a href="http://mempool.info/pools">pequenas piscinas de mineração</a> e preferir piscinas descentralizadas como <a href="http://p2pool.in/">P2Pool</a> ou <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pools</a> com suporte de getblocktemplate (GBT).</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Mineração</h3>
+      <p>Você pode começar a <a href="http://www.bitcoinmining.com/">minerar Bitcoins</a> para ajudar a processar transações. De modo a proteger a rede, você pode participar de <a href="http://mempool.info/pools">pequenas piscinas de mineração</a> e preferir piscinas descentralizadas como <a href="http://p2pool.in/">P2Pool</a> ou <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">pools</a> com suporte de getblocktemplate (GBT).</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Traduzindo</h2>
-<p>Você pode ajudar o ecossistema Bitcoin melhorando as traduções atuais ou contribuindo com novas. Escolha um projeto e comece agora mesmo. </p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Contribuindo com código</h2>
-<p>Bitcoin é código-livre. Se você é um desenvolvedor, você pode usar seus super poderes para <a href="/pt_BR/desenvolvimento">aperfeiçoar a Bitcoin</a>. Ou criar novos e incríveis serviços que se beneficiam da rede.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Traduzindo</h3>
+      <p>Você pode ajudar o ecossistema Bitcoin melhorando as traduções atuais ou contribuindo com novas. Escolha um projeto e comece agora mesmo. </p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Doando</h2>
-<p>O modo mais fácil de ajudar é <a href="https://bitcoinfoundation.org/about/donate/">doando</a>alguns bitcoins para a Fundação Bitcoin. Ou financiando algum projeto que tenha relação com o ecossistema Bitcoin e que você acha que será útil no futuro. </p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Contribuindo com código</h3>
+      <p>Bitcoin é código-livre. Se você é um desenvolvedor, você pode usar seus super poderes para <a href="/pt_BR/desenvolvimento">aperfeiçoar a Bitcoin</a>. Ou criar novos e incríveis serviços que se beneficiam da rede.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organizações</h2>
-<p>A <a href="https://bitcoinfoundation.org/">Fundação Bitcoin</a> e várias outras <a href="/pt_BR/comunidade#sem-fins-lucrativos">organizações sem fins lucrativos</a> são dedicadas a proteger e promover o Bitcoin. Você pode ajudar estes grupos entrando e participando de seus projetos, discussões e eventos.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Doando</h3>
+      <p>O modo mais fácil de ajudar é <a href="https://bitcoinfoundation.org/about/donate/">doando</a>alguns bitcoins para a Fundação Bitcoin. Ou financiando algum projeto que tenha relação com o ecossistema Bitcoin e que você acha que será útil no futuro. </p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Espalhando</h2>
-<p>Fale sobre Bitcoin com pessoas interessadas. Escreva sobre isso em seu blog. Fale aos seus vendedores favoritos que você gostaria de pagar com Bitcoin. Ajude deixando <a href="http://usebitcoins.info/">diretórios de comerciante</a> atualizadas. Ou seja criativo e crie uma boa camiseta Bitcoin.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organizações</h3>
+      <p>A <a href="https://bitcoinfoundation.org/">Fundação Bitcoin</a> e várias outras <a href="/pt_BR/comunidade#sem-fins-lucrativos">organizações sem fins lucrativos</a> são dedicadas a proteger e promover o Bitcoin. Você pode ajudar estes grupos entrando e participando de seus projetos, discussões e eventos.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Documentação</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> e a <a href="https://en.bitcoin.it/">Bitcoin wiki</a> fornecem documentações úteis e estamos sempre melhorando esta informação. Você pode ajudar a melhorar esses recursos e mantê-los atualizados.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Espalhando</h3>
+      <p>Fale sobre Bitcoin com pessoas interessadas. Escreva sobre isso em seu blog. Fale aos seus vendedores favoritos que você gostaria de pagar com Bitcoin. Ajude deixando <a href="http://usebitcoins.info/">diretórios de comerciante</a> atualizadas. Ou seja criativo e crie uma boa camiseta Bitcoin.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Conheça as comunidades</h2>
-<p>Você pode participar das <a href="/pt_BR/comunidade">comunidades</a> sobre Bitcoin e conversar com outros entusiastas. Aprender mais sobre Bitcoin a cada dia, ajudar novos usuários e se envolver em projetos interessantes.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Documentação</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> e a <a href="https://en.bitcoin.it/">Bitcoin wiki</a> fornecem documentações úteis e estamos sempre melhorando esta informação. Você pode ajudar a melhorar esses recursos e mantê-los atualizados.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Conheça as comunidades</h3>
+      <p>Você pode participar das <a href="/pt_BR/comunidade">comunidades</a> sobre Bitcoin e conversar com outros entusiastas. Aprender mais sobre Bitcoin a cada dia, ajudar novos usuários e se envolver em projetos interessantes.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pt_BR/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pt_BR/legal">Legal</a></li>
 			
-			<li><a href="/pt_BR/privacidade">Privacidade</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pt_BR/privacidade">Privacidade</a></li>
 			
-			<li><a href="/pt_BR/imprensa">Imprensa</a></li>
-			<li><a href="/pt_BR/sobre-nos">Sobre bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pt_BR/imprensa">Imprensa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pt_BR/sobre-nos">Sobre bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Um site comunitário patrocinado por </span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

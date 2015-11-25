@@ -10,15 +10,29 @@
 <title>Támogassa a Bitcoint - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/hu.png"><strong>Magyar</strong>
+          <img src="/img/flags/hu.png"><strong>Magyar</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">GYIK</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Támogassa a Bitcoint</h1>
-<p class="summarytxt">A Bitcoin egy olyan protokoll, amelyet egy kis közösség hívott életre, és amely születése óta gyorsan növekszik. Sok mindent tehet a Bitcoin széles körben való elterjedéséért, illetve további fejlődéséért.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Támogassa a Bitcoint</h1>
+  <h2 class="content_support-bitcoin--subtitle">A Bitcoin egy olyan protokoll, amelyet egy kis közösség hívott életre, és amely születése óta gyorsan növekszik. Sok mindent tehet a Bitcoin széles körben való elterjedéséért, illetve további fejlődéséért.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />A Bitcoin használata</h2>
-<p>A <a href="/hu/vagjon-bele">Bitcoin használata</a> az első lépés, amelyet a Bitcoin támogatásának irányában tehet. Valószínűleg számos esetben könnyítheti meg életét. Kifizetéseket fogadhat, illetve vásárolhat is a Bitcoin segítségével.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">A Bitcoin használata</h3>
+      <p>A <a href="/hu/vagjon-bele">Bitcoin használata</a> az első lépés, amelyet a Bitcoin támogatásának irányában tehet. Valószínűleg számos esetben könnyítheti meg életét. Kifizetéseket fogadhat, illetve vásárolhat is a Bitcoin segítségével.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Legyen Ön a hálózat</h2>
-<p>Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href="/hu/letoltes">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheti. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Legyen Ön a hálózat</h3>
+      <p>Ha gyors interneteléréssel rendelkezik, a Bitcoin-hálózatot a számítógépén vagy szerverén - nyitott 8333-as porttal - egy <a href="/hu/letoltes">teljes csomóponti szoftver</a> folyamatos futtatásával erősítheti. A teljes csomópontok az összes tranzakció biztonságát szavatolják, valamint továbbítják azokat.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Bányászat</h2>
-<p>Ön is elkezdhet <a href="http://www.bitcoinmining.com/">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes <a href="http://mempool.info/pools">kisebb bányászati közösségekhez</a>, a <a href="http://p2pool.in/">P2Poolhoz hasonló</a>, decentralizált közösségekhez vagy getblocktemplate (GBT) támogatással rendelkező <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">közösségekhez</a> csatlakoznia.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Bányászat</h3>
+      <p>Ön is elkezdhet <a href="http://www.bitcoinmining.com/">bitcoint bányászni</a> a tranzakciók feldogozásának támogatásához. A hálózat védelme érdekében érdemes <a href="http://mempool.info/pools">kisebb bányászati közösségekhez</a>, a <a href="http://p2pool.in/">P2Poolhoz hasonló</a>, decentralizált közösségekhez vagy getblocktemplate (GBT) támogatással rendelkező <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">közösségekhez</a> csatlakoznia.</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Fordítás</h2>
-<p>Ön is segíthet a Bitcoin hozzáférhetőségének növelésében a Bitcoin-ökoszisztéma fontos részeinek fordításával, illetve meglévő fordításának pontosításával. Bátran vágjon bele egy olyan projektbe, amelyben segíteni kíván.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Fejlesztés</h2>
-<p>A Bitcoin egy ingyenes szoftver. Amennyiben Ön fejlesztő, szuper erőit jóra fordíthatja, és segíthet a <a href="/hu/fejlesztes">Bitcoin fejlesztésében</a>. Vagy létrehozhat Bitcoint használó, nagyszerű, új szolgáltatásokat vagy szoftvereket.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Fordítás</h3>
+      <p>Ön is segíthet a Bitcoin hozzáférhetőségének növelésében a Bitcoin-ökoszisztéma fontos részeinek fordításával, illetve meglévő fordításának pontosításával. Bátran vágjon bele egy olyan projektbe, amelyben segíteni kíván.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Adományozás</h2>
-<p>A legegyszerűbb módon néhány bitcoin a Bitcoin Alapítványnak történő <a href="https://bitcoinfoundation.org/about/donate/">adományázásával</a> segíthet. Vagy közvetlenül is segíthet bármely, Ön szerint a jövőben hasznos, Bitcoinhoz kapcsolódó projekt finanszírozásában.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Fejlesztés</h3>
+      <p>A Bitcoin egy ingyenes szoftver. Amennyiben Ön fejlesztő, szuper erőit jóra fordíthatja, és segíthet a <a href="/hu/fejlesztes">Bitcoin fejlesztésében</a>. Vagy létrehozhat Bitcoint használó, nagyszerű, új szolgáltatásokat vagy szoftvereket.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Szervezetek</h2>
-<p>A <a href="https://bitcoinfoundation.org/">Bitcoin Alapítvány</a> és számos más <a href="/hu/kozosseg#nonprofit">nonprofit szervezet</a> célja a Bitcoin védelme és népszerűsítése. Ezeket a csoportokat a hozzájuk való csatlakozással és projektjeikben, megbeszéléseiken, illetve rendezvényeiken való részvételével segítheti.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Adományozás</h3>
+      <p>A legegyszerűbb módon néhány bitcoin a Bitcoin Alapítványnak történő <a href="https://bitcoinfoundation.org/about/donate/">adományázásával</a> segíthet. Vagy közvetlenül is segíthet bármely, Ön szerint a jövőben hasznos, Bitcoinhoz kapcsolódó projekt finanszírozásában.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Népszerűsítés</h2>
-<p>Beszéljen a Bitcoinról az érdeklődő embereknek. Írjon róla blogján. Nevezze meg kedvenc üzleteit, ahol szívesen fizetne bitcoinnal. Segítsen a <a href="http://usebitcoins.info/">kereskedői adatbázis</a> naprakészen tartásban. Vagy legyen kreatív, és készítsen magának egy szép Bitcoin pólót.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Szervezetek</h3>
+      <p>A <a href="https://bitcoinfoundation.org/">Bitcoin Alapítvány</a> és számos más <a href="/hu/kozosseg#nonprofit">nonprofit szervezet</a> célja a Bitcoin védelme és népszerűsítése. Ezeket a csoportokat a hozzájuk való csatlakozással és projektjeikben, megbeszéléseiken, illetve rendezvényeiken való részvételével segítheti.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Dokumentáció</h2>
-<p>A <a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> és a <a href="https://en.bitcoin.it/">Bitcoin Wiki</a> hasznos leírásokat biztosít, ezenkívül folyamatosan pontosítjuk a bennük található információkat. Ön is segíthet ezen információforrásokat fejleszteni és naprakészen tartani.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Népszerűsítés</h3>
+      <p>Beszéljen a Bitcoinról az érdeklődő embereknek. Írjon róla blogján. Nevezze meg kedvenc üzleteit, ahol szívesen fizetne bitcoinnal. Segítsen a <a href="http://usebitcoins.info/">kereskedői adatbázis</a> naprakészen tartásban. Vagy legyen kreatív, és készítsen magának egy szép Bitcoin pólót.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Ismerje meg a közösségeket</h2>
-<p>Ön is csatlakozhat a <a href="/hu/kozosseg">Bitcoin-közösségekhez</a>, és beszélgethet más Bitcoin-rajongókkal. Minden nappal egyre többet tudhat meg a Bitcoinról, segíthet az új felhasználóknak, valamint érdekes projektekben vehet részt.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Dokumentáció</h3>
+      <p>A <a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> és a <a href="https://en.bitcoin.it/">Bitcoin Wiki</a> hasznos leírásokat biztosít, ezenkívül folyamatosan pontosítjuk a bennük található információkat. Ön is segíthet ezen információforrásokat fejleszteni és naprakészen tartani.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Ismerje meg a közösségeket</h3>
+      <p>Ön is csatlakozhat a <a href="/hu/kozosseg">Bitcoin-közösségekhez</a>, és beszélgethet más Bitcoin-rajongókkal. Minden nappal egyre többet tudhat meg a Bitcoinról, segíthet az új felhasználóknak, valamint érdekes projektekben vehet részt.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a></li>
 			
-			<li><a href="/hu/adatvedelem">Adatvédelem</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/adatvedelem">Adatvédelem</a></li>
 			
-			<li><a href="/hu/sajto">Sajtó</a></li>
-			<li><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/sajto">Sajtó</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/hu/rolunk">A bitcoin.org-ról</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

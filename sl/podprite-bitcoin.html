@@ -10,15 +10,29 @@
 <title>Podprite bitcoin - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,42 +341,86 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Podprite bitcoin</h1>
-<p class="summarytxt">Bitcoin je protokol, ki je izšel iz majhne skupine ljudi in je od takrat hitro napredoval. Veliko je načinov, s katerimi lahko pomagate bitcoinu, da se sčasoma razširi in še izboljša.</p>
+        <div class="content_support-bitcoin">
+  <h1 class="content_support-bitcoin--title">Podprite bitcoin</h1>
+  <h2 class="content_support-bitcoin--subtitle">Bitcoin je protokol, ki je izšel iz majhne skupine ljudi in je od takrat hitro napredoval. Veliko je načinov, s katerimi lahko pomagate bitcoinu, da se sčasoma razširi in še izboljša.</h2>
 
-<h2 id="use"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Uporaba bitcoina</h2>
-<p>Prva stvar, ki jo lahko naredite v podporo bitcoinu, je, da <a href="/sl/prvi-koraki">ga uporabljate</a>. Verjetno vam lahko olajša življenje na več področjih. Z njim lahko sprejemate plačila ali sami plačujete.</p>
+  <ul class="content_support-bitcoin--list">
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+      <h3 id="use">Uporaba bitcoina</h3>
+      <p>Prva stvar, ki jo lahko naredite v podporo bitcoinu, je, da <a href="/sl/prvi-koraki">ga uporabljate</a>. Verjetno vam lahko olajša življenje na več področjih. Z njim lahko sprejemate plačila ali sami plačujete.</p>
+    </li>
 
-<h2 id="node"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Bodite del omrežja</h2>
-<p>Če imate dobro internetno povezavo, lahko pomagate okrepiti omrežje bitcoin s tem, da na svojem računalniku poganjate <a href="/sl/prenos">polno vozlišče</a> z odprtimi vrati 8333. Polna vozlišča preverjajo in posredujejo vsa nakazila v omrežju.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_network.svg" alt="Icon"/>
+      <h3 id="node">Bodite del omrežja</h3>
+      <p>Če imate dobro internetno povezavo, lahko pomagate okrepiti omrežje bitcoin s tem, da na svojem računalniku poganjate <a href="/sl/prenos">polno vozlišče</a> z odprtimi vrati 8333. Polna vozlišča preverjajo in posredujejo vsa nakazila v omrežju.</p>
+    </li>
 
-<h2 id="mining"><img class="titleicon" src="/img/icons/ico_mining.svg" alt="Icon" />Rudarjenje</h2>
-<p>Z <a href="http://www.bitcoinmining.com/">rudarjenjem bitcoinov</a> lahko pomagate omrežju procesirati nakazila. Če želite pomagati zaščititi omrežje, se pridružite kakemu manjšemu <a href="http://mempool.info/pools">rudarskemu združenju</a> in dajte prednost decentraliziranim združenjem kot je <a href="http://p2pool.in/">P2Pool</a> ali <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">združenjem</a> s podporo za getblocktemplate (GBT).</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_mining.svg" alt="Icon"/>
+      <h3 id="mining">Rudarjenje</h3>
+      <p>Z <a href="http://www.bitcoinmining.com/">rudarjenjem bitcoinov</a> lahko pomagate omrežju procesirati nakazila. Če želite pomagati zaščititi omrežje, se pridružite kakemu manjšemu <a href="http://mempool.info/pools">rudarskemu združenju</a> in dajte prednost decentraliziranim združenjem kot je <a href="http://p2pool.in/">P2Pool</a> ali <a href="https://en.bitcoin.it/wiki/Comparison_of_mining_pools">združenjem</a> s podporo za getblocktemplate (GBT).</p>
+    </li>
 
-<h2 id="translate"><img class="titleicon" src="/img/icons/ico_translate.svg" alt="Icon" />Prevodi</h2>
-<p>Pri promociji bitcoina lahko pomagate s prevajanjem ali izboljševanjem prevodov znotraj pomembnih delov bitcoin ekosistema. Le izberite projekt, pri katerem bi želeli pomagati.</p>
-<p><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a> - <a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a> - <a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a> - <a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a> - <a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a> - <a href="https://crowdin.com/project/electrum">Electrum</a> - <a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></p>
-<h2 id="develop"><img class="titleicon" src="/img/icons/ico_conf.svg" alt="Icon" />Razvoj</h2>
-<p>Bitcoin je prosta programska oprema. Če ste programer, lahko s svojimi sposobnostmi koristite skupnosti in <a href="/sl/razvoj">izboljšate bitcoin</a>. Lahko pa izdelate nove storitve ali programsko opremo za uporabo bitcoina.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_translate.svg" alt="Icon"/>
+      <h3 id="translate">Prevodi</h3>
+      <p>Pri promociji bitcoina lahko pomagate s prevajanjem ali izboljševanjem prevodov znotraj pomembnih delov bitcoin ekosistema. Le izberite projekt, pri katerem bi želeli pomagati.</p>
+      <ul class="content_support-bitcoin--items--list">
+        <li><a href="https://www.transifex.com/projects/p/bitcoin/">Bitcoin Core</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoinorg/">Bitcoin.org</a></li>
+        <li><a href="https://en.bitcoin.it/wiki/Bitcoin.it_Wiki">Bitcoin Wiki</a></li>
+        <li><a href="https://www.transifex.com/projects/p/bitcoin-wallet/">Bitcoin Wallet (Android)</a></li>
+        <li><a href="https://crowdin.com/project/multibit-hd">MultiBit HD</a></li>
+        <li><a href="https://crowdin.com/project/electrum">Electrum</a></li>
+        <li><a href="https://github.com/hivewallet/hive-osx/wiki/I18n-guide">Hive</a></li>
+      </ul>
+    </li>
 
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Donacije</h2>
-<p>Najlažji način je, da <a href="https://bitcoinfoundation.org/about/donate/">podarite</a> nekaj novcev Fundaciji Bitcoin. Lahko pa neposredno denarno podprete katerikoli projekt, povezan z bitcoinom, za katerega verjamete, da je ali bo koristen.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_conf.svg" alt="Icon"/>
+      <h3 id="develop">Razvoj</h3>
+      <p>Bitcoin je prosta programska oprema. Če ste programer, lahko s svojimi sposobnostmi koristite skupnosti in <a href="/sl/razvoj">izboljšate bitcoin</a>. Lahko pa izdelate nove storitve ali programsko opremo za uporabo bitcoina.</p>
+    </li>
 
-<h2 id="nonprofit"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Organizacije</h2>
-<p><a href="https://bitcoinfoundation.org/">Fundacija Bitcoin</a> in mnoge druge <a href="/sl/skupnost#neprofitne">neprofitne organizacije</a> obstajajo z namenom zaščite in promocije bitcoina. Lahko jih podprete z donacijami ali sodelovanjem v njihovih projektih, razpravah in dogodkih.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+      <h3 id="donation">Donacije</h3>
+      <p>Najlažji način je, da <a href="https://bitcoinfoundation.org/about/donate/">podarite</a> nekaj novcev Fundaciji Bitcoin. Lahko pa neposredno denarno podprete katerikoli projekt, povezan z bitcoinom, za katerega verjamete, da je ali bo koristen.</p>
+    </li>
 
-<h2 id="spread"><img class="titleicon" src="/img/icons/ico_spread.svg" alt="Icon" />Povej naprej</h2>
-<p>O bitcoinu se pogovarjajte z ljudmi, ki jih ta tematika zanima. Pišite o njem na svojem blogu. Povejte svojim najljubšim trgovinam, da bi radi plačevali z bitcoinom. Vnašajte podatke v <a href="http://usebitcoins.info/">imenike trgovcev</a>. Bodite ustvarjalni in si naredite in nosite majico z motivom bitcoina.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_law.svg" alt="Icon"/>
+      <h3 id="nonprofit">Organizacije</h3>
+      <p><a href="https://bitcoinfoundation.org/">Fundacija Bitcoin</a> in mnoge druge <a href="/sl/skupnost#neprofitne">neprofitne organizacije</a> obstajajo z namenom zaščite in promocije bitcoina. Lahko jih podprete z donacijami ali sodelovanjem v njihovih projektih, razpravah in dogodkih.</p>
+    </li>
 
-<h2 id="wiki"><img class="titleicon" src="/img/icons/ico_wiki.svg" alt="Icon" />Dokumentacija</h2>
-<p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> in <a href="https://en.bitcoin.it/">Bitcoin wiki</a> vsebujeta koristno dokumentacijo in informacije in ves čas se trudimo izboljšati njuno vsebino. Če želite, lahko pomagate pri izboljševanju in osveževanju vsebine.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_spread.svg" alt="Icon"/>
+      <h3 id="spread">Povej naprej</h3>
+      <p>O bitcoinu se pogovarjajte z ljudmi, ki jih ta tematika zanima. Pišite o njem na svojem blogu. Povejte svojim najljubšim trgovinam, da bi radi plačevali z bitcoinom. Vnašajte podatke v <a href="http://usebitcoins.info/">imenike trgovcev</a>. Bodite ustvarjalni in si naredite in nosite majico z motivom bitcoina.</p>
+    </li>
 
-<h2 id="help"><img class="titleicon" src="/img/icons/ico_help.svg" alt="Icon" />Spoznajte skupnosti</h2>
-<p>Lahko se pridružite kaki <a href="/sl/skupnost">bitcoin skupnosti</a> in se pogovarjate z drugimi ljubitelji bitcoina. Lahko se vsak dan naučite česa novega o bitcoinu, pomagate novim uporabnikom in se vključite v projekte, ki vas zanimajo.</p>
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_wiki.svg" alt="Icon"/>
+      <h3 id="wiki">Dokumentacija</h3>
+      <p><a href="https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate">Bitcoin.org</a> in <a href="https://en.bitcoin.it/">Bitcoin wiki</a> vsebujeta koristno dokumentacijo in informacije in ves čas se trudimo izboljšati njuno vsebino. Če želite, lahko pomagate pri izboljševanju in osveževanju vsebine.</p>
+    </li>
+
+    <li class="content_support-bitcoin--items">
+      <img src="/img/icons/ico_help.svg" alt="Icon"/>
+      <h3 id="help">Spoznajte skupnosti</h3>
+      <p>Lahko se pridružite kaki <a href="/sl/skupnost">bitcoin skupnosti</a> in se pogovarjate z drugimi ljubitelji bitcoina. Lahko se vsak dan naučite česa novega o bitcoinu, pomagate novim uporabnikom in se vključite v projekte, ki vas zanimajo.</p>
+    </li>
+  </ul>
+</div>
 
       </div>
     </div>
@@ -369,14 +431,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -385,7 +447,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -407,13 +470,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -424,7 +489,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

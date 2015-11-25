@@ -10,15 +10,29 @@
 <title>Ochrona twojego portfela - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pl.png"><strong>Polski</strong>
+          <img src="/img/flags/pl.png"><strong>Polski</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Ochrona twojego portfela</h1>
-<p class="summarytxt">Zupełnie jak w prawdziwym życiu, Twój portfel potrzebuje zabezpieczeń. Bitcoin umożliwia transfery środków oraz przekazywanie ich w dowolne miejsce w bardzo prosty sposób. Tak wspaniałe cechy mogą rodzić obawy o bezpieczeństwo. Równocześnie Bitcoin może zapewnić bardzo wysoki poziom bezpieczeństwa, o ile jest poprawnie używany. <b>Zawsze pamiętaj, że zadbanie o prawidłową ochronę Twoich pieniędzy to Twój obowiązek</b>.</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Ochrona twojego portfela</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Zupełnie jak w prawdziwym życiu, Twój portfel potrzebuje zabezpieczeń. Bitcoin umożliwia transfery środków oraz przekazywanie ich w dowolne miejsce w bardzo prosty sposób. Tak wspaniałe cechy mogą rodzić obawy o bezpieczeństwo. Równocześnie Bitcoin może zapewnić bardzo wysoki poziom bezpieczeństwa, o ile jest poprawnie używany. <b>Zawsze pamiętaj, że zadbanie o prawidłową ochronę Twoich pieniędzy to Twój obowiązek</b>.</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Bądź ostrożny z usługami internetowymi</h2>
-<p>Powinieneś być ostrożny przy korzystaniu z jakichkolwiek serwisów przeznaczonych do przechowywania pieniędzy online. Wiele giełd i portfeli online cierpiało w przeszłości na złamania zabezpieczeń i na ogół wciąż nie zapewniają one wystarczających ubezpieczeń oraz zabezpieczeń, aby mogły być używane w celu przechowywania pieniędzy jak w banku. Możesz w związku z tym chcieć używać innych rodzajów <a href="/pl/wybierz-swoj-portfel">portfeli Bitcoin</a>. W innym wypadku powinieneś wybierać takie usługi bardzo ostrożnie. Dodatkowo zaleca się używanie dwustopniowego uwierzytelniania.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Bądź ostrożny z usługami internetowymi</h3>
+		  <p>Powinieneś być ostrożny przy korzystaniu z jakichkolwiek serwisów przeznaczonych do przechowywania pieniędzy online. Wiele giełd i portfeli online cierpiało w przeszłości na złamania zabezpieczeń i na ogół wciąż nie zapewniają one wystarczających ubezpieczeń oraz zabezpieczeń, aby mogły być używane w celu przechowywania pieniędzy jak w banku. Możesz w związku z tym chcieć używać innych rodzajów <a href="/pl/wybierz-swoj-portfel">portfeli Bitcoin</a>. W innym wypadku powinieneś wybierać takie usługi bardzo ostrożnie. Dodatkowo zaleca się używanie dwustopniowego uwierzytelniania.</p>
+		</li>
 
-<h2 id="everyday">Małe kwoty do codziennego użytku</h2>
-<p>Portfel Bitcoin jest jak portfel z gotówką. Skoro nie trzymałbyś tysiąca dolarów w kieszeni, możesz chcieć rozważyć podobne zachowanie w przypadku portfela Bitcoin. Na ogół dobrą praktyką jest przechowywanie jedynie niewielkiej, odpowiedniej do codziennego użytku ilości bitcoinów na komputerze, telefonie lub serwerze i trzymanie w bezpieczniejszym środowisku resztę swych funduszy.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Małe kwoty do codziennego użytku</h3>
+		  <p>Portfel Bitcoin jest jak portfel z gotówką. Skoro nie trzymałbyś tysiąca dolarów w kieszeni, możesz chcieć rozważyć podobne zachowanie w przypadku portfela Bitcoin. Na ogół dobrą praktyką jest przechowywanie jedynie niewielkiej, odpowiedniej do codziennego użytku ilości bitcoinów na komputerze, telefonie lub serwerze i trzymanie w bezpieczniejszym środowisku resztę swych funduszy.</p>
+		</li>
 
-<h2 id="backup">Wykonaj kopię zapasową swojego portfela</h2>
-<p>Przechowywanie kopii zapasowej Twojego portfela w bezpiecznym miejscu może ochronić Cię przed skutkami awarii komputera oraz wieloma ludzkimi błędami. Dzięki kopii będziesz mógł odzyskać swój portfel nawet, jeśli Twój komputer, na którym znajduje się zaszyfrowany portfel, zostanie skradziony.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Wykonaj kopię zapasową swojego portfela</h3>
+		  <p>Przechowywanie kopii zapasowej Twojego portfela w bezpiecznym miejscu może ochronić Cię przed skutkami awarii komputera oraz wieloma ludzkimi błędami. Dzięki kopii będziesz mógł odzyskać swój portfel nawet, jeśli Twój komputer, na którym znajduje się zaszyfrowany portfel, zostanie skradziony.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Wykonaj kopię zapasową całego portfela</h3>
+		  		<p>Niektóre portfele używają ukrytych kluczy prywatnych. Jeśli posiadasz kopię zapasową klucza prywatnego tylko dla widocznych adresów, możesz nie mieć możliwości odzyskania dużej części swoich funduszy.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Zaszyfruj kopię zapasową online</h3>
+		  		<p>Każda kopia zapasowa, którą przechowuje się online, jest mocno narażona na kradzież. Już sam komputer podłączony do Internetu narażony jest na działanie złośliwego oprogramowania. Dlatego też szyfrowanie każdej kopii zapasowej umieszczanej w sieci jest zawsze dobrym pomysłem, bo zwiększa bezpieczeństwo.</p>
+		  	</li>
 
-<h3 id="backupwhole">Wykonaj kopię zapasową całego portfela</h3>
-<p>Niektóre portfele używają ukrytych kluczy prywatnych. Jeśli posiadasz kopię zapasową klucza prywatnego tylko dla widocznych adresów, możesz nie mieć możliwości odzyskania dużej części swoich funduszy.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Używaj wielu bezpiecznych lokalizacji</h3>
+		  		<p>Pojedyncze punkty awarii są szkodliwe dla zachowania bezpieczeństwa. Jeśli umieścisz swoją kopię zapasową w więcej niż jednej lokalizacji, znacznie spadnie prawdopodobieństwo tego, że przykre zdarzenie uniemożliwi Ci odtworzenie Twojego portfela. Rozważ również użycie różnych mediów, jak klucze USB, papier czy płyty CD.</p>
+		  	</li>
 
-<h3 id="backuponline">Zaszyfruj kopię zapasową online</h3>
-<p>Każda kopia zapasowa, którą przechowuje się online, jest mocno narażona na kradzież. Już sam komputer podłączony do Internetu narażony jest na działanie złośliwego oprogramowania. Dlatego też szyfrowanie każdej kopii zapasowej umieszczanej w sieci jest zawsze dobrym pomysłem, bo zwiększa bezpieczeństwo.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Wykonuj regularne kopie zapasowe</h3>
+		  		<p>Regularnie twórz kopie zapasowe swojego portfela, aby mieć pewność, że wszystkie ostanie zmiany adresów Bitcoin oraz nowo utworzone przez Ciebie adresy Bitcoin są zawarte w Twojej kopii. Warto jednak odnotować, że niedługo wszystkie aplikacje będą używały portfeli wymagające tylko jednorazowego stworzenia kopii zapasowej.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Używaj wielu bezpiecznych lokalizacji</h3>
-<p>Pojedyncze punkty awarii są szkodliwe dla zachowania bezpieczeństwa. Jeśli umieścisz swoją kopię zapasową w więcej niż jednej lokalizacji, znacznie spadnie prawdopodobieństwo tego, że przykre zdarzenie uniemożliwi Ci odtworzenie Twojego portfela. Rozważ również użycie różnych mediów, jak klucze USB, papier czy płyty CD.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Zaszyfruj swój portfel</h3>
+		  <p>Szyfrowanie Twojego portfela lub smartfonu pozwala na użycie hasła zabezpieczającego przed każdym, kto chciałby wypłacić Twoje fundusze. Pomaga to chronić przed złodziejami, lecz nie ochroni nas przed urządzeniami czy aplikacjami rejestrującymi naciśnięcia klawiszy.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Nigdy nie zapomnij swojego hasła</h3>
+		  		<p>Upewnij się, że nigdy nie zapomnisz swego hasła. W przeciwnym wypadku na zawsze stracisz wszystkie swoje środki. W przeciwieństwie do banku, Bitcoin nie oferuje opcji odzyskania swojego hasła. Właściwie powinieneś pamiętać hasło nawet po wielu latach jego nieużywania. Jeśli masz wątpliwości, dobrym pomysłem może być przechowywanie papierowej kopii hasła w bezpiecznym miejscu, jak na przykład sejf.</p>
+		  	</li>
 
-<h3 id="backupregular">Wykonuj regularne kopie zapasowe</h3>
-<p>Regularnie twórz kopie zapasowe swojego portfela, aby mieć pewność, że wszystkie ostanie zmiany adresów Bitcoin oraz nowo utworzone przez Ciebie adresy Bitcoin są zawarte w Twojej kopii. Warto jednak odnotować, że niedługo wszystkie aplikacje będą używały portfeli wymagające tylko jednorazowego stworzenia kopii zapasowej.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Użyj silnego hasła</h3>
+		  		<p>Każde hasło, które zawiera jedynie litery oraz rozpoznawalne słowa, może zostać uznane za bardzo słabe i łatwe do złamania. Silne hasło musi zawierać litery, liczby, znaki interpunkcyjne i być długie na co najmniej 16 znaków. Najsilniejsze hasła to te, które były wygenerowane przez program specjalnie do tego przeznaczony. Silne hasła są na ogół trudniejsze do zapamiętania, trzeba więc poświęcić więcej uwagi, by je zapamiętać.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Portfel offline dla oszczędności</h3>
+		  <p>Portfel offline, zwany też chłodnią (cold storage), zapewnia najwyższy poziom bezpieczeństwa zgromadzonych środków. Zakłada on przechowywanie portfela w bezpiecznym, niepodłączonym do sieci miejscu. O ile korzysta się z niego poprawnie, zapewnia bardzo dobrą ochronę przed słabościami zabezpieczeń komputerów, a w kombinacji z regularnym wykonywaniem kopii bezpieczeństwa oraz szyfrowaniem stanowi przykład stosowania tak zwanych dobrych praktyk w tym zakresie. Poniżej prezentujemy przegląd niektórych zastosowań.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Podpisywanie transakcji offline</h3>
+		  		<p>Ten sposób wymaga posiadania dwóch komputerów współdzielących niektóre części jednego portfela. Pierwszy z nich nie może być połączony z żadną siecią. Jest to jedyny komputer, który przechowuje całą zawartość portfela oraz posiada możliwość podpisywania transakcji. Drugi komputer jest podłączony do sieci. Posiada on jedynie możliwość przeglądania zawartości portfela oraz tworzenia niepodpisanych transakcji. W ten sposób możesz bezpiecznie rozpoczynać nowe transakcje postępując zgodnie z następującymi krokami.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Rozpocznij nową transakcję na komputerze podłączonym do sieci oraz zapisz ją w pamięci USB.</li>
+		  		  <li>Podpisz transakcję na komputerze offline.</li>
+		  		  <li>Prześlij podpisaną transakcję na komputer podłączony do sieci.</li>
+		  		</ol>
+		  		<p>Ponieważ komputer podłączony do sieci nie może podpisywać transakcji, nie może również zostać użyty do wypłacenia z niego funduszy w razie przejęcia przez hakerów. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> może zostać użyte do podpisywania transakcji bez dostępu do sieci.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Portfele sprzętowe</h3>
+		  		<p>Portfele sprzętowe najlepiej balansują pomiędzy wysokim bezpieczeństwem a łatwością użytkowania. Są to niewielkie urządzenia, które zostały zaprojektowane, by służyć tylko i wyłącznie jako portfele i nic innego. Nie można zainstalować na nich żadnych programów, co czyni je bardzo odpornymi na zagrożenia związane z komputerami oraz kradzieżami internetowymi. Ponieważ pozwalają one na wykonanie kopii zapasowej, możesz odtworzyć swoje fundusze w przypadku utraty urządzenia.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Aktualizuj swoje oprogramowanie</h3>
+		  <p>Korzystanie z najnowszej wersji oprogramowania Bitcoin zapewni Ci ważną stabilność i poprawki bezpieczeństwa. Aktualizacje mogą zapobiec problemom różnego kalibru, zawierać nowe, przydatne funkcje i pomagać zachować bezpieczeństwo Twojego portfela. Instalowanie aktualizacji dla całej reszty oprogramowania na Twoim komputerze lub telefonie jest również istotne dla uczynienia środowiska Twojego portfela bezpieczniejszym.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Multipodpis chroniący przed kradzieżą</h3>
+		  <p>Bitcoin udostępnia usługę multipodpisu, dzięki której pojedyncza transakcja może wymagać wydania wielu niezależnych zezwoleń zanim dojdzie do skutku. Może to być wykorzystane przez dowolną organizację w celu nadania jej członkom dostępu do skarbca przy jednoczesnym zastrzeżeniu, że wypłaty można dokonać jedynie, jeśli 3 lub 5 członków podpisze daną transakcję. Niektóre portfele przeglądarkowe także obsługują funkcję multipodpisu, zapewniając użytkownikowi kontrolę nad jego pieniędzmi i zapobiegając ich kradzieży wynikającej z uzyskania dostępu do jednego urządzenia lub serwera.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Pomyśl o swoim testamencie</h3>
+		  <p>Twoje bitcoiny przepadną na zawsze, jeśli nie masz planu przekazania ich swoim znajomym i rodzinie. Jeśli nikt nie będzie znał lokalizacji Twoich portfeli lub haseł, gdy odejdziesz, nie istnieje żadna nadzieja, by Twoje fundusze kiedykolwiek zostały odzyskane. Poświęcenie chwili czasu tym kwestiom może oznaczać wielką różnicę.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Zaszyfruj swój portfel</h2>
-<p>Szyfrowanie Twojego portfela lub smartfonu pozwala na użycie hasła zabezpieczającego przed każdym, kto chciałby wypłacić Twoje fundusze. Pomaga to chronić przed złodziejami, lecz nie ochroni nas przed urządzeniami czy aplikacjami rejestrującymi naciśnięcia klawiszy.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Nigdy nie zapomnij swojego hasła</h3>
-<p>Upewnij się, że nigdy nie zapomnisz swego hasła. W przeciwnym wypadku na zawsze stracisz wszystkie swoje środki. W przeciwieństwie do banku, Bitcoin nie oferuje opcji odzyskania swojego hasła. Właściwie powinieneś pamiętać hasło nawet po wielu latach jego nieużywania. Jeśli masz wątpliwości, dobrym pomysłem może być przechowywanie papierowej kopii hasła w bezpiecznym miejscu, jak na przykład sejf.</p>
-
-<h3 id="encryptstrong">Użyj silnego hasła</h3>
-<p>Każde hasło, które zawiera jedynie litery oraz rozpoznawalne słowa, może zostać uznane za bardzo słabe i łatwe do złamania. Silne hasło musi zawierać litery, liczby, znaki interpunkcyjne i być długie na co najmniej 16 znaków. Najsilniejsze hasła to te, które były wygenerowane przez program specjalnie do tego przeznaczony. Silne hasła są na ogół trudniejsze do zapamiętania, trzeba więc poświęcić więcej uwagi, by je zapamiętać.</p>
-
-</div>
-
-<h2 id="offline">Portfel offline dla oszczędności</h2>
-<p>Portfel offline, zwany też chłodnią (cold storage), zapewnia najwyższy poziom bezpieczeństwa zgromadzonych środków. Zakłada on przechowywanie portfela w bezpiecznym, niepodłączonym do sieci miejscu. O ile korzysta się z niego poprawnie, zapewnia bardzo dobrą ochronę przed słabościami zabezpieczeń komputerów, a w kombinacji z regularnym wykonywaniem kopii bezpieczeństwa oraz szyfrowaniem stanowi przykład stosowania tak zwanych dobrych praktyk w tym zakresie. Poniżej prezentujemy przegląd niektórych zastosowań.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Podpisywanie transakcji offline</a></h3>
-<p>Ten sposób wymaga posiadania dwóch komputerów współdzielących niektóre części jednego portfela. Pierwszy z nich nie może być połączony z żadną siecią. Jest to jedyny komputer, który przechowuje całą zawartość portfela oraz posiada możliwość podpisywania transakcji. Drugi komputer jest podłączony do sieci. Posiada on jedynie możliwość przeglądania zawartości portfela oraz tworzenia niepodpisanych transakcji. W ten sposób możesz bezpiecznie rozpoczynać nowe transakcje postępując zgodnie z następującymi krokami.</p>
-<ol>
-  <li>Rozpocznij nową transakcję na komputerze podłączonym do sieci oraz zapisz ją w pamięci USB.</li>
-  <li>Podpisz transakcję na komputerze offline.</li>
-  <li>Prześlij podpisaną transakcję na komputer podłączony do sieci.</li>
-</ol>
-<p>Ponieważ komputer podłączony do sieci nie może podpisywać transakcji, nie może również zostać użyty do wypłacenia z niego funduszy w razie przejęcia przez hakerów. <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a> może zostać użyte do podpisywania transakcji bez dostępu do sieci.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Portfele sprzętowe</a></h3>
-<p>Portfele sprzętowe najlepiej balansują pomiędzy wysokim bezpieczeństwem a łatwością użytkowania. Są to niewielkie urządzenia, które zostały zaprojektowane, by służyć tylko i wyłącznie jako portfele i nic innego. Nie można zainstalować na nich żadnych programów, co czyni je bardzo odpornymi na zagrożenia związane z komputerami oraz kradzieżami internetowymi. Ponieważ pozwalają one na wykonanie kopii zapasowej, możesz odtworzyć swoje fundusze w przypadku utraty urządzenia.</p>
-</div>
-
-<h2 id="update">Aktualizuj swoje oprogramowanie</h2>
-<p>Korzystanie z najnowszej wersji oprogramowania Bitcoin zapewni Ci ważną stabilność i poprawki bezpieczeństwa. Aktualizacje mogą zapobiec problemom różnego kalibru, zawierać nowe, przydatne funkcje i pomagać zachować bezpieczeństwo Twojego portfela. Instalowanie aktualizacji dla całej reszty oprogramowania na Twoim komputerze lub telefonie jest również istotne dla uczynienia środowiska Twojego portfela bezpieczniejszym.</p>
-
-<h2 id="offlinemulti">Multipodpis chroniący przed kradzieżą</h2>
-<p>Bitcoin udostępnia usługę multipodpisu, dzięki której pojedyncza transakcja może wymagać wydania wielu niezależnych zezwoleń zanim dojdzie do skutku. Może to być wykorzystane przez dowolną organizację w celu nadania jej członkom dostępu do skarbca przy jednoczesnym zastrzeżeniu, że wypłaty można dokonać jedynie, jeśli 3 lub 5 członków podpisze daną transakcję. Niektóre portfele przeglądarkowe także obsługują funkcję multipodpisu, zapewniając użytkownikowi kontrolę nad jego pieniędzmi i zapobiegając ich kradzieży wynikającej z uzyskania dostępu do jednego urządzenia lub serwera.</p>
-
-<h2 id="offlinetestament">Pomyśl o swoim testamencie</h2>
-<p>Twoje bitcoiny przepadną na zawsze, jeśli nie masz planu przekazania ich swoim znajomym i rodzinie. Jeśli nikt nie będzie znał lokalizacji Twoich portfeli lub haseł, gdy odejdziesz, nie istnieje żadna nadzieja, by Twoje fundusze kiedykolwiek zostały odzyskane. Poświęcenie chwili czasu tym kwestiom może oznaczać wielką różnicę.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
-			<li><a href="/pl/prywatnosc">Prywatność</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prywatnosc">Prywatność</a></li>
 			
-			<li><a href="/pl/prasa">Prasa</a></li>
-			<li><a href="/pl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prasa">Prasa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

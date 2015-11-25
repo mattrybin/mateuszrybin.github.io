@@ -10,15 +10,29 @@
 <title>ウォレットの保護 - ビットコイン</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/ja.png"><strong>日本語</strong>
+          <img src="/img/flags/ja.png"><strong>日本語</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">よくある質問</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>あなたのウォレットを保護</h1>
-<p class="summarytxt">実生活と同様に、あなたの財布は自分で守らなければなりません。ビットコインにより、送金がこれまでになく簡単になりました。そのような優れた機能にはセキュリティに関する懸念が伴いますが、ビットコインは正しく利用されれば、かなり高いレベルのセキュリティを提供します。<b>自分のお金を守るためには、責任を持って正しい慣習を守る必要があることを頭に入れておいてください。</b>。</p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">あなたのウォレットを保護</h1>
+	<h2 class="content_secure-your-wallet--subtitle">実生活と同様に、あなたの財布は自分で守らなければなりません。ビットコインにより、送金がこれまでになく簡単になりました。そのような優れた機能にはセキュリティに関する懸念が伴いますが、ビットコインは正しく利用されれば、かなり高いレベルのセキュリティを提供します。<b>自分のお金を守るためには、責任を持って正しい慣習を守る必要があることを頭に入れておいてください。</b>。</h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">オンラインサービスに注意してください</h2>
-<p>オンライン上で金銭を保管するサービスに対しては、十分な警戒が必要です。過去、数多くの取引やオンライン・ウォレットが、セキュリティー違反の被害を受けていますが、こうしたサービスは、いまだ銀行のようにお金を保管するのに必要な保険やセキュリティーを提供していません。従って違う種類の<a href="/ja/choose-your-wallet">ビットコイン・ウォレット</a>を用いる方が良いかもしれません。さもなければ、十分な注意を払ってこうしたサービスを選ぶことが大切です。また、2要素認証を使われることをお勧めします。</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">オンラインサービスに注意してください</h3>
+		  <p>オンライン上で金銭を保管するサービスに対しては、十分な警戒が必要です。過去、数多くの取引やオンライン・ウォレットが、セキュリティー違反の被害を受けていますが、こうしたサービスは、いまだ銀行のようにお金を保管するのに必要な保険やセキュリティーを提供していません。従って違う種類の<a href="/ja/choose-your-wallet">ビットコイン・ウォレット</a>を用いる方が良いかもしれません。さもなければ、十分な注意を払ってこうしたサービスを選ぶことが大切です。また、2要素認証を使われることをお勧めします。</p>
+		</li>
 
-<h2 id="everyday">日常的に使う少額のお金</h2>
-<p>ビットコイン・ウォレットは、現金の入った財布のようなものです。もし、あなたが、千ドルをポケットに入れておくようなことをしないなら、ビットコイン・ウォレットにも同じような考慮が必要かもしれません。一般に、お使いのコンピューター、携帯電話やサーバーに毎日使う小額のビットコインを保管し、残りの資金は、より安全な所にしまっておくのが良い方法です。</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">日常的に使う少額のお金</h3>
+		  <p>ビットコイン・ウォレットは、現金の入った財布のようなものです。もし、あなたが、千ドルをポケットに入れておくようなことをしないなら、ビットコイン・ウォレットにも同じような考慮が必要かもしれません。一般に、お使いのコンピューター、携帯電話やサーバーに毎日使う小額のビットコインを保管し、残りの資金は、より安全な所にしまっておくのが良い方法です。</p>
+		</li>
 
-<h2 id="backup">ウォレットをバックアップしましょう</h2>
-<p>安全な場所に保管することによって、バックアップはコンピューターの欠陥や人的ミスからあなたを守ってくれます。あなたの携帯電話やコンピューターが盗まれても、あなたのウォレットを暗号化していれば、バックアップでウォレットを回復することができます。</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">ウォレットをバックアップしましょう</h3>
+		  <p>安全な場所に保管することによって、バックアップはコンピューターの欠陥や人的ミスからあなたを守ってくれます。あなたの携帯電話やコンピューターが盗まれても、あなたのウォレットを暗号化していれば、バックアップでウォレットを回復することができます。</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">ウォレット全体をバックアップしましょう</h3>
+		  		<p>ウォレットの中には、内部で隠れた秘密鍵を数多く使うものもあります。表示されるビットコイン・アドレスの秘密鍵のバックアップしかとっていない方は、そのバックアップを使っても、資金の大部分を回復できないことがあります。</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">オンライン・バックアップを暗号化する</h3>
+		  		<p>オンラインに保存されるバックアップは、窃盗に対する脆弱性があります。インターネットに接続されているコンピュータも、悪意のあるソフトウェアに対して脆弱です。ネットワーク上のバックアップを暗号化することは、安全な良い方法でしょう。</p>
+		  	</li>
 
-<h3 id="backupwhole">ウォレット全体をバックアップしましょう</h3>
-<p>ウォレットの中には、内部で隠れた秘密鍵を数多く使うものもあります。表示されるビットコイン・アドレスの秘密鍵のバックアップしかとっていない方は、そのバックアップを使っても、資金の大部分を回復できないことがあります。</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">複数の安全なロケーションを使いましょう</h3>
+		  		<p>シングルポイント障害は、危険です。バックアップを複数箇所に保管すれば、悪い事態が起こってもウォレットを復旧できなくなることはありません。USBキー、紙やCDなどの異なるメディアを使うと良いでしょう。</p>
+		  	</li>
 
-<h3 id="backuponline">オンライン・バックアップを暗号化する</h3>
-<p>オンラインに保存されるバックアップは、窃盗に対する脆弱性があります。インターネットに接続されているコンピュータも、悪意のあるソフトウェアに対して脆弱です。ネットワーク上のバックアップを暗号化することは、安全な良い方法でしょう。</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">定期的にバックアップを行うこと</h3>
+		  		<p>ビットコイン・ウォレットを定期的にバックアアプしてください。その際、最近のビットコインお釣り用アドレスと新しく作ったビットコインアドレスが全てバックアップに入っているかどうかを確認してください。ただし、もうすぐすべてのアプリケーションで、一回だけバックアップすればよいウォレットが使われることになりそうです。</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">複数の安全なロケーションを使いましょう</h3>
-<p>シングルポイント障害は、危険です。バックアップを複数箇所に保管すれば、悪い事態が起こってもウォレットを復旧できなくなることはありません。USBキー、紙やCDなどの異なるメディアを使うと良いでしょう。</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">ウォレットを暗号化しよう</h3>
+		  <p>あなたのウォレットやスマートフォンを暗号化することで、資金を引き出すためのパスワードをセットすることができます。これにより窃盗を防止することはできますが、キーロギング・ハードウェアやソフトウェアから守ることは出来ません。</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">パスワードを忘れないように</h3>
+		  		<p>パスワードを忘れると、資金を永久に失ってしまいますので、絶対に忘れないようにしてください。銀行と違い、ビットコインのパスワード復元オプションは非常に限られています。長年使っていなくても自分のパスワードは覚えておくべきです。それが疑わしい場合には、パスワードを紙に書き、金庫のようなところに保管しておくとよいでしょう。</p>
+		  	</li>
 
-<h3 id="backupregular">定期的にバックアップを行うこと</h3>
-<p>ビットコイン・ウォレットを定期的にバックアアプしてください。その際、最近のビットコインお釣り用アドレスと新しく作ったビットコインアドレスが全てバックアップに入っているかどうかを確認してください。ただし、もうすぐすべてのアプリケーションで、一回だけバックアップすればよいウォレットが使われることになりそうです。</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">強力なパスワードを使おう</h3>
+		  		<p>文字だけを含むパスワードや認識できる言葉だけのパスワードは、とても弱く、見破られやすいものです。強力なパスワードにするためには、文字、数字、句読点を含め、少なくとも16文字以上である必要があります。最も安全なパスワードは、プログラムによって作られたパスワードです。強力なパスワードは覚えるのが難しいですが、記憶しておきましょう。</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">貯蓄用のオフライン財布</h3>
+		  <p>オフライン・ウォレットはコールド・ストレージとも呼ばれ、もっとも高いレベルのセキュリティを持つ貯金方法です。それはウォレットをネットワークにつながっていない、安全なところに保管することです。うまく使用すれば、パソコンの脆弱性からあなたの貯金を守ることができます。またバックアップと暗号化を組み合わせて利用することをお勧めします。以下はいくつかの使用例です。</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">オフライン取引署名</h3>
+		  		<p>この処理には、ます同じウォレットの一部を共有する２台のコンピューターを用意します。１台目のコンピューターはネットワークから未接続の状態にしておきます。このコンピューター1台のみが、ウォレット全体を管理し、取引に署名ができます。２台目のコンピューターは、ネットワークに接続し、未署名の取引のみを作成できる監視ウォレットの役割を果たします。この方法で、以下の手順に従い、新規取引を安全に行うことができます。</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>オンライン・コンピューターで新規の取引を作成し、USBキーにそれを保存します。</li>
+		  		  <li>オフライン・コンピューターで、取引に署名します。</li>
+		  		  <li>オンライン・コンピューターで署名された取引を送ります。</li>
+		  		</ol>
+		  		<p>ネットワークに接続するコンピューターは取引に署名することができないので、危険にさらされた場合でも、資金を引き出すためにそれを使用することはできません。<a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">アーモリー</a>をオフライン取引署名に使用することができます。</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">ハードウェア・ウォレット</h3>
+		  		<p>ハードウェア・ウォレットは、非常に高度な安全性と使い安さが最もバランスよく調和したものです。これらは、もともと財布としてのみにデザインされた小さな装置で、ソフトウェアをインストールすることはできませんので、コンピューターの脆弱性やオンライン上の盗難に対して非常に安全です。また、バックアップができるので、装置をなくしてもあなたの資金を取り戻すことができます。</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">常にソフトウェア・アップデートを行う</h3>
+		  <p>最新のビットコインソフトウェアを使用することで、重要な安定性とセキュリティ対策の修正を受けることができます。アップデートは、新しい便利な機能やあなたのウォレットを安全に保管するのに役立つ機能などで、様々な問題を防いでくれます。あなたのコンピューターや携帯電話にあるすべてのソフトウェアをアップデートすることも、あなたのウォレットを守るために大切なことです。</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">窃盗を防ぐ複数署名</h3>
+		  <p>ビットコインには、取引に複数の独立した承認を必要とする多重署名機能があります。これは、5人中3人が取引に署名した際のみ引き出しを可能にするような形で、組織が、そのメンバーに資金へのアクセス権を与えるために利用できます。ウエブウォレットの中には、多重署名ウォレットを提供し、ひとつのデバイスやサーバーに不正アクセスすることで泥棒が資金を盗むことを防ぎながら、ユーザーが彼らのお金をコントロールできるようにしています。</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">遺言の検討</h3>
+		  <p>仲間や家族のためのバックアッププランを作っておかないと、あなたのビットコインが永遠に失われることになりかねません。ウォレットの場所やパスワードが誰にも知らされていないと、あなたが亡くなった後、あなたの基金を取り戻すことは不可能となります。こうしたことに、少し時間をかけておくと、それが大きな違いを生むことになります。</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">ウォレットを暗号化しよう</h2>
-<p>あなたのウォレットやスマートフォンを暗号化することで、資金を引き出すためのパスワードをセットすることができます。これにより窃盗を防止することはできますが、キーロギング・ハードウェアやソフトウェアから守ることは出来ません。</p>
-
-<div class="box">
-
-<h3 id="encryptforget">パスワードを忘れないように</h3>
-<p>パスワードを忘れると、資金を永久に失ってしまいますので、絶対に忘れないようにしてください。銀行と違い、ビットコインのパスワード復元オプションは非常に限られています。長年使っていなくても自分のパスワードは覚えておくべきです。それが疑わしい場合には、パスワードを紙に書き、金庫のようなところに保管しておくとよいでしょう。</p>
-
-<h3 id="encryptstrong">強力なパスワードを使おう</h3>
-<p>文字だけを含むパスワードや認識できる言葉だけのパスワードは、とても弱く、見破られやすいものです。強力なパスワードにするためには、文字、数字、句読点を含め、少なくとも16文字以上である必要があります。最も安全なパスワードは、プログラムによって作られたパスワードです。強力なパスワードは覚えるのが難しいですが、記憶しておきましょう。</p>
-
-</div>
-
-<h2 id="offline">貯蓄用のオフライン財布</h2>
-<p>オフライン・ウォレットはコールド・ストレージとも呼ばれ、もっとも高いレベルのセキュリティを持つ貯金方法です。それはウォレットをネットワークにつながっていない、安全なところに保管することです。うまく使用すれば、パソコンの脆弱性からあなたの貯金を守ることができます。またバックアップと暗号化を組み合わせて利用することをお勧めします。以下はいくつかの使用例です。</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">オフライン取引署名</a></h3>
-<p>この処理には、ます同じウォレットの一部を共有する２台のコンピューターを用意します。１台目のコンピューターはネットワークから未接続の状態にしておきます。このコンピューター1台のみが、ウォレット全体を管理し、取引に署名ができます。２台目のコンピューターは、ネットワークに接続し、未署名の取引のみを作成できる監視ウォレットの役割を果たします。この方法で、以下の手順に従い、新規取引を安全に行うことができます。</p>
-<ol>
-  <li>オンライン・コンピューターで新規の取引を作成し、USBキーにそれを保存します。</li>
-  <li>オフライン・コンピューターで、取引に署名します。</li>
-  <li>オンライン・コンピューターで署名された取引を送ります。</li>
-</ol>
-<p>ネットワークに接続するコンピューターは取引に署名することができないので、危険にさらされた場合でも、資金を引き出すためにそれを使用することはできません。<a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">アーモリー</a>をオフライン取引署名に使用することができます。</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">ハードウェア・ウォレット</a></h3>
-<p>ハードウェア・ウォレットは、非常に高度な安全性と使い安さが最もバランスよく調和したものです。これらは、もともと財布としてのみにデザインされた小さな装置で、ソフトウェアをインストールすることはできませんので、コンピューターの脆弱性やオンライン上の盗難に対して非常に安全です。また、バックアップができるので、装置をなくしてもあなたの資金を取り戻すことができます。</p>
-</div>
-
-<h2 id="update">常にソフトウェア・アップデートを行う</h2>
-<p>最新のビットコインソフトウェアを使用することで、重要な安定性とセキュリティ対策の修正を受けることができます。アップデートは、新しい便利な機能やあなたのウォレットを安全に保管するのに役立つ機能などで、様々な問題を防いでくれます。あなたのコンピューターや携帯電話にあるすべてのソフトウェアをアップデートすることも、あなたのウォレットを守るために大切なことです。</p>
-
-<h2 id="offlinemulti">窃盗を防ぐ複数署名</h2>
-<p>ビットコインには、取引に複数の独立した承認を必要とする多重署名機能があります。これは、5人中3人が取引に署名した際のみ引き出しを可能にするような形で、組織が、そのメンバーに資金へのアクセス権を与えるために利用できます。ウエブウォレットの中には、多重署名ウォレットを提供し、ひとつのデバイスやサーバーに不正アクセスすることで泥棒が資金を盗むことを防ぎながら、ユーザーが彼らのお金をコントロールできるようにしています。</p>
-
-<h2 id="offlinetestament">遺言の検討</h2>
-<p>仲間や家族のためのバックアッププランを作っておかないと、あなたのビットコインが永遠に失われることになりかねません。ウォレットの場所やパスワードが誰にも知らされていないと、あなたが亡くなった後、あなたの基金を取り戻すことは不可能となります。こうしたことに、少し時間をかけておくと、それが大きな違いを生むことになります。</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/ja/legal">法律</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/legal">法律</a></li>
 			
-			<li><a href="/ja/privacy">プライバシー</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/privacy">プライバシー</a></li>
 			
-			<li><a href="/ja/press">プレス</a></li>
-			<li><a href="/ja/about-us">bitcoin.org について</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/press">プレス</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/ja/about-us">bitcoin.org について</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

@@ -10,15 +10,29 @@
 <title>Glossario - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/it.png"><strong>Italiano</strong>
+          <img src="/img/flags/it.png"><strong>Italiano</strong>
 				</div>
 			</a>
 		</div>
@@ -323,94 +341,161 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Alcuni termini di Bitcoin che potresti sentire</h1>
-<p class="summarytxt">Bitcoin fornisce un nuovo approccio ai pagamenti e per questo, ci sono alcuni nuovi termini che potrebbero diventare parte del tuo vocabolario. Non c'è dai preoccuparsi, in fondo persino la semplice televisione crea nuove parole!</p>
-<h2 id="table-of-contents">Sommario</h2>
+        <div class="content_vocalbulary">
+  <h1 class="content_vocalbulary--title">Alcuni termini di Bitcoin che potresti sentire</h1>
+  <h2 class="content_vocalbulary--subtitle">Bitcoin fornisce un nuovo approccio ai pagamenti e per questo, ci sono alcuni nuovi termini che potrebbero diventare parte del tuo vocabolario. Non c'è dai preoccuparsi, in fondo persino la semplice televisione crea nuove parole!</h2>
 
-<div class="index">
-
-<a href="#bit">Bit</a>
-
-<a href="#bitcoin">Bitcoin</a>
-
-<a href="#blocco">Blocco</a>
-
-<a href="#blockchain">Block Chain</a>
-
-<a href="#btc">BTC</a>
-
-<a href="#chiave-privata">Chiave Privata</a>
-
-<a href="#conferma">Conferma</a>
-
-<a href="#crittografia">Crittografia</a>
-
-<a href="#double-spend">Double Spend</a>
-
-<a href="#firma">Firma</a>
-
-<a href="#hash-rate">Hash Rate</a>
-
-<a href="#indirizzo">Indirizzo</a>
-
-<a href="#mining">Mining</a>
-
-<a href="#p2p">P2P</a>
-
-<a href="#portafoglio">Portafoglio</a>
-
+  <div class="content_vocalbulary--faq">
+    <div class="content_vocalbulary--faq--title">
+      <h2>Vocabulary</h2>
+    </div>
+    <div class="content_vocalbulary--foq--section">
+      <ul class="content_vocalbulary--faq--list">
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bit">Bit</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Il bit è un'unità comune utilizzata per indicare una sotto-unità del bitcoin - 1,000,000 di bit equivalgono a 1 bitcoin (BTC o B⃦). Questa unità è solitamente più appropriata per dare un valore a una mancia o un prezzo a beni e servizi.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="bitcoin">Bitcoin</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Bitcoin - con la maiuscola, è usata quando si descrive il concetto di Bitcoin, o l'intero network stesso. Per esempio " Oggi stavo studiando il protocollo di Bitcoin." <br>bitcoin - senza maiuscola, è usata per descrivere i bitcoin come un'unità di conto. Per esempio "Ti ho mandato dieci bitcoin oggi."; inoltre, è spesso abbreviato in BTC o XBT.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blocco">Blocco</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Un blocco è una <b>parte della blockchain che contiene e conferma molte transazioni in attesa</b>. In media circa ogni 10 minuti un nuovo blocco, che include delle transazioni, viene aggiunto alla <a href="#blockchain">blockchain</a> attraverso il processo di <a href="#mining">mining</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="blockchain">Block Chain</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>La block chain è un <b>registro pubblico delle transazioni Bitcoin</b> in ordine cronologico. La block chain è condivisa tra tutti gli utenti Bitcoin. È utilizzata per verificare la permanenza delle transazioni Bitcoin e per prevenire <a href="#double-spend">double spending</a>.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="btc">BTC</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Il BTC è un'unità comune utilizzata per designare un bitcoin (B⃦).</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="chiave-privata">Chiave Privata</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Una chiave privata è <b> una parte di dati segreti che provano che sei tu ad utilizzare bitcoin da un determinato portafoglio </b> attraverso una <a href="#firma"> firma crittografata </a>. La tua chiave privata (o chiavi private) è conservata nel tuo computer se utilizzi un portafoglio software; è invece conservata in un server remoto se utilizzi un portafoglio web. La chiave privata non deve essere rivelata ad altri in quanto ti permette di utilizzare i fondi dal tuo portafoglio Bitcoin</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="conferma">Conferma</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>La conferma indica che una transazione è stata  <b> processata dalla rete ed è altamente improbabile che sia respinta</b>. La transazioni ricevono una conferma, quando sono incluse in un <a href="/it/glossario#blocco">blocco</a> e per ogni blocco successivo. Anche una singola conferma può essere considerata sicura per le transazioni di basso valore, sebbene per cifre maggiori come  1000 US$, è consigliabile attendere ben 6 conferme o di più. Ogni conferma  <i>esponenzialmente</i> diminuisce il rischio di una transazione respinta. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="crittografia">Crittografia</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>La crittografia è quella branca della matematica che ci consente di creare <b>prove matematiche che forniscono elevati livelli di sicurezza</b>. Il commercio e le operazioni bancarie online impiegano già la crittografia. Nel caso di Bitcoin la crittografia è impiegata per rendere impossibile a chiunque di spendere del denaro dal portafoglio di un altro utente o alterare la <a href="#blockchain">block chain</a>. Può essere anche utilizzata per criptare un portafoglio, in modo che non possa essere usato senza una passowrd.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="double-spend">Double Spend</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Se un utente malintenzionato prova a <b>spendere i propri bitcoin verso due diversi riceventi contemporaneamente</b>, si tratta di doppia spesa. Il mining di <a href="#mining">Bitcoin</a> ed il <a href="#blockchain">block chain</a> esistono per creare un consenso sulla rete, per decidere quale delle due transazioni sia considerata valida.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="firma">Firma</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p><a href="#crittografia">La firma </a> criptografica è <b> un meccanismo matematico che consente di provare la proprietà</b>. Nel caso di Bitcoin, un <a href="#portafoglio">portafoglio Bitcoin</a> e la sua <a href="#chiave-privata">chiave privata(e)</a> sono collegati per mezzo di un vincolo matematico magico. Quando il tuo software Bitcoin segna una transazione con la chiave privata appropriata, l'intera rete può vedere che la firma combacia con i bitcoin spesi.  Tuttavia, non c'è alcun modo per il mondo d'indovinare la tua chiave privata, per derubarti dei tuoi bitcoin, ottenuti col sudore della fronte. </p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="hash-rate">Hash Rate</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Per <i>hash rate</i> si intende <b>l'unità di misura della potenza di elaborazione della rete Bitcoin</b>. Per fini di sicurezza la rete Bitcoin deve eseguire delle operazioni matematiche intensive. Quando la rete raggiunge un hash rate di 10 Th/s, significa che può realizzare un trilione di calcoli al secondo.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="indirizzo">Indirizzo</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Un indirizzo Bitcoin è <b>equivalente ad un indirizzo fisico o ad una e-mail</b>.  E' la sola informazione che devi fornire a qualcuno affinchè possa pagarti con Bitcoin. Una differenza importante, comunque, è che ogni indirizzo dovrebbe essere utilizzato unicamente per una singola transazione.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="mining">Mining</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Per <i>mining</i> si intende il processo che <b>fa eseguire all'hardware del computer calcoli matematici al fine di confermare le transazioni</b> ed aumentare la sicurezza della rete Bitcoin. Come ricompensa per il loro servizio, i <i>miner</i> (minatori) di Bitcoin possono incassare delle commissioni sulle transazioni che confermano insieme ai nuovi bitcoin appena creati. Quello del mining è un mercato specializzato e competitivo dove le ricompense sono divise in base a quanti calcoli sono stati eseguiti. Non tutti gli utenti Bitcoin si cimentano nel mining e non è un modo facile per fare soldi.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="p2p">P2P</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Per <i>peer to peer</i> si intendono <b>i sistemi che funzionano come un collettivo organizzato</b> permettendo ad ogni individuo di interagire direttamente con gli altri. Nel caso di Bitcoin, la rete è costruita in modo che ogni utente trasmetta le transazioni degli altri utenti. E, fatto di importanza cruciale, nessuna banca è richiesta come terzi.</p>
+          </div>
+        </li>
+      
+        <li class="content_vocalbulary--faq--item">
+          <div class="content_vocalbulary--faq--item--title">
+            <a id="portafoglio">Portafoglio</a>
+          </div>
+          <div class="content_vocalbulary--faq--item--content">
+            <p>Un portafoglio di Bitcoin è circa <b>l'equivalente di un portafoglio materiale sul network di Bitcoin</b>. In realtà il tuo portafoglio contiene le <a href="#chiave-privata">chiavi private</a> che ti permettono di usare i bitcoin allocati nella <a href="#blockchain">block chain</a>. Ogni portafoglio Bitcoin può mostrarti il bilancio totale di tutti i bitcoin che controlla e ti permette di pagare cifre precise ad una persona specifica, come un vero portafoglio. Questo è diverso dalla carte di credito dove ti sono addebitate le spese dal commerciante.</p>
+          </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
 </div>
-
-
-<h2 id="bit">Bit</h2>
-<p>Il bit è un'unità comune utilizzata per indicare una sotto-unità del bitcoin - 1,000,000 di bit equivalgono a 1 bitcoin (BTC o B⃦). Questa unità è solitamente più appropriata per dare un valore a una mancia o un prezzo a beni e servizi.</p>
-
-<h2 id="bitcoin">Bitcoin</h2>
-<p>Bitcoin - con la maiuscola, è usata quando si descrive il concetto di Bitcoin, o l'intero network stesso. Per esempio " Oggi stavo studiando il protocollo di Bitcoin." <br>bitcoin - senza maiuscola, è usata per descrivere i bitcoin come un'unità di conto. Per esempio "Ti ho mandato dieci bitcoin oggi."; inoltre, è spesso abbreviato in BTC o XBT.</p>
-
-<h2 id="blocco">Blocco</h2>
-<p>Un blocco è una <b>parte della blockchain che contiene e conferma molte transazioni in attesa</b>. In media circa ogni 10 minuti un nuovo blocco, che include delle transazioni, viene aggiunto alla <a href="#blockchain">blockchain</a> attraverso il processo di <a href="#mining">mining</a>.</p>
-
-<h2 id="blockchain">Block Chain</h2>
-<p>La block chain è un <b>registro pubblico delle transazioni Bitcoin</b> in ordine cronologico. La block chain è condivisa tra tutti gli utenti Bitcoin. È utilizzata per verificare la permanenza delle transazioni Bitcoin e per prevenire <a href="#double-spend">double spending</a>.</p>
-
-<h2 id="btc">BTC</h2>
-<p>Il BTC è un'unità comune utilizzata per designare un bitcoin (B⃦).</p>
-
-<h2 id="chiave-privata">Chiave Privata</h2>
-<p>Una chiave privata è <b> una parte di dati segreti che provano che sei tu ad utilizzare bitcoin da un determinato portafoglio </b> attraverso una <a href="#firma"> firma crittografata </a>. La tua chiave privata (o chiavi private) è conservata nel tuo computer se utilizzi un portafoglio software; è invece conservata in un server remoto se utilizzi un portafoglio web. La chiave privata non deve essere rivelata ad altri in quanto ti permette di utilizzare i fondi dal tuo portafoglio Bitcoin</p>
-
-<h2 id="conferma">Conferma</h2>
-<p>La conferma indica che una transazione è stata  <b> processata dalla rete ed è altamente improbabile che sia respinta</b>. La transazioni ricevono una conferma, quando sono incluse in un <a href="/it/glossario#blocco">blocco</a> e per ogni blocco successivo. Anche una singola conferma può essere considerata sicura per le transazioni di basso valore, sebbene per cifre maggiori come  1000 US$, è consigliabile attendere ben 6 conferme o di più. Ogni conferma  <i>esponenzialmente</i> diminuisce il rischio di una transazione respinta. </p>
-
-<h2 id="crittografia">Crittografia</h2>
-<p>La crittografia è quella branca della matematica che ci consente di creare <b>prove matematiche che forniscono elevati livelli di sicurezza</b>. Il commercio e le operazioni bancarie online impiegano già la crittografia. Nel caso di Bitcoin la crittografia è impiegata per rendere impossibile a chiunque di spendere del denaro dal portafoglio di un altro utente o alterare la <a href="#blockchain">block chain</a>. Può essere anche utilizzata per criptare un portafoglio, in modo che non possa essere usato senza una passowrd.</p>
-
-<h2 id="double-spend">Double Spend</h2>
-<p>Se un utente malintenzionato prova a <b>spendere i propri bitcoin verso due diversi riceventi contemporaneamente</b>, si tratta di doppia spesa. Il mining di <a href="#mining">Bitcoin</a> ed il <a href="#blockchain">block chain</a> esistono per creare un consenso sulla rete, per decidere quale delle due transazioni sia considerata valida.</p>
-
-<h2 id="firma">Firma</h2>
-<p><a href="#crittografia">La firma </a> criptografica è <b> un meccanismo matematico che consente di provare la proprietà</b>. Nel caso di Bitcoin, un <a href="#portafoglio">portafoglio Bitcoin</a> e la sua <a href="#chiave-privata">chiave privata(e)</a> sono collegati per mezzo di un vincolo matematico magico. Quando il tuo software Bitcoin segna una transazione con la chiave privata appropriata, l'intera rete può vedere che la firma combacia con i bitcoin spesi.  Tuttavia, non c'è alcun modo per il mondo d'indovinare la tua chiave privata, per derubarti dei tuoi bitcoin, ottenuti col sudore della fronte. </p>
-
-<h2 id="hash-rate">Hash Rate</h2>
-<p>Per <i>hash rate</i> si intende <b>l'unità di misura della potenza di elaborazione della rete Bitcoin</b>. Per fini di sicurezza la rete Bitcoin deve eseguire delle operazioni matematiche intensive. Quando la rete raggiunge un hash rate di 10 Th/s, significa che può realizzare un trilione di calcoli al secondo.</p>
-
-<h2 id="indirizzo">Indirizzo</h2>
-<p>Un indirizzo Bitcoin è <b>equivalente ad un indirizzo fisico o ad una e-mail</b>.  E' la sola informazione che devi fornire a qualcuno affinchè possa pagarti con Bitcoin. Una differenza importante, comunque, è che ogni indirizzo dovrebbe essere utilizzato unicamente per una singola transazione.</p>
-
-<h2 id="mining">Mining</h2>
-<p>Per <i>mining</i> si intende il processo che <b>fa eseguire all'hardware del computer calcoli matematici al fine di confermare le transazioni</b> ed aumentare la sicurezza della rete Bitcoin. Come ricompensa per il loro servizio, i <i>miner</i> (minatori) di Bitcoin possono incassare delle commissioni sulle transazioni che confermano insieme ai nuovi bitcoin appena creati. Quello del mining è un mercato specializzato e competitivo dove le ricompense sono divise in base a quanti calcoli sono stati eseguiti. Non tutti gli utenti Bitcoin si cimentano nel mining e non è un modo facile per fare soldi.</p>
-
-<h2 id="p2p">P2P</h2>
-<p>Per <i>peer to peer</i> si intendono <b>i sistemi che funzionano come un collettivo organizzato</b> permettendo ad ogni individuo di interagire direttamente con gli altri. Nel caso di Bitcoin, la rete è costruita in modo che ogni utente trasmetta le transazioni degli altri utenti. E, fatto di importanza cruciale, nessuna banca è richiesta come terzi.</p>
-
-<h2 id="portafoglio">Portafoglio</h2>
-<p>Un portafoglio di Bitcoin è circa <b>l'equivalente di un portafoglio materiale sul network di Bitcoin</b>. In realtà il tuo portafoglio contiene le <a href="#chiave-privata">chiavi private</a> che ti permettono di usare i bitcoin allocati nella <a href="#blockchain">block chain</a>. Ogni portafoglio Bitcoin può mostrarti il bilancio totale di tutti i bitcoin che controlla e ti permette di pagare cifre precise ad una persona specifica, come un vero portafoglio. Questo è diverso dalla carte di credito dove ti sono addebitate le spese dal commerciante.</p>
-
 
       </div>
     </div>
@@ -421,14 +506,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/it/note-legali">Note legali</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/note-legali">Note legali</a></li>
 			
-			<li><a href="/it/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/privacy">Privacy</a></li>
 			
-			<li><a href="/it/stampa">Stampa</a></li>
-			<li><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/stampa">Stampa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/it/chi-siamo">A proposito di bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -437,7 +522,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Un sito web della comunità sponsorizzato da</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -459,13 +545,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -476,7 +564,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

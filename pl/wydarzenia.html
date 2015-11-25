@@ -10,15 +10,29 @@
 <title>Konferencje i wydarzenia - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/pl.png"><strong>Polski</strong>
+          <img src="/img/flags/pl.png"><strong>Polski</strong>
 				</div>
 			</a>
 		</div>
@@ -323,88 +341,135 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <!-- Note: this file is built non-deterministically -->
-<link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
-<h1>Konferencje i wydarzenia<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
-<p class="summary">Odnajdź wydarzenia, konferencje i spotkania na całym świecie.</p>
+        <div class="content_events">
+  <!-- Note: this file is built non-deterministically -->
+  <link rel="alternate" type="application/rss+xml" href="/en/rss/events.rss" title="Bitcoin conferences and events">
+  <h1 class="content_events--title">Konferencje i wydarzenia<a type="application/rss+xml" href="/en/rss/events.rss"><img src="/img/icons/icon_rss.svg" alt="rss" class="rssicon"></a></h1>
+  <h2 class="content_events--subtitle">Odnajdź wydarzenia, konferencje i spotkania na całym świecie.</h2>
 
-<link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
-<link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
-<script src="/js/leaflet/leaflet.js"></script>
-<script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
-<div id="eventmap" class="eventmap"></div>
-<div id="eventdata" class="eventdata">
+  <link rel="stylesheet" type="text/css" href="/js/leaflet/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.css" />
+  <link rel="stylesheet" type="text/css" href="/js/leaflet-markercluster/MarkerCluster.Default.css" />
+  <script src="/js/leaflet/leaflet.js"></script>
+  <script src="/js/leaflet-markercluster/leaflet.markercluster.js"></script>
+  <div class="content_events--map">
+    <div id="eventmap" class="content_events--eventmap"></div>
+    <div id="eventdata" class="eventdata">
+    
 
+    
 
-
-
-
+    </div>
+    <script src="/js/events.js"></script>
+  </div>
+  <div class="content_events--boxcontainer">
+    <div class="content_events--infobox">
+      <h2 id="upcoming" class="content_events--infobox--title">Nadchodzące wydarzenia i konferencje</h2>
+      <ul class="content_events--infobox--list listtable eventtable">
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-11-24</span>
+          <span class="content_events--upcoming--item--event"><a href="http://www.adccasummit.com/">ADCCA Fintech Summit</a></span>
+          <span class="content_events--upcoming--item--location">Sydney, Australia</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-11-30</span>
+          <span class="content_events--upcoming--item--event"><a href="https://wcbs2015.com">West Coast Bitcoin Summit</a></span>
+          <span class="content_events--upcoming--item--location">Los Angeles, United States</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-02</span>
+          <span class="content_events--upcoming--item--event"><a href="http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/">Bitcoin Wednesday Conference</a></span>
+          <span class="content_events--upcoming--item--location">Amsterdam, The Netherlands</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-03</span>
+          <span class="content_events--upcoming--item--event"><a href="http://networkcultures.org/moneylab/">Moneylab#2 Economies of Dissent</a></span>
+          <span class="content_events--upcoming--item--location">1019 HC Amsterdam, The Netherlands</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-04</span>
+          <span class="content_events--upcoming--item--event"><a href="http://www.labitconf.com/">laBITconf 2015: Latin American Bitcoin Conference</a></span>
+          <span class="content_events--upcoming--item--location">Mexico D.F., Mexico</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-06</span>
+          <span class="content_events--upcoming--item--event"><a href="https://scalingbitcoin.org/hongkong2015/">Scaling Bitcoin: Phase 2</a></span>
+          <span class="content_events--upcoming--item--location">Hong Kong, China</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-09</span>
+          <span class="content_events--upcoming--item--event"><a href="http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibseoul">Inside Bitcoins Seoul</a></span>
+          <span class="content_events--upcoming--item--location">Seoul, South Korea</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2015-12-14</span>
+          <span class="content_events--upcoming--item--event"><a href="http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibsd">Inside Bitcoins San Diego</a></span>
+          <span class="content_events--upcoming--item--location">San Diego, United States</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-01-21</span>
+          <span class="content_events--upcoming--item--event"><a href="http://www.btcmiami.com">The North American Bitcoin Conference</a></span>
+          <span class="content_events--upcoming--item--location">Miami, Florida, United States of America</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-02-23</span>
+          <span class="content_events--upcoming--item--event"><a href="http://blockchain-sanfrancisco.com/">Blockchain Conference San Francisco</a></span>
+          <span class="content_events--upcoming--item--location">San Francisco, United States</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-03-03</span>
+          <span class="content_events--upcoming--item--event"><a href="http://bitcoinconference.co.za/">Bitcoin Africa Conference 2016</a></span>
+          <span class="content_events--upcoming--item--location">Johannesburg, South Africa</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-04-04</span>
+          <span class="content_events--upcoming--item--event"><a href="https://www.money2020europe.com/">Money 20/20 Europe</a></span>
+          <span class="content_events--upcoming--item--location">Copenhagen, Denmark</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-04-10</span>
+          <span class="content_events--upcoming--item--event"><a href="http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibny">Inside Bitcoins New York</a></span>
+          <span class="content_events--upcoming--item--location">New York, United States</span>
+        </li>
+      
+        <li class="content_events--upcoming--item">
+          <span class="content_events--upcoming--item--date">2016-05-24</span>
+          <span class="content_events--upcoming--item--event"><a href="http://insidebitcoins.com/hong-kong/2016">Inside Bitcoins Hong Kong</a></span>
+          <span class="content_events--upcoming--item--location">Hong Kong, China</span>
+        </li>
+      
+      </ul>
+      <div class="content_events--footer">
+        <div class="content_events--footer--wrap">
+          <div class="content_events--footer--submit"><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&amp;body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22">Dodaj wydarzenie</a></div>
+          <ul class="content_events--footer--list">
+            <li class="content_events--footer--item"><a href="http://bitcoin.meetup.com/">Grupy spotkaniowe Bitcoin</a></li>
+            <li class="content_events--footer--item"><a href="https://bitcointalk.org/index.php?board=86.0">Spotkania Bitcoin na BitcoinTalk</a></li>
+            <li class="content_events--footer--item"><a href="https://en.bitcoin.it/wiki/Meetups">Spotkania Bitcoin na Wiki</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<script src="/js/events.js"></script>
-<h2 id="upcoming">Nadchodzące wydarzenia i konferencje</h2>
-<div class="listtable eventtable">
-
-  <div><div>2015-10-02</div><div><a href="http://digitaleconomy.io/">Digital Economy Conference</a></div><div>Omaha, United States</div></div>
-
-  <div><div>2015-10-02</div><div><a href="http://www.hcpp.cz/eng/">Hacker Congress</a></div><div>Prague, Czech Republic</div></div>
-
-  <div><div>2015-10-06</div><div><a href="http://www.nyls.edu/center-for-business-and-financial-law/cbfl_events/conferences/">Fintech: Law and Disruption</a></div><div>New York, United States</div></div>
-
-  <div><div>2015-10-06</div><div><a href="http://www.blockchain-newyork.com/">Blockchain Conference New York</a></div><div>New York, United States</div></div>
-
-  <div><div>2015-10-07</div><div><a href="http://www.bitcoinwednesday.com/event/bitcoin-wednesday-28/">Bitcoin Wednesday Conference</a></div><div>Amsterdam, The Netherlands</div></div>
-
-  <div><div>2015-10-08</div><div><a href="http://altconvention.com">Alt Convention</a></div><div>Batumi, Georgia</div></div>
-
-  <div><div>2015-10-16</div><div><a href="http://bitcoinfoundation.org">DevCore Workshop: Developing the Developers</a></div><div>San Mateo, CA, USA</div></div>
-
-  <div><div>2015-10-21</div><div><a href="http://www.eventbrite.co.uk/e/fintechjersey-2015-tickets-18417288606?aff=es2">Fintech Jersey 2015</a></div><div>St. Helier, United Kingdom</div></div>
-
-  <div><div>2015-10-25</div><div><a href="http://www.money2020.com">Money 20/20</a></div><div>Las Vegas, United States</div></div>
-
-  <div><div>2015-11-03</div><div><a href="http://www.bl0ckcha1n.com">BL0CKCHA1N: The Blockchain Forum</a></div><div>Paris, France</div></div>
-
-  <div><div>2015-11-04</div><div><a href="http://www.bitcoinwednesday.com/event/bitcoin-wednesday-29/">Bitcoin Wednesday Conference</a></div><div>Amsterdam, The Netherlands</div></div>
-
-  <div><div>2015-11-09</div><div><a href="http://www.imtconferences.com/mtbit/">MTBIT - Bitcoin &amp; Remittances Miami Beach</a></div><div>Miami Beach, United States</div></div>
-
-  <div><div>2015-11-10</div><div><a href="http://www.fintechstartupsconference.com/sftickets">Fintech Startups Conference</a></div><div>San Francisco, United States</div></div>
-
-  <div><div>2015-11-10</div><div><a href="http://bankinnovationisrael.com/">Bank Innovation Israel</a></div><div>Tel Aviv-Yafo, Israel</div></div>
-
-  <div><div>2015-11-24</div><div><a href="http://www.adccasummit.com/">ADCCA Fintech Summit</a></div><div>Sydney, Australia</div></div>
-
-  <div><div>2015-12-02</div><div><a href="http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/">Bitcoin Wednesday Conference</a></div><div>Amsterdam, The Netherlands</div></div>
-
-  <div><div>2015-12-06</div><div><a href="https://scalingbitcoin.org/hongkong2015/">Scaling Bitcoin: Phase 2</a></div><div>Hong Kong, China</div></div>
-
-  <div><div>2015-12-09</div><div><a href="http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibseoul">Inside Bitcoins Seoul</a></div><div>Seoul, South Korea</div></div>
-
-  <div><div>2015-12-14</div><div><a href="http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibsd">Inside Bitcoins San Diego</a></div><div>San Diego, United States</div></div>
-
-  <div><div>2016-01-25</div><div><a href="http://www.btcmiami.com">The North American Bitcoin Conference</a></div><div>Miami, Florida, United States of America</div></div>
-
-  <div><div>2016-02-23</div><div><a href="http://blockchain-sanfrancisco.com/">Blockchain Conference San Francisco</a></div><div>San Francisco, United States</div></div>
-
-  <div><div>2016-03-03</div><div><a href="http://bitcoinconference.co.za/">Bitcoin Africa Conference 2016</a></div><div>Johannesburg, South Africa</div></div>
-
-  <div><div>2016-04-04</div><div><a href="https://www.money2020europe.com/">Money 20/20 Europe</a></div><div>Copenhagen, Denmark</div></div>
-
-  <div><div>2016-04-10</div><div><a href="http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&amp;utm_medium=eventlisting&amp;utm_campaign=bitcoinorgeventlistingibny">Inside Bitcoins New York</a></div><div>New York, United States</div></div>
-
-  <div><div>2016-05-24</div><div><a href="http://insidebitcoins.com/hong-kong/2016">Inside Bitcoins Hong Kong</a></div><div>Hong Kong, China</div></div>
-
-  <span><a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&amp;body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22">Dodaj wydarzenie</a></span>
-</div>
-
-<p><a href="http://bitcoin.meetup.com/">Grupy spotkaniowe Bitcoin</a></p>
-<p><a href="https://bitcointalk.org/index.php?board=86.0">Spotkania Bitcoin na BitcoinTalk</a></p>
-<p><a href="https://en.bitcoin.it/wiki/Meetups">Spotkania Bitcoin na Wiki</a></p>
 
       </div>
     </div>
@@ -415,14 +480,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/pl/informacje-prawne">Informacje prawne</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/informacje-prawne">Informacje prawne</a></li>
 			
-			<li><a href="/pl/prywatnosc">Prywatność</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prywatnosc">Prywatność</a></li>
 			
-			<li><a href="/pl/prasa">Prasa</a></li>
-			<li><a href="/pl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/prasa">Prasa</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/pl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -431,7 +496,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Strona społecznościowa sponsorowana przez</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -453,13 +519,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -470,7 +538,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

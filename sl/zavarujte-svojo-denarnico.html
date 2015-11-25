@@ -10,15 +10,29 @@
 <title>Zaščita denarnice - bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
+          <img src="/img/flags/sl.png"><strong>Slovenščina</strong>
 				</div>
 			</a>
 		</div>
@@ -323,79 +341,107 @@
 		<li><a href="#">Pogosta vprašanja</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Zaščita denarnice</h1>
-<p class="summarytxt">Bitcoin denarnica zahteva določeno stopnjo varnosti, ravno tako kot običajna denarnica. Bitcoin vam omogoča popoln nadzor nad upravljanjem svojega denarja, to pa prinaša s sabo potrebo po skrbi za varnost. Bitcoin, če se uporablja pravilno, omogoča visoko stopnjo varnosti. <b>Nikoli ne pozabite, da z uporabo bitcoina prevzemate nase popolno odgovornost za varnost in zaščito svojega denarja.</b></p>
+        <div class="content_secure-your-wallet">
+	<h1 class="content_secure-your-wallet--title">Zaščita denarnice</h1>
+	<h2 class="content_secure-your-wallet--subtitle">Bitcoin denarnica zahteva določeno stopnjo varnosti, ravno tako kot običajna denarnica. Bitcoin vam omogoča popoln nadzor nad upravljanjem svojega denarja, to pa prinaša s sabo potrebo po skrbi za varnost. Bitcoin, če se uporablja pravilno, omogoča visoko stopnjo varnosti. <b>Nikoli ne pozabite, da z uporabo bitcoina prevzemate nase popolno odgovornost za varnost in zaščito svojega denarja.</b></h2>
 
-<h2 id="online"><img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">Bodite previdni s spletnimi storitvami</h2>
-<p>Z vsako storitvijo, ki hrani vaša sredstva v oblaku, morate biti pazljivi. Mnoge menjalnice in spletne denarnice so že utrpele izgube zaradi vdorov. Storitve te vrste običajno ne zagotavljajo dovolj visoke varnosti in kritja, da bi jih uporabljali za hranjenje denarja kot v banki. Zato premislite o uporabi drugih tipov <a href="/sl/izberite-denarnico">bitcoin denarnic</a>. Vsekarkor pa izbirajte takšne storitve zelo previdno. Priporočamo vam tudi uporabo dvostopenjske overitve.</p>
+	<ul class="content_secure-your-wallet--list">
+		<li class="content_secure-your-wallet--items">
+		<img src="/img/icons/ico_warning.svg" class="titleicon" alt="warning">
+		  <h3 id="online">Bodite previdni s spletnimi storitvami</h3>
+		  <p>Z vsako storitvijo, ki hrani vaša sredstva v oblaku, morate biti pazljivi. Mnoge menjalnice in spletne denarnice so že utrpele izgube zaradi vdorov. Storitve te vrste običajno ne zagotavljajo dovolj visoke varnosti in kritja, da bi jih uporabljali za hranjenje denarja kot v banki. Zato premislite o uporabi drugih tipov <a href="/sl/izberite-denarnico">bitcoin denarnic</a>. Vsekarkor pa izbirajte takšne storitve zelo previdno. Priporočamo vam tudi uporabo dvostopenjske overitve.</p>
+		</li>
 
-<h2 id="everyday">Manjši zneski za vsakdanjo rabo</h2>
-<p>Denarnica za bitcoin je v marsičem podobna običajni denarnici za gotovino. Če ne bi nosili 1000 EUR gotovine v denarnici, podobno razmišljajte pri podobnih zneskih v bitcoinu. V splošnem je smiselno imeti na telefonu, računalniku ali strežniku za vsakdanjo uporabo le manjši znesek v novcih, ostalo pa hraniti v varnejšem okolju.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="everyday">Manjši zneski za vsakdanjo rabo</h3>
+		  <p>Denarnica za bitcoin je v marsičem podobna običajni denarnici za gotovino. Če ne bi nosili 1000 EUR gotovine v denarnici, podobno razmišljajte pri podobnih zneskih v bitcoinu. V splošnem je smiselno imeti na telefonu, računalniku ali strežniku za vsakdanjo uporabo le manjši znesek v novcih, ostalo pa hraniti v varnejšem okolju.</p>
+		</li>
 
-<h2 id="backup">Naredite varnostno kopijo denarnice</h2>
-<p>Varno shranjena varnostna kopija denarnice vas ščiti pred računalniškimi okvarami in mnogimi človeškimi napakami. Če je šifrirana, vam omogoča tudi obnovitev denarnice v primeru kraje.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="backup">Naredite varnostno kopijo denarnice</h3>
+		  <p>Varno shranjena varnostna kopija denarnice vas ščiti pred računalniškimi okvarami in mnogimi človeškimi napakami. Če je šifrirana, vam omogoča tudi obnovitev denarnice v primeru kraje.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupwhole">Naredite rezervno kopijo celotne denarnice</h3>
+		  		<p>Nekatere denarnice interno uporabljajo skrite zasebne ključe. Če imate v varnostni kopiji le zasebne ključe svojih vidnih javnih naslovov, morda iz te varnostne kopije ne boste mogli obnoviti večjega dela svojih novcev.</p>
+		  	</li>
 
-<div class="box">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backuponline">Šifrirajte rezervne kopije v oblaku</h3>
+		  		<p>Vsaka rezervna kopija, ki je shranjena na spletu, je močno izpostavljena krajam. Ranljiv in izpostavljen raznim zlonamernim programom je tudi vsak računalnik, ki je priklopljen na internetno omrežje. Šifriranje rezervnih kopij, ki so izpostavljene omrežju, je torej s stališča varnosti močno priporočeno.</p>
+		  	</li>
 
-<h3 id="backupwhole">Naredite rezervno kopijo celotne denarnice</h3>
-<p>Nekatere denarnice interno uporabljajo skrite zasebne ključe. Če imate v varnostni kopiji le zasebne ključe svojih vidnih javnih naslovov, morda iz te varnostne kopije ne boste mogli obnoviti večjega dela svojih novcev.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupmany">Uporabite več varnih lokacij</h3>
+		  		<p>Pri varnosti se nikoli ni dobro zanašati na eno samo sredstvo. Če svojo rezervno kopijo hranite na več različnih lokacijah, si povečate možnosti, da boste ob morebitni okvari ali napaki svojo denarnico lahko obnovili. Pametno je tudi razmisliti o uporabi raznih prenosnih medijev, kot so USB ključi, papirni izpiski in CD-ji.</p>
+		  	</li>
 
-<h3 id="backuponline">Šifrirajte rezervne kopije v oblaku</h3>
-<p>Vsaka rezervna kopija, ki je shranjena na spletu, je močno izpostavljena krajam. Ranljiv in izpostavljen raznim zlonamernim programom je tudi vsak računalnik, ki je priklopljen na internetno omrežje. Šifriranje rezervnih kopij, ki so izpostavljene omrežju, je torej s stališča varnosti močno priporočeno.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="backupregular">Delajte redne rezervne kopije</h3>
+		  		<p>Poskrbeti morate za redno rezervno kopiranje svoje denarnice, saj le s tem zagotovite, da so vsi spremenjeni in novo dodani bitcoin naslovi, ki ste jih ustvarili, tudi res vključeni v kopijo. V prihodnje bodo vse aplikacije uporabljale denarnice, ki jih bo potrebno rezervno kopirati samo enkrat.</p>
+		  	</li>
+		  </ul>
+		</li>
 
-<h3 id="backupmany">Uporabite več varnih lokacij</h3>
-<p>Pri varnosti se nikoli ni dobro zanašati na eno samo sredstvo. Če svojo rezervno kopijo hranite na več različnih lokacijah, si povečate možnosti, da boste ob morebitni okvari ali napaki svojo denarnico lahko obnovili. Pametno je tudi razmisliti o uporabi raznih prenosnih medijev, kot so USB ključi, papirni izpiski in CD-ji.</p>
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="encrypt">Šifrirajte svojo denarnico</h3>
+		  <p>Denarnico na pametnem telefonu lahko šifrirate z geslom. Na ta način preprečite, da bi kdo, ki dobi v roke vaš telefon, lahko zapravil vaše novce. To pomaga pri zaščiti pred tatovi, ne ščiti pa pred zapisovalniki tipkanja.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptforget">Nikoli ne pozabite svojega gesla</h3>
+		  		<p>Zagotoviti si morate, da gesla ne boste nikoli pozabili, sicer boste za vedno izgubili svoje novce. Za razliko od bank in večine spletnih storitev so možnosti obnovitve pozabljenega gesla pri bitcoinu zelo majhne. Gesla bi se morali biti sposobni spomniti tudi, če ga več let ne boste uporabljali. Če niste prepričani, da si ga boste zelo dobro zapomnili, premislite o hranjenju gesla, zapisanega na papir, na varnem mestu, npr. v sefu.</p>
+		  	</li>
 
-<h3 id="backupregular">Delajte redne rezervne kopije</h3>
-<p>Poskrbeti morate za redno rezervno kopiranje svoje denarnice, saj le s tem zagotovite, da so vsi spremenjeni in novo dodani bitcoin naslovi, ki ste jih ustvarili, tudi res vključeni v kopijo. V prihodnje bodo vse aplikacije uporabljale denarnice, ki jih bo potrebno rezervno kopirati samo enkrat.</p>
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="encryptstrong">Uporabite močno geslo</h3>
+		  		<p>Vsako geslo, ki vsebuje le črke ali besede, je zelo šibko in ga je enostavno streti. Močno geslo mora vsebovati črke, številke ter ločila in mora biti dolgo vsaj 16 znakov. Najbolj varna gesla so tista, ki jih sestavijo posebni temu namenjeni programi. Močna gesla si je običajno tudi težje zapomniti, zato je nujno v pomnjenje vložiti nekaj truda.</p>
+		  	</li>
+		  </ul>
+		</li>
 
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offline">Denarnice brez povezave za prihranke</h3>
+		  <p>Denarnica brez povezave ali "hladna hramba" denarnice nudi najvišjo stopnjo varnosti za prihranke. Pri tem gre za hrambo denarnice na varnem mestu brez omrežne povezave. Pri pravilni izvedbi je hladna hramba lahko dobra zaščita pred ranljivostmi računalnika. Dobra praksa je tudi uporaba denarnice brez povezave v navezi z varnostnim kopiranjem in šifriranjem. Tu lahko preberete nekaj navodil, kako se tega lotiti.</p>
+		  <ul class="content_secure-your-wallet--sublist">
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="offlinetx">Podpisovanje nakazil brez povezave</h3>
+		  		<p>Tak pristop vključuje način, kjer si dva računalnika določene dele denarnice delita. Prvi računalnik mora biti izklopljen iz omrežja. Ta je edini, ki drži celo denarnico, in je pristojen za podpisovanje nakazil. Drugi računalnik je povezan v omrežje in ima "model" denarnice, s katerim lahko ustvarja samo nepodpisana nakazila. Na ta način lahko varno izdajate nakazila z nadaljnjimi koraki.</p>
+		  		<ol class="content_secure-your-wallet--items--list">
+		  		  <li>Naredite novo nakazilo na računalniku s povezavo in jo shranite na USB-ključ.</li>
+		  		  <li>Podpišite nakazilo na računalniku brez povezave.</li>
+		  		  <li>Razpošljite nakazilo prek računalnika s povezavo.</li>
+		  		</ol>
+		  		<p>Računalnik, ki je povezan v omrežje, ne more podpisovati nakazil, zato morebitni napadalec, ki pridobi dostop do tega računalnika, ne more prenesti novcev drugam. Podpisovanje nakazil brez povezave omogoča npr. denarnica <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a>.</p>
+		  	</li>
+
+		  	<li class="content_secure-your-wallet--subitems">
+		  		<h3 id="hardwarewallet">Strojne denarnice</h3>
+		  		<p>Strojne denarnice nudijo najboljše ravnotežje med varnostjo in enostavnostjo uporabe. To so male naprave, ki so zasnovane le za to, da opravljajo funkcijo denarnice in nič drugega. Na njih ni mogoče namestiti programske opreme, s čimer so visoko zaščitene pred ranljivostmi računalnikov in internetnimi krajami. Omogočajo tudi tvorbo rezervnih kopij, s pomočjo katerih lahko ponovno pridete do svojih novcev, če napravo izgubite.</p>
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="update">Poskrbite za posodobitve svoje programske opreme</h3>
+		  <p>Z uporabo najnovejše različice svoje programske opreme za bitcoin pridobite pomembne varnostne popravke. Posodobitve lahko preprečijo bolj ali manj resne težave, dodajo nove uporabne funkcionalnosti in pomagajo k večji varnosti vaše denarnice. Za ohranitev varnega okolja, v katerem deluje vaša denarnica, je prav tako pomembno, da posodabljate tudi ostalo programsko opremo, ki teče na vašem računalniku ali mobilniku.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinemulti">Večkratno podpisovanje za zaščito proti kraji</h3>
+		  <p>V bitcoinu obstaja možnost, da se za trošenje bitcoinov na določenem naslovu zahteva podpis s strani več zasebnih ključev. Trenutno je ta možnost uporabna le za tehnično podkovane uporabnike, v prihodnosti pa lahko pričakujemo širšo uporabnost. S pomočjo uporabe večstranskega podpisovanja lahko npr. organizacija dovoli trošenje svojih sredstev le pod pogojem, da trije izmed petih pooblaščenih uporabnikov podpišejo nakazilo. To daje tudi npr. možnost hranjenja uporabnikovega denarja v spletnih denarnicah, kjer bi bilo za krajo potrebno vdreti hkrati na strežnik spletne denarnice in uporabnikov računalnik.</p>
+		</li>
+
+		<li class="content_secure-your-wallet--items">
+		  <h3 id="offlinetestament">Razmislite o svoji oporoki</h3>
+		  <p>Vaši bitcoini so lahko nepovratno izgubljeni, če ne ustvarite rezervnega načrta za svoje vrstnike in družino. Če samo vi poznate lokacijo svoje denarnice ali svoja gesla, potem ni možnosti povrnitve sredstev v primeru vaše odsotnosti. Vzemite si nekaj časa za razmislek v tej smeri.</p>
+		</li>
+	</ul>
 </div>
-
-<h2 id="encrypt">Šifrirajte svojo denarnico</h2>
-<p>Denarnico na pametnem telefonu lahko šifrirate z geslom. Na ta način preprečite, da bi kdo, ki dobi v roke vaš telefon, lahko zapravil vaše novce. To pomaga pri zaščiti pred tatovi, ne ščiti pa pred zapisovalniki tipkanja.</p>
-
-<div class="box">
-
-<h3 id="encryptforget">Nikoli ne pozabite svojega gesla</h3>
-<p>Zagotoviti si morate, da gesla ne boste nikoli pozabili, sicer boste za vedno izgubili svoje novce. Za razliko od bank in večine spletnih storitev so možnosti obnovitve pozabljenega gesla pri bitcoinu zelo majhne. Gesla bi se morali biti sposobni spomniti tudi, če ga več let ne boste uporabljali. Če niste prepričani, da si ga boste zelo dobro zapomnili, premislite o hranjenju gesla, zapisanega na papir, na varnem mestu, npr. v sefu.</p>
-
-<h3 id="encryptstrong">Uporabite močno geslo</h3>
-<p>Vsako geslo, ki vsebuje le črke ali besede, je zelo šibko in ga je enostavno streti. Močno geslo mora vsebovati črke, številke ter ločila in mora biti dolgo vsaj 16 znakov. Najbolj varna gesla so tista, ki jih sestavijo posebni temu namenjeni programi. Močna gesla si je običajno tudi težje zapomniti, zato je nujno v pomnjenje vložiti nekaj truda.</p>
-
-</div>
-
-<h2 id="offline">Denarnice brez povezave za prihranke</h2>
-<p>Denarnica brez povezave ali "hladna hramba" denarnice nudi najvišjo stopnjo varnosti za prihranke. Pri tem gre za hrambo denarnice na varnem mestu brez omrežne povezave. Pri pravilni izvedbi je hladna hramba lahko dobra zaščita pred ranljivostmi računalnika. Dobra praksa je tudi uporaba denarnice brez povezave v navezi z varnostnim kopiranjem in šifriranjem. Tu lahko preberete nekaj navodil, kako se tega lotiti.</p>
-
-<div class="box boxexpand">
-<h3 id="offlinetx"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Podpisovanje nakazil brez povezave</a></h3>
-<p>Tak pristop vključuje način, kjer si dva računalnika določene dele denarnice delita. Prvi računalnik mora biti izklopljen iz omrežja. Ta je edini, ki drži celo denarnico, in je pristojen za podpisovanje nakazil. Drugi računalnik je povezan v omrežje in ima "model" denarnice, s katerim lahko ustvarja samo nepodpisana nakazila. Na ta način lahko varno izdajate nakazila z nadaljnjimi koraki.</p>
-<ol>
-  <li>Naredite novo nakazilo na računalniku s povezavo in jo shranite na USB-ključ.</li>
-  <li>Podpišite nakazilo na računalniku brez povezave.</li>
-  <li>Razpošljite nakazilo prek računalnika s povezavo.</li>
-</ol>
-<p>Računalnik, ki je povezan v omrežje, ne more podpisovati nakazil, zato morebitni napadalec, ki pridobi dostop do tega računalnika, ne more prenesti novcev drugam. Podpisovanje nakazil brez povezave omogoča npr. denarnica <a href="https://bitcoinarmory.com/tutorials/armory-advanced-features/offline-wallets/">Armory</a>.</p>
-</div>
-
-<br>
-<div class="box boxexpand">
-<h3 id="hardwarewallet"><a onclick="boxShow(event);" ontouchstart="boxShow(event);" class="link-js">Strojne denarnice</a></h3>
-<p>Strojne denarnice nudijo najboljše ravnotežje med varnostjo in enostavnostjo uporabe. To so male naprave, ki so zasnovane le za to, da opravljajo funkcijo denarnice in nič drugega. Na njih ni mogoče namestiti programske opreme, s čimer so visoko zaščitene pred ranljivostmi računalnikov in internetnimi krajami. Omogočajo tudi tvorbo rezervnih kopij, s pomočjo katerih lahko ponovno pridete do svojih novcev, če napravo izgubite.</p>
-</div>
-
-<h2 id="update">Poskrbite za posodobitve svoje programske opreme</h2>
-<p>Z uporabo najnovejše različice svoje programske opreme za bitcoin pridobite pomembne varnostne popravke. Posodobitve lahko preprečijo bolj ali manj resne težave, dodajo nove uporabne funkcionalnosti in pomagajo k večji varnosti vaše denarnice. Za ohranitev varnega okolja, v katerem deluje vaša denarnica, je prav tako pomembno, da posodabljate tudi ostalo programsko opremo, ki teče na vašem računalniku ali mobilniku.</p>
-
-<h2 id="offlinemulti">Večkratno podpisovanje za zaščito proti kraji</h2>
-<p>V bitcoinu obstaja možnost, da se za trošenje bitcoinov na določenem naslovu zahteva podpis s strani več zasebnih ključev. Trenutno je ta možnost uporabna le za tehnično podkovane uporabnike, v prihodnosti pa lahko pričakujemo širšo uporabnost. S pomočjo uporabe večstranskega podpisovanja lahko npr. organizacija dovoli trošenje svojih sredstev le pod pogojem, da trije izmed petih pooblaščenih uporabnikov podpišejo nakazilo. To daje tudi npr. možnost hranjenja uporabnikovega denarja v spletnih denarnicah, kjer bi bilo za krajo potrebno vdreti hkrati na strežnik spletne denarnice in uporabnikov računalnik.</p>
-
-<h2 id="offlinetestament">Razmislite o svoji oporoki</h2>
-<p>Vaši bitcoini so lahko nepovratno izgubljeni, če ne ustvarite rezervnega načrta za svoje vrstnike in družino. Če samo vi poznate lokacijo svoje denarnice ali svoja gesla, potem ni možnosti povrnitve sredstev v primeru vaše odsotnosti. Vzemite si nekaj časa za razmislek v tej smeri.</p>
 
       </div>
     </div>
@@ -406,14 +452,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/sl/pravno">Pravno</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/pravno">Pravno</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy</a></li>
 			
-			<li><a href="/sl/mediji">Mediji</a></li>
-			<li><a href="/sl/o-nas">O bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/mediji">Mediji</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/sl/o-nas">O bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -422,7 +468,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Spletišče skupnosti pod pokroviteljstvom</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -444,13 +491,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -461,7 +510,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

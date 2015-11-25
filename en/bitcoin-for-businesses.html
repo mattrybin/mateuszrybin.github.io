@@ -10,15 +10,29 @@
 <title>Bitcoin for Businesses - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -200,7 +218,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/en.png"><strong>English</strong>
+          <img src="/img/flags/en.png"><strong>English</strong>
 				</div>
 			</a>
 		</div>
@@ -327,65 +345,68 @@
 		<li><a href="#">FAQ</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <div class="content_businesses">
-	<h1 class="content_businesses--title">Bitcoin for Businesses</h1>
-	<h2 class="content_businesses--subtitle">Bitcoin is a very secure and inexpensive way to handle payments.</h2>
+        <div class="content_standard">
+	<h1 class="content_standard--title">Bitcoin for Businesses</h1>
+	<h2 class="content_standard--subtitle">Bitcoin is a very secure and inexpensive way to handle payments.</h2>
 
-  <ul class="content_businesses--list">
-    <li class="content_businesses--items">
+  <ul class="content_standard--list">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
       <h3>Choose your own fees</h3>
       <p>There is no fee to receive bitcoins, and many wallets let you control how large a fee to pay when spending. Most wallets have reasonable default fees, and higher fees can encourage faster <a href="/en/you-need-to-know#instant">confirmation</a> of your transactions. Fees are unrelated to the amount transferred, so it's possible to send 100,000 bitcoins for the same fee it costs to send 1 bitcoin.
 </p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_shield.svg" alt="Icon"/>
       <h3>Protection against fraud</h3>
       <p>There is no fee to receive bitcoins, and many wallets let you control how large a fee to pay when spending. Most wallets have reasonable default fees, and higher fees can encourage faster <a href="/en/you-need-to-know#instant">confirmation</a> of your transactions. Fees are unrelated to the amount transferred, so it's possible to send 100,000 bitcoins for the same fee it costs to send 1 bitcoin.
 </p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_international.svg" alt="Icon"/>
       <h3>Fast international payments</h3>
       <p>Sending bitcoins across borders is as easy as sending them across the street. There are no banks to make you wait three business days, no extra fees for making an international transfer, and no special limitations on the minimum or maximum amount you can send.
 </p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_pci.svg" alt="Icon"/>
       <h3>No PCI compliance required</h3>
       <p>Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href="/en/secure-your-wallet">secure your wallet</a> and your payment requests. However, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like credit card numbers.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_visib.svg" alt="Icon"/>
       <h3>Get some free visibility</h3>
       <p>Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_multi.svg" alt="Icon"/>
       <h3>Multi-signature</h3>
       <p>Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors to prevent any member to make expenditures without enough consent from other members, as well as to track which members allowed each payment.</p>
     </li>
 
-    <li class="content_businesses--items">
+    <li class="content_standard--items">
       <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
       <h3>Accounting transparency</h3>
       <p>Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information your members can use to verify your balances and transactions. Non-profit organizations can also allow the public to see how much they receive in donations.</p>
     </li>
   </ul>
 
-  <div class="content_businesses--action">
-    <a class="content_businesses--action--text" href="/en/getting-started">
-      Get started with Bitcoin
-    </a>
+  <div class="content_standard--action">
+    <div class="content_standard--action--wrap">
+      <a class="content_standard--action--text" href="/en/getting-started">
+        Get started with Bitcoin
+      </a>
+    </div>
   </div>
 </div>
 
@@ -398,14 +419,14 @@
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/en/legal">Legal</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/legal">Legal</a></li>
 			
-			<li><a href="/en/privacy">Privacy</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/privacy">Privacy Policy</a></li>
 			
-			<li><a href="/en/press">Press</a></li>
-			<li><a href="/en/about-us">About bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/press">Press</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/about-us">About bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -414,7 +435,8 @@
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -436,13 +458,15 @@
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -453,7 +477,6 @@
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 

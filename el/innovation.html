@@ -10,15 +10,29 @@
 <title>Καινοτομία - Bitcoin</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/9a80dd9c1078bcaea3e1eda4295d6658.css" />
+<link rel="stylesheet" type="text/css" href="/b8960fe27beefe4a1755ea70d31c9068.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 <link rel="stylesheet" type="text/css" href="/e25576402a7c13abeec77fe047432e13.css" />
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
 
 </head>
 
@@ -30,6 +44,10 @@
 <div class="top">
   <div class="top_main">
     
+  <div class="alert_standard alert">
+    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
+  </div>
+
 
   </div>
 </div>
@@ -198,7 +216,7 @@
 			<span class="header_standard--outside--changelang">Change Language</span>
 			<a class="header_standard--outside--toggle" aria-expanded="false" href="#">
 				<div>
-                    <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
+          <img src="/img/flags/el.png"><strong>Ελληνικά</strong>
 				</div>
 			</a>
 		</div>
@@ -323,97 +341,89 @@
 		<li><a href="#">Συχνές ερωτήσεις</a></li>
 	</ul>
 </div>
+
     </div>
 
     <div class="site_body">
       <div class="body_standard">
-        <h1>Καινοτομία στα συστήματα πληρωμών</h1>
-<p class="summarytxt">To πρωτόκολλο του Bitcoin δεν είναι απλά για την αποστολή χρημάτων από το σημείο Α στο σημείο Β. Έχει πολλές λειτουργίες και ανοίγει πολλές δυνατότητες τις οποίες η κοινότητα ακόμα εξερευνά. Ιδού κάποιες από τις τεχνολογίες που είναι για την ώρα αντικείμενο έρευνας και σε κάποιες περιπτώσεις, μετατρέπονται σε πραγματικά προϊόντα και υπηρεσίες. Οι πιο ενδιαφέρουσες χρήσεις του Bitcoin βρίσκονται ακόμα σε στάδιο ανακάλυψης.</p>
+        <div class="content_innovation">
+  <h1 class="content_innovation--title">Καινοτομία στα συστήματα πληρωμών</h1>
+  <h2 class="content_innovation--subtitle">To πρωτόκολλο του Bitcoin δεν είναι απλά για την αποστολή χρημάτων από το σημείο Α στο σημείο Β. Έχει πολλές λειτουργίες και ανοίγει πολλές δυνατότητες τις οποίες η κοινότητα ακόμα εξερευνά. Ιδού κάποιες από τις τεχνολογίες που είναι για την ώρα αντικείμενο έρευνας και σε κάποιες περιπτώσεις, μετατρέπονται σε πραγματικά προϊόντα και υπηρεσίες. Οι πιο ενδιαφέρουσες χρήσεις του Bitcoin βρίσκονται ακόμα σε στάδιο ανακάλυψης.</h2>
 
-<div class="tablehalf">
+  <ul class="content_innovation--list">
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lock.svg" alt="Icon"/>
+	    <h3 id="control">Έλεγχος κατά της απάτης</h3>
+	    <p>Ένα πρωτοφανές επίπεδο ασφάλειας είναι εφικτό με το Bitcoin. Το δίκτυο παρέχει στους χρήστες προστασία έναντι στις περισσότερες κοινές απάτες όπως οι αντιλογισμοί χρεώσεων (chargebacks) ή ανεπιθύμητες χρεώσεις και τα bitcoins είναι αδύνατο να παραχαραχθούν. Οι χρήστες μπορούν να κάνουν αντίγραφα ασφαλείας ή να κρυπτογραφούν το πορτοφόλι τους και το υλισμικό (hardware) των πορτοφολιών θα μπορούσε να κάνει πολύ δύσκολη την κλοπή ή την απώλεια χρημάτων. Το Bitcoin είναι σχεδιασμένο να επιτρέπει στους χρήστες του να έχουν πλήρη έλεγχο των χρημάτων τους.</p>
+	  </li>
 
-<div>
-<img src="/img/innovation/inno_control.jpg" alt="Banner" />
-<h2 id="control"><img class="titleicon" src="/img/icons/ico_lock.svg" alt="Icon" />Έλεγχος κατά της απάτης</h2>
-<p>Ένα πρωτοφανές επίπεδο ασφάλειας είναι εφικτό με το Bitcoin. Το δίκτυο παρέχει στους χρήστες προστασία έναντι στις περισσότερες κοινές απάτες όπως οι αντιλογισμοί χρεώσεων (chargebacks) ή ανεπιθύμητες χρεώσεις και τα bitcoins είναι αδύνατο να παραχαραχθούν. Οι χρήστες μπορούν να κάνουν αντίγραφα ασφαλείας ή να κρυπτογραφούν το πορτοφόλι τους και το υλισμικό (hardware) των πορτοφολιών θα μπορούσε να κάνει πολύ δύσκολη την κλοπή ή την απώλεια χρημάτων. Το Bitcoin είναι σχεδιασμένο να επιτρέπει στους χρήστες του να έχουν πλήρη έλεγχο των χρημάτων τους.</p>
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_international.svg" alt="Icon"/>
+	    <h3 id="global">Παγκόσμια προσβασιμότητα</h3>
+	    <p>Οι πληρωμές σε όλο τον κόσμο μπορούν να είναι πλήρως διαλειτουργικές. Το Bitcoin επιτρέπει σε κάθε τράπεζα, επιχείρηση ή ιδιώτη να στείλει και να λάβει με ασφάλεια πληρωμές οπουδήποτε και οποτεδήποτε, με ή χωρίς τραπεζικό λογαριασμό. Το Bitcoin είναι διαθέσιμο σε μεγάλο αριθμό από χώρες οι οποίες παραμένουν ακόμα μη προσβάσιμες για τα περισσότερα συστήματα πληρωμών εξαιτίας των περιορισμών που έχουν οι ίδιες. Το Bitcoin αυξάνει την παγκόσμια πρόσβαση στο εμπόριο και μπορεί να βοηθήσει το διεθνές εμπόριο να προοδεύσει.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_lowfee.svg" alt="Icon"/>
+	    <h3 id="cost">Χαμηλό κόστος</h3>
+	    <p>Με τη χρήση κρυπτογραφίας, είναι εφικτές ασφαλείς πληρωμές χωρίς αργούς και ακριβοπληρωμένους μεσάζοντες. Μια συναλλαγή Bitcoin μπορεί να είναι αρκετά φθηνότερη από τις εναλλακτικές της και να ολοκληρωθεί σε μικρό χρονικό διάστημα. Αυτό σημαίνει ότι το Bitcoin έχει κάποια προοπτική να γίνει ένας σύνηθης τρόπος μεταφοράς οποιουδήποτε συναλλάγματος στο μέλλον. Το Bitcoin θα μπορούσε επίσης να διαδραματίσει ρόλο στην <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">μείωση της φτώχειας</a> σε πολλές μειώνοντας τα υψηλά τέλη συναλλαγών στο μισθό των εργαζομένων.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_donate.svg" alt="Icon"/>
+	    <h3 id="donation">Φιλοδωρήματα και δωρεές</h3>
+	    <p>Το Bitcoin είναι μια ιδιαίτερα αποτελεσματική λύση για φιλοδωρήματα και δωρεές σε αρκετές περιπτώσεις. Η αποστολή μιας πληρωμής απαιτεί μόνο ένα κλικ και η αποδοχή δωρεών μπορεί να είναι τόσο απλή όσο η ανάρτηση ενός κώδικα QR. Οι δωρεές μπορούν είναι ορατές στο κοινό, παρέχοντας αυξημένη διαύγεια σε μη-κερδοσκοπικούς οργανισμούς. Σε περιπτώσεις έκτακτης ανάγκης όπως σε φυσικές καταστροφές, οι δωρεές Bitcoin μπορούν να συνεισφέρουν στην ταχύτερη παγκόσμια ανταπόκριση.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multi.svg" alt="Icon"/>
+	    <h3 id="crowdfunding">Συμμετοχική Χρηματοδότηση</h3>
+	    <p>Παρόλο που δεν είναι ακόμα εύκολο στη χρήση, το Bitcoin μπορεί να χρησιμοποιηθεί για να διεξάγει διαφημιστικές εκστρατείες συμμετοχικής χρηματοδότησης (crowdfunding) τύπου Kickstarter στις οποίες ιδιώτες δίνουν ως ενέχυρο χρήματα σε ένα πρότζεκτ και τα οποία παίρνονται από αυτούς μόνο αν ληφθούν αρκετά ενέχυρα ώστε να φτάσουν στο στόχο. Τέτοιες ασφαλιστικές συμβάσεις επεξεργάζονται από το πρωτόκολλο Bitcoin, το οποίο αποτρέπει μια συναλλαγή να λάβει χώρα εώς ότου έχουν εκπληρωθεί όλοι οι όροι. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Μάθετε περισσότερα</a> για την τεχνολογία σχετικά με την συμμετοχική χρηματοδότηση.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_micro.svg" alt="Icon"/>
+	    <h3 id="micro">Μικροπληρωμές</h3>
+	    <p>To Bitcoin μπορεί να επεξεργαστεί συναλλαγές στην κλίμακα του δολαρίου και σύντομα σε ακόμα μικρότερα ποσά. Τέτοιες πληρωμές είναι υπόθεση ρουτίνας ακόμα και σήμερα. Φανταστείτε να ακούτε ραδιόφωνο μέσω Διαδικτύου και να πληρώνεται με το δευτερόλεπτο, να βλέπετε ιστοσελίδες και να δινετε ένα μικρό φιλοδώρημα για κάθε διαφήμιση που δεν εμφανίζεται ή να αγοράζετε εύρος ζώνης (bandwidth) από ένα ενεργό σημείο (hotspot) WiFi με το kilobyte. Το Bitcoin είναι αρκετά αποτελεσματικό ώστε να κάνει όλες αυτές τις ιδέες εφικτές. <a href="https://bitcoinj.github.io/working-with-micropayments">Μάθετε περισσότερα</a> για την τεχνολογία του Bitcoin σχετικά με τις μικροπληρωμές.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_balance.svg" alt="Icon"/>
+	    <h3 id="mediation">Διαμεσολάβηση Διενέξεων</h3>
+	    <p>Το Bitcoin μπορεί να χρησιμοποιηθεί για να αναπτύξει καινοτόμες υπηρεσίες διαμεσολάβησης σε διενέξεις χρησιμοποιώντας τις πολλαπλές υπογραφές (multiple signatures). Τέτοιες υπηρεσίες θα μπορούσαν να κάνουν εφικτό για κάποιον τρίτο να εγκρίνει ή να απορρίψει μια συναλλαγή στην περίπτωση μιας διαφωνίας μεταξύ τρίτων χωρίς να έχει υπό έλεγχο τα χρήματά τους. Εφόσον αυτές οι υπηρεσίες θα είναι συμβατές με κάθε χρήστη και έμπορο που χρησιμοποιεί το Bitcoin, αυτό ενδέχεται να οδηγήσει σε ελεύθερο ανταγωνισμό και υψηλότερα πρότυπα ποιότητας.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_multisig.svg" alt="Icon"/>
+	    <h3 id="multisig">Πολλαπλές υπογραφές</h3>
+	    <p>Οι πολλαπλές υπογραφές (multiple signatures) επιτρέπουν μια συναλλαγή να γίνεται αποδεκτή από το δίκτυο μόνο αν ένας συγκεκριμένος αριθμός από μια ομάδα ορισμένων ατόμων συμφωνήσει να υπογράψει την συναλλαγή. Αυτό θα μπορούσε να χρησιμοποιηθεί από ένα διοικητικό συμβούλιο για να αποτρέψει ένα μέλος να ξοδέψει μέρος από το θησαυροφυλάκιο τους χωρίς τη συγκατάθεση των άλλων μελών. Αυτό θα μπορούσε επίσης να χρησιμοποιηθεί από τις τράπεζες για να αποτρέψουν κλοπή μπλοκάροντας τις πληρωμές που υπερβαίνουν κάποιο όριο αν ο χρήστης δεν παρέχει περαιτέρω πιστοποιητικά.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_law.svg" alt="Icon"/>
+	    <h3 id="trust">Εμπιστοσύνη και ακεραιότητα</h3>
+	    <p>To Bitcoin προσφέρει λύσεις για πολλά από τα προβλήματα εμπιστοσύνης που μαστίζουν τις τράπεζες. Με επιλεκτική λογιστική διαφάνεια, ψηφιακά συμβόλαια και μη αναστρέψιμες συναλλαγές, το Bitcoin μπορεί να χρησιμοποιηθεί ως βάση για την αποκατάσταση της εμπιστοσύνης και της συμφωνίας. Οι ανέντιμες τράπεζες δεν μπορούν να εξαπατήσουν το σύστημα για να βγάλουν κέρδος σε βάρος των άλλων τραπεζών και του κοινού. Ένα μέλλον στο οποίο οι μεγαλύτερες τράπεζες θα στήριζαν το Bitcoin θα βοηθούσε να αποκατασταθεί η ακεραιότητα και η εμπιστοσύνη στα χρηματοοικονομικά ιδρύματα.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_network.svg" alt="Icon"/>
+	    <h3 id="resiliency">Ελαστικότητα και αποκέντρωση</h3>
+	    <p>Μέσω της υψηλής αποκέντρωσης, το Bitcoin δημιούργησε ένα δίκτυο πληρωμής με διαφορετική μορφή παρέχοντας αυξημένο επίπεδο ελαστικότητας και πλεονασμού. Το Bitcoin μπορεί να διαχειριστεί συναλλαγές εκατομμυρίων δολαρίων χωρίς να απαιτεί ασφάλεια στρατιωτικού επιπέδου. Μη έχοντας ένα κεντρικό σημείο αποτυχίας όπως ένα κέντρο δεδομένων, η επίθεση στο δίκτυο γίνεται δυσκολότερη ως εγχείρημα. Το Bitcoin θα μπορούσε να συμβολίσει ένα ενδιαφέρον βήμα προς την κατεύθυνση της διασφάλισης των τοπικών και παγκόσμιων οικονομικών συστημάτων.</p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_transparency.svg" alt="Icon"/>
+	    <h3 id="transparency">Ευέλικτη διαφάνεια</h3>
+	    <p>Όλες οι συναλλαγές με Bitcoin είναι δημόσιες και διαφανείς και η ταυτότητα των ανθρώπων πίσω από τις πληρωμές είναι ιδιωτική από προεπιλογή. Αυτό επιτρέπει σε ιδιώτες και οργανισμούς να δουλεύουν σύμφωνα με κανόνες ευέλικτης διαφάνειας. Για παράδειγμα, μια επιχείρηση μπορεί να επιλέξει να αποκαλύψει ορισμένες συναλλαγές και υπόλοιπα λογαριασμών μόνο σε ορισμένους εργαζόμενους ακριβώς όπως ένας μη κερδοσκοπικός οργανισμός είναι ελεύθερος να επιτρέψει στο κοινό να δει πόσες δωρέες λαμβάνουν σε καθημερινή ή μηνιαία βάση. </p>
+	  </li>
+
+	  <li class="content_innovation--items">
+	    <img src="/img/icons/ico_solve.svg" alt="Icon"/>
+	    <h3 id="automation">Αυτοματοποιημένες λύσεις</h3>
+	    <p>Οι αυτοματοποιημένες υπηρεσίες συνήθως έχουν να διαχειριστούν τα κόστη και τους περιορισμούς των πληρωμών με μετρητά ή πιστωτική κάρτα. Αυτό περιλαμβάνει όλα τα είδη μηχανημάτων αυτόματης πώλησης, από θαλάμους έκδοσης εισιτηριών για το λεωφορείο μέχρι και μηχανήματα πώλησης καφέ. Το Bitcoin είναι κατάλληλο να χρησιμοποιείται σε μια νέα γενιά αυτοματοποιημένων υπηρεσιών όπως επίσης και για την μείωση των λειτουργικών δαπανών. Φανταστείτε ένα ταξί χωρίς οδηγό, ή ένα κατάστημα όπου το καλάθι θα σας επιτρέπει να πληρώσετε για τις αγορές σας χωρίς να περιμένετε στην ουρά. Πολλές ιδέες είναι εφικτές.</p>
+	  </li>
+	</ul>
 </div>
-
-<div>
-<img src="/img/innovation/inno_global.jpg" alt="Banner" />
-<h2 id="global"><img class="titleicon" src="/img/icons/ico_international.svg" alt="Icon" />Παγκόσμια προσβασιμότητα</h2>
-<p>Οι πληρωμές σε όλο τον κόσμο μπορούν να είναι πλήρως διαλειτουργικές. Το Bitcoin επιτρέπει σε κάθε τράπεζα, επιχείρηση ή ιδιώτη να στείλει και να λάβει με ασφάλεια πληρωμές οπουδήποτε και οποτεδήποτε, με ή χωρίς τραπεζικό λογαριασμό. Το Bitcoin είναι διαθέσιμο σε μεγάλο αριθμό από χώρες οι οποίες παραμένουν ακόμα μη προσβάσιμες για τα περισσότερα συστήματα πληρωμών εξαιτίας των περιορισμών που έχουν οι ίδιες. Το Bitcoin αυξάνει την παγκόσμια πρόσβαση στο εμπόριο και μπορεί να βοηθήσει το διεθνές εμπόριο να προοδεύσει.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_cost.jpg" alt="Banner" />
-<h2 id="cost"><img class="titleicon" src="/img/icons/ico_lowfee.svg" alt="Icon" />Χαμηλό κόστος</h2>
-<p>Με τη χρήση κρυπτογραφίας, είναι εφικτές ασφαλείς πληρωμές χωρίς αργούς και ακριβοπληρωμένους μεσάζοντες. Μια συναλλαγή Bitcoin μπορεί να είναι αρκετά φθηνότερη από τις εναλλακτικές της και να ολοκληρωθεί σε μικρό χρονικό διάστημα. Αυτό σημαίνει ότι το Bitcoin έχει κάποια προοπτική να γίνει ένας σύνηθης τρόπος μεταφοράς οποιουδήποτε συναλλάγματος στο μέλλον. Το Bitcoin θα μπορούσε επίσης να διαδραματίσει ρόλο στην <a href="https://www.youtube.com/watch?v=BrRXP1tp6Kw">μείωση της φτώχειας</a> σε πολλές μειώνοντας τα υψηλά τέλη συναλλαγών στο μισθό των εργαζομένων.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_donation.jpg" alt="Banner" />
-<h2 id="donation"><img class="titleicon" src="/img/icons/ico_donate.svg" alt="Icon" />Φιλοδωρήματα και δωρεές</h2>
-<p>Το Bitcoin είναι μια ιδιαίτερα αποτελεσματική λύση για φιλοδωρήματα και δωρεές σε αρκετές περιπτώσεις. Η αποστολή μιας πληρωμής απαιτεί μόνο ένα κλικ και η αποδοχή δωρεών μπορεί να είναι τόσο απλή όσο η ανάρτηση ενός κώδικα QR. Οι δωρεές μπορούν είναι ορατές στο κοινό, παρέχοντας αυξημένη διαύγεια σε μη-κερδοσκοπικούς οργανισμούς. Σε περιπτώσεις έκτακτης ανάγκης όπως σε φυσικές καταστροφές, οι δωρεές Bitcoin μπορούν να συνεισφέρουν στην ταχύτερη παγκόσμια ανταπόκριση.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_crowdfunding.jpg" alt="Banner" />
-<h2 id="crowdfunding"><img class="titleicon" src="/img/icons/ico_multi.svg" alt="Icon" />Συμμετοχική Χρηματοδότηση</h2>
-<p>Παρόλο που δεν είναι ακόμα εύκολο στη χρήση, το Bitcoin μπορεί να χρησιμοποιηθεί για να διεξάγει διαφημιστικές εκστρατείες συμμετοχικής χρηματοδότησης (crowdfunding) τύπου Kickstarter στις οποίες ιδιώτες δίνουν ως ενέχυρο χρήματα σε ένα πρότζεκτ και τα οποία παίρνονται από αυτούς μόνο αν ληφθούν αρκετά ενέχυρα ώστε να φτάσουν στο στόχο. Τέτοιες ασφαλιστικές συμβάσεις επεξεργάζονται από το πρωτόκολλο Bitcoin, το οποίο αποτρέπει μια συναλλαγή να λάβει χώρα εώς ότου έχουν εκπληρωθεί όλοι οι όροι. <a href="https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts">Μάθετε περισσότερα</a> για την τεχνολογία σχετικά με την συμμετοχική χρηματοδότηση.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_micro.jpg" alt="Banner" />
-<h2 id="micro"><img class="titleicon" src="/img/icons/ico_micro.svg" alt="Icon" />Μικροπληρωμές</h2>
-<p>To Bitcoin μπορεί να επεξεργαστεί συναλλαγές στην κλίμακα του δολαρίου και σύντομα σε ακόμα μικρότερα ποσά. Τέτοιες πληρωμές είναι υπόθεση ρουτίνας ακόμα και σήμερα. Φανταστείτε να ακούτε ραδιόφωνο μέσω Διαδικτύου και να πληρώνεται με το δευτερόλεπτο, να βλέπετε ιστοσελίδες και να δινετε ένα μικρό φιλοδώρημα για κάθε διαφήμιση που δεν εμφανίζεται ή να αγοράζετε εύρος ζώνης (bandwidth) από ένα ενεργό σημείο (hotspot) WiFi με το kilobyte. Το Bitcoin είναι αρκετά αποτελεσματικό ώστε να κάνει όλες αυτές τις ιδέες εφικτές. <a href="https://bitcoinj.github.io/working-with-micropayments">Μάθετε περισσότερα</a> για την τεχνολογία του Bitcoin σχετικά με τις μικροπληρωμές.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_mediation.jpg" alt="Banner" />
-<h2 id="mediation"><img class="titleicon" src="/img/icons/ico_balance.svg" alt="Icon" />Διαμεσολάβηση Διενέξεων</h2>
-<p>Το Bitcoin μπορεί να χρησιμοποιηθεί για να αναπτύξει καινοτόμες υπηρεσίες διαμεσολάβησης σε διενέξεις χρησιμοποιώντας τις πολλαπλές υπογραφές (multiple signatures). Τέτοιες υπηρεσίες θα μπορούσαν να κάνουν εφικτό για κάποιον τρίτο να εγκρίνει ή να απορρίψει μια συναλλαγή στην περίπτωση μιας διαφωνίας μεταξύ τρίτων χωρίς να έχει υπό έλεγχο τα χρήματά τους. Εφόσον αυτές οι υπηρεσίες θα είναι συμβατές με κάθε χρήστη και έμπορο που χρησιμοποιεί το Bitcoin, αυτό ενδέχεται να οδηγήσει σε ελεύθερο ανταγωνισμό και υψηλότερα πρότυπα ποιότητας.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_multisig.jpg" alt="Banner" />
-<h2 id="multisig"><img class="titleicon" src="/img/icons/ico_multisig.svg" alt="Icon" />Πολλαπλές υπογραφές</h2>
-<p>Οι πολλαπλές υπογραφές (multiple signatures) επιτρέπουν μια συναλλαγή να γίνεται αποδεκτή από το δίκτυο μόνο αν ένας συγκεκριμένος αριθμός από μια ομάδα ορισμένων ατόμων συμφωνήσει να υπογράψει την συναλλαγή. Αυτό θα μπορούσε να χρησιμοποιηθεί από ένα διοικητικό συμβούλιο για να αποτρέψει ένα μέλος να ξοδέψει μέρος από το θησαυροφυλάκιο τους χωρίς τη συγκατάθεση των άλλων μελών. Αυτό θα μπορούσε επίσης να χρησιμοποιηθεί από τις τράπεζες για να αποτρέψουν κλοπή μπλοκάροντας τις πληρωμές που υπερβαίνουν κάποιο όριο αν ο χρήστης δεν παρέχει περαιτέρω πιστοποιητικά.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_trust.jpg" alt="Banner" />
-<h2 id="trust"><img class="titleicon" src="/img/icons/ico_law.svg" alt="Icon" />Εμπιστοσύνη και ακεραιότητα</h2>
-<p>To Bitcoin προσφέρει λύσεις για πολλά από τα προβλήματα εμπιστοσύνης που μαστίζουν τις τράπεζες. Με επιλεκτική λογιστική διαφάνεια, ψηφιακά συμβόλαια και μη αναστρέψιμες συναλλαγές, το Bitcoin μπορεί να χρησιμοποιηθεί ως βάση για την αποκατάσταση της εμπιστοσύνης και της συμφωνίας. Οι ανέντιμες τράπεζες δεν μπορούν να εξαπατήσουν το σύστημα για να βγάλουν κέρδος σε βάρος των άλλων τραπεζών και του κοινού. Ένα μέλλον στο οποίο οι μεγαλύτερες τράπεζες θα στήριζαν το Bitcoin θα βοηθούσε να αποκατασταθεί η ακεραιότητα και η εμπιστοσύνη στα χρηματοοικονομικά ιδρύματα.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_resiliency.jpg" alt="Banner" />
-<h2 id="resiliency"><img class="titleicon" src="/img/icons/ico_network.svg" alt="Icon" />Ελαστικότητα και αποκέντρωση</h2>
-<p>Μέσω της υψηλής αποκέντρωσης, το Bitcoin δημιούργησε ένα δίκτυο πληρωμής με διαφορετική μορφή παρέχοντας αυξημένο επίπεδο ελαστικότητας και πλεονασμού. Το Bitcoin μπορεί να διαχειριστεί συναλλαγές εκατομμυρίων δολαρίων χωρίς να απαιτεί ασφάλεια στρατιωτικού επιπέδου. Μη έχοντας ένα κεντρικό σημείο αποτυχίας όπως ένα κέντρο δεδομένων, η επίθεση στο δίκτυο γίνεται δυσκολότερη ως εγχείρημα. Το Bitcoin θα μπορούσε να συμβολίσει ένα ενδιαφέρον βήμα προς την κατεύθυνση της διασφάλισης των τοπικών και παγκόσμιων οικονομικών συστημάτων.</p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_transparency.jpg" alt="Banner" />
-<h2 id="transparency"><img class="titleicon" src="/img/icons/ico_transparency.svg" alt="Icon" />Ευέλικτη διαφάνεια</h2>
-<p>Όλες οι συναλλαγές με Bitcoin είναι δημόσιες και διαφανείς και η ταυτότητα των ανθρώπων πίσω από τις πληρωμές είναι ιδιωτική από προεπιλογή. Αυτό επιτρέπει σε ιδιώτες και οργανισμούς να δουλεύουν σύμφωνα με κανόνες ευέλικτης διαφάνειας. Για παράδειγμα, μια επιχείρηση μπορεί να επιλέξει να αποκαλύψει ορισμένες συναλλαγές και υπόλοιπα λογαριασμών μόνο σε ορισμένους εργαζόμενους ακριβώς όπως ένας μη κερδοσκοπικός οργανισμός είναι ελεύθερος να επιτρέψει στο κοινό να δει πόσες δωρέες λαμβάνουν σε καθημερινή ή μηνιαία βάση. </p>
-</div>
-
-<div>
-<img src="/img/innovation/inno_automation.jpg" alt="Banner" />
-<h2 id="automation"><img class="titleicon" src="/img/icons/ico_solve.svg" alt="Icon" />Αυτοματοποιημένες λύσεις</h2>
-<p>Οι αυτοματοποιημένες υπηρεσίες συνήθως έχουν να διαχειριστούν τα κόστη και τους περιορισμούς των πληρωμών με μετρητά ή πιστωτική κάρτα. Αυτό περιλαμβάνει όλα τα είδη μηχανημάτων αυτόματης πώλησης, από θαλάμους έκδοσης εισιτηριών για το λεωφορείο μέχρι και μηχανήματα πώλησης καφέ. Το Bitcoin είναι κατάλληλο να χρησιμοποιείται σε μια νέα γενιά αυτοματοποιημένων υπηρεσιών όπως επίσης και για την μείωση των λειτουργικών δαπανών. Φανταστείτε ένα ταξί χωρίς οδηγό, ή ένα κατάστημα όπου το καλάθι θα σας επιτρέπει να πληρώσετε για τις αγορές σας χωρίς να περιμένετε στην ουρά. Πολλές ιδέες είναι εφικτές.</p>
-</div>
-
-</div>
-
-<p class="attribution">
-Trezor prototype, © <a href="http://www.bitcointrezor.com/">Trezor</a><br>
-National Gallery of Art, © AgnosticPreachersKid on <a href="http://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG">Wikimedia</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">CC BY-SA 3.0</a><br>
-Weusecoins video screenshot, © <a href="https://weusecoins.com/">weusecoins.com</a> used under a Creative Commons license <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
-Robot Sketching, © <a href="http://www.flickr.com/photos/elmastudio/4784871615/in/photostream/">Elmastudio</a> on Flickr used under a Creative Commons license <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.fr">CC BY-NC-ND 2.0</a><br>
-All other pictures are copyrighted materials.
-</p>
-
       </div>
     </div>
 
@@ -423,14 +433,14 @@ All other pictures are copyrighted materials.
 <div class="footer_standard">
 	<div class="footer_standard--leftbox">
 		<ul>
-			<li><a href="/en/alerts" class="statusmenu">Network Status</a></li>
-			<li><a href="/el/legal">Νομικά</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/alerts" id="footer_standard--alert">Network Status</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/legal">Νομικά</a></li>
 			
-			<li><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/privacy">Προστασία Προσωπικών Δεδομένων</a></li>
 			
-			<li><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
-			<li><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
-			<li><a href="/en/blog">Blog</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/press">Τύπος (ΜΜΕ)</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/el/about-us">Σχετικά με το bitcoin.org</a></li>
+			<li class="footer_standard--leftbox--item"><a href="/en/blog">Blog</a></li>
 		</ul>
 	</div>
 	<div class="footer_standard--rightbox">
@@ -439,7 +449,8 @@ All other pictures are copyrighted materials.
 	<div class="footer_standard--sponsor">
 	  <!--<div><span>Μια κοινοτική ιστοσελίδα χρηματοδοτούμενη από</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
 	</div>
-</div>	
+</div>
+
     </div>
     
   </div>
@@ -461,13 +472,15 @@ All other pictures are copyrighted materials.
 				<h2>Developers Resources</h2>
 			</div>
 			<div class="footer_developer--action--buttonarea">
-				<a href="/en/developer-documentation"><div class="footer_developer--action--button">
-					Documentation
-				</div></a>
+        <a class="footer_developer--action--button" href="/en/developer-documentation">
+          <img class="footer_developer--action--button--img"src="/img/flags/en.png">
+          <span class="footer_developer--action--button--text">Documentation</span>
+        </a>
 			</div>
 		</div>
 	</div>
 </div>
+
   </div>
 </div>
 
@@ -478,7 +491,6 @@ All other pictures are copyrighted materials.
   addAnchorLinks();
 </script>
 
-<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/js/components/header_standard.js"></script>
 
 
