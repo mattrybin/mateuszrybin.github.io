@@ -9,6 +9,34 @@
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/version-history</link>
 	</image>
+        
+	
+        <item>
+            <title>Bitcoin Core version 0.12.1 released</title>
+            <link>https://bitcoin.org/en/release/v0.12.1</link>
+            <guid>https://bitcoin.org/en/release/v0.12.1</guid>
+          
+            <pubDate>Fri, 15 Apr 2016 00:00:00 GMT</pubDate>
+          
+        </item>
+	
+        <item>
+            <title>Bitcoin Core version 0.12.0 released</title>
+            <link>https://bitcoin.org/en/release/v0.12.0</link>
+            <guid>https://bitcoin.org/en/release/v0.12.0</guid>
+          
+            <pubDate>Tue, 23 Feb 2016 00:00:00 GMT</pubDate>
+          
+        </item>
+	
+        <item>
+            <title>Bitcoin Core version 0.11.2 released</title>
+            <link>https://bitcoin.org/en/release/v0.11.2</link>
+            <guid>https://bitcoin.org/en/release/v0.11.2</guid>
+          
+            <pubDate>Fri, 13 Nov 2015 00:00:00 GMT</pubDate>
+          
+        </item>
 	
         <item>
             <title>Bitcoin Core version 0.11.1 released</title>
@@ -16,6 +44,15 @@
             <guid>https://bitcoin.org/en/release/v0.11.1</guid>
           
             <pubDate>Thu, 15 Oct 2015 00:00:00 GMT</pubDate>
+          
+        </item>
+	
+        <item>
+            <title>Bitcoin Core version 0.10.3 released</title>
+            <link>https://bitcoin.org/en/release/v0.10.3</link>
+            <guid>https://bitcoin.org/en/release/v0.10.3</guid>
+          
+            <pubDate>Wed, 14 Oct 2015 00:00:00 GMT</pubDate>
           
         </item>
 	

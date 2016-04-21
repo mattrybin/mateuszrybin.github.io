@@ -16,8 +16,8 @@
 <title>Bitcoin Core version 0.10.1 released</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
-<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/bd049070b1552db10cd9ae1a4e14d766.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/38f9724a6ae595c073fd6934579f2283.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
@@ -57,9 +57,9 @@ if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNot
 
 
 
-  <div class="banner-message alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
+
+
+
 
 
 
@@ -354,47 +354,47 @@ behavior, not code moves, refactors or string updates.</p>
 <p>RPC:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/7f502be"><code>7f502be</code></a> fix crash: createmultisig and addmultisigaddress</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/eae305f"><code>eae305f</code></a> Fix missing lock in submitblock</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/7f502be"><code class="highlighter-rouge">7f502be</code></a> fix crash: createmultisig and addmultisigaddress</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/eae305f"><code class="highlighter-rouge">eae305f</code></a> Fix missing lock in submitblock</li>
 </ul>
 
 <p>Block (database) and transaction handling:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/1d2cdd2"><code>1d2cdd2</code></a> Fix InvalidateBlock to add chainActive.Tip to setBlockIndexCandidates</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/c91c660"><code>c91c660</code></a> fix InvalidateBlock to repopulate setBlockIndexCandidates</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/002c8a2"><code>002c8a2</code></a> fix possible block db breakage during re-index</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/a1f425b"><code>a1f425b</code></a> Add (optional) consistency check for the block chain data structures</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/1c62e84"><code>1c62e84</code></a> Keep mempool consistent during block-reorgs</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/57d1f46"><code>57d1f46</code></a> Fix CheckBlockIndex for reindex</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/bac6fca"><code>bac6fca</code></a> Set nSequenceId when a block is fully linked</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/1d2cdd2"><code class="highlighter-rouge">1d2cdd2</code></a> Fix InvalidateBlock to add chainActive.Tip to setBlockIndexCandidates</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/c91c660"><code class="highlighter-rouge">c91c660</code></a> fix InvalidateBlock to repopulate setBlockIndexCandidates</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/002c8a2"><code class="highlighter-rouge">002c8a2</code></a> fix possible block db breakage during re-index</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/a1f425b"><code class="highlighter-rouge">a1f425b</code></a> Add (optional) consistency check for the block chain data structures</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/1c62e84"><code class="highlighter-rouge">1c62e84</code></a> Keep mempool consistent during block-reorgs</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/57d1f46"><code class="highlighter-rouge">57d1f46</code></a> Fix CheckBlockIndex for reindex</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/bac6fca"><code class="highlighter-rouge">bac6fca</code></a> Set nSequenceId when a block is fully linked</li>
 </ul>
 
 <p>P2P protocol and network code:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/78f64ef"><code>78f64ef</code></a> don’t trickle for whitelisted nodes</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/ca301bf"><code>ca301bf</code></a> Reduce fingerprinting through timestamps in ‘addr’ messages.</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/200f293"><code>200f293</code></a> Ignore getaddr messages on Outbound connections.</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/d5d8998"><code>d5d8998</code></a> Limit message sizes before transfer</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/aeb9279"><code>aeb9279</code></a> Better fingerprinting protection for non-main-chain getdatas.</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/cf0218f"><code>cf0218f</code></a> Make addrman’s bucket placement deterministic (countermeasure 1 against eclipse attacks, see http://cs-people.bu.edu/heilman/eclipse/)</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/0c6f334"><code>0c6f334</code></a> Always use a 50% chance to choose between tried and new entries (countermeasure 2 against eclipse attacks)</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/214154e"><code>214154e</code></a> Do not bias outgoing connections towards fresh addresses (countermeasure 2 against eclipse attacks)</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/aa587d4"><code>aa587d4</code></a> Scale up addrman (countermeasure 6 against eclipse attacks)</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/139cd81"><code>139cd81</code></a> Cap nAttempts penalty at 8 and switch to pow instead of a division loop</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/78f64ef"><code class="highlighter-rouge">78f64ef</code></a> don’t trickle for whitelisted nodes</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/ca301bf"><code class="highlighter-rouge">ca301bf</code></a> Reduce fingerprinting through timestamps in ‘addr’ messages.</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/200f293"><code class="highlighter-rouge">200f293</code></a> Ignore getaddr messages on Outbound connections.</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/d5d8998"><code class="highlighter-rouge">d5d8998</code></a> Limit message sizes before transfer</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/aeb9279"><code class="highlighter-rouge">aeb9279</code></a> Better fingerprinting protection for non-main-chain getdatas.</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/cf0218f"><code class="highlighter-rouge">cf0218f</code></a> Make addrman’s bucket placement deterministic (countermeasure 1 against eclipse attacks, see http://cs-people.bu.edu/heilman/eclipse/)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/0c6f334"><code class="highlighter-rouge">0c6f334</code></a> Always use a 50% chance to choose between tried and new entries (countermeasure 2 against eclipse attacks)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/214154e"><code class="highlighter-rouge">214154e</code></a> Do not bias outgoing connections towards fresh addresses (countermeasure 2 against eclipse attacks)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/aa587d4"><code class="highlighter-rouge">aa587d4</code></a> Scale up addrman (countermeasure 6 against eclipse attacks)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/139cd81"><code class="highlighter-rouge">139cd81</code></a> Cap nAttempts penalty at 8 and switch to pow instead of a division loop</li>
 </ul>
 
 <p>Validation:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/d148f62"><code>d148f62</code></a> Acquire CCheckQueue’s lock to avoid race condition</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/d148f62"><code class="highlighter-rouge">d148f62</code></a> Acquire CCheckQueue’s lock to avoid race condition</li>
 </ul>
 
 <p>Build system:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/8752b5c"><code>8752b5c</code></a> 0.10 fix for crashes on OSX 10.6</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/8752b5c"><code class="highlighter-rouge">8752b5c</code></a> 0.10 fix for crashes on OSX 10.6</li>
 </ul>
 
 <p>Wallet:</p>
@@ -406,25 +406,25 @@ behavior, not code moves, refactors or string updates.</p>
 <p>GUI:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/2c08406"><code>2c08406</code></a> some mac specifiy cleanup (memory handling, unnecessary code)</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/81145a6"><code>81145a6</code></a> fix OSX dock icon window reopening</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/786cf72"><code>786cf72</code></a> fix a issue where “command line options”-action overwrite “Preference”-action (on OSX)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/2c08406"><code class="highlighter-rouge">2c08406</code></a> some mac specifiy cleanup (memory handling, unnecessary code)</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/81145a6"><code class="highlighter-rouge">81145a6</code></a> fix OSX dock icon window reopening</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/786cf72"><code class="highlighter-rouge">786cf72</code></a> fix a issue where “command line options”-action overwrite “Preference”-action (on OSX)</li>
 </ul>
 
 <p>Tests:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/1117378"><code>1117378</code></a> add RPC test for InvalidateBlock</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/1117378"><code class="highlighter-rouge">1117378</code></a> add RPC test for InvalidateBlock</li>
 </ul>
 
 <p>Miscellaneous:</p>
 
 <ul>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/c9e022b"><code>c9e022b</code></a> Initialization: set Boost path locale in main thread</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/23126a0"><code>23126a0</code></a> Sanitize command strings before logging them.</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/323de27"><code>323de27</code></a> Initialization: setup environment before starting QT tests</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/7494e09"><code>7494e09</code></a> Initialization: setup environment before starting tests</li>
-  <li><a href="https://github.com/bitcoin/bitcoin/commit/df45564"><code>df45564</code></a> Initialization: set fallback locale as environment variable</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/c9e022b"><code class="highlighter-rouge">c9e022b</code></a> Initialization: set Boost path locale in main thread</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/23126a0"><code class="highlighter-rouge">23126a0</code></a> Sanitize command strings before logging them.</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/323de27"><code class="highlighter-rouge">323de27</code></a> Initialization: setup environment before starting QT tests</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/7494e09"><code class="highlighter-rouge">7494e09</code></a> Initialization: setup environment before starting tests</li>
+  <li><a href="https://github.com/bitcoin/bitcoin/commit/df45564"><code class="highlighter-rouge">df45564</code></a> Initialization: set fallback locale as environment variable</li>
 </ul>
 
 <h1 id="credits">Credits</h1>
@@ -462,25 +462,21 @@ behavior, not code moves, refactors or string updates.</p>
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
   <a href="/en/legal">Legal</a>
   
   <a href="/en/privacy">Privacy Policy</a>
   
-  <a href="/en/press">Press</a>
-  <a href="/en/about-us">About bitcoin.org</a>
-  <a href="/en/blog">Blog</a>
+  <a href="/en/bitcoin-core/about-site">About</a>
 </div>
 
     
 
-<div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+<div class="footerlicense">© Bitcoin Project 2009-2016 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a><br>
+Bitcoin Core pages on Bitcoin.org are <a
+href="/en/bitcoin-core/about-site">maintained separately</a> from the
+rest of the site.
 </div>
-
-    
-
-<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
 
   </div>
 </div>
@@ -497,6 +493,7 @@ behavior, not code moves, refactors or string updates.</p>
 <script type="text/javascript">
   fallbackSVG();
   addAnchorLinks();
+
 </script>
 
 <script type="text/javascript" src="/js/components/header_standard.js"></script>

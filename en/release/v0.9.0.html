@@ -16,8 +16,8 @@
 <title>Bitcoin Core version 0.9.0 released</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
-<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/bd049070b1552db10cd9ae1a4e14d766.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/38f9724a6ae595c073fd6934579f2283.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
@@ -57,9 +57,9 @@ if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNot
 
 
 
-  <div class="banner-message alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
+
+
+
 
 
 
@@ -387,27 +387,29 @@ functioning both as a server and as a RPC client. The RPC client functionality
 executable, ‘bitcoin-cli’. The RPC client code will eventually be removed from
 bitcoind, but will be kept for backwards compatibility for a release or two.</p>
 
-<h2 id="walletpassphrase-rpc"><code>walletpassphrase</code> RPC</h2>
+<h2 id="walletpassphrase-rpc"><code class="highlighter-rouge">walletpassphrase</code> RPC</h2>
 
-<p>The behavior of the <code>walletpassphrase</code> RPC when the wallet is already unlocked
+<p>The behavior of the <code class="highlighter-rouge">walletpassphrase</code> RPC when the wallet is already unlocked
 has changed between 0.8 and 0.9.</p>
 
-<p>The 0.8 behavior of <code>walletpassphrase</code> is to fail when the wallet is already unlocked:</p>
+<p>The 0.8 behavior of <code class="highlighter-rouge">walletpassphrase</code> is to fail when the wallet is already unlocked:</p>
 
-<pre><code>&gt; walletpassphrase 1000
+<div class="highlighter-rouge"><pre><code>&gt; walletpassphrase 1000
 walletunlocktime = now + 1000
 &gt; walletpassphrase 10
 Error: Wallet is already unlocked (old unlock time stays)
 </code></pre>
+</div>
 
-<p>The new behavior of <code>walletpassphrase</code> is to set a new unlock time overriding
+<p>The new behavior of <code class="highlighter-rouge">walletpassphrase</code> is to set a new unlock time overriding
 the old one:</p>
 
-<pre><code>&gt; walletpassphrase 1000
+<div class="highlighter-rouge"><pre><code>&gt; walletpassphrase 1000
 walletunlocktime = now + 1000
 &gt; walletpassphrase 10
 walletunlocktime = now + 10 (overriding the old unlock time)
 </code></pre>
+</div>
 
 <h2 id="transaction-malleability-related-fixes">Transaction malleability-related fixes</h2>
 
@@ -454,31 +456,31 @@ option may be used to override the default.</p>
 
 <ul>
   <li>New notion of ‘conflicted’ transactions, reported as confirmations: -1</li>
-  <li><code>listreceivedbyaddress</code> now provides tx ids</li>
-  <li>Add raw transaction hex to <code>gettransaction</code> output</li>
-  <li>Updated help and tests for <code>getreceivedby(account|address)</code></li>
-  <li>In <code>getblock</code>, accept 2nd <code>verbose</code> parameter, similar to getrawtransaction,
+  <li><code class="highlighter-rouge">listreceivedbyaddress</code> now provides tx ids</li>
+  <li>Add raw transaction hex to <code class="highlighter-rouge">gettransaction</code> output</li>
+  <li>Updated help and tests for <code class="highlighter-rouge">getreceivedby(account|address)</code></li>
+  <li>In <code class="highlighter-rouge">getblock</code>, accept 2nd <code class="highlighter-rouge">verbose</code> parameter, similar to getrawtransaction,
 but defaulting to 1 for backward compatibility</li>
-  <li>Add <code>verifychain</code>, to verify chain database at runtime</li>
-  <li>Add <code>dumpwallet</code> and <code>importwallet</code> RPCs</li>
-  <li><code>keypoolrefill</code> gains optional size parameter</li>
-  <li>Add <code>getbestblockhash</code>, to return tip of best chain</li>
-  <li>Add <code>chainwork</code> (the total work done by all blocks since the genesis block)
-to <code>getblock</code> output</li>
+  <li>Add <code class="highlighter-rouge">verifychain</code>, to verify chain database at runtime</li>
+  <li>Add <code class="highlighter-rouge">dumpwallet</code> and <code class="highlighter-rouge">importwallet</code> RPCs</li>
+  <li><code class="highlighter-rouge">keypoolrefill</code> gains optional size parameter</li>
+  <li>Add <code class="highlighter-rouge">getbestblockhash</code>, to return tip of best chain</li>
+  <li>Add <code class="highlighter-rouge">chainwork</code> (the total work done by all blocks since the genesis block)
+to <code class="highlighter-rouge">getblock</code> output</li>
   <li>Make RPC password resistant to timing attacks</li>
   <li>Clarify help messages and add examples</li>
-  <li>Add <code>getrawchangeaddress</code> call for raw transaction change destinations</li>
-  <li>Reject insanely high fees by default in <code>sendrawtransaction</code></li>
-  <li>Add RPC call <code>decodescript</code> to decode a hex-encoded transaction script</li>
-  <li>Make <code>validateaddress</code> provide redeemScript</li>
-  <li>Add <code>getnetworkhashps</code> to get the calculated network hashrate</li>
-  <li>New RPC <code>ping</code> command to request ping, new <code>pingtime</code> and <code>pingwait</code> fields
-in <code>getpeerinfo</code> output</li>
-  <li>Adding new <code>addrlocal</code> field to <code>getpeerinfo</code> output</li>
-  <li>Add verbose boolean to <code>getrawmempool</code></li>
-  <li>Add rpc command <code>getunconfirmedbalance</code> to obtain total unconfirmed balance</li>
-  <li>Explicitly ensure that wallet is unlocked in <code>importprivkey</code></li>
-  <li>Add check for valid keys in <code>importprivkey</code></li>
+  <li>Add <code class="highlighter-rouge">getrawchangeaddress</code> call for raw transaction change destinations</li>
+  <li>Reject insanely high fees by default in <code class="highlighter-rouge">sendrawtransaction</code></li>
+  <li>Add RPC call <code class="highlighter-rouge">decodescript</code> to decode a hex-encoded transaction script</li>
+  <li>Make <code class="highlighter-rouge">validateaddress</code> provide redeemScript</li>
+  <li>Add <code class="highlighter-rouge">getnetworkhashps</code> to get the calculated network hashrate</li>
+  <li>New RPC <code class="highlighter-rouge">ping</code> command to request ping, new <code class="highlighter-rouge">pingtime</code> and <code class="highlighter-rouge">pingwait</code> fields
+in <code class="highlighter-rouge">getpeerinfo</code> output</li>
+  <li>Adding new <code class="highlighter-rouge">addrlocal</code> field to <code class="highlighter-rouge">getpeerinfo</code> output</li>
+  <li>Add verbose boolean to <code class="highlighter-rouge">getrawmempool</code></li>
+  <li>Add rpc command <code class="highlighter-rouge">getunconfirmedbalance</code> to obtain total unconfirmed balance</li>
+  <li>Explicitly ensure that wallet is unlocked in <code class="highlighter-rouge">importprivkey</code></li>
+  <li>Add check for valid keys in <code class="highlighter-rouge">importprivkey</code></li>
 </ul>
 
 <p>Command-line options:</p>
@@ -486,14 +488,14 @@ in <code>getpeerinfo</code> output</li>
 <ul>
   <li>New option: -nospendzeroconfchange to never spend unconfirmed change outputs</li>
   <li>New option: -zapwallettxes to rebuild the wallet’s transaction information</li>
-  <li>Rename option <code>-tor</code> to <code>-onion</code> to better reflect what it does</li>
-  <li>Add <code>-disablewallet</code> mode to let bitcoind run entirely without wallet (when
+  <li>Rename option <code class="highlighter-rouge">-tor</code> to <code class="highlighter-rouge">-onion</code> to better reflect what it does</li>
+  <li>Add <code class="highlighter-rouge">-disablewallet</code> mode to let bitcoind run entirely without wallet (when
 built with wallet)</li>
-  <li>Update default <code>-rpcsslciphers</code> to include TLSv1.2</li>
-  <li>make <code>-logtimestamps</code> default on and rework help-message</li>
-  <li>RPC client option: <code>-rpcwait</code>, to wait for server start</li>
-  <li>Remove <code>-logtodebugger</code></li>
-  <li>Allow <code>-noserver</code> with bitcoind</li>
+  <li>Update default <code class="highlighter-rouge">-rpcsslciphers</code> to include TLSv1.2</li>
+  <li>make <code class="highlighter-rouge">-logtimestamps</code> default on and rework help-message</li>
+  <li>RPC client option: <code class="highlighter-rouge">-rpcwait</code>, to wait for server start</li>
+  <li>Remove <code class="highlighter-rouge">-logtodebugger</code></li>
+  <li>Allow <code class="highlighter-rouge">-noserver</code> with bitcoind</li>
 </ul>
 
 <p>Block-chain handling and storage:</p>
@@ -530,7 +532,7 @@ the balance of wallets containing double-spent (or mutated) transactions</li>
 
 <ul>
   <li>Increase default -blockmaxsize/prioritysize to 750K/50K</li>
-  <li><code>getblocktemplate</code> does not require a key to create a block template</li>
+  <li><code class="highlighter-rouge">getblocktemplate</code> does not require a key to create a block template</li>
   <li>Mining code fee policy now matches relay fee policy</li>
 </ul>
 
@@ -539,7 +541,7 @@ the balance of wallets containing double-spent (or mutated) transactions</li>
 <ul>
   <li>Drop the fee required to relay a transaction to 0.01mBTC per kilobyte</li>
   <li>Send tx relay flag with version</li>
-  <li>New <code>reject</code> P2P message (BIP 0061, see
+  <li>New <code class="highlighter-rouge">reject</code> P2P message (BIP 0061, see
 <a href="https://gist.github.com/gavinandresen/7079034">https://gist.github.com/gavinandresen/7079034</a> for draft)</li>
   <li>Dump addresses every 15 minutes instead of 10 seconds</li>
   <li>Relay OP_RETURN data TxOut as standard transaction type</li>
@@ -572,7 +574,7 @@ the balance of wallets containing double-spent (or mutated) transactions</li>
 
 <ul>
   <li>Switch to autotools-based build system</li>
-  <li>Build without wallet by passing <code>--disable-wallet</code> to configure, this 
+  <li>Build without wallet by passing <code class="highlighter-rouge">--disable-wallet</code> to configure, this 
 removes the BerkeleyDB dependency</li>
   <li>Upgrade gitian dependencies (libpng, libz, libupnpc, boost, openssl) to more
 recent versions</li>
@@ -599,7 +601,7 @@ missing, or when the -choosedatadir option is passed</li>
   <li>Add Coin Control Features</li>
   <li>Improve receive coins workflow: make the ‘Receive’ tab into a form to request
 payments, and move historical address list functionality to File menu.</li>
-  <li>Rebrand to <code>Bitcoin Core</code></li>
+  <li>Rebrand to <code class="highlighter-rouge">Bitcoin Core</code></li>
   <li>Move initialization/shutdown to a thread. This prevents “Not responding”
 messages during startup. Also show a window during shutdown.</li>
   <li>Don’t regenerate autostart link on every client startup</li>
@@ -617,9 +619,9 @@ rendering on Retina displays.</li>
 
 <ul>
   <li>Add Linux script (contrib/qos/tc.sh) to limit outgoing bandwidth</li>
-  <li>Add <code>-regtest</code> mode, similar to testnet but private with instant block
-generation with <code>setgenerate</code> RPC.</li>
-  <li>Add <code>linearize.py</code> script to contrib, for creating bootstrap.dat</li>
+  <li>Add <code class="highlighter-rouge">-regtest</code> mode, similar to testnet but private with instant block
+generation with <code class="highlighter-rouge">setgenerate</code> RPC.</li>
+  <li>Add <code class="highlighter-rouge">linearize.py</code> script to contrib, for creating bootstrap.dat</li>
   <li>Add separate bitcoin-cli client</li>
 </ul>
 
@@ -728,25 +730,21 @@ generation with <code>setgenerate</code> RPC.</li>
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
   <a href="/en/legal">Legal</a>
   
   <a href="/en/privacy">Privacy Policy</a>
   
-  <a href="/en/press">Press</a>
-  <a href="/en/about-us">About bitcoin.org</a>
-  <a href="/en/blog">Blog</a>
+  <a href="/en/bitcoin-core/about-site">About</a>
 </div>
 
     
 
-<div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+<div class="footerlicense">© Bitcoin Project 2009-2016 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a><br>
+Bitcoin Core pages on Bitcoin.org are <a
+href="/en/bitcoin-core/about-site">maintained separately</a> from the
+rest of the site.
 </div>
-
-    
-
-<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
 
   </div>
 </div>
@@ -763,6 +761,7 @@ generation with <code>setgenerate</code> RPC.</li>
 <script type="text/javascript">
   fallbackSVG();
   addAnchorLinks();
+
 </script>
 
 <script type="text/javascript" src="/js/components/header_standard.js"></script>

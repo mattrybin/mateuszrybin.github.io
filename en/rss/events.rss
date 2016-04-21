@@ -10,103 +10,20 @@
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/events</link>
 	</image>
+        
 	
         <item>
-            <title>ADCCA Fintech Summit, Sydney - Australia</title>
-            <link>http://www.adccasummit.com/</link>
-            <guid>http://www.adccasummit.com/</guid>
-            <pubDate>Tue, 24 Nov 2015 00:00:00 GMT</pubDate>
+            <title>Consensus 2016, New York - USA</title>
+            <link>http://www.coindesk.com/events/consensus-2016/</link>
+            <guid>http://www.coindesk.com/events/consensus-2016/</guid>
+            <pubDate>Mon, 02 May 2016 00:00:00 GMT</pubDate>
         </item>
 	
         <item>
-            <title>West Coast Bitcoin Summit, Los Angeles - United States</title>
-            <link>https://wcbs2015.com</link>
-            <guid>https://wcbs2015.com</guid>
-            <pubDate>Mon, 30 Nov 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Bitcoin Wednesday Conference, Amsterdam - The Netherlands</title>
-            <link>http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/</link>
-            <guid>http://www.bitcoinwednesday.com/event/bitcoin-wednesday-30/</guid>
-            <pubDate>Wed, 02 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Moneylab#2 Economies of Dissent, 1019 HC Amsterdam - The Netherlands</title>
-            <link>http://networkcultures.org/moneylab/</link>
-            <guid>http://networkcultures.org/moneylab/</guid>
-            <pubDate>Thu, 03 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>laBITconf 2015: Latin American Bitcoin Conference, Mexico D.F. - Mexico</title>
-            <link>http://www.labitconf.com/</link>
-            <guid>http://www.labitconf.com/</guid>
-            <pubDate>Fri, 04 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Scaling Bitcoin: Phase 2, Hong Kong - China</title>
-            <link>https://scalingbitcoin.org/hongkong2015/</link>
-            <guid>https://scalingbitcoin.org/hongkong2015/</guid>
-            <pubDate>Sun, 06 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Inside Bitcoins Seoul, Seoul - South Korea</title>
-            <link>http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibseoul</link>
-            <guid>http://insidebitcoins.com/seoul/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibseoul</guid>
-            <pubDate>Wed, 09 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Inside Bitcoins San Diego, San Diego - United States</title>
-            <link>http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd</link>
-            <guid>http://insidebitcoins.com/san-diego/2015?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibsd</guid>
-            <pubDate>Mon, 14 Dec 2015 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>The North American Bitcoin Conference, Miami, Florida - United States of America</title>
-            <link>http://www.btcmiami.com</link>
-            <guid>http://www.btcmiami.com</guid>
-            <pubDate>Thu, 21 Jan 2016 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Blockchain Conference San Francisco, San Francisco - United States</title>
-            <link>http://blockchain-sanfrancisco.com/</link>
-            <guid>http://blockchain-sanfrancisco.com/</guid>
-            <pubDate>Tue, 23 Feb 2016 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Bitcoin Africa Conference 2016, Johannesburg - South Africa</title>
-            <link>http://bitcoinconference.co.za/</link>
-            <guid>http://bitcoinconference.co.za/</guid>
-            <pubDate>Thu, 03 Mar 2016 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Money 20/20 Europe, Copenhagen - Denmark</title>
-            <link>https://www.money2020europe.com/</link>
-            <guid>https://www.money2020europe.com/</guid>
-            <pubDate>Mon, 04 Apr 2016 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Inside Bitcoins New York, New York - United States</title>
-            <link>http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny</link>
-            <guid>http://insidebitcoins.com/new-york/2016?utm_source=bitcoinorg&utm_medium=eventlisting&utm_campaign=bitcoinorgeventlistingibny</guid>
-            <pubDate>Sun, 10 Apr 2016 00:00:00 GMT</pubDate>
-        </item>
-	
-        <item>
-            <title>Inside Bitcoins Hong Kong, Hong Kong - China</title>
-            <link>http://insidebitcoins.com/hong-kong/2016</link>
-            <guid>http://insidebitcoins.com/hong-kong/2016</guid>
-            <pubDate>Tue, 24 May 2016 00:00:00 GMT</pubDate>
+            <title>Blockchain Training Conference, Toronto - Canada</title>
+            <link>https://blockchaintraining.org</link>
+            <guid>https://blockchaintraining.org</guid>
+            <pubDate>Mon, 20 Jun 2016 00:00:00 GMT</pubDate>
         </item>
 	
 </channel>

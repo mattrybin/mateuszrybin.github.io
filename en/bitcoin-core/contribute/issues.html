@@ -16,8 +16,8 @@
 <title>Issues - Contribute to Bitcoin Core</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
-<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/bd049070b1552db10cd9ae1a4e14d766.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/38f9724a6ae595c073fd6934579f2283.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
@@ -57,9 +57,9 @@ if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNot
 
 
 
-  <div class="banner-message alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
+
+
+
 
 
 
@@ -305,6 +305,7 @@ issue to ask for support.</strong> See the <a href="/en/bitcoin-core/help">Get H
   <div><div>Jeff Garzik</div><div><a href="mailto:jgarzik@pobox.com">jgarzik@pobox.com</a></div><div><a href="/jgarzik-pobox.asc">PGP</a></div></div>
   <div><div>Gregory Maxwell</div><div><a href="mailto:greg@xiph.org">greg@xiph.org</a></div><div><a href="/gmaxwell.asc">PGP</a></div></div>
   <div><div>Pieter Wuille</div><div><a href="mailto:pieter.wuille@gmail.com">pieter.wuille@gmail.com</a></div><div><a href="/pieterwuille.asc">PGP</a></div></div>
+  <div><div>Jonas Schnelli</div><div><a href="mailto:dev@jonasschnelli.ch">dev@jonasschnelli.ch</a></div><div><a href="/jonasschnelli.asc">PGP</a></div></div>
 </div>
 
 <h2 id="public-issue-tracking">Public Issue Tracking</h2>
@@ -320,25 +321,25 @@ to reproduce, see <a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/B
   </li>
   <li>
     <p>What version of Bitcoin Core you use (if you downloaded from
-Bitcoin.org) or what commit you built using (<code>git log -1</code>) plus any
+Bitcoin.org) or what commit you built using (<code class="highlighter-rouge">git log -1</code>) plus any
 extra patches you applied.</p>
   </li>
   <li>
-    <p>Any relevant entries from your <code>debug.log</code> file. Note, this file can
+    <p>Any relevant entries from your <code class="highlighter-rouge">debug.log</code> file. Note, this file can
 contain private information, so review it before posting or ask in
 the issue to email it directly to a developer rather than posting
 publicly. You can publicly post logs on a <a href="http://0bin.net/">0bin service</a>. By
-default, the <code>debug.log</code> can be found at the following locations:</p>
+default, the <code class="highlighter-rouge">debug.log</code> can be found at the following locations:</p>
 
     <ul>
       <li>
-        <p>Windows: <code>%APPDATA%\Bitcoin\debug.log</code></p>
+        <p>Windows: <code class="highlighter-rouge">%APPDATA%\Bitcoin\debug.log</code></p>
       </li>
       <li>
-        <p>OS X: <code>$HOME/Library/Application Support/Bitcoin/debug.log</code></p>
+        <p>OS X: <code class="highlighter-rouge">$HOME/Library/Application Support/Bitcoin/debug.log</code></p>
       </li>
       <li>
-        <p>Linux: <code>$HOME/.bitcoin/debug.log</code></p>
+        <p>Linux: <code class="highlighter-rouge">$HOME/.bitcoin/debug.log</code></p>
       </li>
     </ul>
   </li>
@@ -364,25 +365,21 @@ significantly.</p>
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
   <a href="/en/legal">Legal</a>
   
   <a href="/en/privacy">Privacy Policy</a>
   
-  <a href="/en/press">Press</a>
-  <a href="/en/about-us">About bitcoin.org</a>
-  <a href="/en/blog">Blog</a>
+  <a href="/en/bitcoin-core/about-site">About</a>
 </div>
 
     
 
-<div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+<div class="footerlicense">© Bitcoin Project 2009-2016 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a><br>
+Bitcoin Core pages on Bitcoin.org are <a
+href="/en/bitcoin-core/about-site">maintained separately</a> from the
+rest of the site.
 </div>
-
-    
-
-<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
 
   </div>
 </div>
@@ -399,6 +396,7 @@ significantly.</p>
 <script type="text/javascript">
   fallbackSVG();
   addAnchorLinks();
+
 </script>
 
 <script type="text/javascript" src="/js/components/header_standard.js"></script>

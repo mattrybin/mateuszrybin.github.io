@@ -5,9 +5,9 @@
     <description>News about Bitcoin.org</description>
     <link>//</link>
     <atom:link href="//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Nov 2015 23:44:20 +0700</pubDate>
-    <lastBuildDate>Wed, 25 Nov 2015 23:44:20 +0700</lastBuildDate>
-    <generator>Jekyll v1.3.0</generator>
+    <pubDate>Thu, 21 Apr 2016 18:42:15 +0700</pubDate>
+    <lastBuildDate>Thu, 21 Apr 2016 18:42:15 +0700</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>New Bitcoin Core Sub-Site</title>
@@ -109,11 +109,12 @@ before.  The &lt;a href=&quot;https://bitcoin.org/en/about-us#https://bitcoin.or
 &lt;p&gt;Existing links to the old repository (including developer git
 configurations) should continue to work, but we that suggest you upgrade
 them to point to the new repository at your first convenience. Git users
-can who have the Bitcoin.org repository as their &lt;code&gt;upstream&lt;/code&gt; can run,&lt;/p&gt;
+can who have the Bitcoin.org repository as their &lt;code class=&quot;highlighter-rouge&quot;&gt;upstream&lt;/code&gt; can run,&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;cd bitcoin.org
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre&gt;&lt;code&gt;cd bitcoin.org
 git remote set-url upstream &#39;https://github.com/bitcoin-dot-org/bitcoin.org&#39;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;All current &lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org/issues&quot;&gt;issues&lt;/a&gt; and &lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org/pulls&quot;&gt;pull requests&lt;/a&gt; remain open, and any &lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org/network&quot;&gt;forks hosted
 on GitHub&lt;/a&gt; shouldn’t need to be updated.&lt;/p&gt;

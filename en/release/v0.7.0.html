@@ -16,8 +16,8 @@
 <title>Bitcoin-Qt version 0.7.0 released</title>
 
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/97eadabc73ae117b9ba9260c246249ca.css" />
-<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/bd049070b1552db10cd9ae1a4e14d766.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/38f9724a6ae595c073fd6934579f2283.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
 
 
@@ -57,9 +57,9 @@ if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNot
 
 
 
-  <div class="banner-message alert">
-    <a href="/en/alert/2015-10-12-upnp-vulnerability"><span>WARNING: serious vulnerability in UPnP library used by Bitcoin Core (click here to read)</span></a>
-  </div>
+
+
+
 
 
 
@@ -328,15 +328,15 @@ version will not be able to read the database files and will exit with an error.
 
 <h2 id="incompatible-changes">Incompatible Changes</h2>
 <ul>
-  <li>Replaced the <code>getmemorypool</code> RPC command with <code>getblocktemplate/submitblock</code>
-and <code>getrawmempool</code> commands.</li>
-  <li>Remove deprecated RPC <code>getblocknumber</code></li>
+  <li>Replaced the <code class="highlighter-rouge">getmemorypool</code> RPC command with <code class="highlighter-rouge">getblocktemplate/submitblock</code>
+and <code class="highlighter-rouge">getrawmempool</code> commands.</li>
+  <li>Remove deprecated RPC <code class="highlighter-rouge">getblocknumber</code></li>
 </ul>
 
 <h2 id="bitcoin-improvement-proposals-implemented">Bitcoin Improvement Proposals implemented</h2>
-<p>BIP 22 - <code>getblocktemplate</code>, <code>submitblock</code> RPCs
+<p>BIP 22 - <code class="highlighter-rouge">getblocktemplate</code>, <code class="highlighter-rouge">submitblock</code> RPCs
 BIP 34 - block version 2, height in coinbase
-BIP 35 - <code>mempool</code> message, extended <code>getdata</code> message behavior</p>
+BIP 35 - <code class="highlighter-rouge">mempool</code> message, extended <code class="highlighter-rouge">getdata</code> message behavior</p>
 
 <h2 id="core-bitcoin-handling-and-blockchain-database">Core bitcoin handling and blockchain database</h2>
 <ul>
@@ -361,14 +361,14 @@ connection keep-alive.</li>
 within a single HTTP request.</li>
   <li>IPv6 support</li>
   <li>Added raw transaction API.  See https://gist.github.com/2839617</li>
-  <li>Added <code>getrawmempool</code>, to list contents of TX memory pool</li>
-  <li>Added <code>getpeerinfo</code>, to list data about each connected network peer</li>
-  <li>Added <code>listaddressgroupings</code> for better coin control</li>
+  <li>Added <code class="highlighter-rouge">getrawmempool</code>, to list contents of TX memory pool</li>
+  <li>Added <code class="highlighter-rouge">getpeerinfo</code>, to list data about each connected network peer</li>
+  <li>Added <code class="highlighter-rouge">listaddressgroupings</code> for better coin control</li>
   <li>Rework getblock call.</li>
-  <li>Remove deprecated RPC <code>getblocknumber</code></li>
-  <li>Remove superceded RPC <code>getmemorypool</code> (see BIP 22, above)</li>
+  <li>Remove deprecated RPC <code class="highlighter-rouge">getblocknumber</code></li>
+  <li>Remove superceded RPC <code class="highlighter-rouge">getmemorypool</code> (see BIP 22, above)</li>
   <li>listtransactions output now displays “smart” times for transactions,
-and <code>blocktime</code> and <code>timereceived</code> fields were added</li>
+and <code class="highlighter-rouge">blocktime</code> and <code class="highlighter-rouge">timereceived</code> fields were added</li>
 </ul>
 
 <h2 id="p2p-networking">P2P networking</h2>
@@ -384,7 +384,7 @@ file containing peer address data.</li>
   <li>Add -seednode connections, and use this instead of DNS seeds when proxied</li>
   <li>Added -externalip and -discover</li>
   <li>Add -onlynet to connect only to a given network (IPv4, IPv6, or Tor)</li>
-  <li>Separate listening sockets, <code>-bind=&lt;addr&gt;</code></li>
+  <li>Separate listening sockets, <code class="highlighter-rouge">-bind=&lt;addr&gt;</code></li>
 </ul>
 
 <h2 id="qt-gui">Qt GUI</h2>
@@ -432,25 +432,21 @@ file containing peer address data.</li>
     
 
 <div class="footermenu">
-  <a href="/en/alerts" class="statusmenu alert">Network Status</a>
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
   <a href="/en/legal">Legal</a>
   
   <a href="/en/privacy">Privacy Policy</a>
   
-  <a href="/en/press">Press</a>
-  <a href="/en/about-us">About bitcoin.org</a>
-  <a href="/en/blog">Blog</a>
+  <a href="/en/bitcoin-core/about-site">About</a>
 </div>
 
     
 
-<div class="footersponsor">
-  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+<div class="footerlicense">© Bitcoin Project 2009-2016 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a><br>
+Bitcoin Core pages on Bitcoin.org are <a
+href="/en/bitcoin-core/about-site">maintained separately</a> from the
+rest of the site.
 </div>
-
-    
-
-<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
 
   </div>
 </div>
@@ -467,6 +463,7 @@ file containing peer address data.</li>
 <script type="text/javascript">
   fallbackSVG();
   addAnchorLinks();
+
 </script>
 
 <script type="text/javascript" src="/js/components/header_standard.js"></script>

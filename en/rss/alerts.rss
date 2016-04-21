@@ -9,6 +9,7 @@
 		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
 		<link>https://bitcoin.org/en/alerts</link>
 	</image>
+        
 	
         <item>
             <title>Vulnerability in UPnP library used by Bitcoin Core</title>
